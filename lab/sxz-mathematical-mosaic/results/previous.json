@@ -1,0 +1,219 @@
+[
+  {
+    "meta": {
+      "name": "alice29.txt",
+      "split": "dev",
+      "format": "TXT",
+      "source": "https://corpus.canterbury.ac.nz/descriptions/",
+      "path": "datasets/sxz5-data/alice29.txt",
+      "input_bytes": 152089,
+      "sha256": "7467306ee0feed4971260f3c87421154a05be571d944e9cb021a5713700c38f0"
+    },
+    "method": "SXZ4-on",
+    "chain": [
+      0
+    ],
+    "enc_s": 1.3660524000006262,
+    "spans": 0,
+    "probes": 10,
+    "decode_s": 0.0006252000021049753,
+    "decode_MBs": 243.26455452324717,
+    "repeats_s": [
+      0.0006252000021049753,
+      0.002352400013478473,
+      0.0005919000104768202
+    ],
+    "bytes": 54435,
+    "exact": true
+  },
+  {
+    "meta": {
+      "name": "irs1040.pdf",
+      "split": "dev",
+      "format": "PDF",
+      "source": "https://www.irs.gov/pub/irs-pdf/f1040.pdf",
+      "path": "datasets/sxz5-data/raw/irs1040.pdf",
+      "input_bytes": 220237,
+      "sha256": "3d31c226df0d189ced80e039d01cf0f8820c1019681a0f0ca6264de277b7e982"
+    },
+    "method": "SXZ4-on",
+    "chain": [
+      0
+    ],
+    "enc_s": 1.6923611000092933,
+    "spans": 0,
+    "probes": 45,
+    "decode_s": 0.0008481999975629151,
+    "decode_MBs": 259.6522054147541,
+    "repeats_s": [
+      0.000995499998680316,
+      0.0008459999953629449,
+      0.0008481999975629151
+    ],
+    "bytes": 153571,
+    "exact": true
+  },
+  {
+    "meta": {
+      "name": "plrabn12.txt",
+      "split": "test",
+      "format": "TXT",
+      "source": "https://corpus.canterbury.ac.nz/descriptions/",
+      "path": "datasets/sxz5-data/plrabn12.txt",
+      "input_bytes": 481861,
+      "sha256": "07e2e0b461af78c7c647cb53dab39de560198e16f799b4516eccf0fbd69f764c"
+    },
+    "method": "SXZ4-on",
+    "chain": [
+      0
+    ],
+    "enc_s": 4.984588999999687,
+    "spans": 0,
+    "probes": 32,
+    "decode_s": 0.0023935000062920153,
+    "decode_MBs": 201.3206595919312,
+    "repeats_s": [
+      0.0023935000062920153,
+      0.002192200001445599,
+      0.0025045999936992303
+    ],
+    "bytes": 195292,
+    "exact": true
+  },
+  {
+    "meta": {
+      "name": "bert.pdf",
+      "split": "test",
+      "format": "PDF",
+      "source": "https://arxiv.org/pdf/1810.04805",
+      "path": "datasets/sxz5-data/raw/bert.pdf",
+      "input_bytes": 775166,
+      "sha256": "5692a5514787a8c6727b4ff3b726a3385798bc68e12138d1d4af83947e2acf6e"
+    },
+    "method": "SXZ4-on",
+    "chain": [
+      0
+    ],
+    "enc_s": 10.309583999987808,
+    "spans": 0,
+    "probes": 156,
+    "decode_s": 0.0034851000091293827,
+    "decode_MBs": 222.42288541775454,
+    "repeats_s": [
+      0.0034851000091293827,
+      0.008012299993424676,
+      0.0027446000021882355
+    ],
+    "bytes": 572495,
+    "exact": true
+  },
+  {
+    "meta": {
+      "name": "docx-table.docx",
+      "split": "test",
+      "format": "DOCX",
+      "source": "https://github.com/python-openxml/python-docx",
+      "path": "datasets/sxz5-data/raw/docx-table.docx",
+      "input_bytes": 50294,
+      "sha256": "761802878f363b57dce41b77657946ae5dc70d745261561242c9ed5a769260d9"
+    },
+    "method": "SXZ4-on",
+    "chain": [
+      0
+    ],
+    "enc_s": 1.3284230999997817,
+    "spans": 0,
+    "probes": 16,
+    "decode_s": 0.00022279999393504113,
+    "decode_MBs": 225.73609232082637,
+    "repeats_s": [
+      0.00023379999038297683,
+      0.00018459999409969896,
+      0.00022279999393504113
+    ],
+    "bytes": 34037,
+    "exact": true
+  },
+  {
+    "meta": {
+      "name": "hopper.bmp",
+      "split": "test",
+      "format": "BMP",
+      "source": "https://github.com/python-pillow/Pillow/tree/main/Tests/images",
+      "path": "datasets/unavailable-inputs/hopper.bmp",
+      "input_bytes": 49290,
+      "sha256": "f1a94f3add0a2e54365dc94b51da099bd0de8289b955fc8304a8627b7b0d6aea"
+    },
+    "method": "SXZ4-on",
+    "chain": [
+      6,
+      1
+    ],
+    "enc_s": 0.8346751000062795,
+    "spans": 0,
+    "probes": 49,
+    "decode_s": 0.004465199992409907,
+    "decode_MBs": 11.038699293152547,
+    "repeats_s": [
+      0.004306599992560223,
+      0.00882149999961257,
+      0.004465199992409907
+    ],
+    "bytes": 34797,
+    "exact": true
+  },
+  {
+    "meta": {
+      "name": "7zr.exe",
+      "split": "test",
+      "format": "EXE",
+      "source": "https://www.7-zip.org/download.html",
+      "path": "datasets/audit-assets/7zr.exe",
+      "input_bytes": 602624,
+      "sha256": "256feca8e274e5da655e2a284fabafd9f554365eb164862089dacd4e8276d282"
+    },
+    "method": "SXZ4-on",
+    "chain": [
+      0
+    ],
+    "enc_s": 8.480863499993575,
+    "spans": 0,
+    "probes": 376,
+    "decode_s": 0.00386330000765156,
+    "decode_MBs": 155.98685031099248,
+    "repeats_s": [
+      0.003612900007283315,
+      0.00386330000765156,
+      0.0053555999911623076
+    ],
+    "bytes": 339438,
+    "exact": true
+  },
+  {
+    "meta": {
+      "name": "squeezenet1.1-7.onnx",
+      "split": "test",
+      "format": "ONNX",
+      "source": "https://github.com/onnx/models/tree/main/validated/vision/classification",
+      "path": "datasets/unavailable-inputs/squeezenet1.1-7.onnx",
+      "input_bytes": 4956208,
+      "sha256": "1eeff551a67ae8d565ca33b572fc4b66e3ef357b0eb2863bb9ff47a918cc4088"
+    },
+    "method": "SXZ4-on",
+    "chain": [
+      9
+    ],
+    "enc_s": 31.07836660000612,
+    "spans": 0,
+    "probes": 532,
+    "decode_s": 0.039338900009170175,
+    "decode_MBs": 125.98745767788813,
+    "repeats_s": [
+      0.04241330000513699,
+      0.039338900009170175,
+      0.03345779998926446
+    ],
+    "bytes": 4244930,
+    "exact": true
+  }
+]

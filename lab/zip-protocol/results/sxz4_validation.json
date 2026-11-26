@@ -1,0 +1,3461 @@
+[
+  {
+    "suite": "unknown",
+    "name": "order3-add",
+    "gate": true,
+    "bytes": 260967,
+    "deflate": 260936,
+    "xz": 203924,
+    "spans": 0,
+    "modelled": 0,
+    "models": {},
+    "modes": {},
+    "has_law": false,
+    "encode": 1.8866895999963162
+  },
+  {
+    "suite": "unknown",
+    "name": "order3-add",
+    "gate": false,
+    "bytes": 260967,
+    "deflate": 260936,
+    "xz": 203924,
+    "spans": 0,
+    "modelled": 0,
+    "models": {},
+    "modes": {},
+    "has_law": false,
+    "encode": 3.5824675999974716
+  },
+  {
+    "suite": "unknown",
+    "name": "prime-lcg",
+    "gate": true,
+    "bytes": 262261,
+    "deflate": 262230,
+    "xz": 262216,
+    "spans": 0,
+    "modelled": 0,
+    "models": {},
+    "modes": {},
+    "has_law": false,
+    "encode": 2.028043100006471
+  },
+  {
+    "suite": "unknown",
+    "name": "prime-lcg",
+    "gate": false,
+    "bytes": 262261,
+    "deflate": 262230,
+    "xz": 262216,
+    "spans": 0,
+    "modelled": 0,
+    "models": {},
+    "modes": {},
+    "has_law": false,
+    "encode": 3.815034100000048
+  },
+  {
+    "suite": "unknown",
+    "name": "perm-map",
+    "gate": true,
+    "bytes": 1059,
+    "deflate": 1028,
+    "xz": 252,
+    "spans": 0,
+    "modelled": 0,
+    "models": {},
+    "modes": {},
+    "has_law": false,
+    "encode": 1.6489682999963406
+  },
+  {
+    "suite": "unknown",
+    "name": "perm-map",
+    "gate": false,
+    "bytes": 1059,
+    "deflate": 1028,
+    "xz": 252,
+    "spans": 0,
+    "modelled": 0,
+    "models": {},
+    "modes": {},
+    "has_law": false,
+    "encode": 1.7861267999978736
+  },
+  {
+    "suite": "unknown",
+    "name": "mul-xor",
+    "gate": true,
+    "bytes": 79,
+    "deflate": 257253,
+    "xz": 184968,
+    "spans": 1,
+    "modelled": 262144,
+    "models": {
+      "program-word": 1
+    },
+    "modes": {
+      "exact": 1
+    },
+    "has_law": false,
+    "encode": 0.1520643999974709
+  },
+  {
+    "suite": "unknown",
+    "name": "mul-xor",
+    "gate": false,
+    "bytes": 79,
+    "deflate": 257253,
+    "xz": 184968,
+    "spans": 1,
+    "modelled": 262144,
+    "models": {
+      "program-word": 1
+    },
+    "modes": {
+      "exact": 1
+    },
+    "has_law": false,
+    "encode": 0.2778985999975703
+  },
+  {
+    "suite": "unknown",
+    "name": "rot-add",
+    "gate": true,
+    "bytes": 77,
+    "deflate": 1088,
+    "xz": 312,
+    "spans": 1,
+    "modelled": 262144,
+    "models": {
+      "program-word": 1
+    },
+    "modes": {
+      "exact": 1
+    },
+    "has_law": false,
+    "encode": 0.2761211999968509
+  },
+  {
+    "suite": "unknown",
+    "name": "rot-add",
+    "gate": false,
+    "bytes": 77,
+    "deflate": 1088,
+    "xz": 312,
+    "spans": 1,
+    "modelled": 262144,
+    "models": {
+      "program-word": 1
+    },
+    "modes": {
+      "exact": 1
+    },
+    "has_law": false,
+    "encode": 0.2651689999984228
+  },
+  {
+    "suite": "decompose",
+    "name": "order2-u32",
+    "chain": [
+      9
+    ],
+    "input": 262144,
+    "backend-only": {
+      "bytes": 262261,
+      "encode": 0.007859999997890554,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    },
+    "backend+tx": {
+      "bytes": 195550,
+      "encode": 0.008955199999036267,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        9
+      ]
+    },
+    "backend+exact": {
+      "bytes": 84,
+      "encode": 0.29100279999693157,
+      "spans": 1,
+      "modelled": 262144,
+      "modes": {
+        "exact": 1
+      },
+      "models": {
+        "order2-word": 1
+      },
+      "chain": [
+        0
+      ]
+    },
+    "backend+model+residual": {
+      "bytes": 84,
+      "encode": 0.28174509999371367,
+      "spans": 1,
+      "modelled": 262144,
+      "modes": {
+        "exact": 1
+      },
+      "models": {
+        "order2-word": 1
+      },
+      "chain": [
+        0
+      ]
+    },
+    "program": {
+      "bytes": 84,
+      "encode": 0.304367299999285,
+      "spans": 1,
+      "modelled": 262144,
+      "modes": {
+        "exact": 1
+      },
+      "models": {
+        "order2-word": 1
+      },
+      "chain": [
+        0
+      ]
+    },
+    "full": {
+      "bytes": 84,
+      "encode": 0.28250300000217976,
+      "spans": 1,
+      "modelled": 262144,
+      "modes": {
+        "exact": 1
+      },
+      "models": {
+        "order2-word": 1
+      },
+      "chain": [
+        0
+      ]
+    }
+  },
+  {
+    "suite": "decompose",
+    "name": "cross-3x-u16",
+    "chain": [
+      6,
+      2
+    ],
+    "input": 262144,
+    "backend-only": {
+      "bytes": 258595,
+      "encode": 0.00914560000092024,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    },
+    "backend+tx": {
+      "bytes": 2199,
+      "encode": 0.05379700000048615,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        6,
+        2
+      ]
+    },
+    "backend+exact": {
+      "bytes": 2199,
+      "encode": 9.255642899996019,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        6,
+        2
+      ]
+    },
+    "backend+model+residual": {
+      "bytes": 258595,
+      "encode": 1.0025196999995387,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    },
+    "program": {
+      "bytes": 258595,
+      "encode": 1.003395300002012,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    },
+    "full": {
+      "bytes": 445,
+      "encode": 3.438318900000013,
+      "spans": 3,
+      "modelled": 262144,
+      "modes": {
+        "exceptions": 3
+      },
+      "models": {
+        "period-bytes": 3
+      },
+      "chain": [
+        6,
+        2
+      ]
+    }
+  },
+  {
+    "suite": "decompose",
+    "name": "ecg-train",
+    "chain": [
+      6,
+      1
+    ],
+    "input": 262144,
+    "backend-only": {
+      "bytes": 160000,
+      "encode": 0.015066899999510497,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    },
+    "backend+tx": {
+      "bytes": 92944,
+      "encode": 0.05676149999635527,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        6,
+        1
+      ]
+    },
+    "backend+exact": {
+      "bytes": 92944,
+      "encode": 2.9386865999986185,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        6,
+        1
+      ]
+    },
+    "backend+model+residual": {
+      "bytes": 160000,
+      "encode": 1.0963480999998865,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    },
+    "program": {
+      "bytes": 160000,
+      "encode": 1.0834591000020737,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    },
+    "full": {
+      "bytes": 92944,
+      "encode": 6.325631200001226,
+      "spans": 1,
+      "modelled": 40064,
+      "modes": {
+        "exceptions": 1
+      },
+      "models": {
+        "period-bytes": 1
+      },
+      "chain": [
+        6,
+        1
+      ]
+    }
+  },
+  {
+    "suite": "decompose",
+    "name": "eeg-train",
+    "chain": [
+      0
+    ],
+    "input": 262144,
+    "backend-only": {
+      "bytes": 65138,
+      "encode": 0.022330899999360554,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    },
+    "backend+tx": {
+      "bytes": 65138,
+      "encode": 0.020482499996433035,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    },
+    "backend+exact": {
+      "bytes": 65138,
+      "encode": 1.3628227000008337,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    },
+    "backend+model+residual": {
+      "bytes": 65138,
+      "encode": 1.419037899999239,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    },
+    "program": {
+      "bytes": 65138,
+      "encode": 1.6510058999992907,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    },
+    "full": {
+      "bytes": 65138,
+      "encode": 1.402959600003669,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    }
+  },
+  {
+    "suite": "decompose",
+    "name": "text-train",
+    "chain": [
+      0
+    ],
+    "input": 262144,
+    "backend-only": {
+      "bytes": 95566,
+      "encode": 0.011470099998405203,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    },
+    "backend+tx": {
+      "bytes": 95566,
+      "encode": 0.011479799999506213,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    },
+    "backend+exact": {
+      "bytes": 95566,
+      "encode": 1.4485758999944665,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    },
+    "backend+model+residual": {
+      "bytes": 95566,
+      "encode": 1.4766199000005145,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    },
+    "program": {
+      "bytes": 95566,
+      "encode": 1.7343965000036405,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    },
+    "full": {
+      "bytes": 95566,
+      "encode": 1.4920864000014262,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    }
+  },
+  {
+    "suite": "decompose",
+    "name": "weights-train",
+    "chain": [
+      8
+    ],
+    "input": 262144,
+    "backend-only": {
+      "bytes": 238680,
+      "encode": 0.013483499998983461,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    },
+    "backend+tx": {
+      "bytes": 238680,
+      "encode": 0.012095400001271628,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    },
+    "backend+exact": {
+      "bytes": 238680,
+      "encode": 1.4310857000018586,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    },
+    "backend+model+residual": {
+      "bytes": 238680,
+      "encode": 1.4521662999977707,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    },
+    "program": {
+      "bytes": 238680,
+      "encode": 1.4484063000054448,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    },
+    "full": {
+      "bytes": 238680,
+      "encode": 1.3747879000002285,
+      "spans": 0,
+      "modelled": 0,
+      "modes": {},
+      "models": {},
+      "chain": [
+        0
+      ]
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "order2-u32",
+    "rate": 0.0,
+    "chain": [
+      9
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 262230,
+        "encode": 0.009069600004295353,
+        "decode": 0.00019500000053085387
+      },
+      "zstd-19": {
+        "bytes": 262159,
+        "encode": 0.018062700000882614,
+        "decode": 0.00012280000373721123
+      },
+      "xz-6": {
+        "bytes": 262216,
+        "encode": 0.09326689999579685,
+        "decode": 0.0005689000026904978
+      },
+      "sxz4-off": {
+        "bytes": 262261,
+        "encode": 0.009571700000378769,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 262261,
+        "encode": 0.01247759999387199,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 84,
+        "encode": 0.35372369999822695,
+        "decode": 0.0,
+        "spans": 1,
+        "modelled": 262144,
+        "modes": {
+          "exact": 1
+        },
+        "models": {
+          "order2-word": 1
+        },
+        "chain": [
+          0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "order2-u32",
+    "rate": 0.001,
+    "chain": [
+      9
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 262230,
+        "encode": 0.009231999996700324,
+        "decode": 0.0002012999975704588
+      },
+      "zstd-19": {
+        "bytes": 262159,
+        "encode": 0.019565399998100474,
+        "decode": 0.00012760000390699133
+      },
+      "xz-6": {
+        "bytes": 262216,
+        "encode": 0.06416639999952167,
+        "decode": 0.0005416999993030913
+      },
+      "sxz4-off": {
+        "bytes": 262261,
+        "encode": 0.01269970000430476,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 262261,
+        "encode": 0.010776700000860728,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 217,
+        "encode": 0.5363728999946034,
+        "decode": 0.0,
+        "spans": 1,
+        "modelled": 262144,
+        "modes": {
+          "exceptions": 1
+        },
+        "models": {
+          "order2-word": 1
+        },
+        "chain": [
+          0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "order2-u32",
+    "rate": 0.01,
+    "chain": [
+      9
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 262230,
+        "encode": 0.008870899997418746,
+        "decode": 0.00016099999629659578
+      },
+      "zstd-19": {
+        "bytes": 262159,
+        "encode": 0.027068099996540695,
+        "decode": 6.519999442389235e-05
+      },
+      "xz-6": {
+        "bytes": 262216,
+        "encode": 0.052307100006146356,
+        "decode": 0.0005090999984531663
+      },
+      "sxz4-off": {
+        "bytes": 262261,
+        "encode": 0.009008299995912239,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 262261,
+        "encode": 0.009260200000426266,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 1219,
+        "encode": 0.6779459000026691,
+        "decode": 0.0,
+        "spans": 1,
+        "modelled": 262144,
+        "modes": {
+          "exceptions": 1
+        },
+        "models": {
+          "order2-word": 1
+        },
+        "chain": [
+          0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "order2-u32",
+    "rate": 0.03,
+    "chain": [
+      9
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 262230,
+        "encode": 0.012813100001949351,
+        "decode": 0.0002573000019765459
+      },
+      "zstd-19": {
+        "bytes": 262159,
+        "encode": 0.032271900003252085,
+        "decode": 8.650000381749123e-05
+      },
+      "xz-6": {
+        "bytes": 262216,
+        "encode": 0.059858900000108406,
+        "decode": 0.0005504000000655651
+      },
+      "sxz4-off": {
+        "bytes": 262261,
+        "encode": 0.0095835000029183,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 262261,
+        "encode": 0.009411200000613462,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 2873,
+        "encode": 0.658055300002161,
+        "decode": 0.0,
+        "spans": 1,
+        "modelled": 262144,
+        "modes": {
+          "exceptions": 1
+        },
+        "models": {
+          "order2-word": 1
+        },
+        "chain": [
+          0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "order2-u32",
+    "rate": 0.05,
+    "chain": [
+      9
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 262230,
+        "encode": 0.010852200000954326,
+        "decode": 0.00023099999816622585
+      },
+      "zstd-19": {
+        "bytes": 262159,
+        "encode": 0.03406169999652775,
+        "decode": 8.610000077169389e-05
+      },
+      "xz-6": {
+        "bytes": 262216,
+        "encode": 0.07466480000584852,
+        "decode": 0.0006635999961872585
+      },
+      "sxz4-off": {
+        "bytes": 262261,
+        "encode": 0.008898000000044703,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 262261,
+        "encode": 0.009397699999681208,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 4428,
+        "encode": 0.6736911999978474,
+        "decode": 0.0,
+        "spans": 1,
+        "modelled": 262144,
+        "modes": {
+          "exceptions": 1
+        },
+        "models": {
+          "order2-word": 1
+        },
+        "chain": [
+          0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "order2-u32",
+    "rate": 0.1,
+    "chain": [
+      9
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 262230,
+        "encode": 0.009819599996262696,
+        "decode": 0.00018099999579135329
+      },
+      "zstd-19": {
+        "bytes": 262159,
+        "encode": 0.027182099998753984,
+        "decode": 0.0001984999980777502
+      },
+      "xz-6": {
+        "bytes": 262216,
+        "encode": 0.06910259999858681,
+        "decode": 0.0005949999977019615
+      },
+      "sxz4-off": {
+        "bytes": 262261,
+        "encode": 0.01200539999990724,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 262261,
+        "encode": 0.013036399999691639,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 8062,
+        "encode": 0.5133709000001545,
+        "decode": 0.0,
+        "spans": 1,
+        "modelled": 262144,
+        "modes": {
+          "exceptions": 1
+        },
+        "models": {
+          "order2-word": 1
+        },
+        "chain": [
+          0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "order2-u32",
+    "rate": 0.2,
+    "chain": [
+      9
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 262230,
+        "encode": 0.0121071999965352,
+        "decode": 0.00019920000340789557
+      },
+      "zstd-19": {
+        "bytes": 262159,
+        "encode": 0.021305100002791733,
+        "decode": 8.459999662591144e-05
+      },
+      "xz-6": {
+        "bytes": 262216,
+        "encode": 0.054966900002909824,
+        "decode": 0.0005412000027718022
+      },
+      "sxz4-off": {
+        "bytes": 262261,
+        "encode": 0.009019099998113234,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 262261,
+        "encode": 0.009374300003401004,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 13126,
+        "encode": 0.5564110999985132,
+        "decode": 0.0,
+        "spans": 1,
+        "modelled": 262144,
+        "modes": {
+          "moddiff": 1
+        },
+        "models": {
+          "order2-word": 1
+        },
+        "chain": [
+          0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "affine-u16",
+    "rate": 0.0,
+    "chain": [
+      2
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 262233,
+        "encode": 0.007893099995271768,
+        "decode": 0.00019109999993816018
+      },
+      "zstd-19": {
+        "bytes": 131097,
+        "encode": 0.009852700000919867,
+        "decode": 7.520000508520752e-05
+      },
+      "xz-6": {
+        "bytes": 113148,
+        "encode": 0.04386969999904977,
+        "decode": 0.009403500000189524
+      },
+      "sxz4-off": {
+        "bytes": 262264,
+        "encode": 0.010003800001868512,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 262264,
+        "encode": 0.009211899996444117,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 71,
+        "encode": 3.951690099995176,
+        "decode": 0.0,
+        "spans": 1,
+        "modelled": 262144,
+        "modes": {
+          "exact": 1
+        },
+        "models": {
+          "affine-word": 1
+        },
+        "chain": [
+          0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "affine-u16",
+    "rate": 0.001,
+    "chain": [
+      2
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 262233,
+        "encode": 0.007178699997894,
+        "decode": 0.0001714000027277507
+      },
+      "zstd-19": {
+        "bytes": 131422,
+        "encode": 0.014097699997364543,
+        "decode": 7.510000432375818e-05
+      },
+      "xz-6": {
+        "bytes": 113504,
+        "encode": 0.0328730999972322,
+        "decode": 0.007012699999904726
+      },
+      "sxz4-off": {
+        "bytes": 262264,
+        "encode": 0.007299400000192691,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 262264,
+        "encode": 0.007287899999937508,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 451,
+        "encode": 4.815804600002593,
+        "decode": 0.0,
+        "spans": 1,
+        "modelled": 262144,
+        "modes": {
+          "exceptions": 1
+        },
+        "models": {
+          "affine-word": 1
+        },
+        "chain": [
+          0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "affine-u16",
+    "rate": 0.01,
+    "chain": [
+      2
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 262230,
+        "encode": 0.007947199999762233,
+        "decode": 0.0001613000058569014
+      },
+      "zstd-19": {
+        "bytes": 133512,
+        "encode": 0.05315560000599362,
+        "decode": 0.0001244000013684854
+      },
+      "xz-6": {
+        "bytes": 53892,
+        "encode": 0.04721630000130972,
+        "decode": 0.006705699997837655
+      },
+      "sxz4-off": {
+        "bytes": 262261,
+        "encode": 0.01045460000023013,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 262261,
+        "encode": 0.00789719999738736,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 2886,
+        "encode": 4.955574200001138,
+        "decode": 0.0,
+        "spans": 1,
+        "modelled": 262144,
+        "modes": {
+          "exceptions": 1
+        },
+        "models": {
+          "affine-word": 1
+        },
+        "chain": [
+          0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "affine-u16",
+    "rate": 0.03,
+    "chain": [
+      9,
+      1
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 262230,
+        "encode": 0.007830100003047846,
+        "decode": 0.00015080000594025478
+      },
+      "zstd-19": {
+        "bytes": 136646,
+        "encode": 0.04699339999933727,
+        "decode": 0.0001677999971434474
+      },
+      "xz-6": {
+        "bytes": 53220,
+        "encode": 0.05349769999884302,
+        "decode": 0.006201500000315718
+      },
+      "sxz4-off": {
+        "bytes": 262261,
+        "encode": 0.008052800003497396,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 262261,
+        "encode": 0.00829669999802718,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 7104,
+        "encode": 5.317222099998617,
+        "decode": 0.0,
+        "spans": 1,
+        "modelled": 262144,
+        "modes": {
+          "exceptions": 1
+        },
+        "models": {
+          "affine-word": 1
+        },
+        "chain": [
+          0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "affine-u16",
+    "rate": 0.05,
+    "chain": [
+      7,
+      1
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 262230,
+        "encode": 0.011892299997271039,
+        "decode": 0.0002629000009619631
+      },
+      "zstd-19": {
+        "bytes": 139080,
+        "encode": 0.040674900003068615,
+        "decode": 0.0002787000048556365
+      },
+      "xz-6": {
+        "bytes": 55464,
+        "encode": 0.07990609999978915,
+        "decode": 0.007537099998444319
+      },
+      "sxz4-off": {
+        "bytes": 262261,
+        "encode": 0.011342199999489821,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 262261,
+        "encode": 0.009015499999804888,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 11108,
+        "encode": 4.830565900003421,
+        "decode": 0.0,
+        "spans": 1,
+        "modelled": 262144,
+        "modes": {
+          "exceptions": 1
+        },
+        "models": {
+          "affine-word": 1
+        },
+        "chain": [
+          0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "affine-u16",
+    "rate": 0.1,
+    "chain": [
+      7,
+      1
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 262171,
+        "encode": 0.010035100000095554,
+        "decode": 0.0009466999981668778
+      },
+      "zstd-19": {
+        "bytes": 145520,
+        "encode": 0.028248100003111176,
+        "decode": 0.00025099999766098335
+      },
+      "xz-6": {
+        "bytes": 59296,
+        "encode": 0.06014270000014221,
+        "decode": 0.007164599999669008
+      },
+      "sxz4-off": {
+        "bytes": 262202,
+        "encode": 0.008837300003506243,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 262202,
+        "encode": 0.009626600003684871,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 20739,
+        "encode": 4.4862796000015805,
+        "decode": 0.0,
+        "spans": 1,
+        "modelled": 262144,
+        "modes": {
+          "exceptions": 1
+        },
+        "models": {
+          "affine-word": 1
+        },
+        "chain": [
+          0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "affine-u16",
+    "rate": 0.2,
+    "chain": [
+      5,
+      1
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 261478,
+        "encode": 0.009557299999869429,
+        "decode": 0.0013861999977962114
+      },
+      "zstd-19": {
+        "bytes": 155842,
+        "encode": 0.026175500002864283,
+        "decode": 0.0004048999981023371
+      },
+      "xz-6": {
+        "bytes": 67360,
+        "encode": 0.056798699995852076,
+        "decode": 0.008576000000175554
+      },
+      "sxz4-off": {
+        "bytes": 261509,
+        "encode": 0.009947899998223875,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 261509,
+        "encode": 0.010068000003229827,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 34021,
+        "encode": 4.816911099995195,
+        "decode": 0.0,
+        "spans": 1,
+        "modelled": 131200,
+        "modes": {
+          "exceptions": 1
+        },
+        "models": {
+          "period-bytes": 1
+        },
+        "chain": [
+          5,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "quadratic-u16",
+    "rate": 0.0,
+    "chain": [
+      10,
+      1
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 258717,
+        "encode": 0.010456899995915592,
+        "decode": 0.0014454000047408044
+      },
+      "zstd-19": {
+        "bytes": 131097,
+        "encode": 0.012375300000712741,
+        "decode": 5.96999961999245e-05
+      },
+      "xz-6": {
+        "bytes": 130516,
+        "encode": 0.03070329999900423,
+        "decode": 0.007987099997990299
+      },
+      "sxz4-off": {
+        "bytes": 258748,
+        "encode": 0.01071389999560779,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 258748,
+        "encode": 0.010890000005019829,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 73,
+        "encode": 0.26574409999739146,
+        "decode": 0.0,
+        "spans": 1,
+        "modelled": 262144,
+        "modes": {
+          "exact": 1
+        },
+        "models": {
+          "quadratic-word": 1
+        },
+        "chain": [
+          0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "quadratic-u16",
+    "rate": 0.001,
+    "chain": [
+      10,
+      1
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 258732,
+        "encode": 0.009334400005172938,
+        "decode": 0.0015694000030634925
+      },
+      "zstd-19": {
+        "bytes": 131424,
+        "encode": 0.015860400002566166,
+        "decode": 6.040000153006986e-05
+      },
+      "xz-6": {
+        "bytes": 130868,
+        "encode": 0.040285700000822544,
+        "decode": 0.007859299999836367
+      },
+      "sxz4-off": {
+        "bytes": 258763,
+        "encode": 0.00969200000690762,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 258763,
+        "encode": 0.011612499998591375,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 455,
+        "encode": 0.45997670000360813,
+        "decode": 0.0,
+        "spans": 1,
+        "modelled": 262144,
+        "modes": {
+          "exceptions": 1
+        },
+        "models": {
+          "quadratic-word": 1
+        },
+        "chain": [
+          0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "quadratic-u16",
+    "rate": 0.01,
+    "chain": [
+      10,
+      1
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 258831,
+        "encode": 0.009904500002448913,
+        "decode": 0.0014311999984784052
+      },
+      "zstd-19": {
+        "bytes": 133558,
+        "encode": 0.05497050000121817,
+        "decode": 8.830000297166407e-05
+      },
+      "xz-6": {
+        "bytes": 132792,
+        "encode": 0.03868499999953201,
+        "decode": 0.010763399994175415
+      },
+      "sxz4-off": {
+        "bytes": 258862,
+        "encode": 0.010963299995637499,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 258862,
+        "encode": 0.009351699998660479,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 2887,
+        "encode": 0.48936919999687234,
+        "decode": 0.0,
+        "spans": 1,
+        "modelled": 262144,
+        "modes": {
+          "exceptions": 1
+        },
+        "models": {
+          "quadratic-word": 1
+        },
+        "chain": [
+          0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "quadratic-u16",
+    "rate": 0.03,
+    "chain": [
+      10,
+      1
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 259046,
+        "encode": 0.010985799999616574,
+        "decode": 0.0014338000037241727
+      },
+      "zstd-19": {
+        "bytes": 137761,
+        "encode": 0.04787639999995008,
+        "decode": 0.00021710000146413222
+      },
+      "xz-6": {
+        "bytes": 135712,
+        "encode": 0.053708400002506096,
+        "decode": 0.009439999994356185
+      },
+      "sxz4-off": {
+        "bytes": 259077,
+        "encode": 0.009607200001482852,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 259077,
+        "encode": 0.010632700003043283,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 7079,
+        "encode": 0.6374426999973366,
+        "decode": 0.0,
+        "spans": 1,
+        "modelled": 262144,
+        "modes": {
+          "exceptions": 1
+        },
+        "models": {
+          "quadratic-word": 1
+        },
+        "chain": [
+          0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "quadratic-u16",
+    "rate": 0.05,
+    "chain": [
+      10,
+      1
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 259276,
+        "encode": 0.01275329999771202,
+        "decode": 0.0018102000030921772
+      },
+      "zstd-19": {
+        "bytes": 141295,
+        "encode": 0.05660939999506809,
+        "decode": 0.00020190000213915482
+      },
+      "xz-6": {
+        "bytes": 138288,
+        "encode": 0.06886410000151955,
+        "decode": 0.010434799994982313
+      },
+      "sxz4-off": {
+        "bytes": 259307,
+        "encode": 0.015345899999374524,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 259307,
+        "encode": 0.01601439999649301,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 11021,
+        "encode": 0.49203590000252007,
+        "decode": 0.0,
+        "spans": 1,
+        "modelled": 262144,
+        "modes": {
+          "exceptions": 1
+        },
+        "models": {
+          "quadratic-word": 1
+        },
+        "chain": [
+          0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "quadratic-u16",
+    "rate": 0.1,
+    "chain": [
+      10,
+      1
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 259847,
+        "encode": 0.013421600000583567,
+        "decode": 0.0016749999995226972
+      },
+      "zstd-19": {
+        "bytes": 149676,
+        "encode": 0.036556899998686276,
+        "decode": 0.00021440000273287296
+      },
+      "xz-6": {
+        "bytes": 144332,
+        "encode": 0.06816490000346676,
+        "decode": 0.002573300000221934
+      },
+      "sxz4-off": {
+        "bytes": 259878,
+        "encode": 0.010651699994923547,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 259878,
+        "encode": 0.011609200002567377,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 20729,
+        "encode": 0.5626696999970591,
+        "decode": 0.0,
+        "spans": 1,
+        "modelled": 262144,
+        "modes": {
+          "exceptions": 1
+        },
+        "models": {
+          "quadratic-word": 1
+        },
+        "chain": [
+          0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "quadratic-u16",
+    "rate": 0.2,
+    "chain": [
+      10,
+      1
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 260941,
+        "encode": 0.010634300000674557,
+        "decode": 0.001414399994246196
+      },
+      "zstd-19": {
+        "bytes": 166104,
+        "encode": 0.02624719999585068,
+        "decode": 0.0001970999946934171
+      },
+      "xz-6": {
+        "bytes": 152772,
+        "encode": 0.06399039999814704,
+        "decode": 0.0029890999940107577
+      },
+      "sxz4-off": {
+        "bytes": 260972,
+        "encode": 0.010049700002127793,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 260972,
+        "encode": 0.010948499999358319,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 35456,
+        "encode": 0.6374892999956501,
+        "decode": 0.0,
+        "spans": 1,
+        "modelled": 262144,
+        "modes": {
+          "moddiff": 1
+        },
+        "models": {
+          "quadratic-word": 1
+        },
+        "chain": [
+          0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "float32-ramp",
+    "rate": 0.0,
+    "chain": [
+      3
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 144563,
+        "encode": 0.009039500000653788,
+        "decode": 0.00157789999502711
+      },
+      "zstd-19": {
+        "bytes": 127100,
+        "encode": 0.039320799995039124,
+        "decode": 0.0009659999996074475
+      },
+      "xz-6": {
+        "bytes": 101736,
+        "encode": 0.05575429999589687,
+        "decode": 0.008848299999954179
+      },
+      "sxz4-off": {
+        "bytes": 144594,
+        "encode": 0.009164200004306622,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 144594,
+        "encode": 0.01164960000460269,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 6183,
+        "encode": 3.3690262000018265,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          3
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "float32-ramp",
+    "rate": 0.001,
+    "chain": [
+      3
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 145088,
+        "encode": 0.009739799999806564,
+        "decode": 0.0012073999969288707
+      },
+      "zstd-19": {
+        "bytes": 127885,
+        "encode": 0.034553400000731926,
+        "decode": 0.000821699999505654
+      },
+      "xz-6": {
+        "bytes": 102384,
+        "encode": 0.052651799996965565,
+        "decode": 0.008015999999770429
+      },
+      "sxz4-off": {
+        "bytes": 145119,
+        "encode": 0.008663200002047233,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 145119,
+        "encode": 0.009199500003887806,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 8058,
+        "encode": 3.0898729000036838,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          3
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "float32-ramp",
+    "rate": 0.01,
+    "chain": [
+      7,
+      1
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 148889,
+        "encode": 0.010167300002649426,
+        "decode": 0.0014733000061823986
+      },
+      "zstd-19": {
+        "bytes": 132832,
+        "encode": 0.037933500003418885,
+        "decode": 0.0009336000002804212
+      },
+      "xz-6": {
+        "bytes": 106592,
+        "encode": 0.06051459999434883,
+        "decode": 0.007984200005012099
+      },
+      "sxz4-off": {
+        "bytes": 148920,
+        "encode": 0.011107300000730902,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 148920,
+        "encode": 0.009397699999681208,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 15199,
+        "encode": 11.628454699995928,
+        "decode": 0.0,
+        "spans": 2,
+        "modelled": 110592,
+        "modes": {
+          "exceptions": 2
+        },
+        "models": {
+          "lcg-word": 1,
+          "period-bytes": 1
+        },
+        "chain": [
+          7,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "float32-ramp",
+    "rate": 0.03,
+    "chain": [
+      7,
+      1
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 156935,
+        "encode": 0.01211939999484457,
+        "decode": 0.0015609000038239174
+      },
+      "zstd-19": {
+        "bytes": 143116,
+        "encode": 0.04268600000068545,
+        "decode": 0.00128009999752976
+      },
+      "xz-6": {
+        "bytes": 115092,
+        "encode": 0.060275499999988824,
+        "decode": 0.008978300000308082
+      },
+      "sxz4-off": {
+        "bytes": 156966,
+        "encode": 0.010664300003554672,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 156966,
+        "encode": 0.010171900001296308,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 28925,
+        "encode": 14.16613010000583,
+        "decode": 0.0,
+        "spans": 1,
+        "modelled": 53248,
+        "modes": {
+          "exceptions": 1
+        },
+        "models": {
+          "period-bytes": 1
+        },
+        "chain": [
+          7,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "float32-ramp",
+    "rate": 0.05,
+    "chain": [
+      7,
+      1
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 163768,
+        "encode": 0.010848899997654371,
+        "decode": 0.002447899998514913
+      },
+      "zstd-19": {
+        "bytes": 152376,
+        "encode": 0.03606890000082785,
+        "decode": 0.0012129000024287961
+      },
+      "xz-6": {
+        "bytes": 122328,
+        "encode": 0.06375269999989541,
+        "decode": 0.00931779999518767
+      },
+      "sxz4-off": {
+        "bytes": 163799,
+        "encode": 0.010649499999999534,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 163799,
+        "encode": 0.011837300000479445,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 39366,
+        "encode": 3.597385500004748,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          7,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "float32-ramp",
+    "rate": 0.1,
+    "chain": [
+      7,
+      1
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 178557,
+        "encode": 0.010510300002351869,
+        "decode": 0.001506699998572003
+      },
+      "zstd-19": {
+        "bytes": 170690,
+        "encode": 0.03481450000253972,
+        "decode": 0.0008435000054305419
+      },
+      "xz-6": {
+        "bytes": 137644,
+        "encode": 0.063900699999067,
+        "decode": 0.008964900000137277
+      },
+      "sxz4-off": {
+        "bytes": 178588,
+        "encode": 0.009935000001860317,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 178588,
+        "encode": 0.011853700001665857,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 60163,
+        "encode": 3.009501900000032,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          7,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "suite": "noise",
+    "name": "float32-ramp",
+    "rate": 0.2,
+    "chain": [
+      7,
+      1
+    ],
+    "rows": {
+      "deflate-6": {
+        "bytes": 199883,
+        "encode": 0.013236799997685011,
+        "decode": 0.001839500000642147
+      },
+      "zstd-19": {
+        "bytes": 196248,
+        "encode": 0.04452389999642037,
+        "decode": 0.0009630999993532896
+      },
+      "xz-6": {
+        "bytes": 162600,
+        "encode": 0.08152490000065882,
+        "decode": 0.012581200004206039
+      },
+      "sxz4-off": {
+        "bytes": 199914,
+        "encode": 0.013133499996911269,
+        "decode": 0.0
+      },
+      "sxz4-tx": {
+        "bytes": 199914,
+        "encode": 0.016339500005415175,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          0
+        ]
+      },
+      "sxz4-on": {
+        "bytes": 93529,
+        "encode": 2.6879432999994606,
+        "decode": 0.0,
+        "spans": 0,
+        "modelled": 0,
+        "modes": {},
+        "models": {},
+        "chain": [
+          7,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "suite": "spans",
+    "length": 512,
+    "count": 1,
+    "mode": "grid1024",
+    "planted": [
+      [
+        189927,
+        512
+      ]
+    ],
+    "found": [
+      null
+    ],
+    "bytes": 262261,
+    "spans": 0,
+    "modelled": 0,
+    "encode": 1.7100815999947372
+  },
+  {
+    "suite": "spans",
+    "length": 512,
+    "count": 1,
+    "mode": "grid256",
+    "planted": [
+      [
+        189927,
+        512
+      ]
+    ],
+    "found": [
+      null
+    ],
+    "bytes": 262261,
+    "spans": 0,
+    "modelled": 0,
+    "encode": 24.678076299998793
+  },
+  {
+    "suite": "spans",
+    "length": 512,
+    "count": 1,
+    "mode": "grid1024-refine",
+    "planted": [
+      [
+        189927,
+        512
+      ]
+    ],
+    "found": [
+      null
+    ],
+    "bytes": 262261,
+    "spans": 0,
+    "modelled": 0,
+    "encode": 1.5015983000048436
+  },
+  {
+    "suite": "spans",
+    "length": 512,
+    "count": 1,
+    "mode": "oracle",
+    "planted": [
+      [
+        189927,
+        512
+      ]
+    ],
+    "found": [
+      null
+    ],
+    "bytes": null,
+    "spans": 0,
+    "modelled": null,
+    "encode": 0.0
+  },
+  {
+    "suite": "spans",
+    "length": 512,
+    "count": 3,
+    "mode": "grid1024",
+    "planted": [
+      [
+        57213,
+        512
+      ],
+      [
+        173637,
+        512
+      ],
+      [
+        244482,
+        512
+      ]
+    ],
+    "found": [
+      null,
+      null,
+      null
+    ],
+    "bytes": 262261,
+    "spans": 0,
+    "modelled": 0,
+    "encode": 1.4973949999985052
+  },
+  {
+    "suite": "spans",
+    "length": 512,
+    "count": 3,
+    "mode": "grid256",
+    "planted": [
+      [
+        57213,
+        512
+      ],
+      [
+        173637,
+        512
+      ],
+      [
+        244482,
+        512
+      ]
+    ],
+    "found": [
+      null,
+      null,
+      null
+    ],
+    "bytes": 262261,
+    "spans": 0,
+    "modelled": 0,
+    "encode": 23.065376799997466
+  },
+  {
+    "suite": "spans",
+    "length": 512,
+    "count": 3,
+    "mode": "grid1024-refine",
+    "planted": [
+      [
+        57213,
+        512
+      ],
+      [
+        173637,
+        512
+      ],
+      [
+        244482,
+        512
+      ]
+    ],
+    "found": [
+      null,
+      null,
+      null
+    ],
+    "bytes": 262261,
+    "spans": 0,
+    "modelled": 0,
+    "encode": 1.4878018000017619
+  },
+  {
+    "suite": "spans",
+    "length": 512,
+    "count": 3,
+    "mode": "oracle",
+    "planted": [
+      [
+        57213,
+        512
+      ],
+      [
+        173637,
+        512
+      ],
+      [
+        244482,
+        512
+      ]
+    ],
+    "found": [
+      null,
+      null,
+      null
+    ],
+    "bytes": null,
+    "spans": 0,
+    "modelled": null,
+    "encode": 0.0
+  },
+  {
+    "suite": "spans",
+    "length": 1024,
+    "count": 1,
+    "mode": "grid1024",
+    "planted": [
+      [
+        212685,
+        1024
+      ]
+    ],
+    "found": [
+      [
+        51,
+        0.95,
+        2207
+      ]
+    ],
+    "bytes": 261405,
+    "spans": 1,
+    "modelled": 2207,
+    "encode": 1.8691790999946534
+  },
+  {
+    "suite": "spans",
+    "length": 1024,
+    "count": 1,
+    "mode": "grid256",
+    "planted": [
+      [
+        212685,
+        1024
+      ]
+    ],
+    "found": [
+      [
+        51,
+        0.95,
+        2207
+      ]
+    ],
+    "bytes": 261405,
+    "spans": 1,
+    "modelled": 2207,
+    "encode": 23.36624109999684
+  },
+  {
+    "suite": "spans",
+    "length": 1024,
+    "count": 1,
+    "mode": "grid1024-refine",
+    "planted": [
+      [
+        212685,
+        1024
+      ]
+    ],
+    "found": [
+      [
+        51,
+        0.95,
+        2207
+      ]
+    ],
+    "bytes": 261405,
+    "spans": 1,
+    "modelled": 2207,
+    "encode": 1.811334199999692
+  },
+  {
+    "suite": "spans",
+    "length": 1024,
+    "count": 1,
+    "mode": "oracle",
+    "planted": [
+      [
+        212685,
+        1024
+      ]
+    ],
+    "found": [
+      [
+        0,
+        1.0,
+        2258
+      ]
+    ],
+    "bytes": null,
+    "spans": 1,
+    "modelled": null,
+    "encode": 0.0
+  },
+  {
+    "suite": "spans",
+    "length": 1024,
+    "count": 3,
+    "mode": "grid1024",
+    "planted": [
+      [
+        77322,
+        1024
+      ],
+      [
+        132147,
+        1024
+      ],
+      [
+        238590,
+        1024
+      ]
+    ],
+    "found": [
+      [
+        118,
+        0.885,
+        2139
+      ],
+      null,
+      null
+    ],
+    "bytes": 261473,
+    "spans": 1,
+    "modelled": 2139,
+    "encode": 1.9551646000036271
+  },
+  {
+    "suite": "spans",
+    "length": 1024,
+    "count": 3,
+    "mode": "grid256",
+    "planted": [
+      [
+        77322,
+        1024
+      ],
+      [
+        132147,
+        1024
+      ],
+      [
+        238590,
+        1024
+      ]
+    ],
+    "found": [
+      [
+        118,
+        0.885,
+        2139
+      ],
+      [
+        40,
+        0.961,
+        2218
+      ],
+      [
+        7,
+        0.993,
+        2253
+      ]
+    ],
+    "bytes": 259660,
+    "spans": 3,
+    "modelled": 6610,
+    "encode": 23.927880500006722
+  },
+  {
+    "suite": "spans",
+    "length": 1024,
+    "count": 3,
+    "mode": "grid1024-refine",
+    "planted": [
+      [
+        77322,
+        1024
+      ],
+      [
+        132147,
+        1024
+      ],
+      [
+        238590,
+        1024
+      ]
+    ],
+    "found": [
+      [
+        118,
+        0.885,
+        2139
+      ],
+      null,
+      null
+    ],
+    "bytes": 261473,
+    "spans": 1,
+    "modelled": 2139,
+    "encode": 1.9556860000011511
+  },
+  {
+    "suite": "spans",
+    "length": 1024,
+    "count": 3,
+    "mode": "oracle",
+    "planted": [
+      [
+        77322,
+        1024
+      ],
+      [
+        132147,
+        1024
+      ],
+      [
+        238590,
+        1024
+      ]
+    ],
+    "found": [
+      [
+        0,
+        1.0,
+        2257
+      ],
+      [
+        0,
+        1.0,
+        2258
+      ],
+      [
+        0,
+        1.0,
+        2260
+      ]
+    ],
+    "bytes": null,
+    "spans": 3,
+    "modelled": null,
+    "encode": 0.0
+  },
+  {
+    "suite": "spans",
+    "length": 4096,
+    "count": 1,
+    "mode": "grid1024",
+    "planted": [
+      [
+        81825,
+        4096
+      ]
+    ],
+    "found": [
+      [
+        95,
+        0.977,
+        5328
+      ]
+    ],
+    "bytes": 258390,
+    "spans": 1,
+    "modelled": 5328,
+    "encode": 2.0206401999967056
+  },
+  {
+    "suite": "spans",
+    "length": 4096,
+    "count": 1,
+    "mode": "grid256",
+    "planted": [
+      [
+        81825,
+        4096
+      ]
+    ],
+    "found": [
+      [
+        95,
+        0.977,
+        5328
+      ]
+    ],
+    "bytes": 258390,
+    "spans": 1,
+    "modelled": 5328,
+    "encode": 23.75941640000383
+  },
+  {
+    "suite": "spans",
+    "length": 4096,
+    "count": 1,
+    "mode": "grid1024-refine",
+    "planted": [
+      [
+        81825,
+        4096
+      ]
+    ],
+    "found": [
+      [
+        95,
+        0.977,
+        5328
+      ]
+    ],
+    "bytes": 258390,
+    "spans": 1,
+    "modelled": 5328,
+    "encode": 1.8723566999979084
+  },
+  {
+    "suite": "spans",
+    "length": 4096,
+    "count": 1,
+    "mode": "oracle",
+    "planted": [
+      [
+        81825,
+        4096
+      ]
+    ],
+    "found": [
+      [
+        0,
+        1.0,
+        5329
+      ]
+    ],
+    "bytes": null,
+    "spans": 1,
+    "modelled": null,
+    "encode": 0.0
+  },
+  {
+    "suite": "spans",
+    "length": 4096,
+    "count": 3,
+    "mode": "grid1024",
+    "planted": [
+      [
+        6132,
+        4096
+      ],
+      [
+        92649,
+        4096
+      ],
+      [
+        221874,
+        4096
+      ]
+    ],
+    "found": [
+      [
+        12,
+        0.997,
+        5328
+      ],
+      [
+        103,
+        0.975,
+        5334
+      ],
+      [
+        116,
+        0.972,
+        5332
+      ]
+    ],
+    "bytes": 250532,
+    "spans": 3,
+    "modelled": 15994,
+    "encode": 3.2136243999993894
+  },
+  {
+    "suite": "spans",
+    "length": 4096,
+    "count": 3,
+    "mode": "grid256",
+    "planted": [
+      [
+        6132,
+        4096
+      ],
+      [
+        92649,
+        4096
+      ],
+      [
+        221874,
+        4096
+      ]
+    ],
+    "found": [
+      [
+        12,
+        0.997,
+        5328
+      ],
+      [
+        103,
+        0.975,
+        5334
+      ],
+      [
+        116,
+        0.972,
+        5332
+      ]
+    ],
+    "bytes": 250532,
+    "spans": 3,
+    "modelled": 15994,
+    "encode": 23.7956400999974
+  },
+  {
+    "suite": "spans",
+    "length": 4096,
+    "count": 3,
+    "mode": "grid1024-refine",
+    "planted": [
+      [
+        6132,
+        4096
+      ],
+      [
+        92649,
+        4096
+      ],
+      [
+        221874,
+        4096
+      ]
+    ],
+    "found": [
+      [
+        12,
+        0.997,
+        5328
+      ],
+      [
+        103,
+        0.975,
+        5334
+      ],
+      [
+        116,
+        0.972,
+        5332
+      ]
+    ],
+    "bytes": 250532,
+    "spans": 3,
+    "modelled": 15994,
+    "encode": 3.051602699997602
+  },
+  {
+    "suite": "spans",
+    "length": 4096,
+    "count": 3,
+    "mode": "oracle",
+    "planted": [
+      [
+        6132,
+        4096
+      ],
+      [
+        92649,
+        4096
+      ],
+      [
+        221874,
+        4096
+      ]
+    ],
+    "found": [
+      [
+        0,
+        1.0,
+        5328
+      ],
+      [
+        0,
+        1.0,
+        5331
+      ],
+      [
+        0,
+        1.0,
+        5334
+      ]
+    ],
+    "bytes": null,
+    "spans": 3,
+    "modelled": null,
+    "encode": 0.0
+  },
+  {
+    "suite": "spans",
+    "length": 16384,
+    "count": 1,
+    "mode": "grid1024",
+    "planted": [
+      [
+        152598,
+        16384
+      ]
+    ],
+    "found": [
+      [
+        106,
+        0.994,
+        17617
+      ]
+    ],
+    "bytes": 246141,
+    "spans": 1,
+    "modelled": 17617,
+    "encode": 2.18068559999665
+  },
+  {
+    "suite": "spans",
+    "length": 16384,
+    "count": 1,
+    "mode": "grid256",
+    "planted": [
+      [
+        152598,
+        16384
+      ]
+    ],
+    "found": [
+      [
+        106,
+        0.994,
+        17617
+      ]
+    ],
+    "bytes": 246141,
+    "spans": 1,
+    "modelled": 17617,
+    "encode": 23.583186900003057
+  },
+  {
+    "suite": "spans",
+    "length": 16384,
+    "count": 1,
+    "mode": "grid1024-refine",
+    "planted": [
+      [
+        152598,
+        16384
+      ]
+    ],
+    "found": [
+      [
+        106,
+        0.994,
+        17617
+      ]
+    ],
+    "bytes": 246141,
+    "spans": 1,
+    "modelled": 17617,
+    "encode": 2.06046790000255
+  },
+  {
+    "suite": "spans",
+    "length": 16384,
+    "count": 1,
+    "mode": "oracle",
+    "planted": [
+      [
+        152598,
+        16384
+      ]
+    ],
+    "found": [
+      [
+        0,
+        1.0,
+        17617
+      ]
+    ],
+    "bytes": null,
+    "spans": 1,
+    "modelled": null,
+    "encode": 0.0
+  },
+  {
+    "suite": "spans",
+    "length": 16384,
+    "count": 3,
+    "mode": "grid1024",
+    "planted": [
+      [
+        27336,
+        16384
+      ],
+      [
+        121245,
+        16384
+      ],
+      [
+        187524,
+        16384
+      ]
+    ],
+    "found": [
+      [
+        56,
+        0.997,
+        17616
+      ],
+      [
+        51,
+        0.997,
+        17618
+      ],
+      [
+        30,
+        0.998,
+        17620
+      ]
+    ],
+    "bytes": 213587,
+    "spans": 3,
+    "modelled": 52854,
+    "encode": 3.181885299993155
+  },
+  {
+    "suite": "spans",
+    "length": 16384,
+    "count": 3,
+    "mode": "grid256",
+    "planted": [
+      [
+        27336,
+        16384
+      ],
+      [
+        121245,
+        16384
+      ],
+      [
+        187524,
+        16384
+      ]
+    ],
+    "found": [
+      [
+        56,
+        0.997,
+        17616
+      ],
+      [
+        51,
+        0.997,
+        17618
+      ],
+      [
+        30,
+        0.998,
+        17620
+      ]
+    ],
+    "bytes": 213587,
+    "spans": 3,
+    "modelled": 52854,
+    "encode": 21.343994800001383
+  },
+  {
+    "suite": "spans",
+    "length": 16384,
+    "count": 3,
+    "mode": "grid1024-refine",
+    "planted": [
+      [
+        27336,
+        16384
+      ],
+      [
+        121245,
+        16384
+      ],
+      [
+        187524,
+        16384
+      ]
+    ],
+    "found": [
+      [
+        56,
+        0.997,
+        17616
+      ],
+      [
+        51,
+        0.997,
+        17618
+      ],
+      [
+        30,
+        0.998,
+        17620
+      ]
+    ],
+    "bytes": 213587,
+    "spans": 3,
+    "modelled": 52854,
+    "encode": 2.932130999994115
+  },
+  {
+    "suite": "spans",
+    "length": 16384,
+    "count": 3,
+    "mode": "oracle",
+    "planted": [
+      [
+        27336,
+        16384
+      ],
+      [
+        121245,
+        16384
+      ],
+      [
+        187524,
+        16384
+      ]
+    ],
+    "found": [
+      [
+        0,
+        1.0,
+        17616
+      ],
+      [
+        0,
+        1.0,
+        17618
+      ],
+      [
+        0,
+        1.0,
+        17620
+      ]
+    ],
+    "bytes": null,
+    "spans": 3,
+    "modelled": null,
+    "encode": 0.0
+  },
+  {
+    "suite": "spans",
+    "length": 65536,
+    "count": 1,
+    "mode": "grid1024",
+    "planted": [
+      [
+        69585,
+        65536
+      ]
+    ],
+    "found": [
+      [
+        47,
+        0.999,
+        66767
+      ]
+    ],
+    "bytes": 196940,
+    "spans": 1,
+    "modelled": 66767,
+    "encode": 1.6944925999996485
+  },
+  {
+    "suite": "spans",
+    "length": 65536,
+    "count": 1,
+    "mode": "grid256",
+    "planted": [
+      [
+        69585,
+        65536
+      ]
+    ],
+    "found": [
+      [
+        47,
+        0.999,
+        66767
+      ]
+    ],
+    "bytes": 196940,
+    "spans": 1,
+    "modelled": 66767,
+    "encode": 21.358764900003735
+  },
+  {
+    "suite": "spans",
+    "length": 65536,
+    "count": 1,
+    "mode": "grid1024-refine",
+    "planted": [
+      [
+        69585,
+        65536
+      ]
+    ],
+    "found": [
+      [
+        47,
+        0.999,
+        66767
+      ]
+    ],
+    "bytes": 196940,
+    "spans": 1,
+    "modelled": 66767,
+    "encode": 2.028112499996496
+  },
+  {
+    "suite": "spans",
+    "length": 65536,
+    "count": 1,
+    "mode": "oracle",
+    "planted": [
+      [
+        69585,
+        65536
+      ]
+    ],
+    "found": [
+      [
+        0,
+        1.0,
+        66767
+      ]
+    ],
+    "bytes": null,
+    "spans": 1,
+    "modelled": null,
+    "encode": 0.0
+  },
+  {
+    "suite": "spans",
+    "length": 65536,
+    "count": 3,
+    "mode": "grid1024",
+    "planted": [
+      [
+        12567,
+        65536
+      ],
+      [
+        104058,
+        65536
+      ],
+      [
+        183144,
+        65536
+      ]
+    ],
+    "found": [
+      [
+        105,
+        0.998,
+        66772
+      ],
+      [
+        90,
+        0.999,
+        66769
+      ],
+      [
+        61,
+        0.999,
+        66773
+      ]
+    ],
+    "bytes": 66184,
+    "spans": 3,
+    "modelled": 200314,
+    "encode": 3.118999599995732
+  },
+  {
+    "suite": "spans",
+    "length": 65536,
+    "count": 3,
+    "mode": "grid256",
+    "planted": [
+      [
+        12567,
+        65536
+      ],
+      [
+        104058,
+        65536
+      ],
+      [
+        183144,
+        65536
+      ]
+    ],
+    "found": [
+      [
+        105,
+        0.998,
+        66772
+      ],
+      [
+        90,
+        0.999,
+        66769
+      ],
+      [
+        61,
+        0.999,
+        66773
+      ]
+    ],
+    "bytes": 66184,
+    "spans": 3,
+    "modelled": 200314,
+    "encode": 9.816997599999013
+  },
+  {
+    "suite": "spans",
+    "length": 65536,
+    "count": 3,
+    "mode": "grid1024-refine",
+    "planted": [
+      [
+        12567,
+        65536
+      ],
+      [
+        104058,
+        65536
+      ],
+      [
+        183144,
+        65536
+      ]
+    ],
+    "found": [
+      [
+        105,
+        0.998,
+        66772
+      ],
+      [
+        90,
+        0.999,
+        66769
+      ],
+      [
+        61,
+        0.999,
+        66773
+      ]
+    ],
+    "bytes": 66184,
+    "spans": 3,
+    "modelled": 200314,
+    "encode": 2.3206954000052065
+  },
+  {
+    "suite": "spans",
+    "length": 65536,
+    "count": 3,
+    "mode": "oracle",
+    "planted": [
+      [
+        12567,
+        65536
+      ],
+      [
+        104058,
+        65536
+      ],
+      [
+        183144,
+        65536
+      ]
+    ],
+    "found": [
+      [
+        0,
+        1.0,
+        66771
+      ],
+      [
+        0,
+        1.0,
+        66769
+      ],
+      [
+        0,
+        1.0,
+        66773
+      ]
+    ],
+    "bytes": null,
+    "spans": 3,
+    "modelled": null,
+    "encode": 0.0
+  }
+]

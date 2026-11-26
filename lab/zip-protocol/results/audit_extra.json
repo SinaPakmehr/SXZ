@@ -1,0 +1,354 @@
+[
+  {
+    "case": "period-8-bytes",
+    "budget": null,
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "accepted_cover": 4096,
+    "accepted_fraction": 1.0,
+    "net": -54,
+    "probes": 440,
+    "accepted": 1,
+    "models": [
+      "period"
+    ]
+  },
+  {
+    "case": "period-8-bytes",
+    "budget": 64,
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "accepted_cover": 3872,
+    "accepted_fraction": 0.9453125,
+    "net": 0,
+    "probes": 51,
+    "accepted": 1,
+    "models": [
+      "period"
+    ]
+  },
+  {
+    "case": "period-8-bytes",
+    "budget": 8,
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "accepted_cover": 3876,
+    "accepted_fraction": 0.9462890625,
+    "net": 0,
+    "probes": 7,
+    "accepted": 1,
+    "models": [
+      "period"
+    ]
+  },
+  {
+    "case": "period-16-bytes",
+    "budget": null,
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "accepted_cover": 4096,
+    "accepted_fraction": 1.0,
+    "net": -56,
+    "probes": 440,
+    "accepted": 1,
+    "models": [
+      "period"
+    ]
+  },
+  {
+    "case": "period-16-bytes",
+    "budget": 64,
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "accepted_cover": 3872,
+    "accepted_fraction": 0.9453125,
+    "net": 0,
+    "probes": 51,
+    "accepted": 1,
+    "models": [
+      "period"
+    ]
+  },
+  {
+    "case": "period-16-bytes",
+    "budget": 8,
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "accepted_cover": 3876,
+    "accepted_fraction": 0.9462890625,
+    "net": 0,
+    "probes": 7,
+    "accepted": 1,
+    "models": [
+      "period"
+    ]
+  },
+  {
+    "case": "period-17-bytes",
+    "budget": null,
+    "planted": 4080,
+    "covered": 0,
+    "coverage": 0.0,
+    "accepted_cover": 4080,
+    "accepted_fraction": 1.0,
+    "net": 0,
+    "probes": 679,
+    "accepted": 240,
+    "models": [
+      "affine"
+    ]
+  },
+  {
+    "case": "period-17-bytes",
+    "budget": 64,
+    "planted": 4080,
+    "covered": 0,
+    "coverage": 0.0,
+    "accepted_cover": 37,
+    "accepted_fraction": 0.009068627450980393,
+    "net": 0,
+    "probes": 64,
+    "accepted": 2,
+    "models": [
+      "affine",
+      "lfsr"
+    ]
+  },
+  {
+    "case": "period-17-bytes",
+    "budget": 8,
+    "planted": 4080,
+    "covered": 0,
+    "coverage": 0.0,
+    "accepted_cover": 20,
+    "accepted_fraction": 0.004901960784313725,
+    "net": 0,
+    "probes": 8,
+    "accepted": 1,
+    "models": [
+      "lfsr"
+    ]
+  },
+  {
+    "case": "period-20-bytes",
+    "budget": null,
+    "planted": 4080,
+    "covered": 0,
+    "coverage": 0.0,
+    "accepted_cover": 4080,
+    "accepted_fraction": 1.0,
+    "net": 0,
+    "probes": 643,
+    "accepted": 204,
+    "models": [
+      "affine"
+    ]
+  },
+  {
+    "case": "period-20-bytes",
+    "budget": 64,
+    "planted": 4080,
+    "covered": 0,
+    "coverage": 0.0,
+    "accepted_cover": 160,
+    "accepted_fraction": 0.0392156862745098,
+    "net": 0,
+    "probes": 64,
+    "accepted": 8,
+    "models": [
+      "affine",
+      "lfsr"
+    ]
+  },
+  {
+    "case": "period-20-bytes",
+    "budget": 8,
+    "planted": 4080,
+    "covered": 0,
+    "coverage": 0.0,
+    "accepted_cover": 38,
+    "accepted_fraction": 0.009313725490196078,
+    "net": 0,
+    "probes": 8,
+    "accepted": 2,
+    "models": [
+      "affine",
+      "lfsr"
+    ]
+  },
+  {
+    "case": "period-32-bytes",
+    "budget": null,
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "accepted_cover": 4096,
+    "accepted_fraction": 1.0,
+    "net": 0,
+    "probes": 567,
+    "accepted": 128,
+    "models": [
+      "affine"
+    ]
+  },
+  {
+    "case": "period-32-bytes",
+    "budget": 64,
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "accepted_cover": 260,
+    "accepted_fraction": 0.0634765625,
+    "net": 0,
+    "probes": 64,
+    "accepted": 10,
+    "models": [
+      "affine",
+      "lfsr"
+    ]
+  },
+  {
+    "case": "period-32-bytes",
+    "budget": 8,
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "accepted_cover": 36,
+    "accepted_fraction": 0.0087890625,
+    "net": 0,
+    "probes": 8,
+    "accepted": 1,
+    "models": [
+      "lfsr"
+    ]
+  },
+  {
+    "case": "xorshift-13-17-5",
+    "budget": null,
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "accepted_cover": 4096,
+    "accepted_fraction": 1.0,
+    "net": -4088,
+    "probes": 440,
+    "accepted": 1,
+    "models": [
+      "xorshift32"
+    ]
+  },
+  {
+    "case": "xorshift-13-17-5",
+    "budget": 64,
+    "planted": 4096,
+    "covered": 3872,
+    "coverage": 0.9453125,
+    "accepted_cover": 3872,
+    "accepted_fraction": 0.9453125,
+    "net": -3864,
+    "probes": 51,
+    "accepted": 1,
+    "models": [
+      "xorshift32"
+    ]
+  },
+  {
+    "case": "xorshift-13-17-5",
+    "budget": 8,
+    "planted": 4096,
+    "covered": 3876,
+    "coverage": 0.9462890625,
+    "accepted_cover": 3876,
+    "accepted_fraction": 0.9462890625,
+    "net": -3868,
+    "probes": 7,
+    "accepted": 1,
+    "models": [
+      "xorshift32"
+    ]
+  },
+  {
+    "case": "xorshift-7-9-13",
+    "budget": null,
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "accepted_cover": 0,
+    "accepted_fraction": 0.0,
+    "net": -16,
+    "probes": 567,
+    "accepted": 0,
+    "models": []
+  },
+  {
+    "case": "xorshift-7-9-13",
+    "budget": 64,
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "accepted_cover": 0,
+    "accepted_fraction": 0.0,
+    "net": -16,
+    "probes": 64,
+    "accepted": 0,
+    "models": []
+  },
+  {
+    "case": "xorshift-7-9-13",
+    "budget": 8,
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "accepted_cover": 0,
+    "accepted_fraction": 0.0,
+    "net": -16,
+    "probes": 8,
+    "accepted": 0,
+    "models": []
+  },
+  {
+    "case": "xorshift-2-7-9",
+    "budget": null,
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "accepted_cover": 0,
+    "accepted_fraction": 0.0,
+    "net": -16,
+    "probes": 567,
+    "accepted": 0,
+    "models": []
+  },
+  {
+    "case": "xorshift-2-7-9",
+    "budget": 64,
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "accepted_cover": 0,
+    "accepted_fraction": 0.0,
+    "net": -16,
+    "probes": 64,
+    "accepted": 0,
+    "models": []
+  },
+  {
+    "case": "xorshift-2-7-9",
+    "budget": 8,
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "accepted_cover": 0,
+    "accepted_fraction": 0.0,
+    "net": -16,
+    "probes": 8,
+    "accepted": 0,
+    "models": []
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "rows": [
+    {
+      "corpus": "desktop-mixed",
+      "codec": "zstd-3",
+      "source_bytes": 135127040,
+      "bytes": 88467601,
+      "ratio": 0.6546994665168422,
+      "encode": 0.23650790000101551,
+      "decode": 0.17489190000196686,
+      "note": ""
+    },
+    {
+      "corpus": "desktop-mixed",
+      "codec": "gzip-9",
+      "source_bytes": 135127040,
+      "bytes": 87405418,
+      "ratio": 0.6468388414339573,
+      "encode": 28.105985999998666,
+      "decode": 0.68729020000319,
+      "note": ""
+    },
+    {
+      "corpus": "music-mixed",
+      "codec": "zstd-3",
+      "source_bytes": 136693760,
+      "bytes": 134868312,
+      "ratio": 0.9866457108210352,
+      "encode": 0.24015370000051917,
+      "decode": 0.04138210000019171,
+      "note": ""
+    },
+    {
+      "corpus": "music-mixed",
+      "codec": "gzip-9",
+      "source_bytes": 136693760,
+      "bytes": 134188634,
+      "ratio": 0.9816734428842985,
+      "encode": 5.188054700000066,
+      "decode": 0.7577108000004955,
+      "note": ""
+    },
+    {
+      "corpus": "model-weights",
+      "codec": "zstd-3",
+      "source_bytes": 134217728,
+      "bytes": 120612093,
+      "ratio": 0.8986301198601723,
+      "encode": 0.1435057999988203,
+      "decode": 0.16706750000230386,
+      "note": ""
+    },
+    {
+      "corpus": "model-weights",
+      "codec": "gzip-9",
+      "source_bytes": 134217728,
+      "bytes": 121370960,
+      "ratio": 0.9042841196060181,
+      "encode": 6.234041799998522,
+      "decode": 0.9724420999991708,
+      "note": ""
+    },
+    {
+      "corpus": "enwik8",
+      "codec": "7z-lzma2-9",
+      "source_bytes": 100000000,
+      "bytes": 24862427,
+      "ratio": 0.24862427,
+      "encode": 117.1513546999995,
+      "decode": 1.3144981000004918,
+      "note": "LZMA2 max, 14 threads"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+[
+  {
+    "item": "ramp-u16le",
+    "block": 8192,
+    "bytes": 113,
+    "input": 262144,
+    "encode": 2.3554408000054536,
+    "modelled": 32,
+    "blocks": 32
+  },
+  {
+    "item": "ramp-u16le",
+    "block": 32768,
+    "bytes": 71,
+    "input": 262144,
+    "encode": 0.8785343999988982,
+    "modelled": 8,
+    "blocks": 8
+  },
+  {
+    "item": "ramp-u16le",
+    "block": 131072,
+    "bytes": 61,
+    "input": 262144,
+    "encode": 0.4663029000003007,
+    "modelled": 2,
+    "blocks": 2
+  },
+  {
+    "item": "sensor-train",
+    "block": 8192,
+    "bytes": 79072,
+    "input": 262144,
+    "encode": 2.562734300001466,
+    "modelled": 14,
+    "blocks": 32
+  },
+  {
+    "item": "sensor-train",
+    "block": 32768,
+    "bytes": 73357,
+    "input": 262144,
+    "encode": 0.9499712000033469,
+    "modelled": 0,
+    "blocks": 8
+  },
+  {
+    "item": "sensor-train",
+    "block": 131072,
+    "bytes": 73357,
+    "input": 262144,
+    "encode": 0.6472101999970619,
+    "modelled": 0,
+    "blocks": 2
+  },
+  {
+    "item": "text-train",
+    "block": 8192,
+    "bytes": 95564,
+    "input": 262144,
+    "encode": 2.3702270000067074,
+    "modelled": 0,
+    "blocks": 32
+  },
+  {
+    "item": "text-train",
+    "block": 32768,
+    "bytes": 95564,
+    "input": 262144,
+    "encode": 0.7178452000007383,
+    "modelled": 0,
+    "blocks": 8
+  },
+  {
+    "item": "text-train",
+    "block": 131072,
+    "bytes": 95564,
+    "input": 262144,
+    "encode": 0.3334102000007988,
+    "modelled": 0,
+    "blocks": 2
+  },
+  {
+    "item": "weights-train",
+    "block": 8192,
+    "bytes": 238678,
+    "input": 262144,
+    "encode": 2.5052336000007926,
+    "modelled": 0,
+    "blocks": 32
+  },
+  {
+    "item": "weights-train",
+    "block": 32768,
+    "bytes": 238678,
+    "input": 262144,
+    "encode": 0.7295491000040784,
+    "modelled": 0,
+    "blocks": 8
+  },
+  {
+    "item": "weights-train",
+    "block": 131072,
+    "bytes": 238678,
+    "input": 262144,
+    "encode": 0.304063399998995,
+    "modelled": 0,
+    "blocks": 2
+  },
+  {
+    "item": "sensor-train",
+    "block": 32768,
+    "peak_kib": 2606.287109375
+  },
+  {
+    "item": "weights-train",
+    "block": 32768,
+    "peak_kib": 2720.78125
+  }
+]

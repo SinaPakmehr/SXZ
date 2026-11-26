@@ -1,0 +1,100 @@
+[
+  {
+    "item": "order2-u32",
+    "bytes": 262144,
+    "archive": 84,
+    "chain": [
+      0
+    ],
+    "xz_median": 0.05478449999645818,
+    "zstd_median": 0.01915749999898253,
+    "encode_median": 1.8766293000007863,
+    "encode_min": 1.7878409000040847,
+    "decode_median": 0.01586420000239741,
+    "deflate_median": 0.005827999993925914,
+    "spans": 1,
+    "modelled": 262144
+  },
+  {
+    "item": "cross-3x-u16",
+    "bytes": 262144,
+    "archive": 445,
+    "chain": [
+      6,
+      2
+    ],
+    "xz_median": 0.054446400004962925,
+    "zstd_median": 0.018422600005578715,
+    "encode_median": 3.604482000002463,
+    "encode_min": 3.501233400005731,
+    "decode_median": 0.04321889999846462,
+    "deflate_median": 0.00671870000223862,
+    "spans": 3,
+    "modelled": 262144
+  },
+  {
+    "item": "eeg-train",
+    "bytes": 262144,
+    "archive": 65138,
+    "chain": [
+      0
+    ],
+    "xz_median": 0.0769670000008773,
+    "zstd_median": 0.08398599999782164,
+    "encode_median": 1.0870932999969227,
+    "encode_min": 1.0445067999971798,
+    "decode_median": 0.000749099999666214,
+    "deflate_median": 0.019270500000857282,
+    "spans": 0,
+    "modelled": 0
+  },
+  {
+    "item": "ecg-train",
+    "bytes": 262144,
+    "archive": 92944,
+    "chain": [
+      6,
+      1
+    ],
+    "xz_median": 0.05806700000539422,
+    "zstd_median": 0.042329999996582046,
+    "encode_median": 5.684535300002608,
+    "encode_min": 5.647029100000509,
+    "decode_median": 0.01394080000318354,
+    "deflate_median": 0.009483499998168554,
+    "spans": 1,
+    "modelled": 40064
+  },
+  {
+    "item": "text-train",
+    "bytes": 262144,
+    "archive": 95566,
+    "chain": [
+      0
+    ],
+    "xz_median": 0.06025900000531692,
+    "zstd_median": 0.05523659999744268,
+    "encode_median": 1.1705839999995078,
+    "encode_min": 1.1566844999979367,
+    "decode_median": 0.0010705000022426248,
+    "deflate_median": 0.010996599994541612,
+    "spans": 0,
+    "modelled": 0
+  },
+  {
+    "item": "weights-train",
+    "bytes": 262144,
+    "archive": 238680,
+    "chain": [
+      0
+    ],
+    "xz_median": 0.048867199999222066,
+    "zstd_median": 0.01545339999574935,
+    "encode_median": 2.027427199995145,
+    "encode_min": 2.010055000006105,
+    "decode_median": 0.0014808999985689297,
+    "deflate_median": 0.009234200006176252,
+    "spans": 0,
+    "modelled": 0
+  }
+]

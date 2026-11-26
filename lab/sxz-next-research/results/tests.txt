@@ -1,0 +1,34 @@
+sxz-next-research ['-v', 'test_next']
+test_full_corpus_representations (test_next.ContainerTests.test_full_corpus_representations) ... ok
+test_non_vacuous_preflate (test_next.ContainerTests.test_non_vacuous_preflate) ... ok
+test_rice_equivalence (test_next.NativeTests.test_rice_equivalence) ... ok
+test_scan_equivalence_and_nonword_alignment (test_next.NativeTests.test_scan_equivalence_and_nonword_alignment) ... ok
+test_spatial_native_matches_python (test_next.NativeTests.test_spatial_native_matches_python) ... ok
+test_state_equivalence (test_next.NativeTests.test_state_equivalence) ... ok
+test_composition (test_next.ProgramTests.test_composition) ... ok
+test_expression_stack_and_ops (test_next.ProgramTests.test_expression_stack_and_ops) ... ok
+test_frame_malformed (test_next.ProgramTests.test_frame_malformed) ... ok
+test_grammar_and_symbolic (test_next.ProgramTests.test_grammar_and_symbolic) ... ok
+test_invalid_wire_and_budget (test_next.ProgramTests.test_invalid_wire_and_budget) ... ok
+test_prime_and_constants (test_next.ProgramTests.test_prime_and_constants) ... ok
+test_recurrence_general_modulus (test_next.ProgramTests.test_recurrence_general_modulus) ... ok
+test_xor_patch (test_next.ProgramTests.test_xor_patch) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.807s
+
+OK
+
+zip-protocol ['experiments.sxz4.test_sxz4']
+.............
+----------------------------------------------------------------------
+Ran 13 tests in 2.331s
+
+OK
+
+zip-protocol ['discover', '-s', 'tests']
+.................................................
+----------------------------------------------------------------------
+Ran 49 tests in 4.155s
+
+OK

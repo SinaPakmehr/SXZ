@@ -1,0 +1,143 @@
+{
+  "path": "datasets/audit-assets/7zr.exe",
+  "size": 602624,
+  "budget": null,
+  "archive_bytes": 339423,
+  "deflate_baseline": 339423,
+  "accepted_segments": 250,
+  "accepted_bytes": 11392,
+  "accepted_cost_bytes": 3261,
+  "emitted_formula_segments": 0,
+  "emitted_formula_bytes": 0,
+  "models": {
+    "const": 99,
+    "lfsr": 81,
+    "affine": 64,
+    "period": 5,
+    "quadratic": 1
+  },
+  "transforms": {
+    "identity": 243,
+    "xor-prev": 7
+  },
+  "median_cover": 21,
+  "max_cover": 2852,
+  "examples": [
+    {
+      "pos": 599772,
+      "model": "const",
+      "transform": "identity",
+      "cover": 2852,
+      "cost": 10,
+      "fallback": 34
+    },
+    {
+      "pos": 575940,
+      "model": "const",
+      "transform": "identity",
+      "cover": 660,
+      "cost": 10,
+      "fallback": 24
+    },
+    {
+      "pos": 577024,
+      "model": "lfsr",
+      "transform": "identity",
+      "cover": 526,
+      "cost": 12,
+      "fallback": 23
+    },
+    {
+      "pos": 503547,
+      "model": "const",
+      "transform": "identity",
+      "cover": 261,
+      "cost": 10,
+      "fallback": 21
+    },
+    {
+      "pos": 784,
+      "model": "const",
+      "transform": "identity",
+      "cover": 240,
+      "cost": 10,
+      "fallback": 21
+    },
+    {
+      "pos": 113106,
+      "model": "period",
+      "transform": "identity",
+      "cover": 207,
+      "cost": 14,
+      "fallback": 24
+    },
+    {
+      "pos": 506328,
+      "model": "period",
+      "transform": "identity",
+      "cover": 200,
+      "cost": 14,
+      "fallback": 24
+    },
+    {
+      "pos": 590751,
+      "model": "affine",
+      "transform": "identity",
+      "cover": 126,
+      "cost": 14,
+      "fallback": 131
+    },
+    {
+      "pos": 592481,
+      "model": "affine",
+      "transform": "identity",
+      "cover": 126,
+      "cost": 14,
+      "fallback": 131
+    },
+    {
+      "pos": 594127,
+      "model": "affine",
+      "transform": "identity",
+      "cover": 126,
+      "cost": 14,
+      "fallback": 131
+    },
+    {
+      "pos": 575368,
+      "model": "const",
+      "transform": "identity",
+      "cover": 124,
+      "cost": 10,
+      "fallback": 21
+    },
+    {
+      "pos": 593784,
+      "model": "affine",
+      "transform": "identity",
+      "cover": 121,
+      "cost": 14,
+      "fallback": 126
+    }
+  ],
+  "reasons": {
+    "no_candidate": 9234,
+    "accepted": 250,
+    "cost_exceeds_fallback": 4
+  },
+  "candidate_archives": [
+    [
+      357752,
+      "deflate"
+    ],
+    [
+      339423,
+      "deflate-whole"
+    ],
+    [
+      602640,
+      "stored"
+    ]
+  ],
+  "structured_vs_plain": 18329
+}

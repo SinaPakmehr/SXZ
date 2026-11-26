@@ -1,0 +1,81 @@
+{
+  "path": "datasets/audit-assets/7zr.exe",
+  "size": 602624,
+  "budget": null,
+  "archive_bytes": 339413,
+  "deflate_baseline": 339423,
+  "accepted_segments": 5,
+  "accepted_bytes": 4544,
+  "accepted_cost_bytes": 50,
+  "emitted_formula_segments": 5,
+  "emitted_formula_bytes": 4544,
+  "models": {
+    "const": 5
+  },
+  "transforms": {
+    "identity": 5
+  },
+  "median_cover": 502,
+  "max_cover": 2866,
+  "examples": [
+    {
+      "pos": 599758,
+      "model": "const",
+      "transform": "identity",
+      "cover": 2866,
+      "cost": 10,
+      "fallback": 35
+    },
+    {
+      "pos": 575936,
+      "model": "const",
+      "transform": "identity",
+      "cover": 664,
+      "cost": 10,
+      "fallback": 24
+    },
+    {
+      "pos": 577048,
+      "model": "const",
+      "transform": "identity",
+      "cover": 502,
+      "cost": 10,
+      "fallback": 23
+    },
+    {
+      "pos": 768,
+      "model": "const",
+      "transform": "identity",
+      "cover": 256,
+      "cost": 10,
+      "fallback": 21
+    },
+    {
+      "pos": 503552,
+      "model": "const",
+      "transform": "identity",
+      "cover": 256,
+      "cost": 10,
+      "fallback": 21
+    }
+  ],
+  "reasons": {
+    "no_candidate": 9345,
+    "accepted": 5
+  },
+  "candidate_archives": [
+    [
+      339413,
+      "deflate"
+    ],
+    [
+      339423,
+      "deflate-whole"
+    ],
+    [
+      602640,
+      "stored"
+    ]
+  ],
+  "structured_vs_plain": -10
+}

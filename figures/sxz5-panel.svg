@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 250" role="img">
+<title>Public-real panel: archive / input (historical)</title><rect width="840" height="250" fill="white"/>
+<text x="20" y="25" font-family="sans-serif" font-size="17">Public-real panel: archive / input (historical) (percent)</text>
+<text x="20" y="55" font-family="sans-serif" font-size="13">public-real: deflate-6</text>
+<rect x="275" y="41" width="440.0000" height="17" fill="#0072B2"/>
+<text x="730" y="55" font-family="sans-serif" font-size="13">67.14</text>
+<text x="20" y="85" font-family="sans-serif" font-size="13">public-real: zstd-19</text>
+<rect x="275" y="71" width="421.4633" height="17" fill="#0072B2"/>
+<text x="730" y="85" font-family="sans-serif" font-size="13">64.31</text>
+<text x="20" y="115" font-family="sans-serif" font-size="13">public-real: xz-6</text>
+<rect x="275" y="101" width="415.4856" height="17" fill="#0072B2"/>
+<text x="730" y="115" font-family="sans-serif" font-size="13">63.40</text>
+<text x="20" y="145" font-family="sans-serif" font-size="13">public-real: brotli-11</text>
+<rect x="275" y="131" width="414.2404" height="17" fill="#0072B2"/>
+<text x="730" y="145" font-family="sans-serif" font-size="13">63.21</text>
+<text x="20" y="175" font-family="sans-serif" font-size="13">public-real: sxz4-tx</text>
+<rect x="275" y="161" width="433.2549" height="17" fill="#0072B2"/>
+<text x="730" y="175" font-family="sans-serif" font-size="13">66.11</text>
+<text x="20" y="205" font-family="sans-serif" font-size="13">public-real: sxz4-on</text>
+<rect x="275" y="191" width="433.1747" height="17" fill="#0072B2"/>
+<text x="730" y="205" font-family="sans-serif" font-size="13">66.10</text>
+</svg>

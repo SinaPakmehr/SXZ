@@ -1,0 +1,267 @@
+[
+  {
+    "test": "budget-scope",
+    "chunk": 1048576,
+    "budget": 8,
+    "frames": 1,
+    "probes_per_frame": [
+      8
+    ],
+    "probes_total": 8
+  },
+  {
+    "test": "budget-scope",
+    "chunk": 524288,
+    "budget": 8,
+    "frames": 2,
+    "probes_per_frame": [
+      8,
+      8
+    ],
+    "probes_total": 16
+  },
+  {
+    "test": "budget-scope",
+    "chunk": 262144,
+    "budget": 8,
+    "frames": 4,
+    "probes_per_frame": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "probes_total": 32
+  },
+  {
+    "test": "chunk-phase",
+    "chunk": 4096,
+    "budget": 8,
+    "planted": 8192,
+    "covered": 8120,
+    "coverage": 0.9912109375,
+    "net": -7696,
+    "probes": 51,
+    "frames": 8
+  },
+  {
+    "test": "chunk-phase",
+    "chunk": 4096,
+    "budget": 64,
+    "planted": 8192,
+    "covered": 8184,
+    "coverage": 0.9990234375,
+    "net": -7760,
+    "probes": 386,
+    "frames": 8
+  },
+  {
+    "test": "chunk-phase",
+    "chunk": 4096,
+    "budget": 2048,
+    "planted": 8192,
+    "covered": 8192,
+    "coverage": 1.0,
+    "net": -7768,
+    "probes": 2872,
+    "frames": 8
+  },
+  {
+    "test": "chunk-phase",
+    "chunk": 65536,
+    "budget": 8,
+    "planted": 8192,
+    "covered": 3453,
+    "coverage": 0.4215087890625,
+    "net": -3584,
+    "probes": 8,
+    "frames": 1
+  },
+  {
+    "test": "chunk-phase",
+    "chunk": 65536,
+    "budget": 64,
+    "planted": 8192,
+    "covered": 7776,
+    "coverage": 0.94921875,
+    "net": -7503,
+    "probes": 49,
+    "frames": 1
+  },
+  {
+    "test": "chunk-phase",
+    "chunk": 65536,
+    "budget": 2048,
+    "planted": 8192,
+    "covered": 8184,
+    "coverage": 0.9990234375,
+    "net": -7911,
+    "probes": 720,
+    "frames": 1
+  },
+  {
+    "test": "chunk-phase",
+    "chunk": 1048576,
+    "budget": 8,
+    "planted": 8192,
+    "covered": 3453,
+    "coverage": 0.4215087890625,
+    "net": -3584,
+    "probes": 8,
+    "frames": 1
+  },
+  {
+    "test": "chunk-phase",
+    "chunk": 1048576,
+    "budget": 64,
+    "planted": 8192,
+    "covered": 7776,
+    "coverage": 0.94921875,
+    "net": -7503,
+    "probes": 49,
+    "frames": 1
+  },
+  {
+    "test": "chunk-phase",
+    "chunk": 1048576,
+    "budget": 2048,
+    "planted": 8192,
+    "covered": 8184,
+    "coverage": 0.9990234375,
+    "net": -7911,
+    "probes": 720,
+    "frames": 1
+  },
+  {
+    "test": "crossing",
+    "case": "cross-frame-affine-u16le",
+    "chunk": 65536,
+    "budget": 8,
+    "planted": 8192,
+    "covered": 43,
+    "coverage": 0.0052490234375,
+    "net": 21,
+    "probes": 24
+  },
+  {
+    "test": "crossing",
+    "case": "cross-frame-affine-u16le",
+    "chunk": 65536,
+    "budget": 64,
+    "planted": 8192,
+    "covered": 344,
+    "coverage": 0.0419921875,
+    "net": -1168,
+    "probes": 192
+  },
+  {
+    "test": "crossing",
+    "case": "cross-frame-affine-u16le",
+    "chunk": 65536,
+    "budget": 2048,
+    "planted": 8192,
+    "covered": 7183,
+    "coverage": 0.8768310546875,
+    "net": -6013,
+    "probes": 4362
+  },
+  {
+    "test": "crossing",
+    "case": "cross-frame-affine-u16le",
+    "chunk": 262144,
+    "budget": 8,
+    "planted": 8192,
+    "covered": 21,
+    "coverage": 0.0025634765625,
+    "net": -144,
+    "probes": 8
+  },
+  {
+    "test": "crossing",
+    "case": "cross-frame-affine-u16le",
+    "chunk": 262144,
+    "budget": 64,
+    "planted": 8192,
+    "covered": 394,
+    "coverage": 0.048095703125,
+    "net": -933,
+    "probes": 64
+  },
+  {
+    "test": "crossing",
+    "case": "cross-frame-affine-u16le",
+    "chunk": 262144,
+    "budget": 2048,
+    "planted": 8192,
+    "covered": 6635,
+    "coverage": 0.8099365234375,
+    "net": -5521,
+    "probes": 1968
+  },
+  {
+    "test": "crossing",
+    "case": "cross-frame-pi",
+    "chunk": 65536,
+    "budget": 8,
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "net": -2905,
+    "probes": 24
+  },
+  {
+    "test": "crossing",
+    "case": "cross-frame-pi",
+    "chunk": 65536,
+    "budget": 64,
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "net": -2905,
+    "probes": 189
+  },
+  {
+    "test": "crossing",
+    "case": "cross-frame-pi",
+    "chunk": 65536,
+    "budget": 2048,
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "net": -2905,
+    "probes": 4467
+  },
+  {
+    "test": "crossing",
+    "case": "cross-frame-pi",
+    "chunk": 262144,
+    "budget": 8,
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "net": -2958,
+    "probes": 7
+  },
+  {
+    "test": "crossing",
+    "case": "cross-frame-pi",
+    "chunk": 262144,
+    "budget": 64,
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "net": -2958,
+    "probes": 62
+  },
+  {
+    "test": "crossing",
+    "case": "cross-frame-pi",
+    "chunk": 262144,
+    "budget": 2048,
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "net": -2958,
+    "probes": 1985
+  }
+]

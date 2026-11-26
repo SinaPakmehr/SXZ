@@ -1,0 +1,468 @@
+{
+  "3": {
+    "xml": [
+      {
+        "file": "docx-shapes.docx",
+        "baseline": 99374,
+        "math": 99862,
+        "oracle_saved": 0,
+        "gain": -488,
+        "params": 1,
+        "baseline_method": "srx-plain-3",
+        "math_method": "srx-math-margin-3",
+        "trials": 349,
+        "eligible": 61,
+        "manual_audit_file": "docx-shapes.docx"
+      },
+      {
+        "file": "docx-table.docx",
+        "baseline": 30525,
+        "math": 30703,
+        "oracle_saved": 0,
+        "gain": -178,
+        "params": 1,
+        "baseline_method": "srx-plain-3",
+        "math_method": "srx-math-3",
+        "trials": 77,
+        "eligible": 24,
+        "manual_audit_file": "docx-table.docx"
+      },
+      {
+        "file": "docx-images.docx",
+        "baseline": 118412,
+        "math": 118897,
+        "oracle_saved": 0,
+        "gain": -485,
+        "params": 4,
+        "baseline_method": "srx-plain-3",
+        "math_method": "srx-math-3",
+        "trials": 187,
+        "eligible": 41,
+        "manual_audit_file": "docx-images.docx"
+      },
+      {
+        "file": "pptx-chart.pptx",
+        "baseline": 204026,
+        "math": 204287,
+        "oracle_saved": 0,
+        "gain": -261,
+        "params": 28,
+        "baseline_method": "srx-dedup-3",
+        "math_method": "srx-math-3",
+        "trials": 1058,
+        "eligible": 97,
+        "manual_audit_file": "pptx-chart.pptx"
+      }
+    ],
+    "pdf": [
+      {
+        "file": "irs1040.pdf",
+        "baseline": 130715,
+        "math": 130987,
+        "oracle_saved": 0,
+        "gain": -272,
+        "params": 1,
+        "baseline_method": "srx-dedup-3",
+        "math_method": "srx-math-3",
+        "trials": 40,
+        "eligible": 49,
+        "manual_audit_file": "irs1040.pdf"
+      },
+      {
+        "file": "bert.pdf",
+        "baseline": 445614,
+        "math": 453871,
+        "oracle_saved": 0,
+        "gain": -8257,
+        "params": 6,
+        "baseline_method": "srx-dedup-3",
+        "math_method": "srx-math-margin-3",
+        "trials": 5551,
+        "eligible": 610,
+        "manual_audit_file": "bert.pdf"
+      },
+      {
+        "file": "attention.pdf",
+        "baseline": 732873,
+        "math": 732297,
+        "oracle_saved": 576,
+        "gain": 576,
+        "params": 107,
+        "baseline_method": "srx-plain-3",
+        "math_method": "srx-math-margin-3",
+        "trials": 39805,
+        "eligible": 3304,
+        "manual_audit_file": "attention.pdf"
+      }
+    ],
+    "tensor": [
+      {
+        "file": "squeezenet1.1-7.onnx",
+        "baseline": 4243374,
+        "math": 4243374,
+        "oracle_saved": 0,
+        "gain": 0,
+        "params": 0,
+        "baseline_method": "srx-plain-3",
+        "math_method": "srx-math-3",
+        "trials": 158,
+        "eligible": 26,
+        "manual_audit_file": "squeezenet1.1-7.onnx"
+      },
+      {
+        "file": "squeezenet1.0-12.onnx",
+        "baseline": 4244347,
+        "math": 4244347,
+        "oracle_saved": 0,
+        "gain": 0,
+        "params": 0,
+        "baseline_method": "srx-plain-3",
+        "math_method": "srx-math-3",
+        "trials": 176,
+        "eligible": 26,
+        "manual_audit_file": "squeezenet1.0-12.onnx"
+      },
+      {
+        "file": "mobilenetv2-7.onnx",
+        "baseline": 12075018,
+        "math": 12076922,
+        "oracle_saved": 0,
+        "gain": -1904,
+        "params": 6,
+        "baseline_method": "srx-plain-3",
+        "math_method": "srx-math-margin-3",
+        "trials": 3048,
+        "eligible": 224,
+        "manual_audit_file": "mobilenetv2-7.onnx"
+      }
+    ],
+    "binary": [
+      {
+        "file": "zstd.exe",
+        "baseline": 655269,
+        "math": 658006,
+        "oracle_saved": 0,
+        "gain": -2737,
+        "params": 5,
+        "baseline_method": "srx-plain-3",
+        "math_method": "srx-math-3",
+        "trials": 1416,
+        "eligible": 359,
+        "manual_audit_file": "zstd.exe"
+      },
+      {
+        "file": "djxl.exe",
+        "baseline": 1709940,
+        "math": 1712780,
+        "oracle_saved": 0,
+        "gain": -2840,
+        "params": 18,
+        "baseline_method": "srx-plain-3",
+        "math_method": "srx-math-3",
+        "trials": 6323,
+        "eligible": 717,
+        "manual_audit_file": "djxl.exe"
+      },
+      {
+        "file": "cjxl.exe",
+        "baseline": 2238077,
+        "math": 2239352,
+        "oracle_saved": 0,
+        "gain": -1275,
+        "params": 27,
+        "baseline_method": "srx-dedup-3",
+        "math_method": "srx-math-3",
+        "trials": 7556,
+        "eligible": 816,
+        "manual_audit_file": "cjxl.exe"
+      }
+    ],
+    "image": [
+      {
+        "file": "python-logo.png",
+        "baseline": 4242,
+        "math": 4271,
+        "oracle_saved": 0,
+        "gain": -29,
+        "params": 1,
+        "baseline_method": "srx-plain-3",
+        "math_method": "srx-math-margin-3",
+        "trials": 5360,
+        "eligible": 60,
+        "manual_audit_file": "python-logo.png"
+      },
+      {
+        "file": "hopper.png",
+        "baseline": 37781,
+        "math": 38135,
+        "oracle_saved": 0,
+        "gain": -354,
+        "params": 19,
+        "baseline_method": "srx-plain-3",
+        "math_method": "srx-math-3",
+        "trials": 20480,
+        "eligible": 189,
+        "manual_audit_file": "hopper.png"
+      },
+      {
+        "file": "flower_thumbnail.png",
+        "baseline": 48283,
+        "math": 48832,
+        "oracle_saved": 0,
+        "gain": -549,
+        "params": 23,
+        "baseline_method": "srx-plain-3",
+        "math_method": "srx-math-3",
+        "trials": 24198,
+        "eligible": 234,
+        "manual_audit_file": "flower_thumbnail.png"
+      },
+      {
+        "file": "exif.png",
+        "baseline": 115631,
+        "math": 128523,
+        "oracle_saved": 0,
+        "gain": -12892,
+        "params": 130,
+        "baseline_method": "srx-plain-3",
+        "math_method": "srx-math-margin-3",
+        "trials": 360760,
+        "eligible": 2831,
+        "manual_audit_file": "exif.png"
+      }
+    ]
+  },
+  "9": {
+    "xml": [
+      {
+        "file": "docx-shapes.docx",
+        "baseline": 97159,
+        "math": 97782,
+        "oracle_saved": 0,
+        "gain": -623,
+        "params": 1,
+        "baseline_method": "srx-plain-9",
+        "math_method": "srx-math-margin-9",
+        "trials": 349,
+        "eligible": 61,
+        "manual_audit_file": "docx-shapes.docx"
+      },
+      {
+        "file": "docx-table.docx",
+        "baseline": 29314,
+        "math": 29531,
+        "oracle_saved": 0,
+        "gain": -217,
+        "params": 1,
+        "baseline_method": "srx-plain-9",
+        "math_method": "srx-math-9",
+        "trials": 77,
+        "eligible": 24,
+        "manual_audit_file": "docx-table.docx"
+      },
+      {
+        "file": "docx-images.docx",
+        "baseline": 117650,
+        "math": 118231,
+        "oracle_saved": 0,
+        "gain": -581,
+        "params": 4,
+        "baseline_method": "srx-plain-9",
+        "math_method": "srx-math-9",
+        "trials": 187,
+        "eligible": 41,
+        "manual_audit_file": "docx-images.docx"
+      },
+      {
+        "file": "pptx-chart.pptx",
+        "baseline": 199491,
+        "math": 199600,
+        "oracle_saved": 0,
+        "gain": -109,
+        "params": 28,
+        "baseline_method": "srx-plain-9",
+        "math_method": "srx-math-9",
+        "trials": 1058,
+        "eligible": 97,
+        "manual_audit_file": "pptx-chart.pptx"
+      }
+    ],
+    "pdf": [
+      {
+        "file": "irs1040.pdf",
+        "baseline": 111462,
+        "math": 111683,
+        "oracle_saved": 0,
+        "gain": -221,
+        "params": 1,
+        "baseline_method": "srx-dedup-9",
+        "math_method": "srx-math-9",
+        "trials": 40,
+        "eligible": 49,
+        "manual_audit_file": "irs1040.pdf"
+      },
+      {
+        "file": "bert.pdf",
+        "baseline": 422552,
+        "math": 429650,
+        "oracle_saved": 0,
+        "gain": -7098,
+        "params": 6,
+        "baseline_method": "srx-dedup-9",
+        "math_method": "srx-math-margin-9",
+        "trials": 5551,
+        "eligible": 610,
+        "manual_audit_file": "bert.pdf"
+      },
+      {
+        "file": "attention.pdf",
+        "baseline": 680626,
+        "math": 681397,
+        "oracle_saved": 0,
+        "gain": -771,
+        "params": 107,
+        "baseline_method": "srx-plain-9",
+        "math_method": "srx-math-margin-9",
+        "trials": 39805,
+        "eligible": 3304,
+        "manual_audit_file": "attention.pdf"
+      }
+    ],
+    "tensor": [
+      {
+        "file": "squeezenet1.1-7.onnx",
+        "baseline": 4218368,
+        "math": 4218368,
+        "oracle_saved": 0,
+        "gain": 0,
+        "params": 0,
+        "baseline_method": "srx-plain-9",
+        "math_method": "srx-math-9",
+        "trials": 158,
+        "eligible": 26,
+        "manual_audit_file": "squeezenet1.1-7.onnx"
+      },
+      {
+        "file": "squeezenet1.0-12.onnx",
+        "baseline": 4215742,
+        "math": 4215742,
+        "oracle_saved": 0,
+        "gain": 0,
+        "params": 0,
+        "baseline_method": "srx-plain-9",
+        "math_method": "srx-math-9",
+        "trials": 176,
+        "eligible": 26,
+        "manual_audit_file": "squeezenet1.0-12.onnx"
+      },
+      {
+        "file": "mobilenetv2-7.onnx",
+        "baseline": 12017369,
+        "math": 12020456,
+        "oracle_saved": 0,
+        "gain": -3087,
+        "params": 6,
+        "baseline_method": "srx-grammar-forced-9",
+        "math_method": "srx-math-margin-9",
+        "trials": 3048,
+        "eligible": 224,
+        "manual_audit_file": "mobilenetv2-7.onnx"
+      }
+    ],
+    "binary": [
+      {
+        "file": "zstd.exe",
+        "baseline": 620326,
+        "math": 622125,
+        "oracle_saved": 0,
+        "gain": -1799,
+        "params": 5,
+        "baseline_method": "srx-plain-9",
+        "math_method": "srx-math-9",
+        "trials": 1416,
+        "eligible": 359,
+        "manual_audit_file": "zstd.exe"
+      },
+      {
+        "file": "djxl.exe",
+        "baseline": 1604017,
+        "math": 1604809,
+        "oracle_saved": 0,
+        "gain": -792,
+        "params": 18,
+        "baseline_method": "srx-plain-9",
+        "math_method": "srx-math-9",
+        "trials": 6323,
+        "eligible": 717,
+        "manual_audit_file": "djxl.exe"
+      },
+      {
+        "file": "cjxl.exe",
+        "baseline": 2075429,
+        "math": 2075373,
+        "oracle_saved": 56,
+        "gain": 56,
+        "params": 27,
+        "baseline_method": "srx-diff-grammar-local-9",
+        "math_method": "srx-math-9",
+        "trials": 7556,
+        "eligible": 816,
+        "manual_audit_file": "cjxl.exe"
+      }
+    ],
+    "image": [
+      {
+        "file": "python-logo.png",
+        "baseline": 3975,
+        "math": 4011,
+        "oracle_saved": 0,
+        "gain": -36,
+        "params": 4,
+        "baseline_method": "srx-plain-9",
+        "math_method": "srx-math-9",
+        "trials": 5360,
+        "eligible": 60,
+        "manual_audit_file": "python-logo.png"
+      },
+      {
+        "file": "hopper.png",
+        "baseline": 35870,
+        "math": 36387,
+        "oracle_saved": 0,
+        "gain": -517,
+        "params": 19,
+        "baseline_method": "srx-plain-9",
+        "math_method": "srx-math-9",
+        "trials": 20480,
+        "eligible": 189,
+        "manual_audit_file": "hopper.png"
+      },
+      {
+        "file": "flower_thumbnail.png",
+        "baseline": 45880,
+        "math": 46810,
+        "oracle_saved": 0,
+        "gain": -930,
+        "params": 23,
+        "baseline_method": "srx-plain-9",
+        "math_method": "srx-math-9",
+        "trials": 24198,
+        "eligible": 234,
+        "manual_audit_file": "flower_thumbnail.png"
+      },
+      {
+        "file": "exif.png",
+        "baseline": 102777,
+        "math": 114410,
+        "oracle_saved": 0,
+        "gain": -11633,
+        "params": 130,
+        "baseline_method": "srx-plain-9",
+        "math_method": "srx-math-margin-9",
+        "trials": 360760,
+        "eligible": 2831,
+        "manual_audit_file": "exif.png"
+      }
+    ]
+  }
+}

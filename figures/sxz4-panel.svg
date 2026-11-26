@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 610" role="img">
+<title>SXZ4 historical panel: archive / input</title><rect width="840" height="610" fill="white"/>
+<text x="20" y="25" font-family="sans-serif" font-size="17">SXZ4 historical panel: archive / input (percent)</text>
+<text x="20" y="55" font-family="sans-serif" font-size="13">synthetic: deflate-6</text>
+<rect x="275" y="41" width="307.3587" height="17" fill="#0072B2"/>
+<text x="730" y="55" font-family="sans-serif" font-size="13">69.89</text>
+<text x="20" y="85" font-family="sans-serif" font-size="13">synthetic: zstd-19</text>
+<rect x="275" y="71" width="283.9539" height="17" fill="#0072B2"/>
+<text x="730" y="85" font-family="sans-serif" font-size="13">64.56</text>
+<text x="20" y="115" font-family="sans-serif" font-size="13">synthetic: xz-6</text>
+<rect x="275" y="101" width="254.8943" height="17" fill="#0072B2"/>
+<text x="730" y="115" font-family="sans-serif" font-size="13">57.96</text>
+<text x="20" y="145" font-family="sans-serif" font-size="13">synthetic: brotli-11</text>
+<rect x="275" y="131" width="268.0241" height="17" fill="#0072B2"/>
+<text x="730" y="145" font-family="sans-serif" font-size="13">60.94</text>
+<text x="20" y="175" font-family="sans-serif" font-size="13">synthetic: sxz4-tx</text>
+<rect x="275" y="161" width="127.0185" height="17" fill="#0072B2"/>
+<text x="730" y="175" font-family="sans-serif" font-size="13">28.88</text>
+<text x="20" y="205" font-family="sans-serif" font-size="13">synthetic: sxz4-on</text>
+<rect x="275" y="191" width="22.5034" height="17" fill="#0072B2"/>
+<text x="730" y="205" font-family="sans-serif" font-size="13">5.12</text>
+<text x="20" y="235" font-family="sans-serif" font-size="13">real: deflate-6</text>
+<rect x="275" y="221" width="232.0315" height="17" fill="#0072B2"/>
+<text x="730" y="235" font-family="sans-serif" font-size="13">52.76</text>
+<text x="20" y="265" font-family="sans-serif" font-size="13">real: zstd-19</text>
+<rect x="275" y="251" width="217.7111" height="17" fill="#0072B2"/>
+<text x="730" y="265" font-family="sans-serif" font-size="13">49.50</text>
+<text x="20" y="295" font-family="sans-serif" font-size="13">real: xz-6</text>
+<rect x="275" y="281" width="203.5868" height="17" fill="#0072B2"/>
+<text x="730" y="295" font-family="sans-serif" font-size="13">46.29</text>
+<text x="20" y="325" font-family="sans-serif" font-size="13">real: brotli-11</text>
+<rect x="275" y="311" width="204.0269" height="17" fill="#0072B2"/>
+<text x="730" y="325" font-family="sans-serif" font-size="13">46.39</text>
+<text x="20" y="355" font-family="sans-serif" font-size="13">real: sxz4-tx</text>
+<rect x="275" y="341" width="205.9310" height="17" fill="#0072B2"/>
+<text x="730" y="355" font-family="sans-serif" font-size="13">46.82</text>
+<text x="20" y="385" font-family="sans-serif" font-size="13">real: sxz4-on</text>
+<rect x="275" y="371" width="205.9310" height="17" fill="#0072B2"/>
+<text x="730" y="385" font-family="sans-serif" font-size="13">46.82</text>
+<text x="20" y="415" font-family="sans-serif" font-size="13">precompressed: deflate-6</text>
+<rect x="275" y="401" width="439.9480" height="17" fill="#0072B2"/>
+<text x="730" y="415" font-family="sans-serif" font-size="13">100.03</text>
+<text x="20" y="445" font-family="sans-serif" font-size="13">precompressed: zstd-19</text>
+<rect x="275" y="431" width="439.8289" height="17" fill="#0072B2"/>
+<text x="730" y="445" font-family="sans-serif" font-size="13">100.01</text>
+<text x="20" y="475" font-family="sans-serif" font-size="13">precompressed: xz-6</text>
+<rect x="275" y="461" width="439.9245" height="17" fill="#0072B2"/>
+<text x="730" y="475" font-family="sans-serif" font-size="13">100.03</text>
+<text x="20" y="505" font-family="sans-serif" font-size="13">precompressed: brotli-11</text>
+<rect x="275" y="491" width="439.8121" height="17" fill="#0072B2"/>
+<text x="730" y="505" font-family="sans-serif" font-size="13">100.00</text>
+<text x="20" y="535" font-family="sans-serif" font-size="13">precompressed: sxz4-tx</text>
+<rect x="275" y="521" width="440.0000" height="17" fill="#0072B2"/>
+<text x="730" y="535" font-family="sans-serif" font-size="13">100.04</text>
+<text x="20" y="565" font-family="sans-serif" font-size="13">precompressed: sxz4-on</text>
+<rect x="275" y="551" width="440.0000" height="17" fill="#0072B2"/>
+<text x="730" y="565" font-family="sans-serif" font-size="13">100.04</text>
+</svg>

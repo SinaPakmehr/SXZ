@@ -1,0 +1,15 @@
+test_bank_match_verifies_addresses_no_fence_crossing (test_asm.ASMC.test_bank_match_verifies_addresses_no_fence_crossing) ... ok
+test_exact_every_bit_mode_unaligned_source (test_asm.ASMC.test_exact_every_bit_mode_unaligned_source) ... ok
+test_general_lcg_and_inverse (test_asm.ASMC.test_general_lcg_and_inverse) ... ok
+test_generation_random_access_every_variant (test_asm.ASMC.test_generation_random_access_every_variant) ... ok
+test_group_one_seed_shared_multiple_segments (test_asm.ASMC.test_group_one_seed_shared_multiple_segments) ... ok
+test_patching_modes (test_asm.ASMC.test_patching_modes) ... ok
+test_probability_codes_exact (test_asm.ASMC.test_probability_codes_exact) ... ok
+test_reject_bad_frame_length_or_checksum (test_asm.ASMC.test_reject_bad_frame_length_or_checksum) ... ok
+test_same_segmentation_zstd_identical (test_asm.ASMC.test_same_segmentation_zstd_identical) ... ok
+test_singleton_inadmissible_for_B (test_asm.ASMC.test_singleton_inadmissible_for_B) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.404s
+
+OK

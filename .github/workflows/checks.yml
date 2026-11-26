@@ -1,0 +1,20 @@
+name: Lightweight research checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  checks:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - uses: dtolnay/rust-toolchain@stable
+      - run: python -m pip install -e .
+      - run: python -m pip install zstandard==0.25.0
+      - run: python -B scripts/check.py
+      - run: python -B scripts/verify.py ci

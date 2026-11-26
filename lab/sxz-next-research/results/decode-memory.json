@@ -1,0 +1,170 @@
+[
+  {
+    "name": "bert.pdf",
+    "archive_bytes": 543085,
+    "method": "zstd-19",
+    "before": {
+      "peak_ws_bytes": 37277696,
+      "current_ws_bytes": 37277696
+    },
+    "after": {
+      "peak_ws_bytes": 38121472,
+      "current_ws_bytes": 38121472
+    },
+    "sha256": "5692a5514787a8c6727b4ff3b726a3385798bc68e12138d1d4af83947e2acf6e"
+  },
+  {
+    "name": "bert.pdf",
+    "archive_bytes": 546886,
+    "method": "brotli-9",
+    "before": {
+      "peak_ws_bytes": 37240832,
+      "current_ws_bytes": 37240832
+    },
+    "after": {
+      "peak_ws_bytes": 39600128,
+      "current_ws_bytes": 39600128
+    },
+    "sha256": "5692a5514787a8c6727b4ff3b726a3385798bc68e12138d1d4af83947e2acf6e"
+  },
+  {
+    "name": "bert.pdf",
+    "archive_bytes": 545636,
+    "method": "xz-6",
+    "before": {
+      "peak_ws_bytes": 37642240,
+      "current_ws_bytes": 37642240
+    },
+    "after": {
+      "peak_ws_bytes": 39940096,
+      "current_ws_bytes": 39149568
+    },
+    "sha256": "5692a5514787a8c6727b4ff3b726a3385798bc68e12138d1d4af83947e2acf6e"
+  },
+  {
+    "name": "bert.pdf",
+    "archive_bytes": 404654,
+    "method": "xnb1",
+    "before": {
+      "peak_ws_bytes": 36884480,
+      "current_ws_bytes": 36884480
+    },
+    "after": {
+      "peak_ws_bytes": 44720128,
+      "current_ws_bytes": 41328640
+    },
+    "sha256": "5692a5514787a8c6727b4ff3b726a3385798bc68e12138d1d4af83947e2acf6e"
+  },
+  {
+    "name": "hopper.png",
+    "archive_bytes": 30619,
+    "method": "zstd-19",
+    "before": {
+      "peak_ws_bytes": 36589568,
+      "current_ws_bytes": 36589568
+    },
+    "after": {
+      "peak_ws_bytes": 36630528,
+      "current_ws_bytes": 36630528
+    },
+    "sha256": "dbdcb9a9f8ec2c54ff99e99636059bbd57194ed84e2cca5e53853aef293faf42"
+  },
+  {
+    "name": "hopper.png",
+    "archive_bytes": 30609,
+    "method": "brotli-9",
+    "before": {
+      "peak_ws_bytes": 36708352,
+      "current_ws_bytes": 36708352
+    },
+    "after": {
+      "peak_ws_bytes": 36745216,
+      "current_ws_bytes": 36741120
+    },
+    "sha256": "dbdcb9a9f8ec2c54ff99e99636059bbd57194ed84e2cca5e53853aef293faf42"
+  },
+  {
+    "name": "hopper.png",
+    "archive_bytes": 30668,
+    "method": "xz-6",
+    "before": {
+      "peak_ws_bytes": 37048320,
+      "current_ws_bytes": 37048320
+    },
+    "after": {
+      "peak_ws_bytes": 37142528,
+      "current_ws_bytes": 37105664
+    },
+    "sha256": "dbdcb9a9f8ec2c54ff99e99636059bbd57194ed84e2cca5e53853aef293faf42"
+  },
+  {
+    "name": "hopper.png",
+    "archive_bytes": 25427,
+    "method": "xnb1",
+    "before": {
+      "peak_ws_bytes": 36806656,
+      "current_ws_bytes": 36806656
+    },
+    "after": {
+      "peak_ws_bytes": 37842944,
+      "current_ws_bytes": 37842944
+    },
+    "sha256": "dbdcb9a9f8ec2c54ff99e99636059bbd57194ed84e2cca5e53853aef293faf42"
+  },
+  {
+    "name": "squeezenet1.1-7.onnx",
+    "archive_bytes": 4590860,
+    "method": "zstd-19",
+    "before": {
+      "peak_ws_bytes": 41607168,
+      "current_ws_bytes": 41607168
+    },
+    "after": {
+      "peak_ws_bytes": 46637056,
+      "current_ws_bytes": 46637056
+    },
+    "sha256": "1eeff551a67ae8d565ca33b572fc4b66e3ef357b0eb2863bb9ff47a918cc4088"
+  },
+  {
+    "name": "squeezenet1.1-7.onnx",
+    "archive_bytes": 4583904,
+    "method": "brotli-9",
+    "before": {
+      "peak_ws_bytes": 41463808,
+      "current_ws_bytes": 41463808
+    },
+    "after": {
+      "peak_ws_bytes": 55570432,
+      "current_ws_bytes": 46850048
+    },
+    "sha256": "1eeff551a67ae8d565ca33b572fc4b66e3ef357b0eb2863bb9ff47a918cc4088"
+  },
+  {
+    "name": "squeezenet1.1-7.onnx",
+    "archive_bytes": 4566872,
+    "method": "xz-6",
+    "before": {
+      "peak_ws_bytes": 41136128,
+      "current_ws_bytes": 41136128
+    },
+    "after": {
+      "peak_ws_bytes": 56053760,
+      "current_ws_bytes": 51068928
+    },
+    "sha256": "1eeff551a67ae8d565ca33b572fc4b66e3ef357b0eb2863bb9ff47a918cc4088"
+  },
+  {
+    "name": "squeezenet1.1-7.onnx",
+    "archive_bytes": 4183647,
+    "method": "xnb1",
+    "before": {
+      "peak_ws_bytes": 41189376,
+      "current_ws_bytes": 41189376
+    },
+    "after": {
+      "peak_ws_bytes": 68710400,
+      "current_ws_bytes": 47185920
+    },
+    "sha256": "1eeff551a67ae8d565ca33b572fc4b66e3ef357b0eb2863bb9ff47a918cc4088"
+  }
+]

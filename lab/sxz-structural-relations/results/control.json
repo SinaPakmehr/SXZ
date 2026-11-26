@@ -1,0 +1,1541 @@
+{
+  "methods": {
+    "zstd-3": {
+      "bytes": 6267,
+      "encode_s": 0.00012799999967683107,
+      "decode_s": 1.4999968698248267e-06,
+      "decode_mb_s": 5632.01175278891,
+      "repetitions_s": [
+        1.7999991541728377e-06,
+        1.4999968698248267e-06,
+        1.5999976312741637e-06,
+        1.300009898841381e-06,
+        1.400010660290718e-06
+      ],
+      "exact": true
+    },
+    "zstd-9": {
+      "bytes": 6259,
+      "encode_s": 0.0005286000086925924,
+      "decode_s": 1.6999983927235007e-06,
+      "decode_mb_s": 4969.416463074293,
+      "repetitions_s": [
+        2.0000006770715117e-06,
+        1.8999999156221747e-06,
+        1.6999983927235007e-06,
+        1.6999983927235007e-06,
+        1.5999976312741637e-06
+      ],
+      "exact": true
+    },
+    "zstd-19": {
+      "bytes": 6244,
+      "encode_s": 0.0019159000075887889,
+      "decode_s": 1.6999983927235007e-06,
+      "decode_mb_s": 4969.416463074293,
+      "repetitions_s": [
+        1.6999983927235007e-06,
+        1.5999976312741637e-06,
+        1.7999991541728377e-06,
+        1.8999999156221747e-06,
+        1.6999983927235007e-06
+      ],
+      "exact": true
+    },
+    "brotli-9": {
+      "bytes": 6510,
+      "encode_s": 0.006031100012478419,
+      "decode_s": 2.3200002033263445e-05,
+      "decode_mb_s": 364.1378991211949,
+      "repetitions_s": [
+        3.139999171253294e-05,
+        2.510000194888562e-05,
+        2.3200002033263445e-05,
+        2.2099993657320738e-05,
+        2.169999061152339e-05
+      ],
+      "exact": true
+    },
+    "xz-6": {
+      "bytes": 6364,
+      "encode_s": 0.00606349999725353,
+      "decode_s": 0.0003161000058753416,
+      "decode_mb_s": 26.72571921220269,
+      "repetitions_s": [
+        0.0003243999963160604,
+        0.0003161000058753416,
+        0.00031689999741502106,
+        0.00031010000384412706,
+        0.00030720001086592674
+      ],
+      "exact": true
+    },
+    "srx-grammar-forced-3": {
+      "bytes": 6353,
+      "encode_s": 0.0003431000222917646,
+      "decode_s": 9.159999899566174e-05,
+      "decode_mb_s": 92.22707524702163,
+      "repetitions_s": [
+        0.0001010000123642385,
+        9.159999899566174e-05,
+        8.719999459572136e-05,
+        8.529999468009919e-05,
+        9.509999654255807e-05
+      ],
+      "exact": true,
+      "decode_stage_medians_s": {
+        "zstd_parse": 5.4e-06,
+        "expand_records": 7.4e-05,
+        "restore_container_crc": 9.4e-06
+      },
+      "layout_prep_s": 1.8100006855092943e-05,
+      "grammar_s": 5.6900011259131134e-05,
+      "induction_shared_s": 0.012117800011765212,
+      "cost": {
+        "header_bytes": 29,
+        "layout_raw": 10,
+        "layout_stored": 23,
+        "descriptor_raw": 265,
+        "descriptor_stored": 30,
+        "payload_raw": 8452,
+        "payload_stored": 6271,
+        "params_raw": 0,
+        "references": 0,
+        "backref_raw": 0,
+        "residual_raw": 0,
+        "literal_raw": 8448,
+        "mode_counts": {
+          "0": 33
+        },
+        "parametric_count": 0,
+        "template_count": 0,
+        "max_distance": 0
+      },
+      "grammar": {},
+      "sha256": "e7fd01ad851ec263c1794e7312e6422b0b599b2868bd8d95e615d92421c99dd3"
+    },
+    "srx-grammar-local-3": {
+      "bytes": 6353,
+      "encode_s": 0.00019000002066604793,
+      "decode_s": 9.159999899566174e-05,
+      "decode_mb_s": 92.22707524702163,
+      "repetitions_s": [
+        0.0001010000123642385,
+        9.159999899566174e-05,
+        8.719999459572136e-05,
+        8.529999468009919e-05,
+        9.509999654255807e-05
+      ],
+      "exact": true,
+      "decode_stage_medians_s": {
+        "zstd_parse": 5.4e-06,
+        "expand_records": 7.4e-05,
+        "restore_container_crc": 9.4e-06
+      },
+      "layout_prep_s": 1.8100006855092943e-05,
+      "grammar_s": 5.6900011259131134e-05,
+      "induction_shared_s": 0.012117800011765212,
+      "cost": {
+        "header_bytes": 29,
+        "layout_raw": 10,
+        "layout_stored": 23,
+        "descriptor_raw": 265,
+        "descriptor_stored": 30,
+        "payload_raw": 8452,
+        "payload_stored": 6271,
+        "params_raw": 0,
+        "references": 0,
+        "backref_raw": 0,
+        "residual_raw": 0,
+        "literal_raw": 8448,
+        "mode_counts": {
+          "0": 33
+        },
+        "parametric_count": 0,
+        "template_count": 0,
+        "max_distance": 0
+      },
+      "grammar": {},
+      "sha256": "e7fd01ad851ec263c1794e7312e6422b0b599b2868bd8d95e615d92421c99dd3"
+    },
+    "srx-diff-grammar-forced-3": {
+      "bytes": 6390,
+      "encode_s": 0.00017430001753382385,
+      "decode_s": 0.00010240000847261399,
+      "decode_mb_s": 82.49999317391996,
+      "repetitions_s": [
+        0.00010570000449661165,
+        0.00010340000153519213,
+        0.00010240000847261399,
+        0.00010080001084133983,
+        0.00010220000694971532
+      ],
+      "exact": true,
+      "decode_stage_medians_s": {
+        "zstd_parse": 5.6e-06,
+        "expand_records": 8.78e-05,
+        "restore_container_crc": 8.3e-06
+      },
+      "layout_prep_s": 1.8100006855092943e-05,
+      "grammar_s": 4.710000939667225e-05,
+      "induction_shared_s": 0.012117800011765212,
+      "cost": {
+        "header_bytes": 29,
+        "layout_raw": 10,
+        "layout_stored": 23,
+        "descriptor_raw": 265,
+        "descriptor_stored": 54,
+        "payload_raw": 8452,
+        "payload_stored": 6284,
+        "params_raw": 0,
+        "references": 9,
+        "backref_raw": 9,
+        "residual_raw": 2304,
+        "literal_raw": 6144,
+        "mode_counts": {
+          "0": 24,
+          "2": 9
+        },
+        "parametric_count": 0,
+        "template_count": 6,
+        "max_distance": 21
+      },
+      "grammar": {},
+      "sha256": "e2785543b3869f5945aa3f83af83a01de2927ccedc9e63809d0dcbb30bf33e66"
+    },
+    "srx-diff-grammar-local-3": {
+      "bytes": 6390,
+      "encode_s": 0.00018110001110471785,
+      "decode_s": 0.00010240000847261399,
+      "decode_mb_s": 82.49999317391996,
+      "repetitions_s": [
+        0.00010570000449661165,
+        0.00010340000153519213,
+        0.00010240000847261399,
+        0.00010080001084133983,
+        0.00010220000694971532
+      ],
+      "exact": true,
+      "decode_stage_medians_s": {
+        "zstd_parse": 5.6e-06,
+        "expand_records": 8.78e-05,
+        "restore_container_crc": 8.3e-06
+      },
+      "layout_prep_s": 1.8100006855092943e-05,
+      "grammar_s": 4.710000939667225e-05,
+      "induction_shared_s": 0.012117800011765212,
+      "cost": {
+        "header_bytes": 29,
+        "layout_raw": 10,
+        "layout_stored": 23,
+        "descriptor_raw": 265,
+        "descriptor_stored": 54,
+        "payload_raw": 8452,
+        "payload_stored": 6284,
+        "params_raw": 0,
+        "references": 9,
+        "backref_raw": 9,
+        "residual_raw": 2304,
+        "literal_raw": 6144,
+        "mode_counts": {
+          "0": 24,
+          "2": 9
+        },
+        "parametric_count": 0,
+        "template_count": 6,
+        "max_distance": 21
+      },
+      "grammar": {},
+      "sha256": "e2785543b3869f5945aa3f83af83a01de2927ccedc9e63809d0dcbb30bf33e66"
+    },
+    "srx-plain-3": {
+      "bytes": 6349,
+      "encode_s": 0.00012660000356845558,
+      "decode_s": 8.179999713320285e-05,
+      "decode_mb_s": 103.27628723804604,
+      "repetitions_s": [
+        8.579999848734587e-05,
+        8.47000046633184e-05,
+        8.179999713320285e-05,
+        8.100000559352338e-05,
+        8.060000254772604e-05
+      ],
+      "exact": true,
+      "decode_stage_medians_s": {
+        "zstd_parse": 4.8e-06,
+        "expand_records": 6.82e-05,
+        "restore_container_crc": 7.8e-06
+      },
+      "layout_prep_s": 1.8100006855092943e-05,
+      "grammar_s": 0,
+      "induction_shared_s": 0.012117800011765212,
+      "cost": {
+        "header_bytes": 29,
+        "layout_raw": 10,
+        "layout_stored": 23,
+        "descriptor_raw": 265,
+        "descriptor_stored": 30,
+        "payload_raw": 8448,
+        "payload_stored": 6267,
+        "params_raw": 0,
+        "references": 0,
+        "backref_raw": 0,
+        "residual_raw": 0,
+        "literal_raw": 8448,
+        "mode_counts": {
+          "0": 33
+        },
+        "parametric_count": 0,
+        "template_count": 0,
+        "max_distance": 0
+      },
+      "grammar": null,
+      "sha256": "1ebb12f31353442f77f08020f4631600c9bbc1ae253a66a4dd43926ecff2035c"
+    },
+    "srx-dedup-3": {
+      "bytes": 6349,
+      "encode_s": 0.00012100000458303839,
+      "decode_s": 8.179999713320285e-05,
+      "decode_mb_s": 103.27628723804604,
+      "repetitions_s": [
+        8.579999848734587e-05,
+        8.47000046633184e-05,
+        8.179999713320285e-05,
+        8.100000559352338e-05,
+        8.060000254772604e-05
+      ],
+      "exact": true,
+      "decode_stage_medians_s": {
+        "zstd_parse": 4.8e-06,
+        "expand_records": 6.82e-05,
+        "restore_container_crc": 7.8e-06
+      },
+      "layout_prep_s": 1.8100006855092943e-05,
+      "grammar_s": 0,
+      "induction_shared_s": 0.012117800011765212,
+      "cost": {
+        "header_bytes": 29,
+        "layout_raw": 10,
+        "layout_stored": 23,
+        "descriptor_raw": 265,
+        "descriptor_stored": 30,
+        "payload_raw": 8448,
+        "payload_stored": 6267,
+        "params_raw": 0,
+        "references": 0,
+        "backref_raw": 0,
+        "residual_raw": 0,
+        "literal_raw": 8448,
+        "mode_counts": {
+          "0": 33
+        },
+        "parametric_count": 0,
+        "template_count": 0,
+        "max_distance": 0
+      },
+      "grammar": null,
+      "sha256": "1ebb12f31353442f77f08020f4631600c9bbc1ae253a66a4dd43926ecff2035c"
+    },
+    "srx-diff-3": {
+      "bytes": 6390,
+      "encode_s": 0.00012160000915173441,
+      "decode_s": 9.940000018104911e-05,
+      "decode_mb_s": 84.98993948302463,
+      "repetitions_s": [
+        0.00010109999857377261,
+        0.00010029999248217791,
+        9.940000018104911e-05,
+        9.889999637380242e-05,
+        9.879999561235309e-05
+      ],
+      "exact": true,
+      "decode_stage_medians_s": {
+        "zstd_parse": 5.3e-06,
+        "expand_records": 8.59e-05,
+        "restore_container_crc": 7.6e-06
+      },
+      "layout_prep_s": 1.8100006855092943e-05,
+      "grammar_s": 0,
+      "induction_shared_s": 0.012117800011765212,
+      "cost": {
+        "header_bytes": 29,
+        "layout_raw": 10,
+        "layout_stored": 23,
+        "descriptor_raw": 265,
+        "descriptor_stored": 54,
+        "payload_raw": 8448,
+        "payload_stored": 6284,
+        "params_raw": 0,
+        "references": 9,
+        "backref_raw": 9,
+        "residual_raw": 2304,
+        "literal_raw": 6144,
+        "mode_counts": {
+          "0": 24,
+          "2": 9
+        },
+        "parametric_count": 0,
+        "template_count": 6,
+        "max_distance": 21
+      },
+      "grammar": null,
+      "sha256": "42390143a4b4234fa50a5baa508819ddf470edfaa0572b2aa17f854f647371a1"
+    },
+    "srx-math-3": {
+      "bytes": 6133,
+      "encode_s": 0.00012850001803599298,
+      "decode_s": 0.00010720000136643648,
+      "decode_mb_s": 78.80596914474486,
+      "repetitions_s": [
+        0.00011789999553002417,
+        0.00010999999358318746,
+        0.00010720000136643648,
+        0.00010649999603629112,
+        0.0001066999975591898
+      ],
+      "exact": true,
+      "decode_stage_medians_s": {
+        "zstd_parse": 6e-06,
+        "expand_records": 9.21e-05,
+        "restore_container_crc": 8.5e-06
+      },
+      "layout_prep_s": 1.8100006855092943e-05,
+      "grammar_s": 0,
+      "induction_shared_s": 0.012117800011765212,
+      "cost": {
+        "header_bytes": 29,
+        "layout_raw": 10,
+        "layout_stored": 23,
+        "descriptor_raw": 271,
+        "descriptor_stored": 61,
+        "payload_raw": 8448,
+        "payload_stored": 6020,
+        "params_raw": 6,
+        "references": 10,
+        "backref_raw": 10,
+        "residual_raw": 2560,
+        "literal_raw": 5888,
+        "mode_counts": {
+          "0": 23,
+          "5": 1,
+          "2": 9
+        },
+        "parametric_count": 1,
+        "template_count": 7,
+        "max_distance": 21
+      },
+      "grammar": null,
+      "sha256": "bae3a34731034f92ad451bb1a7832d0e39b5c44017ff47871fe62c0d71a5a519"
+    },
+    "srx-math-margin-3": {
+      "bytes": 6133,
+      "encode_s": 0.0001264000020455569,
+      "decode_s": 0.00010720000136643648,
+      "decode_mb_s": 78.80596914474486,
+      "repetitions_s": [
+        0.00011789999553002417,
+        0.00010999999358318746,
+        0.00010720000136643648,
+        0.00010649999603629112,
+        0.0001066999975591898
+      ],
+      "exact": true,
+      "decode_stage_medians_s": {
+        "zstd_parse": 6e-06,
+        "expand_records": 9.21e-05,
+        "restore_container_crc": 8.5e-06
+      },
+      "layout_prep_s": 1.8100006855092943e-05,
+      "grammar_s": 0,
+      "induction_shared_s": 0.012117800011765212,
+      "cost": {
+        "header_bytes": 29,
+        "layout_raw": 10,
+        "layout_stored": 23,
+        "descriptor_raw": 271,
+        "descriptor_stored": 61,
+        "payload_raw": 8448,
+        "payload_stored": 6020,
+        "params_raw": 6,
+        "references": 10,
+        "backref_raw": 10,
+        "residual_raw": 2560,
+        "literal_raw": 5888,
+        "mode_counts": {
+          "0": 23,
+          "5": 1,
+          "2": 9
+        },
+        "parametric_count": 1,
+        "template_count": 7,
+        "max_distance": 21
+      },
+      "grammar": null,
+      "sha256": "bae3a34731034f92ad451bb1a7832d0e39b5c44017ff47871fe62c0d71a5a519"
+    },
+    "srx-grammar-forced-9": {
+      "bytes": 6345,
+      "encode_s": 0.00024110001686494797,
+      "decode_s": 8.969999908003956e-05,
+      "decode_mb_s": 94.18060297260233,
+      "repetitions_s": [
+        8.72999953571707e-05,
+        0.00013729999773204327,
+        8.869999146554619e-05,
+        8.969999908003956e-05,
+        9.43000050028786e-05
+      ],
+      "exact": true,
+      "decode_stage_medians_s": {
+        "zstd_parse": 5.4e-06,
+        "expand_records": 7.48e-05,
+        "restore_container_crc": 8.4e-06
+      },
+      "layout_prep_s": 1.8100006855092943e-05,
+      "grammar_s": 5.6900011259131134e-05,
+      "induction_shared_s": 0.012117800011765212,
+      "cost": {
+        "header_bytes": 29,
+        "layout_raw": 10,
+        "layout_stored": 23,
+        "descriptor_raw": 265,
+        "descriptor_stored": 30,
+        "payload_raw": 8452,
+        "payload_stored": 6263,
+        "params_raw": 0,
+        "references": 0,
+        "backref_raw": 0,
+        "residual_raw": 0,
+        "literal_raw": 8448,
+        "mode_counts": {
+          "0": 33
+        },
+        "parametric_count": 0,
+        "template_count": 0,
+        "max_distance": 0
+      },
+      "grammar": {},
+      "sha256": "8186719b9a47558d8c9e5374ba482dabe5c98bbad92ff13c0b0c2d08e5830174"
+    },
+    "srx-grammar-local-9": {
+      "bytes": 6345,
+      "encode_s": 0.00025060001644305885,
+      "decode_s": 8.969999908003956e-05,
+      "decode_mb_s": 94.18060297260233,
+      "repetitions_s": [
+        8.72999953571707e-05,
+        0.00013729999773204327,
+        8.869999146554619e-05,
+        8.969999908003956e-05,
+        9.43000050028786e-05
+      ],
+      "exact": true,
+      "decode_stage_medians_s": {
+        "zstd_parse": 5.4e-06,
+        "expand_records": 7.48e-05,
+        "restore_container_crc": 8.4e-06
+      },
+      "layout_prep_s": 1.8100006855092943e-05,
+      "grammar_s": 5.6900011259131134e-05,
+      "induction_shared_s": 0.012117800011765212,
+      "cost": {
+        "header_bytes": 29,
+        "layout_raw": 10,
+        "layout_stored": 23,
+        "descriptor_raw": 265,
+        "descriptor_stored": 30,
+        "payload_raw": 8452,
+        "payload_stored": 6263,
+        "params_raw": 0,
+        "references": 0,
+        "backref_raw": 0,
+        "residual_raw": 0,
+        "literal_raw": 8448,
+        "mode_counts": {
+          "0": 33
+        },
+        "parametric_count": 0,
+        "template_count": 0,
+        "max_distance": 0
+      },
+      "grammar": {},
+      "sha256": "8186719b9a47558d8c9e5374ba482dabe5c98bbad92ff13c0b0c2d08e5830174"
+    },
+    "srx-diff-grammar-forced-9": {
+      "bytes": 6366,
+      "encode_s": 0.00024190002295654267,
+      "decode_s": 0.00010629999451339245,
+      "decode_mb_s": 79.47319318944706,
+      "repetitions_s": [
+        0.0001112000027205795,
+        0.00011189999349880964,
+        0.00010619999375194311,
+        0.00010629999451339245,
+        0.00010459999612066895
+      ],
+      "exact": true,
+      "decode_stage_medians_s": {
+        "zstd_parse": 6.8e-06,
+        "expand_records": 8.98e-05,
+        "restore_container_crc": 9e-06
+      },
+      "layout_prep_s": 1.8100006855092943e-05,
+      "grammar_s": 4.710000939667225e-05,
+      "induction_shared_s": 0.012117800011765212,
+      "cost": {
+        "header_bytes": 29,
+        "layout_raw": 10,
+        "layout_stored": 23,
+        "descriptor_raw": 265,
+        "descriptor_stored": 48,
+        "payload_raw": 8452,
+        "payload_stored": 6266,
+        "params_raw": 0,
+        "references": 9,
+        "backref_raw": 9,
+        "residual_raw": 2304,
+        "literal_raw": 6144,
+        "mode_counts": {
+          "0": 24,
+          "2": 9
+        },
+        "parametric_count": 0,
+        "template_count": 6,
+        "max_distance": 21
+      },
+      "grammar": {},
+      "sha256": "f22e0a39aa7e963ac756e0c81768a3935ddf49e41fc79fb618cefb8031e5179d"
+    },
+    "srx-diff-grammar-local-9": {
+      "bytes": 6366,
+      "encode_s": 0.0002481000265106559,
+      "decode_s": 0.00010629999451339245,
+      "decode_mb_s": 79.47319318944706,
+      "repetitions_s": [
+        0.0001112000027205795,
+        0.00011189999349880964,
+        0.00010619999375194311,
+        0.00010629999451339245,
+        0.00010459999612066895
+      ],
+      "exact": true,
+      "decode_stage_medians_s": {
+        "zstd_parse": 6.8e-06,
+        "expand_records": 8.98e-05,
+        "restore_container_crc": 9e-06
+      },
+      "layout_prep_s": 1.8100006855092943e-05,
+      "grammar_s": 4.710000939667225e-05,
+      "induction_shared_s": 0.012117800011765212,
+      "cost": {
+        "header_bytes": 29,
+        "layout_raw": 10,
+        "layout_stored": 23,
+        "descriptor_raw": 265,
+        "descriptor_stored": 48,
+        "payload_raw": 8452,
+        "payload_stored": 6266,
+        "params_raw": 0,
+        "references": 9,
+        "backref_raw": 9,
+        "residual_raw": 2304,
+        "literal_raw": 6144,
+        "mode_counts": {
+          "0": 24,
+          "2": 9
+        },
+        "parametric_count": 0,
+        "template_count": 6,
+        "max_distance": 21
+      },
+      "grammar": {},
+      "sha256": "f22e0a39aa7e963ac756e0c81768a3935ddf49e41fc79fb618cefb8031e5179d"
+    },
+    "srx-plain-9": {
+      "bytes": 6341,
+      "encode_s": 0.00018060000729747117,
+      "decode_s": 8.600000001024455e-05,
+      "decode_mb_s": 98.23255812783317,
+      "repetitions_s": [
+        8.639998850412667e-05,
+        8.600000001024455e-05,
+        9.029998909682035e-05,
+        8.490000618621707e-05,
+        8.47000046633184e-05
+      ],
+      "exact": true,
+      "decode_stage_medians_s": {
+        "zstd_parse": 5.4e-06,
+        "expand_records": 7.12e-05,
+        "restore_container_crc": 8e-06
+      },
+      "layout_prep_s": 1.8100006855092943e-05,
+      "grammar_s": 0,
+      "induction_shared_s": 0.012117800011765212,
+      "cost": {
+        "header_bytes": 29,
+        "layout_raw": 10,
+        "layout_stored": 23,
+        "descriptor_raw": 265,
+        "descriptor_stored": 30,
+        "payload_raw": 8448,
+        "payload_stored": 6259,
+        "params_raw": 0,
+        "references": 0,
+        "backref_raw": 0,
+        "residual_raw": 0,
+        "literal_raw": 8448,
+        "mode_counts": {
+          "0": 33
+        },
+        "parametric_count": 0,
+        "template_count": 0,
+        "max_distance": 0
+      },
+      "grammar": null,
+      "sha256": "6d861ff7b2c57831e2b00f04787db65e5fb13bbebb35a0171214b854339856d1"
+    },
+    "srx-dedup-9": {
+      "bytes": 6341,
+      "encode_s": 0.0001945000112755224,
+      "decode_s": 8.600000001024455e-05,
+      "decode_mb_s": 98.23255812783317,
+      "repetitions_s": [
+        8.639998850412667e-05,
+        8.600000001024455e-05,
+        9.029998909682035e-05,
+        8.490000618621707e-05,
+        8.47000046633184e-05
+      ],
+      "exact": true,
+      "decode_stage_medians_s": {
+        "zstd_parse": 5.4e-06,
+        "expand_records": 7.12e-05,
+        "restore_container_crc": 8e-06
+      },
+      "layout_prep_s": 1.8100006855092943e-05,
+      "grammar_s": 0,
+      "induction_shared_s": 0.012117800011765212,
+      "cost": {
+        "header_bytes": 29,
+        "layout_raw": 10,
+        "layout_stored": 23,
+        "descriptor_raw": 265,
+        "descriptor_stored": 30,
+        "payload_raw": 8448,
+        "payload_stored": 6259,
+        "params_raw": 0,
+        "references": 0,
+        "backref_raw": 0,
+        "residual_raw": 0,
+        "literal_raw": 8448,
+        "mode_counts": {
+          "0": 33
+        },
+        "parametric_count": 0,
+        "template_count": 0,
+        "max_distance": 0
+      },
+      "grammar": null,
+      "sha256": "6d861ff7b2c57831e2b00f04787db65e5fb13bbebb35a0171214b854339856d1"
+    },
+    "srx-diff-9": {
+      "bytes": 6362,
+      "encode_s": 0.0001998000079765916,
+      "decode_s": 0.0001049999991664663,
+      "decode_mb_s": 80.45714349584516,
+      "repetitions_s": [
+        0.00010819999442901462,
+        0.00011119998816866428,
+        0.0001049999991664663,
+        0.00010439999459777027,
+        0.00010229999315924942
+      ],
+      "exact": true,
+      "decode_stage_medians_s": {
+        "zstd_parse": 7.1e-06,
+        "expand_records": 8.72e-05,
+        "restore_container_crc": 9.1e-06
+      },
+      "layout_prep_s": 1.8100006855092943e-05,
+      "grammar_s": 0,
+      "induction_shared_s": 0.012117800011765212,
+      "cost": {
+        "header_bytes": 29,
+        "layout_raw": 10,
+        "layout_stored": 23,
+        "descriptor_raw": 265,
+        "descriptor_stored": 48,
+        "payload_raw": 8448,
+        "payload_stored": 6262,
+        "params_raw": 0,
+        "references": 9,
+        "backref_raw": 9,
+        "residual_raw": 2304,
+        "literal_raw": 6144,
+        "mode_counts": {
+          "0": 24,
+          "2": 9
+        },
+        "parametric_count": 0,
+        "template_count": 6,
+        "max_distance": 21
+      },
+      "grammar": null,
+      "sha256": "d4e423f142e3e4550f0daf5249d112001af5bf28e383e17b9a53a3d1da5e2540"
+    },
+    "srx-math-9": {
+      "bytes": 6119,
+      "encode_s": 0.00020370000856928527,
+      "decode_s": 0.00011149999045301229,
+      "decode_mb_s": 75.76682263089619,
+      "repetitions_s": [
+        0.00011149999045301229,
+        0.00010879999899771065,
+        0.00011059999815188348,
+        0.0002136000111931935,
+        0.0001145999995060265
+      ],
+      "exact": true,
+      "decode_stage_medians_s": {
+        "zstd_parse": 8.3e-06,
+        "expand_records": 9.38e-05,
+        "restore_container_crc": 9.2e-06
+      },
+      "layout_prep_s": 1.8100006855092943e-05,
+      "grammar_s": 0,
+      "induction_shared_s": 0.012117800011765212,
+      "cost": {
+        "header_bytes": 29,
+        "layout_raw": 10,
+        "layout_stored": 23,
+        "descriptor_raw": 271,
+        "descriptor_stored": 59,
+        "payload_raw": 8448,
+        "payload_stored": 6008,
+        "params_raw": 6,
+        "references": 10,
+        "backref_raw": 10,
+        "residual_raw": 2560,
+        "literal_raw": 5888,
+        "mode_counts": {
+          "0": 23,
+          "5": 1,
+          "2": 9
+        },
+        "parametric_count": 1,
+        "template_count": 7,
+        "max_distance": 21
+      },
+      "grammar": null,
+      "sha256": "10384aa69dc386bf1087fa23d421d977e3e94abefb8f266cf26bb1666fb401c6"
+    },
+    "srx-math-margin-9": {
+      "bytes": 6119,
+      "encode_s": 0.0008577000116929412,
+      "decode_s": 0.00011149999045301229,
+      "decode_mb_s": 75.76682263089619,
+      "repetitions_s": [
+        0.00011149999045301229,
+        0.00010879999899771065,
+        0.00011059999815188348,
+        0.0002136000111931935,
+        0.0001145999995060265
+      ],
+      "exact": true,
+      "decode_stage_medians_s": {
+        "zstd_parse": 8.3e-06,
+        "expand_records": 9.38e-05,
+        "restore_container_crc": 9.2e-06
+      },
+      "layout_prep_s": 1.8100006855092943e-05,
+      "grammar_s": 0,
+      "induction_shared_s": 0.012117800011765212,
+      "cost": {
+        "header_bytes": 29,
+        "layout_raw": 10,
+        "layout_stored": 23,
+        "descriptor_raw": 271,
+        "descriptor_stored": 59,
+        "payload_raw": 8448,
+        "payload_stored": 6008,
+        "params_raw": 6,
+        "references": 10,
+        "backref_raw": 10,
+        "residual_raw": 2560,
+        "literal_raw": 5888,
+        "mode_counts": {
+          "0": 23,
+          "5": 1,
+          "2": 9
+        },
+        "parametric_count": 1,
+        "template_count": 7,
+        "max_distance": 21
+      },
+      "grammar": null,
+      "sha256": "10384aa69dc386bf1087fa23d421d977e3e94abefb8f266cf26bb1666fb401c6"
+    }
+  },
+  "layout": {
+    "purpose": "non-adjacent horizontal mirror with one-byte exceptions",
+    "common_layout_sha256": "e282753359e76a7ec85f3314f3bc2d9bd790fffecc91c592a5d51176536f2258",
+    "record_count": 33,
+    "structured_count": 33,
+    "structured_bytes": 8448,
+    "exposed_bytes": 8448,
+    "correction_and_section_aux_raw": 0,
+    "groups": 23,
+    "records_with_candidates": 10,
+    "candidate_parents": 34,
+    "models_evaluated": 816,
+    "shared_induction_s": 0.012117800011765212,
+    "best_conventional_at_9": "srx-plain-9",
+    "best_param_policy_at_9": "srx-math-9"
+  },
+  "audit": [
+    {
+      "record": 0,
+      "group": [
+        "image",
+        "0",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    },
+    {
+      "record": 1,
+      "group": [
+        "image",
+        "2",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        1
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    },
+    {
+      "record": 2,
+      "group": [
+        "image",
+        "3",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        2
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    },
+    {
+      "record": 3,
+      "group": [
+        "image",
+        "0",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        3
+      ],
+      "n": 256,
+      "pool": [
+        0
+      ],
+      "conventional": 0,
+      "selected": 5,
+      "trial_count": 24,
+      "back": 3,
+      "parameters_hex": "021010010000",
+      "residual_raw": 256,
+      "local_gain": 237,
+      "description_raw": 14
+    },
+    {
+      "record": 4,
+      "group": [
+        "image",
+        "5",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        4
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    },
+    {
+      "record": 5,
+      "group": [
+        "image",
+        "6",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        5
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    },
+    {
+      "record": 6,
+      "group": [
+        "image",
+        "0",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        6
+      ],
+      "n": 256,
+      "pool": [
+        0,
+        3
+      ],
+      "conventional": 2,
+      "selected": 2,
+      "trial_count": 48
+    },
+    {
+      "record": 7,
+      "group": [
+        "image",
+        "8",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        7
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    },
+    {
+      "record": 8,
+      "group": [
+        "image",
+        "9",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        8
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    },
+    {
+      "record": 9,
+      "group": [
+        "image",
+        "0",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        9
+      ],
+      "n": 256,
+      "pool": [
+        0,
+        6,
+        3
+      ],
+      "conventional": 2,
+      "selected": 2,
+      "trial_count": 72
+    },
+    {
+      "record": 10,
+      "group": [
+        "image",
+        "11",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        10
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    },
+    {
+      "record": 11,
+      "group": [
+        "image",
+        "12",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        11
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    },
+    {
+      "record": 12,
+      "group": [
+        "image",
+        "0",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        12
+      ],
+      "n": 256,
+      "pool": [
+        0,
+        9,
+        6,
+        3
+      ],
+      "conventional": 2,
+      "selected": 2,
+      "trial_count": 96
+    },
+    {
+      "record": 13,
+      "group": [
+        "image",
+        "14",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        13
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    },
+    {
+      "record": 14,
+      "group": [
+        "image",
+        "15",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        14
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    },
+    {
+      "record": 15,
+      "group": [
+        "image",
+        "0",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        15
+      ],
+      "n": 256,
+      "pool": [
+        0,
+        12,
+        9,
+        6
+      ],
+      "conventional": 2,
+      "selected": 2,
+      "trial_count": 96
+    },
+    {
+      "record": 16,
+      "group": [
+        "image",
+        "17",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        16
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    },
+    {
+      "record": 17,
+      "group": [
+        "image",
+        "18",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        17
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    },
+    {
+      "record": 18,
+      "group": [
+        "image",
+        "0",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        18
+      ],
+      "n": 256,
+      "pool": [
+        0,
+        15,
+        12,
+        9
+      ],
+      "conventional": 2,
+      "selected": 2,
+      "trial_count": 96
+    },
+    {
+      "record": 19,
+      "group": [
+        "image",
+        "20",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        19
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    },
+    {
+      "record": 20,
+      "group": [
+        "image",
+        "21",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        20
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    },
+    {
+      "record": 21,
+      "group": [
+        "image",
+        "0",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        21
+      ],
+      "n": 256,
+      "pool": [
+        15,
+        0,
+        18,
+        12
+      ],
+      "conventional": 2,
+      "selected": 2,
+      "trial_count": 96
+    },
+    {
+      "record": 22,
+      "group": [
+        "image",
+        "23",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        22
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    },
+    {
+      "record": 23,
+      "group": [
+        "image",
+        "24",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        23
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    },
+    {
+      "record": 24,
+      "group": [
+        "image",
+        "0",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        24
+      ],
+      "n": 256,
+      "pool": [
+        12,
+        0,
+        21,
+        18
+      ],
+      "conventional": 2,
+      "selected": 2,
+      "trial_count": 96
+    },
+    {
+      "record": 25,
+      "group": [
+        "image",
+        "26",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        25
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    },
+    {
+      "record": 26,
+      "group": [
+        "image",
+        "27",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        26
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    },
+    {
+      "record": 27,
+      "group": [
+        "image",
+        "0",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        27
+      ],
+      "n": 256,
+      "pool": [
+        6,
+        0,
+        24,
+        21
+      ],
+      "conventional": 2,
+      "selected": 2,
+      "trial_count": 96
+    },
+    {
+      "record": 28,
+      "group": [
+        "image",
+        "29",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        28
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    },
+    {
+      "record": 29,
+      "group": [
+        "image",
+        "30",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        29
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    },
+    {
+      "record": 30,
+      "group": [
+        "image",
+        "0",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        30
+      ],
+      "n": 256,
+      "pool": [
+        21,
+        15,
+        0,
+        27
+      ],
+      "conventional": 2,
+      "selected": 2,
+      "trial_count": 96
+    },
+    {
+      "record": 31,
+      "group": [
+        "image",
+        "32",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        31
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    },
+    {
+      "record": 32,
+      "group": [
+        "image",
+        "33",
+        "16",
+        "16"
+      ],
+      "position": [
+        0,
+        32
+      ],
+      "n": 256,
+      "pool": [],
+      "conventional": 0,
+      "selected": 0,
+      "trial_count": 0
+    }
+  ]
+}

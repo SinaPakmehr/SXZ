@@ -1,0 +1,43 @@
+         140203 function calls (137098 primitive calls) in 0.086 seconds
+
+   Ordered by: cumulative time
+   List reduced from 95 to 35 due to restriction <35>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.087    0.087 lab/sxz-adaptive-stochastic-mosaic/extra.py:291(run_all)
+        1    0.000    0.000    0.045    0.045 lab/sxz-adaptive-stochastic-mosaic/experiment.py:38(trial)
+        1    0.031    0.031    0.033    0.033 lab/sxz-adaptive-stochastic-mosaic/asm.py:151(__init__)
+        6    0.006    0.001    0.031    0.005 lab/sxz-adaptive-stochastic-mosaic/asm.py:209(dp)
+     3105    0.003    0.000    0.016    0.000 lab/sxz-adaptive-stochastic-mosaic/asm.py:204(cost)
+       18    0.000    0.000    0.013    0.001 lab/sxz-adaptive-stochastic-mosaic/experiment.py:42(grade)
+       90    0.003    0.000    0.010    0.000 lab/sxz-adaptive-stochastic-mosaic/asm.py:320(decode)
+        1    0.006    0.006    0.008    0.008 lab/sxz-adaptive-stochastic-mosaic/asm.py:171(search)
+       72    0.000    0.000    0.008    0.000 lab/sxz-adaptive-stochastic-mosaic/experiment.py:31(run)
+     2091    0.001    0.000    0.007    0.000 lab/sxz-adaptive-stochastic-mosaic/asm.py:86(wire)
+     2390    0.001    0.000    0.007    0.000 lab/sxz-adaptive-stochastic-mosaic/asm.py:43(ints)
+     2409    0.002    0.000    0.007    0.000 {method 'join' of 'bytes' objects}
+        1    0.000    0.000    0.006    0.006 lab/sxz-adaptive-stochastic-mosaic/asm.py:231(group_candidates)
+     9315    0.003    0.000    0.005    0.000 lab/sxz-adaptive-stochastic-mosaic/asm.py:42(vsz)
+     7064    0.004    0.000    0.005    0.000 lab/sxz-adaptive-stochastic-mosaic/asm.py:34(v)
+     4390    0.002    0.000    0.003    0.000 lab/sxz-adaptive-stochastic-mosaic/asm.py:51(get)
+       18    0.001    0.000    0.002    0.000 lab/sxz-adaptive-stochastic-mosaic/asm.py:265(arch)
+     3105    0.001    0.000    0.002    0.000 <string>:27(__hash__)
+9181/6076    0.001    0.000    0.002    0.000 {built-in method builtins.hash}
+     6100    0.001    0.000    0.002    0.000 lab/sxz-adaptive-stochastic-mosaic/asm.py:48(take)
+       43    0.001    0.000    0.002    0.000 {built-in method builtins.sorted}
+     6076    0.001    0.000    0.002    0.000 <string>:24(__hash__)
+    12078    0.002    0.000    0.002    0.000 {method 'append' of 'list' objects}
+    17130    0.002    0.000    0.002    0.000 {built-in method builtins.len}
+     1030    0.001    0.000    0.001    0.000 <string>:2(__init__)
+    13488    0.001    0.000    0.001    0.000 {built-in method builtins.max}
+        1    0.001    0.001    0.001    0.001 lab/sxz-adaptive-stochastic-mosaic/asm.py:144(matrix)
+        1    0.000    0.000    0.001    0.001 {method 'extend' of 'list' objects}
+     9237    0.001    0.000    0.001    0.000 {method 'append' of 'bytearray' objects}
+     1066    0.001    0.000    0.001    0.000 {method 'compress' of 'zstandard.backend_c.ZstdCompressor' objects}
+     1025    0.001    0.000    0.001    0.000 lab/sxz-adaptive-stochastic-mosaic/asm.py:155(<genexpr>)
+     1390    0.001    0.000    0.001    0.000 {method 'extend' of 'bytearray' objects}
+     9315    0.001    0.000    0.001    0.000 {method 'bit_length' of 'int' objects}
+        1    0.000    0.000    0.001    0.001 lab/sxz-adaptive-stochastic-mosaic/asm.py:170(__exit__)
+        1    0.001    0.001    0.001    0.001 lab/sxz-adaptive-stochastic-mosaic/asm.py:167(close)
+
+

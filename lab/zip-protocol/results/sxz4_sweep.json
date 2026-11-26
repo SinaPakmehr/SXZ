@@ -1,0 +1,256 @@
+[
+  {
+    "name": "order2-u32",
+    "family": "order2",
+    "category": "synthetic",
+    "law": "x=a*x1+b*x2+c, a=3 b=5 c=7",
+    "heldout": false,
+    "bytes_in": 262144,
+    "method": "sxz4-sweep",
+    "bytes": 84,
+    "ratio": 0.0003204345703125,
+    "encode": 5.666379000002053,
+    "decode": 0.019653400006063748,
+    "spans": 1,
+    "modelled": 262144,
+    "models": {
+      "order2-word": 1
+    },
+    "modes": {
+      "exact": 1
+    },
+    "chain": [
+      0
+    ],
+    "probes": 2,
+    "backend": 0,
+    "tolerance": 0.0
+  },
+  {
+    "name": "cross-3x-u16",
+    "family": "cross",
+    "category": "synthetic",
+    "law": "lane l = (4l+1)*base + 7l",
+    "heldout": false,
+    "bytes_in": 262144,
+    "method": "sxz4-sweep",
+    "bytes": 445,
+    "ratio": 0.001697540283203125,
+    "encode": 12.166121900001599,
+    "decode": 0.04459510000015143,
+    "spans": 3,
+    "modelled": 262144,
+    "models": {
+      "period-bytes": 3
+    },
+    "modes": {
+      "exceptions": 3
+    },
+    "chain": [
+      6,
+      2
+    ],
+    "probes": 6,
+    "backend": 0,
+    "tolerance": 0.3
+  },
+  {
+    "name": "piecewise",
+    "family": "piecewise",
+    "category": "synthetic",
+    "law": "u16le ramp then order-2",
+    "heldout": false,
+    "bytes_in": 262144,
+    "method": "sxz4-sweep",
+    "bytes": 114,
+    "ratio": 0.00043487548828125,
+    "encode": 22.114549999998417,
+    "decode": 0.018902100004197564,
+    "spans": 2,
+    "modelled": 262144,
+    "models": {
+      "affine-word": 1,
+      "order2-word": 1
+    },
+    "modes": {
+      "exceptions": 1,
+      "exact": 1
+    },
+    "chain": [
+      0
+    ],
+    "probes": 4,
+    "backend": 0,
+    "tolerance": 0.0
+  },
+  {
+    "name": "csv-numeric",
+    "family": "csv",
+    "category": "synthetic",
+    "law": "5-column telemetry with 4-decimal floats",
+    "heldout": false,
+    "bytes_in": 262144,
+    "method": "sxz4-sweep",
+    "bytes": 68444,
+    "ratio": 0.2610931396484375,
+    "encode": 3.467757899998105,
+    "decode": 0.0008317000028910115,
+    "spans": 0,
+    "modelled": 0,
+    "models": {},
+    "modes": {},
+    "chain": [
+      0
+    ],
+    "probes": 16,
+    "backend": 0,
+    "tolerance": 0.3
+  },
+  {
+    "name": "composite-sum",
+    "family": "composite",
+    "category": "synthetic",
+    "law": "sum of two u16le ramps",
+    "heldout": false,
+    "bytes_in": 262144,
+    "method": "sxz4-sweep",
+    "bytes": 276,
+    "ratio": 0.0010528564453125,
+    "encode": 59.58137519999582,
+    "decode": 0.03189589999965392,
+    "spans": 1,
+    "modelled": 262144,
+    "models": {
+      "affine-word": 1
+    },
+    "modes": {
+      "moddiff": 1
+    },
+    "chain": [
+      0
+    ],
+    "probes": 2,
+    "backend": 0,
+    "tolerance": 0.3
+  },
+  {
+    "name": "eeg-train",
+    "family": "eeg",
+    "category": "real",
+    "law": "EEG eye state ARFF, slice at 20%",
+    "heldout": false,
+    "bytes_in": 262144,
+    "method": "sxz4-sweep",
+    "bytes": 65138,
+    "ratio": 0.24848175048828125,
+    "encode": 3.262437500001397,
+    "decode": 0.002176299996790476,
+    "spans": 0,
+    "modelled": 0,
+    "models": {},
+    "modes": {},
+    "chain": [
+      0
+    ],
+    "probes": 16,
+    "backend": 0,
+    "tolerance": 0.3
+  },
+  {
+    "name": "ecg-train",
+    "family": "ecg",
+    "category": "real",
+    "law": "MIT-BIH record 100, slice at 20%",
+    "heldout": false,
+    "bytes_in": 262144,
+    "method": "sxz4-sweep",
+    "bytes": 92944,
+    "ratio": 0.35455322265625,
+    "encode": 13.619916699994064,
+    "decode": 0.013434699998470023,
+    "spans": 1,
+    "modelled": 40064,
+    "models": {
+      "period-bytes": 1
+    },
+    "modes": {
+      "exceptions": 1
+    },
+    "chain": [
+      6,
+      1
+    ],
+    "probes": 113,
+    "backend": 0,
+    "tolerance": 0.3
+  },
+  {
+    "name": "text-train",
+    "family": "text",
+    "category": "real",
+    "law": "enwik8 slice at 15%",
+    "heldout": false,
+    "bytes_in": 262144,
+    "method": "sxz4-sweep",
+    "bytes": 95566,
+    "ratio": 0.36455535888671875,
+    "encode": 3.3500500000009197,
+    "decode": 0.0022469000032288022,
+    "spans": 0,
+    "modelled": 0,
+    "models": {},
+    "modes": {},
+    "chain": [
+      0
+    ],
+    "probes": 16,
+    "backend": 0,
+    "tolerance": 0.3
+  },
+  {
+    "name": "weights-train",
+    "family": "weights",
+    "category": "real",
+    "law": "unavailable-weights.bin slice at 25%",
+    "heldout": false,
+    "bytes_in": 262144,
+    "method": "sxz4-sweep",
+    "bytes": 238680,
+    "ratio": 0.910491943359375,
+    "encode": 6.082798499999626,
+    "decode": 0.002482099996996112,
+    "spans": 0,
+    "modelled": 0,
+    "models": {},
+    "modes": {},
+    "chain": [
+      0
+    ],
+    "probes": 175,
+    "backend": 0,
+    "tolerance": 0.3
+  },
+  {
+    "name": "flac-slice",
+    "family": "compressed",
+    "category": "precompressed",
+    "law": "FLAC audio",
+    "heldout": false,
+    "bytes_in": 262144,
+    "method": "sxz4-sweep",
+    "bytes": 262261,
+    "ratio": 1.0004463195800781,
+    "encode": 4.496603100000357,
+    "decode": 0.00039370000013150275,
+    "spans": 0,
+    "modelled": 0,
+    "models": {},
+    "modes": {},
+    "chain": [
+      0
+    ],
+    "probes": 64,
+    "backend": 0,
+    "tolerance": 0.3
+  }
+]

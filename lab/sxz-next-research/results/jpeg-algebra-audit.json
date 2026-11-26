@@ -1,0 +1,182 @@
+[
+  {
+    "file": "banana.jpg",
+    "section_kind": 0,
+    "source_section_start": 0,
+    "offset_in_exposed_channel": 988,
+    "length": 40,
+    "coeff": [
+      2483290112,
+      2442330112,
+      888671244
+    ],
+    "seed": [
+      353571608,
+      286790419
+    ],
+    "prefix_hex": "18131315131318110c0c0c0c0c0c110c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c",
+    "repeated_final_byte_run": 25
+  },
+  {
+    "file": "banana.jpg",
+    "section_kind": 0,
+    "source_section_start": 0,
+    "offset_in_exposed_channel": 1056,
+    "length": 40,
+    "coeff": [
+      16777216,
+      0,
+      789516
+    ],
+    "seed": [
+      286002188,
+      202116113
+    ],
+    "prefix_hex": "0c0c0c11110c0c0c0c0c0c110c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c",
+    "repeated_final_byte_run": 28
+  },
+  {
+    "file": "banana.jpg",
+    "section_kind": 0,
+    "source_section_start": 0,
+    "offset_in_exposed_channel": 6121,
+    "length": 40,
+    "coeff": [
+      2483290112,
+      2442330112,
+      888671244
+    ],
+    "seed": [
+      353571608,
+      286790419
+    ],
+    "prefix_hex": "18131315131318110c0c0c0c0c0c110c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c",
+    "repeated_final_byte_run": 25
+  },
+  {
+    "file": "banana.jpg",
+    "section_kind": 0,
+    "source_section_start": 0,
+    "offset_in_exposed_channel": 6189,
+    "length": 40,
+    "coeff": [
+      16777216,
+      0,
+      789516
+    ],
+    "seed": [
+      286002188,
+      202116113
+    ],
+    "prefix_hex": "0c0c0c11110c0c0c0c0c0c110c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c",
+    "repeated_final_byte_run": 28
+  },
+  {
+    "file": "banana.jpg",
+    "section_kind": 0,
+    "source_section_start": 0,
+    "offset_in_exposed_channel": 16377,
+    "length": 2056,
+    "coeff": [
+      0,
+      0,
+      538976288
+    ],
+    "seed": [
+      1836084600,
+      1046574181
+    ],
+    "prefix_hex": "786d706d6574613e20202020202020202020202020202020202020202020202020202020202020202020202020202020",
+    "repeated_final_byte_run": 2048
+  },
+  {
+    "file": "banana.jpg",
+    "section_kind": 0,
+    "source_section_start": 0,
+    "offset_in_exposed_channel": 18547,
+    "length": 52,
+    "coeff": [
+      0,
+      0,
+      0
+    ],
+    "seed": [
+      768802816,
+      1161970753
+    ],
+    "prefix_hex": "0000d32d4144424500000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "repeated_final_byte_run": 44
+  },
+  {
+    "file": "banana.jpg",
+    "section_kind": 0,
+    "source_section_start": 0,
+    "offset_in_exposed_channel": 18795,
+    "length": 88,
+    "coeff": [
+      0,
+      0,
+      0
+    ],
+    "seed": [
+      824713282,
+      691550521
+    ],
+    "prefix_hex": "422028313939382900000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "repeated_final_byte_run": 80
+  },
+  {
+    "file": "banana.jpg",
+    "section_kind": 0,
+    "source_section_start": 0,
+    "offset_in_exposed_channel": 19045,
+    "length": 32,
+    "coeff": [
+      0,
+      0,
+      16843009
+    ],
+    "seed": [
+      3690922240,
+      16811008
+    ],
+    "prefix_hex": "0001ffdb00840001010101010101010101010101010101010101010101010101",
+    "repeated_final_byte_run": 25
+  },
+  {
+    "file": "banana.jpg",
+    "section_kind": 0,
+    "source_section_start": 0,
+    "offset_in_exposed_channel": 19124,
+    "length": 56,
+    "coeff": [
+      0,
+      0,
+      50529027
+    ],
+    "seed": [
+      50462977,
+      50463234
+    ],
+    "prefix_hex": "010102030202020303030303030303030303030303030303030303030303030303030303030303030303030303030303",
+    "repeated_final_byte_run": 49
+  },
+  {
+    "file": "gull.jpg",
+    "section_kind": 0,
+    "source_section_start": 0,
+    "offset_in_exposed_channel": 107,
+    "length": 48,
+    "coeff": [
+      1023410176,
+      0,
+      3894024730
+    ],
+    "seed": [
+      320474890,
+      437455113
+    ],
+    "prefix_hex": "0a0f1a130909131a1a1a1a0d1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a",
+    "repeated_final_byte_run": 36
+  }
+]

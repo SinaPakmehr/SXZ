@@ -1,0 +1,48 @@
+[
+  {
+    "name": "banana.jpg",
+    "bytes": 2085213,
+    "source": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg",
+    "method": "JPEG XL v0.13.0",
+    "compressed": 1270625,
+    "encode_options": [
+      "--num_threads=1",
+      "--effort=7",
+      "--lossless_jpeg=1"
+    ],
+    "encode_s": 0.6339773000072455,
+    "decode_median_s": 0.21016459999373183,
+    "decode_MBps": 9.921808906267714,
+    "decode_seconds": [
+      0.19299890000547748,
+      0.19687280000653118,
+      0.21016459999373183,
+      0.23463020000781398,
+      0.3943433000094956
+    ],
+    "exact": true
+  },
+  {
+    "name": "gull.jpg",
+    "bytes": 718902,
+    "source": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg",
+    "method": "JPEG XL v0.13.0",
+    "compressed": 616128,
+    "encode_options": [
+      "--num_threads=1",
+      "--effort=7",
+      "--lossless_jpeg=1"
+    ],
+    "encode_s": 0.14499430000432767,
+    "decode_median_s": 0.1338753000018187,
+    "decode_MBps": 5.36993754628549,
+    "decode_seconds": [
+      0.13242670000181533,
+      0.13284540000313427,
+      0.1338753000018187,
+      0.13583610000205226,
+      0.16280330000154208
+    ],
+    "exact": true
+  }
+]

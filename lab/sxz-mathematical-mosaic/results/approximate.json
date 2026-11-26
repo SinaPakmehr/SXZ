@@ -1,0 +1,1182 @@
+[
+  {
+    "name": "artificial-2-exceptions",
+    "input_bytes": 14585,
+    "sha256": "770a60885fd3702e0696c1a524e61909dc9502d9d0379dc5028541ab4023ef0a",
+    "approx_candidates": 1569,
+    "methods": {
+      "direct": {
+        "decode_s": 2.200000744778663e-05,
+        "decode_MBs": 662.9543210208033,
+        "repeats_s": [
+          5.390000296756625e-05,
+          2.200000744778663e-05,
+          1.5400000847876072e-05
+        ],
+        "bytes": 12765,
+        "exact": true,
+        "header_bytes": 25,
+        "metadata_raw": 4,
+        "metadata_bytes": 17,
+        "literals_raw": 14585,
+        "literals_bytes": 12723,
+        "covered_bytes": 0,
+        "repeated_bytes": 0,
+        "instruction_count": 1,
+        "description_raw": {
+          "0": 3
+        },
+        "matches": []
+      },
+      "exact": {
+        "decode_s": 0.0003547000087564811,
+        "decode_MBs": 41.11925469393861,
+        "repeats_s": [
+          0.000414699999964796,
+          0.0003547000087564811,
+          0.00034980000054929405
+        ],
+        "bytes": 9839,
+        "exact": true,
+        "header_bytes": 25,
+        "metadata_raw": 256,
+        "metadata_bytes": 220,
+        "literals_raw": 9580,
+        "literals_bytes": 9594,
+        "covered_bytes": 5005,
+        "repeated_bytes": 0,
+        "instruction_count": 46,
+        "description_raw": {
+          "0": 57,
+          "1": 198
+        },
+        "matches": [
+          {
+            "target_byte": 2303,
+            "target_byte_end": 2320,
+            "gid": 1,
+            "source_symbol": 18351,
+            "symbols": 17,
+            "widths_bytes": 0,
+            "description_bytes": 8,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 8
+          },
+          {
+            "target_byte": 2638,
+            "target_byte_end": 2670,
+            "gid": 2,
+            "source_symbol": 17931,
+            "symbols": 32,
+            "widths_bytes": 0,
+            "description_bytes": 8,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 8
+          },
+          {
+            "target_byte": 3123,
+            "target_byte_end": 3149,
+            "gid": 10,
+            "source_symbol": 5042,
+            "symbols": 26,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 3152,
+            "target_byte_end": 3176,
+            "gid": 10,
+            "source_symbol": 5071,
+            "symbols": 24,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 3177,
+            "target_byte_end": 3203,
+            "gid": 10,
+            "source_symbol": 5096,
+            "symbols": 26,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 3553,
+            "target_byte_end": 3638,
+            "gid": 12,
+            "source_symbol": 12427,
+            "symbols": 85,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 3639,
+            "target_byte_end": 3723,
+            "gid": 12,
+            "source_symbol": 12513,
+            "symbols": 84,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 3731,
+            "target_byte_end": 3809,
+            "gid": 12,
+            "source_symbol": 12605,
+            "symbols": 78,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 4350,
+            "target_byte_end": 4520,
+            "gid": 24,
+            "source_symbol": 25668,
+            "symbols": 170,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 4521,
+            "target_byte_end": 4691,
+            "gid": 24,
+            "source_symbol": 25839,
+            "symbols": 170,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 4692,
+            "target_byte_end": 4862,
+            "gid": 24,
+            "source_symbol": 26010,
+            "symbols": 170,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 6083,
+            "target_byte_end": 6595,
+            "gid": 24,
+            "source_symbol": 25668,
+            "symbols": 512,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 7416,
+            "target_byte_end": 7757,
+            "gid": 28,
+            "source_symbol": 18652,
+            "symbols": 341,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 7758,
+            "target_byte_end": 8098,
+            "gid": 28,
+            "source_symbol": 18994,
+            "symbols": 340,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 8099,
+            "target_byte_end": 8440,
+            "gid": 28,
+            "source_symbol": 19335,
+            "symbols": 341,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 9661,
+            "target_byte_end": 10685,
+            "gid": 28,
+            "source_symbol": 18652,
+            "symbols": 1024,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 11527,
+            "target_byte_end": 11767,
+            "gid": 0,
+            "source_symbol": 18722,
+            "symbols": 240,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 11768,
+            "target_byte_end": 12007,
+            "gid": 0,
+            "source_symbol": 18963,
+            "symbols": 239,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 12008,
+            "target_byte_end": 12247,
+            "gid": 0,
+            "source_symbol": 19203,
+            "symbols": 239,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 13468,
+            "target_byte_end": 14188,
+            "gid": 0,
+            "source_symbol": 18722,
+            "symbols": 720,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 14456,
+            "target_byte_end": 14499,
+            "gid": 15,
+            "source_symbol": 207,
+            "symbols": 43,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 14500,
+            "target_byte_end": 14542,
+            "gid": 15,
+            "source_symbol": 251,
+            "symbols": 42,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 14543,
+            "target_byte_end": 14585,
+            "gid": 15,
+            "source_symbol": 38,
+            "symbols": 42,
+            "widths_bytes": 0,
+            "description_bytes": 6,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 6
+          }
+        ]
+      },
+      "approx": {
+        "decode_s": 0.00028330000350251794,
+        "decode_MBs": 51.48252671966653,
+        "repeats_s": [
+          0.00029340000764932483,
+          0.00028330000350251794,
+          0.00027720000070985407
+        ],
+        "bytes": 9809,
+        "exact": true,
+        "header_bytes": 25,
+        "metadata_raw": 230,
+        "metadata_bytes": 204,
+        "literals_raw": 9566,
+        "literals_bytes": 9580,
+        "covered_bytes": 5019,
+        "repeated_bytes": 0,
+        "instruction_count": 36,
+        "description_raw": {
+          "0": 47,
+          "1": 143,
+          "3": 39
+        },
+        "matches": [
+          {
+            "target_byte": 2303,
+            "target_byte_end": 2320,
+            "gid": 1,
+            "source_symbol": 18351,
+            "symbols": 17,
+            "widths_bytes": 0,
+            "description_bytes": 8,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 8
+          },
+          {
+            "target_byte": 2638,
+            "target_byte_end": 2670,
+            "gid": 2,
+            "source_symbol": 17931,
+            "symbols": 32,
+            "widths_bytes": 0,
+            "description_bytes": 8,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 8
+          },
+          {
+            "target_byte": 3123,
+            "target_byte_end": 3203,
+            "gid": 10,
+            "source_symbol": 5042,
+            "symbols": 80,
+            "widths_bytes": 0,
+            "description_bytes": 12,
+            "errors": 2,
+            "base": "bytes",
+            "opcode": 3,
+            "charged_description_bytes": 12
+          },
+          {
+            "target_byte": 3553,
+            "target_byte_end": 3638,
+            "gid": 12,
+            "source_symbol": 12427,
+            "symbols": 85,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 3639,
+            "target_byte_end": 3809,
+            "gid": 12,
+            "source_symbol": 12513,
+            "symbols": 170,
+            "widths_bytes": 0,
+            "description_bytes": 13,
+            "errors": 1,
+            "base": "bytes",
+            "opcode": 3,
+            "charged_description_bytes": 13
+          },
+          {
+            "target_byte": 4350,
+            "target_byte_end": 4520,
+            "gid": 24,
+            "source_symbol": 25668,
+            "symbols": 170,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 4521,
+            "target_byte_end": 4691,
+            "gid": 24,
+            "source_symbol": 25839,
+            "symbols": 170,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 4692,
+            "target_byte_end": 4862,
+            "gid": 24,
+            "source_symbol": 26010,
+            "symbols": 170,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 6083,
+            "target_byte_end": 6595,
+            "gid": 24,
+            "source_symbol": 25668,
+            "symbols": 512,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 7416,
+            "target_byte_end": 7757,
+            "gid": 28,
+            "source_symbol": 18652,
+            "symbols": 341,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 7758,
+            "target_byte_end": 8098,
+            "gid": 28,
+            "source_symbol": 18994,
+            "symbols": 340,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 8099,
+            "target_byte_end": 8440,
+            "gid": 28,
+            "source_symbol": 19335,
+            "symbols": 341,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 9661,
+            "target_byte_end": 10685,
+            "gid": 28,
+            "source_symbol": 18652,
+            "symbols": 1024,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 11527,
+            "target_byte_end": 11767,
+            "gid": 0,
+            "source_symbol": 18722,
+            "symbols": 240,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 11768,
+            "target_byte_end": 12007,
+            "gid": 0,
+            "source_symbol": 18963,
+            "symbols": 239,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 12008,
+            "target_byte_end": 12247,
+            "gid": 0,
+            "source_symbol": 19203,
+            "symbols": 239,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 13468,
+            "target_byte_end": 14188,
+            "gid": 0,
+            "source_symbol": 18722,
+            "symbols": 720,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 14456,
+            "target_byte_end": 14585,
+            "gid": 15,
+            "source_symbol": 207,
+            "symbols": 129,
+            "widths_bytes": 0,
+            "description_bytes": 14,
+            "errors": 2,
+            "base": "bytes",
+            "opcode": 3,
+            "charged_description_bytes": 14
+          }
+        ]
+      }
+    },
+    "synthetic_only": true
+  },
+  {
+    "name": "alice29.txt",
+    "input_bytes": 152089,
+    "sha256": "7467306ee0feed4971260f3c87421154a05be571d944e9cb021a5713700c38f0",
+    "approx_candidates": 0,
+    "methods": {
+      "direct": {
+        "decode_s": 0.00024419999681413174,
+        "decode_MBs": 622.8050859302824,
+        "repeats_s": [
+          0.0002925999870058149,
+          0.00024419999681413174,
+          0.00023030000738799572
+        ],
+        "bytes": 57017,
+        "exact": true,
+        "header_bytes": 25,
+        "metadata_raw": 5,
+        "metadata_bytes": 18,
+        "literals_raw": 152089,
+        "literals_bytes": 56974,
+        "covered_bytes": 0,
+        "repeated_bytes": 0,
+        "instruction_count": 1,
+        "description_raw": {
+          "0": 4
+        },
+        "matches": []
+      },
+      "exact": {
+        "decode_s": 0.00023940000392030925,
+        "decode_MBs": 635.2923872575496,
+        "repeats_s": [
+          0.00024839999969117343,
+          0.00023720000172033906,
+          0.00023940000392030925
+        ],
+        "bytes": 57017,
+        "exact": true,
+        "header_bytes": 25,
+        "metadata_raw": 5,
+        "metadata_bytes": 18,
+        "literals_raw": 152089,
+        "literals_bytes": 56974,
+        "covered_bytes": 0,
+        "repeated_bytes": 0,
+        "instruction_count": 1,
+        "description_raw": {
+          "0": 4
+        },
+        "matches": []
+      },
+      "approx": {
+        "decode_s": 0.00023350000265054405,
+        "decode_MBs": 651.3447463536705,
+        "repeats_s": [
+          0.00023200000578071922,
+          0.00023350000265054405,
+          0.00023799999326001853
+        ],
+        "bytes": 57017,
+        "exact": true,
+        "header_bytes": 25,
+        "metadata_raw": 5,
+        "metadata_bytes": 18,
+        "literals_raw": 152089,
+        "literals_bytes": 56974,
+        "covered_bytes": 0,
+        "repeated_bytes": 0,
+        "instruction_count": 1,
+        "description_raw": {
+          "0": 4
+        },
+        "matches": []
+      }
+    },
+    "synthetic_only": false
+  },
+  {
+    "name": "irs1040.pdf",
+    "input_bytes": 220237,
+    "sha256": "3d31c226df0d189ced80e039d01cf0f8820c1019681a0f0ca6264de277b7e982",
+    "approx_candidates": 0,
+    "methods": {
+      "direct": {
+        "decode_s": 0.00014289999671746045,
+        "decode_MBs": 1541.1966764103502,
+        "repeats_s": [
+          0.00024149999080691487,
+          0.00014289999671746045,
+          0.00011860000086016953
+        ],
+        "bytes": 154403,
+        "exact": true,
+        "header_bytes": 25,
+        "metadata_raw": 5,
+        "metadata_bytes": 18,
+        "literals_raw": 220237,
+        "literals_bytes": 154360,
+        "covered_bytes": 0,
+        "repeated_bytes": 0,
+        "instruction_count": 1,
+        "description_raw": {
+          "0": 4
+        },
+        "matches": []
+      },
+      "exact": {
+        "decode_s": 0.00012060000153724104,
+        "decode_MBs": 1826.1774228252496,
+        "repeats_s": [
+          0.00013159999798517674,
+          0.00012060000153724104,
+          0.00011530000483617187
+        ],
+        "bytes": 154403,
+        "exact": true,
+        "header_bytes": 25,
+        "metadata_raw": 5,
+        "metadata_bytes": 18,
+        "literals_raw": 220237,
+        "literals_bytes": 154360,
+        "covered_bytes": 0,
+        "repeated_bytes": 0,
+        "instruction_count": 1,
+        "description_raw": {
+          "0": 4
+        },
+        "matches": []
+      },
+      "approx": {
+        "decode_s": 0.00011839999933727086,
+        "decode_MBs": 1860.1098077090285,
+        "repeats_s": [
+          0.00012319999223109335,
+          0.00011839999933727086,
+          0.00011680000170599669
+        ],
+        "bytes": 154403,
+        "exact": true,
+        "header_bytes": 25,
+        "metadata_raw": 5,
+        "metadata_bytes": 18,
+        "literals_raw": 220237,
+        "literals_bytes": 154360,
+        "covered_bytes": 0,
+        "repeated_bytes": 0,
+        "instruction_count": 1,
+        "description_raw": {
+          "0": 4
+        },
+        "matches": []
+      }
+    },
+    "synthetic_only": false
+  },
+  {
+    "name": "gull.jpg",
+    "input_bytes": 718902,
+    "sha256": "524368d286d63cd02c319b7447a664f15d434fec594f1849fc9b73de68d40f14",
+    "approx_candidates": 0,
+    "methods": {
+      "direct": {
+        "decode_s": 0.000524200004292652,
+        "decode_MBs": 1371.4269250533032,
+        "repeats_s": [
+          0.0005837999924551696,
+          0.000524200004292652,
+          0.00035740000021178275
+        ],
+        "bytes": 718976,
+        "exact": true,
+        "header_bytes": 25,
+        "metadata_raw": 5,
+        "metadata_bytes": 18,
+        "literals_raw": 718902,
+        "literals_bytes": 718933,
+        "covered_bytes": 0,
+        "repeated_bytes": 0,
+        "instruction_count": 1,
+        "description_raw": {
+          "0": 4
+        },
+        "matches": []
+      },
+      "exact": {
+        "decode_s": 0.0003426999901421368,
+        "decode_MBs": 2097.7590332051986,
+        "repeats_s": [
+          0.0003403000009711832,
+          0.0003480000013951212,
+          0.0003426999901421368
+        ],
+        "bytes": 718976,
+        "exact": true,
+        "header_bytes": 25,
+        "metadata_raw": 5,
+        "metadata_bytes": 18,
+        "literals_raw": 718902,
+        "literals_bytes": 718933,
+        "covered_bytes": 0,
+        "repeated_bytes": 0,
+        "instruction_count": 1,
+        "description_raw": {
+          "0": 4
+        },
+        "matches": []
+      },
+      "approx": {
+        "decode_s": 0.0003426000039326027,
+        "decode_MBs": 2098.3712543722695,
+        "repeats_s": [
+          0.00033660000190138817,
+          0.00034690000757109374,
+          0.0003426000039326027
+        ],
+        "bytes": 718976,
+        "exact": true,
+        "header_bytes": 25,
+        "metadata_raw": 5,
+        "metadata_bytes": 18,
+        "literals_raw": 718902,
+        "literals_bytes": 718933,
+        "covered_bytes": 0,
+        "repeated_bytes": 0,
+        "instruction_count": 1,
+        "description_raw": {
+          "0": 4
+        },
+        "matches": []
+      }
+    },
+    "synthetic_only": false
+  },
+  {
+    "name": "bbc.rss.xml",
+    "input_bytes": 28260,
+    "sha256": "caa27d88f455e0fd10c408f7aaaaa73b16e9c0d502fa8c9cc11bc70551192b83",
+    "approx_candidates": 0,
+    "methods": {
+      "direct": {
+        "decode_s": 3.619999915827066e-05,
+        "decode_MBs": 780.6630015775402,
+        "repeats_s": [
+          6.160000339150429e-05,
+          3.619999915827066e-05,
+          3.3200005418621004e-05
+        ],
+        "bytes": 6374,
+        "exact": true,
+        "header_bytes": 25,
+        "metadata_raw": 5,
+        "metadata_bytes": 18,
+        "literals_raw": 28260,
+        "literals_bytes": 6331,
+        "covered_bytes": 0,
+        "repeated_bytes": 0,
+        "instruction_count": 1,
+        "description_raw": {
+          "0": 4
+        },
+        "matches": []
+      },
+      "exact": {
+        "decode_s": 3.2800002372823656e-05,
+        "decode_MBs": 861.5853035246954,
+        "repeats_s": [
+          3.340000694151968e-05,
+          3.2800002372823656e-05,
+          3.260000084992498e-05
+        ],
+        "bytes": 6374,
+        "exact": true,
+        "header_bytes": 25,
+        "metadata_raw": 5,
+        "metadata_bytes": 18,
+        "literals_raw": 28260,
+        "literals_bytes": 6331,
+        "covered_bytes": 0,
+        "repeated_bytes": 0,
+        "instruction_count": 1,
+        "description_raw": {
+          "0": 4
+        },
+        "matches": []
+      },
+      "approx": {
+        "decode_s": 3.130000550299883e-05,
+        "decode_MBs": 902.8752406223198,
+        "repeats_s": [
+          3.2500000088475645e-05,
+          3.130000550299883e-05,
+          3.130000550299883e-05
+        ],
+        "bytes": 6374,
+        "exact": true,
+        "header_bytes": 25,
+        "metadata_raw": 5,
+        "metadata_bytes": 18,
+        "literals_raw": 28260,
+        "literals_bytes": 6331,
+        "covered_bytes": 0,
+        "repeated_bytes": 0,
+        "instruction_count": 1,
+        "description_raw": {
+          "0": 4
+        },
+        "matches": []
+      }
+    },
+    "synthetic_only": false
+  },
+  {
+    "name": "python-logo.png",
+    "input_bytes": 45187,
+    "sha256": "ea0e73137c1c8561e91241771e3c81e5b3e8f5ab2cbfdad1a00d8eea524815fa",
+    "approx_candidates": 3,
+    "methods": {
+      "direct": {
+        "decode_s": 7.579999510198832e-05,
+        "decode_MBs": 596.1346031645679,
+        "repeats_s": [
+          8.97999998414889e-05,
+          7.579999510198832e-05,
+          5.529999907594174e-05
+        ],
+        "bytes": 4624,
+        "exact": true,
+        "header_bytes": 25,
+        "metadata_raw": 5,
+        "metadata_bytes": 18,
+        "literals_raw": 45187,
+        "literals_bytes": 4581,
+        "covered_bytes": 0,
+        "repeated_bytes": 0,
+        "instruction_count": 1,
+        "description_raw": {
+          "0": 4
+        },
+        "matches": []
+      },
+      "exact": {
+        "decode_s": 0.00018479999562259763,
+        "decode_MBs": 244.51840406036493,
+        "repeats_s": [
+          0.0002275000006193295,
+          0.00018479999562259763,
+          0.0001638999965507537
+        ],
+        "bytes": 4653,
+        "exact": true,
+        "header_bytes": 25,
+        "metadata_raw": 72,
+        "metadata_bytes": 59,
+        "literals_raw": 45110,
+        "literals_bytes": 4569,
+        "covered_bytes": 77,
+        "repeated_bytes": 0,
+        "instruction_count": 15,
+        "description_raw": {
+          "0": 22,
+          "1": 49
+        },
+        "matches": [
+          {
+            "target_byte": 33894,
+            "target_byte_end": 33905,
+            "gid": 32,
+            "source_symbol": 3994,
+            "symbols": 11,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 33920,
+            "target_byte_end": 33931,
+            "gid": 21,
+            "source_symbol": 6152,
+            "symbols": 11,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 34558,
+            "target_byte_end": 34569,
+            "gid": 21,
+            "source_symbol": 6152,
+            "symbols": 11,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 35790,
+            "target_byte_end": 35801,
+            "gid": 32,
+            "source_symbol": 3994,
+            "symbols": 11,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 35826,
+            "target_byte_end": 35837,
+            "gid": 21,
+            "source_symbol": 6152,
+            "symbols": 11,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 36441,
+            "target_byte_end": 36452,
+            "gid": 21,
+            "source_symbol": 6152,
+            "symbols": 11,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 36454,
+            "target_byte_end": 36465,
+            "gid": 21,
+            "source_symbol": 6152,
+            "symbols": 11,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          }
+        ]
+      },
+      "approx": {
+        "decode_s": 0.000146100006531924,
+        "decode_MBs": 309.28814496751085,
+        "repeats_s": [
+          0.0001576999929966405,
+          0.000146100006531924,
+          0.00014239999291021377
+        ],
+        "bytes": 4660,
+        "exact": true,
+        "header_bytes": 25,
+        "metadata_raw": 68,
+        "metadata_bytes": 68,
+        "literals_raw": 45112,
+        "literals_bytes": 4567,
+        "covered_bytes": 75,
+        "repeated_bytes": 0,
+        "instruction_count": 13,
+        "description_raw": {
+          "0": 20,
+          "1": 35,
+          "3": 12
+        },
+        "matches": [
+          {
+            "target_byte": 33894,
+            "target_byte_end": 33905,
+            "gid": 32,
+            "source_symbol": 3994,
+            "symbols": 11,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 33920,
+            "target_byte_end": 33931,
+            "gid": 21,
+            "source_symbol": 6152,
+            "symbols": 11,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 34558,
+            "target_byte_end": 34569,
+            "gid": 21,
+            "source_symbol": 6152,
+            "symbols": 11,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 35790,
+            "target_byte_end": 35801,
+            "gid": 32,
+            "source_symbol": 3994,
+            "symbols": 11,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 35826,
+            "target_byte_end": 35837,
+            "gid": 21,
+            "source_symbol": 6152,
+            "symbols": 11,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 36441,
+            "target_byte_end": 36461,
+            "gid": 21,
+            "source_symbol": 6152,
+            "symbols": 20,
+            "widths_bytes": 0,
+            "description_bytes": 12,
+            "errors": 2,
+            "base": "bytes",
+            "opcode": 3,
+            "charged_description_bytes": 12
+          }
+        ]
+      }
+    },
+    "synthetic_only": false
+  }
+]

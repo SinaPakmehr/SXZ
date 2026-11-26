@@ -1,0 +1,594 @@
+{
+  "generators": [
+    {
+      "gid": 0,
+      "name": "pi",
+      "family": "constant",
+      "enc": "radix",
+      "params": [],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 1,
+      "name": "e",
+      "family": "constant",
+      "enc": "radix",
+      "params": [],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 2,
+      "name": "phi",
+      "family": "constant",
+      "enc": "radix",
+      "params": [],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 3,
+      "name": "sqrt2",
+      "family": "constant",
+      "enc": "radix",
+      "params": [
+        2
+      ],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 4,
+      "name": "sqrt3",
+      "family": "constant",
+      "enc": "radix",
+      "params": [
+        3
+      ],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 5,
+      "name": "sqrt5",
+      "family": "constant",
+      "enc": "radix",
+      "params": [
+        5
+      ],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 6,
+      "name": "gamma",
+      "family": "constant",
+      "enc": "radix",
+      "params": [],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 7,
+      "name": "zeta3",
+      "family": "constant",
+      "enc": "radix",
+      "params": [],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 8,
+      "name": "ln2",
+      "family": "constant",
+      "enc": "radix",
+      "params": [],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 9,
+      "name": "pi-text",
+      "family": "constant",
+      "enc": "ascii",
+      "params": [],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 10,
+      "name": "prime-le32",
+      "family": "number",
+      "enc": "u4",
+      "params": [
+        "prime"
+      ],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 11,
+      "name": "prime-gap-mod",
+      "family": "number",
+      "enc": "u1",
+      "params": [
+        "gap"
+      ],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 12,
+      "name": "prime-digits",
+      "family": "number",
+      "enc": "digits",
+      "params": [
+        "prime"
+      ],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 13,
+      "name": "composite-le16",
+      "family": "number",
+      "enc": "u2",
+      "params": [
+        "composite"
+      ],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 14,
+      "name": "square-le32",
+      "family": "number",
+      "enc": "u4",
+      "params": [
+        "square"
+      ],
+      "access": "direct formula; cached in this encoder",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 15,
+      "name": "cube-mod",
+      "family": "number",
+      "enc": "u1",
+      "params": [
+        "cube"
+      ],
+      "access": "direct formula; cached",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 16,
+      "name": "triangular-le16",
+      "family": "number",
+      "enc": "u2",
+      "params": [
+        "tri"
+      ],
+      "access": "direct formula; cached",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 17,
+      "name": "choose-n-3",
+      "family": "number",
+      "enc": "u2",
+      "params": [
+        "binomial"
+      ],
+      "access": "direct formula; cached",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 18,
+      "name": "fib-le16",
+      "family": "number",
+      "enc": "u2",
+      "params": [
+        0,
+        1
+      ],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 19,
+      "name": "lucas-le16",
+      "family": "number",
+      "enc": "u2",
+      "params": [
+        2,
+        1
+      ],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 20,
+      "name": "totient-le16",
+      "family": "number",
+      "enc": "u2",
+      "params": [
+        "phi"
+      ],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 21,
+      "name": "mobius-offset",
+      "family": "number",
+      "enc": "u1",
+      "params": [
+        "mu"
+      ],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 22,
+      "name": "divisor-count",
+      "family": "number",
+      "enc": "u1",
+      "params": [
+        "tau"
+      ],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 23,
+      "name": "pow3-mod65521",
+      "family": "algorithm",
+      "enc": "u2",
+      "params": [
+        65521,
+        3,
+        0,
+        1
+      ],
+      "access": "LCG jump",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 24,
+      "name": "lcg32",
+      "family": "algorithm",
+      "enc": "u4",
+      "params": [
+        4294967296,
+        1664525,
+        1013904223,
+        37655
+      ],
+      "access": "LCG jump",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 25,
+      "name": "lcg-prime",
+      "family": "algorithm",
+      "enc": "u4",
+      "params": [
+        2147483647,
+        48271,
+        101,
+        41217
+      ],
+      "access": "LCG jump",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 26,
+      "name": "xorshift32",
+      "family": "algorithm",
+      "enc": "u4",
+      "params": [
+        521296821
+      ],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 27,
+      "name": "lfsr16",
+      "family": "algorithm",
+      "enc": "u2",
+      "params": [
+        44257,
+        46080
+      ],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 28,
+      "name": "splitmix64-counter",
+      "family": "algorithm",
+      "enc": "u8",
+      "params": [
+        10615461954650452033
+      ],
+      "access": "direct indexed",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 29,
+      "name": "gf256-power",
+      "family": "number",
+      "enc": "u1",
+      "params": [
+        3,
+        283
+      ],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 30,
+      "name": "thue-morse",
+      "family": "algorithm",
+      "enc": "u1",
+      "params": [],
+      "access": "direct parity",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 31,
+      "name": "fibonacci-word",
+      "family": "algorithm",
+      "enc": "u1",
+      "params": [],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 32,
+      "name": "debruijn-16",
+      "family": "algorithm",
+      "enc": "u1",
+      "params": [
+        16
+      ],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 33,
+      "name": "rule30-center",
+      "family": "algorithm",
+      "enc": "u1",
+      "params": [
+        30,
+        8192
+      ],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 34,
+      "name": "rudin-shapiro",
+      "family": "algorithm",
+      "enc": "u1",
+      "params": [],
+      "access": "direct parity; cached",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    },
+    {
+      "gid": 35,
+      "name": "bit-composition",
+      "family": "algorithm",
+      "enc": "u4",
+      "params": [
+        183581863,
+        7,
+        2654435761,
+        866968399
+      ],
+      "access": "prefix",
+      "description": "deterministic prefix; parameters fixed, not fitted"
+    }
+  ],
+  "bank_sizes": {
+    "8192": [
+      228,
+      228,
+      228,
+      228,
+      228,
+      228,
+      228,
+      228,
+      228,
+      228,
+      228,
+      228,
+      228,
+      228,
+      228,
+      228,
+      228,
+      228,
+      228,
+      228,
+      227,
+      227,
+      227,
+      227,
+      227,
+      227,
+      227,
+      227,
+      227,
+      227,
+      227,
+      227,
+      227,
+      227,
+      227,
+      227
+    ],
+    "100000": [
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2778,
+      2777,
+      2777,
+      2777,
+      2777,
+      2777,
+      2777,
+      2777,
+      2777
+    ],
+    "1000000": [
+      28124,
+      28124,
+      28124,
+      28124,
+      28124,
+      28124,
+      27778,
+      27778,
+      28124,
+      28124,
+      28123,
+      28123,
+      28123,
+      28123,
+      28123,
+      28123,
+      28123,
+      28123,
+      28123,
+      28123,
+      28123,
+      28123,
+      28123,
+      28123,
+      28123,
+      28123,
+      28123,
+      28123,
+      28122,
+      28122,
+      28122,
+      28122,
+      28122,
+      16384,
+      28122,
+      28122
+    ],
+    "10000000": [
+      298563,
+      298563,
+      298563,
+      298563,
+      298563,
+      298562,
+      65536,
+      65536,
+      298562,
+      298562,
+      298562,
+      298562,
+      298562,
+      298562,
+      298562,
+      298562,
+      298562,
+      298562,
+      298562,
+      298562,
+      298562,
+      298562,
+      298562,
+      298562,
+      298562,
+      298562,
+      298562,
+      298562,
+      298561,
+      298561,
+      298561,
+      298561,
+      298561,
+      16384,
+      298561,
+      298561
+    ]
+  },
+  "controls": [
+    730109,
+    2765617,
+    8891131
+  ],
+  "representations": {
+    "bytes": [
+      1,
+      1
+    ],
+    "b2": [
+      1,
+      8
+    ],
+    "b4": [
+      1,
+      4
+    ],
+    "b8": [
+      3,
+      8
+    ],
+    "b16": [
+      1,
+      2
+    ],
+    "dec3": [
+      1,
+      3
+    ],
+    "dec20": [
+      8,
+      20
+    ],
+    "decvar": [
+      8,
+      0
+    ]
+  },
+  "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.4.0",
+  "zstd": "0.25.0",
+  "brotli": "1.2.1"
+}

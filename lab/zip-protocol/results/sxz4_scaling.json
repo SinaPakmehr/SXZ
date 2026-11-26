@@ -1,0 +1,41 @@
+[
+  {
+    "size": 1000000,
+    "archive": 356723,
+    "ratio": 0.356723,
+    "encode": 30.14609290000226,
+    "decode": 0.007066500002110843,
+    "deflate_encode": 0.07088510000176029,
+    "deflate_size": 356692,
+    "peak_mb": 7.479879379272461,
+    "spans": 0,
+    "modelled": 0,
+    "probes": 20
+  },
+  {
+    "size": 10000000,
+    "archive": 3697412,
+    "ratio": 0.3697412,
+    "encode": 30.94052979999833,
+    "decode": 0.07461310000508092,
+    "deflate_encode": 0.7262932999947225,
+    "deflate_size": 3697381,
+    "peak_mb": 10.57854175567627,
+    "spans": 0,
+    "modelled": 0,
+    "probes": 20
+  },
+  {
+    "size": 100000000,
+    "archive": 36548952,
+    "ratio": 0.36548952,
+    "encode": 38.50212029999966,
+    "decode": 0.6209572000007029,
+    "deflate_encode": 6.896175499998208,
+    "deflate_size": 36548921,
+    "peak_mb": 104.567551612854,
+    "spans": 0,
+    "modelled": 0,
+    "probes": 20
+  }
+]

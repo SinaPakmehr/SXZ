@@ -1,0 +1,136 @@
+{
+  "inputs": [
+    {
+      "name": "synthetic-mosaic",
+      "input_bytes": 14585,
+      "sha256": "bbc2425f35f790058ef9b9b4de7fcdc67c8c004978c04ffb0bff64ca5d5925f3",
+      "planted": [
+        {
+          "target_byte": 1591,
+          "gid": 0,
+          "addr": 5528,
+          "length": 8
+        },
+        {
+          "target_byte": 2303,
+          "gid": 1,
+          "addr": 18351,
+          "length": 17
+        },
+        {
+          "target_byte": 2638,
+          "gid": 2,
+          "addr": 17931,
+          "length": 32
+        },
+        {
+          "target_byte": 3122,
+          "gid": 10,
+          "addr": 5041,
+          "length": 81
+        },
+        {
+          "target_byte": 3553,
+          "gid": 12,
+          "addr": 12427,
+          "length": 256
+        },
+        {
+          "target_byte": 4350,
+          "gid": 24,
+          "addr": 25668,
+          "length": 512
+        },
+        {
+          "target_byte": 7416,
+          "gid": 28,
+          "addr": 18652,
+          "length": 1024
+        },
+        {
+          "target_byte": 11527,
+          "gid": 0,
+          "addr": 18722,
+          "length": 720
+        },
+        {
+          "target_byte": 14457,
+          "gid": 15,
+          "addr": 19152,
+          "length": 128
+        }
+      ]
+    }
+  ],
+  "rows": {
+    "synthetic-mosaic": {
+      "zstd-3": {
+        "encode_s": 0.00010889999975915998,
+        "decode_s": 5.699999746866524e-06,
+        "decode_MBs": 2558.772043458046,
+        "repeats_s": [
+          2.2299995180219412e-05,
+          5.699999746866524e-06,
+          4.799992893822491e-06
+        ],
+        "bytes": 12366,
+        "exact": true
+      },
+      "deflate-6": {
+        "encode_s": 0.0008273999992525205,
+        "decode_s": 0.00014699999883305281,
+        "decode_MBs": 99.21768786246125,
+        "repeats_s": [
+          0.0002344999957131222,
+          0.00014699999883305281,
+          0.00011740000627469271
+        ],
+        "bytes": 12301,
+        "exact": true
+      },
+      "zip-6": {
+        "encode_s": 0.00037170000723563135,
+        "decode_s": 0.0003588999970816076,
+        "decode_MBs": 40.63806107160159,
+        "repeats_s": [
+          0.000981699995463714,
+          9.73999995039776e-05,
+          0.0003588999970816076
+        ],
+        "bytes": 12407,
+        "exact": true
+      },
+      "zstd-trained-3": {
+        "encode_s": 0.0004177000082563609,
+        "decode_s": 5.199995939619839e-06,
+        "decode_MBs": 2804.8098824220006,
+        "repeats_s": [
+          1.7600003047846258e-05,
+          5.199995939619839e-06,
+          3.9000005926936865e-06
+        ],
+        "bytes": 12372,
+        "exact": true,
+        "dictionary_bytes": 16384,
+        "standalone_bytes": 28756,
+        "shared_at_19_bytes": 13234.315789473683
+      }
+    }
+  },
+  "train": {
+    "bytes": 16384,
+    "seconds": 0.4207983999949647,
+    "inputs": [
+      "datasets/sxz5-data/asyoulik.txt",
+      "datasets/sxz5-data/lcet10.txt",
+      "datasets/sxz5-data/cp.html",
+      "datasets/sxz5-data/fields.c",
+      "datasets/sxz5-data/paper1",
+      "datasets/sxz5-data/paper2",
+      "datasets/sxz5-data/book1",
+      "datasets/sxz5-data/progc",
+      "datasets/sxz5-data/progl"
+    ],
+    "dictionary_sha256": "4b789292cde8bc153b31ae140610086b8ea80700104fd049036b8cd7bf636ec0"
+  }
+}

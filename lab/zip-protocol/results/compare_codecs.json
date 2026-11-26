@@ -1,0 +1,144 @@
+{
+  "rows": [
+    {
+      "corpus": "desktop-mixed",
+      "codec": "sxz2-fast",
+      "source_bytes": 135127040,
+      "bytes": 91397928,
+      "ratio": 0.6763851853781448,
+      "encode": 3.274621599997772,
+      "decode": 0.7984623999982432,
+      "note": "4 MiB frames, Deflate 1, scan off"
+    },
+    {
+      "corpus": "desktop-mixed",
+      "codec": "sxz2-tuned",
+      "source_bytes": 135127040,
+      "bytes": 88090336,
+      "ratio": 0.6519075382691725,
+      "encode": 20.415747899998678,
+      "decode": 0.8979674000001978,
+      "note": "1 MiB frames, Deflate 6, scan 8, bridge"
+    },
+    {
+      "corpus": "desktop-mixed",
+      "codec": "sxz2-best",
+      "source_bytes": 135127040,
+      "bytes": 87411338,
+      "ratio": 0.6468826520583889,
+      "encode": 61.96475190000274,
+      "decode": 0.8284727000027488,
+      "note": "1 MiB frames, Deflate 9, scan 16, bridge, second pass"
+    },
+    {
+      "corpus": "desktop-mixed",
+      "codec": "zstd-3",
+      "source_bytes": 135127040,
+      "bytes": 88467601,
+      "ratio": 0.6546994665168422,
+      "encode": 0.30052339999747346,
+      "decode": 0.15748480000183918,
+      "note": ""
+    },
+    {
+      "corpus": "desktop-mixed",
+      "codec": "zstd-19",
+      "source_bytes": 135127040,
+      "bytes": 83167214,
+      "ratio": 0.6154742529696499,
+      "encode": 57.88948949999758,
+      "decode": 0.24328400000013062,
+      "note": ""
+    },
+    {
+      "corpus": "desktop-mixed",
+      "codec": "zstd-22",
+      "source_bytes": 135127040,
+      "bytes": 82985997,
+      "ratio": 0.6141331668332259,
+      "encode": 239.24802700000146,
+      "decode": 0.21844400000190944,
+      "note": ""
+    },
+    {
+      "corpus": "desktop-mixed",
+      "codec": "xz-6",
+      "source_bytes": 135127040,
+      "bytes": 82585932,
+      "ratio": 0.6111725084779479,
+      "encode": 180.33181479999985,
+      "decode": 3.37761170000158,
+      "note": "single thread"
+    },
+    {
+      "corpus": "desktop-mixed",
+      "codec": "xz-9e",
+      "source_bytes": 135127040,
+      "bytes": 82448192,
+      "ratio": 0.6101531714155805,
+      "encode": 323.1881908999967,
+      "decode": 10.91616090000025,
+      "note": "single thread"
+    },
+    {
+      "corpus": "desktop-mixed",
+      "codec": "brotli-9",
+      "source_bytes": 135127040,
+      "bytes": 85507403,
+      "ratio": 0.6327926890132427,
+      "encode": 155.9376607000013,
+      "decode": 1.2175013000014587,
+      "note": ""
+    },
+    {
+      "corpus": "desktop-mixed",
+      "codec": "brotli-11",
+      "source_bytes": 135127040,
+      "bytes": 82108195,
+      "ratio": 0.6076370428894172,
+      "encode": 639.597814599998,
+      "decode": 1.233373399998527,
+      "note": ""
+    },
+    {
+      "corpus": "desktop-mixed",
+      "codec": "bzip2-9",
+      "source_bytes": 135127040,
+      "bytes": 83239001,
+      "ratio": 0.6160055085939868,
+      "encode": 12.292542200000753,
+      "decode": 8.020458200000576,
+      "note": ""
+    },
+    {
+      "corpus": "desktop-mixed",
+      "codec": "gzip-9",
+      "source_bytes": 135127040,
+      "bytes": 87405418,
+      "ratio": 0.6468388414339573,
+      "encode": 33.26704719999907,
+      "decode": 0.7621796000021277,
+      "note": ""
+    },
+    {
+      "corpus": "desktop-mixed",
+      "codec": "7z-lzma2-9",
+      "source_bytes": 135127040,
+      "bytes": 82481388,
+      "ratio": 0.6103988365319036,
+      "encode": 143.68527259999973,
+      "decode": 3.521512999999686,
+      "note": "LZMA2 max, 14 threads"
+    },
+    {
+      "corpus": "desktop-mixed",
+      "codec": "zpaq-m5",
+      "source_bytes": 135127040,
+      "bytes": 76865009,
+      "ratio": 0.5688351421003524,
+      "encode": 228.1829813000004,
+      "decode": 316.2693858999992,
+      "note": "PAQ-family, maximum method"
+    }
+  ]
+}

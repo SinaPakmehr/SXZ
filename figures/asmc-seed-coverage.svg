@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 250" role="img">
+<title>ASMC: SplitMix development coverage</title><rect width="840" height="250" fill="white"/>
+<text x="20" y="25" font-family="sans-serif" font-size="17">ASMC: SplitMix development coverage (percent)</text>
+<text x="20" y="55" font-family="sans-serif" font-size="13">8 bits / 256 seeds</text>
+<rect x="275" y="41" width="167.7526" height="17" fill="#0072B2"/>
+<text x="730" y="55" font-family="sans-serif" font-size="13">29.04</text>
+<text x="20" y="85" font-family="sans-serif" font-size="13">12 bits / 4,096 seeds</text>
+<rect x="275" y="71" width="192.8414" height="17" fill="#0072B2"/>
+<text x="730" y="85" font-family="sans-serif" font-size="13">33.38</text>
+<text x="20" y="115" font-family="sans-serif" font-size="13">16 bits / 65,536 seeds</text>
+<rect x="275" y="101" width="439.2216" height="17" fill="#0072B2"/>
+<text x="730" y="115" font-family="sans-serif" font-size="13">76.04</text>
+<text x="20" y="145" font-family="sans-serif" font-size="13">20 bits / 65,536 seeds</text>
+<rect x="275" y="131" width="276.6635" height="17" fill="#0072B2"/>
+<text x="730" y="145" font-family="sans-serif" font-size="13">47.90</text>
+<text x="20" y="175" font-family="sans-serif" font-size="13">24 bits / 65,536 seeds</text>
+<rect x="275" y="161" width="272.7780" height="17" fill="#0072B2"/>
+<text x="730" y="175" font-family="sans-serif" font-size="13">47.22</text>
+<text x="20" y="205" font-family="sans-serif" font-size="13">32 bits / 65,536 seeds</text>
+<rect x="275" y="191" width="440.0000" height="17" fill="#0072B2"/>
+<text x="730" y="205" font-family="sans-serif" font-size="13">76.17</text>
+</svg>

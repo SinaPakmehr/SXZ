@@ -1,0 +1,850 @@
+{
+  "environment": {
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "zstd": "0.25.0",
+    "brotli": "1.2.1",
+    "reps": 5
+  },
+  "rows": [
+    {
+      "split": "dev",
+      "fmt": "TXT",
+      "name": "alice29.txt",
+      "path": "datasets/sxz5-data/alice29.txt",
+      "source": "https://corpus.canterbury.ac.nz/descriptions/",
+      "bytes": 152089,
+      "sha256": "7467306ee0feed4971260f3c87421154a05be571d944e9cb021a5713700c38f0",
+      "details": {
+        "chain": [
+          0
+        ]
+      },
+      "methods": {
+        "sxz4-tx": {
+          "bytes": 54435,
+          "encode_s": 0.26789230000576936,
+          "decode_s": 0.0005119999987073243,
+          "decode_repeats_s": [
+            0.0005289999971864745,
+            0.0005763000081060454,
+            0.0005077999958302826,
+            0.0005119999987073243,
+            0.0005074999935459346
+          ],
+          "decode_MBps": 297.0488288749762,
+          "exact": true,
+          "probes": 0,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        },
+        "sxz4-on": {
+          "bytes": 54435,
+          "encode_s": 1.3104983999946853,
+          "decode_s": 0.0005095000087749213,
+          "decode_repeats_s": [
+            0.0005284999933792278,
+            0.000567900002351962,
+            0.0005095000087749213,
+            0.0005094999942230061,
+            0.0005059999966761097
+          ],
+          "decode_MBps": 298.5063736616881,
+          "exact": true,
+          "probes": 10,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        }
+      }
+    },
+    {
+      "split": "test",
+      "fmt": "TXT",
+      "name": "plrabn12.txt",
+      "path": "datasets/sxz5-data/plrabn12.txt",
+      "source": "https://corpus.canterbury.ac.nz/descriptions/",
+      "bytes": 481861,
+      "sha256": "07e2e0b461af78c7c647cb53dab39de560198e16f799b4516eccf0fbd69f764c",
+      "details": {
+        "chain": [
+          0
+        ]
+      },
+      "methods": {
+        "sxz4-tx": {
+          "bytes": 195292,
+          "encode_s": 0.2912157000100706,
+          "decode_s": 0.0018193999858340248,
+          "decode_repeats_s": [
+            0.0017364000086672604,
+            0.0018361000111326575,
+            0.0017776000022422522,
+            0.0018193999858340248,
+            0.0031214000046020374
+          ],
+          "decode_MBps": 264.8461051730259,
+          "exact": true,
+          "probes": 0,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        },
+        "sxz4-on": {
+          "bytes": 195292,
+          "encode_s": 2.6398140999954194,
+          "decode_s": 0.002942899998743087,
+          "decode_repeats_s": [
+            0.0017256999999517575,
+            0.0018172999989474192,
+            0.002992300011101179,
+            0.002942899998743087,
+            0.005179600004339591
+          ],
+          "decode_MBps": 163.7367903108508,
+          "exact": true,
+          "probes": 32,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "fmt": "PDF",
+      "name": "irs1040.pdf",
+      "path": "datasets/sxz5-data/raw/irs1040.pdf",
+      "source": "https://www.irs.gov/pub/irs-pdf/f1040.pdf",
+      "bytes": 220237,
+      "sha256": "3d31c226df0d189ced80e039d01cf0f8820c1019681a0f0ca6264de277b7e982",
+      "details": {
+        "chain": [
+          0
+        ]
+      },
+      "methods": {
+        "sxz4-tx": {
+          "bytes": 153571,
+          "encode_s": 0.26696439999795984,
+          "decode_s": 0.0007404000061796978,
+          "decode_repeats_s": [
+            0.0007404000061796978,
+            0.000749099999666214,
+            0.0007218000100692734,
+            0.0007258000114234164,
+            0.0037828000058652833
+          ],
+          "decode_MBps": 297.4567776361521,
+          "exact": true,
+          "probes": 0,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        },
+        "sxz4-on": {
+          "bytes": 153571,
+          "encode_s": 1.7274425999930827,
+          "decode_s": 0.0007350999949267134,
+          "decode_repeats_s": [
+            0.0007783999899402261,
+            0.0007553000032203272,
+            0.0007350999949267134,
+            0.0007255999953486025,
+            0.0007233000069390982
+          ],
+          "decode_MBps": 299.6014168411969,
+          "exact": true,
+          "probes": 45,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        }
+      }
+    },
+    {
+      "split": "test",
+      "fmt": "PDF",
+      "name": "bert.pdf",
+      "path": "datasets/sxz5-data/raw/bert.pdf",
+      "source": "https://arxiv.org/pdf/1810.04805",
+      "bytes": 775166,
+      "sha256": "5692a5514787a8c6727b4ff3b726a3385798bc68e12138d1d4af83947e2acf6e",
+      "details": {
+        "chain": [
+          0
+        ]
+      },
+      "methods": {
+        "sxz4-tx": {
+          "bytes": 572495,
+          "encode_s": 0.255837699980475,
+          "decode_s": 0.00251429999480024,
+          "decode_repeats_s": [
+            0.0026257999998051673,
+            0.009074400004465133,
+            0.00251429999480024,
+            0.0024367000005440786,
+            0.0024139000015566126
+          ],
+          "decode_MBps": 308.30290800743796,
+          "exact": true,
+          "probes": 0,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        },
+        "sxz4-on": {
+          "bytes": 572495,
+          "encode_s": 6.051438099995721,
+          "decode_s": 0.0044710999936796725,
+          "decode_repeats_s": [
+            0.007378199996310286,
+            0.0044710999936796725,
+            0.005615299989585765,
+            0.0025091999996220693,
+            0.0024197000020649284
+          ],
+          "decode_MBps": 173.37254838759395,
+          "exact": true,
+          "probes": 156,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "fmt": "DOCX",
+      "name": "docx-shapes.docx",
+      "path": "datasets/sxz5-data/raw/docx-shapes.docx",
+      "source": "https://github.com/python-openxml/python-docx",
+      "bytes": 122610,
+      "sha256": "8fcf0f0433be0968d9305c564ce69601931695ffe163d264fb69b7782feff517",
+      "details": {
+        "chain": [
+          0
+        ]
+      },
+      "methods": {
+        "sxz4-tx": {
+          "bytes": 104803,
+          "encode_s": 0.2527168999949936,
+          "decode_s": 0.0005032999906688929,
+          "decode_repeats_s": [
+            0.0004900000058114529,
+            0.004567399999359623,
+            0.0016506999963894486,
+            0.0005032999906688929,
+            0.0004803000047104433
+          ],
+          "decode_MBps": 243.61216426221182,
+          "exact": true,
+          "probes": 0,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        },
+        "sxz4-on": {
+          "bytes": 104803,
+          "encode_s": 1.883734099988942,
+          "decode_s": 0.00048410000454168767,
+          "decode_repeats_s": [
+            0.00048410000454168767,
+            0.00048550000065006316,
+            0.000527299998793751,
+            0.0004746000049635768,
+            0.00047280000580940396
+          ],
+          "decode_MBps": 253.27411454184687,
+          "exact": true,
+          "probes": 32,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        }
+      }
+    },
+    {
+      "split": "test",
+      "fmt": "DOCX",
+      "name": "docx-table.docx",
+      "path": "datasets/sxz5-data/raw/docx-table.docx",
+      "source": "https://github.com/python-openxml/python-docx",
+      "bytes": 50294,
+      "sha256": "761802878f363b57dce41b77657946ae5dc70d745261561242c9ed5a769260d9",
+      "details": {
+        "chain": [
+          0
+        ]
+      },
+      "methods": {
+        "sxz4-tx": {
+          "bytes": 34037,
+          "encode_s": 0.24566519999643788,
+          "decode_s": 0.00019199999223928899,
+          "decode_repeats_s": [
+            0.00019950000569224358,
+            0.00020470000163186342,
+            0.00019199999223928899,
+            0.00017269999079871923,
+            0.0001756999990902841
+          ],
+          "decode_MBps": 261.94792725469875,
+          "exact": true,
+          "probes": 0,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        },
+        "sxz4-on": {
+          "bytes": 34037,
+          "encode_s": 0.7273618999897735,
+          "decode_s": 0.00016759999562054873,
+          "decode_repeats_s": [
+            0.0001725999900372699,
+            0.0001723000023048371,
+            0.00016759999562054873,
+            0.00016549999418202788,
+            0.0001652000064495951
+          ],
+          "decode_MBps": 300.0835400608666,
+          "exact": true,
+          "probes": 16,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "fmt": "JPEG",
+      "name": "banana.jpg",
+      "path": "datasets/sxz5-data/raw/banana.jpg",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg",
+      "bytes": 2085213,
+      "sha256": "fe23c58652b3da3471fd86bf333aa27b45f2d9238ad03b42f4dfc795acf3954c",
+      "details": {
+        "chain": [
+          0
+        ]
+      },
+      "methods": {
+        "sxz4-tx": {
+          "bytes": 1673576,
+          "encode_s": 0.29876919998787344,
+          "decode_s": 0.009891600013361312,
+          "decode_repeats_s": [
+            0.009332400004495867,
+            0.011077499992097728,
+            0.009891600013361312,
+            0.009721099995658733,
+            0.011329600005410612
+          ],
+          "decode_MBps": 210.80644154467925,
+          "exact": true,
+          "probes": 0,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        },
+        "sxz4-on": {
+          "bytes": 1673576,
+          "encode_s": 21.03959980000218,
+          "decode_s": 0.011926499995752238,
+          "decode_repeats_s": [
+            0.009083900004043244,
+            0.011926499995752238,
+            0.018024299992248416,
+            0.008430100002442487,
+            0.012002399991615675
+          ],
+          "decode_MBps": 174.83863671174888,
+          "exact": true,
+          "probes": 518,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        }
+      }
+    },
+    {
+      "split": "test",
+      "fmt": "JPEG",
+      "name": "gull.jpg",
+      "path": "datasets/sxz5-data/raw/gull.jpg",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg",
+      "bytes": 718902,
+      "sha256": "524368d286d63cd02c319b7447a664f15d434fec594f1849fc9b73de68d40f14",
+      "details": {
+        "chain": [
+          0
+        ]
+      },
+      "methods": {
+        "sxz4-tx": {
+          "bytes": 716603,
+          "encode_s": 0.23828859999775887,
+          "decode_s": 0.0028273000061744824,
+          "decode_repeats_s": [
+            0.0027907999901799485,
+            0.0028273000061744824,
+            0.00276990000566002,
+            0.0034278999955859035,
+            0.003659399997559376
+          ],
+          "decode_MBps": 254.2715659569217,
+          "exact": true,
+          "probes": 0,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        },
+        "sxz4-on": {
+          "bytes": 716603,
+          "encode_s": 4.649318199997651,
+          "decode_s": 0.0025828999932855368,
+          "decode_repeats_s": [
+            0.002505000011296943,
+            0.0026113999920198694,
+            0.002413100010016933,
+            0.004262300004484132,
+            0.0025828999932855368
+          ],
+          "decode_MBps": 278.33133372133864,
+          "exact": true,
+          "probes": 176,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "fmt": "PNG",
+      "name": "python-logo.png",
+      "path": "datasets/corpus/python-logo.png",
+      "source": "https://www.python.org/static/community_logos/python-logo.png",
+      "bytes": 45187,
+      "sha256": "ea0e73137c1c8561e91241771e3c81e5b3e8f5ab2cbfdad1a00d8eea524815fa",
+      "details": {
+        "chain": [
+          6
+        ]
+      },
+      "methods": {
+        "sxz4-tx": {
+          "bytes": 3716,
+          "encode_s": 0.2088847999839345,
+          "decode_s": 0.00011410001025069505,
+          "decode_repeats_s": [
+            0.00010880001354962587,
+            0.00011410001025069505,
+            0.00022159999934956431,
+            0.00039539999852422625,
+            0.00010449999535921961
+          ],
+          "decode_MBps": 396.0297628432925,
+          "exact": true,
+          "probes": 0,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        },
+        "sxz4-on": {
+          "bytes": 3716,
+          "encode_s": 0.5373942000005627,
+          "decode_s": 0.0001112000027205795,
+          "decode_repeats_s": [
+            0.00014629999350290745,
+            0.00011979999544564635,
+            0.0001112000027205795,
+            0.00010679999832063913,
+            0.00010009999095927924
+          ],
+          "decode_MBps": 406.35790372725734,
+          "exact": true,
+          "probes": 3,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        }
+      }
+    },
+    {
+      "split": "test",
+      "fmt": "PNG",
+      "name": "hopper.png",
+      "path": "datasets/corpus/hopper.png",
+      "source": "https://raw.githubusercontent.com/python-pillow/Pillow/main/Tests/images/hopper.png",
+      "bytes": 30605,
+      "sha256": "dbdcb9a9f8ec2c54ff99e99636059bbd57194ed84e2cca5e53853aef293faf42",
+      "details": {
+        "chain": [
+          0
+        ]
+      },
+      "methods": {
+        "sxz4-tx": {
+          "bytes": 30649,
+          "encode_s": 0.2070137000118848,
+          "decode_s": 7.320000440813601e-05,
+          "decode_repeats_s": [
+            7.350000669248402e-05,
+            8.779999916441739e-05,
+            7.080000068526715e-05,
+            7.320000440813601e-05,
+            7.010000990703702e-05
+          ],
+          "decode_MBps": 418.10106771794574,
+          "exact": true,
+          "probes": 0,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        },
+        "sxz4-on": {
+          "bytes": 30649,
+          "encode_s": 0.44650010000623297,
+          "decode_s": 7.160000677686185e-05,
+          "decode_repeats_s": [
+            7.329999061767012e-05,
+            7.160000677686185e-05,
+            7.750000804662704e-05,
+            7.009999535512179e-05,
+            6.949999078642577e-05
+          ],
+          "decode_MBps": 427.4440936210954,
+          "exact": true,
+          "probes": 8,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        }
+      }
+    },
+    {
+      "split": "test-negative",
+      "fmt": "PNG",
+      "name": "transparency.png",
+      "path": "datasets/sxz5-data/raw/transparency.png",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png",
+      "bytes": 224566,
+      "sha256": "c4e870d358d64ce677e958c156d0e3fba466993d8e915fc81c5dc64937a9b696",
+      "details": {
+        "chain": [
+          0
+        ]
+      },
+      "methods": {
+        "sxz4-tx": {
+          "bytes": 223160,
+          "encode_s": 0.25591460001305677,
+          "decode_s": 0.0007655000081285834,
+          "decode_repeats_s": [
+            0.0007615999929839745,
+            0.0008025999995879829,
+            0.0007743999885860831,
+            0.0007655000081285834,
+            0.0007573000038973987
+          ],
+          "decode_MBps": 293.3585860423387,
+          "exact": true,
+          "probes": 0,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        },
+        "sxz4-on": {
+          "bytes": 223160,
+          "encode_s": 1.7979783000191674,
+          "decode_s": 0.002383300001383759,
+          "decode_repeats_s": [
+            0.0008230000094044954,
+            0.0009082000033231452,
+            0.0025187999999616295,
+            0.0024513999960618094,
+            0.002383300001383759
+          ],
+          "decode_MBps": 94.22481427836007,
+          "exact": true,
+          "probes": 55,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "fmt": "EXE",
+      "name": "7zr.exe",
+      "path": "datasets/audit-assets/7zr.exe",
+      "source": "https://www.7-zip.org/download.html",
+      "bytes": 602624,
+      "sha256": "256feca8e274e5da655e2a284fabafd9f554365eb164862089dacd4e8276d282",
+      "details": {
+        "chain": [
+          0
+        ]
+      },
+      "methods": {
+        "sxz4-tx": {
+          "bytes": 339438,
+          "encode_s": 0.2505241000035312,
+          "decode_s": 0.002846000003046356,
+          "decode_repeats_s": [
+            0.0036700000055134296,
+            0.003042800002731383,
+            0.002846000003046356,
+            0.00279059998865705,
+            0.002790999991702847
+          ],
+          "decode_MBps": 211.74420216266753,
+          "exact": true,
+          "probes": 0,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        },
+        "sxz4-on": {
+          "bytes": 339438,
+          "encode_s": 4.014399300009245,
+          "decode_s": 0.0032333999988622963,
+          "decode_repeats_s": [
+            0.0028953000000910833,
+            0.003169699994032271,
+            0.0127521000104025,
+            0.006612800003495067,
+            0.0032333999988622963
+          ],
+          "decode_MBps": 186.37471398900206,
+          "exact": true,
+          "probes": 376,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "fmt": "ONNX",
+      "name": "mnist-8.onnx",
+      "path": "datasets/corpus/mnist-8.onnx",
+      "source": "https://media.githubusercontent.com/media/onnx/models/main/validated/vision/classification/mnist/model/mnist-8.onnx",
+      "bytes": 26454,
+      "sha256": "2f06e72de813a8635c9bc0397ac447a601bdbfa7df4bebc278723b958831c9bf",
+      "details": {
+        "chain": [
+          7
+        ]
+      },
+      "methods": {
+        "sxz4-tx": {
+          "bytes": 23096,
+          "encode_s": 0.17244390000996646,
+          "decode_s": 0.0001275000104214996,
+          "decode_repeats_s": [
+            0.00014089999604038894,
+            0.0001275000104214996,
+            0.00014229999214876443,
+            0.00012229999992996454,
+            0.00012100000458303839
+          ],
+          "decode_MBps": 207.4823359821405,
+          "exact": true,
+          "probes": 0,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        },
+        "sxz4-on": {
+          "bytes": 23096,
+          "encode_s": 0.32325879999552853,
+          "decode_s": 0.0001981999957934022,
+          "decode_repeats_s": [
+            0.00013559999933931977,
+            0.00040750000334810466,
+            0.0002376000047661364,
+            0.00019359998987056315,
+            0.0001981999957934022
+          ],
+          "decode_MBps": 133.47124400332916,
+          "exact": true,
+          "probes": 5,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        }
+      }
+    },
+    {
+      "split": "test",
+      "fmt": "ONNX",
+      "name": "squeezenet1.1-7.onnx",
+      "path": "datasets/corpus/squeezenet1.1-7.onnx",
+      "source": "https://media.githubusercontent.com/media/onnx/models/main/validated/vision/classification/squeezenet/model/squeezenet1.1-7.onnx",
+      "bytes": 4956208,
+      "sha256": "1eeff551a67ae8d565ca33b572fc4b66e3ef357b0eb2863bb9ff47a918cc4088",
+      "details": {
+        "chain": [
+          9
+        ]
+      },
+      "methods": {
+        "sxz4-tx": {
+          "bytes": 4244930,
+          "encode_s": 0.552448300019023,
+          "decode_s": 0.017197399996803142,
+          "decode_repeats_s": [
+            0.01787250000052154,
+            0.01623470000049565,
+            0.017197399996803142,
+            0.01903399999719113,
+            0.016517099997145124
+          ],
+          "decode_MBps": 288.1951923500831,
+          "exact": true,
+          "probes": 0,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        },
+        "sxz4-on": {
+          "bytes": 4244930,
+          "encode_s": 30.590628900012234,
+          "decode_s": 0.018713700002990663,
+          "decode_repeats_s": [
+            0.018713700002990663,
+            0.030879199999617413,
+            0.01736949999758508,
+            0.029475999996066093,
+            0.018117600004188716
+          ],
+          "decode_MBps": 264.84383094780515,
+          "exact": true,
+          "probes": 952,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        }
+      }
+    },
+    {
+      "split": "test",
+      "fmt": "ONNX",
+      "name": "mnist-12-int8.onnx",
+      "path": "datasets/corpus/mnist-12-int8.onnx",
+      "source": "https://media.githubusercontent.com/media/onnx/models/main/validated/vision/classification/mnist/model/mnist-12-int8.onnx",
+      "bytes": 10969,
+      "sha256": "5eac0752eecf4991a5e4157cf31a186f2c61090494019e87979ac17df1dae253",
+      "details": {
+        "chain": [
+          0
+        ]
+      },
+      "methods": {
+        "sxz4-tx": {
+          "bytes": 7389,
+          "encode_s": 0.07937170000514016,
+          "decode_s": 4.410000110510737e-05,
+          "decode_repeats_s": [
+            5.080000846646726e-05,
+            4.650000482797623e-05,
+            4.410000110510737e-05,
+            4.260000423528254e-05,
+            4.189999890513718e-05
+          ],
+          "decode_MBps": 248.730152497199,
+          "exact": true,
+          "probes": 0,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        },
+        "sxz4-on": {
+          "bytes": 7389,
+          "encode_s": 0.1784784000046784,
+          "decode_s": 0.00010679999832063913,
+          "decode_repeats_s": [
+            0.00011919999087695032,
+            0.00010679999832063913,
+            0.00010210000618826598,
+            0.00011150000500492752,
+            9.950000094249845e-05
+          ],
+          "decode_MBps": 102.70599412434856,
+          "exact": true,
+          "probes": 1,
+          "modelled": 0,
+          "models": {},
+          "spans": 0,
+          "residual_bytes": 0,
+          "model_cost": 0
+        }
+      }
+    }
+  ]
+}

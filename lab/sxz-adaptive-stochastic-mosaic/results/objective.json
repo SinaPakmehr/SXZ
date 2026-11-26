@@ -1,0 +1,68 @@
+[
+  {
+    "family": "splitmix64",
+    "case": "planted",
+    "neighbour_corr": 0.009471465209088809,
+    "random_corr": 0.02311622443163069,
+    "hill_trials": 1080,
+    "hill_best": 4,
+    "random_best": 96,
+    "oracle_best": 96,
+    "same_indices_known": true
+  },
+  {
+    "family": "splitmix64",
+    "case": "text",
+    "neighbour_corr": 0.010055414520212328,
+    "random_corr": -0.030737618934200756,
+    "hill_trials": 1188,
+    "hill_best": 3,
+    "random_best": 4,
+    "oracle_best": 4,
+    "same_indices_known": true
+  },
+  {
+    "family": "PCG32",
+    "case": "planted",
+    "neighbour_corr": 0.0819583829375508,
+    "random_corr": 0.03697542409729422,
+    "hill_trials": 1128,
+    "hill_best": 7,
+    "random_best": 96,
+    "oracle_best": 96,
+    "same_indices_known": true
+  },
+  {
+    "family": "PCG32",
+    "case": "text",
+    "neighbour_corr": -0.09174119559141311,
+    "random_corr": -0.009608313387460331,
+    "hill_trials": 1188,
+    "hill_best": 3,
+    "random_best": 3,
+    "oracle_best": 4,
+    "same_indices_known": true
+  },
+  {
+    "family": "LCG32",
+    "case": "planted",
+    "neighbour_corr": 0.008256193945281482,
+    "random_corr": -0.027976064715963034,
+    "hill_trials": 1224,
+    "hill_best": 96,
+    "random_best": 27,
+    "oracle_best": 96,
+    "same_indices_known": true
+  },
+  {
+    "family": "LCG32",
+    "case": "text",
+    "neighbour_corr": 0.18666068014705725,
+    "random_corr": -0.038305034529610364,
+    "hill_trials": 1236,
+    "hill_best": 4,
+    "random_best": 4,
+    "oracle_best": 4,
+    "same_indices_known": true
+  }
+]

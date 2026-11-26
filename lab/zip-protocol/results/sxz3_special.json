@@ -1,0 +1,16 @@
+[
+  {
+    "item": "audio",
+    "codec": "flac-8",
+    "bytes": 129905,
+    "input": 262144,
+    "sxz3-B": 228307
+  },
+  {
+    "item": "image",
+    "codec": "png",
+    "bytes": 69121,
+    "input": 258048,
+    "sxz3-B": 82989
+  }
+]

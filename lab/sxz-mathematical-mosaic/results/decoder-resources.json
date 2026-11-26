@@ -1,0 +1,231 @@
+{
+  "rows": [
+    {
+      "peak_before": 45895680,
+      "peak_after": 49713152,
+      "cold_s": 0.031821900003706105,
+      "cold_gen_s": 0.031500400029472075,
+      "bank_cache_bytes": 168741,
+      "warm_s": [
+        0.0002673999988473952,
+        0.00020379999477881938,
+        0.0001934000028995797,
+        0.0001843999925768003,
+        0.0001843999925768003
+      ],
+      "warm_median_s": 0.0001934000028995797,
+      "output_bytes": 14585,
+      "digest": "bbc2425f35f790058ef9b9b4de7fcdc67c8c004978c04ffb0bff64ca5d5925f3",
+      "method": "synthetic",
+      "coded_bytes": 9727,
+      "meta": {
+        "header_bytes": 25,
+        "metadata_raw": 120,
+        "metadata_bytes": 127,
+        "literals_raw": 9561,
+        "literals_bytes": 9575,
+        "covered_bytes": 2768,
+        "repeated_bytes": 2256,
+        "instruction_count": 23,
+        "description_raw": {
+          "0": 35,
+          "1": 69,
+          "2": 15
+        },
+        "matches": [
+          {
+            "target_byte": 2303,
+            "target_byte_end": 2320,
+            "gid": 1,
+            "source_symbol": 18351,
+            "symbols": 17,
+            "widths_bytes": 0,
+            "description_bytes": 8,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 8
+          },
+          {
+            "target_byte": 2638,
+            "target_byte_end": 2670,
+            "gid": 2,
+            "source_symbol": 17931,
+            "symbols": 32,
+            "widths_bytes": 0,
+            "description_bytes": 8,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 8
+          },
+          {
+            "target_byte": 3123,
+            "target_byte_end": 3203,
+            "gid": 10,
+            "source_symbol": 5042,
+            "symbols": 80,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 3553,
+            "target_byte_end": 3809,
+            "gid": 12,
+            "source_symbol": 12427,
+            "symbols": 256,
+            "widths_bytes": 0,
+            "description_bytes": 9,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 9
+          },
+          {
+            "target_byte": 4350,
+            "target_byte_end": 4862,
+            "gid": 24,
+            "source_symbol": 25668,
+            "symbols": 512,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 7416,
+            "target_byte_end": 8440,
+            "gid": 28,
+            "source_symbol": 18652,
+            "symbols": 1024,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 11527,
+            "target_byte_end": 12247,
+            "gid": 0,
+            "source_symbol": 18722,
+            "symbols": 720,
+            "widths_bytes": 0,
+            "description_bytes": 10,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 10
+          },
+          {
+            "target_byte": 14457,
+            "target_byte_end": 14584,
+            "gid": 15,
+            "source_symbol": 208,
+            "symbols": 127,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          }
+        ]
+      }
+    },
+    {
+      "peak_before": 45953024,
+      "peak_after": 47362048,
+      "cold_s": 0.0013092000008327886,
+      "cold_gen_s": 0.0,
+      "bank_cache_bytes": 0,
+      "warm_s": [
+        0.001479400001699105,
+        0.0009035000111907721,
+        0.0004746000049635768,
+        0.00041090000013355166,
+        0.0003896999987773597
+      ],
+      "warm_median_s": 0.0004746000049635768,
+      "output_bytes": 220237,
+      "digest": "3d31c226df0d189ced80e039d01cf0f8820c1019681a0f0ca6264de277b7e982",
+      "method": "irs1040.pdf",
+      "coded_bytes": 154403,
+      "meta": {
+        "header_bytes": 25,
+        "metadata_raw": 5,
+        "metadata_bytes": 18,
+        "literals_raw": 220237,
+        "literals_bytes": 154360,
+        "covered_bytes": 0,
+        "repeated_bytes": 0,
+        "instruction_count": 1,
+        "description_raw": {
+          "0": 4
+        },
+        "matches": []
+      }
+    },
+    {
+      "peak_before": 45846528,
+      "peak_after": 47366144,
+      "cold_s": 0.001252100002602674,
+      "cold_gen_s": 0.0,
+      "bank_cache_bytes": 0,
+      "warm_s": [
+        0.000715599991963245,
+        0.0006229999999050051,
+        0.0004130000015720725,
+        0.0005124999879626557,
+        0.00044889999844599515
+      ],
+      "warm_median_s": 0.0005124999879626557,
+      "output_bytes": 220237,
+      "digest": "3d31c226df0d189ced80e039d01cf0f8820c1019681a0f0ca6264de277b7e982",
+      "method": "irs1040.pdf-direct",
+      "coded_bytes": 154403,
+      "meta": {
+        "header_bytes": 25,
+        "metadata_raw": 5,
+        "metadata_bytes": 18,
+        "literals_raw": 220237,
+        "literals_bytes": 154360,
+        "covered_bytes": 0,
+        "repeated_bytes": 0,
+        "instruction_count": 1,
+        "description_raw": {
+          "0": 4
+        },
+        "matches": []
+      }
+    }
+  ],
+  "flint_dependency_installed_B": 24638304,
+  "fixed_python_source_B": 29659,
+  "candidate_bank_bytes": 1000000,
+  "optional_bank_zstd_bytes": 721988,
+  "shared_cost_examples": [
+    {
+      "files": 1,
+      "raw_bank_each_B": 1000000.0,
+      "zstd_bank_each_B": 721988.0
+    },
+    {
+      "files": 19,
+      "raw_bank_each_B": 52631.57894736842,
+      "zstd_bank_each_B": 37999.36842105263
+    },
+    {
+      "files": 1000,
+      "raw_bank_each_B": 1000.0,
+      "zstd_bank_each_B": 721.988
+    }
+  ]
+}

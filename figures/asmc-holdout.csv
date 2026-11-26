@@ -1,0 +1,8 @@
+bank,files,coverage_fraction,net_with_fallback_bytes,gate_passes
+adaptive-splitmix,22,0.07984933819588287,3063,0
+fixed-seeds,22,0.06247769444323527,0,0
+independent-uniform,22,0.06354833220337497,0,0
+trained-hist,22,0.24284250028964954,0,0
+trained-markov,22,0.2135332506918543,0,0
+variable-families,22,0.08677686774918059,0,0
+file-fitted-hist,22,0.48120782216412683,0,0

@@ -1,0 +1,1371 @@
+[
+  {
+    "suite": "transforms",
+    "name": "order2-u32",
+    "sample": 65536,
+    "deflate_top1": [
+      7
+    ],
+    "deflate_top1_bytes": 49380,
+    "law_top1": [
+      0
+    ],
+    "law_top1_bytes": 84,
+    "best_tried": "(0,)",
+    "best_bytes": 84,
+    "rank_of_best_by_deflate": 48,
+    "rank_of_best_by_law": 1,
+    "results": {
+      "(7,)": {
+        "bytes": 49380,
+        "spans": 0,
+        "modelled": 0,
+        "encode": 0.21978569999919273
+      },
+      "(0,)": {
+        "bytes": 84,
+        "spans": 1,
+        "modelled": 65536,
+        "encode": 0.09104540000407724
+      }
+    },
+    "top10_by_deflate": [
+      {
+        "chain": [
+          7
+        ],
+        "deflate": 49348,
+        "law": 0
+      },
+      {
+        "chain": [
+          9
+        ],
+        "deflate": 49350,
+        "law": 0
+      },
+      {
+        "chain": [
+          9,
+          1
+        ],
+        "deflate": 49510,
+        "law": 0
+      },
+      {
+        "chain": [
+          7,
+          1
+        ],
+        "deflate": 49512,
+        "law": 0
+      },
+      {
+        "chain": [
+          9,
+          11
+        ],
+        "deflate": 49679,
+        "law": 0
+      },
+      {
+        "chain": [
+          7,
+          11
+        ],
+        "deflate": 49682,
+        "law": 0
+      },
+      {
+        "chain": [
+          7,
+          13
+        ],
+        "deflate": 49687,
+        "law": 0
+      },
+      {
+        "chain": [
+          9,
+          12
+        ],
+        "deflate": 49687,
+        "law": 0
+      },
+      {
+        "chain": [
+          9,
+          2
+        ],
+        "deflate": 49689,
+        "law": 0
+      },
+      {
+        "chain": [
+          9,
+          13
+        ],
+        "deflate": 49694,
+        "law": 0
+      }
+    ]
+  },
+  {
+    "suite": "transforms",
+    "name": "cross-3x-u16",
+    "sample": 65536,
+    "deflate_top1": [
+      6,
+      11
+    ],
+    "deflate_top1_bytes": 332,
+    "law_top1": [
+      6
+    ],
+    "law_top1_bytes": 352,
+    "best_tried": "(6, 11)",
+    "best_bytes": 332,
+    "rank_of_best_by_deflate": 1,
+    "rank_of_best_by_law": 17,
+    "results": {
+      "(6, 11)": {
+        "bytes": 332,
+        "spans": 3,
+        "modelled": 65536,
+        "encode": 1.1003821999984211
+      },
+      "(6,)": {
+        "bytes": 352,
+        "spans": 1,
+        "modelled": 65536,
+        "encode": 0.7404992999945534
+      }
+    },
+    "top10_by_deflate": [
+      {
+        "chain": [
+          6,
+          11
+        ],
+        "deflate": 591,
+        "law": 91
+      },
+      {
+        "chain": [
+          6,
+          4
+        ],
+        "deflate": 651,
+        "law": 23
+      },
+      {
+        "chain": [
+          6,
+          2
+        ],
+        "deflate": 654,
+        "law": 58
+      },
+      {
+        "chain": [
+          6,
+          3
+        ],
+        "deflate": 841,
+        "law": 52
+      },
+      {
+        "chain": [
+          6,
+          13
+        ],
+        "deflate": 937,
+        "law": 117
+      },
+      {
+        "chain": [
+          6,
+          12
+        ],
+        "deflate": 1047,
+        "law": 149
+      },
+      {
+        "chain": [
+          6,
+          1
+        ],
+        "deflate": 3534,
+        "law": 179
+      },
+      {
+        "chain": [
+          20
+        ],
+        "deflate": 3749,
+        "law": 0
+      },
+      {
+        "chain": [
+          5,
+          1
+        ],
+        "deflate": 4136,
+        "law": 282
+      },
+      {
+        "chain": [
+          5
+        ],
+        "deflate": 4670,
+        "law": 942
+      }
+    ]
+  },
+  {
+    "suite": "transforms",
+    "name": "ecg-train",
+    "sample": 65536,
+    "deflate_top1": [
+      6,
+      1
+    ],
+    "deflate_top1_bytes": 24301,
+    "law_top1": [
+      6,
+      1
+    ],
+    "law_top1_bytes": 24301,
+    "best_tried": "(6, 1)",
+    "best_bytes": 24301,
+    "rank_of_best_by_deflate": 1,
+    "rank_of_best_by_law": 1,
+    "results": {
+      "(6, 1)": {
+        "bytes": 24301,
+        "spans": 0,
+        "modelled": 0,
+        "encode": 0.4316529999996419
+      },
+      "(0,)": {
+        "bytes": 42838,
+        "spans": 0,
+        "modelled": 0,
+        "encode": 0.3379544999988866
+      }
+    },
+    "top10_by_deflate": [
+      {
+        "chain": [
+          6,
+          1
+        ],
+        "deflate": 24266,
+        "law": 0
+      },
+      {
+        "chain": [
+          6,
+          2
+        ],
+        "deflate": 26799,
+        "law": 0
+      },
+      {
+        "chain": [
+          6,
+          11
+        ],
+        "deflate": 26827,
+        "law": 0
+      },
+      {
+        "chain": [
+          6,
+          3
+        ],
+        "deflate": 28840,
+        "law": 0
+      },
+      {
+        "chain": [
+          6,
+          12
+        ],
+        "deflate": 28869,
+        "law": 0
+      },
+      {
+        "chain": [
+          6,
+          4
+        ],
+        "deflate": 30560,
+        "law": 0
+      },
+      {
+        "chain": [
+          6,
+          13
+        ],
+        "deflate": 30586,
+        "law": 0
+      },
+      {
+        "chain": [
+          6
+        ],
+        "deflate": 32607,
+        "law": 0
+      },
+      {
+        "chain": [
+          20
+        ],
+        "deflate": 38426,
+        "law": 0
+      },
+      {
+        "chain": [
+          0
+        ],
+        "deflate": 42807,
+        "law": 0
+      }
+    ]
+  },
+  {
+    "suite": "transforms",
+    "name": "csv-numeric",
+    "sample": 65536,
+    "deflate_top1": [
+      0
+    ],
+    "deflate_top1_bytes": 17360,
+    "law_top1": [
+      13
+    ],
+    "law_top1_bytes": 30319,
+    "best_tried": "(0,)",
+    "best_bytes": 17360,
+    "rank_of_best_by_deflate": 1,
+    "rank_of_best_by_law": 2,
+    "results": {
+      "(0,)": {
+        "bytes": 17360,
+        "spans": 0,
+        "modelled": 0,
+        "encode": 0.39134110000304645
+      },
+      "(13,)": {
+        "bytes": 30319,
+        "spans": 11,
+        "modelled": 27937,
+        "encode": 2.070936999996775
+      }
+    },
+    "top10_by_deflate": [
+      {
+        "chain": [
+          0
+        ],
+        "deflate": 17329,
+        "law": 0
+      },
+      {
+        "chain": [
+          5
+        ],
+        "deflate": 17487,
+        "law": 0
+      },
+      {
+        "chain": [
+          6
+        ],
+        "deflate": 17810,
+        "law": 0
+      },
+      {
+        "chain": [
+          7
+        ],
+        "deflate": 18809,
+        "law": 0
+      },
+      {
+        "chain": [
+          9
+        ],
+        "deflate": 18867,
+        "law": 0
+      },
+      {
+        "chain": [
+          8
+        ],
+        "deflate": 19378,
+        "law": 0
+      },
+      {
+        "chain": [
+          10
+        ],
+        "deflate": 19968,
+        "law": 0
+      },
+      {
+        "chain": [
+          6,
+          1
+        ],
+        "deflate": 20699,
+        "law": 0
+      },
+      {
+        "chain": [
+          5,
+          1
+        ],
+        "deflate": 21037,
+        "law": 0
+      },
+      {
+        "chain": [
+          1
+        ],
+        "deflate": 21621,
+        "law": 0
+      }
+    ]
+  },
+  {
+    "suite": "transforms",
+    "name": "affine-u24be",
+    "sample": 65536,
+    "deflate_top1": [
+      6,
+      1
+    ],
+    "deflate_top1_bytes": 203,
+    "law_top1": [
+      1
+    ],
+    "law_top1_bytes": 1482,
+    "best_tried": "(6, 1)",
+    "best_bytes": 203,
+    "rank_of_best_by_deflate": 1,
+    "rank_of_best_by_law": 6,
+    "results": {
+      "(6, 1)": {
+        "bytes": 203,
+        "spans": 1,
+        "modelled": 44739,
+        "encode": 0.7542533000014373
+      },
+      "(1,)": {
+        "bytes": 1482,
+        "spans": 6,
+        "modelled": 65536,
+        "encode": 0.2732864999998128
+      }
+    },
+    "top10_by_deflate": [
+      {
+        "chain": [
+          6,
+          1
+        ],
+        "deflate": 308,
+        "law": 153
+      },
+      {
+        "chain": [
+          6,
+          13
+        ],
+        "deflate": 387,
+        "law": 0
+      },
+      {
+        "chain": [
+          6,
+          4
+        ],
+        "deflate": 390,
+        "law": 0
+      },
+      {
+        "chain": [
+          6,
+          3
+        ],
+        "deflate": 508,
+        "law": 61
+      },
+      {
+        "chain": [
+          6,
+          12
+        ],
+        "deflate": 515,
+        "law": 64
+      },
+      {
+        "chain": [
+          6,
+          2
+        ],
+        "deflate": 539,
+        "law": 127
+      },
+      {
+        "chain": [
+          6,
+          11
+        ],
+        "deflate": 539,
+        "law": 129
+      },
+      {
+        "chain": [
+          6
+        ],
+        "deflate": 1372,
+        "law": 0
+      },
+      {
+        "chain": [
+          20
+        ],
+        "deflate": 1540,
+        "law": 0
+      },
+      {
+        "chain": [
+          0
+        ],
+        "deflate": 54162,
+        "law": 0
+      }
+    ]
+  },
+  {
+    "suite": "transforms",
+    "name": "random-walk-f32",
+    "sample": 65536,
+    "deflate_top1": [
+      7,
+      1
+    ],
+    "deflate_top1_bytes": 31285,
+    "law_top1": [
+      7,
+      1
+    ],
+    "law_top1_bytes": 31285,
+    "best_tried": "(7, 1)",
+    "best_bytes": 31285,
+    "rank_of_best_by_deflate": 1,
+    "rank_of_best_by_law": 1,
+    "results": {
+      "(7, 1)": {
+        "bytes": 31285,
+        "spans": 0,
+        "modelled": 0,
+        "encode": 0.5098749000026146
+      },
+      "(0,)": {
+        "bytes": 47052,
+        "spans": 0,
+        "modelled": 0,
+        "encode": 0.2598747999945772
+      }
+    },
+    "top10_by_deflate": [
+      {
+        "chain": [
+          7,
+          1
+        ],
+        "deflate": 31250,
+        "law": 0
+      },
+      {
+        "chain": [
+          9,
+          1
+        ],
+        "deflate": 31536,
+        "law": 0
+      },
+      {
+        "chain": [
+          7,
+          11
+        ],
+        "deflate": 32345,
+        "law": 0
+      },
+      {
+        "chain": [
+          7,
+          2
+        ],
+        "deflate": 32369,
+        "law": 0
+      },
+      {
+        "chain": [
+          9,
+          11
+        ],
+        "deflate": 32797,
+        "law": 0
+      },
+      {
+        "chain": [
+          9,
+          2
+        ],
+        "deflate": 32830,
+        "law": 0
+      },
+      {
+        "chain": [
+          7,
+          12
+        ],
+        "deflate": 33480,
+        "law": 0
+      },
+      {
+        "chain": [
+          7,
+          3
+        ],
+        "deflate": 33497,
+        "law": 0
+      },
+      {
+        "chain": [
+          9,
+          12
+        ],
+        "deflate": 33983,
+        "law": 0
+      },
+      {
+        "chain": [
+          9,
+          3
+        ],
+        "deflate": 34015,
+        "law": 0
+      }
+    ]
+  },
+  {
+    "suite": "global",
+    "name": "piecewise-64k",
+    "candidates": 256,
+    "greedy_spans": 1,
+    "greedy_savings": 65236,
+    "global_spans": 1,
+    "global_savings": 65236,
+    "collect_time": 49.73549759999878,
+    "greedy_time": 1.3747876999987056,
+    "greedy_bytes": 71,
+    "global_bytes": 71
+  },
+  {
+    "suite": "global",
+    "name": "two-laws-64k",
+    "candidates": 124,
+    "greedy_spans": 2,
+    "greedy_savings": 32260,
+    "global_spans": 2,
+    "global_savings": 32344,
+    "collect_time": 24.281026500000735,
+    "greedy_time": 1.4040437000003294,
+    "greedy_bytes": 9972,
+    "global_bytes": 9813
+  },
+  {
+    "suite": "global",
+    "name": "cross-64k",
+    "candidates": 0,
+    "greedy_spans": 0,
+    "greedy_savings": 0,
+    "global_spans": 0,
+    "global_savings": 0,
+    "collect_time": 0.952978900000744,
+    "greedy_time": 0.2916741999943042,
+    "greedy_bytes": 64685,
+    "global_bytes": 64685
+  },
+  {
+    "suite": "gate",
+    "name": "text-train",
+    "chain": [
+      0
+    ],
+    "on": {
+      "bytes": 95566,
+      "encode": 1.6539428000032785,
+      "spans": 0,
+      "modelled": 0,
+      "models": {},
+      "probes": 16,
+      "chain": [
+        0
+      ]
+    },
+    "off": {
+      "bytes": 95566,
+      "encode": 1.6279718000005232,
+      "spans": 0,
+      "modelled": 0,
+      "models": {},
+      "probes": 16,
+      "chain": [
+        0
+      ]
+    }
+  },
+  {
+    "suite": "gate",
+    "name": "weights-train",
+    "chain": [
+      8
+    ],
+    "on": {
+      "bytes": 238680,
+      "encode": 1.436051500000758,
+      "spans": 0,
+      "modelled": 0,
+      "models": {},
+      "probes": 175,
+      "chain": [
+        0
+      ]
+    },
+    "off": {
+      "bytes": 238680,
+      "encode": 17.278822500004026,
+      "spans": 0,
+      "modelled": 0,
+      "models": {},
+      "probes": 175,
+      "chain": [
+        0
+      ]
+    }
+  },
+  {
+    "suite": "gate",
+    "name": "eeg-train",
+    "chain": [
+      0
+    ],
+    "on": {
+      "bytes": 65138,
+      "encode": 1.4479148000027635,
+      "spans": 0,
+      "modelled": 0,
+      "models": {},
+      "probes": 16,
+      "chain": [
+        0
+      ]
+    },
+    "off": {
+      "bytes": 65138,
+      "encode": 1.4281706999972812,
+      "spans": 0,
+      "modelled": 0,
+      "models": {},
+      "probes": 16,
+      "chain": [
+        0
+      ]
+    }
+  },
+  {
+    "suite": "gate",
+    "name": "jpeg-slice",
+    "chain": [
+      0
+    ],
+    "on": {
+      "bytes": 262261,
+      "encode": 2.0216069000016432,
+      "spans": 0,
+      "modelled": 0,
+      "models": {},
+      "probes": 64,
+      "chain": [
+        0
+      ]
+    },
+    "off": {
+      "bytes": 262261,
+      "encode": 6.18958990000101,
+      "spans": 0,
+      "modelled": 0,
+      "models": {},
+      "probes": 64,
+      "chain": [
+        0
+      ]
+    }
+  },
+  {
+    "suite": "gate",
+    "name": "ecg-train",
+    "chain": [
+      6,
+      1
+    ],
+    "on": {
+      "bytes": 92944,
+      "encode": 6.324432399997022,
+      "spans": 1,
+      "modelled": 40064,
+      "models": {
+        "period-bytes": 1
+      },
+      "probes": 113,
+      "chain": [
+        6,
+        1
+      ]
+    },
+    "off": {
+      "bytes": 92944,
+      "encode": 14.430668900000455,
+      "spans": 1,
+      "modelled": 40064,
+      "models": {
+        "period-bytes": 1
+      },
+      "probes": 113,
+      "chain": [
+        6,
+        1
+      ]
+    }
+  },
+  {
+    "suite": "gate",
+    "name": "order2-u32",
+    "chain": [
+      9
+    ],
+    "on": {
+      "bytes": 84,
+      "encode": 0.27329420000023674,
+      "spans": 1,
+      "modelled": 262144,
+      "models": {
+        "order2-word": 1
+      },
+      "probes": 2,
+      "chain": [
+        0
+      ]
+    },
+    "off": {
+      "bytes": 84,
+      "encode": 0.26567939999949886,
+      "spans": 1,
+      "modelled": 262144,
+      "models": {
+        "order2-word": 1
+      },
+      "probes": 2,
+      "chain": [
+        0
+      ]
+    }
+  },
+  {
+    "suite": "gate",
+    "name": "csv-numeric",
+    "chain": [
+      0
+    ],
+    "on": {
+      "bytes": 68444,
+      "encode": 1.5697323999993387,
+      "spans": 0,
+      "modelled": 0,
+      "models": {},
+      "probes": 16,
+      "chain": [
+        0
+      ]
+    },
+    "off": {
+      "bytes": 68444,
+      "encode": 1.4637925999995787,
+      "spans": 0,
+      "modelled": 0,
+      "models": {},
+      "probes": 16,
+      "chain": [
+        0
+      ]
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "order2-u32",
+    "tolerance": 0.0,
+    "chain": [
+      0
+    ],
+    "bytes": 84,
+    "spans": 1,
+    "modelled": 262144,
+    "encode": 0.29719240000122227,
+    "modes": {
+      "exact": 1
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "order2-u32",
+    "tolerance": 0.02,
+    "chain": [
+      0
+    ],
+    "bytes": 84,
+    "spans": 1,
+    "modelled": 262144,
+    "encode": 0.2847683999934816,
+    "modes": {
+      "exact": 1
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "order2-u32",
+    "tolerance": 0.12,
+    "chain": [
+      0
+    ],
+    "bytes": 84,
+    "spans": 1,
+    "modelled": 262144,
+    "encode": 0.281497700001637,
+    "modes": {
+      "exact": 1
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "order2-u32",
+    "tolerance": 0.25,
+    "chain": [
+      0
+    ],
+    "bytes": 84,
+    "spans": 1,
+    "modelled": 262144,
+    "encode": 0.30490070000087144,
+    "modes": {
+      "exact": 1
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "order2-u32",
+    "tolerance": 0.5,
+    "chain": [
+      0
+    ],
+    "bytes": 84,
+    "spans": 1,
+    "modelled": 262144,
+    "encode": 0.27107360000081826,
+    "modes": {
+      "exact": 1
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "order2-noise3",
+    "tolerance": 0.0,
+    "chain": [
+      9
+    ],
+    "bytes": 202696,
+    "spans": 0,
+    "modelled": 0,
+    "encode": 1.9718653000018094,
+    "modes": {}
+  },
+  {
+    "suite": "tolerance",
+    "name": "order2-noise3",
+    "tolerance": 0.02,
+    "chain": [
+      0
+    ],
+    "bytes": 113684,
+    "spans": 60,
+    "modelled": 159488,
+    "encode": 21.677053400002478,
+    "modes": {
+      "exceptions": 59,
+      "moddiff": 1
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "order2-noise3",
+    "tolerance": 0.12,
+    "chain": [
+      0
+    ],
+    "bytes": 15296,
+    "spans": 1,
+    "modelled": 262144,
+    "encode": 0.4622712999989744,
+    "modes": {
+      "exceptions": 1
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "order2-noise3",
+    "tolerance": 0.25,
+    "chain": [
+      0
+    ],
+    "bytes": 15296,
+    "spans": 1,
+    "modelled": 262144,
+    "encode": 0.4472836999993888,
+    "modes": {
+      "exceptions": 1
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "order2-noise3",
+    "tolerance": 0.5,
+    "chain": [
+      0
+    ],
+    "bytes": 15296,
+    "spans": 1,
+    "modelled": 262144,
+    "encode": 0.481739099996048,
+    "modes": {
+      "exceptions": 1
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "ecg-train",
+    "tolerance": 0.0,
+    "chain": [
+      6,
+      1
+    ],
+    "bytes": 92944,
+    "spans": 0,
+    "modelled": 0,
+    "encode": 2.2067373000027146,
+    "modes": {}
+  },
+  {
+    "suite": "tolerance",
+    "name": "ecg-train",
+    "tolerance": 0.02,
+    "chain": [
+      6,
+      1
+    ],
+    "bytes": 92944,
+    "spans": 1,
+    "modelled": 40064,
+    "encode": 6.6233419999989565,
+    "modes": {
+      "exceptions": 1
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "ecg-train",
+    "tolerance": 0.12,
+    "chain": [
+      6,
+      1
+    ],
+    "bytes": 92944,
+    "spans": 1,
+    "modelled": 40064,
+    "encode": 6.271275600003719,
+    "modes": {
+      "exceptions": 1
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "ecg-train",
+    "tolerance": 0.25,
+    "chain": [
+      6,
+      1
+    ],
+    "bytes": 92944,
+    "spans": 1,
+    "modelled": 40064,
+    "encode": 6.284646100000828,
+    "modes": {
+      "exceptions": 1
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "ecg-train",
+    "tolerance": 0.5,
+    "chain": [
+      6,
+      1
+    ],
+    "bytes": 92944,
+    "spans": 1,
+    "modelled": 40064,
+    "encode": 6.256128699998953,
+    "modes": {
+      "exceptions": 1
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "eeg-train",
+    "tolerance": 0.0,
+    "chain": [
+      0
+    ],
+    "bytes": 65138,
+    "spans": 0,
+    "modelled": 0,
+    "encode": 1.4077416000000085,
+    "modes": {}
+  },
+  {
+    "suite": "tolerance",
+    "name": "eeg-train",
+    "tolerance": 0.02,
+    "chain": [
+      0
+    ],
+    "bytes": 65138,
+    "spans": 0,
+    "modelled": 0,
+    "encode": 1.404259800001455,
+    "modes": {}
+  },
+  {
+    "suite": "tolerance",
+    "name": "eeg-train",
+    "tolerance": 0.12,
+    "chain": [
+      0
+    ],
+    "bytes": 65138,
+    "spans": 0,
+    "modelled": 0,
+    "encode": 1.3375584000023082,
+    "modes": {}
+  },
+  {
+    "suite": "tolerance",
+    "name": "eeg-train",
+    "tolerance": 0.25,
+    "chain": [
+      0
+    ],
+    "bytes": 65138,
+    "spans": 0,
+    "modelled": 0,
+    "encode": 1.4039216000019223,
+    "modes": {}
+  },
+  {
+    "suite": "tolerance",
+    "name": "eeg-train",
+    "tolerance": 0.5,
+    "chain": [
+      0
+    ],
+    "bytes": 65138,
+    "spans": 0,
+    "modelled": 0,
+    "encode": 1.386911900000996,
+    "modes": {}
+  },
+  {
+    "suite": "tolerance",
+    "name": "composite-sum",
+    "tolerance": 0.0,
+    "chain": [
+      7,
+      1
+    ],
+    "bytes": 623,
+    "spans": 2,
+    "modelled": 131076,
+    "encode": 9.587459700000181,
+    "modes": {
+      "exceptions": 2
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "composite-sum",
+    "tolerance": 0.02,
+    "chain": [
+      7,
+      1
+    ],
+    "bytes": 678,
+    "spans": 2,
+    "modelled": 131238,
+    "encode": 10.122763100000157,
+    "modes": {
+      "exceptions": 2
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "composite-sum",
+    "tolerance": 0.12,
+    "chain": [
+      7,
+      1
+    ],
+    "bytes": 384,
+    "spans": 3,
+    "modelled": 196876,
+    "encode": 6.315670500000124,
+    "modes": {
+      "exceptions": 3
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "composite-sum",
+    "tolerance": 0.25,
+    "chain": [
+      0
+    ],
+    "bytes": 276,
+    "spans": 1,
+    "modelled": 262144,
+    "encode": 0.9997204000028432,
+    "modes": {
+      "moddiff": 1
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "composite-sum",
+    "tolerance": 0.5,
+    "chain": [
+      0
+    ],
+    "bytes": 276,
+    "spans": 1,
+    "modelled": 262144,
+    "encode": 1.6663982999962172,
+    "modes": {
+      "moddiff": 1
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "piecewise",
+    "tolerance": 0.0,
+    "chain": [
+      0
+    ],
+    "bytes": 114,
+    "spans": 2,
+    "modelled": 262144,
+    "encode": 3.349076899998181,
+    "modes": {
+      "exceptions": 1,
+      "exact": 1
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "piecewise",
+    "tolerance": 0.02,
+    "chain": [
+      0
+    ],
+    "bytes": 258,
+    "spans": 2,
+    "modelled": 262144,
+    "encode": 3.4361222999941674,
+    "modes": {
+      "exceptions": 1,
+      "exact": 1
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "piecewise",
+    "tolerance": 0.12,
+    "chain": [
+      0
+    ],
+    "bytes": 813,
+    "spans": 2,
+    "modelled": 262144,
+    "encode": 3.5923591000027955,
+    "modes": {
+      "exceptions": 1,
+      "exact": 1
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "piecewise",
+    "tolerance": 0.25,
+    "chain": [
+      0
+    ],
+    "bytes": 1305,
+    "spans": 2,
+    "modelled": 262144,
+    "encode": 3.3890738999980385,
+    "modes": {
+      "xor": 1,
+      "exact": 1
+    }
+  },
+  {
+    "suite": "tolerance",
+    "name": "piecewise",
+    "tolerance": 0.5,
+    "chain": [
+      0
+    ],
+    "bytes": 2363,
+    "spans": 2,
+    "modelled": 262144,
+    "encode": 3.6747190000023693,
+    "modes": {
+      "xor": 1,
+      "exact": 1
+    }
+  }
+]

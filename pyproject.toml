@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sinuxz"
+version = "0.1.0"
+description = "An open research project exploring mathematical and generative approaches to lossless data compression."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Sina Pakmehr" }]
+keywords = ["compression", "mathematics", "research", "lossless-compression"]
+
+[project.scripts]
+sinuxz = "sinuxz.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "lab/zip-protocol"}
+packages = ["sinuxz"]

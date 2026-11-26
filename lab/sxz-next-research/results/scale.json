@@ -1,0 +1,77 @@
+[
+  {
+    "bytes": 1000000,
+    "native_s": 0.00575760001083836,
+    "native_repeats_s": [
+      0.00575760001083836,
+      0.005700900001102127,
+      0.00849480000033509,
+      0.005644099990604445,
+      0.012534199995570816
+    ],
+    "throughput_MBps": 173.68347890050646,
+    "target": {
+      "pos": 921235,
+      "len": 512
+    },
+    "native_target": 1.0,
+    "clean_s": 0.013155500011635013,
+    "clean_hits": 0,
+    "native_total_hits": 1,
+    "max_anchor_positions": 999969,
+    "reference_prefix_bytes": 131072,
+    "python_prefix_s": 0.20436569998855703,
+    "native_prefix_s": 0.0007652000058442354
+  },
+  {
+    "bytes": 10000000,
+    "native_s": 0.0794811999949161,
+    "native_repeats_s": [
+      0.0794811999949161,
+      0.08496649999869987,
+      0.084008999998332,
+      0.07315419999940787,
+      0.0709601999988081
+    ],
+    "throughput_MBps": 125.81591622471271,
+    "target": {
+      "pos": 9921235,
+      "len": 512
+    },
+    "native_target": 1.0,
+    "clean_s": 0.064295400006813,
+    "clean_hits": 34,
+    "native_total_hits": 35,
+    "max_anchor_positions": 9999969,
+    "reference_prefix_bytes": 131072,
+    "python_prefix_s": 0.19703719999233726,
+    "native_prefix_s": 0.0008363999950233847
+  },
+  {
+    "bytes": 100000000,
+    "native_s": 0.6796627000003355,
+    "native_repeats_s": [
+      0.6648220000060974,
+      0.6817187999986345,
+      0.6836045000090962,
+      0.6796627000003355,
+      0.668485200003488
+    ],
+    "throughput_MBps": 147.13180523214035,
+    "target": {
+      "pos": 99921235,
+      "len": 512
+    },
+    "native_target": 1.0,
+    "clean_s": 0.6735243000002811,
+    "clean_hits": 379,
+    "native_total_hits": 380,
+    "max_anchor_positions": 99999969,
+    "reference_prefix_bytes": 131072,
+    "python_prefix_s": 0.1629702000063844,
+    "native_prefix_s": 0.0007984000112628564,
+    "sxz4_scan_s": 30.04595809998864,
+    "sxz4_scan_probes": 346,
+    "sxz4_target": 0
+  }
+]

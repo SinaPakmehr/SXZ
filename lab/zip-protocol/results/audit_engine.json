@@ -1,0 +1,6373 @@
+[
+  {
+    "config": "base-bank",
+    "case": "affine-u8-step1",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12321,
+    "deflate_baseline": 12639,
+    "net_bytes": -318,
+    "scan_seconds": 0.505921700001636,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 120,
+        "exact": 4,
+        "best_cover": 128
+      },
+      "lfsr": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": "byte counter from 0"
+  },
+  {
+    "config": "experimental",
+    "case": "affine-u8-step1",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12321,
+    "deflate_baseline": 12639,
+    "net_bytes": -318,
+    "scan_seconds": 0.5729816999992181,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 120,
+        "exact": 4,
+        "best_cover": 128
+      },
+      "lfsr": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "quadratic": {
+        "candidates": 5,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": "byte counter from 0"
+  },
+  {
+    "config": "budget-8",
+    "case": "affine-u8-step1",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 7,
+    "accepted_segments": 1,
+    "archive_bytes": 12321,
+    "deflate_baseline": 12639,
+    "net_bytes": -318,
+    "scan_seconds": 0.03333589999965625,
+    "models": {
+      "const": {
+        "candidates": 56,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 12,
+        "exact": 4,
+        "best_cover": 128
+      },
+      "lfsr": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 6
+    },
+    "expected": true,
+    "note": "byte counter from 0"
+  },
+  {
+    "config": "budget-32",
+    "case": "affine-u8-step1",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 25,
+    "accepted_segments": 1,
+    "archive_bytes": 12321,
+    "deflate_baseline": 12639,
+    "net_bytes": -318,
+    "scan_seconds": 0.06260219999967376,
+    "models": {
+      "const": {
+        "candidates": 200,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 19,
+        "exact": 4,
+        "best_cover": 128
+      },
+      "lfsr": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 24
+    },
+    "expected": true,
+    "note": "byte counter from 0"
+  },
+  {
+    "config": "budget-128",
+    "case": "affine-u8-step1",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 97,
+    "accepted_segments": 1,
+    "archive_bytes": 12321,
+    "deflate_baseline": 12639,
+    "net_bytes": -318,
+    "scan_seconds": 0.17409419999967213,
+    "models": {
+      "const": {
+        "candidates": 776,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 32,
+        "exact": 4,
+        "best_cover": 128
+      },
+      "lfsr": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 96
+    },
+    "expected": true,
+    "note": "byte counter from 0"
+  },
+  {
+    "config": "window-512",
+    "case": "affine-u8-step1",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12321,
+    "deflate_baseline": 12639,
+    "net_bytes": -318,
+    "scan_seconds": 0.5847882000016398,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 120,
+        "exact": 4,
+        "best_cover": 512
+      },
+      "lfsr": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 512
+      },
+      "quadratic": {
+        "candidates": 5,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": "byte counter from 0"
+  },
+  {
+    "config": "identity-only",
+    "case": "affine-u8-step1",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12321,
+    "deflate_baseline": 12639,
+    "net_bytes": -318,
+    "scan_seconds": 0.1848719000008714,
+    "models": {
+      "const": {
+        "candidates": 770,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 32,
+        "exact": 4,
+        "best_cover": 128
+      },
+      "quadratic": {
+        "candidates": 3,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": "byte counter from 0"
+  },
+  {
+    "config": "base-bank",
+    "case": "affine-u8-step7-offset13",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4077,
+    "coverage": 0.995361328125,
+    "detected": true,
+    "probes": 386,
+    "accepted_segments": 1,
+    "archive_bytes": 12345,
+    "deflate_baseline": 12641,
+    "net_bytes": -296,
+    "scan_seconds": 0.5104868000016722,
+    "models": {
+      "const": {
+        "candidates": 3088,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 105,
+        "exact": 4,
+        "best_cover": 128
+      },
+      "lfsr": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "no_candidate": 385,
+      "accepted": 1
+    },
+    "expected": true,
+    "note": "unaligned start"
+  },
+  {
+    "config": "experimental",
+    "case": "affine-u8-step7-offset13",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4077,
+    "coverage": 0.995361328125,
+    "detected": true,
+    "probes": 386,
+    "accepted_segments": 1,
+    "archive_bytes": 12345,
+    "deflate_baseline": 12641,
+    "net_bytes": -296,
+    "scan_seconds": 0.5773657000027015,
+    "models": {
+      "const": {
+        "candidates": 3088,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 105,
+        "exact": 4,
+        "best_cover": 128
+      },
+      "lfsr": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "quadratic": {
+        "candidates": 4,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "no_candidate": 385,
+      "accepted": 1
+    },
+    "expected": true,
+    "note": "unaligned start"
+  },
+  {
+    "config": "budget-8",
+    "case": "affine-u8-step7-offset13",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 2061,
+    "coverage": 0.503173828125,
+    "detected": true,
+    "probes": 7,
+    "accepted_segments": 1,
+    "archive_bytes": 12626,
+    "deflate_baseline": 12641,
+    "net_bytes": -15,
+    "scan_seconds": 0.026602300000377,
+    "models": {
+      "const": {
+        "candidates": 56,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 5,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "lfsr": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "no_candidate": 6,
+      "accepted": 1
+    },
+    "expected": true,
+    "note": "unaligned start"
+  },
+  {
+    "config": "budget-32",
+    "case": "affine-u8-step7-offset13",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 3597,
+    "coverage": 0.878173828125,
+    "detected": true,
+    "probes": 25,
+    "accepted_segments": 1,
+    "archive_bytes": 12612,
+    "deflate_baseline": 12641,
+    "net_bytes": -29,
+    "scan_seconds": 0.0663481999981741,
+    "models": {
+      "const": {
+        "candidates": 200,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 7,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "lfsr": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "no_candidate": 24,
+      "accepted": 1
+    },
+    "expected": true,
+    "note": "unaligned start"
+  },
+  {
+    "config": "budget-128",
+    "case": "affine-u8-step7-offset13",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 3981,
+    "coverage": 0.971923828125,
+    "detected": true,
+    "probes": 97,
+    "accepted_segments": 1,
+    "archive_bytes": 12441,
+    "deflate_baseline": 12641,
+    "net_bytes": -200,
+    "scan_seconds": 0.17732039999827975,
+    "models": {
+      "const": {
+        "candidates": 776,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 27,
+        "exact": 4,
+        "best_cover": 128
+      },
+      "lfsr": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "quadratic": {
+        "candidates": 1,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "no_candidate": 96,
+      "accepted": 1
+    },
+    "expected": true,
+    "note": "unaligned start"
+  },
+  {
+    "config": "window-512",
+    "case": "affine-u8-step7-offset13",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4077,
+    "coverage": 0.995361328125,
+    "detected": true,
+    "probes": 386,
+    "accepted_segments": 1,
+    "archive_bytes": 12345,
+    "deflate_baseline": 12641,
+    "net_bytes": -296,
+    "scan_seconds": 0.7146022000015364,
+    "models": {
+      "const": {
+        "candidates": 3088,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 105,
+        "exact": 4,
+        "best_cover": 512
+      },
+      "lfsr": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 512
+      },
+      "quadratic": {
+        "candidates": 4,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "no_candidate": 385,
+      "accepted": 1
+    },
+    "expected": true,
+    "note": "unaligned start"
+  },
+  {
+    "config": "identity-only",
+    "case": "affine-u8-step7-offset13",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4077,
+    "coverage": 0.995361328125,
+    "detected": true,
+    "probes": 386,
+    "accepted_segments": 1,
+    "archive_bytes": 12345,
+    "deflate_baseline": 12641,
+    "net_bytes": -296,
+    "scan_seconds": 0.19332759999815607,
+    "models": {
+      "const": {
+        "candidates": 772,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 29,
+        "exact": 4,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "no_candidate": 385,
+      "accepted": 1
+    },
+    "expected": true,
+    "note": "unaligned start"
+  },
+  {
+    "config": "base-bank",
+    "case": "affine-u16le",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 2912,
+    "coverage": 0.7109375,
+    "detected": true,
+    "probes": 461,
+    "accepted_segments": 40,
+    "archive_bytes": 14238,
+    "deflate_baseline": 16411,
+    "net_bytes": -2173,
+    "scan_seconds": 0.5339104000013322,
+    "models": {
+      "const": {
+        "candidates": 3688,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 205,
+        "exact": 81,
+        "best_cover": 105
+      }
+    },
+    "reasons": {
+      "no_candidate": 421,
+      "accepted": 40
+    },
+    "expected": true,
+    "note": "little-endian words"
+  },
+  {
+    "config": "experimental",
+    "case": "affine-u16le",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 2912,
+    "coverage": 0.7109375,
+    "detected": true,
+    "probes": 461,
+    "accepted_segments": 40,
+    "archive_bytes": 14238,
+    "deflate_baseline": 16411,
+    "net_bytes": -2173,
+    "scan_seconds": 0.5700414999992063,
+    "models": {
+      "const": {
+        "candidates": 3688,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 205,
+        "exact": 81,
+        "best_cover": 105
+      },
+      "quadratic": {
+        "candidates": 7,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "no_candidate": 421,
+      "accepted": 40
+    },
+    "expected": true,
+    "note": "little-endian words"
+  },
+  {
+    "config": "budget-8",
+    "case": "affine-u16le",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 8,
+    "accepted_segments": 0,
+    "archive_bytes": 16400,
+    "deflate_baseline": 16411,
+    "net_bytes": -11,
+    "scan_seconds": 0.017244499998923857,
+    "models": {
+      "const": {
+        "candidates": 64,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 5,
+        "exact": 0,
+        "best_cover": 11
+      }
+    },
+    "reasons": {
+      "no_candidate": 8
+    },
+    "expected": true,
+    "note": "little-endian words"
+  },
+  {
+    "config": "budget-32",
+    "case": "affine-u16le",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 32,
+    "accepted_segments": 0,
+    "archive_bytes": 16400,
+    "deflate_baseline": 16411,
+    "net_bytes": -11,
+    "scan_seconds": 0.05388599999787402,
+    "models": {
+      "const": {
+        "candidates": 256,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 29,
+        "exact": 0,
+        "best_cover": 11
+      }
+    },
+    "reasons": {
+      "no_candidate": 32
+    },
+    "expected": true,
+    "note": "little-endian words"
+  },
+  {
+    "config": "budget-128",
+    "case": "affine-u16le",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 1512,
+    "coverage": 0.369140625,
+    "detected": false,
+    "probes": 128,
+    "accepted_segments": 24,
+    "archive_bytes": 15276,
+    "deflate_baseline": 16411,
+    "net_bytes": -1135,
+    "scan_seconds": 0.20411410000087926,
+    "models": {
+      "const": {
+        "candidates": 1024,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 110,
+        "exact": 48,
+        "best_cover": 91
+      },
+      "quadratic": {
+        "candidates": 3,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "no_candidate": 104,
+      "accepted": 24
+    },
+    "expected": true,
+    "note": "little-endian words"
+  },
+  {
+    "config": "window-512",
+    "case": "affine-u16le",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 2912,
+    "coverage": 0.7109375,
+    "detected": true,
+    "probes": 461,
+    "accepted_segments": 40,
+    "archive_bytes": 14238,
+    "deflate_baseline": 16411,
+    "net_bytes": -2173,
+    "scan_seconds": 0.66938079999818,
+    "models": {
+      "const": {
+        "candidates": 3688,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 205,
+        "exact": 81,
+        "best_cover": 105
+      },
+      "quadratic": {
+        "candidates": 7,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "no_candidate": 421,
+      "accepted": 40
+    },
+    "expected": true,
+    "note": "little-endian words"
+  },
+  {
+    "config": "identity-only",
+    "case": "affine-u16le",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 2848,
+    "coverage": 0.6953125,
+    "detected": true,
+    "probes": 463,
+    "accepted_segments": 40,
+    "archive_bytes": 14312,
+    "deflate_baseline": 16411,
+    "net_bytes": -2099,
+    "scan_seconds": 0.21323409999968135,
+    "models": {
+      "const": {
+        "candidates": 926,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 113,
+        "exact": 80,
+        "best_cover": 102
+      },
+      "quadratic": {
+        "candidates": 1,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "no_candidate": 423,
+      "accepted": 40
+    },
+    "expected": true,
+    "note": "little-endian words"
+  },
+  {
+    "config": "base-bank",
+    "case": "affine-u16be",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 16411,
+    "net_bytes": -4088,
+    "scan_seconds": 0.3253047999969567,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 97,
+        "exact": 2,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "experimental",
+    "case": "affine-u16be",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 16411,
+    "net_bytes": -4088,
+    "scan_seconds": 0.501675499999692,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 97,
+        "exact": 2,
+        "best_cover": 128
+      },
+      "quadratic": {
+        "candidates": 4,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-8",
+    "case": "affine-u16be",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 7,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 16411,
+    "net_bytes": -4088,
+    "scan_seconds": 0.0315718999991077,
+    "models": {
+      "const": {
+        "candidates": 56,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 3,
+        "exact": 2,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 6
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-32",
+    "case": "affine-u16be",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 25,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 16411,
+    "net_bytes": -4088,
+    "scan_seconds": 0.05861930000173743,
+    "models": {
+      "const": {
+        "candidates": 200,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 9,
+        "exact": 2,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 24
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-128",
+    "case": "affine-u16be",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 97,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 16411,
+    "net_bytes": -4088,
+    "scan_seconds": 0.13920389999839244,
+    "models": {
+      "const": {
+        "candidates": 776,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 21,
+        "exact": 2,
+        "best_cover": 128
+      },
+      "quadratic": {
+        "candidates": 1,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 96
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "window-512",
+    "case": "affine-u16be",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 16411,
+    "net_bytes": -4088,
+    "scan_seconds": 0.560292499998468,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 97,
+        "exact": 2,
+        "best_cover": 512
+      },
+      "quadratic": {
+        "candidates": 4,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "identity-only",
+    "case": "affine-u16be",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 16411,
+    "net_bytes": -4088,
+    "scan_seconds": 0.18042889999924228,
+    "models": {
+      "const": {
+        "candidates": 770,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 19,
+        "exact": 2,
+        "best_cover": 128
+      },
+      "quadratic": {
+        "candidates": 3,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "base-bank",
+    "case": "affine-u32le",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4095,
+    "coverage": 0.999755859375,
+    "detected": true,
+    "probes": 452,
+    "accepted_segments": 68,
+    "archive_bytes": 13534,
+    "deflate_baseline": 14300,
+    "net_bytes": -766,
+    "scan_seconds": 0.39852190000237897,
+    "models": {
+      "const": {
+        "candidates": 3616,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "affine": {
+        "candidates": 467,
+        "exact": 98,
+        "best_cover": 64
+      }
+    },
+    "reasons": {
+      "accepted": 68,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "experimental",
+    "case": "affine-u32le",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4095,
+    "coverage": 0.999755859375,
+    "detected": true,
+    "probes": 452,
+    "accepted_segments": 68,
+    "archive_bytes": 13534,
+    "deflate_baseline": 14300,
+    "net_bytes": -766,
+    "scan_seconds": 0.6355406000002404,
+    "models": {
+      "const": {
+        "candidates": 3616,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "affine": {
+        "candidates": 467,
+        "exact": 98,
+        "best_cover": 64
+      },
+      "quadratic": {
+        "candidates": 16,
+        "exact": 6,
+        "best_cover": 18
+      }
+    },
+    "reasons": {
+      "accepted": 68,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-8",
+    "case": "affine-u32le",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 126,
+    "coverage": 0.03076171875,
+    "detected": false,
+    "probes": 8,
+    "accepted_segments": 2,
+    "archive_bytes": 14209,
+    "deflate_baseline": 14300,
+    "net_bytes": -91,
+    "scan_seconds": 0.017099799999414245,
+    "models": {
+      "const": {
+        "candidates": 64,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 7,
+        "exact": 6,
+        "best_cover": 63
+      }
+    },
+    "reasons": {
+      "accepted": 2,
+      "no_candidate": 6
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-32",
+    "case": "affine-u32le",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 32,
+    "accepted_segments": 0,
+    "archive_bytes": 14300,
+    "deflate_baseline": 14300,
+    "net_bytes": 0,
+    "scan_seconds": 0.054057299999840325,
+    "models": {
+      "const": {
+        "candidates": 256,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 28,
+        "exact": 22,
+        "best_cover": 63
+      }
+    },
+    "reasons": {
+      "accepted": 8,
+      "no_candidate": 24
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-128",
+    "case": "affine-u32le",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 128,
+    "accepted_segments": 0,
+    "archive_bytes": 14300,
+    "deflate_baseline": 14300,
+    "net_bytes": 0,
+    "scan_seconds": 0.1680701000004774,
+    "models": {
+      "const": {
+        "candidates": 1024,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 102,
+        "exact": 82,
+        "best_cover": 63
+      },
+      "quadratic": {
+        "candidates": 3,
+        "exact": 2,
+        "best_cover": 17
+      }
+    },
+    "reasons": {
+      "accepted": 28,
+      "no_candidate": 100
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "window-512",
+    "case": "affine-u32le",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4095,
+    "coverage": 0.999755859375,
+    "detected": true,
+    "probes": 452,
+    "accepted_segments": 68,
+    "archive_bytes": 13534,
+    "deflate_baseline": 14300,
+    "net_bytes": -766,
+    "scan_seconds": 0.8045086999991327,
+    "models": {
+      "const": {
+        "candidates": 3616,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "affine": {
+        "candidates": 467,
+        "exact": 98,
+        "best_cover": 64
+      },
+      "quadratic": {
+        "candidates": 16,
+        "exact": 6,
+        "best_cover": 18
+      }
+    },
+    "reasons": {
+      "accepted": 68,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "identity-only",
+    "case": "affine-u32le",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4095,
+    "coverage": 0.999755859375,
+    "detected": true,
+    "probes": 452,
+    "accepted_segments": 68,
+    "archive_bytes": 13534,
+    "deflate_baseline": 14300,
+    "net_bytes": -766,
+    "scan_seconds": 0.1907749000019976,
+    "models": {
+      "const": {
+        "candidates": 904,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "affine": {
+        "candidates": 157,
+        "exact": 68,
+        "best_cover": 64
+      },
+      "quadratic": {
+        "candidates": 5,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 68,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "base-bank",
+    "case": "affine-u32be",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12327,
+    "deflate_baseline": 15029,
+    "net_bytes": -2702,
+    "scan_seconds": 0.3655793999969319,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "affine": {
+        "candidates": 110,
+        "exact": 1,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "experimental",
+    "case": "affine-u32be",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12327,
+    "deflate_baseline": 15029,
+    "net_bytes": -2702,
+    "scan_seconds": 0.6270356999993965,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "affine": {
+        "candidates": 110,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "quadratic": {
+        "candidates": 6,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-8",
+    "case": "affine-u32be",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 7,
+    "accepted_segments": 1,
+    "archive_bytes": 12327,
+    "deflate_baseline": 15029,
+    "net_bytes": -2702,
+    "scan_seconds": 0.028709299996990012,
+    "models": {
+      "const": {
+        "candidates": 56,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "affine": {
+        "candidates": 11,
+        "exact": 1,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 6
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-32",
+    "case": "affine-u32be",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 25,
+    "accepted_segments": 1,
+    "archive_bytes": 12327,
+    "deflate_baseline": 15029,
+    "net_bytes": -2702,
+    "scan_seconds": 0.05346130000179983,
+    "models": {
+      "const": {
+        "candidates": 200,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "affine": {
+        "candidates": 17,
+        "exact": 1,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 24
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-128",
+    "case": "affine-u32be",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 97,
+    "accepted_segments": 1,
+    "archive_bytes": 12327,
+    "deflate_baseline": 15029,
+    "net_bytes": -2702,
+    "scan_seconds": 0.16246399999727146,
+    "models": {
+      "const": {
+        "candidates": 776,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "affine": {
+        "candidates": 36,
+        "exact": 1,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 96
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "window-512",
+    "case": "affine-u32be",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12327,
+    "deflate_baseline": 15029,
+    "net_bytes": -2702,
+    "scan_seconds": 0.4620374999976775,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "affine": {
+        "candidates": 110,
+        "exact": 1,
+        "best_cover": 512
+      },
+      "quadratic": {
+        "candidates": 6,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "identity-only",
+    "case": "affine-u32be",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12327,
+    "deflate_baseline": 15029,
+    "net_bytes": -2702,
+    "scan_seconds": 0.12968819999878178,
+    "models": {
+      "const": {
+        "candidates": 770,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "affine": {
+        "candidates": 24,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "quadratic": {
+        "candidates": 3,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "base-bank",
+    "case": "affine-u64le",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 512,
+    "accepted_segments": 0,
+    "archive_bytes": 13399,
+    "deflate_baseline": 13399,
+    "net_bytes": 0,
+    "scan_seconds": 0.3810319000003801,
+    "models": {
+      "const": {
+        "candidates": 4096,
+        "exact": 0,
+        "best_cover": 8
+      },
+      "affine": {
+        "candidates": 199,
+        "exact": 0,
+        "best_cover": 8
+      },
+      "xorshift32": {
+        "candidates": 8,
+        "exact": 0,
+        "best_cover": 8
+      }
+    },
+    "reasons": {
+      "no_candidate": 512
+    },
+    "expected": false,
+    "note": "WIDTHS stops at 32 bits"
+  },
+  {
+    "config": "experimental",
+    "case": "affine-u64le",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 512,
+    "accepted_segments": 0,
+    "archive_bytes": 13399,
+    "deflate_baseline": 13399,
+    "net_bytes": 0,
+    "scan_seconds": 0.44341269999858923,
+    "models": {
+      "const": {
+        "candidates": 4096,
+        "exact": 0,
+        "best_cover": 8
+      },
+      "affine": {
+        "candidates": 199,
+        "exact": 0,
+        "best_cover": 8
+      },
+      "xorshift32": {
+        "candidates": 8,
+        "exact": 0,
+        "best_cover": 8
+      },
+      "quadratic": {
+        "candidates": 15,
+        "exact": 0,
+        "best_cover": 8
+      }
+    },
+    "reasons": {
+      "no_candidate": 512
+    },
+    "expected": false,
+    "note": "WIDTHS stops at 32 bits"
+  },
+  {
+    "config": "budget-8",
+    "case": "affine-u64le",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 8,
+    "accepted_segments": 0,
+    "archive_bytes": 13399,
+    "deflate_baseline": 13399,
+    "net_bytes": 0,
+    "scan_seconds": 0.011014799998520175,
+    "models": {
+      "const": {
+        "candidates": 64,
+        "exact": 0,
+        "best_cover": 8
+      },
+      "affine": {
+        "candidates": 22,
+        "exact": 0,
+        "best_cover": 8
+      },
+      "xorshift32": {
+        "candidates": 8,
+        "exact": 0,
+        "best_cover": 8
+      },
+      "quadratic": {
+        "candidates": 1,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "no_candidate": 8
+    },
+    "expected": false,
+    "note": "WIDTHS stops at 32 bits"
+  },
+  {
+    "config": "budget-32",
+    "case": "affine-u64le",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 32,
+    "accepted_segments": 0,
+    "archive_bytes": 13399,
+    "deflate_baseline": 13399,
+    "net_bytes": 0,
+    "scan_seconds": 0.029340500001126202,
+    "models": {
+      "const": {
+        "candidates": 256,
+        "exact": 0,
+        "best_cover": 8
+      },
+      "affine": {
+        "candidates": 40,
+        "exact": 0,
+        "best_cover": 8
+      },
+      "xorshift32": {
+        "candidates": 8,
+        "exact": 0,
+        "best_cover": 8
+      },
+      "quadratic": {
+        "candidates": 9,
+        "exact": 0,
+        "best_cover": 8
+      }
+    },
+    "reasons": {
+      "no_candidate": 32
+    },
+    "expected": false,
+    "note": "WIDTHS stops at 32 bits"
+  },
+  {
+    "config": "budget-128",
+    "case": "affine-u64le",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 128,
+    "accepted_segments": 0,
+    "archive_bytes": 13399,
+    "deflate_baseline": 13399,
+    "net_bytes": 0,
+    "scan_seconds": 0.11903809999785153,
+    "models": {
+      "const": {
+        "candidates": 1024,
+        "exact": 0,
+        "best_cover": 8
+      },
+      "affine": {
+        "candidates": 92,
+        "exact": 0,
+        "best_cover": 8
+      },
+      "xorshift32": {
+        "candidates": 8,
+        "exact": 0,
+        "best_cover": 8
+      },
+      "quadratic": {
+        "candidates": 12,
+        "exact": 0,
+        "best_cover": 8
+      }
+    },
+    "reasons": {
+      "no_candidate": 128
+    },
+    "expected": false,
+    "note": "WIDTHS stops at 32 bits"
+  },
+  {
+    "config": "window-512",
+    "case": "affine-u64le",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 512,
+    "accepted_segments": 0,
+    "archive_bytes": 13399,
+    "deflate_baseline": 13399,
+    "net_bytes": 0,
+    "scan_seconds": 0.55970299999899,
+    "models": {
+      "const": {
+        "candidates": 4096,
+        "exact": 0,
+        "best_cover": 8
+      },
+      "affine": {
+        "candidates": 199,
+        "exact": 0,
+        "best_cover": 8
+      },
+      "xorshift32": {
+        "candidates": 8,
+        "exact": 0,
+        "best_cover": 8
+      },
+      "quadratic": {
+        "candidates": 15,
+        "exact": 0,
+        "best_cover": 8
+      }
+    },
+    "reasons": {
+      "no_candidate": 512
+    },
+    "expected": false,
+    "note": "WIDTHS stops at 32 bits"
+  },
+  {
+    "config": "identity-only",
+    "case": "affine-u64le",
+    "family": "affine",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 512,
+    "accepted_segments": 0,
+    "archive_bytes": 13399,
+    "deflate_baseline": 13399,
+    "net_bytes": 0,
+    "scan_seconds": 0.13143870000203606,
+    "models": {
+      "const": {
+        "candidates": 1024,
+        "exact": 0,
+        "best_cover": 8
+      },
+      "affine": {
+        "candidates": 43,
+        "exact": 0,
+        "best_cover": 8
+      },
+      "xorshift32": {
+        "candidates": 2,
+        "exact": 0,
+        "best_cover": 8
+      }
+    },
+    "reasons": {
+      "no_candidate": 512
+    },
+    "expected": false,
+    "note": "WIDTHS stops at 32 bits"
+  },
+  {
+    "config": "base-bank",
+    "case": "quadratic-u16le",
+    "family": "quadratic",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 512,
+    "accepted_segments": 0,
+    "archive_bytes": 16400,
+    "deflate_baseline": 16411,
+    "net_bytes": -11,
+    "scan_seconds": 0.36687460000030114,
+    "models": {
+      "const": {
+        "candidates": 4096,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "affine": {
+        "candidates": 136,
+        "exact": 0,
+        "best_cover": 3
+      }
+    },
+    "reasons": {
+      "no_candidate": 512
+    },
+    "expected": true,
+    "note": "needs experimental_models"
+  },
+  {
+    "config": "experimental",
+    "case": "quadratic-u16le",
+    "family": "quadratic",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12325,
+    "deflate_baseline": 16411,
+    "net_bytes": -4086,
+    "scan_seconds": 0.3561087000016414,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "affine": {
+        "candidates": 112,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 17,
+        "exact": 9,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": "needs experimental_models"
+  },
+  {
+    "config": "budget-8",
+    "case": "quadratic-u16le",
+    "family": "quadratic",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 7,
+    "accepted_segments": 1,
+    "archive_bytes": 12325,
+    "deflate_baseline": 16411,
+    "net_bytes": -4086,
+    "scan_seconds": 0.018166099998779828,
+    "models": {
+      "const": {
+        "candidates": 56,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "affine": {
+        "candidates": 5,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "quadratic": {
+        "candidates": 11,
+        "exact": 9,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 6
+    },
+    "expected": true,
+    "note": "needs experimental_models"
+  },
+  {
+    "config": "budget-32",
+    "case": "quadratic-u16le",
+    "family": "quadratic",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 25,
+    "accepted_segments": 1,
+    "archive_bytes": 12325,
+    "deflate_baseline": 16411,
+    "net_bytes": -4086,
+    "scan_seconds": 0.03251759999693604,
+    "models": {
+      "const": {
+        "candidates": 200,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "affine": {
+        "candidates": 13,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 11,
+        "exact": 9,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 24
+    },
+    "expected": true,
+    "note": "needs experimental_models"
+  },
+  {
+    "config": "budget-128",
+    "case": "quadratic-u16le",
+    "family": "quadratic",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 97,
+    "accepted_segments": 1,
+    "archive_bytes": 12325,
+    "deflate_baseline": 16411,
+    "net_bytes": -4086,
+    "scan_seconds": 0.11449290000018664,
+    "models": {
+      "const": {
+        "candidates": 776,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "affine": {
+        "candidates": 32,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 12,
+        "exact": 9,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 96
+    },
+    "expected": true,
+    "note": "needs experimental_models"
+  },
+  {
+    "config": "window-512",
+    "case": "quadratic-u16le",
+    "family": "quadratic",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12325,
+    "deflate_baseline": 16411,
+    "net_bytes": -4086,
+    "scan_seconds": 0.45697219999783556,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "affine": {
+        "candidates": 112,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 17,
+        "exact": 9,
+        "best_cover": 512
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": "needs experimental_models"
+  },
+  {
+    "config": "identity-only",
+    "case": "quadratic-u16le",
+    "family": "quadratic",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12325,
+    "deflate_baseline": 16411,
+    "net_bytes": -4086,
+    "scan_seconds": 0.11195969999971567,
+    "models": {
+      "const": {
+        "candidates": 770,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "affine": {
+        "candidates": 29,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 5,
+        "exact": 4,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": "needs experimental_models"
+  },
+  {
+    "config": "base-bank",
+    "case": "quadratic-u32be",
+    "family": "quadratic",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 512,
+    "accepted_segments": 0,
+    "archive_bytes": 15966,
+    "deflate_baseline": 15966,
+    "net_bytes": 0,
+    "scan_seconds": 0.3697509999983595,
+    "models": {
+      "const": {
+        "candidates": 4096,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 133,
+        "exact": 0,
+        "best_cover": 3
+      }
+    },
+    "reasons": {
+      "no_candidate": 512
+    },
+    "expected": true,
+    "note": "odd byte phase, needs experimental_models"
+  },
+  {
+    "config": "experimental",
+    "case": "quadratic-u32be",
+    "family": "quadratic",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12336,
+    "deflate_baseline": 15966,
+    "net_bytes": -3630,
+    "scan_seconds": 0.35426600000209874,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 96,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 6,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": "odd byte phase, needs experimental_models"
+  },
+  {
+    "config": "budget-8",
+    "case": "quadratic-u32be",
+    "family": "quadratic",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 6,
+    "accepted_segments": 1,
+    "archive_bytes": 12336,
+    "deflate_baseline": 15966,
+    "net_bytes": -3630,
+    "scan_seconds": 0.01036779999776627,
+    "models": {
+      "const": {
+        "candidates": 48,
+        "exact": 0,
+        "best_cover": 0
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 5
+    },
+    "expected": true,
+    "note": "odd byte phase, needs experimental_models"
+  },
+  {
+    "config": "budget-32",
+    "case": "quadratic-u32be",
+    "family": "quadratic",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 24,
+    "accepted_segments": 1,
+    "archive_bytes": 12336,
+    "deflate_baseline": 15966,
+    "net_bytes": -3630,
+    "scan_seconds": 0.028071699998690747,
+    "models": {
+      "const": {
+        "candidates": 192,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 7,
+        "exact": 0,
+        "best_cover": 3
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 23
+    },
+    "expected": true,
+    "note": "odd byte phase, needs experimental_models"
+  },
+  {
+    "config": "budget-128",
+    "case": "quadratic-u32be",
+    "family": "quadratic",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 96,
+    "accepted_segments": 1,
+    "archive_bytes": 12336,
+    "deflate_baseline": 15966,
+    "net_bytes": -3630,
+    "scan_seconds": 0.0930173000015202,
+    "models": {
+      "const": {
+        "candidates": 768,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 26,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 2,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 95
+    },
+    "expected": true,
+    "note": "odd byte phase, needs experimental_models"
+  },
+  {
+    "config": "window-512",
+    "case": "quadratic-u32be",
+    "family": "quadratic",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12336,
+    "deflate_baseline": 15966,
+    "net_bytes": -3630,
+    "scan_seconds": 0.4610257999993337,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 96,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 6,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": "odd byte phase, needs experimental_models"
+  },
+  {
+    "config": "identity-only",
+    "case": "quadratic-u32be",
+    "family": "quadratic",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12336,
+    "deflate_baseline": 15966,
+    "net_bytes": -3630,
+    "scan_seconds": 0.10317690000010771,
+    "models": {
+      "const": {
+        "candidates": 770,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 22,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 2,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": "odd byte phase, needs experimental_models"
+  },
+  {
+    "config": "base-bank",
+    "case": "lfsr-16",
+    "family": "lfsr",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 12451,
+    "net_bytes": -128,
+    "scan_seconds": 0.30465629999889643,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "lfsr": {
+        "candidates": 3,
+        "exact": 3,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 88,
+        "exact": 0,
+        "best_cover": 3
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "experimental",
+    "case": "lfsr-16",
+    "family": "lfsr",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 12451,
+    "net_bytes": -128,
+    "scan_seconds": 0.4309891000011703,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "lfsr": {
+        "candidates": 3,
+        "exact": 3,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 88,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 6,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-8",
+    "case": "lfsr-16",
+    "family": "lfsr",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 7,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 12451,
+    "net_bytes": -128,
+    "scan_seconds": 0.030278099999122787,
+    "models": {
+      "const": {
+        "candidates": 56,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "lfsr": {
+        "candidates": 3,
+        "exact": 3,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 1,
+        "exact": 0,
+        "best_cover": 1
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 6
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-32",
+    "case": "lfsr-16",
+    "family": "lfsr",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 25,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 12451,
+    "net_bytes": -128,
+    "scan_seconds": 0.0612753999994311,
+    "models": {
+      "const": {
+        "candidates": 200,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "lfsr": {
+        "candidates": 3,
+        "exact": 3,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 4,
+        "exact": 0,
+        "best_cover": 3
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 24
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-128",
+    "case": "lfsr-16",
+    "family": "lfsr",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 97,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 12451,
+    "net_bytes": -128,
+    "scan_seconds": 0.17072519999783253,
+    "models": {
+      "const": {
+        "candidates": 776,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "lfsr": {
+        "candidates": 3,
+        "exact": 3,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 26,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 1,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 96
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "window-512",
+    "case": "lfsr-16",
+    "family": "lfsr",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 12451,
+    "net_bytes": -128,
+    "scan_seconds": 0.6467183999993722,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "lfsr": {
+        "candidates": 3,
+        "exact": 3,
+        "best_cover": 512
+      },
+      "affine": {
+        "candidates": 88,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 6,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "identity-only",
+    "case": "lfsr-16",
+    "family": "lfsr",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 12451,
+    "net_bytes": -128,
+    "scan_seconds": 0.18576959999700193,
+    "models": {
+      "const": {
+        "candidates": 770,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "lfsr": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 24,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 3,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "base-bank",
+    "case": "xorshift32-be",
+    "family": "xorshift",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 16411,
+    "net_bytes": -4088,
+    "scan_seconds": 0.45439660000192816,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "xorshift32": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 110,
+        "exact": 0,
+        "best_cover": 3
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "experimental",
+    "case": "xorshift32-be",
+    "family": "xorshift",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 16411,
+    "net_bytes": -4088,
+    "scan_seconds": 0.5672341999998025,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "xorshift32": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 110,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 7,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-8",
+    "case": "xorshift32-be",
+    "family": "xorshift",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 7,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 16411,
+    "net_bytes": -4088,
+    "scan_seconds": 0.028405800003383774,
+    "models": {
+      "const": {
+        "candidates": 56,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "xorshift32": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 4,
+        "exact": 0,
+        "best_cover": 1
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 6
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-32",
+    "case": "xorshift32-be",
+    "family": "xorshift",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 25,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 16411,
+    "net_bytes": -4088,
+    "scan_seconds": 0.05627430000095046,
+    "models": {
+      "const": {
+        "candidates": 200,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "xorshift32": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 5,
+        "exact": 0,
+        "best_cover": 1
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 24
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-128",
+    "case": "xorshift32-be",
+    "family": "xorshift",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 97,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 16411,
+    "net_bytes": -4088,
+    "scan_seconds": 0.1585692000007839,
+    "models": {
+      "const": {
+        "candidates": 776,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "xorshift32": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 29,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 2,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 96
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "window-512",
+    "case": "xorshift32-be",
+    "family": "xorshift",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 16411,
+    "net_bytes": -4088,
+    "scan_seconds": 0.6867236000034609,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "xorshift32": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 512
+      },
+      "affine": {
+        "candidates": 110,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 7,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "identity-only",
+    "case": "xorshift32-be",
+    "family": "xorshift",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 16411,
+    "net_bytes": -4088,
+    "scan_seconds": 0.18550049999976181,
+    "models": {
+      "const": {
+        "candidates": 770,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "xorshift32": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 28,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 1,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "base-bank",
+    "case": "xorshift32-le",
+    "family": "xorshift",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 16411,
+    "net_bytes": -4088,
+    "scan_seconds": 0.37392239999826415,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "xorshift32": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 96,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "experimental",
+    "case": "xorshift32-le",
+    "family": "xorshift",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 16411,
+    "net_bytes": -4088,
+    "scan_seconds": 0.5849037999978464,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "xorshift32": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 96,
+        "exact": 0,
+        "best_cover": 4
+      },
+      "quadratic": {
+        "candidates": 8,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-8",
+    "case": "xorshift32-le",
+    "family": "xorshift",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 7,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 16411,
+    "net_bytes": -4088,
+    "scan_seconds": 0.023015999999188352,
+    "models": {
+      "const": {
+        "candidates": 56,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "xorshift32": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 1,
+        "exact": 0,
+        "best_cover": 1
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 6
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-32",
+    "case": "xorshift32-le",
+    "family": "xorshift",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 25,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 16411,
+    "net_bytes": -4088,
+    "scan_seconds": 0.047013999999762746,
+    "models": {
+      "const": {
+        "candidates": 200,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "xorshift32": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 7,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "quadratic": {
+        "candidates": 1,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 24
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-128",
+    "case": "xorshift32-le",
+    "family": "xorshift",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 97,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 16411,
+    "net_bytes": -4088,
+    "scan_seconds": 0.13447589999850607,
+    "models": {
+      "const": {
+        "candidates": 776,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "xorshift32": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 27,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 1,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 96
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "window-512",
+    "case": "xorshift32-le",
+    "family": "xorshift",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 16411,
+    "net_bytes": -4088,
+    "scan_seconds": 0.6265027999979793,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "xorshift32": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 512
+      },
+      "affine": {
+        "candidates": 96,
+        "exact": 0,
+        "best_cover": 4
+      },
+      "quadratic": {
+        "candidates": 8,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "identity-only",
+    "case": "xorshift32-le",
+    "family": "xorshift",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 16411,
+    "net_bytes": -4088,
+    "scan_seconds": 0.18235849999837228,
+    "models": {
+      "const": {
+        "candidates": 770,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "xorshift32": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 20,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "quadratic": {
+        "candidates": 3,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "base-bank",
+    "case": "period-3",
+    "family": "period",
+    "planted": 4095,
+    "covered": 4095,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 12378,
+    "net_bytes": -55,
+    "scan_seconds": 0.3599982000014279,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "period": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 105,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "lfsr": {
+        "candidates": 4,
+        "exact": 4,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "experimental",
+    "case": "period-3",
+    "family": "period",
+    "planted": 4095,
+    "covered": 4095,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 12378,
+    "net_bytes": -55,
+    "scan_seconds": 0.5435571000016353,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "period": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 105,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "lfsr": {
+        "candidates": 4,
+        "exact": 4,
+        "best_cover": 128
+      },
+      "quadratic": {
+        "candidates": 8,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-8",
+    "case": "period-3",
+    "family": "period",
+    "planted": 4095,
+    "covered": 4095,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 7,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 12378,
+    "net_bytes": -55,
+    "scan_seconds": 0.028919299998960923,
+    "models": {
+      "const": {
+        "candidates": 56,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "period": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 2,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "lfsr": {
+        "candidates": 4,
+        "exact": 4,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 6
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-32",
+    "case": "period-3",
+    "family": "period",
+    "planted": 4095,
+    "covered": 4095,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 25,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 12378,
+    "net_bytes": -55,
+    "scan_seconds": 0.05376720000276691,
+    "models": {
+      "const": {
+        "candidates": 200,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "period": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 6,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "lfsr": {
+        "candidates": 4,
+        "exact": 4,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 24
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-128",
+    "case": "period-3",
+    "family": "period",
+    "planted": 4095,
+    "covered": 4095,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 97,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 12378,
+    "net_bytes": -55,
+    "scan_seconds": 0.14310589999877266,
+    "models": {
+      "const": {
+        "candidates": 776,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "period": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 19,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "lfsr": {
+        "candidates": 4,
+        "exact": 4,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 96
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "window-512",
+    "case": "period-3",
+    "family": "period",
+    "planted": 4095,
+    "covered": 4095,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 12378,
+    "net_bytes": -55,
+    "scan_seconds": 0.6564020000005257,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "period": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 512
+      },
+      "affine": {
+        "candidates": 105,
+        "exact": 1,
+        "best_cover": 512
+      },
+      "lfsr": {
+        "candidates": 4,
+        "exact": 4,
+        "best_cover": 512
+      },
+      "quadratic": {
+        "candidates": 8,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "identity-only",
+    "case": "period-3",
+    "family": "period",
+    "planted": 4095,
+    "covered": 4095,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12323,
+    "deflate_baseline": 12378,
+    "net_bytes": -55,
+    "scan_seconds": 0.1814355999995314,
+    "models": {
+      "const": {
+        "candidates": 770,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "period": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 32,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "lfsr": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "base-bank",
+    "case": "constant-aa",
+    "family": "constant",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12320,
+    "deflate_baseline": 12374,
+    "net_bytes": -54,
+    "scan_seconds": 0.3678226999982144,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "period": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 108,
+        "exact": 6,
+        "best_cover": 128
+      },
+      "lfsr": {
+        "candidates": 4,
+        "exact": 4,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "experimental",
+    "case": "constant-aa",
+    "family": "constant",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12320,
+    "deflate_baseline": 12374,
+    "net_bytes": -54,
+    "scan_seconds": 0.5677445000001171,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "period": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 108,
+        "exact": 6,
+        "best_cover": 128
+      },
+      "lfsr": {
+        "candidates": 4,
+        "exact": 4,
+        "best_cover": 128
+      },
+      "quadratic": {
+        "candidates": 4,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-8",
+    "case": "constant-aa",
+    "family": "constant",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 7,
+    "accepted_segments": 1,
+    "archive_bytes": 12320,
+    "deflate_baseline": 12374,
+    "net_bytes": -54,
+    "scan_seconds": 0.027256000001216307,
+    "models": {
+      "const": {
+        "candidates": 56,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "period": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 7,
+        "exact": 6,
+        "best_cover": 128
+      },
+      "lfsr": {
+        "candidates": 4,
+        "exact": 4,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 6
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-32",
+    "case": "constant-aa",
+    "family": "constant",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 25,
+    "accepted_segments": 1,
+    "archive_bytes": 12320,
+    "deflate_baseline": 12374,
+    "net_bytes": -54,
+    "scan_seconds": 0.053839699998206925,
+    "models": {
+      "const": {
+        "candidates": 200,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "period": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 11,
+        "exact": 6,
+        "best_cover": 128
+      },
+      "lfsr": {
+        "candidates": 4,
+        "exact": 4,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 24
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "budget-128",
+    "case": "constant-aa",
+    "family": "constant",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 97,
+    "accepted_segments": 1,
+    "archive_bytes": 12320,
+    "deflate_baseline": 12374,
+    "net_bytes": -54,
+    "scan_seconds": 0.14571729999806848,
+    "models": {
+      "const": {
+        "candidates": 776,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "period": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 35,
+        "exact": 6,
+        "best_cover": 128
+      },
+      "lfsr": {
+        "candidates": 4,
+        "exact": 4,
+        "best_cover": 128
+      },
+      "quadratic": {
+        "candidates": 2,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 96
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "window-512",
+    "case": "constant-aa",
+    "family": "constant",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12320,
+    "deflate_baseline": 12374,
+    "net_bytes": -54,
+    "scan_seconds": 0.6001571999986481,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "period": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 512
+      },
+      "affine": {
+        "candidates": 108,
+        "exact": 6,
+        "best_cover": 512
+      },
+      "lfsr": {
+        "candidates": 4,
+        "exact": 4,
+        "best_cover": 512
+      },
+      "quadratic": {
+        "candidates": 4,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "identity-only",
+    "case": "constant-aa",
+    "family": "constant",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12320,
+    "deflate_baseline": 12374,
+    "net_bytes": -54,
+    "scan_seconds": 0.18237370000133524,
+    "models": {
+      "const": {
+        "candidates": 770,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "period": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "affine": {
+        "candidates": 30,
+        "exact": 6,
+        "best_cover": 128
+      },
+      "lfsr": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 128
+      },
+      "quadratic": {
+        "candidates": 2,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": ""
+  },
+  {
+    "config": "base-bank",
+    "case": "pi-decimal-0",
+    "family": "reference",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 512,
+    "accepted_segments": 0,
+    "archive_bytes": 15220,
+    "deflate_baseline": 15220,
+    "net_bytes": 0,
+    "scan_seconds": 0.5667014999999083,
+    "models": {
+      "const": {
+        "candidates": 4096,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 123,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "no_candidate": 512
+    },
+    "expected": true,
+    "note": "needs experimental_models"
+  },
+  {
+    "config": "experimental",
+    "case": "pi-decimal-0",
+    "family": "reference",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12320,
+    "deflate_baseline": 15220,
+    "net_bytes": -2900,
+    "scan_seconds": 0.5457898999993631,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "constant-slice": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 4096
+      },
+      "affine": {
+        "candidates": 76,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 4,
+        "exact": 0,
+        "best_cover": 8
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": "needs experimental_models"
+  },
+  {
+    "config": "budget-8",
+    "case": "pi-decimal-0",
+    "family": "reference",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 7,
+    "accepted_segments": 1,
+    "archive_bytes": 12320,
+    "deflate_baseline": 15220,
+    "net_bytes": -2900,
+    "scan_seconds": 0.016806700001325225,
+    "models": {
+      "const": {
+        "candidates": 56,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "constant-slice": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 4096
+      },
+      "affine": {
+        "candidates": 4,
+        "exact": 0,
+        "best_cover": 1
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 6
+    },
+    "expected": true,
+    "note": "needs experimental_models"
+  },
+  {
+    "config": "budget-32",
+    "case": "pi-decimal-0",
+    "family": "reference",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 25,
+    "accepted_segments": 1,
+    "archive_bytes": 12320,
+    "deflate_baseline": 15220,
+    "net_bytes": -2900,
+    "scan_seconds": 0.04350669999985257,
+    "models": {
+      "const": {
+        "candidates": 200,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "constant-slice": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 4096
+      },
+      "affine": {
+        "candidates": 6,
+        "exact": 0,
+        "best_cover": 1
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 24
+    },
+    "expected": true,
+    "note": "needs experimental_models"
+  },
+  {
+    "config": "budget-128",
+    "case": "pi-decimal-0",
+    "family": "reference",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 97,
+    "accepted_segments": 1,
+    "archive_bytes": 12320,
+    "deflate_baseline": 15220,
+    "net_bytes": -2900,
+    "scan_seconds": 0.15008610000222689,
+    "models": {
+      "const": {
+        "candidates": 776,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "constant-slice": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 4096
+      },
+      "affine": {
+        "candidates": 21,
+        "exact": 0,
+        "best_cover": 3
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 96
+    },
+    "expected": true,
+    "note": "needs experimental_models"
+  },
+  {
+    "config": "window-512",
+    "case": "pi-decimal-0",
+    "family": "reference",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12320,
+    "deflate_baseline": 15220,
+    "net_bytes": -2900,
+    "scan_seconds": 0.5648899000007077,
+    "models": {
+      "const": {
+        "candidates": 3080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "constant-slice": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 4096
+      },
+      "affine": {
+        "candidates": 76,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 4,
+        "exact": 0,
+        "best_cover": 8
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": "needs experimental_models"
+  },
+  {
+    "config": "identity-only",
+    "case": "pi-decimal-0",
+    "family": "reference",
+    "planted": 4096,
+    "covered": 4096,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 385,
+    "accepted_segments": 1,
+    "archive_bytes": 12320,
+    "deflate_baseline": 15220,
+    "net_bytes": -2900,
+    "scan_seconds": 0.176313999996637,
+    "models": {
+      "const": {
+        "candidates": 770,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "constant-slice": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 4096
+      },
+      "affine": {
+        "candidates": 18,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "quadratic": {
+        "candidates": 2,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 384
+    },
+    "expected": true,
+    "note": "needs experimental_models"
+  },
+  {
+    "config": "base-bank",
+    "case": "pi-base256-600",
+    "family": "reference",
+    "planted": 3496,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 512,
+    "accepted_segments": 0,
+    "archive_bytes": 16400,
+    "deflate_baseline": 16411,
+    "net_bytes": -11,
+    "scan_seconds": 0.6365566999993462,
+    "models": {
+      "const": {
+        "candidates": 4096,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 151,
+        "exact": 0,
+        "best_cover": 3
+      }
+    },
+    "reasons": {
+      "no_candidate": 512
+    },
+    "expected": true,
+    "note": "unaligned, needs experimental_models"
+  },
+  {
+    "config": "experimental",
+    "case": "pi-base256-600",
+    "family": "reference",
+    "planted": 3496,
+    "covered": 3496,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 405,
+    "accepted_segments": 1,
+    "archive_bytes": 12925,
+    "deflate_baseline": 16411,
+    "net_bytes": -3486,
+    "scan_seconds": 0.3962451000006695,
+    "models": {
+      "const": {
+        "candidates": 3240,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 118,
+        "exact": 0,
+        "best_cover": 4
+      },
+      "quadratic": {
+        "candidates": 8,
+        "exact": 0,
+        "best_cover": 4
+      },
+      "constant-slice": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 3496
+      }
+    },
+    "reasons": {
+      "no_candidate": 404,
+      "accepted": 1
+    },
+    "expected": true,
+    "note": "unaligned, needs experimental_models"
+  },
+  {
+    "config": "budget-8",
+    "case": "pi-base256-600",
+    "family": "reference",
+    "planted": 3496,
+    "covered": 3496,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 7,
+    "accepted_segments": 1,
+    "archive_bytes": 12925,
+    "deflate_baseline": 16411,
+    "net_bytes": -3486,
+    "scan_seconds": 0.012846400000853464,
+    "models": {
+      "const": {
+        "candidates": 56,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 7,
+        "exact": 0,
+        "best_cover": 1
+      }
+    },
+    "reasons": {
+      "no_candidate": 7,
+      "accepted": 1
+    },
+    "expected": true,
+    "note": "unaligned, needs experimental_models"
+  },
+  {
+    "config": "budget-32",
+    "case": "pi-base256-600",
+    "family": "reference",
+    "planted": 3496,
+    "covered": 3496,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 26,
+    "accepted_segments": 1,
+    "archive_bytes": 12925,
+    "deflate_baseline": 16411,
+    "net_bytes": -3486,
+    "scan_seconds": 0.028587699998752214,
+    "models": {
+      "const": {
+        "candidates": 208,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 15,
+        "exact": 0,
+        "best_cover": 3
+      }
+    },
+    "reasons": {
+      "no_candidate": 26,
+      "accepted": 1
+    },
+    "expected": true,
+    "note": "unaligned, needs experimental_models"
+  },
+  {
+    "config": "budget-128",
+    "case": "pi-base256-600",
+    "family": "reference",
+    "planted": 3496,
+    "covered": 3496,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 101,
+    "accepted_segments": 1,
+    "archive_bytes": 12925,
+    "deflate_baseline": 16411,
+    "net_bytes": -3486,
+    "scan_seconds": 0.09634259999802453,
+    "models": {
+      "const": {
+        "candidates": 808,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 39,
+        "exact": 0,
+        "best_cover": 3
+      }
+    },
+    "reasons": {
+      "no_candidate": 101,
+      "accepted": 1
+    },
+    "expected": true,
+    "note": "unaligned, needs experimental_models"
+  },
+  {
+    "config": "window-512",
+    "case": "pi-base256-600",
+    "family": "reference",
+    "planted": 3496,
+    "covered": 3496,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 405,
+    "accepted_segments": 1,
+    "archive_bytes": 12925,
+    "deflate_baseline": 16411,
+    "net_bytes": -3486,
+    "scan_seconds": 0.460607599998184,
+    "models": {
+      "const": {
+        "candidates": 3240,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 118,
+        "exact": 0,
+        "best_cover": 4
+      },
+      "quadratic": {
+        "candidates": 8,
+        "exact": 0,
+        "best_cover": 4
+      },
+      "constant-slice": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 3496
+      }
+    },
+    "reasons": {
+      "no_candidate": 404,
+      "accepted": 1
+    },
+    "expected": true,
+    "note": "unaligned, needs experimental_models"
+  },
+  {
+    "config": "identity-only",
+    "case": "pi-base256-600",
+    "family": "reference",
+    "planted": 3496,
+    "covered": 3496,
+    "coverage": 1.0,
+    "detected": true,
+    "probes": 405,
+    "accepted_segments": 1,
+    "archive_bytes": 12925,
+    "deflate_baseline": 16411,
+    "net_bytes": -3486,
+    "scan_seconds": 0.10784680000142544,
+    "models": {
+      "const": {
+        "candidates": 810,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 31,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 1,
+        "exact": 0,
+        "best_cover": 4
+      },
+      "constant-slice": {
+        "candidates": 1,
+        "exact": 1,
+        "best_cover": 3496
+      }
+    },
+    "reasons": {
+      "no_candidate": 404,
+      "accepted": 1
+    },
+    "expected": true,
+    "note": "unaligned, needs experimental_models"
+  },
+  {
+    "config": "base-bank",
+    "case": "float-ramp",
+    "family": "float",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 549,
+    "accepted_segments": 0,
+    "archive_bytes": 14017,
+    "deflate_baseline": 14017,
+    "net_bytes": 0,
+    "scan_seconds": 0.4042982999999367,
+    "models": {
+      "const": {
+        "candidates": 4392,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "affine": {
+        "candidates": 308,
+        "exact": 163,
+        "best_cover": 28
+      }
+    },
+    "reasons": {
+      "accepted": 163,
+      "no_candidate": 386
+    },
+    "expected": false,
+    "note": "no float model"
+  },
+  {
+    "config": "experimental",
+    "case": "float-ramp",
+    "family": "float",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 549,
+    "accepted_segments": 0,
+    "archive_bytes": 14017,
+    "deflate_baseline": 14017,
+    "net_bytes": 0,
+    "scan_seconds": 0.5427955999984988,
+    "models": {
+      "const": {
+        "candidates": 4392,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "affine": {
+        "candidates": 308,
+        "exact": 163,
+        "best_cover": 28
+      },
+      "quadratic": {
+        "candidates": 7,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 163,
+      "no_candidate": 386
+    },
+    "expected": false,
+    "note": "no float model"
+  },
+  {
+    "config": "budget-8",
+    "case": "float-ramp",
+    "family": "float",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 8,
+    "accepted_segments": 0,
+    "archive_bytes": 14017,
+    "deflate_baseline": 14017,
+    "net_bytes": 0,
+    "scan_seconds": 0.013022499999351567,
+    "models": {
+      "const": {
+        "candidates": 64,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "affine": {
+        "candidates": 5,
+        "exact": 1,
+        "best_cover": 16
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 7
+    },
+    "expected": false,
+    "note": "no float model"
+  },
+  {
+    "config": "budget-32",
+    "case": "float-ramp",
+    "family": "float",
+    "planted": 4096,
+    "covered": 76,
+    "coverage": 0.0185546875,
+    "detected": false,
+    "probes": 32,
+    "accepted_segments": 4,
+    "archive_bytes": 13985,
+    "deflate_baseline": 14017,
+    "net_bytes": -32,
+    "scan_seconds": 0.03186189999905764,
+    "models": {
+      "const": {
+        "candidates": 256,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "affine": {
+        "candidates": 25,
+        "exact": 4,
+        "best_cover": 24
+      },
+      "quadratic": {
+        "candidates": 1,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 4,
+      "no_candidate": 28
+    },
+    "expected": false,
+    "note": "no float model"
+  },
+  {
+    "config": "budget-128",
+    "case": "float-ramp",
+    "family": "float",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 128,
+    "accepted_segments": 0,
+    "archive_bytes": 14017,
+    "deflate_baseline": 14017,
+    "net_bytes": 0,
+    "scan_seconds": 0.11893819999750121,
+    "models": {
+      "const": {
+        "candidates": 1024,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "affine": {
+        "candidates": 59,
+        "exact": 15,
+        "best_cover": 28
+      },
+      "quadratic": {
+        "candidates": 1,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 15,
+      "no_candidate": 113
+    },
+    "expected": false,
+    "note": "no float model"
+  },
+  {
+    "config": "window-512",
+    "case": "float-ramp",
+    "family": "float",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 549,
+    "accepted_segments": 0,
+    "archive_bytes": 14017,
+    "deflate_baseline": 14017,
+    "net_bytes": 0,
+    "scan_seconds": 0.6255531999995583,
+    "models": {
+      "const": {
+        "candidates": 4392,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "affine": {
+        "candidates": 308,
+        "exact": 163,
+        "best_cover": 28
+      },
+      "quadratic": {
+        "candidates": 7,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 163,
+      "no_candidate": 386
+    },
+    "expected": false,
+    "note": "no float model"
+  },
+  {
+    "config": "identity-only",
+    "case": "float-ramp",
+    "family": "float",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 549,
+    "accepted_segments": 0,
+    "archive_bytes": 14017,
+    "deflate_baseline": 14017,
+    "net_bytes": 0,
+    "scan_seconds": 0.16428390000146464,
+    "models": {
+      "const": {
+        "candidates": 1098,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "affine": {
+        "candidates": 200,
+        "exact": 163,
+        "best_cover": 28
+      },
+      "quadratic": {
+        "candidates": 3,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 163,
+      "no_candidate": 386
+    },
+    "expected": false,
+    "note": "no float model"
+  },
+  {
+    "config": "base-bank",
+    "case": "timestamp-u64us",
+    "family": "timestamp",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 512,
+    "accepted_segments": 0,
+    "archive_bytes": 13916,
+    "deflate_baseline": 13916,
+    "net_bytes": 0,
+    "scan_seconds": 0.5929030000006605,
+    "models": {
+      "const": {
+        "candidates": 4096,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 137,
+        "exact": 0,
+        "best_cover": 3
+      }
+    },
+    "reasons": {
+      "no_candidate": 512
+    },
+    "expected": false,
+    "note": "64-bit LE, no model"
+  },
+  {
+    "config": "experimental",
+    "case": "timestamp-u64us",
+    "family": "timestamp",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 512,
+    "accepted_segments": 0,
+    "archive_bytes": 13916,
+    "deflate_baseline": 13916,
+    "net_bytes": 0,
+    "scan_seconds": 0.6098988999983703,
+    "models": {
+      "const": {
+        "candidates": 4096,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 137,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 13,
+        "exact": 0,
+        "best_cover": 8
+      }
+    },
+    "reasons": {
+      "no_candidate": 512
+    },
+    "expected": false,
+    "note": "64-bit LE, no model"
+  },
+  {
+    "config": "budget-8",
+    "case": "timestamp-u64us",
+    "family": "timestamp",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 8,
+    "accepted_segments": 0,
+    "archive_bytes": 13916,
+    "deflate_baseline": 13916,
+    "net_bytes": 0,
+    "scan_seconds": 0.016480499998579035,
+    "models": {
+      "const": {
+        "candidates": 64,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 2,
+        "exact": 0,
+        "best_cover": 1
+      }
+    },
+    "reasons": {
+      "no_candidate": 8
+    },
+    "expected": false,
+    "note": "64-bit LE, no model"
+  },
+  {
+    "config": "budget-32",
+    "case": "timestamp-u64us",
+    "family": "timestamp",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 32,
+    "accepted_segments": 0,
+    "archive_bytes": 13916,
+    "deflate_baseline": 13916,
+    "net_bytes": 0,
+    "scan_seconds": 0.05373509999844828,
+    "models": {
+      "const": {
+        "candidates": 256,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "quadratic": {
+        "candidates": 2,
+        "exact": 0,
+        "best_cover": 4
+      },
+      "affine": {
+        "candidates": 11,
+        "exact": 0,
+        "best_cover": 3
+      }
+    },
+    "reasons": {
+      "no_candidate": 32
+    },
+    "expected": false,
+    "note": "64-bit LE, no model"
+  },
+  {
+    "config": "budget-128",
+    "case": "timestamp-u64us",
+    "family": "timestamp",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 128,
+    "accepted_segments": 0,
+    "archive_bytes": 13916,
+    "deflate_baseline": 13916,
+    "net_bytes": 0,
+    "scan_seconds": 0.19826839999950607,
+    "models": {
+      "const": {
+        "candidates": 1024,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "quadratic": {
+        "candidates": 4,
+        "exact": 0,
+        "best_cover": 4
+      },
+      "affine": {
+        "candidates": 32,
+        "exact": 0,
+        "best_cover": 3
+      }
+    },
+    "reasons": {
+      "no_candidate": 128
+    },
+    "expected": false,
+    "note": "64-bit LE, no model"
+  },
+  {
+    "config": "window-512",
+    "case": "timestamp-u64us",
+    "family": "timestamp",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 512,
+    "accepted_segments": 0,
+    "archive_bytes": 13916,
+    "deflate_baseline": 13916,
+    "net_bytes": 0,
+    "scan_seconds": 0.8077238999976544,
+    "models": {
+      "const": {
+        "candidates": 4096,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 137,
+        "exact": 0,
+        "best_cover": 3
+      },
+      "quadratic": {
+        "candidates": 13,
+        "exact": 0,
+        "best_cover": 8
+      }
+    },
+    "reasons": {
+      "no_candidate": 512
+    },
+    "expected": false,
+    "note": "64-bit LE, no model"
+  },
+  {
+    "config": "identity-only",
+    "case": "timestamp-u64us",
+    "family": "timestamp",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 512,
+    "accepted_segments": 0,
+    "archive_bytes": 13916,
+    "deflate_baseline": 13916,
+    "net_bytes": 0,
+    "scan_seconds": 0.22258050000164076,
+    "models": {
+      "const": {
+        "candidates": 1024,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 32,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "quadratic": {
+        "candidates": 6,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "no_candidate": 512
+    },
+    "expected": false,
+    "note": "64-bit LE, no model"
+  },
+  {
+    "config": "base-bank",
+    "case": "stereo-u16le",
+    "family": "multichannel",
+    "planted": 2048,
+    "covered": 1984,
+    "coverage": 0.96875,
+    "detected": true,
+    "probes": 469,
+    "accepted_segments": 19,
+    "archive_bytes": 14773,
+    "deflate_baseline": 16411,
+    "net_bytes": -1638,
+    "scan_seconds": 0.5031113999975787,
+    "models": {
+      "const": {
+        "candidates": 3752,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "affine": {
+        "candidates": 145,
+        "exact": 19,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "accepted": 19,
+      "no_candidate": 450
+    },
+    "expected": false,
+    "note": "needs a stride transform; only xor-stride2 exists"
+  },
+  {
+    "config": "experimental",
+    "case": "stereo-u16le",
+    "family": "multichannel",
+    "planted": 2048,
+    "covered": 1984,
+    "coverage": 0.96875,
+    "detected": true,
+    "probes": 469,
+    "accepted_segments": 19,
+    "archive_bytes": 14773,
+    "deflate_baseline": 16411,
+    "net_bytes": -1638,
+    "scan_seconds": 0.7136591000016779,
+    "models": {
+      "const": {
+        "candidates": 3752,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "affine": {
+        "candidates": 145,
+        "exact": 19,
+        "best_cover": 128
+      },
+      "quadratic": {
+        "candidates": 9,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 19,
+      "no_candidate": 450
+    },
+    "expected": false,
+    "note": "needs a stride transform; only xor-stride2 exists"
+  },
+  {
+    "config": "budget-8",
+    "case": "stereo-u16le",
+    "family": "multichannel",
+    "planted": 2048,
+    "covered": 65,
+    "coverage": 0.03173828125,
+    "detected": false,
+    "probes": 8,
+    "accepted_segments": 1,
+    "archive_bytes": 16358,
+    "deflate_baseline": 16411,
+    "net_bytes": -53,
+    "scan_seconds": 0.01831500000116648,
+    "models": {
+      "const": {
+        "candidates": 64,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 3,
+        "exact": 1,
+        "best_cover": 65
+      }
+    },
+    "reasons": {
+      "accepted": 1,
+      "no_candidate": 7
+    },
+    "expected": false,
+    "note": "needs a stride transform; only xor-stride2 exists"
+  },
+  {
+    "config": "budget-32",
+    "case": "stereo-u16le",
+    "family": "multichannel",
+    "planted": 2048,
+    "covered": 212,
+    "coverage": 0.103515625,
+    "detected": false,
+    "probes": 32,
+    "accepted_segments": 4,
+    "archive_bytes": 16161,
+    "deflate_baseline": 16411,
+    "net_bytes": -250,
+    "scan_seconds": 0.05569219999961206,
+    "models": {
+      "const": {
+        "candidates": 256,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 9,
+        "exact": 4,
+        "best_cover": 65
+      }
+    },
+    "reasons": {
+      "accepted": 4,
+      "no_candidate": 28
+    },
+    "expected": false,
+    "note": "needs a stride transform; only xor-stride2 exists"
+  },
+  {
+    "config": "budget-128",
+    "case": "stereo-u16le",
+    "family": "multichannel",
+    "planted": 2048,
+    "covered": 982,
+    "coverage": 0.4794921875,
+    "detected": false,
+    "probes": 128,
+    "accepted_segments": 14,
+    "archive_bytes": 15728,
+    "deflate_baseline": 16411,
+    "net_bytes": -683,
+    "scan_seconds": 0.18058649999875342,
+    "models": {
+      "const": {
+        "candidates": 1024,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 47,
+        "exact": 14,
+        "best_cover": 121
+      },
+      "quadratic": {
+        "candidates": 2,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 14,
+      "no_candidate": 114
+    },
+    "expected": false,
+    "note": "needs a stride transform; only xor-stride2 exists"
+  },
+  {
+    "config": "window-512",
+    "case": "stereo-u16le",
+    "family": "multichannel",
+    "planted": 2048,
+    "covered": 1984,
+    "coverage": 0.96875,
+    "detected": true,
+    "probes": 469,
+    "accepted_segments": 19,
+    "archive_bytes": 14773,
+    "deflate_baseline": 16411,
+    "net_bytes": -1638,
+    "scan_seconds": 0.7750018000006094,
+    "models": {
+      "const": {
+        "candidates": 3752,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "affine": {
+        "candidates": 145,
+        "exact": 19,
+        "best_cover": 144
+      },
+      "quadratic": {
+        "candidates": 9,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 19,
+      "no_candidate": 450
+    },
+    "expected": false,
+    "note": "needs a stride transform; only xor-stride2 exists"
+  },
+  {
+    "config": "identity-only",
+    "case": "stereo-u16le",
+    "family": "multichannel",
+    "planted": 2048,
+    "covered": 1984,
+    "coverage": 0.96875,
+    "detected": true,
+    "probes": 469,
+    "accepted_segments": 19,
+    "archive_bytes": 14773,
+    "deflate_baseline": 16411,
+    "net_bytes": -1638,
+    "scan_seconds": 0.22879770000145072,
+    "models": {
+      "const": {
+        "candidates": 938,
+        "exact": 0,
+        "best_cover": 2
+      },
+      "affine": {
+        "candidates": 50,
+        "exact": 19,
+        "best_cover": 128
+      },
+      "quadratic": {
+        "candidates": 3,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 19,
+      "no_candidate": 450
+    },
+    "expected": false,
+    "note": "needs a stride transform; only xor-stride2 exists"
+  },
+  {
+    "config": "base-bank",
+    "case": "affine-u16le-noise-0.001",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 3296,
+    "coverage": 0.8046875,
+    "detected": true,
+    "probes": 434,
+    "accepted_segments": 25,
+    "archive_bytes": 13579,
+    "deflate_baseline": 16327,
+    "net_bytes": -2748,
+    "scan_seconds": 0.482965699997294,
+    "models": {
+      "const": {
+        "candidates": 3472,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 155,
+        "exact": 50,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "no_candidate": 409,
+      "accepted": 25
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "experimental",
+    "case": "affine-u16le-noise-0.001",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 3296,
+    "coverage": 0.8046875,
+    "detected": true,
+    "probes": 434,
+    "accepted_segments": 25,
+    "archive_bytes": 13579,
+    "deflate_baseline": 16327,
+    "net_bytes": -2748,
+    "scan_seconds": 0.7070862999971723,
+    "models": {
+      "const": {
+        "candidates": 3472,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 155,
+        "exact": 50,
+        "best_cover": 128
+      },
+      "quadratic": {
+        "candidates": 5,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "no_candidate": 409,
+      "accepted": 25
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "budget-8",
+    "case": "affine-u16le-noise-0.001",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 8,
+    "accepted_segments": 0,
+    "archive_bytes": 16327,
+    "deflate_baseline": 16327,
+    "net_bytes": 0,
+    "scan_seconds": 0.01109569999971427,
+    "models": {
+      "const": {
+        "candidates": 64,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 4,
+        "exact": 0,
+        "best_cover": 9
+      }
+    },
+    "reasons": {
+      "no_candidate": 8
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "budget-32",
+    "case": "affine-u16le-noise-0.001",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 32,
+    "accepted_segments": 0,
+    "archive_bytes": 16327,
+    "deflate_baseline": 16327,
+    "net_bytes": 0,
+    "scan_seconds": 0.03411979999873438,
+    "models": {
+      "const": {
+        "candidates": 256,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 15,
+        "exact": 0,
+        "best_cover": 9
+      }
+    },
+    "reasons": {
+      "no_candidate": 32
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "budget-128",
+    "case": "affine-u16le-noise-0.001",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 2225,
+    "coverage": 0.543212890625,
+    "detected": true,
+    "probes": 121,
+    "accepted_segments": 24,
+    "archive_bytes": 14591,
+    "deflate_baseline": 16327,
+    "net_bytes": -1736,
+    "scan_seconds": 0.1764115000005404,
+    "models": {
+      "const": {
+        "candidates": 968,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 68,
+        "exact": 48,
+        "best_cover": 128
+      },
+      "quadratic": {
+        "candidates": 2,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "no_candidate": 97,
+      "accepted": 24
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "window-512",
+    "case": "affine-u16le-noise-0.001",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 3296,
+    "coverage": 0.8046875,
+    "detected": true,
+    "probes": 434,
+    "accepted_segments": 25,
+    "archive_bytes": 13579,
+    "deflate_baseline": 16327,
+    "net_bytes": -2748,
+    "scan_seconds": 0.810481600001367,
+    "models": {
+      "const": {
+        "candidates": 3472,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 155,
+        "exact": 50,
+        "best_cover": 168
+      },
+      "quadratic": {
+        "candidates": 5,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "no_candidate": 409,
+      "accepted": 25
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "identity-only",
+    "case": "affine-u16le-noise-0.001",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 3296,
+    "coverage": 0.8046875,
+    "detected": true,
+    "probes": 434,
+    "accepted_segments": 25,
+    "archive_bytes": 13579,
+    "deflate_baseline": 16327,
+    "net_bytes": -2748,
+    "scan_seconds": 0.2012460000005376,
+    "models": {
+      "const": {
+        "candidates": 868,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 79,
+        "exact": 50,
+        "best_cover": 128
+      },
+      "quadratic": {
+        "candidates": 1,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "no_candidate": 409,
+      "accepted": 25
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "base-bank",
+    "case": "affine-u16le-noise-0.01",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 2912,
+    "coverage": 0.7109375,
+    "detected": true,
+    "probes": 459,
+    "accepted_segments": 38,
+    "archive_bytes": 14185,
+    "deflate_baseline": 16310,
+    "net_bytes": -2125,
+    "scan_seconds": 0.6190358999992895,
+    "models": {
+      "const": {
+        "candidates": 3672,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 198,
+        "exact": 76,
+        "best_cover": 128
+      }
+    },
+    "reasons": {
+      "no_candidate": 421,
+      "accepted": 38
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "experimental",
+    "case": "affine-u16le-noise-0.01",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 2912,
+    "coverage": 0.7109375,
+    "detected": true,
+    "probes": 459,
+    "accepted_segments": 38,
+    "archive_bytes": 14185,
+    "deflate_baseline": 16310,
+    "net_bytes": -2125,
+    "scan_seconds": 0.5753881000018737,
+    "models": {
+      "const": {
+        "candidates": 3672,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 198,
+        "exact": 76,
+        "best_cover": 128
+      },
+      "quadratic": {
+        "candidates": 8,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "no_candidate": 421,
+      "accepted": 38
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "budget-8",
+    "case": "affine-u16le-noise-0.01",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 8,
+    "accepted_segments": 0,
+    "archive_bytes": 16310,
+    "deflate_baseline": 16310,
+    "net_bytes": 0,
+    "scan_seconds": 0.016329900001437636,
+    "models": {
+      "const": {
+        "candidates": 64,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 3,
+        "exact": 0,
+        "best_cover": 9
+      }
+    },
+    "reasons": {
+      "no_candidate": 8
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "budget-32",
+    "case": "affine-u16le-noise-0.01",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 32,
+    "accepted_segments": 0,
+    "archive_bytes": 16310,
+    "deflate_baseline": 16310,
+    "net_bytes": 0,
+    "scan_seconds": 0.052034699998330325,
+    "models": {
+      "const": {
+        "candidates": 256,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 13,
+        "exact": 0,
+        "best_cover": 9
+      }
+    },
+    "reasons": {
+      "no_candidate": 32
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "budget-128",
+    "case": "affine-u16le-noise-0.01",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 1516,
+    "coverage": 0.3701171875,
+    "detected": false,
+    "probes": 127,
+    "accepted_segments": 22,
+    "archive_bytes": 15230,
+    "deflate_baseline": 16310,
+    "net_bytes": -1080,
+    "scan_seconds": 0.21286680000048364,
+    "models": {
+      "const": {
+        "candidates": 1016,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 73,
+        "exact": 44,
+        "best_cover": 128
+      },
+      "quadratic": {
+        "candidates": 1,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "no_candidate": 105,
+      "accepted": 22
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "window-512",
+    "case": "affine-u16le-noise-0.01",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 2912,
+    "coverage": 0.7109375,
+    "detected": true,
+    "probes": 459,
+    "accepted_segments": 38,
+    "archive_bytes": 14185,
+    "deflate_baseline": 16310,
+    "net_bytes": -2125,
+    "scan_seconds": 0.6893033999986073,
+    "models": {
+      "const": {
+        "candidates": 3672,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 198,
+        "exact": 76,
+        "best_cover": 166
+      },
+      "quadratic": {
+        "candidates": 8,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "no_candidate": 421,
+      "accepted": 38
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "identity-only",
+    "case": "affine-u16le-noise-0.01",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 2912,
+    "coverage": 0.7109375,
+    "detected": true,
+    "probes": 459,
+    "accepted_segments": 38,
+    "archive_bytes": 14185,
+    "deflate_baseline": 16310,
+    "net_bytes": -2125,
+    "scan_seconds": 0.23224739999932353,
+    "models": {
+      "const": {
+        "candidates": 918,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 104,
+        "exact": 76,
+        "best_cover": 128
+      },
+      "quadratic": {
+        "candidates": 1,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "no_candidate": 421,
+      "accepted": 38
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "base-bank",
+    "case": "affine-u16le-noise-0.05",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 1141,
+    "coverage": 0.278564453125,
+    "detected": false,
+    "probes": 510,
+    "accepted_segments": 34,
+    "archive_bytes": 15836,
+    "deflate_baseline": 16333,
+    "net_bytes": -497,
+    "scan_seconds": 0.5710131999985606,
+    "models": {
+      "const": {
+        "candidates": 4080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 271,
+        "exact": 68,
+        "best_cover": 74
+      }
+    },
+    "reasons": {
+      "no_candidate": 476,
+      "accepted": 34
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "experimental",
+    "case": "affine-u16le-noise-0.05",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 1141,
+    "coverage": 0.278564453125,
+    "detected": false,
+    "probes": 510,
+    "accepted_segments": 34,
+    "archive_bytes": 15836,
+    "deflate_baseline": 16333,
+    "net_bytes": -497,
+    "scan_seconds": 0.6352957000017341,
+    "models": {
+      "const": {
+        "candidates": 4080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 271,
+        "exact": 68,
+        "best_cover": 74
+      },
+      "quadratic": {
+        "candidates": 11,
+        "exact": 0,
+        "best_cover": 8
+      }
+    },
+    "reasons": {
+      "no_candidate": 476,
+      "accepted": 34
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "budget-8",
+    "case": "affine-u16le-noise-0.05",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 8,
+    "accepted_segments": 0,
+    "archive_bytes": 16333,
+    "deflate_baseline": 16333,
+    "net_bytes": 0,
+    "scan_seconds": 0.011987299996690126,
+    "models": {
+      "const": {
+        "candidates": 64,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 5,
+        "exact": 0,
+        "best_cover": 9
+      }
+    },
+    "reasons": {
+      "no_candidate": 8
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "budget-32",
+    "case": "affine-u16le-noise-0.05",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 32,
+    "accepted_segments": 0,
+    "archive_bytes": 16333,
+    "deflate_baseline": 16333,
+    "net_bytes": 0,
+    "scan_seconds": 0.032923000002483604,
+    "models": {
+      "const": {
+        "candidates": 256,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 12,
+        "exact": 0,
+        "best_cover": 9
+      }
+    },
+    "reasons": {
+      "no_candidate": 32
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "budget-128",
+    "case": "affine-u16le-noise-0.05",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 350,
+    "coverage": 0.08544921875,
+    "detected": false,
+    "probes": 128,
+    "accepted_segments": 13,
+    "archive_bytes": 16004,
+    "deflate_baseline": 16333,
+    "net_bytes": -329,
+    "scan_seconds": 0.12075199999890174,
+    "models": {
+      "const": {
+        "candidates": 1024,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 63,
+        "exact": 26,
+        "best_cover": 55
+      },
+      "quadratic": {
+        "candidates": 1,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "no_candidate": 115,
+      "accepted": 13
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "window-512",
+    "case": "affine-u16le-noise-0.05",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 1141,
+    "coverage": 0.278564453125,
+    "detected": false,
+    "probes": 510,
+    "accepted_segments": 34,
+    "archive_bytes": 15836,
+    "deflate_baseline": 16333,
+    "net_bytes": -497,
+    "scan_seconds": 0.5799509999997099,
+    "models": {
+      "const": {
+        "candidates": 4080,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 271,
+        "exact": 68,
+        "best_cover": 74
+      },
+      "quadratic": {
+        "candidates": 11,
+        "exact": 0,
+        "best_cover": 8
+      }
+    },
+    "reasons": {
+      "no_candidate": 476,
+      "accepted": 34
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "identity-only",
+    "case": "affine-u16le-noise-0.05",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 1141,
+    "coverage": 0.278564453125,
+    "detected": false,
+    "probes": 510,
+    "accepted_segments": 34,
+    "archive_bytes": 15836,
+    "deflate_baseline": 16333,
+    "net_bytes": -497,
+    "scan_seconds": 0.1456475999984832,
+    "models": {
+      "const": {
+        "candidates": 1020,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 152,
+        "exact": 68,
+        "best_cover": 74
+      },
+      "quadratic": {
+        "candidates": 5,
+        "exact": 0,
+        "best_cover": 8
+      }
+    },
+    "reasons": {
+      "no_candidate": 476,
+      "accepted": 34
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "base-bank",
+    "case": "affine-u16le-noise-0.2",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 39,
+    "coverage": 0.009521484375,
+    "detected": false,
+    "probes": 513,
+    "accepted_segments": 2,
+    "archive_bytes": 16277,
+    "deflate_baseline": 16350,
+    "net_bytes": -73,
+    "scan_seconds": 0.3780427999990934,
+    "models": {
+      "const": {
+        "candidates": 4104,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 171,
+        "exact": 4,
+        "best_cover": 22
+      }
+    },
+    "reasons": {
+      "no_candidate": 511,
+      "accepted": 2
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "experimental",
+    "case": "affine-u16le-noise-0.2",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 39,
+    "coverage": 0.009521484375,
+    "detected": false,
+    "probes": 513,
+    "accepted_segments": 2,
+    "archive_bytes": 16277,
+    "deflate_baseline": 16350,
+    "net_bytes": -73,
+    "scan_seconds": 0.54602480000176,
+    "models": {
+      "const": {
+        "candidates": 4104,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 171,
+        "exact": 4,
+        "best_cover": 22
+      },
+      "quadratic": {
+        "candidates": 13,
+        "exact": 0,
+        "best_cover": 11
+      }
+    },
+    "reasons": {
+      "no_candidate": 511,
+      "accepted": 2
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "budget-8",
+    "case": "affine-u16le-noise-0.2",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 8,
+    "accepted_segments": 0,
+    "archive_bytes": 16350,
+    "deflate_baseline": 16350,
+    "net_bytes": 0,
+    "scan_seconds": 0.016136400001414586,
+    "models": {
+      "const": {
+        "candidates": 64,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 3,
+        "exact": 0,
+        "best_cover": 9
+      }
+    },
+    "reasons": {
+      "no_candidate": 8
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "budget-32",
+    "case": "affine-u16le-noise-0.2",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 0,
+    "coverage": 0.0,
+    "detected": false,
+    "probes": 32,
+    "accepted_segments": 0,
+    "archive_bytes": 16350,
+    "deflate_baseline": 16350,
+    "net_bytes": 0,
+    "scan_seconds": 0.05387610000252607,
+    "models": {
+      "const": {
+        "candidates": 256,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 12,
+        "exact": 0,
+        "best_cover": 9
+      }
+    },
+    "reasons": {
+      "no_candidate": 32
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "budget-128",
+    "case": "affine-u16le-noise-0.2",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 18,
+    "coverage": 0.00439453125,
+    "detected": false,
+    "probes": 128,
+    "accepted_segments": 1,
+    "archive_bytes": 16271,
+    "deflate_baseline": 16350,
+    "net_bytes": -79,
+    "scan_seconds": 0.21250249999866355,
+    "models": {
+      "const": {
+        "candidates": 1024,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 45,
+        "exact": 2,
+        "best_cover": 18
+      },
+      "quadratic": {
+        "candidates": 3,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "no_candidate": 127,
+      "accepted": 1
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "window-512",
+    "case": "affine-u16le-noise-0.2",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 39,
+    "coverage": 0.009521484375,
+    "detected": false,
+    "probes": 513,
+    "accepted_segments": 2,
+    "archive_bytes": 16277,
+    "deflate_baseline": 16350,
+    "net_bytes": -73,
+    "scan_seconds": 0.9642022000007273,
+    "models": {
+      "const": {
+        "candidates": 4104,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 171,
+        "exact": 4,
+        "best_cover": 22
+      },
+      "quadratic": {
+        "candidates": 13,
+        "exact": 0,
+        "best_cover": 11
+      }
+    },
+    "reasons": {
+      "no_candidate": 511,
+      "accepted": 2
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "identity-only",
+    "case": "affine-u16le-noise-0.2",
+    "family": "noisy",
+    "planted": 4096,
+    "covered": 39,
+    "coverage": 0.009521484375,
+    "detected": false,
+    "probes": 513,
+    "accepted_segments": 2,
+    "archive_bytes": 16277,
+    "deflate_baseline": 16350,
+    "net_bytes": -73,
+    "scan_seconds": 0.2073787999979686,
+    "models": {
+      "const": {
+        "candidates": 1026,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 61,
+        "exact": 4,
+        "best_cover": 22
+      },
+      "quadratic": {
+        "candidates": 2,
+        "exact": 0,
+        "best_cover": 11
+      }
+    },
+    "reasons": {
+      "no_candidate": 511,
+      "accepted": 2
+    },
+    "expected": false,
+    "note": "exact match required; any flip breaks the run"
+  },
+  {
+    "config": "base-bank",
+    "case": "composite-sum-u16le",
+    "family": "composite",
+    "planted": 4096,
+    "covered": 2585,
+    "coverage": 0.631103515625,
+    "detected": true,
+    "probes": 495,
+    "accepted_segments": 64,
+    "archive_bytes": 14628,
+    "deflate_baseline": 15463,
+    "net_bytes": -835,
+    "scan_seconds": 0.6390525999995589,
+    "models": {
+      "const": {
+        "candidates": 3960,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 353,
+        "exact": 132,
+        "best_cover": 101
+      }
+    },
+    "reasons": {
+      "accepted": 64,
+      "no_candidate": 431
+    },
+    "expected": false,
+    "note": "no model composes two sequences"
+  },
+  {
+    "config": "experimental",
+    "case": "composite-sum-u16le",
+    "family": "composite",
+    "planted": 4096,
+    "covered": 2585,
+    "coverage": 0.631103515625,
+    "detected": true,
+    "probes": 495,
+    "accepted_segments": 64,
+    "archive_bytes": 14628,
+    "deflate_baseline": 15463,
+    "net_bytes": -835,
+    "scan_seconds": 0.7786188999998558,
+    "models": {
+      "const": {
+        "candidates": 3960,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 353,
+        "exact": 132,
+        "best_cover": 101
+      },
+      "quadratic": {
+        "candidates": 6,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 64,
+      "no_candidate": 431
+    },
+    "expected": false,
+    "note": "no model composes two sequences"
+  },
+  {
+    "config": "budget-8",
+    "case": "composite-sum-u16le",
+    "family": "composite",
+    "planted": 4096,
+    "covered": 202,
+    "coverage": 0.04931640625,
+    "detected": false,
+    "probes": 8,
+    "accepted_segments": 2,
+    "archive_bytes": 15072,
+    "deflate_baseline": 15463,
+    "net_bytes": -391,
+    "scan_seconds": 0.01966049999828101,
+    "models": {
+      "const": {
+        "candidates": 64,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 14,
+        "exact": 8,
+        "best_cover": 101
+      }
+    },
+    "reasons": {
+      "accepted": 2,
+      "no_candidate": 6
+    },
+    "expected": false,
+    "note": "no model composes two sequences"
+  },
+  {
+    "config": "budget-32",
+    "case": "composite-sum-u16le",
+    "family": "composite",
+    "planted": 4096,
+    "covered": 808,
+    "coverage": 0.197265625,
+    "detected": false,
+    "probes": 32,
+    "accepted_segments": 8,
+    "archive_bytes": 14633,
+    "deflate_baseline": 15463,
+    "net_bytes": -830,
+    "scan_seconds": 0.05680220000067493,
+    "models": {
+      "const": {
+        "candidates": 256,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 35,
+        "exact": 20,
+        "best_cover": 101
+      }
+    },
+    "reasons": {
+      "accepted": 8,
+      "no_candidate": 24
+    },
+    "expected": false,
+    "note": "no model composes two sequences"
+  },
+  {
+    "config": "budget-128",
+    "case": "composite-sum-u16le",
+    "family": "composite",
+    "planted": 4096,
+    "covered": 1776,
+    "coverage": 0.43359375,
+    "detected": false,
+    "probes": 128,
+    "accepted_segments": 32,
+    "archive_bytes": 15152,
+    "deflate_baseline": 15463,
+    "net_bytes": -311,
+    "scan_seconds": 0.21640710000065155,
+    "models": {
+      "const": {
+        "candidates": 1024,
+        "exact": 0,
+        "best_cover": 0
+      },
+      "affine": {
+        "candidates": 111,
+        "exact": 68,
+        "best_cover": 101
+      },
+      "quadratic": {
+        "candidates": 1,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 32,
+      "no_candidate": 96
+    },
+    "expected": false,
+    "note": "no model composes two sequences"
+  },
+  {
+    "config": "window-512",
+    "case": "composite-sum-u16le",
+    "family": "composite",
+    "planted": 4096,
+    "covered": 2585,
+    "coverage": 0.631103515625,
+    "detected": true,
+    "probes": 495,
+    "accepted_segments": 64,
+    "archive_bytes": 14628,
+    "deflate_baseline": 15463,
+    "net_bytes": -835,
+    "scan_seconds": 0.9780078999974648,
+    "models": {
+      "const": {
+        "candidates": 3960,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 353,
+        "exact": 132,
+        "best_cover": 101
+      },
+      "quadratic": {
+        "candidates": 6,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 64,
+      "no_candidate": 431
+    },
+    "expected": false,
+    "note": "no model composes two sequences"
+  },
+  {
+    "config": "identity-only",
+    "case": "composite-sum-u16le",
+    "family": "composite",
+    "planted": 4096,
+    "covered": 2585,
+    "coverage": 0.631103515625,
+    "detected": true,
+    "probes": 495,
+    "accepted_segments": 64,
+    "archive_bytes": 14628,
+    "deflate_baseline": 15463,
+    "net_bytes": -835,
+    "scan_seconds": 0.22856970000066212,
+    "models": {
+      "const": {
+        "candidates": 990,
+        "exact": 0,
+        "best_cover": 1
+      },
+      "affine": {
+        "candidates": 246,
+        "exact": 128,
+        "best_cover": 101
+      },
+      "quadratic": {
+        "candidates": 4,
+        "exact": 0,
+        "best_cover": 4
+      }
+    },
+    "reasons": {
+      "accepted": 64,
+      "no_candidate": 431
+    },
+    "expected": false,
+    "note": "no model composes two sequences"
+  }
+]

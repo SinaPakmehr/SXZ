@@ -1,0 +1,139 @@
+{
+  "path": "datasets/compare-corpus/unavailable-mixed.tar",
+  "size": 1048576,
+  "budget": null,
+  "archive_bytes": 1040067,
+  "deflate_baseline": 1040067,
+  "accepted_segments": 33,
+  "accepted_bytes": 5120,
+  "accepted_cost_bytes": 342,
+  "emitted_formula_segments": 0,
+  "emitted_formula_bytes": 0,
+  "models": {
+    "const": 29,
+    "affine": 3,
+    "lfsr": 1
+  },
+  "transforms": {
+    "identity": 33
+  },
+  "median_cover": 93,
+  "max_cover": 448,
+  "examples": [
+    {
+      "pos": 184896,
+      "model": "const",
+      "transform": "identity",
+      "cover": 448,
+      "cost": 10,
+      "fallback": 23
+    },
+    {
+      "pos": 370240,
+      "model": "const",
+      "transform": "identity",
+      "cover": 448,
+      "cost": 10,
+      "fallback": 23
+    },
+    {
+      "pos": 696384,
+      "model": "const",
+      "transform": "identity",
+      "cover": 448,
+      "cost": 10,
+      "fallback": 23
+    },
+    {
+      "pos": 981568,
+      "model": "const",
+      "transform": "identity",
+      "cover": 448,
+      "cost": 10,
+      "fallback": 23
+    },
+    {
+      "pos": 369310,
+      "model": "const",
+      "transform": "identity",
+      "cover": 354,
+      "cost": 10,
+      "fallback": 22
+    },
+    {
+      "pos": 695454,
+      "model": "lfsr",
+      "transform": "identity",
+      "cover": 354,
+      "cost": 16,
+      "fallback": 25
+    },
+    {
+      "pos": 184641,
+      "model": "const",
+      "transform": "identity",
+      "cover": 191,
+      "cost": 10,
+      "fallback": 21
+    },
+    {
+      "pos": 185665,
+      "model": "const",
+      "transform": "identity",
+      "cover": 191,
+      "cost": 10,
+      "fallback": 21
+    },
+    {
+      "pos": 369985,
+      "model": "const",
+      "transform": "identity",
+      "cover": 191,
+      "cost": 10,
+      "fallback": 21
+    },
+    {
+      "pos": 371009,
+      "model": "const",
+      "transform": "identity",
+      "cover": 191,
+      "cost": 10,
+      "fallback": 21
+    },
+    {
+      "pos": 696129,
+      "model": "const",
+      "transform": "identity",
+      "cover": 191,
+      "cost": 10,
+      "fallback": 21
+    },
+    {
+      "pos": 697153,
+      "model": "const",
+      "transform": "identity",
+      "cover": 191,
+      "cost": 10,
+      "fallback": 21
+    }
+  ],
+  "reasons": {
+    "no_candidate": 16304,
+    "accepted": 33
+  },
+  "candidate_archives": [
+    [
+      1040804,
+      "raw"
+    ],
+    [
+      1040067,
+      "deflate-whole"
+    ],
+    [
+      1048592,
+      "stored"
+    ]
+  ],
+  "structured_vs_plain": 737
+}

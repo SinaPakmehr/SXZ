@@ -1,0 +1,14 @@
+test_decimal_variable_length_and_delta (test_relations.Relations.test_decimal_variable_length_and_delta) ... ok
+test_exact_accounting_and_selected_known_relation (test_relations.Relations.test_exact_accounting_and_selected_known_relation) ... ok
+test_frozen_layout_full_files (test_relations.Relations.test_frozen_layout_full_files) ... ok
+test_grammar_exactness (test_relations.Relations.test_grammar_exactness) ... ok
+test_parent_shortlist_is_unique_even_when_samples_overlap (test_relations.Relations.test_parent_shortlist_is_unique_even_when_samples_overlap) ... ok
+test_reject_forward_trailing_and_copy_oob (test_relations.Relations.test_reject_forward_trailing_and_copy_oob) ... ok
+test_select_fexp_and_lanes_bit_operations (test_relations.Relations.test_select_fexp_and_lanes_bit_operations) ... ok
+test_special_bitplane_roundtrip_all_patterns (test_relations.Relations.test_special_bitplane_roundtrip_all_patterns) ... ok
+test_xml_lexical_offsets_and_self_closing (test_relations.Relations.test_xml_lexical_offsets_and_self_closing) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 1.089s
+
+OK

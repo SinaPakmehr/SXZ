@@ -1,0 +1,108 @@
+{
+  "path": "datasets/audit-assets/7zr.exe",
+  "size": 602624,
+  "budget": null,
+  "archive_bytes": 339423,
+  "deflate_baseline": 339423,
+  "accepted_segments": 8,
+  "accepted_bytes": 5184,
+  "accepted_cost_bytes": 106,
+  "emitted_formula_segments": 0,
+  "emitted_formula_bytes": 0,
+  "models": {
+    "const": 3,
+    "period": 2,
+    "lfsr": 2,
+    "affine": 1
+  },
+  "transforms": {
+    "identity": 8
+  },
+  "median_cover": 287,
+  "max_cover": 2865,
+  "examples": [
+    {
+      "pos": 599759,
+      "model": "const",
+      "transform": "identity",
+      "cover": 2865,
+      "cost": 10,
+      "fallback": 35
+    },
+    {
+      "pos": 575904,
+      "model": "lfsr",
+      "transform": "identity",
+      "cover": 696,
+      "cost": 16,
+      "fallback": 26
+    },
+    {
+      "pos": 577048,
+      "model": "const",
+      "transform": "identity",
+      "cover": 502,
+      "cost": 10,
+      "fallback": 23
+    },
+    {
+      "pos": 503521,
+      "model": "lfsr",
+      "transform": "identity",
+      "cover": 287,
+      "cost": 18,
+      "fallback": 25
+    },
+    {
+      "pos": 768,
+      "model": "const",
+      "transform": "identity",
+      "cover": 256,
+      "cost": 10,
+      "fallback": 21
+    },
+    {
+      "pos": 113088,
+      "model": "period",
+      "transform": "identity",
+      "cover": 225,
+      "cost": 14,
+      "fallback": 24
+    },
+    {
+      "pos": 506304,
+      "model": "period",
+      "transform": "identity",
+      "cover": 224,
+      "cost": 14,
+      "fallback": 24
+    },
+    {
+      "pos": 594126,
+      "model": "affine",
+      "transform": "identity",
+      "cover": 129,
+      "cost": 14,
+      "fallback": 134
+    }
+  ],
+  "reasons": {
+    "no_candidate": 9335,
+    "accepted": 8
+  },
+  "candidate_archives": [
+    [
+      339925,
+      "deflate"
+    ],
+    [
+      339423,
+      "deflate-whole"
+    ],
+    [
+      602640,
+      "stored"
+    ]
+  ],
+  "structured_vs_plain": 502
+}

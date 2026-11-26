@@ -1,0 +1,135 @@
+{
+  "rows": [
+    {
+      "name": "shared",
+      "archive_bytes": 1002,
+      "cold_s": 0.000407600004109554,
+      "warm_s": 4.8299989430233836e-05,
+      "warm_trials": [
+        6.239999493118376e-05,
+        5.429999146144837e-05,
+        4.919999628327787e-05,
+        4.8299989430233836e-05,
+        4.749999789055437e-05,
+        4.709999484475702e-05,
+        4.749999789055437e-05
+      ],
+      "before": {
+        "peak": 45875200,
+        "current": 45875200
+      },
+      "after": {
+        "peak": 45961216,
+        "current": 45961216
+      },
+      "sha256": "d32f534019a9c4d135e6b56c6ed1f42a790076bd50d2c4dea44c71a8df88e9d6",
+      "parallel": false,
+      "cold_generation_s": 0.00013379997108131647,
+      "cache_entries": 10,
+      "cache_bytes": 1090,
+      "input_bytes": 1993,
+      "package_versions": {
+        "zstandard": "0.25.0",
+        "numpy": "2.4.0"
+      }
+    },
+    {
+      "name": "multi",
+      "archive_bytes": 1012,
+      "cold_s": 0.0003234000032534823,
+      "warm_s": 7.37000082153827e-05,
+      "warm_trials": [
+        8.480000542476773e-05,
+        8.070000330917537e-05,
+        7.37000082153827e-05,
+        6.86999992467463e-05,
+        6.720000237692147e-05,
+        6.609999400097877e-05,
+        7.929999264888465e-05
+      ],
+      "before": {
+        "peak": 45809664,
+        "current": 45809664
+      },
+      "after": {
+        "peak": 45912064,
+        "current": 45912064
+      },
+      "sha256": "c3b5f2033976b65f727f25884872ebafa92928cfb01d5b83983bf14f4c330d7f",
+      "parallel": false,
+      "cold_generation_s": 0.0001098999782698229,
+      "cache_entries": 10,
+      "cache_bytes": 1090,
+      "input_bytes": 1993,
+      "package_versions": {
+        "zstandard": "0.25.0",
+        "numpy": "2.4.0"
+      }
+    },
+    {
+      "name": "PNG-direct",
+      "archive_bytes": 4623,
+      "cold_s": 0.00026559999969322234,
+      "warm_s": 0.00010320000001229346,
+      "warm_trials": [
+        0.00010320000001229346,
+        0.00013159999798517674,
+        9.23999905353412e-05,
+        0.0001049999991664663,
+        8.669999078847468e-05,
+        8.410000009462237e-05,
+        0.000994600006379187
+      ],
+      "before": {
+        "peak": 45772800,
+        "current": 45772800
+      },
+      "after": {
+        "peak": 45924352,
+        "current": 45924352
+      },
+      "sha256": "ea0e73137c1c8561e91241771e3c81e5b3e8f5ab2cbfdad1a00d8eea524815fa",
+      "parallel": false,
+      "cold_generation_s": 0,
+      "cache_entries": 0,
+      "cache_bytes": 0,
+      "input_bytes": 45187,
+      "package_versions": {
+        "zstandard": "0.25.0",
+        "numpy": "2.4.0"
+      }
+    }
+  ],
+  "parallel_trials": [
+    {
+      "one_s": 0.17982209999172483,
+      "two_s": 0.16148150000663009
+    },
+    {
+      "one_s": 0.19914680000510998,
+      "two_s": 0.1634407000092324
+    },
+    {
+      "one_s": 0.23040519999631215,
+      "two_s": 0.17998100000841077
+    },
+    {
+      "one_s": 0.2267720000090776,
+      "two_s": 0.17830519999552052
+    },
+    {
+      "one_s": 0.23764989999472164,
+      "two_s": 0.15832329999830108
+    }
+  ],
+  "native_shared_DLL_bytes": 2108921,
+  "asm_python_bytes": 15233,
+  "shared_representation_py_bytes": 3553,
+  "minimum_dependencies": [
+    "CPython",
+    "NumPy",
+    "zstandard",
+    "asm_native.dll",
+    "represent.py"
+  ]
+}

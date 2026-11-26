@@ -1,0 +1,40 @@
+         1487478 function calls in 0.435 seconds
+
+   Ordered by: cumulative time
+   List reduced from 84 to 32 due to restriction <32>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.001    0.001    0.435    0.435 lab/sxz-mathematical-mosaic/measure.py:129(optimize)
+        6    0.038    0.006    0.286    0.048 lab/sxz-mathematical-mosaic/mosaic.py:100(plan)
+   106565    0.066    0.000    0.227    0.000 lab/sxz-mathematical-mosaic/mosaic.py:66(desc)
+   319695    0.105    0.000    0.161    0.000 lab/sxz-mathematical-mosaic/mosaic.py:36(vl)
+       19    0.015    0.001    0.139    0.007 {built-in method builtins.sorted}
+        1    0.024    0.024    0.102    0.102 lab/sxz-mathematical-mosaic/mosaic.py:129(guarded_edges)
+    35504    0.007    0.000    0.084    0.000 lab/sxz-mathematical-mosaic/mosaic.py:102(gain)
+    35493    0.007    0.000    0.082    0.000 lab/sxz-mathematical-mosaic/mosaic.py:112(<lambda>)
+       54    0.002    0.000    0.043    0.001 lab/sxz-mathematical-mosaic/mosaic.py:256(decode)
+    17715    0.005    0.000    0.042    0.000 lab/sxz-mathematical-mosaic/mosaic.py:105(<lambda>)
+       60    0.000    0.000    0.041    0.001 lab/sxz-mathematical-mosaic/measure.py:39(timed)
+      291    0.000    0.000    0.036    0.000 lab/sxz-mathematical-mosaic/mosaic.py:218(get)
+    17762    0.033    0.000    0.033    0.000 {method 'compress' of 'zstandard.backend_c.ZstdCompressor' objects}
+   372939    0.031    0.000    0.031    0.000 {built-in method builtins.max}
+   319701    0.030    0.000    0.030    0.000 {method 'bit_length' of 'int' objects}
+       12    0.000    0.000    0.025    0.002 lab/sxz-mathematical-mosaic/catalog.py:268(stream)
+        6    0.022    0.004    0.022    0.004 lab/sxz-mathematical-mosaic/catalog.py:93(constant)
+   125158    0.015    0.000    0.015    0.000 {method 'append' of 'list' objects}
+       13    0.000    0.000    0.012    0.001 lab/sxz-mathematical-mosaic/measure.py:48(clock)
+       39    0.000    0.000    0.012    0.000 lab/sxz-mathematical-mosaic/measure.py:162(<lambda>)
+      291    0.007    0.000    0.010    0.000 lab/sxz-mathematical-mosaic/catalog.py:67(sizes)
+    35493    0.009    0.000    0.009    0.000 {built-in method _bisect.bisect_right}
+    67758    0.006    0.000    0.006    0.000 {built-in method builtins.len}
+     2855    0.002    0.000    0.003    0.000 lab/sxz-mathematical-mosaic/mosaic.py:42(v)
+       19    0.001    0.000    0.003    0.000 lab/sxz-mathematical-mosaic/mosaic.py:182(archive)
+        2    0.002    0.001    0.002    0.001 {method 'join' of 'str' objects}
+    17741    0.002    0.000    0.002    0.000 {built-in method builtins.min}
+     4945    0.001    0.000    0.001    0.000 lab/sxz-mathematical-mosaic/mosaic.py:49(take)
+      417    0.000    0.000    0.001    0.000 lab/sxz-mathematical-mosaic/mosaic.py:35(ints)
+      436    0.000    0.000    0.001    0.000 {method 'join' of 'bytes' objects}
+     1111    0.001    0.000    0.001    0.000 lab/sxz-mathematical-mosaic/mosaic.py:24(v)
+        6    0.000    0.000    0.001    0.000 lab/sxz-mathematical-mosaic/mosaic.py:142(definitions)
+
+

@@ -1,0 +1,439 @@
+[
+  {
+    "file": "docx-shapes.docx",
+    "family": "xml",
+    "source": "https://github.com/python-openxml/python-docx",
+    "input_bytes": 122610,
+    "sha256": "8fcf0f0433be0968d9305c564ce69601931695ffe163d264fb69b7782feff517",
+    "bytes": 96829,
+    "encode_s": 0.015762199996970594,
+    "decode_s": 0.0014405999972950667,
+    "decode_mb_s": 85.11037083869074,
+    "repetitions_s": [
+      0.0014658000000054017,
+      0.0014127999893389642,
+      0.0014401999942492694,
+      0.0015959000011207536,
+      0.0014405999972950667
+    ],
+    "exact": true,
+    "method": "Preflate-RS 0.7.6 + whole exposed stream + Zstd-9 (no record cuts)",
+    "exposure": {
+      "eligible": 19,
+      "exposed": 19
+    },
+    "reconstruction_aux_raw": 946,
+    "frame_recipe_bytes": 230537
+  },
+  {
+    "file": "docx-table.docx",
+    "family": "xml",
+    "source": "https://github.com/python-openxml/python-docx",
+    "input_bytes": 50294,
+    "sha256": "761802878f363b57dce41b77657946ae5dc70d745261561242c9ed5a769260d9",
+    "bytes": 29161,
+    "encode_s": 0.014620799993281253,
+    "decode_s": 0.0008932000055210665,
+    "decode_mb_s": 56.307657511331925,
+    "repetitions_s": [
+      0.0008944000001065433,
+      0.0008616000122856349,
+      0.0008994000090751797,
+      0.0008210000087274238,
+      0.0008932000055210665
+    ],
+    "exact": true,
+    "method": "Preflate-RS 0.7.6 + whole exposed stream + Zstd-9 (no record cuts)",
+    "exposure": {
+      "eligible": 12,
+      "exposed": 12
+    },
+    "reconstruction_aux_raw": 553,
+    "frame_recipe_bytes": 110073
+  },
+  {
+    "file": "docx-images.docx",
+    "family": "xml",
+    "source": "https://github.com/python-openxml/python-docx",
+    "input_bytes": 132875,
+    "sha256": "72f40baa1b89e4849e817121dbbf148ed78e51be9bf04d8e6f4bc1494aa517b7",
+    "bytes": 117676,
+    "encode_s": 0.02026530000148341,
+    "decode_s": 0.0011710000107996166,
+    "decode_mb_s": 113.47139092617633,
+    "repetitions_s": [
+      0.0010643999994499609,
+      0.0018324999982723966,
+      0.0022339999995892867,
+      0.0011710000107996166,
+      0.0011107000027550384
+    ],
+    "exact": true,
+    "method": "Preflate-RS 0.7.6 + whole exposed stream + Zstd-9 (no record cuts)",
+    "exposure": {
+      "eligible": 16,
+      "exposed": 16
+    },
+    "reconstruction_aux_raw": 866,
+    "frame_recipe_bytes": 187192
+  },
+  {
+    "file": "pptx-chart.pptx",
+    "family": "xml",
+    "source": "https://github.com/scanny/python-pptx",
+    "input_bytes": 1393564,
+    "sha256": "d0a7979d05970aa83fd8406f0829cd0019853a7bc4e16f8cda814586fc2eaccc",
+    "bytes": 199920,
+    "encode_s": 0.13039830001071095,
+    "decode_s": 0.008467100007692352,
+    "decode_mb_s": 164.58574939872548,
+    "repetitions_s": [
+      0.0088050999911502,
+      0.00646499999857042,
+      0.008125599997583777,
+      0.011264200002187863,
+      0.008467100007692352
+    ],
+    "exact": true,
+    "method": "Preflate-RS 0.7.6 + whole exposed stream + Zstd-9 (no record cuts)",
+    "exposure": {
+      "eligible": 93,
+      "exposed": 93
+    },
+    "reconstruction_aux_raw": 3816,
+    "frame_recipe_bytes": 1542837
+  },
+  {
+    "file": "irs1040.pdf",
+    "family": "pdf",
+    "source": "https://www.irs.gov/pub/irs-pdf/f1040.pdf",
+    "input_bytes": 220237,
+    "sha256": "3d31c226df0d189ced80e039d01cf0f8820c1019681a0f0ca6264de277b7e982",
+    "bytes": 112673,
+    "encode_s": 0.19478390000585932,
+    "decode_s": 0.012378200000966899,
+    "decode_mb_s": 17.792328447011407,
+    "repetitions_s": [
+      0.012945900001795962,
+      0.013218799998867325,
+      0.012378200000966899,
+      0.010895200000959449,
+      0.0122276000038255
+    ],
+    "exact": true,
+    "method": "Preflate-RS 0.7.6 + whole exposed stream + Zstd-9 (no record cuts)",
+    "exposure": {
+      "eligible": 142,
+      "exposed": 141
+    },
+    "reconstruction_aux_raw": 7938,
+    "frame_recipe_bytes": 890793
+  },
+  {
+    "file": "bert.pdf",
+    "family": "pdf",
+    "source": "https://arxiv.org/pdf/1810.04805",
+    "input_bytes": 775166,
+    "sha256": "5692a5514787a8c6727b4ff3b726a3385798bc68e12138d1d4af83947e2acf6e",
+    "bytes": 423606,
+    "encode_s": 0.20797309999761637,
+    "decode_s": 0.036948400011169724,
+    "decode_mb_s": 20.979690589190945,
+    "repetitions_s": [
+      0.036948400011169724,
+      0.04303420000360347,
+      0.034396999995806254,
+      0.040491699997801334,
+      0.034637900011148304
+    ],
+    "exact": true,
+    "method": "Preflate-RS 0.7.6 + whole exposed stream + Zstd-9 (no record cuts)",
+    "exposure": {
+      "eligible": 97,
+      "exposed": 93
+    },
+    "reconstruction_aux_raw": 6538,
+    "frame_recipe_bytes": 2471877
+  },
+  {
+    "file": "attention.pdf",
+    "family": "pdf",
+    "source": "https://arxiv.org/pdf/1706.03762",
+    "input_bytes": 2215244,
+    "sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "bytes": 680937,
+    "encode_s": 0.5533324999996694,
+    "decode_s": 0.056247100001201034,
+    "decode_mb_s": 39.3841460262431,
+    "repetitions_s": [
+      0.056247100001201034,
+      0.049223399997572415,
+      0.05758439999772236,
+      0.05368779999844264,
+      0.06076710000343155
+    ],
+    "exact": true,
+    "method": "Preflate-RS 0.7.6 + whole exposed stream + Zstd-9 (no record cuts)",
+    "exposure": {
+      "eligible": 146,
+      "exposed": 141
+    },
+    "reconstruction_aux_raw": 13477,
+    "frame_recipe_bytes": 4084022
+  },
+  {
+    "file": "squeezenet1.1-7.onnx",
+    "family": "tensor",
+    "source": "https://media.githubusercontent.com/media/onnx/models/main/validated/vision/classification/squeezenet/model/squeezenet1.1-7.onnx",
+    "input_bytes": 4956208,
+    "sha256": "1eeff551a67ae8d565ca33b572fc4b66e3ef357b0eb2863bb9ff47a918cc4088",
+    "bytes": 4212834,
+    "encode_s": 0.060751900004106574,
+    "decode_s": 0.02598200000647921,
+    "decode_mb_s": 190.75544603048476,
+    "repetitions_s": [
+      0.026885600003879517,
+      0.02494299999671057,
+      0.02598200000647921,
+      0.023604500005603768,
+      0.02680799999507144
+    ],
+    "exact": true,
+    "decode_stage_medians_s": {
+      "zstd_parse": 0.0038708,
+      "expand_records": 0.0143223,
+      "restore_container_crc": 0.006696
+    },
+    "method": "FP32 exponent alignment + byte planes + Zstd-9 (own conventional control, not ZipNN)",
+    "cost": {
+      "header_bytes": 29,
+      "layout_raw": 914,
+      "layout_stored": 147,
+      "descriptor_raw": 777,
+      "descriptor_stored": 194,
+      "payload_raw": 4956208,
+      "payload_stored": 4212464,
+      "params_raw": 0,
+      "references": 0,
+      "backref_raw": 0,
+      "residual_raw": 0,
+      "literal_raw": 4956208,
+      "mode_counts": {
+        "0": 105
+      },
+      "parametric_count": 0,
+      "template_count": 0,
+      "max_distance": 0
+    }
+  },
+  {
+    "file": "squeezenet1.0-12.onnx",
+    "family": "tensor",
+    "source": "https://media.githubusercontent.com/media/onnx/models/main/validated/vision/classification/squeezenet/model/squeezenet1.0-12.onnx",
+    "input_bytes": 4952956,
+    "sha256": "dec81a8684617770b3cf13fadc1d92565d1d453d23935fc6388b792d99c992bd",
+    "bytes": 4211097,
+    "encode_s": 0.05677769999601878,
+    "decode_s": 0.022826200001873076,
+    "decode_mb_s": 216.98556919651847,
+    "repetitions_s": [
+      0.0217926999903284,
+      0.025961099992855452,
+      0.0217840000113938,
+      0.031202199999825098,
+      0.022826200001873076
+    ],
+    "exact": true,
+    "decode_stage_medians_s": {
+      "zstd_parse": 0.0030133,
+      "expand_records": 0.0119097,
+      "restore_container_crc": 0.0055352
+    },
+    "method": "FP32 exponent alignment + byte planes + Zstd-9 (own conventional control, not ZipNN)",
+    "cost": {
+      "header_bytes": 29,
+      "layout_raw": 930,
+      "layout_stored": 151,
+      "descriptor_raw": 789,
+      "descriptor_stored": 199,
+      "payload_raw": 4952956,
+      "payload_stored": 4210718,
+      "params_raw": 0,
+      "references": 0,
+      "backref_raw": 0,
+      "residual_raw": 0,
+      "literal_raw": 4952956,
+      "mode_counts": {
+        "0": 107
+      },
+      "parametric_count": 0,
+      "template_count": 0,
+      "max_distance": 0
+    }
+  },
+  {
+    "file": "mobilenetv2-7.onnx",
+    "family": "tensor",
+    "source": "https://media.githubusercontent.com/media/onnx/models/main/validated/vision/classification/mobilenet/model/mobilenetv2-7.onnx",
+    "input_bytes": 14246826,
+    "sha256": "c1c513582d56afceff8516c73804e484c81c6a830712ab6d682253f4a3cd042f",
+    "bytes": 11991058,
+    "encode_s": 0.1925889999984065,
+    "decode_s": 0.09576979999837931,
+    "decode_mb_s": 148.76115435388917,
+    "repetitions_s": [
+      0.09576979999837931,
+      0.08925429999362677,
+      0.09218089999922086,
+      0.10390610000467859,
+      0.10344269999768585
+    ],
+    "exact": true,
+    "decode_stage_medians_s": {
+      "zstd_parse": 0.0152221,
+      "expand_records": 0.044031,
+      "restore_container_crc": 0.0318483
+    },
+    "method": "FP32 exponent alignment + byte planes + Zstd-9 (own conventional control, not ZipNN)",
+    "cost": {
+      "header_bytes": 29,
+      "layout_raw": 4560,
+      "layout_stored": 310,
+      "descriptor_raw": 3788,
+      "descriptor_stored": 417,
+      "payload_raw": 14246826,
+      "payload_stored": 11990302,
+      "params_raw": 0,
+      "references": 0,
+      "backref_raw": 0,
+      "residual_raw": 0,
+      "literal_raw": 14246826,
+      "mode_counts": {
+        "0": 533
+      },
+      "parametric_count": 0,
+      "template_count": 0,
+      "max_distance": 0
+    }
+  },
+  {
+    "file": "python-logo.png",
+    "family": "image",
+    "source": "https://www.python.org/static/community_logos/python-logo.png",
+    "input_bytes": 45187,
+    "sha256": "ea0e73137c1c8561e91241771e3c81e5b3e8f5ab2cbfdad1a00d8eea524815fa",
+    "bytes": 3219,
+    "encode_s": 0.08204639999894425,
+    "decode_s": 0.04961929999990389,
+    "decode_mb_s": 0.9106738708544362,
+    "repetitions_s": [
+      0.0553933000046527,
+      0.048941700006253086,
+      0.03966970001056325,
+      0.04961929999990389,
+      0.05408430000534281
+    ],
+    "exact": true,
+    "decode_stage_medians_s": {
+      "extract_metadata_and_write_jxl": 0.0009472000092500821,
+      "djxl_process_and_io": 0.04638379999960307,
+      "png_reconstruction_crc": 0.002546699994127266
+    },
+    "method": "JPEG XL 0.13.0 pixels + exact PNG replay",
+    "header": 10,
+    "jxl": 2981,
+    "reconstruction_meta": 228,
+    "reconstruction_meta_raw": 251,
+    "rss_note": "CLI subprocess RSS not measured; decode includes temp file I/O and process startup"
+  },
+  {
+    "file": "hopper.png",
+    "family": "image",
+    "source": "https://raw.githubusercontent.com/python-pillow/Pillow/main/Tests/images/hopper.png",
+    "input_bytes": 30605,
+    "sha256": "dbdcb9a9f8ec2c54ff99e99636059bbd57194ed84e2cca5e53853aef293faf42",
+    "bytes": 20485,
+    "encode_s": 0.13483750000887085,
+    "decode_s": 0.06529589999991003,
+    "decode_mb_s": 0.4687124306433048,
+    "repetitions_s": [
+      0.06279969999741297,
+      0.05974170000990853,
+      0.0783030000020517,
+      0.07096349999483209,
+      0.06529589999991003
+    ],
+    "exact": true,
+    "decode_stage_medians_s": {
+      "extract_metadata_and_write_jxl": 0.0006964000058360398,
+      "djxl_process_and_io": 0.060809400005382486,
+      "png_reconstruction_crc": 0.003291700006229803
+    },
+    "method": "JPEG XL 0.13.0 pixels + exact PNG replay",
+    "header": 10,
+    "jxl": 19343,
+    "reconstruction_meta": 1132,
+    "reconstruction_meta_raw": 1225,
+    "rss_note": "CLI subprocess RSS not measured; decode includes temp file I/O and process startup"
+  },
+  {
+    "file": "flower_thumbnail.png",
+    "family": "image",
+    "source": "https://raw.githubusercontent.com/python-pillow/Pillow/main/Tests/images/flower_thumbnail.png",
+    "input_bytes": 35617,
+    "sha256": "24bcfb49a911b30cb29f5c375a9407a3e24a6e78383f76ca9eb728487e1021dc",
+    "bytes": 25602,
+    "encode_s": 0.05992299999343231,
+    "decode_s": 0.0794090999988839,
+    "decode_mb_s": 0.4485254208963532,
+    "repetitions_s": [
+      0.08118710000417195,
+      0.08459699999366421,
+      0.0794090999988839,
+      0.0748814999969909,
+      0.07099480000033509
+    ],
+    "exact": true,
+    "decode_stage_medians_s": {
+      "extract_metadata_and_write_jxl": 0.0009499000007053837,
+      "djxl_process_and_io": 0.07110919999831822,
+      "png_reconstruction_crc": 0.007154600010835566
+    },
+    "method": "JPEG XL 0.13.0 pixels + exact PNG replay",
+    "header": 10,
+    "jxl": 24560,
+    "reconstruction_meta": 1032,
+    "reconstruction_meta_raw": 1119,
+    "rss_note": "CLI subprocess RSS not measured; decode includes temp file I/O and process startup"
+  },
+  {
+    "file": "exif.png",
+    "family": "image",
+    "source": "https://raw.githubusercontent.com/python-pillow/Pillow/main/Tests/images/exif.png",
+    "input_bytes": 179336,
+    "sha256": "eb58fc260f08b8c95857128316f72ec8008ca8b2d3901aa23eba7196ae716258",
+    "bytes": 77201,
+    "encode_s": 0.27818439999828115,
+    "decode_s": 0.11899440000706818,
+    "decode_mb_s": 1.5070961321654428,
+    "repetitions_s": [
+      0.12605120000080206,
+      0.10773380000318866,
+      0.11899440000706818,
+      0.09886800000094809,
+      0.11916899999778252
+    ],
+    "exact": true,
+    "decode_stage_medians_s": {
+      "extract_metadata_and_write_jxl": 0.0006204999954206869,
+      "djxl_process_and_io": 0.09977309999521822,
+      "png_reconstruction_crc": 0.01820880000013858
+    },
+    "method": "JPEG XL 0.13.0 pixels + exact PNG replay",
+    "header": 10,
+    "jxl": 70263,
+    "reconstruction_meta": 6928,
+    "reconstruction_meta_raw": 7374,
+    "rss_note": "CLI subprocess RSS not measured; decode includes temp file I/O and process startup"
+  }
+]

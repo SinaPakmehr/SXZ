@@ -1,0 +1,139 @@
+{
+  "path": "datasets/audit-assets/photo.ppm",
+  "size": 1048576,
+  "budget": null,
+  "archive_bytes": 304742,
+  "deflate_baseline": 304742,
+  "accepted_segments": 219,
+  "accepted_bytes": 4426,
+  "accepted_cost_bytes": 3777,
+  "emitted_formula_segments": 0,
+  "emitted_formula_bytes": 0,
+  "models": {
+    "lfsr": 98,
+    "affine": 121
+  },
+  "transforms": {
+    "identity": 215,
+    "xor-prev": 4
+  },
+  "median_cover": 20,
+  "max_cover": 41,
+  "examples": [
+    {
+      "pos": 799585,
+      "model": "affine",
+      "transform": "identity",
+      "cover": 41,
+      "cost": 16,
+      "fallback": 23
+    },
+    {
+      "pos": 536065,
+      "model": "lfsr",
+      "transform": "identity",
+      "cover": 34,
+      "cost": 18,
+      "fallback": 23
+    },
+    {
+      "pos": 687450,
+      "model": "lfsr",
+      "transform": "identity",
+      "cover": 33,
+      "cost": 15,
+      "fallback": 22
+    },
+    {
+      "pos": 457567,
+      "model": "lfsr",
+      "transform": "xor-prev",
+      "cover": 32,
+      "cost": 15,
+      "fallback": 22
+    },
+    {
+      "pos": 282341,
+      "model": "lfsr",
+      "transform": "identity",
+      "cover": 31,
+      "cost": 18,
+      "fallback": 22
+    },
+    {
+      "pos": 152895,
+      "model": "lfsr",
+      "transform": "identity",
+      "cover": 30,
+      "cost": 21,
+      "fallback": 24
+    },
+    {
+      "pos": 890772,
+      "model": "lfsr",
+      "transform": "identity",
+      "cover": 30,
+      "cost": 22,
+      "fallback": 24
+    },
+    {
+      "pos": 937815,
+      "model": "lfsr",
+      "transform": "xor-prev",
+      "cover": 30,
+      "cost": 15,
+      "fallback": 22
+    },
+    {
+      "pos": 517326,
+      "model": "lfsr",
+      "transform": "identity",
+      "cover": 29,
+      "cost": 22,
+      "fallback": 24
+    },
+    {
+      "pos": 517419,
+      "model": "lfsr",
+      "transform": "identity",
+      "cover": 29,
+      "cost": 18,
+      "fallback": 22
+    },
+    {
+      "pos": 557970,
+      "model": "lfsr",
+      "transform": "identity",
+      "cover": 29,
+      "cost": 15,
+      "fallback": 22
+    },
+    {
+      "pos": 892618,
+      "model": "lfsr",
+      "transform": "identity",
+      "cover": 29,
+      "cost": 18,
+      "fallback": 26
+    }
+  ],
+  "reasons": {
+    "no_candidate": 16315,
+    "accepted": 219
+  },
+  "candidate_archives": [
+    [
+      337018,
+      "deflate"
+    ],
+    [
+      304742,
+      "deflate-whole"
+    ],
+    [
+      1048592,
+      "stored"
+    ]
+  ],
+  "structured_vs_plain": 32276
+}

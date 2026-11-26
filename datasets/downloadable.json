@@ -1,0 +1,30 @@
+[
+  {
+    "id": "rfc1951.txt",
+    "relative_path": "datasets/corpus/rfc1951.txt",
+    "bytes": 36944,
+    "sha256": "5ebf4b5b7fe1c3a0c0ab9aa3ac8c0f3853a7dc484905e76e03b0b0f301350009",
+    "url": "https://www.rfc-editor.org/rfc/rfc1951.txt"
+  },
+  {
+    "id": "peps-index.html",
+    "relative_path": "datasets/corpus/peps-index.html",
+    "bytes": 414111,
+    "sha256": "35304c437c4f13b9684b5766249be8805d30756a4f159f9fd20220a8d41d1780",
+    "url": "https://peps.python.org/"
+  },
+  {
+    "id": "flower.png",
+    "relative_path": "datasets/corpus/flower.png",
+    "bytes": 35617,
+    "sha256": "24bcfb49a911b30cb29f5c375a9407a3e24a6e78383f76ca9eb728487e1021dc",
+    "url": "https://raw.githubusercontent.com/python-pillow/Pillow/main/Tests/images/flower_thumbnail.png"
+  },
+  {
+    "id": "hopper.bmp",
+    "relative_path": "datasets/corpus/hopper.bmp",
+    "bytes": 49290,
+    "sha256": "f1a94f3add0a2e54365dc94b51da099bd0de8289b955fc8304a8627b7b0d6aea",
+    "url": "https://raw.githubusercontent.com/python-pillow/Pillow/main/Tests/images/hopper.bmp"
+  }
+]

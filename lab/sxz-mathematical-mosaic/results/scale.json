@@ -1,0 +1,1326 @@
+[
+  {
+    "name": "enwik8",
+    "input_bytes": 1000000,
+    "whole_file": false,
+    "sha256": "369b688978f649681136198fb96db14c1616756260c55fb4b65e9bc049552cad",
+    "query_s": 0.014410599993425421,
+    "plan_experiment_s": 0.06735389999812469,
+    "index_s": 0.022483599997940473,
+    "generation": {
+      "seconds": 0.42735240000183694,
+      "sources": [
+        {
+          "gid": 0,
+          "name": "pi",
+          "symbols": 28124,
+          "seconds": 0.018374699997366406
+        },
+        {
+          "gid": 1,
+          "name": "e",
+          "symbols": 28124,
+          "seconds": 0.010032699996372685
+        },
+        {
+          "gid": 2,
+          "name": "phi",
+          "symbols": 28124,
+          "seconds": 0.0008608000061940402
+        },
+        {
+          "gid": 3,
+          "name": "sqrt2",
+          "symbols": 28124,
+          "seconds": 0.0008031000033952296
+        },
+        {
+          "gid": 4,
+          "name": "sqrt3",
+          "symbols": 28124,
+          "seconds": 0.001436999998986721
+        },
+        {
+          "gid": 5,
+          "name": "sqrt5",
+          "symbols": 28124,
+          "seconds": 0.0014069000026211143
+        },
+        {
+          "gid": 6,
+          "name": "gamma",
+          "symbols": 27778,
+          "seconds": 0.25494630000321195
+        },
+        {
+          "gid": 7,
+          "name": "zeta3",
+          "symbols": 27778,
+          "seconds": 0.033891099999891594
+        },
+        {
+          "gid": 8,
+          "name": "ln2",
+          "symbols": 28124,
+          "seconds": 0.014921900001354516
+        },
+        {
+          "gid": 9,
+          "name": "pi-text",
+          "symbols": 28124,
+          "seconds": 0.0007560999947600067
+        },
+        {
+          "gid": 10,
+          "name": "prime-le32",
+          "symbols": 28123,
+          "seconds": 0.0003833999944617972
+        },
+        {
+          "gid": 11,
+          "name": "prime-gap-mod",
+          "symbols": 28123,
+          "seconds": 0.001537599993753247
+        },
+        {
+          "gid": 12,
+          "name": "prime-digits",
+          "symbols": 28123,
+          "seconds": 0.0017246999923372641
+        },
+        {
+          "gid": 13,
+          "name": "composite-le16",
+          "symbols": 28123,
+          "seconds": 0.00020119998953305185
+        },
+        {
+          "gid": 14,
+          "name": "square-le32",
+          "symbols": 28123,
+          "seconds": 2.609999501146376e-05
+        },
+        {
+          "gid": 15,
+          "name": "cube-mod",
+          "symbols": 28123,
+          "seconds": 0.00012549999519251287
+        },
+        {
+          "gid": 16,
+          "name": "triangular-le16",
+          "symbols": 28123,
+          "seconds": 7.330000516958535e-05
+        },
+        {
+          "gid": 17,
+          "name": "choose-n-3",
+          "symbols": 28123,
+          "seconds": 7.20000098226592e-05
+        },
+        {
+          "gid": 18,
+          "name": "fib-le16",
+          "symbols": 28123,
+          "seconds": 0.0008923999994294718
+        },
+        {
+          "gid": 19,
+          "name": "lucas-le16",
+          "symbols": 28123,
+          "seconds": 0.0008987000037450343
+        },
+        {
+          "gid": 20,
+          "name": "totient-le16",
+          "symbols": 28123,
+          "seconds": 0.0036487999896053225
+        },
+        {
+          "gid": 21,
+          "name": "mobius-offset",
+          "symbols": 28123,
+          "seconds": 0.006437300005927682
+        },
+        {
+          "gid": 22,
+          "name": "divisor-count",
+          "symbols": 28123,
+          "seconds": 0.0313800000003539
+        },
+        {
+          "gid": 23,
+          "name": "pow3-mod65521",
+          "symbols": 28123,
+          "seconds": 0.0010245000012218952
+        },
+        {
+          "gid": 24,
+          "name": "lcg32",
+          "symbols": 28123,
+          "seconds": 0.0009099000017158687
+        },
+        {
+          "gid": 25,
+          "name": "lcg-prime",
+          "symbols": 28123,
+          "seconds": 0.0009190000128000975
+        },
+        {
+          "gid": 26,
+          "name": "xorshift32",
+          "symbols": 28123,
+          "seconds": 0.001611700005014427
+        },
+        {
+          "gid": 27,
+          "name": "lfsr16",
+          "symbols": 28123,
+          "seconds": 0.0013781000016024336
+        },
+        {
+          "gid": 28,
+          "name": "splitmix64-counter",
+          "symbols": 28122,
+          "seconds": 7.680000271648169e-05
+        },
+        {
+          "gid": 29,
+          "name": "gf256-power",
+          "symbols": 28122,
+          "seconds": 0.008201699994970113
+        },
+        {
+          "gid": 30,
+          "name": "thue-morse",
+          "symbols": 28122,
+          "seconds": 0.00023600000713486224
+        },
+        {
+          "gid": 31,
+          "name": "fibonacci-word",
+          "symbols": 28122,
+          "seconds": 3.329999162815511e-05
+        },
+        {
+          "gid": 32,
+          "name": "debruijn-16",
+          "symbols": 28122,
+          "seconds": 0.0034350000059930608
+        },
+        {
+          "gid": 33,
+          "name": "rule30-center",
+          "symbols": 16384,
+          "seconds": 0.022649599995929748
+        },
+        {
+          "gid": 34,
+          "name": "rudin-shapiro",
+          "symbols": 28122,
+          "seconds": 0.00026640000578481704
+        },
+        {
+          "gid": 35,
+          "name": "bit-composition",
+          "symbols": 28122,
+          "seconds": 0.0016980000073090196
+        }
+      ],
+      "stored_bytes": 1000000
+    },
+    "search": {
+      "count": 59666,
+      "sum": 181754,
+      "covered": 150199,
+      "best": 6,
+      "repeated_key": 12028,
+      "candidates": 0,
+      "dropped": 0,
+      "nentries": 999928,
+      "pos": [
+        5647,
+        9273,
+        5271,
+        6497,
+        6420,
+        5491,
+        4781,
+        5132,
+        5443,
+        5711
+      ],
+      "source": [
+        1461,
+        2185,
+        1470,
+        444,
+        2897,
+        1642,
+        713,
+        2073,
+        1754,
+        5980,
+        0,
+        97,
+        1559,
+        16734,
+        391,
+        0,
+        4948,
+        2006,
+        1404,
+        550,
+        817,
+        0,
+        156,
+        3168,
+        868,
+        2689,
+        488,
+        626,
+        1930,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        616
+      ],
+      "hist": [
+        0,
+        56975,
+        2691,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seed_symbols": 3,
+      "min_suggested_symbols": 7,
+      "target_symbols": 1000000,
+      "raw_coverage": 0.150199,
+      "mean_longest": 3.046190460228606
+    },
+    "stats": {
+      "positive_raw_candidates": 0,
+      "local_backend_candidates": 0,
+      "selected_raw": 0,
+      "selected_greedy": 0,
+      "best_math": "A-3",
+      "best_A": "A-3",
+      "net_vs_direct": 0,
+      "net_A_vs_direct": 0,
+      "net_vs_repeat_only": 0,
+      "fallback_bytes": 348986,
+      "economic_coverage": 0,
+      "matched_raw_covered_bytes": 0,
+      "local_repeat_selected": 0
+    },
+    "decode": {
+      "direct-3": {
+        "decode_s": 0.0015306999994209036,
+        "decode_MBs": 653.2958779501674,
+        "repeats_s": [
+          0.0015306999994209036,
+          0.0016314999957103282,
+          0.0013589000009233132
+        ],
+        "bytes": 348986,
+        "exact": true,
+        "cold_s": 0.001352399995084852,
+        "cold_generation_s": 0.0,
+        "peak": {
+          "peak": 178745344,
+          "current": 178745344
+        },
+        "header_bytes": 25,
+        "metadata_raw": 5,
+        "metadata_bytes": 18,
+        "literals_raw": 1000000,
+        "literals_bytes": 348943,
+        "covered_bytes": 0,
+        "repeated_bytes": 0,
+        "instruction_count": 1,
+        "description_raw": {
+          "0": 4
+        },
+        "matches": []
+      },
+      "A-3": {
+        "decode_s": 0.001597299997229129,
+        "decode_MBs": 626.0564713796542,
+        "repeats_s": [
+          0.001597299997229129,
+          0.0016273999935947359,
+          0.0013908999972045422
+        ],
+        "bytes": 348986,
+        "exact": true,
+        "cold_s": 0.0013736999972024933,
+        "cold_generation_s": 0.0,
+        "peak": {
+          "peak": 179748864,
+          "current": 179748864
+        },
+        "header_bytes": 25,
+        "metadata_raw": 5,
+        "metadata_bytes": 18,
+        "literals_raw": 1000000,
+        "literals_bytes": 348943,
+        "covered_bytes": 0,
+        "repeated_bytes": 0,
+        "instruction_count": 1,
+        "description_raw": {
+          "0": 4
+        },
+        "matches": []
+      }
+    },
+    "working_set": {
+      "peak": 179748864,
+      "current": 179748864
+    }
+  },
+  {
+    "name": "enwik8",
+    "input_bytes": 10000000,
+    "whole_file": false,
+    "sha256": "5985c81c39d927ae0e169625790ca4d9e7d1531270c8b09ad73176a375bb3d97",
+    "query_s": 0.1708513000048697,
+    "plan_experiment_s": 0.6239159999968251,
+    "index_s": 0.022483599997940473,
+    "generation": {
+      "seconds": 0.42735240000183694,
+      "sources": [
+        {
+          "gid": 0,
+          "name": "pi",
+          "symbols": 28124,
+          "seconds": 0.018374699997366406
+        },
+        {
+          "gid": 1,
+          "name": "e",
+          "symbols": 28124,
+          "seconds": 0.010032699996372685
+        },
+        {
+          "gid": 2,
+          "name": "phi",
+          "symbols": 28124,
+          "seconds": 0.0008608000061940402
+        },
+        {
+          "gid": 3,
+          "name": "sqrt2",
+          "symbols": 28124,
+          "seconds": 0.0008031000033952296
+        },
+        {
+          "gid": 4,
+          "name": "sqrt3",
+          "symbols": 28124,
+          "seconds": 0.001436999998986721
+        },
+        {
+          "gid": 5,
+          "name": "sqrt5",
+          "symbols": 28124,
+          "seconds": 0.0014069000026211143
+        },
+        {
+          "gid": 6,
+          "name": "gamma",
+          "symbols": 27778,
+          "seconds": 0.25494630000321195
+        },
+        {
+          "gid": 7,
+          "name": "zeta3",
+          "symbols": 27778,
+          "seconds": 0.033891099999891594
+        },
+        {
+          "gid": 8,
+          "name": "ln2",
+          "symbols": 28124,
+          "seconds": 0.014921900001354516
+        },
+        {
+          "gid": 9,
+          "name": "pi-text",
+          "symbols": 28124,
+          "seconds": 0.0007560999947600067
+        },
+        {
+          "gid": 10,
+          "name": "prime-le32",
+          "symbols": 28123,
+          "seconds": 0.0003833999944617972
+        },
+        {
+          "gid": 11,
+          "name": "prime-gap-mod",
+          "symbols": 28123,
+          "seconds": 0.001537599993753247
+        },
+        {
+          "gid": 12,
+          "name": "prime-digits",
+          "symbols": 28123,
+          "seconds": 0.0017246999923372641
+        },
+        {
+          "gid": 13,
+          "name": "composite-le16",
+          "symbols": 28123,
+          "seconds": 0.00020119998953305185
+        },
+        {
+          "gid": 14,
+          "name": "square-le32",
+          "symbols": 28123,
+          "seconds": 2.609999501146376e-05
+        },
+        {
+          "gid": 15,
+          "name": "cube-mod",
+          "symbols": 28123,
+          "seconds": 0.00012549999519251287
+        },
+        {
+          "gid": 16,
+          "name": "triangular-le16",
+          "symbols": 28123,
+          "seconds": 7.330000516958535e-05
+        },
+        {
+          "gid": 17,
+          "name": "choose-n-3",
+          "symbols": 28123,
+          "seconds": 7.20000098226592e-05
+        },
+        {
+          "gid": 18,
+          "name": "fib-le16",
+          "symbols": 28123,
+          "seconds": 0.0008923999994294718
+        },
+        {
+          "gid": 19,
+          "name": "lucas-le16",
+          "symbols": 28123,
+          "seconds": 0.0008987000037450343
+        },
+        {
+          "gid": 20,
+          "name": "totient-le16",
+          "symbols": 28123,
+          "seconds": 0.0036487999896053225
+        },
+        {
+          "gid": 21,
+          "name": "mobius-offset",
+          "symbols": 28123,
+          "seconds": 0.006437300005927682
+        },
+        {
+          "gid": 22,
+          "name": "divisor-count",
+          "symbols": 28123,
+          "seconds": 0.0313800000003539
+        },
+        {
+          "gid": 23,
+          "name": "pow3-mod65521",
+          "symbols": 28123,
+          "seconds": 0.0010245000012218952
+        },
+        {
+          "gid": 24,
+          "name": "lcg32",
+          "symbols": 28123,
+          "seconds": 0.0009099000017158687
+        },
+        {
+          "gid": 25,
+          "name": "lcg-prime",
+          "symbols": 28123,
+          "seconds": 0.0009190000128000975
+        },
+        {
+          "gid": 26,
+          "name": "xorshift32",
+          "symbols": 28123,
+          "seconds": 0.001611700005014427
+        },
+        {
+          "gid": 27,
+          "name": "lfsr16",
+          "symbols": 28123,
+          "seconds": 0.0013781000016024336
+        },
+        {
+          "gid": 28,
+          "name": "splitmix64-counter",
+          "symbols": 28122,
+          "seconds": 7.680000271648169e-05
+        },
+        {
+          "gid": 29,
+          "name": "gf256-power",
+          "symbols": 28122,
+          "seconds": 0.008201699994970113
+        },
+        {
+          "gid": 30,
+          "name": "thue-morse",
+          "symbols": 28122,
+          "seconds": 0.00023600000713486224
+        },
+        {
+          "gid": 31,
+          "name": "fibonacci-word",
+          "symbols": 28122,
+          "seconds": 3.329999162815511e-05
+        },
+        {
+          "gid": 32,
+          "name": "debruijn-16",
+          "symbols": 28122,
+          "seconds": 0.0034350000059930608
+        },
+        {
+          "gid": 33,
+          "name": "rule30-center",
+          "symbols": 16384,
+          "seconds": 0.022649599995929748
+        },
+        {
+          "gid": 34,
+          "name": "rudin-shapiro",
+          "symbols": 28122,
+          "seconds": 0.00026640000578481704
+        },
+        {
+          "gid": 35,
+          "name": "bit-composition",
+          "symbols": 28122,
+          "seconds": 0.0016980000073090196
+        }
+      ],
+      "stored_bytes": 1000000
+    },
+    "search": {
+      "count": 597856,
+      "sum": 1825657,
+      "covered": 1506618,
+      "best": 9,
+      "repeated_key": 134746,
+      "candidates": 11,
+      "dropped": 0,
+      "nentries": 999928,
+      "pos": [
+        59666,
+        58611,
+        54363,
+        58303,
+        59938,
+        59471,
+        59793,
+        61012,
+        63186,
+        63513
+      ],
+      "source": [
+        15176,
+        19757,
+        13850,
+        4923,
+        27796,
+        16939,
+        8258,
+        18632,
+        12764,
+        69693,
+        0,
+        1121,
+        20182,
+        158464,
+        4499,
+        0,
+        45310,
+        24150,
+        15687,
+        4440,
+        9131,
+        0,
+        2391,
+        31928,
+        9153,
+        27254,
+        4935,
+        6139,
+        18771,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6513
+      ],
+      "hist": [
+        0,
+        566866,
+        30985,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seed_symbols": 3,
+      "min_suggested_symbols": 7,
+      "target_symbols": 10000000,
+      "raw_coverage": 0.1506618,
+      "mean_longest": 3.053673459829792
+    },
+    "stats": {
+      "positive_raw_candidates": 5,
+      "local_backend_candidates": 0,
+      "selected_raw": 0,
+      "selected_greedy": 0,
+      "best_math": "A-3",
+      "best_A": "A-3",
+      "net_vs_direct": 0,
+      "net_A_vs_direct": 0,
+      "net_vs_repeat_only": 0,
+      "fallback_bytes": 3565742,
+      "economic_coverage": 0,
+      "matched_raw_covered_bytes": 0,
+      "local_repeat_selected": 0
+    },
+    "decode": {
+      "direct-3": {
+        "decode_s": 0.028577899996889755,
+        "decode_MBs": 349.9207429898047,
+        "repeats_s": [
+          0.036609600007068366,
+          0.026240599996526726,
+          0.028577899996889755
+        ],
+        "bytes": 3565742,
+        "exact": true,
+        "cold_s": 0.024751999997533858,
+        "cold_generation_s": 0.0,
+        "peak": {
+          "peak": 228777984,
+          "current": 198766592
+        },
+        "header_bytes": 25,
+        "metadata_raw": 6,
+        "metadata_bytes": 19,
+        "literals_raw": 10000000,
+        "literals_bytes": 3565698,
+        "covered_bytes": 0,
+        "repeated_bytes": 0,
+        "instruction_count": 1,
+        "description_raw": {
+          "0": 5
+        },
+        "matches": []
+      },
+      "A-3": {
+        "decode_s": 0.023292599988053553,
+        "decode_MBs": 429.3209004202562,
+        "repeats_s": [
+          0.023292599988053553,
+          0.021974700008286163,
+          0.024500999992596917
+        ],
+        "bytes": 3565742,
+        "exact": true,
+        "cold_s": 0.02305460000934545,
+        "cold_generation_s": 0.0,
+        "peak": {
+          "peak": 238825472,
+          "current": 198815744
+        },
+        "header_bytes": 25,
+        "metadata_raw": 6,
+        "metadata_bytes": 19,
+        "literals_raw": 10000000,
+        "literals_bytes": 3565698,
+        "covered_bytes": 0,
+        "repeated_bytes": 0,
+        "instruction_count": 1,
+        "description_raw": {
+          "0": 5
+        },
+        "matches": []
+      }
+    },
+    "working_set": {
+      "peak": 238825472,
+      "current": 198815744
+    }
+  },
+  {
+    "name": "enwik8",
+    "input_bytes": 100000000,
+    "whole_file": true,
+    "sha256": "2b49720ec4d78c3c9fabaee6e4179a5e997302b3a70029f30f2d582218c024a8",
+    "query_s": 1.7006336000049487,
+    "plan_experiment_s": 9.837286800000584,
+    "index_s": 0.022483599997940473,
+    "generation": {
+      "seconds": 0.42735240000183694,
+      "sources": [
+        {
+          "gid": 0,
+          "name": "pi",
+          "symbols": 28124,
+          "seconds": 0.018374699997366406
+        },
+        {
+          "gid": 1,
+          "name": "e",
+          "symbols": 28124,
+          "seconds": 0.010032699996372685
+        },
+        {
+          "gid": 2,
+          "name": "phi",
+          "symbols": 28124,
+          "seconds": 0.0008608000061940402
+        },
+        {
+          "gid": 3,
+          "name": "sqrt2",
+          "symbols": 28124,
+          "seconds": 0.0008031000033952296
+        },
+        {
+          "gid": 4,
+          "name": "sqrt3",
+          "symbols": 28124,
+          "seconds": 0.001436999998986721
+        },
+        {
+          "gid": 5,
+          "name": "sqrt5",
+          "symbols": 28124,
+          "seconds": 0.0014069000026211143
+        },
+        {
+          "gid": 6,
+          "name": "gamma",
+          "symbols": 27778,
+          "seconds": 0.25494630000321195
+        },
+        {
+          "gid": 7,
+          "name": "zeta3",
+          "symbols": 27778,
+          "seconds": 0.033891099999891594
+        },
+        {
+          "gid": 8,
+          "name": "ln2",
+          "symbols": 28124,
+          "seconds": 0.014921900001354516
+        },
+        {
+          "gid": 9,
+          "name": "pi-text",
+          "symbols": 28124,
+          "seconds": 0.0007560999947600067
+        },
+        {
+          "gid": 10,
+          "name": "prime-le32",
+          "symbols": 28123,
+          "seconds": 0.0003833999944617972
+        },
+        {
+          "gid": 11,
+          "name": "prime-gap-mod",
+          "symbols": 28123,
+          "seconds": 0.001537599993753247
+        },
+        {
+          "gid": 12,
+          "name": "prime-digits",
+          "symbols": 28123,
+          "seconds": 0.0017246999923372641
+        },
+        {
+          "gid": 13,
+          "name": "composite-le16",
+          "symbols": 28123,
+          "seconds": 0.00020119998953305185
+        },
+        {
+          "gid": 14,
+          "name": "square-le32",
+          "symbols": 28123,
+          "seconds": 2.609999501146376e-05
+        },
+        {
+          "gid": 15,
+          "name": "cube-mod",
+          "symbols": 28123,
+          "seconds": 0.00012549999519251287
+        },
+        {
+          "gid": 16,
+          "name": "triangular-le16",
+          "symbols": 28123,
+          "seconds": 7.330000516958535e-05
+        },
+        {
+          "gid": 17,
+          "name": "choose-n-3",
+          "symbols": 28123,
+          "seconds": 7.20000098226592e-05
+        },
+        {
+          "gid": 18,
+          "name": "fib-le16",
+          "symbols": 28123,
+          "seconds": 0.0008923999994294718
+        },
+        {
+          "gid": 19,
+          "name": "lucas-le16",
+          "symbols": 28123,
+          "seconds": 0.0008987000037450343
+        },
+        {
+          "gid": 20,
+          "name": "totient-le16",
+          "symbols": 28123,
+          "seconds": 0.0036487999896053225
+        },
+        {
+          "gid": 21,
+          "name": "mobius-offset",
+          "symbols": 28123,
+          "seconds": 0.006437300005927682
+        },
+        {
+          "gid": 22,
+          "name": "divisor-count",
+          "symbols": 28123,
+          "seconds": 0.0313800000003539
+        },
+        {
+          "gid": 23,
+          "name": "pow3-mod65521",
+          "symbols": 28123,
+          "seconds": 0.0010245000012218952
+        },
+        {
+          "gid": 24,
+          "name": "lcg32",
+          "symbols": 28123,
+          "seconds": 0.0009099000017158687
+        },
+        {
+          "gid": 25,
+          "name": "lcg-prime",
+          "symbols": 28123,
+          "seconds": 0.0009190000128000975
+        },
+        {
+          "gid": 26,
+          "name": "xorshift32",
+          "symbols": 28123,
+          "seconds": 0.001611700005014427
+        },
+        {
+          "gid": 27,
+          "name": "lfsr16",
+          "symbols": 28123,
+          "seconds": 0.0013781000016024336
+        },
+        {
+          "gid": 28,
+          "name": "splitmix64-counter",
+          "symbols": 28122,
+          "seconds": 7.680000271648169e-05
+        },
+        {
+          "gid": 29,
+          "name": "gf256-power",
+          "symbols": 28122,
+          "seconds": 0.008201699994970113
+        },
+        {
+          "gid": 30,
+          "name": "thue-morse",
+          "symbols": 28122,
+          "seconds": 0.00023600000713486224
+        },
+        {
+          "gid": 31,
+          "name": "fibonacci-word",
+          "symbols": 28122,
+          "seconds": 3.329999162815511e-05
+        },
+        {
+          "gid": 32,
+          "name": "debruijn-16",
+          "symbols": 28122,
+          "seconds": 0.0034350000059930608
+        },
+        {
+          "gid": 33,
+          "name": "rule30-center",
+          "symbols": 16384,
+          "seconds": 0.022649599995929748
+        },
+        {
+          "gid": 34,
+          "name": "rudin-shapiro",
+          "symbols": 28122,
+          "seconds": 0.00026640000578481704
+        },
+        {
+          "gid": 35,
+          "name": "bit-composition",
+          "symbols": 28122,
+          "seconds": 0.0016980000073090196
+        }
+      ],
+      "stored_bytes": 1000000
+    },
+    "search": {
+      "count": 5881719,
+      "sum": 17940713,
+      "covered": 14918578,
+      "best": 35,
+      "repeated_key": 1258392,
+      "candidates": 192,
+      "dropped": 0,
+      "nentries": 999928,
+      "pos": [
+        597856,
+        609835,
+        597761,
+        575712,
+        582239,
+        585271,
+        586704,
+        579864,
+        579933,
+        586544
+      ],
+      "source": [
+        112323,
+        201931,
+        141138,
+        48376,
+        295150,
+        178278,
+        84747,
+        185199,
+        128732,
+        628213,
+        0,
+        10452,
+        170681,
+        1587555,
+        43005,
+        3,
+        457235,
+        236914,
+        162426,
+        52418,
+        77995,
+        0,
+        21490,
+        327949,
+        91673,
+        269159,
+        54028,
+        63239,
+        189867,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        61543
+      ],
+      "hist": [
+        0,
+        5598187,
+        283405,
+        92,
+        31,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seed_symbols": 3,
+      "min_suggested_symbols": 7,
+      "target_symbols": 100000000,
+      "raw_coverage": 0.14918578,
+      "mean_longest": 3.050249935435542
+    },
+    "stats": {
+      "positive_raw_candidates": 119,
+      "local_backend_candidates": 77,
+      "selected_raw": 11,
+      "selected_greedy": 11,
+      "best_math": "A-3d",
+      "best_A": "A-3d",
+      "net_vs_direct": 1409,
+      "net_A_vs_direct": 1409,
+      "net_vs_repeat_only": 1409,
+      "fallback_bytes": 35418064,
+      "economic_coverage": 1.78e-06,
+      "matched_raw_covered_bytes": 178,
+      "local_repeat_selected": 0
+    },
+    "decode": {
+      "direct-3": {
+        "decode_s": 0.2813081000058446,
+        "decode_MBs": 355.48212084160514,
+        "repeats_s": [
+          0.29585740000766236,
+          0.2813081000058446,
+          0.2709766999905696
+        ],
+        "bytes": 35419473,
+        "exact": true,
+        "cold_s": 0.29285430000163615,
+        "cold_generation_s": 0.0,
+        "peak": {
+          "peak": 651128832,
+          "current": 302125056
+        },
+        "header_bytes": 25,
+        "metadata_raw": 6,
+        "metadata_bytes": 19,
+        "literals_raw": 100000000,
+        "literals_bytes": 35419429,
+        "covered_bytes": 0,
+        "repeated_bytes": 0,
+        "instruction_count": 1,
+        "description_raw": {
+          "0": 5
+        },
+        "matches": []
+      },
+      "A-3d": {
+        "decode_s": 0.3911516000080155,
+        "decode_MBs": 255.65535203729397,
+        "repeats_s": [
+          0.3978084999980638,
+          0.38420179999957327,
+          0.3911516000080155
+        ],
+        "bytes": 35418064,
+        "exact": true,
+        "cold_s": 0.4038211000006413,
+        "cold_generation_s": 0.0021179000032134354,
+        "peak": {
+          "peak": 747630592,
+          "current": 309624832
+        },
+        "header_bytes": 25,
+        "metadata_raw": 127,
+        "metadata_bytes": 136,
+        "literals_raw": 99999822,
+        "literals_bytes": 35417903,
+        "covered_bytes": 178,
+        "repeated_bytes": 0,
+        "instruction_count": 23,
+        "description_raw": {
+          "0": 54,
+          "1": 72
+        },
+        "matches": [
+          {
+            "target_byte": 15288234,
+            "target_byte_end": 15288251,
+            "gid": 13,
+            "source_symbol": 20448,
+            "symbols": 17,
+            "widths_bytes": 0,
+            "description_bytes": 8,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 8
+          },
+          {
+            "target_byte": 15289095,
+            "target_byte_end": 15289108,
+            "gid": 13,
+            "source_symbol": 20448,
+            "symbols": 13,
+            "widths_bytes": 0,
+            "description_bytes": 8,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 6
+          },
+          {
+            "target_byte": 15289365,
+            "target_byte_end": 15289376,
+            "gid": 13,
+            "source_symbol": 20472,
+            "symbols": 11,
+            "widths_bytes": 0,
+            "description_bytes": 8,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 6
+          },
+          {
+            "target_byte": 24781804,
+            "target_byte_end": 24781815,
+            "gid": 13,
+            "source_symbol": 19916,
+            "symbols": 11,
+            "widths_bytes": 0,
+            "description_bytes": 8,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 51149103,
+            "target_byte_end": 51149114,
+            "gid": 13,
+            "source_symbol": 21266,
+            "symbols": 11,
+            "widths_bytes": 0,
+            "description_bytes": 8,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 52094355,
+            "target_byte_end": 52094379,
+            "gid": 9,
+            "source_symbol": 0,
+            "symbols": 24,
+            "widths_bytes": 0,
+            "description_bytes": 6,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 6
+          },
+          {
+            "target_byte": 57392347,
+            "target_byte_end": 57392360,
+            "gid": 13,
+            "source_symbol": 14509,
+            "symbols": 13,
+            "widths_bytes": 0,
+            "description_bytes": 7,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          },
+          {
+            "target_byte": 63098132,
+            "target_byte_end": 63098167,
+            "gid": 9,
+            "source_symbol": 0,
+            "symbols": 35,
+            "widths_bytes": 0,
+            "description_bytes": 6,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 6
+          },
+          {
+            "target_byte": 70042811,
+            "target_byte_end": 70042825,
+            "gid": 9,
+            "source_symbol": 0,
+            "symbols": 14,
+            "widths_bytes": 0,
+            "description_bytes": 6,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 6
+          },
+          {
+            "target_byte": 90883554,
+            "target_byte_end": 90883564,
+            "gid": 9,
+            "source_symbol": 0,
+            "symbols": 10,
+            "widths_bytes": 0,
+            "description_bytes": 6,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 6
+          },
+          {
+            "target_byte": 97945470,
+            "target_byte_end": 97945489,
+            "gid": 13,
+            "source_symbol": 22171,
+            "symbols": 19,
+            "widths_bytes": 0,
+            "description_bytes": 8,
+            "errors": 0,
+            "base": "bytes",
+            "opcode": 1,
+            "charged_description_bytes": 7
+          }
+        ]
+      }
+    },
+    "working_set": {
+      "peak": 747630592,
+      "current": 309628928
+    }
+  }
+]

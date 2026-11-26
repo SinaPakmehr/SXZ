@@ -1,0 +1,134 @@
+[
+  {
+    "name": "artificial-multi-source",
+    "source_options": [
+      {
+        "gid": null,
+        "bytes": 9723,
+        "matched_bytes": 5024,
+        "chosen": 11
+      },
+      {
+        "gid": 0,
+        "bytes": 11701,
+        "matched_bytes": 1440,
+        "chosen": 2
+      },
+      {
+        "gid": 1,
+        "bytes": 12379,
+        "matched_bytes": 17,
+        "chosen": 1
+      },
+      {
+        "gid": 2,
+        "bytes": 12364,
+        "matched_bytes": 32,
+        "chosen": 1
+      },
+      {
+        "gid": 10,
+        "bytes": 12338,
+        "matched_bytes": 80,
+        "chosen": 1
+      },
+      {
+        "gid": 12,
+        "bytes": 12671,
+        "matched_bytes": 256,
+        "chosen": 1
+      },
+      {
+        "gid": 15,
+        "bytes": 12290,
+        "matched_bytes": 127,
+        "chosen": 1
+      },
+      {
+        "gid": 24,
+        "bytes": 13638,
+        "matched_bytes": 1024,
+        "chosen": 2
+      },
+      {
+        "gid": 28,
+        "bytes": 11399,
+        "matched_bytes": 2048,
+        "chosen": 2
+      }
+    ],
+    "direct_bytes": 12408
+  },
+  {
+    "name": "alice29.txt",
+    "source_options": [
+      {
+        "gid": null,
+        "bytes": 57017,
+        "matched_bytes": 0,
+        "chosen": 0
+      }
+    ],
+    "direct_bytes": 57017
+  },
+  {
+    "name": "irs1040.pdf",
+    "source_options": [
+      {
+        "gid": null,
+        "bytes": 154403,
+        "matched_bytes": 0,
+        "chosen": 0
+      }
+    ],
+    "direct_bytes": 154403
+  },
+  {
+    "name": "gull.jpg",
+    "source_options": [
+      {
+        "gid": null,
+        "bytes": 718976,
+        "matched_bytes": 0,
+        "chosen": 0
+      }
+    ],
+    "direct_bytes": 718976
+  },
+  {
+    "name": "bbc.rss.xml",
+    "source_options": [
+      {
+        "gid": null,
+        "bytes": 6374,
+        "matched_bytes": 0,
+        "chosen": 0
+      }
+    ],
+    "direct_bytes": 6374
+  },
+  {
+    "name": "python-logo.png",
+    "source_options": [
+      {
+        "gid": null,
+        "bytes": 4653,
+        "matched_bytes": 77,
+        "chosen": 7
+      },
+      {
+        "gid": 21,
+        "bytes": 4659,
+        "matched_bytes": 65,
+        "chosen": 6
+      },
+      {
+        "gid": 32,
+        "bytes": 4639,
+        "matched_bytes": 22,
+        "chosen": 2
+      }
+    ],
+    "direct_bytes": 4624
+  }
+]

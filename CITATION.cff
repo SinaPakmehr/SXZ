@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "SXZ — Searching for Data in the Universe of Mathematics"
+message: >-
+  If you use SXZ, its research framework, experimental implementations, or
+  findings in your work, please cite this repository.
+type: software
+authors:
+  - given-names: Sina
+    family-names: Pakmehr
+version: 0.1.0
+date-released: "2026-11-26"
+license: MIT
+repository-code: "https://github.com/SinaPakmehr/SXZ"
+keywords:
+  - mathematics
+  - data compression
+  - lossless compression
+  - information theory
+  - research

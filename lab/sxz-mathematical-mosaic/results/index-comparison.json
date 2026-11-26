@@ -1,0 +1,39 @@
+{
+  "rows": [
+    {
+      "symbols": 8192,
+      "subject_bytes": 65536,
+      "target_starts": 1,
+      "kmer": {
+        "index_s": 0.0012340000102994964,
+        "search_s": 0.00040020000596996397
+      },
+      "suffix_python": {
+        "index_s": 0.014752200004295446,
+        "search_s": 0.10818509999080561
+      }
+    },
+    {
+      "symbols": 100000,
+      "subject_bytes": 65536,
+      "target_starts": 169,
+      "kmer": {
+        "index_s": 0.0017785000090952963,
+        "search_s": 0.00099709999631159
+      },
+      "suffix_python": {
+        "index_s": 0.40048599999863654,
+        "search_s": 0.14802349999081343
+      }
+    }
+  ],
+  "parallel": {
+    "seconds_1": 0.026088200000231154,
+    "seconds_2": 0.027660400010063313,
+    "files": [
+      220237,
+      718902
+    ],
+    "exact": true
+  }
+}

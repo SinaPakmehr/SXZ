@@ -1,0 +1,163 @@
+{
+  "adaptive-splitmix": {
+    "files": 22,
+    "input_bytes": 108217500,
+    "coverage": 0.07984933819588287,
+    "best": 9,
+    "raw_hits": 2759652,
+    "max_hits": 1537027,
+    "over_capacity": 3,
+    "selected_share": 0.001083516576539577,
+    "files_positive": 8,
+    "files_common_groups": 13,
+    "forced_net": 3063,
+    "net_fallback": 3063,
+    "positive": [
+      {
+        "file": "bert.pdf",
+        "net": 97,
+        "isolated": -3,
+        "recipe": "B-affine"
+      },
+      {
+        "file": "tree-test.xlsx",
+        "net": 37,
+        "isolated": -10,
+        "recipe": "B-affine"
+      },
+      {
+        "file": "pptx-fill.pptx",
+        "net": 506,
+        "isolated": -1,
+        "recipe": "B"
+      },
+      {
+        "file": "xml",
+        "net": 383,
+        "isolated": 7,
+        "recipe": "B"
+      },
+      {
+        "file": "banana.jpg",
+        "net": 361,
+        "isolated": 1,
+        "recipe": "B"
+      },
+      {
+        "file": "sample5.mp4",
+        "net": 1218,
+        "isolated": 4,
+        "recipe": "B"
+      },
+      {
+        "file": "audio-slice.wav",
+        "net": 436,
+        "isolated": -2,
+        "recipe": "B"
+      },
+      {
+        "file": "silesia.zip",
+        "net": 25,
+        "isolated": -6,
+        "recipe": "B"
+      }
+    ],
+    "gate": 0
+  },
+  "fixed-seeds": {
+    "files": 22,
+    "input_bytes": 108217500,
+    "coverage": 0.06247769444323527,
+    "best": 5,
+    "raw_hits": 2477130,
+    "max_hits": 1567220,
+    "over_capacity": 0,
+    "selected_share": 0,
+    "files_positive": 0,
+    "files_common_groups": 0,
+    "forced_net": 0,
+    "net_fallback": 0,
+    "positive": [],
+    "gate": 0
+  },
+  "independent-uniform": {
+    "files": 22,
+    "input_bytes": 108217500,
+    "coverage": 0.06354833220337497,
+    "best": 5,
+    "raw_hits": 2671947,
+    "max_hits": 1535343,
+    "over_capacity": 0,
+    "selected_share": 0,
+    "files_positive": 0,
+    "files_common_groups": 0,
+    "forced_net": 0,
+    "net_fallback": 0,
+    "positive": [],
+    "gate": 0
+  },
+  "trained-hist": {
+    "files": 22,
+    "input_bytes": 108217500,
+    "coverage": 0.24284250028964954,
+    "best": 9,
+    "raw_hits": 9120429,
+    "max_hits": 5690751,
+    "over_capacity": 0,
+    "selected_share": 0,
+    "files_positive": 0,
+    "files_common_groups": 2,
+    "forced_net": 0,
+    "net_fallback": 0,
+    "positive": [],
+    "gate": 0
+  },
+  "trained-markov": {
+    "files": 22,
+    "input_bytes": 108217500,
+    "coverage": 0.2135332506918543,
+    "best": 11,
+    "raw_hits": 5345861,
+    "max_hits": 2756283,
+    "over_capacity": 0,
+    "selected_share": 0,
+    "files_positive": 0,
+    "files_common_groups": 6,
+    "forced_net": -1688,
+    "net_fallback": 0,
+    "positive": [],
+    "gate": 0
+  },
+  "variable-families": {
+    "files": 22,
+    "input_bytes": 108217500,
+    "coverage": 0.08677686774918059,
+    "best": 5,
+    "raw_hits": 2573596,
+    "max_hits": 1503250,
+    "over_capacity": 0,
+    "selected_share": 0,
+    "files_positive": 0,
+    "files_common_groups": 0,
+    "forced_net": 0,
+    "net_fallback": 0,
+    "positive": [],
+    "gate": 0
+  },
+  "file-fitted-hist": {
+    "files": 22,
+    "input_bytes": 108217500,
+    "coverage": 0.48120782216412683,
+    "best": 9,
+    "raw_hits": 26912266,
+    "max_hits": 17047495,
+    "over_capacity": 0,
+    "selected_share": 0,
+    "files_positive": 0,
+    "files_common_groups": 2,
+    "forced_net": 0,
+    "net_fallback": 0,
+    "positive": [],
+    "gate": 0
+  }
+}
