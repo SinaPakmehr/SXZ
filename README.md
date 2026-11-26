@@ -72,6 +72,20 @@ I am looking forward to seeing where our collective curiosity takes us.
 
 ---
 
+## Continuing the Mathematical Adventure
+
+After the first ten phases, I was still curious! This time, I decided to explore a few different directions. Could we discover mathematical laws directly from digital data? Would larger files reveal structures that remain hidden in smaller ones? Could number theory help us describe sequences that appear random?
+
+Over the next five phases, I explored these questions using ideas from algebra, 2-adic numbers, and nonlinear mathematical relationships. One particularly interesting direction was inspired by the work of [Hamid Naderi Yeganeh](https://doi.org/10.1080/10724117.2024.2368373), an Iranian mathematical artist. Seeing how complex images could be created through networks of mathematical functions made me wonder whether we could reverse the process: start with an existing image and discover a mathematical description of it.
+
+Some of the experiments led to interesting observations. For example, 2-adic rational reconstruction revealed a structure in part of an executable file that could subsequently be expressed using a simpler mathematical rule. Some image experiments also outperformed individual conventional baselines. However, after accounting for the full description costs and comparing against matched controls, I still haven't found the meaningful, repeatable compression improvement I'm looking for.
+
+I find these results interesting in their own right. We now understand the problem and its limitations a little better than we did at the beginning. Perhaps searching through more formulas isn't the answer. Perhaps we need to look at the problem from an entirely different perspective.
+
+The reports, experimental code, benchmark results, and scientific references from these five phases are now available in the repository. I hope anyone curious about these ideas can explore them, challenge them, and continue from where we've arrived.
+
+---
+
 ## What Is SXZ?
 
 SXZ is an experimental research framework investigating mathematical and algorithmic descriptions of digital information for lossless data compression.
@@ -86,159 +100,58 @@ The central research question is:
 
 ## Explore the Repository
 
-- [Research overview](research/overview.md) and [timeline](research/timeline.md)
-- [Experimental phases](research/phases/README.md) and [mathematical foundations](research/mathematical-foundations.md)
-- [Consolidated findings](research/findings.md), [errata](research/errata.md), and [related work](research/related-work.md)
-- [Raw experimental results](results/README.md) and [reproduction instructions](docs/reproduction.md)
-- [Open research questions](research/open-questions.md), [contributing](CONTRIBUTING.md), [authors](AUTHORS.md), [license](LICENSE), and [citation](CITATION.cff)
+- [Research overview](research/overview.md) · [Timeline](research/timeline.md) · [Mathematical foundations](research/mathematical-foundations.md)
+- [Consolidated findings](research/findings.md) · [Errata](research/errata.md) · [Related work](research/related-work.md) · [Bibliography](research/references.bib)
+- [Experimental code](lab/README.md) · [Benchmark results](results/README.md) · [Reproduction guide](docs/reproduction.md)
+- [Datasets and availability](datasets/README.md) · [Limitations](research/limitations.md) · [Open questions](research/open-questions.md)
 
 ## Research Journey
 
-The project has evolved through multiple experimental phases. Each phase investigates a different aspect of the original hypothesis.
-
-| Phase | Research focus |
-|---|---|
-| 01 — SXZ1 | Original hypothesis and mathematical pattern encoding |
-| 02 — SXZ2 | Streaming architecture and native optimization |
-| 03 — Detection Audit | Search limitations, missed patterns, and detection accuracy |
-| 04 — SXZ3 | Extended mathematical models and residual coding |
-| 05 — SXZ4 | Mathematical spans and reversible representation discovery |
-| 06 — Validation | Comprehensive real-world experiments and ablation studies |
-| 07 — SXZ-NEXT | Hierarchical generative programs, algebraic inference, and native scanning |
-| 08 — Structural Relations | Mathematical relationships between non-contiguous data structures |
-| 09 — MSMC | Mathematical Sequence Mosaic Compression |
-| 10 — ASMC | Adaptive Stochastic Mosaic Compression |
-| 11 - CGMC | Context-conditioned generators, strict attribution and decoder audit |
-| 12 - AMRD | Direct algebraic inference, reversible representations and cross-plane screens |
-| 13 - Scaling | Nested real-data sizes and mathematical cost diagnostics |
-| 14 - Number Theory | 2-adic rationals, coordinate functions and quadratic Boolean relations |
-| 15 - Image Math | Pixel-coordinate functions, adaptive regions and compositional networks |
-
-### Five More Phases, and What They Taught Me
-
-After Phase 10 I followed five more lines of inquiry: context-conditioned generators (CGMC), direct algebraic discovery (AMRD), a scaling and cost study, 2-adic and algebraic number-theory experiments, and mathematical image representations. I kept the same rule throughout: compare against matched conventional baselines, count every byte of the description, and preserve the negative results.
-
-The outcome did not overturn the earlier conclusion. CGMC's strict controls and decoder audit clarified what its apparent wins did and did not mean, but no real file passed the economic gate. AMRD recovered synthetic laws exactly and found no nontrivial real polynomial or affine span. The scaling study showed that larger files did not create proportional mathematical coverage; genuine affine hits remained rare and none beat zstd-9 on the same span. The number-theory phase found a small, exact 2-adic description in the padding region of `7zr.exe`, but its simpler form is a 16-bit arithmetic progression with carry, and it did not survive as an archive-level gain. The image phase produced only one isolated 9-byte improvement on a gull crop (about 0.0104%); complete images remained negative.
-
-| Phase | What I tested | What I found |
-|---|---|---|
-| 11 - CGMC | Context-conditioned mathematical generators with strict attribution and a decoder audit | No real economic gate pass; strict controls and long-range checks explained the apparent wins |
-| 12 - AMRD | Direct algebraic inference, reversible representations and cross-plane screens | Synthetic laws recovered exactly; no nontrivial real span at the tested scales |
-| 13 - Scaling | Nested real-data sizes and the real cost of formulas, states, residuals and metadata | No proportional coverage scaling; genuine affine hits were rare and never beat zstd-9 on their span |
-| 14 - Number Theory | 2-adic rationals, coordinate functions and quadratic Boolean relations | A limited 7zr span-level 2-adic/AP result; coordinate and GF(2) results negative; no archive gain |
-| 15 - Image Math | Pixel-coordinate functions, adaptive regions and compositional networks | One isolated 9-byte gull-crop win (0.0104%); complete-image results negative |
-
-I see these as useful boundary markers rather than failures to hide. They tell me where simple mathematical descriptions stop being competitive, and they make the remaining question sharper: which real sources have short, independently meaningful descriptions that conventional codecs cannot already capture? That is the question I want to keep exploring.
-
-## Core Research Directions
-
-SXZ explores several complementary approaches:
-
-- Mathematical pattern detection
-- Algebraic inference and recurrence discovery
-- Symbolic regression and program synthesis
-- Generative mathematical dictionaries
-- Number-theoretic sequences
-- Mathematical constants as information sources
-- Reversible numerical representations
-- Pseudorandom generator recovery
-- Adaptive seed and parameter selection
-- Shared generative descriptions
-- Non-contiguous structural relationships
-- Exact and approximate sequence matching
-- Information-theoretic description costs
-- Asymmetric compression architectures
+| Phase | Research focus | Main finding | Report and code |
+|---|---|---|---|
+| 01 — SXZ1 | Mathematical pattern encoding | Compact descriptions of planted mathematical sequences. | [Report](research/phases/01-sxz1.md) · [Code](lab/zip-protocol/) |
+| 02 — SXZ2 | Streaming and native optimization | Working streaming prototype; no independent mathematical advantage established on general files. | [Report](research/phases/02-sxz2.md) · [Code](lab/zip-protocol/) |
+| 03 — Detection audit | Search budgets and detection accuracy | Search limits miss planted patterns; local savings need whole-file controls. | [Report](research/phases/03-audit.md) · [Code](lab/zip-protocol/experiments/audit/) |
+| 04 — SXZ3 | Extended models and residual coding | Strong synthetic results; no consistent real-file gain. | [Report](research/phases/04-sxz3.md) · [Code](lab/zip-protocol/experiments/sxz3/) |
+| 05 — SXZ4 | Mathematical spans and reversible transforms | Compact synthetic recurrences; promising ECG transforms. | [Report](research/phases/05-sxz4.md) · [Code](lab/zip-protocol/experiments/sxz4/) |
+| 06 — Validation | Real-data validation and ablation | ECG gains attributed chiefly to ordinary transforms; no general advantage. | [Report](research/phases/06-validation.md) · [Code](lab/zip-protocol/experiments/sxz4/) |
+| 07 — SXZ-NEXT | Algebraic inference, program synthesis, native scanning | Faster targeted detection; no repeatable new real-file gain. | [Report](research/phases/07-next.md) · [Code](lab/sxz-next-research/) |
+| 08 — Structural relations | Relationships between non-adjacent structures | Metadata and baseline competition limited gains. | [Report](research/phases/08-relationships.md) · [Code](lab/sxz-structural-relations/) |
+| 09 — MSMC | Mathematical sequence mosaics | High raw match coverage; negligible independent savings. | [Report](research/phases/09-msmc.md) · [Code](lab/sxz-mathematical-mosaic/) |
+| 10 — ASMC | Adaptive pseudorandom generators | Shared-seed synthetic gains; apparent real wins did not survive controls. | [Report](research/phases/10-asmc.md) · [Code](lab/sxz-adaptive-stochastic-mosaic/) |
+| 11 — CGMC | Context-conditioned generators and decoder audit | No real file passed the predefined economic threshold. | [Report](research/phases/11-cgmc.md) · [Code](lab/sxz-cgmc/) |
+| 12 — AMRD | Algebraic inference and cross-plane transforms | No nontrivial polynomial or affine spans in the tested real regions. | [Report](research/phases/12-amrd.md) · [Code](lab/sxz-amrd/) |
+| 13 — Scaling | File size and description cost | Up to 100 MiB; rare affine hits, none cheaper than zstd-9 on the same span. | [Report](research/phases/13-scaling.md) · [Code](lab/sxz-scaling/) |
+| 14 — Number theory | 2-adic rationals, coordinate functions, Boolean algebra | 12 real 2-adic spans, simplified to 16-bit progressions with carry; no archive gain. | [Report](research/phases/14-number-theory.md) · [Code](lab/sxz-2adic/) |
+| 15 — Image math | Pixel functions, adaptive regions and compositional networks | Adaptive partition gains; isolated 9-byte crop win, no complete-image network win. | [Report](research/phases/15-image-math.md) · [Code](lab/sxz-image-math/) |
 
 ## Selected Experimental Findings
 
-| Experiment | Observed result |
+| Experiment | Measured result and interpretation |
 |---|---|
-| Synthetic second-order recurrence | 256 KiB represented in 84 bytes |
-| Synthetic linear congruential generator | 256 KiB represented in 79 bytes |
-| Fibonacci sequence reconstruction | 16,428-byte baseline reduced to 57 bytes |
-| Prime-number sequence reconstruction | 10,009-byte baseline reduced to 48 bytes |
-| Native mathematical scanning | 100 MB scanned in 0.68 seconds for one specific recurrence family |
-| Mathematical sequence mosaic | 74.44% average raw pattern coverage on a five-file development panel |
-| Target-fitted non-uniform generator bank | 48.12% average raw coverage on a 22-file real-world panel |
-| Shared-seed synthetic mosaic | 2,048-byte baseline reduced to 1,002 bytes |
+| Synthetic second-order recurrence ([Phase 05](research/phases/05-sxz4.md)) | 256 KiB regenerated from an 84-byte description; a deliberately constructed input. |
+| Real ECG ([Phase 06](research/phases/06-validation.md)) | Held-out sample: 116,004 → 83,791 B versus XZ (27.8% smaller); attributed to the ordinary shuffle/delta transform, not mathematical records. |
+| Native scanning ([Phase 07](research/phases/07-next.md)) | 100 MB scanned in 0.68 s for one specific recurrence family; not a full general-model scan. |
+| Mathematical mosaics ([Phase 09](research/phases/09-msmc.md)) | 74.44% average raw coverage on the five-file development panel; no comparable net compression gain. |
+| Adaptive generators ([Phase 10](research/phases/10-asmc.md)) | Shared-seed synthetic mosaic: 2,048 → 1,002 B; real-file apparent gains did not survive the controls. |
+| CGMC and AMRD ([11](research/phases/11-cgmc.md), [12](research/phases/12-amrd.md)) | 0/13 real held-out files passed the CGMC gate; no nontrivial polynomial/affine spans in AMRD's real panel. |
+| Scaling ([Phase 13](research/phases/13-scaling.md)) | At 100 MiB, genuine affine coverage of the mixed archive was 13,692 B (0.013%); hybrid sizes were estimates and none improved on zstd-9. |
+| 2-adic reconstruction ([Phase 14](research/phases/14-number-theory.md)) | Twelve selected real spans: 524 B of packed spans described in 229 B; a simpler arithmetic description was later found. No archive-level gain. |
+| Image math ([Phase 15](research/phases/15-image-math.md)) | Adaptive logo: 3,529 B versus PNG's 4,157 B, also achieved by the non-geometric control. Network: isolated 9 B saving (0.0104%) on a gull crop; no complete-image win. Pixel-level only. |
 
-These results come from different experimental settings and should not be interpreted as a single comparative benchmark.
-
-Several impressive compression ratios were obtained on deliberately constructed synthetic data. High pattern coverage on real-world data did not translate into equivalent compression savings.
-
-### Selected figures
-
-[![MSMC coverage vs bank size](figures/msmc-bank-coverage.svg)](figures/msmc-bank-coverage.svg)
-[![MSMC raw vs economic coverage](figures/msmc-raw-vs-economic.svg)](figures/msmc-raw-vs-economic.svg)
-
-[![ASMC seed-space coverage](figures/asmc-seed-coverage.svg)](figures/asmc-seed-coverage.svg)
-[![ASMC seed-space net savings](figures/asmc-seed-net.svg)](figures/asmc-seed-net.svg)
-
-[![ASMC shared-seed control](figures/asmc-sharing.svg)](figures/asmc-sharing.svg)
-
-Figures are generated from the preserved JSON by [`scripts/evidence.py`](scripts/evidence.py); see the [figure index](figures/README.md). Raw coverage is not an archive-size saving.
-
-The complete experimental reports document the methodology, controls, archive overhead, and limitations behind these figures.
+These are results from different experiments, not a single comparative benchmark. Coverage is not compression savings; local savings are not whole-file savings. The linked reports document costs, settings, controls and limitations. See [selected figures](figures/README.md) and [consolidated findings](research/findings.md).
 
 ## Current Research Status
 
-After fifteen phases I can say something both encouraging and sobering: mathematical descriptions can be astonishingly effective when the data really comes from a recoverable law, but I have not yet found a repeatable, independent compression gain on general real-world files.
-
-The last five phases made that boundary sharper. CGMC's strict controls, AMRD's empty real algebraic coverage, the scaling study's lack of a size advantage, the single span-level 2-adic/AP result in `7zr.exe`, and the image phase's isolated 9-byte gull-crop win all point the same way. They are real measurements, not reasons to stop asking, but they are not a product claim.
-
-A particularly important finding is that locating information within a mathematical sequence is not sufficient. The cost of describing its location, generator, parameters, and residual information must also be considered.
-
-SXZ does not claim to circumvent the fundamental limits of lossless compression described by information theory and algorithmic complexity.
-
-The goal is to investigate whether better representations and search strategies can exploit compressible structure that existing methods may not fully capture.
-
-## What You Will Find in This Repository
-
-- Python and Rust source code
-- Historical experimental compression engines
-- Research reports organized by phase
-- Mathematical foundations and theoretical analysis
-- Experimental protocols
-- Raw benchmark results
-- Ablation studies
-- Performance measurements
-- Reproducible synthetic datasets
-- Scientific figures and comparison tables
-- Lossless reconstruction tests
-- Open research questions
-
-Both positive and negative findings are preserved. Failed experiments are part of the scientific record, not something to hide.
+After fifteen phases, mathematical descriptions have proved useful when a recoverable law is present, and ordinary reversible transforms have sometimes improved compression. I have not yet established a meaningful, repeatable, independent mathematical compression gain on general real-world files. Every generator, parameter, address, residual and reconstruction cost matters. SXZ remains an open experimental project, not a product claim or a proposed way around the fundamental limits of lossless compression.
 
 ## Getting Started
 
-See the research documentation for the complete experimental history, installation requirements, reproduction procedures, dataset descriptions, and benchmark methodology.
-
-Researchers interested in a particular mathematical approach can start directly with the corresponding experimental phase.
+Start with any phase in the table above, or follow the [reproduction guide](docs/reproduction.md) for setup, tests and benchmark commands. The [dataset guide](datasets/README.md) explains how to obtain available inputs; some historical inputs are not redistributable or publicly available, so exact reproduction is not guaranteed for every experiment. Historical measurements and executable research code are kept separate from new reproduction runs.
 
 ## Contributing
 
-Contributions are welcome from anyone interested in exploring this problem.
-
-Possible contributions include:
-
-- New mathematical hypotheses
-- Alternative generative representations
-- Number theory and algebraic approaches
-- Machine learning and neural compression
-- GPU-accelerated mathematical search
-- Improved program synthesis
-- Information-theoretic analysis
-- Independent reproduction of existing results
-- New benchmarks and experimental datasets
-- Critical evaluation of existing hypotheses
-
-Have an idea? Open an issue.
-
-Have experimental results? Share them.
-
-Have a better approach? Submit a pull request.
-
-Disagreement, negative results, and mathematical counterarguments are just as welcome as successful implementations.
+New mathematical hypotheses, alternative representations, number theory, machine learning, GPU-accelerated search, independent reproduction, new benchmarks and rigorous counterarguments are all welcome. Have an idea? [Open an issue](https://github.com/SinaPakmehr/SXZ/issues). Have a better approach? [Submit a pull request](https://github.com/SinaPakmehr/SXZ/pulls). See the [contribution guide](CONTRIBUTING.md), [authors](AUTHORS.md), [license](LICENSE) and [citation information](CITATION.cff). Disagreement and negative results are as valuable as successful implementations.
 
 ## The Bigger Picture
 
