@@ -114,31 +114,21 @@ The project has evolved through multiple experimental phases. Each phase investi
 | 14 - Number Theory | 2-adic rationals, coordinate functions and quadratic Boolean relations |
 | 15 - Image Math | Pixel-coordinate functions, adaptive regions and compositional networks |
 
-### Phases 11-15 at a glance
+### Five More Phases, and What They Taught Me
 
-| Phase | Research question | Outcome |
+After Phase 10 I followed five more lines of inquiry: context-conditioned generators (CGMC), direct algebraic discovery (AMRD), a scaling and cost study, 2-adic and algebraic number-theory experiments, and mathematical image representations. I kept the same rule throughout: compare against matched conventional baselines, count every byte of the description, and preserve the negative results.
+
+The outcome did not overturn the earlier conclusion. CGMC's strict controls and decoder audit clarified what its apparent wins did and did not mean, but no real file passed the economic gate. AMRD recovered synthetic laws exactly and found no nontrivial real polynomial or affine span. The scaling study showed that larger files did not create proportional mathematical coverage; genuine affine hits remained rare and none beat zstd-9 on the same span. The number-theory phase found a small, exact 2-adic description in the padding region of `7zr.exe`, but its simpler form is a 16-bit arithmetic progression with carry, and it did not survive as an archive-level gain. The image phase produced only one isolated 9-byte improvement on a gull crop (about 0.0104%); complete images remained negative.
+
+| Phase | What I tested | What I found |
 |---|---|---|
-| 11 CGMC | Can context-conditioned generators replace real spans economically? | Strict controls and audit completed; no real gate pass or independent long-range gain. |
-| 12 AMRD | Can direct algebraic inference find nontrivial laws in real representations? | Synthetic laws recovered exactly; zero nontrivial real spans; bit and cross-plane coverage corrected. |
-| 13 Scaling | Does size help, and what dominates cost? | No proportional scaling; genuine affine coverage at most 0.013% and no span beat zstd-9. |
-| 14 Number Theory | Do 2-adic, coordinate or quadratic relations add structure? | A limited 7zr span-level 2-adic/AP result; coordinate and GF(2) results negative; no archive gain. |
-| 15 Image Math | Can pixel-coordinate functions beat image controls? | Negative; only a 9 B gull-crop win (0.0104%), with standard controls stronger overall. |
+| 11 - CGMC | Context-conditioned mathematical generators with strict attribution and a decoder audit | No real economic gate pass; strict controls and long-range checks explained the apparent wins |
+| 12 - AMRD | Direct algebraic inference, reversible representations and cross-plane screens | Synthetic laws recovered exactly; no nontrivial real span at the tested scales |
+| 13 - Scaling | Nested real-data sizes and the real cost of formulas, states, residuals and metadata | No proportional coverage scaling; genuine affine hits were rare and never beat zstd-9 on their span |
+| 14 - Number Theory | 2-adic rationals, coordinate functions and quadratic Boolean relations | A limited 7zr span-level 2-adic/AP result; coordinate and GF(2) results negative; no archive gain |
+| 15 - Image Math | Pixel-coordinate functions, adaptive regions and compositional networks | One isolated 9-byte gull-crop win (0.0104%); complete-image results negative |
 
-These are bounded empirical results, not claims about all possible files or methods. Synthetic successes and ordinary transform/prediction gains are labeled separately from independent mathematical gains.
-
-### Phase 11-15 code and evidence
-
-| Phase | Code and compact evidence |
-|---|---|
-| 11 CGMC | [`lab/sxz-cgmc`](lab/sxz-cgmc) |
-| 12 AMRD | [`lab/sxz-amrd`](lab/sxz-amrd) |
-| 13 Scaling | [`lab/sxz-scaling`](lab/sxz-scaling) |
-| 14 Number Theory | [`lab/sxz-2adic`](lab/sxz-2adic) |
-| 15 Image Math | [`lab/sxz-image-math`](lab/sxz-image-math) |
-
-Each directory contains the essential experimental source, a short reproduction
-note and compact JSON evidence. The full historical corpora and images are not
-redistributed.
+I see these as useful boundary markers rather than failures to hide. They tell me where simple mathematical descriptions stop being competitive, and they make the remaining question sharper: which real sources have short, independently meaningful descriptions that conventional codecs cannot already capture? That is the question I want to keep exploring.
 
 ## Core Research Directions
 
@@ -192,9 +182,9 @@ The complete experimental reports document the methodology, controls, archive ov
 
 ## Current Research Status
 
-The experiments conducted so far demonstrate that mathematical descriptions can be extremely effective when data genuinely originates from recoverable mathematical or algorithmic processes.
+After fifteen phases I can say something both encouraging and sobering: mathematical descriptions can be astonishingly effective when the data really comes from a recoverable law, but I have not yet found a repeatable, independent compression gain on general real-world files.
 
-However, meaningful and reproducible independent compression improvements on general-purpose real-world files have not yet been demonstrated through Phase 15. Phase 11 found no real economic gate pass; Phase 12 found no nontrivial real algebraic span; Phase 13 found no scaling or hybrid win; Phase 14 found only a span-level 2-adic/AP result with no archive gain; Phase 15 found only an isolated 9 B image-crop improvement, not a general result.
+The last five phases made that boundary sharper. CGMC's strict controls, AMRD's empty real algebraic coverage, the scaling study's lack of a size advantage, the single span-level 2-adic/AP result in `7zr.exe`, and the image phase's isolated 9-byte gull-crop win all point the same way. They are real measurements, not reasons to stop asking, but they are not a product claim.
 
 A particularly important finding is that locating information within a mathematical sequence is not sufficient. The cost of describing its location, generator, parameters, and residual information must also be considered.
 
