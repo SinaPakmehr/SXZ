@@ -126,6 +126,20 @@ The project has evolved through multiple experimental phases. Each phase investi
 
 These are bounded empirical results, not claims about all possible files or methods. Synthetic successes and ordinary transform/prediction gains are labeled separately from independent mathematical gains.
 
+### Phase 11-15 code and evidence
+
+| Phase | Code and compact evidence |
+|---|---|
+| 11 CGMC | [`lab/sxz-cgmc`](lab/sxz-cgmc) |
+| 12 AMRD | [`lab/sxz-amrd`](lab/sxz-amrd) |
+| 13 Scaling | [`lab/sxz-scaling`](lab/sxz-scaling) |
+| 14 Number Theory | [`lab/sxz-2adic`](lab/sxz-2adic) |
+| 15 Image Math | [`lab/sxz-image-math`](lab/sxz-image-math) |
+
+Each directory contains the essential experimental source, a short reproduction
+note and compact JSON evidence. The full historical corpora and images are not
+redistributed.
+
 ## Core Research Directions
 
 SXZ explores several complementary approaches:

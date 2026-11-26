@@ -230,8 +230,8 @@
     },
     {
       "path": "lab/README.md",
-      "bytes": 1122,
-      "sha256": "f6bc386c2a31303c1fa9529fe2268fa946fec9f94ddc50b99bbcababebf249d2"
+      "bytes": 1624,
+      "sha256": "9d159fd5e6c084cc2bb97cd0c3a79f9be3f17d1714a4511247c94f37574bd589"
     },
     {
       "path": "lab/sxz-2adic/README.md",
@@ -1750,8 +1750,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 16074,
-      "sha256": "37d1d4595669c55b6c916eb0b405d02c5546064cc1b1ab99bf4dffa0d26f2989"
+      "bytes": 16610,
+      "sha256": "6f3fd3dce8e9432f0dd1df5290042906c749dc3f45bc71579e3c043631196e3a"
     },
     {
       "path": "requirements/research.txt",
@@ -1895,8 +1895,8 @@
     },
     {
       "path": "ROADMAP.md",
-      "bytes": 909,
-      "sha256": "df9f01f0dc0a92cbad024000c15990bda70d5e81ad57ec57ea27a5909f33ae6a"
+      "bytes": 835,
+      "sha256": "ed4c8b5f23f90fb426430d5bab860ad940b08e1b5eeaff070b13fc1dd8c4cbcc"
     },
     {
       "path": "scripts/check.py",

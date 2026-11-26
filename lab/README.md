@@ -12,6 +12,11 @@ what each prototype tested and what was superseded.
 | `sxz-structural-relations` | 8 | metadata-backed relational records and paired controls |
 | `sxz-mathematical-mosaic` | 9 | fixed mathematical banks and mosaic selection |
 | `sxz-adaptive-stochastic-mosaic` | 10 | adaptive seeds, shared-seed controls and bounds |
+| `sxz-cgmc` | 11 | context generators, strict controls, decoder security and long-range checks |
+| `sxz-amrd` | 12 | direct algebraic inference, reversible representations and cross-plane screens |
+| `sxz-scaling` | 13 | nested real-data scaling and mathematical cost diagnostics |
+| `sxz-2adic` | 14 | 2-adic rationals, coordinate functions and quadratic Boolean relations |
+| `sxz-image-math` | 15 | pixel-coordinate functions, adaptive regions and compositional networks |
 
 Do not run two experiments that write the same JSON concurrently. Record a new
 run separately rather than overwriting historical results. Some scripts expect

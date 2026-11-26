@@ -11,4 +11,3 @@
 - Near term: resolve publication rights and attribution; independently replicate
   the paired controls; expand portability only with reviewed tests.
 - Research proposals are listed in [open questions](research/open-questions.md).
-  Phase 15 has stopped; no Phase 16 is part of this release preparation.
