@@ -1,0 +1,43 @@
+{
+ "roundtrip": [
+  {
+   "mode": "gen",
+   "archive": 8083,
+   "verified": true,
+   "decode_s": 0.002566600000136532,
+   "tokens": 53
+  },
+  {
+   "mode": "ctrl",
+   "archive": 8102,
+   "verified": true,
+   "decode_s": 0.0001362999901175499,
+   "tokens": 53
+  },
+  {
+   "mode": "lzref",
+   "archive": 8109,
+   "verified": true,
+   "decode_s": 0.00017519999528303742,
+   "tokens": 53
+  }
+ ],
+ "determinism": true,
+ "mutations": {
+  "accepted": 0,
+  "valueerror": 270,
+  "other": 0,
+  "accepted_but_wrong": 0,
+  "trials": 270
+ },
+ "crafted": {
+  "bad_config": "valueerror",
+  "unknown_tag": "valueerror",
+  "ref_zero_offset": "valueerror",
+  "gen_zero_length": "valueerror",
+  "too_many_tokens": "valueerror",
+  "trailing_meta": "valueerror",
+  "huge_declared_output": "accepted",
+  "payload_length_lie": "valueerror"
+ }
+}

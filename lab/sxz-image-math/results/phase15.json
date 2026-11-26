@@ -1,0 +1,655 @@
+{
+ "phase": 15,
+ "episode": 1,
+ "tile": 64,
+ "files": [
+  {
+   "key": "banana",
+   "category": "natural",
+   "format": "JPEG",
+   "split": "dev",
+   "original_file": "data/06-sxz5-data/raw/banana.jpg",
+   "original_bytes": 2085213,
+   "original_sha256": "fe23c58652b3da3471fd86bf333aa27b45f2d9238ad03b42f4dfc795acf3954c",
+   "original_mode": "RGB",
+   "original_size": [
+    3030,
+    2670
+   ],
+   "tested_size": [
+    256,
+    256
+   ],
+   "cropped": true,
+   "crop_box": [
+    128,
+    1536,
+    384,
+    1792
+   ],
+   "channels": 3,
+   "decoded_pixel_sha256": "252992c469ec2034794242ac7cdaf1a04684604d755e91e5390ddbf01d8c98f8",
+   "A_zstd9": 82336,
+   "B_math_raw": 197410,
+   "C_math_zstd9": 81887,
+   "D_spatial": 65203,
+   "D_predictor": "left",
+   "E_png": 62612,
+   "F_jxl": null,
+   "control_C": 81926,
+   "records": 786,
+   "residual_bytes": 196608,
+   "residual_zstd9": 81085,
+   "exact_pixels": 36864,
+   "total_channel_pixels": 196608,
+   "exact_fraction": 0.1875,
+   "verified": true,
+   "families": {
+    "const": 31,
+    "linear": 3,
+    "piece": 3,
+    "sinlin": 6,
+    "radial": 4,
+    "quad": 1
+   },
+   "examples": [
+    [
+     "const",
+     [
+      65280
+     ],
+     null,
+     0,
+     0,
+     0,
+     64,
+     64
+    ],
+    [
+     "linear",
+     [
+      35036,
+      21,
+      176
+     ],
+     null,
+     64,
+     128,
+     1,
+     64,
+     64
+    ],
+    [
+     "piece",
+     [
+      30733,
+      342,
+      319,
+      50587,
+      190,
+      126,
+      51576,
+      138,
+      74,
+      57879,
+      62,
+      35
+     ],
+     null,
+     128,
+     64,
+     0,
+     64,
+     64
+    ],
+    [
+     "sinlin",
+     [
+      59095,
+      14,
+      20,
+      214,
+      -164,
+      -19,
+      -54
+     ],
+     [
+      1,
+      1
+     ],
+     128,
+     128,
+     0,
+     64,
+     64
+    ],
+    [
+     "radial",
+     [
+      50458,
+      13,
+      17,
+      0,
+      0
+     ],
+     null,
+     128,
+     128,
+     1,
+     64,
+     64
+    ],
+    [
+     "quad",
+     [
+      16907,
+      57,
+      -123,
+      1,
+      -1,
+      2
+     ],
+     null,
+     128,
+     128,
+     2,
+     64,
+     64
+    ]
+   ],
+   "residual_entropy": 4.918029889007579
+  },
+  {
+   "key": "gull",
+   "category": "natural",
+   "format": "JPEG",
+   "split": "val",
+   "original_file": "data/06-sxz5-data/raw/gull.jpg",
+   "original_bytes": 718902,
+   "original_sha256": "524368d286d63cd02c319b7447a664f15d434fec594f1849fc9b73de68d40f14",
+   "original_mode": "RGB",
+   "original_size": [
+    2272,
+    1704
+   ],
+   "tested_size": [
+    256,
+    256
+   ],
+   "cropped": true,
+   "crop_box": [
+    1152,
+    256,
+    1408,
+    512
+   ],
+   "channels": 3,
+   "decoded_pixel_sha256": "e7a563538c02d77d8de338164d71ad9641b8b14ef990b57f8675a2afd2f8f687",
+   "A_zstd9": 132465,
+   "B_math_raw": 197584,
+   "C_math_zstd9": 137467,
+   "D_spatial": 86641,
+   "D_predictor": "left",
+   "E_png": 91567,
+   "F_jxl": null,
+   "control_C": 137942,
+   "records": 960,
+   "residual_bytes": 196608,
+   "residual_zstd9": 136491,
+   "exact_pixels": 0,
+   "total_channel_pixels": 196608,
+   "exact_fraction": 0.0,
+   "verified": true,
+   "families": {
+    "const": 11,
+    "sinlin": 7,
+    "radial": 8,
+    "quad": 18,
+    "linear": 2,
+    "sine": 1,
+    "piece": 1
+   },
+   "examples": [
+    [
+     "const",
+     [
+      42843
+     ],
+     null,
+     0,
+     0,
+     0,
+     64,
+     64
+    ],
+    [
+     "sinlin",
+     [
+      43730,
+      28,
+      171,
+      -100,
+      -242,
+      408,
+      -2808
+     ],
+     [
+      1,
+      1
+     ],
+     0,
+     0,
+     2,
+     64,
+     64
+    ],
+    [
+     "radial",
+     [
+      53129,
+      12,
+      65,
+      0,
+      -4
+     ],
+     null,
+     0,
+     64,
+     2,
+     64,
+     64
+    ],
+    [
+     "quad",
+     [
+      45645,
+      96,
+      309,
+      -1,
+      -3,
+      -3
+     ],
+     null,
+     0,
+     128,
+     0,
+     64,
+     64
+    ],
+    [
+     "linear",
+     [
+      43681,
+      -7,
+      26
+     ],
+     null,
+     192,
+     0,
+     1,
+     64,
+     64
+    ],
+    [
+     "sine",
+     [
+      43948,
+      214,
+      620,
+      -336,
+      146
+     ],
+     [
+      2,
+      1
+     ],
+     192,
+     0,
+     2,
+     64,
+     64
+    ]
+   ],
+   "residual_entropy": 6.224236497356176
+  },
+  {
+   "key": "python-logo",
+   "category": "graphics",
+   "format": "PNG",
+   "split": "dev",
+   "original_file": "phases/07-next/python-logo.png",
+   "original_bytes": 45187,
+   "original_sha256": "ea0e73137c1c8561e91241771e3c81e5b3e8f5ab2cbfdad1a00d8eea524815fa",
+   "original_mode": "RGB",
+   "original_size": [
+    211,
+    71
+   ],
+   "tested_size": [
+    211,
+    71
+   ],
+   "cropped": false,
+   "crop_box": [
+    0,
+    0,
+    211,
+    71
+   ],
+   "channels": 3,
+   "decoded_pixel_sha256": "6568d82ed7fa49fb46915d6ed1bb5bc5b0ee15cd320044b8b68f52b6f144ab9b",
+   "A_zstd9": 3873,
+   "B_math_raw": 45247,
+   "C_math_zstd9": 4051,
+   "D_spatial": 4448,
+   "D_predictor": "left",
+   "E_png": 4157,
+   "F_jxl": null,
+   "control_C": 4051,
+   "records": 288,
+   "residual_bytes": 44943,
+   "residual_zstd9": 3747,
+   "exact_pixels": 4431,
+   "total_channel_pixels": 44943,
+   "exact_fraction": 0.09859154929577464,
+   "verified": true,
+   "families": {
+    "const": 24
+   },
+   "examples": [
+    [
+     "const",
+     [
+      59171
+     ],
+     null,
+     0,
+     0,
+     0,
+     64,
+     64
+    ]
+   ],
+   "residual_entropy": 3.545902795647036
+  },
+  {
+   "key": "transparency",
+   "category": "graphics",
+   "format": "BMP",
+   "split": "val",
+   "original_file": "data/06-sxz5-data/corpus/transparency.bmp",
+   "original_bytes": 1440054,
+   "original_sha256": "2fa87a906f9ce95a951bfdaf12626d1c6cfcff2bdebcc6f392c8814fcbe7c3cb",
+   "original_mode": "RGB",
+   "original_size": [
+    800,
+    600
+   ],
+   "tested_size": [
+    256,
+    256
+   ],
+   "cropped": true,
+   "crop_box": [
+    0,
+    256,
+    256,
+    512
+   ],
+   "channels": 3,
+   "decoded_pixel_sha256": "d23e44739e8b7fdf44b07271be41475b2643fe741cd12d8dc65583305bee9437",
+   "A_zstd9": 9674,
+   "B_math_raw": 197200,
+   "C_math_zstd9": 5649,
+   "D_spatial": 1829,
+   "D_predictor": "up",
+   "E_png": 896,
+   "F_jxl": null,
+   "control_C": 5649,
+   "records": 576,
+   "residual_bytes": 196608,
+   "residual_zstd9": 5057,
+   "exact_pixels": 40960,
+   "total_channel_pixels": 196608,
+   "exact_fraction": 0.20833333333333334,
+   "verified": true,
+   "families": {
+    "const": 48
+   },
+   "examples": [
+    [
+     "const",
+     [
+      0
+     ],
+     null,
+     0,
+     0,
+     0,
+     64,
+     64
+    ]
+   ],
+   "residual_entropy": 5.595830796325354
+  },
+  {
+   "key": "exif",
+   "category": "screenshot/document",
+   "format": "PNG",
+   "split": "dev",
+   "original_file": "phases/07-next/exif.png",
+   "original_bytes": 179336,
+   "original_sha256": "eb58fc260f08b8c95857128316f72ec8008ca8b2d3901aa23eba7196ae716258",
+   "original_mode": "RGB",
+   "original_size": [
+    512,
+    512
+   ],
+   "tested_size": [
+    256,
+    256
+   ],
+   "cropped": true,
+   "crop_box": [
+    0,
+    0,
+    256,
+    256
+   ],
+   "channels": 3,
+   "decoded_pixel_sha256": "394d69f7f973646c4b6e6b9713052c0a84bcf02e6b7d4e126d411d39c9eaf323",
+   "A_zstd9": 37280,
+   "B_math_raw": 197200,
+   "C_math_zstd9": 53874,
+   "D_spatial": 44378,
+   "D_predictor": "left",
+   "E_png": 44853,
+   "F_jxl": null,
+   "control_C": 53874,
+   "records": 576,
+   "residual_bytes": 196608,
+   "residual_zstd9": 53282,
+   "exact_pixels": 0,
+   "total_channel_pixels": 196608,
+   "exact_fraction": 0.0,
+   "verified": true,
+   "families": {
+    "const": 48
+   },
+   "examples": [
+    [
+     "const",
+     [
+      30200
+     ],
+     null,
+     0,
+     0,
+     0,
+     64,
+     64
+    ]
+   ],
+   "residual_entropy": 6.479817393501464
+  },
+  {
+   "key": "fig1_class_hits",
+   "category": "screenshot/document",
+   "format": "PNG",
+   "split": "val",
+   "original_file": "phases/11-cgmc/figures/fig1_class_hits.png",
+   "original_bytes": 38920,
+   "original_sha256": "a1bd4d42fd92edc9b31074d73822b7231faea0938b0533be02988ba0f747f4b3",
+   "original_mode": "RGBA",
+   "original_size": [
+    1024,
+    576
+   ],
+   "tested_size": [
+    256,
+    256
+   ],
+   "cropped": true,
+   "crop_box": [
+    384,
+    256,
+    640,
+    512
+   ],
+   "channels": 4,
+   "decoded_pixel_sha256": "9af58e925abada480826f451f2f5636b9da1e4a1f310de97b7178357fc8271f2",
+   "A_zstd9": 52,
+   "B_math_raw": 262928,
+   "C_math_zstd9": 925,
+   "D_spatial": 53,
+   "D_predictor": "up",
+   "E_png": 686,
+   "F_jxl": null,
+   "control_C": 925,
+   "records": 768,
+   "residual_bytes": 262144,
+   "residual_zstd9": 141,
+   "exact_pixels": 200704,
+   "total_channel_pixels": 262144,
+   "exact_fraction": 0.765625,
+   "verified": true,
+   "families": {
+    "const": 64
+   },
+   "examples": [
+    [
+     "const",
+     [
+      62720
+     ],
+     null,
+     0,
+     0,
+     0,
+     64,
+     64
+    ]
+   ],
+   "residual_entropy": 1.5411615656460178
+  }
+ ],
+ "region_study": [
+  {
+   "image": "banana",
+   "size": 8,
+   "tiles": 24,
+   "exact": 12,
+   "records": 300,
+   "residual_zstd9": 517
+  },
+  {
+   "image": "banana",
+   "size": 16,
+   "tiles": 24,
+   "exact": 12,
+   "records": 304,
+   "residual_zstd9": 2023
+  },
+  {
+   "image": "banana",
+   "size": 32,
+   "tiles": 24,
+   "exact": 12,
+   "records": 312,
+   "residual_zstd9": 7882
+  },
+  {
+   "image": "banana",
+   "size": 64,
+   "tiles": 24,
+   "exact": 6,
+   "records": 332,
+   "residual_zstd9": 35983
+  },
+  {
+   "image": "python-logo",
+   "size": 8,
+   "tiles": 24,
+   "exact": 24,
+   "records": 288,
+   "residual_zstd9": 19
+  },
+  {
+   "image": "python-logo",
+   "size": 16,
+   "tiles": 24,
+   "exact": 24,
+   "records": 288,
+   "residual_zstd9": 19
+  },
+  {
+   "image": "python-logo",
+   "size": 32,
+   "tiles": 24,
+   "exact": 0,
+   "records": 288,
+   "residual_zstd9": 840
+  },
+  {
+   "image": "python-logo",
+   "size": 64,
+   "tiles": 24,
+   "exact": 0,
+   "records": 288,
+   "residual_zstd9": 2622
+  },
+  {
+   "image": "exif",
+   "size": 8,
+   "tiles": 24,
+   "exact": 12,
+   "records": 288,
+   "residual_zstd9": 424
+  },
+  {
+   "image": "exif",
+   "size": 16,
+   "tiles": 24,
+   "exact": 0,
+   "records": 300,
+   "residual_zstd9": 1376
+  },
+  {
+   "image": "exif",
+   "size": 32,
+   "tiles": 24,
+   "exact": 0,
+   "records": 288,
+   "residual_zstd9": 5662
+  },
+  {
+   "image": "exif",
+   "size": 64,
+   "tiles": 24,
+   "exact": 0,
+   "records": 288,
+   "residual_zstd9": 25111
+  }
+ ],
+ "elapsed_s": 9.236985700001242
+}

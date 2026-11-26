@@ -60,3 +60,28 @@ general idea of generative compression.
 These are application publications, not peer-reviewed research, benchmarks,
 or a freedom-to-operate opinion. See linked records for inventor metadata
 and legal status.
+
+## Phase 11-15 attribution
+
+- CGMC's context-conditioned generator bank, strict A/B/C control and decoder
+  audit are this project's implementation. Zstandard, Brotli and LZMA2 are
+  matched external baselines, not methods claimed here.
+- AMRD's finite-difference, affine and Berlekamp-Massey constructions adapt
+  standard algebraic methods (Berlekamp 1968; Massey 1969). The order-3
+  difference model, bit-plane/multi-representation scanner and record economics
+  are this project's implementation.
+- Phase 13's native scanner is an implementation of the bounded order-2 affine
+  family used by SXZ3/SXZ4, not a general compressor.
+- Phase 14 adapts 2-adic rational reconstruction and FCSR/2-adic-span theory
+  (Klapper and Goresky 1995, 1999; Lin, Xiao and Chen 2026). The quadratic GF(2)
+  normal-form and nullspace diagnostics are direct implementations of standard
+  linear algebra; no Gr?bner basis was computed. The Gr?bner-basis paper is
+  cited only as related work.
+- Phase 15's coordinate-function idea is conceptually inspired by Hamid Naderi
+  Yeganeh's mathematical function networks. It does **not** reproduce his
+  complete method and implies no collaboration or endorsement. COIN and
+  LosslessINR are related neural-image-representation work; neither was
+  implemented or benchmarked here.
+- PNG, Zstandard, Brotli and XZ/LZMA2 are external specifications/codecs used as
+  matched controls. No claim is made that the strongest tested baseline is the
+  best compressor in the world.

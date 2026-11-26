@@ -32,9 +32,7 @@ One particularly interesting possibility is asymmetric compression: performing c
 
 If successful, such an approach could have applications in cloud storage, data transmission, data centers, software distribution, and AI model distribution.
 
-We also happen to live in a fascinating time. Recent advances in AI-assisted mathematics, including the [Lean community's November 2026 announcement that it had verified a proof of the Riemann Hypothesis](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/), suggest that our ability to explore difficult scientific problems is changing. This external result is not part of SXZ and was not independently audited here.
-
-We can now use AI agents to formulate hypotheses, develop algorithms, run experiments, and analyze results. Combining these capabilities with machine learning, advanced mathematical search methods, and substantial computational resources might open research directions that were previously much harder to investigate.
+We can use AI agents to formulate hypotheses, develop algorithms, run experiments, and analyze results. Combining these capabilities with careful controls, reproducible artifacts and substantial computational resources might open research directions that were previously harder to investigate.
 
 Of course, more computing power alone does not guarantee a solution. Perhaps the answer lies in a better algorithm. Perhaps it requires an entirely different mathematical formulation of the problem.
 
@@ -111,6 +109,18 @@ The project has evolved through multiple experimental phases. Each phase investi
 | 09 — MSMC | Mathematical Sequence Mosaic Compression |
 | 10 — ASMC | Adaptive Stochastic Mosaic Compression |
 
+### Phases 11-15 at a glance
+
+| Phase | Research question | Outcome |
+|---|---|---|
+| 11 CGMC | Can context-conditioned generators replace real spans economically? | Strict controls and audit completed; no real gate pass or independent long-range gain. |
+| 12 AMRD | Can direct algebraic inference find nontrivial laws in real representations? | Synthetic laws recovered exactly; zero nontrivial real spans; bit and cross-plane coverage corrected. |
+| 13 Scaling | Does size help, and what dominates cost? | No proportional scaling; genuine affine coverage at most 0.013% and no span beat zstd-9. |
+| 14 Number Theory | Do 2-adic, coordinate or quadratic relations add structure? | A limited 7zr span-level 2-adic/AP result; coordinate and GF(2) results negative; no archive gain. |
+| 15 Image Math | Can pixel-coordinate functions beat image controls? | Negative; only a 9 B gull-crop win (0.0104%), with standard controls stronger overall. |
+
+These are bounded empirical results, not claims about all possible files or methods. Synthetic successes and ordinary transform/prediction gains are labeled separately from independent mathematical gains.
+
 ## Core Research Directions
 
 SXZ explores several complementary approaches:
@@ -165,7 +175,7 @@ The complete experimental reports document the methodology, controls, archive ov
 
 The experiments conducted so far demonstrate that mathematical descriptions can be extremely effective when data genuinely originates from recoverable mathematical or algorithmic processes.
 
-However, meaningful and reproducible independent compression improvements on general-purpose real-world files have not yet been demonstrated.
+However, meaningful and reproducible independent compression improvements on general-purpose real-world files have not yet been demonstrated through Phase 15. Phase 11 found no real economic gate pass; Phase 12 found no nontrivial real algebraic span; Phase 13 found no scaling or hybrid win; Phase 14 found only a span-level 2-adic/AP result with no archive gain; Phase 15 found only an isolated 9 B image-crop improvement, not a general result.
 
 A particularly important finding is that locating information within a mathematical sequence is not sufficient. The cost of describing its location, generator, parameters, and residual information must also be considered.
 

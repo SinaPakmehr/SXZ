@@ -1,0 +1,2977 @@
+{
+ "phase": 14,
+ "episode": 1,
+ "windows": [
+  128,
+  512
+ ],
+ "extend_bits": 8192,
+ "files": [
+  {
+   "key": "book1",
+   "category": "TXT",
+   "path": "datasets/06-sxz5-datasets/book1",
+   "bytes": 768771,
+   "regions": [
+    {
+     "offset": 0,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit0": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit5": {
+       "simple_bits": 768,
+       "simple_windows": 6,
+       "models": 0
+      },
+      "bit6": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit7": {
+       "simple_bits": 10496,
+       "simple_windows": 52,
+       "models": 0
+      }
+     }
+    },
+    {
+     "offset": 381655,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit0": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit5": {
+       "simple_bits": 256,
+       "simple_windows": 2,
+       "models": 0
+      },
+      "bit6": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit7": {
+       "simple_bits": 10496,
+       "simple_windows": 52,
+       "models": 0
+      }
+     }
+    },
+    {
+     "offset": 763310,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit0": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit5": {
+       "simple_bits": 128,
+       "simple_windows": 1,
+       "models": 0
+      },
+      "bit6": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit7": {
+       "simple_bits": 10496,
+       "simple_windows": 52,
+       "models": 0
+      }
+     }
+    }
+   ],
+   "models": [],
+   "simple_bits": 32640,
+   "rational_bits": 0,
+   "windows": 2526
+  },
+  {
+   "key": "linux-tree.json",
+   "category": "XML",
+   "path": "datasets/06-sxz5-datasets/raw/linux-tree.json",
+   "bytes": 17594055,
+   "regions": [
+    {
+     "offset": 0,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit0": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit5": {
+       "simple_bits": 4352,
+       "simple_windows": 28,
+       "models": 0
+      },
+      "bit6": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit7": {
+       "simple_bits": 10496,
+       "simple_windows": 52,
+       "models": 0
+      }
+     }
+    },
+    {
+     "offset": 8794297,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit0": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit5": {
+       "simple_bits": 9728,
+       "simple_windows": 49,
+       "models": 0
+      },
+      "bit6": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit7": {
+       "simple_bits": 10496,
+       "simple_windows": 52,
+       "models": 0
+      }
+     }
+    },
+    {
+     "offset": 17588594,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit0": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit5": {
+       "simple_bits": 4352,
+       "simple_windows": 28,
+       "models": 0
+      },
+      "bit6": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit7": {
+       "simple_bits": 10496,
+       "simple_windows": 52,
+       "models": 0
+      }
+     }
+    }
+   ],
+   "models": [],
+   "simple_bits": 49920,
+   "rational_bits": 0,
+   "windows": 2526
+  },
+  {
+   "key": "7zr.exe",
+   "category": "EXE",
+   "path": "datasets/03-audit-assets/7zr.exe",
+   "bytes": 602624,
+   "regions": [
+    {
+     "offset": 0,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 4864,
+       "simple_windows": 26,
+       "models": 0
+      },
+      "bit0": {
+       "simple_bits": 256,
+       "simple_windows": 2,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 256,
+       "simple_windows": 2,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 256,
+       "simple_windows": 2,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 256,
+       "simple_windows": 2,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 256,
+       "simple_windows": 2,
+       "models": 0
+      },
+      "bit5": {
+       "simple_bits": 256,
+       "simple_windows": 2,
+       "models": 0
+      },
+      "bit6": {
+       "simple_bits": 256,
+       "simple_windows": 2,
+       "models": 0
+      },
+      "bit7": {
+       "simple_bits": 256,
+       "simple_windows": 2,
+       "models": 0
+      }
+     }
+    },
+    {
+     "offset": 298581,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit0": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit5": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit6": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit7": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      }
+     }
+    },
+    {
+     "offset": 597163,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 45440,
+       "simple_windows": 223,
+       "models": 12
+      },
+      "bit0": {
+       "simple_bits": 4736,
+       "simple_windows": 25,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 5376,
+       "simple_windows": 27,
+       "models": 1
+      },
+      "bit2": {
+       "simple_bits": 4864,
+       "simple_windows": 26,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 4736,
+       "simple_windows": 25,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 4736,
+       "simple_windows": 25,
+       "models": 0
+      },
+      "bit5": {
+       "simple_bits": 4736,
+       "simple_windows": 25,
+       "models": 0
+      },
+      "bit6": {
+       "simple_bits": 4736,
+       "simple_windows": 25,
+       "models": 0
+      },
+      "bit7": {
+       "simple_bits": 4864,
+       "simple_windows": 26,
+       "models": 0
+      }
+     }
+    }
+   ],
+   "models": [
+    {
+     "rep": "packed",
+     "region": 2,
+     "offset": 597163,
+     "start": 17024,
+     "span": 538,
+     "p": -3157277647,
+     "q": 4294836225,
+     "p_bits": 32,
+     "q_bits": 32,
+     "record_bytes": 20,
+     "raw_bytes": 68,
+     "zstd9": 77,
+     "zstd19": 77,
+     "bm_bits": 67,
+     "bm_record": 25,
+     "simple_pre": 511,
+     "simple_period": 16,
+     "simple_record": 74,
+     "nontrivial": true,
+     "const_size": null,
+     "period_size": 74,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "packed",
+     "region": 2,
+     "offset": 597163,
+     "start": 19840,
+     "span": 522,
+     "p": -540007376,
+     "q": 4294836225,
+     "p_bits": 30,
+     "q_bits": 32,
+     "record_bytes": 20,
+     "raw_bytes": 66,
+     "zstd9": 64,
+     "zstd19": 64,
+     "bm_bits": 66,
+     "bm_record": 25,
+     "simple_pre": 494,
+     "simple_period": 16,
+     "simple_record": 72,
+     "nontrivial": true,
+     "const_size": null,
+     "period_size": 72,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "packed",
+     "region": 2,
+     "offset": 597163,
+     "start": 640,
+     "span": 490,
+     "p": -3962899402,
+     "q": 4294836225,
+     "p_bits": 32,
+     "q_bits": 32,
+     "record_bytes": 19,
+     "raw_bytes": 62,
+     "zstd9": 71,
+     "zstd19": 68,
+     "bm_bits": 65,
+     "bm_record": 25,
+     "simple_pre": 460,
+     "simple_period": 16,
+     "simple_record": 67,
+     "nontrivial": true,
+     "const_size": null,
+     "period_size": 67,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "packed",
+     "region": 2,
+     "offset": 597163,
+     "start": 0,
+     "span": 459,
+     "p": -2620677067,
+     "q": 4294836225,
+     "p_bits": 32,
+     "q_bits": 32,
+     "record_bytes": 18,
+     "raw_bytes": 58,
+     "zstd9": 67,
+     "zstd19": 67,
+     "bm_bits": 65,
+     "bm_record": 25,
+     "simple_pre": 428,
+     "simple_period": 16,
+     "simple_record": 62,
+     "nontrivial": true,
+     "const_size": null,
+     "period_size": 62,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "packed",
+     "region": 2,
+     "offset": 597163,
+     "start": 12288,
+     "span": 426,
+     "p": -1278258127,
+     "q": 4294836225,
+     "p_bits": 31,
+     "q_bits": 32,
+     "record_bytes": 19,
+     "raw_bytes": 54,
+     "zstd9": 63,
+     "zstd19": 63,
+     "bm_bits": 65,
+     "bm_record": 25,
+     "simple_pre": 396,
+     "simple_period": 16,
+     "simple_record": 59,
+     "nontrivial": true,
+     "const_size": null,
+     "period_size": 59,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "packed",
+     "region": 2,
+     "offset": 597163,
+     "start": 5504,
+     "span": 394,
+     "p": -2352442312,
+     "q": 4294836225,
+     "p_bits": 32,
+     "q_bits": 32,
+     "record_bytes": 19,
+     "raw_bytes": 50,
+     "zstd9": 59,
+     "zstd19": 59,
+     "bm_bits": 65,
+     "bm_record": 25,
+     "simple_pre": 364,
+     "simple_period": 16,
+     "simple_record": 55,
+     "nontrivial": true,
+     "const_size": null,
+     "period_size": 55,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "packed",
+     "region": 2,
+     "offset": 597163,
+     "start": 1408,
+     "span": 346,
+     "p": -4231461832,
+     "q": 4294836225,
+     "p_bits": 32,
+     "q_bits": 32,
+     "record_bytes": 19,
+     "raw_bytes": 44,
+     "zstd9": 53,
+     "zstd19": 53,
+     "bm_bits": 66,
+     "bm_record": 25,
+     "simple_pre": 318,
+     "simple_period": 16,
+     "simple_record": 49,
+     "nontrivial": true,
+     "const_size": null,
+     "period_size": 49,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "packed",
+     "region": 2,
+     "offset": 597163,
+     "start": 7424,
+     "span": 299,
+     "p": -2889698242,
+     "q": 4294836225,
+     "p_bits": 32,
+     "q_bits": 32,
+     "record_bytes": 19,
+     "raw_bytes": 38,
+     "zstd9": 47,
+     "zstd19": 47,
+     "bm_bits": 65,
+     "bm_record": 25,
+     "simple_pre": 268,
+     "simple_period": 16,
+     "simple_record": 43,
+     "nontrivial": true,
+     "const_size": null,
+     "period_size": 43,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "packed",
+     "region": 2,
+     "offset": 597163,
+     "start": 6912,
+     "span": 186,
+     "p": -3157998532,
+     "q": 4294836225,
+     "p_bits": 32,
+     "q_bits": 32,
+     "record_bytes": 19,
+     "raw_bytes": 24,
+     "zstd9": 33,
+     "zstd19": 33,
+     "bm_bits": 65,
+     "bm_record": 25,
+     "simple_pre": 157,
+     "simple_period": 16,
+     "simple_record": 29,
+     "nontrivial": true,
+     "const_size": null,
+     "period_size": 29,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "packed",
+     "region": 2,
+     "offset": 597163,
+     "start": 18176,
+     "span": 170,
+     "p": -70579147,
+     "q": 4294836225,
+     "p_bits": 27,
+     "q_bits": 32,
+     "record_bytes": 19,
+     "raw_bytes": 22,
+     "zstd9": 31,
+     "zstd19": 31,
+     "bm_bits": 65,
+     "bm_record": 25,
+     "simple_pre": 141,
+     "simple_period": 16,
+     "simple_record": 28,
+     "nontrivial": true,
+     "const_size": null,
+     "period_size": 28,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "packed",
+     "region": 2,
+     "offset": 597163,
+     "start": 15104,
+     "span": 154,
+     "p": -3292083142,
+     "q": 4294836225,
+     "p_bits": 32,
+     "q_bits": 32,
+     "record_bytes": 19,
+     "raw_bytes": 20,
+     "zstd9": 29,
+     "zstd19": 29,
+     "bm_bits": 65,
+     "bm_record": 25,
+     "simple_pre": 124,
+     "simple_period": 16,
+     "simple_record": 25,
+     "nontrivial": true,
+     "const_size": null,
+     "period_size": 25,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "packed",
+     "region": 2,
+     "offset": 597163,
+     "start": 13184,
+     "span": 138,
+     "p": -3560055757,
+     "q": 4294836225,
+     "p_bits": 32,
+     "q_bits": 32,
+     "record_bytes": 19,
+     "raw_bytes": 18,
+     "zstd9": 27,
+     "zstd19": 27,
+     "bm_bits": 66,
+     "bm_record": 25,
+     "simple_pre": 109,
+     "simple_period": 16,
+     "simple_record": 23,
+     "nontrivial": true,
+     "const_size": null,
+     "period_size": 23,
+     "D": false,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "bit1",
+     "region": 2,
+     "offset": 597163,
+     "start": 0,
+     "span": 144,
+     "p": -67108864,
+     "q": 3,
+     "p_bits": 27,
+     "q_bits": 2,
+     "record_bytes": 13,
+     "raw_bytes": 18,
+     "zstd9": 20,
+     "zstd19": 21,
+     "bm_bits": 27,
+     "bm_record": 15,
+     "simple_pre": 25,
+     "simple_period": 2,
+     "simple_record": 10,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 10,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    }
+   ],
+   "simple_bits": 91136,
+   "rational_bits": 4122,
+   "windows": 2526
+  },
+  {
+   "key": "irs1040.pdf",
+   "category": "PDF",
+   "path": "datasets/06-sxz5-datasets/raw/irs1040.pdf",
+   "bytes": 220237,
+   "regions": [
+    {
+     "offset": 0,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 384,
+       "simple_windows": 3,
+       "models": 0
+      },
+      "bit0": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit5": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit6": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit7": {
+       "simple_bits": 768,
+       "simple_windows": 6,
+       "models": 0
+      }
+     }
+    },
+    {
+     "offset": 107388,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit0": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit5": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit6": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit7": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      }
+     }
+    },
+    {
+     "offset": 214776,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 24576,
+       "simple_windows": 120,
+       "models": 0
+      },
+      "bit0": {
+       "simple_bits": 2432,
+       "simple_windows": 13,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 2432,
+       "simple_windows": 13,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 2432,
+       "simple_windows": 13,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 2432,
+       "simple_windows": 13,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 2432,
+       "simple_windows": 13,
+       "models": 0
+      },
+      "bit5": {
+       "simple_bits": 8448,
+       "simple_windows": 42,
+       "models": 0
+      },
+      "bit6": {
+       "simple_bits": 2432,
+       "simple_windows": 13,
+       "models": 0
+      },
+      "bit7": {
+       "simple_bits": 9600,
+       "simple_windows": 48,
+       "models": 0
+      }
+     }
+    }
+   ],
+   "models": [],
+   "simple_bits": 58368,
+   "rational_bits": 0,
+   "windows": 2526
+  },
+  {
+   "key": "hopper.bmp",
+   "category": "BMP",
+   "path": "lab/09-msmc/hopper.bmp",
+   "bytes": 49290,
+   "regions": [
+    {
+     "offset": 0,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 1
+      },
+      "bit0": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit5": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit6": {
+       "simple_bits": 768,
+       "simple_windows": 6,
+       "models": 0
+      },
+      "bit7": {
+       "simple_bits": 1024,
+       "simple_windows": 8,
+       "models": 0
+      }
+     }
+    },
+    {
+     "offset": 21914,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 128,
+       "simple_windows": 1,
+       "models": 2
+      },
+      "bit0": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit5": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit6": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit7": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      }
+     }
+    },
+    {
+     "offset": 43829,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 256,
+       "simple_windows": 2,
+       "models": 0
+      },
+      "bit0": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit5": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit6": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit7": {
+       "simple_bits": 128,
+       "simple_windows": 1,
+       "models": 3
+      }
+     }
+    }
+   ],
+   "models": [
+    {
+     "rep": "packed",
+     "region": 0,
+     "offset": 0,
+     "start": 4736,
+     "span": 136,
+     "p": 615813118,
+     "q": 2396745,
+     "p_bits": 30,
+     "q_bits": 22,
+     "record_bytes": 18,
+     "raw_bytes": 17,
+     "zstd9": 20,
+     "zstd19": 21,
+     "bm_bits": 36,
+     "bm_record": 17,
+     "simple_pre": 13,
+     "simple_period": 24,
+     "simple_record": 12,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 12,
+     "D": false,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "packed",
+     "region": 1,
+     "offset": 21914,
+     "start": 40320,
+     "span": 152,
+     "p": 7485589,
+     "q": 16777215,
+     "p_bits": 23,
+     "q_bits": 24,
+     "record_bytes": 18,
+     "raw_bytes": 19,
+     "zstd9": 19,
+     "zstd19": 20,
+     "bm_bits": 25,
+     "bm_record": 15,
+     "simple_pre": 1,
+     "simple_period": 24,
+     "simple_record": 12,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 12,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "packed",
+     "region": 1,
+     "offset": 21914,
+     "start": 37248,
+     "span": 128,
+     "p": 7485589,
+     "q": 16777215,
+     "p_bits": 23,
+     "q_bits": 24,
+     "record_bytes": 18,
+     "raw_bytes": 16,
+     "zstd9": 19,
+     "zstd19": 20,
+     "bm_bits": 25,
+     "bm_record": 15,
+     "simple_pre": 1,
+     "simple_period": 24,
+     "simple_record": 12,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 12,
+     "D": false,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit7",
+     "region": 2,
+     "offset": 43829,
+     "start": 4864,
+     "span": 213,
+     "p": -32257,
+     "q": 7,
+     "p_bits": 15,
+     "q_bits": 3,
+     "record_bytes": 13,
+     "raw_bytes": 27,
+     "zstd9": 21,
+     "zstd19": 21,
+     "bm_bits": 16,
+     "bm_record": 12,
+     "simple_pre": 13,
+     "simple_period": 3,
+     "simple_record": 9,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 9,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit7",
+     "region": 2,
+     "offset": 43829,
+     "start": 4096,
+     "span": 213,
+     "p": -8589801984,
+     "q": 7,
+     "p_bits": 33,
+     "q_bits": 3,
+     "record_bytes": 15,
+     "raw_bytes": 27,
+     "zstd9": 23,
+     "zstd19": 23,
+     "bm_bits": 34,
+     "bm_record": 17,
+     "simple_pre": 31,
+     "simple_period": 3,
+     "simple_record": 12,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 12,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "bit7",
+     "region": 2,
+     "offset": 43829,
+     "start": 4480,
+     "span": 213,
+     "p": -1073741824,
+     "q": 7,
+     "p_bits": 31,
+     "q_bits": 3,
+     "record_bytes": 15,
+     "raw_bytes": 27,
+     "zstd9": 23,
+     "zstd19": 23,
+     "bm_bits": 31,
+     "bm_record": 16,
+     "simple_pre": 28,
+     "simple_period": 3,
+     "simple_record": 11,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 11,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    }
+   ],
+   "simple_bits": 2304,
+   "rational_bits": 0,
+   "windows": 2526
+  },
+  {
+   "key": "ecg-holdout.bin",
+   "category": "ECG",
+   "path": "datasets/05-sxz4-corpus/ecg-holdout.bin",
+   "bytes": 262144,
+   "regions": [
+    {
+     "offset": 0,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit0": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit5": {
+       "simple_bits": 384,
+       "simple_windows": 3,
+       "models": 5
+      },
+      "bit6": {
+       "simple_bits": 1280,
+       "simple_windows": 10,
+       "models": 9
+      },
+      "bit7": {
+       "simple_bits": 5120,
+       "simple_windows": 34,
+       "models": 5
+      }
+     }
+    },
+    {
+     "offset": 128341,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit0": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 3
+      },
+      "bit5": {
+       "simple_bits": 896,
+       "simple_windows": 7,
+       "models": 2
+      },
+      "bit6": {
+       "simple_bits": 2688,
+       "simple_windows": 21,
+       "models": 4
+      },
+      "bit7": {
+       "simple_bits": 5888,
+       "simple_windows": 37,
+       "models": 2
+      }
+     }
+    },
+    {
+     "offset": 256683,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit0": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 4
+      },
+      "bit5": {
+       "simple_bits": 512,
+       "simple_windows": 4,
+       "models": 3
+      },
+      "bit6": {
+       "simple_bits": 768,
+       "simple_windows": 6,
+       "models": 4
+      },
+      "bit7": {
+       "simple_bits": 6400,
+       "simple_windows": 38,
+       "models": 3
+      }
+     }
+    }
+   ],
+   "models": [
+    {
+     "rep": "bit5",
+     "region": 0,
+     "offset": 0,
+     "start": 3584,
+     "span": 282,
+     "p": -276766251,
+     "q": 7,
+     "p_bits": 29,
+     "q_bits": 3,
+     "record_bytes": 15,
+     "raw_bytes": 36,
+     "zstd9": 23,
+     "zstd19": 23,
+     "bm_bits": 28,
+     "bm_record": 15,
+     "simple_pre": 26,
+     "simple_period": 3,
+     "simple_record": 11,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 11,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit5",
+     "region": 0,
+     "offset": 0,
+     "start": 1920,
+     "span": 254,
+     "p": -123746584,
+     "q": 7,
+     "p_bits": 27,
+     "q_bits": 3,
+     "record_bytes": 14,
+     "raw_bytes": 32,
+     "zstd9": 23,
+     "zstd19": 23,
+     "bm_bits": 27,
+     "bm_record": 15,
+     "simple_pre": 25,
+     "simple_period": 3,
+     "simple_record": 11,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 11,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "bit5",
+     "region": 0,
+     "offset": 0,
+     "start": 2560,
+     "span": 238,
+     "p": -1033506,
+     "q": 7,
+     "p_bits": 20,
+     "q_bits": 3,
+     "record_bytes": 13,
+     "raw_bytes": 30,
+     "zstd9": 22,
+     "zstd19": 22,
+     "bm_bits": 20,
+     "bm_record": 13,
+     "simple_pre": 18,
+     "simple_period": 3,
+     "simple_record": 10,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 10,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit5",
+     "region": 0,
+     "offset": 0,
+     "start": 1408,
+     "span": 155,
+     "p": 1819,
+     "q": 7,
+     "p_bits": 11,
+     "q_bits": 3,
+     "record_bytes": 12,
+     "raw_bytes": 20,
+     "zstd9": 21,
+     "zstd19": 21,
+     "bm_bits": 12,
+     "bm_record": 11,
+     "simple_pre": 9,
+     "simple_period": 3,
+     "simple_record": 9,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 9,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit5",
+     "region": 0,
+     "offset": 0,
+     "start": 4224,
+     "span": 128,
+     "p": -50204867,
+     "q": 7,
+     "p_bits": 26,
+     "q_bits": 3,
+     "record_bytes": 14,
+     "raw_bytes": 16,
+     "zstd9": 21,
+     "zstd19": 22,
+     "bm_bits": 26,
+     "bm_record": 15,
+     "simple_pre": 24,
+     "simple_period": 3,
+     "simple_record": 11,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 11,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "bit6",
+     "region": 0,
+     "offset": 0,
+     "start": 384,
+     "span": 564,
+     "p": -262148,
+     "q": 7,
+     "p_bits": 19,
+     "q_bits": 3,
+     "record_bytes": 13,
+     "raw_bytes": 71,
+     "zstd9": 21,
+     "zstd19": 21,
+     "bm_bits": 18,
+     "bm_record": 13,
+     "simple_pre": 16,
+     "simple_period": 3,
+     "simple_record": 10,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 10,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit6",
+     "region": 0,
+     "offset": 0,
+     "start": 4480,
+     "span": 386,
+     "p": 476905679,
+     "q": 7,
+     "p_bits": 29,
+     "q_bits": 3,
+     "record_bytes": 15,
+     "raw_bytes": 49,
+     "zstd9": 23,
+     "zstd19": 23,
+     "bm_bits": 30,
+     "bm_record": 16,
+     "simple_pre": 27,
+     "simple_period": 3,
+     "simple_record": 11,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 11,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "bit6",
+     "region": 0,
+     "offset": 0,
+     "start": 3584,
+     "span": 282,
+     "p": 2111505794,
+     "q": 7,
+     "p_bits": 31,
+     "q_bits": 3,
+     "record_bytes": 15,
+     "raw_bytes": 36,
+     "zstd9": 23,
+     "zstd19": 23,
+     "bm_bits": 32,
+     "bm_record": 16,
+     "simple_pre": 29,
+     "simple_period": 3,
+     "simple_record": 11,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 11,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "bit6",
+     "region": 0,
+     "offset": 0,
+     "start": 1920,
+     "span": 254,
+     "p": -8359243,
+     "q": 7,
+     "p_bits": 23,
+     "q_bits": 3,
+     "record_bytes": 14,
+     "raw_bytes": 32,
+     "zstd9": 22,
+     "zstd19": 22,
+     "bm_bits": 24,
+     "bm_record": 14,
+     "simple_pre": 21,
+     "simple_period": 3,
+     "simple_record": 10,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 10,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit6",
+     "region": 0,
+     "offset": 0,
+     "start": 2560,
+     "span": 238,
+     "p": 933483,
+     "q": 7,
+     "p_bits": 20,
+     "q_bits": 3,
+     "record_bytes": 13,
+     "raw_bytes": 30,
+     "zstd9": 22,
+     "zstd19": 22,
+     "bm_bits": 21,
+     "bm_record": 14,
+     "simple_pre": 18,
+     "simple_period": 3,
+     "simple_record": 10,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 10,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "bit6",
+     "region": 0,
+     "offset": 0,
+     "start": 1408,
+     "span": 155,
+     "p": -1826,
+     "q": 7,
+     "p_bits": 11,
+     "q_bits": 3,
+     "record_bytes": 12,
+     "raw_bytes": 20,
+     "zstd9": 21,
+     "zstd19": 21,
+     "bm_bits": 11,
+     "bm_record": 11,
+     "simple_pre": 9,
+     "simple_period": 3,
+     "simple_record": 9,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 9,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit6",
+     "region": 0,
+     "offset": 0,
+     "start": 5248,
+     "span": 138,
+     "p": 131066,
+     "q": 7,
+     "p_bits": 17,
+     "q_bits": 3,
+     "record_bytes": 13,
+     "raw_bytes": 18,
+     "zstd9": 21,
+     "zstd19": 21,
+     "bm_bits": 18,
+     "bm_record": 13,
+     "simple_pre": 15,
+     "simple_period": 3,
+     "simple_record": 10,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 10,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit6",
+     "region": 0,
+     "offset": 0,
+     "start": 1664,
+     "span": 136,
+     "p": -29368321,
+     "q": 7,
+     "p_bits": 25,
+     "q_bits": 3,
+     "record_bytes": 14,
+     "raw_bytes": 17,
+     "zstd9": 21,
+     "zstd19": 22,
+     "bm_bits": 25,
+     "bm_record": 15,
+     "simple_pre": 23,
+     "simple_period": 3,
+     "simple_record": 11,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 11,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "bit6",
+     "region": 0,
+     "offset": 0,
+     "start": 4224,
+     "span": 129,
+     "p": -16773188,
+     "q": 7,
+     "p_bits": 24,
+     "q_bits": 3,
+     "record_bytes": 14,
+     "raw_bytes": 17,
+     "zstd9": 22,
+     "zstd19": 22,
+     "bm_bits": 24,
+     "bm_record": 14,
+     "simple_pre": 22,
+     "simple_period": 3,
+     "simple_record": 11,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 11,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit7",
+     "region": 0,
+     "offset": 0,
+     "start": 0,
+     "span": 1049,
+     "p": -40242983773234732959384408686597,
+     "q": 7,
+     "p_bits": 105,
+     "q_bits": 3,
+     "record_bytes": 25,
+     "raw_bytes": 132,
+     "zstd9": 29,
+     "zstd19": 33,
+     "bm_bits": 67,
+     "bm_record": 25,
+     "simple_pre": 103,
+     "simple_period": 3,
+     "simple_record": 20,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 20,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit7",
+     "region": 0,
+     "offset": 0,
+     "start": 2560,
+     "span": 1018,
+     "p": -130038,
+     "q": 7,
+     "p_bits": 17,
+     "q_bits": 3,
+     "record_bytes": 13,
+     "raw_bytes": 128,
+     "zstd9": 22,
+     "zstd19": 22,
+     "bm_bits": 17,
+     "bm_record": 13,
+     "simple_pre": 15,
+     "simple_period": 3,
+     "simple_record": 10,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 10,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit7",
+     "region": 0,
+     "offset": 0,
+     "start": 4480,
+     "span": 907,
+     "p": -66584832,
+     "q": 7,
+     "p_bits": 26,
+     "q_bits": 3,
+     "record_bytes": 14,
+     "raw_bytes": 114,
+     "zstd9": 23,
+     "zstd19": 23,
+     "bm_bits": 26,
+     "bm_record": 15,
+     "simple_pre": 24,
+     "simple_period": 3,
+     "simple_record": 11,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 11,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "bit7",
+     "region": 0,
+     "offset": 0,
+     "start": 3584,
+     "span": 888,
+     "p": -251397618,
+     "q": 7,
+     "p_bits": 28,
+     "q_bits": 3,
+     "record_bytes": 15,
+     "raw_bytes": 111,
+     "zstd9": 23,
+     "zstd19": 24,
+     "bm_bits": 28,
+     "bm_record": 15,
+     "simple_pre": 26,
+     "simple_period": 3,
+     "simple_record": 11,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 11,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit7",
+     "region": 0,
+     "offset": 0,
+     "start": 1920,
+     "span": 620,
+     "p": -4065,
+     "q": 7,
+     "p_bits": 12,
+     "q_bits": 3,
+     "record_bytes": 12,
+     "raw_bytes": 78,
+     "zstd9": 21,
+     "zstd19": 21,
+     "bm_bits": 12,
+     "bm_record": 11,
+     "simple_pre": 10,
+     "simple_period": 3,
+     "simple_record": 9,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 9,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit4",
+     "region": 1,
+     "offset": 128341,
+     "start": 2816,
+     "span": 182,
+     "p": 50,
+     "q": 7,
+     "p_bits": 6,
+     "q_bits": 3,
+     "record_bytes": 11,
+     "raw_bytes": 23,
+     "zstd9": 20,
+     "zstd19": 20,
+     "bm_bits": 6,
+     "bm_record": 10,
+     "simple_pre": 4,
+     "simple_period": 3,
+     "simple_record": 8,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 8,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit4",
+     "region": 1,
+     "offset": 128341,
+     "start": 1536,
+     "span": 136,
+     "p": -2054240548,
+     "q": 7,
+     "p_bits": 31,
+     "q_bits": 3,
+     "record_bytes": 15,
+     "raw_bytes": 17,
+     "zstd9": 22,
+     "zstd19": 23,
+     "bm_bits": 31,
+     "bm_record": 16,
+     "simple_pre": 29,
+     "simple_period": 3,
+     "simple_record": 11,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 11,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "bit4",
+     "region": 1,
+     "offset": 128341,
+     "start": 128,
+     "span": 129,
+     "p": 4227874557,
+     "q": 7,
+     "p_bits": 32,
+     "q_bits": 3,
+     "record_bytes": 15,
+     "raw_bytes": 17,
+     "zstd9": 23,
+     "zstd19": 23,
+     "bm_bits": 32,
+     "bm_record": 16,
+     "simple_pre": 30,
+     "simple_period": 3,
+     "simple_record": 12,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 12,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "bit5",
+     "region": 1,
+     "offset": 128341,
+     "start": 2688,
+     "span": 310,
+     "p": 67108985,
+     "q": 7,
+     "p_bits": 27,
+     "q_bits": 3,
+     "record_bytes": 14,
+     "raw_bytes": 39,
+     "zstd9": 21,
+     "zstd19": 22,
+     "bm_bits": 27,
+     "bm_record": 15,
+     "simple_pre": 24,
+     "simple_period": 3,
+     "simple_record": 11,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 11,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "bit5",
+     "region": 1,
+     "offset": 128341,
+     "start": 1664,
+     "span": 138,
+     "p": 7341822,
+     "q": 7,
+     "p_bits": 23,
+     "q_bits": 3,
+     "record_bytes": 14,
+     "raw_bytes": 18,
+     "zstd9": 22,
+     "zstd19": 22,
+     "bm_bits": 24,
+     "bm_record": 14,
+     "simple_pre": 21,
+     "simple_period": 3,
+     "simple_record": 10,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 10,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit6",
+     "region": 1,
+     "offset": 128341,
+     "start": 640,
+     "span": 856,
+     "p": -2113988628,
+     "q": 7,
+     "p_bits": 31,
+     "q_bits": 3,
+     "record_bytes": 15,
+     "raw_bytes": 107,
+     "zstd9": 23,
+     "zstd19": 24,
+     "bm_bits": 31,
+     "bm_record": 16,
+     "simple_pre": 29,
+     "simple_period": 3,
+     "simple_record": 11,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 11,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "bit6",
+     "region": 1,
+     "offset": 128341,
+     "start": 0,
+     "span": 605,
+     "p": -9652521703233543945060354,
+     "q": 7,
+     "p_bits": 83,
+     "q_bits": 3,
+     "record_bytes": 21,
+     "raw_bytes": 76,
+     "zstd9": 30,
+     "zstd19": 30,
+     "bm_bits": 65,
+     "bm_record": 25,
+     "simple_pre": 81,
+     "simple_period": 3,
+     "simple_record": 17,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 17,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "bit6",
+     "region": 1,
+     "offset": 128341,
+     "start": 2688,
+     "span": 467,
+     "p": -67108992,
+     "q": 7,
+     "p_bits": 27,
+     "q_bits": 3,
+     "record_bytes": 14,
+     "raw_bytes": 59,
+     "zstd9": 22,
+     "zstd19": 22,
+     "bm_bits": 26,
+     "bm_record": 15,
+     "simple_pre": 24,
+     "simple_period": 3,
+     "simple_record": 11,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 11,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "bit6",
+     "region": 1,
+     "offset": 128341,
+     "start": 1536,
+     "span": 266,
+     "p": -66979639,
+     "q": 7,
+     "p_bits": 26,
+     "q_bits": 3,
+     "record_bytes": 14,
+     "raw_bytes": 34,
+     "zstd9": 22,
+     "zstd19": 22,
+     "bm_bits": 26,
+     "bm_record": 15,
+     "simple_pre": 24,
+     "simple_period": 3,
+     "simple_record": 11,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 11,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "bit7",
+     "region": 1,
+     "offset": 128341,
+     "start": 640,
+     "span": 873,
+     "p": -462339,
+     "q": 7,
+     "p_bits": 19,
+     "q_bits": 3,
+     "record_bytes": 13,
+     "raw_bytes": 110,
+     "zstd9": 23,
+     "zstd19": 23,
+     "bm_bits": 19,
+     "bm_record": 13,
+     "simple_pre": 17,
+     "simple_period": 3,
+     "simple_record": 10,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 10,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit7",
+     "region": 1,
+     "offset": 128341,
+     "start": 1536,
+     "span": 829,
+     "p": -14468,
+     "q": 7,
+     "p_bits": 14,
+     "q_bits": 3,
+     "record_bytes": 13,
+     "raw_bytes": 104,
+     "zstd9": 21,
+     "zstd19": 21,
+     "bm_bits": 14,
+     "bm_record": 12,
+     "simple_pre": 12,
+     "simple_period": 3,
+     "simple_record": 9,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 9,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit4",
+     "region": 2,
+     "offset": 256683,
+     "start": 3072,
+     "span": 212,
+     "p": -520077319,
+     "q": 7,
+     "p_bits": 29,
+     "q_bits": 3,
+     "record_bytes": 15,
+     "raw_bytes": 27,
+     "zstd9": 23,
+     "zstd19": 23,
+     "bm_bits": 29,
+     "bm_record": 16,
+     "simple_pre": 27,
+     "simple_period": 3,
+     "simple_record": 11,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 11,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "bit4",
+     "region": 2,
+     "offset": 256683,
+     "start": 2816,
+     "span": 201,
+     "p": -13,
+     "q": 7,
+     "p_bits": 4,
+     "q_bits": 3,
+     "record_bytes": 11,
+     "raw_bytes": 26,
+     "zstd9": 20,
+     "zstd19": 20,
+     "bm_bits": 4,
+     "bm_record": 9,
+     "simple_pre": 2,
+     "simple_period": 3,
+     "simple_record": 8,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 8,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit4",
+     "region": 2,
+     "offset": 256683,
+     "start": 1920,
+     "span": 182,
+     "p": -4035,
+     "q": 7,
+     "p_bits": 12,
+     "q_bits": 3,
+     "record_bytes": 12,
+     "raw_bytes": 23,
+     "zstd9": 21,
+     "zstd19": 21,
+     "bm_bits": 12,
+     "bm_record": 11,
+     "simple_pre": 10,
+     "simple_period": 3,
+     "simple_record": 9,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 9,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit4",
+     "region": 2,
+     "offset": 256683,
+     "start": 3968,
+     "span": 141,
+     "p": -517,
+     "q": 7,
+     "p_bits": 10,
+     "q_bits": 3,
+     "record_bytes": 12,
+     "raw_bytes": 18,
+     "zstd9": 20,
+     "zstd19": 20,
+     "bm_bits": 10,
+     "bm_record": 11,
+     "simple_pre": 8,
+     "simple_period": 3,
+     "simple_record": 9,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 9,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit5",
+     "region": 2,
+     "offset": 256683,
+     "start": 3072,
+     "span": 231,
+     "p": 16793593,
+     "q": 7,
+     "p_bits": 25,
+     "q_bits": 3,
+     "record_bytes": 14,
+     "raw_bytes": 29,
+     "zstd9": 21,
+     "zstd19": 22,
+     "bm_bits": 25,
+     "bm_record": 15,
+     "simple_pre": 22,
+     "simple_period": 3,
+     "simple_record": 11,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 11,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "bit5",
+     "region": 2,
+     "offset": 256683,
+     "start": 2816,
+     "span": 201,
+     "p": -20,
+     "q": 7,
+     "p_bits": 5,
+     "q_bits": 3,
+     "record_bytes": 11,
+     "raw_bytes": 26,
+     "zstd9": 20,
+     "zstd19": 20,
+     "bm_bits": 4,
+     "bm_record": 9,
+     "simple_pre": 2,
+     "simple_period": 3,
+     "simple_record": 8,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 8,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit5",
+     "region": 2,
+     "offset": 256683,
+     "start": 3968,
+     "span": 141,
+     "p": 505,
+     "q": 7,
+     "p_bits": 9,
+     "q_bits": 3,
+     "record_bytes": 12,
+     "raw_bytes": 18,
+     "zstd9": 20,
+     "zstd19": 20,
+     "bm_bits": 9,
+     "bm_record": 11,
+     "simple_pre": 7,
+     "simple_period": 3,
+     "simple_record": 9,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 9,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit6",
+     "region": 2,
+     "offset": 256683,
+     "start": 3072,
+     "span": 231,
+     "p": -16793600,
+     "q": 7,
+     "p_bits": 25,
+     "q_bits": 3,
+     "record_bytes": 14,
+     "raw_bytes": 29,
+     "zstd9": 22,
+     "zstd19": 22,
+     "bm_bits": 24,
+     "bm_record": 14,
+     "simple_pre": 22,
+     "simple_period": 3,
+     "simple_record": 11,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 11,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit6",
+     "region": 2,
+     "offset": 256683,
+     "start": 2816,
+     "span": 201,
+     "p": 13,
+     "q": 7,
+     "p_bits": 4,
+     "q_bits": 3,
+     "record_bytes": 11,
+     "raw_bytes": 26,
+     "zstd9": 20,
+     "zstd19": 20,
+     "bm_bits": 5,
+     "bm_record": 10,
+     "simple_pre": 2,
+     "simple_period": 3,
+     "simple_record": 8,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 8,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit6",
+     "region": 2,
+     "offset": 256683,
+     "start": 1920,
+     "span": 182,
+     "p": 3,
+     "q": 7,
+     "p_bits": 2,
+     "q_bits": 3,
+     "record_bytes": 11,
+     "raw_bytes": 23,
+     "zstd9": 20,
+     "zstd19": 20,
+     "bm_bits": 4,
+     "bm_record": 9,
+     "simple_pre": 1,
+     "simple_period": 3,
+     "simple_record": 8,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 8,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit6",
+     "region": 2,
+     "offset": 256683,
+     "start": 3968,
+     "span": 141,
+     "p": -512,
+     "q": 7,
+     "p_bits": 10,
+     "q_bits": 3,
+     "record_bytes": 12,
+     "raw_bytes": 18,
+     "zstd9": 20,
+     "zstd19": 20,
+     "bm_bits": 10,
+     "bm_record": 11,
+     "simple_pre": 7,
+     "simple_period": 3,
+     "simple_record": 9,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 9,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    },
+    {
+     "rep": "bit7",
+     "region": 2,
+     "offset": 256683,
+     "start": 0,
+     "span": 963,
+     "p": -78067891231911028355047096325,
+     "q": 7,
+     "p_bits": 96,
+     "q_bits": 3,
+     "record_bytes": 23,
+     "raw_bytes": 121,
+     "zstd9": 32,
+     "zstd19": 32,
+     "bm_bits": 66,
+     "bm_record": 25,
+     "simple_pre": 94,
+     "simple_period": 3,
+     "simple_record": 19,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 19,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "bit7",
+     "region": 2,
+     "offset": 256683,
+     "start": 3584,
+     "span": 885,
+     "p": -34153332687639182569373699,
+     "q": 7,
+     "p_bits": 85,
+     "q_bits": 3,
+     "record_bytes": 23,
+     "raw_bytes": 111,
+     "zstd9": 30,
+     "zstd19": 30,
+     "bm_bits": 68,
+     "bm_record": 25,
+     "simple_pre": 83,
+     "simple_period": 3,
+     "simple_record": 18,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 18,
+     "D": true,
+     "beats_bm": true,
+     "verified": true
+    },
+    {
+     "rep": "bit7",
+     "region": 2,
+     "offset": 256683,
+     "start": 4480,
+     "span": 880,
+     "p": -14468,
+     "q": 7,
+     "p_bits": 14,
+     "q_bits": 3,
+     "record_bytes": 13,
+     "raw_bytes": 110,
+     "zstd9": 21,
+     "zstd19": 22,
+     "bm_bits": 14,
+     "bm_record": 12,
+     "simple_pre": 12,
+     "simple_period": 3,
+     "simple_record": 9,
+     "nontrivial": false,
+     "const_size": null,
+     "period_size": 9,
+     "D": true,
+     "beats_bm": false,
+     "verified": true
+    }
+   ],
+   "simple_bits": 23936,
+   "rational_bits": 0,
+   "windows": 2526
+  },
+  {
+   "key": "transparency.png",
+   "category": "PNG",
+   "path": "datasets/06-sxz5-datasets/raw/transparency.png",
+   "bytes": 224566,
+   "regions": [
+    {
+     "offset": 0,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 384,
+       "simple_windows": 3,
+       "models": 0
+      },
+      "bit0": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit5": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit6": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit7": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      }
+     }
+    },
+    {
+     "offset": 109552,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit0": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit5": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit6": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit7": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      }
+     }
+    },
+    {
+     "offset": 219105,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 2688,
+       "simple_windows": 15,
+       "models": 0
+      },
+      "bit0": {
+       "simple_bits": 128,
+       "simple_windows": 1,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 128,
+       "simple_windows": 1,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 128,
+       "simple_windows": 1,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 128,
+       "simple_windows": 1,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 128,
+       "simple_windows": 1,
+       "models": 0
+      },
+      "bit5": {
+       "simple_bits": 128,
+       "simple_windows": 1,
+       "models": 0
+      },
+      "bit6": {
+       "simple_bits": 128,
+       "simple_windows": 1,
+       "models": 0
+      },
+      "bit7": {
+       "simple_bits": 128,
+       "simple_windows": 1,
+       "models": 0
+      }
+     }
+    }
+   ],
+   "models": [],
+   "simple_bits": 4096,
+   "rational_bits": 0,
+   "windows": 2526
+  },
+  {
+   "key": "docx-images.docx",
+   "category": "DOCX",
+   "path": "datasets/06-sxz5-datasets/raw/docx-images.docx",
+   "bytes": 132875,
+   "regions": [
+    {
+     "offset": 0,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 18560,
+       "simple_windows": 94,
+       "models": 0
+      },
+      "bit0": {
+       "simple_bits": 896,
+       "simple_windows": 7,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 896,
+       "simple_windows": 7,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 896,
+       "simple_windows": 7,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 896,
+       "simple_windows": 7,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 896,
+       "simple_windows": 7,
+       "models": 0
+      },
+      "bit5": {
+       "simple_bits": 896,
+       "simple_windows": 7,
+       "models": 0
+      },
+      "bit6": {
+       "simple_bits": 896,
+       "simple_windows": 7,
+       "models": 0
+      },
+      "bit7": {
+       "simple_bits": 896,
+       "simple_windows": 7,
+       "models": 0
+      }
+     }
+    },
+    {
+     "offset": 63707,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit0": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit5": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit6": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      },
+      "bit7": {
+       "simple_bits": 0,
+       "simple_windows": 0,
+       "models": 0
+      }
+     }
+    },
+    {
+     "offset": 127414,
+     "bytes": 5461,
+     "sequences": {
+      "packed": {
+       "simple_bits": 7168,
+       "simple_windows": 38,
+       "models": 0
+      },
+      "bit0": {
+       "simple_bits": 256,
+       "simple_windows": 2,
+       "models": 0
+      },
+      "bit1": {
+       "simple_bits": 256,
+       "simple_windows": 2,
+       "models": 0
+      },
+      "bit2": {
+       "simple_bits": 256,
+       "simple_windows": 2,
+       "models": 0
+      },
+      "bit3": {
+       "simple_bits": 256,
+       "simple_windows": 2,
+       "models": 0
+      },
+      "bit4": {
+       "simple_bits": 256,
+       "simple_windows": 2,
+       "models": 0
+      },
+      "bit5": {
+       "simple_bits": 256,
+       "simple_windows": 2,
+       "models": 0
+      },
+      "bit6": {
+       "simple_bits": 256,
+       "simple_windows": 2,
+       "models": 0
+      },
+      "bit7": {
+       "simple_bits": 256,
+       "simple_windows": 2,
+       "models": 0
+      }
+     }
+    }
+   ],
+   "models": [],
+   "simple_bits": 34944,
+   "rational_bits": 0,
+   "windows": 2526
+  }
+ ],
+ "total_windows": 20208,
+ "total_matches": 98698,
+ "total_models": 63,
+ "total_verified": 63,
+ "elapsed_s": 16.84693500000867
+}

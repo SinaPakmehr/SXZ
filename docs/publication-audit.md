@@ -16,5 +16,6 @@ Limitations: a scanner cannot prove negative absence. Binary, archive, model
 and downloaded-file formats are excluded from the public tree. The owner should
 repeat the audit after any post-publication edit. The approved public author
 identity is recorded in `AUTHORS.md` and `CITATION.cff`; no source-machine path,
-credential, private email, final DOI or private handover material has been
-included here.
+credential, private email or private handover material has been included here.
+Phase 11-15 additions were scanned for the same patterns; unavailable source
+corpora and image files remain outside the repository.

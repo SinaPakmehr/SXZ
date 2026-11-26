@@ -1,0 +1,117 @@
+{
+ "capabilities": [
+  {
+   "family": "affine1",
+   "existing": "SXZ3 LcgWord (experiments/sxz3/bank.py, mid 11)",
+   "amrd": "affine1",
+   "existing_params": [
+    1,
+    1,
+    0,
+    0,
+    16645,
+    12345,
+    7
+   ],
+   "expected": [
+    16645,
+    12345,
+    7
+   ],
+   "match": true
+  },
+  {
+   "family": "affine2",
+   "existing": "SXZ4 Order2Word (experiments/sxz4/program4.py, mid 16)",
+   "amrd": "affine2",
+   "existing_params": [
+    2,
+    1,
+    0,
+    0,
+    5,
+    11,
+    1234567,
+    1,
+    2
+   ],
+   "expected": [
+    1234567,
+    5,
+    11
+   ],
+   "match": true
+  },
+  {
+   "family": "poly1 (arithmetic)",
+   "existing": "SXZ3 AffineWord (experiments/sxz3/bank.py, mid 8)",
+   "amrd": "poly1",
+   "existing_params": [
+    1,
+    1,
+    0,
+    0,
+    1000,
+    17
+   ],
+   "expected": [
+    1000,
+    17
+   ],
+   "match": true
+  },
+  {
+   "family": "poly2 (quadratic)",
+   "existing": "SXZ3 QuadraticWord (experiments/sxz3/bank.py, mid 9)",
+   "amrd": "poly2",
+   "existing_params": [
+    1,
+    1,
+    0,
+    0,
+    1000,
+    17,
+    5
+   ],
+   "expected": [
+    1000,
+    17,
+    5
+   ],
+   "match": true
+  },
+  {
+   "family": "bm (LFSR)",
+   "existing": "SXZ3 LfsrModel / sinuxz.models.berlekamp_massey (mid 4)",
+   "amrd": "bm",
+   "existing_params": [
+    16,
+    46080,
+    46309
+   ],
+   "expected": [
+    16,
+    46080
+   ],
+   "match": true
+  },
+  {
+   "family": "poly3",
+   "existing": "none (SXZ3 stops at quadratic; SXZ4 adds order2 recurrence, not cubic differences)",
+   "amrd": "poly3",
+   "existing_params": null,
+   "expected": [
+    1000,
+    17,
+    5,
+    3
+   ],
+   "match": null
+  }
+ ],
+ "panel_nontrivial": [],
+ "bm_parity": {
+  "cases": 500,
+  "identical": 500
+ }
+}

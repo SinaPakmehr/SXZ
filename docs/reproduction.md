@@ -35,8 +35,13 @@ Dependencies and fixture coverage differ by phase.
 | 8 | In `lab/sxz-structural-relations`: `python -B study.py control` | Real run needs inputs, Preflate bridge, and optional JPEG XL binary |
 | 9 | In `lab/sxz-mathematical-mosaic`: `python -B measure.py control` | Full test needs complete fixtures and native index |
 | 10 | In `lab/sxz-adaptive-stochastic-mosaic`: `python -B experiment.py control` | Full test needs baseline JSON and complete inputs |
+| 11 | In `lab/sxz-cgmc`: `python -B scripts/test_codec.py`; `python -B scripts/audit_tests.py` | Panel inputs are not redistributed |
+| 12 | In `lab/sxz-amrd`: `python -B -m unittest scripts.test_amrd -v`; `python -B scripts/run_controls.py` | Synthetic controls run locally; real panel inputs absent |
+| 13 | In `lab/sxz-scaling`: `python -B run_phase13.py` | Native scanner build; reviewed corpora absent; B/C are estimates |
+| 14 | In `lab/sxz-2adic`: `python -B scripts/run_phase14.py`; `python -B scripts/run_episode2.py`; `python -B scripts/run_episode3.py` | Reviewed files/offsets absent; no Gr?bner computation |
+| 15 | In `lab/sxz-image-math`: `python -B scripts/run_phase15.py`; `python -B scripts/run_phase15_ep2.py`; `python -B scripts/run_phase15_ep3.py` | Images not redistributed; pixel-level results only |
 
-The three phase-local Rust components can be built with
+The Phase 13 scanner reuses the NEXT native source. The three earlier phase-local Rust components can be built with
 `rustc --edition=2024 --crate-type cdylib -O SOURCE -o OUTPUT`: use `native.rs`
 and stem `sxzscan_next` in NEXT, `index.rs` and stem `msm_index` in MSMC,
 and `native.rs` and stem `asm_native` in ASMC. Use `stem.dll` on Windows,

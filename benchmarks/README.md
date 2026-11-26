@@ -12,6 +12,11 @@ checks and one planted/control experiment, then add a reviewed dataset:
 | structural control | `lab/sxz-structural-relations/study.py control` | none |
 | MSMC control | `lab/sxz-mathematical-mosaic/measure.py control` | native build; optional FLINT |
 | ASMC control | `lab/sxz-adaptive-stochastic-mosaic/experiment.py control` | none |
+| CGMC decoder/security | `lab/sxz-cgmc/scripts/test_codec.py`; `audit_tests.py` | none |
+| AMRD controls | `lab/sxz-amrd/scripts/run_controls.py` | generated synthetic fixtures |
+| Scaling diagnostic | `lab/sxz-scaling/run_phase13.py` | reviewed corpora; native scanner build |
+| 2-adic/coordinate/GF(2) | `lab/sxz-2adic/scripts/run_phase14.py` and episodes | reviewed files/offsets |
+| Mathematical image | `lab/sxz-image-math/scripts/run_phase15*.py` | reviewed images |
 
 Use a disposable copy when a script writes `results/`. Record software versions,
 settings, input hashes and paired baselines. Do not pool complete-file and slice

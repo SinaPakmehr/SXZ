@@ -1,0 +1,72 @@
+{
+ "rows": [
+  {
+   "name": "alice29.txt",
+   "bytes": 152089,
+   "config": "fit8",
+   "archive": 49413,
+   "scan_s": 5.765380299999379,
+   "plan_s": 0.032128800012287684,
+   "build_s": 0.20323009999992792,
+   "encode_total_s": 6.000739200011594,
+   "encode_mb_s": 0.025345044157177525,
+   "cold_decode_s": 0.004306099988752976,
+   "cold_decode_mb_s": 35.31943066748067,
+   "zstd_decode_s": 0.0002746666674890245,
+   "zstd_decode_mb_s": 553.7220857207851,
+   "tokens": 163
+  },
+  {
+   "name": "bert.pdf",
+   "bytes": 775166,
+   "config": "fit8",
+   "archive": 543213,
+   "scan_s": 127.82901470000797,
+   "plan_s": 0.15867010000511073,
+   "build_s": 0.29704090001177974,
+   "encode_total_s": 128.28472570002486,
+   "encode_mb_s": 0.00604254322383331,
+   "cold_decode_s": 0.015724200013210066,
+   "cold_decode_mb_s": 49.297643081923084,
+   "zstd_decode_s": 0.0005621666690179458,
+   "zstd_decode_mb_s": 1378.8900031269104,
+   "tokens": 318
+  },
+  {
+   "name": "banana.jpg",
+   "bytes": 2085213,
+   "config": "fit8",
+   "archive": 1652261,
+   "scan_s": 223.9614949000097,
+   "plan_s": 1.34614569999394,
+   "build_s": 2.227767699994729,
+   "encode_total_s": 227.53540829999838,
+   "encode_mb_s": 0.009164345081846388,
+   "cold_decode_s": 0.012839400005759671,
+   "cold_decode_mb_s": 162.40735541104624,
+   "zstd_decode_s": 0.0019029333294990163,
+   "zstd_decode_mb_s": 1095.7887844389022,
+   "tokens": 62
+  }
+ ],
+ "warm": {
+  "name": "alice29.txt",
+  "scan_plan_encode_s": 27.066895899988594,
+  "traced_encode_peak_mb": 27.812888,
+  "warm_decode_s": 0.007733539998298511,
+  "warm_decode_mb_s": 19.66615547775815,
+  "verified": true
+ },
+ "decoder": {
+  "code_bytes": 54702,
+  "constant_table_bytes": 16440,
+  "decoder_required": [
+   "cgmc/context.py",
+   "cgmc/streams.py",
+   "cgmc/codec.py",
+   "cgmc/address.py",
+   "data/constants.json"
+  ],
+  "note": "pure-Python research decoder; no native build; timings include zstd frame decode"
+ }
+}

@@ -1,0 +1,527 @@
+{
+ "totals": {
+  "files": 25,
+  "bytes": 18411123,
+  "dev_bytes": 3615735,
+  "heldout_bytes": 11387516,
+  "secondary_bytes": 3407872,
+  "positions": 2301382,
+  "math_probes": 73644224,
+  "probes_formula_ok": true
+ },
+ "math": {
+  "hits8": 0,
+  "max_match_all_streams": 4,
+  "sampled_exact_counts": {
+   "1": 5595,
+   "2": 48,
+   "3": 0,
+   "4": 0,
+   "5": 0,
+   "6": 0,
+   "7": 0,
+   "8": 0
+  },
+  "sampled_positions_per_file": 1500,
+  "sampled_one_byte_hits": 5595,
+  "sampled_one_byte_total": 1196576,
+  "sampled_one_byte_rate": 0.0046758417350841065,
+  "global_candidate_byte_entropy": 7.624442428887834,
+  "uniform_expected_hits8": 3.992261382590456e-12,
+  "actual_order0_expected_hits8": 5.49239404996622e-10,
+  "per_file": [
+   {
+    "name": "alice29.txt",
+    "positions": 19011,
+    "sampled": 1500,
+    "one_byte_rate": 0.005125,
+    "m_order0": 0.006240151274500457,
+    "expected8_actual_order0": 1.3986720114913402e-12,
+    "observed_max8": 2
+   },
+   {
+    "name": "audio-slice.wav",
+    "positions": 131077,
+    "sampled": 1500,
+    "one_byte_rate": 0.0035208333333333333,
+    "m_order0": 0.003409530472192024,
+    "expected8_actual_order0": 7.660076047917744e-14,
+    "observed_max8": 2
+   },
+   {
+    "name": "bbc.rss.xml",
+    "positions": 3532,
+    "sampled": 1500,
+    "one_byte_rate": 0.0070625,
+    "m_order0": 0.006971682682383817,
+    "expected8_actual_order0": 6.307707822349886e-13,
+    "observed_max8": 2
+   },
+   {
+    "name": "cp.html",
+    "positions": 3075,
+    "sampled": 1500,
+    "one_byte_rate": 0.006333333333333333,
+    "m_order0": 0.006134742206235012,
+    "expected8_actual_order0": 1.9740840467062502e-13,
+    "observed_max8": 2
+   },
+   {
+    "name": "docx-images.docx",
+    "positions": 16609,
+    "sampled": 1500,
+    "one_byte_rate": 0.003625,
+    "m_order0": 0.003836197946064597,
+    "expected8_actual_order0": 2.4928809062230082e-14,
+    "observed_max8": 2
+   },
+   {
+    "name": "fields.c",
+    "positions": 1393,
+    "sampled": 1393,
+    "one_byte_rate": 0.0060570710696338835,
+    "m_order0": 0.005934770495253333,
+    "expected8_actual_order0": 6.860132850048561e-14,
+    "observed_max8": 2
+   },
+   {
+    "name": "pptx-fill.pptx",
+    "positions": 97260,
+    "sampled": 1500,
+    "one_byte_rate": 0.0039791666666666664,
+    "m_order0": 0.003955437153288291,
+    "expected8_actual_order0": 1.8648338844959298e-13,
+    "observed_max8": 1
+   },
+   {
+    "name": "transparency.bmp",
+    "positions": 180006,
+    "sampled": 1500,
+    "one_byte_rate": 0.004270833333333333,
+    "m_order0": 0.00416766358204565,
+    "expected8_actual_order0": 5.242979985564659e-13,
+    "observed_max8": 2
+   },
+   {
+    "name": "audio-slice.flac",
+    "positions": 54666,
+    "sampled": 1500,
+    "one_byte_rate": 0.004333333333333333,
+    "m_order0": 0.0039143644163152904,
+    "expected8_actual_order0": 9.641782129648214e-14,
+    "observed_max8": 1
+   },
+   {
+    "name": "banana.jpg",
+    "positions": 260651,
+    "sampled": 1500,
+    "one_byte_rate": 0.0035416666666666665,
+    "m_order0": 0.003545985172837659,
+    "expected8_actual_order0": 2.0849934562317536e-13,
+    "observed_max8": 1
+   },
+   {
+    "name": "bert.pdf",
+    "positions": 96895,
+    "sampled": 1500,
+    "one_byte_rate": 0.004291666666666667,
+    "m_order0": 0.004746241399825973,
+    "expected8_actual_order0": 7.98454055399219e-13,
+    "observed_max8": 2
+   },
+   {
+    "name": "book1",
+    "positions": 96096,
+    "sampled": 1500,
+    "one_byte_rate": 0.006375,
+    "m_order0": 0.006687368906020128,
+    "expected8_actual_order0": 1.2299785598242268e-11,
+    "observed_max8": 2
+   },
+   {
+    "name": "docx-shapes.docx",
+    "positions": 15326,
+    "sampled": 1500,
+    "one_byte_rate": 0.003875,
+    "m_order0": 0.0037528593371938123,
+    "expected8_actual_order0": 1.929643554770956e-14,
+    "observed_max8": 2
+   },
+   {
+    "name": "kennedy.xls",
+    "positions": 128718,
+    "sampled": 1500,
+    "one_byte_rate": 0.0031041666666666665,
+    "m_order0": 0.003159342012938005,
+    "expected8_actual_order0": 4.0884849522688106e-14,
+    "observed_max8": 1
+   },
+   {
+    "name": "notepad.exe",
+    "positions": 45056,
+    "sampled": 1500,
+    "one_byte_rate": 0.0035625,
+    "m_order0": 0.0035625417954993975,
+    "expected8_actual_order0": 3.7409539028538093e-14,
+    "observed_max8": 2
+   },
+   {
+    "name": "sample1.rar",
+    "positions": 23158,
+    "sampled": 1500,
+    "one_byte_rate": 0.006375,
+    "m_order0": 0.00681094127266749,
+    "expected8_actual_order0": 3.4316905017770576e-12,
+    "observed_max8": 2
+   },
+   {
+    "name": "sample15.mp3",
+    "positions": 38431,
+    "sampled": 1500,
+    "one_byte_rate": 0.00375,
+    "m_order0": 0.004053140744276361,
+    "expected8_actual_order0": 8.957052952793687e-14,
+    "observed_max8": 1
+   },
+   {
+    "name": "sample5.mp4",
+    "positions": 356026,
+    "sampled": 1500,
+    "one_byte_rate": 0.0033541666666666668,
+    "m_order0": 0.003899608453733599,
+    "expected8_actual_order0": 6.092558653748431e-13,
+    "observed_max8": 2
+   },
+   {
+    "name": "transparency.png",
+    "positions": 28070,
+    "sampled": 1500,
+    "one_byte_rate": 0.004083333333333333,
+    "m_order0": 0.003892270210465223,
+    "expected8_actual_order0": 4.731689631693959e-14,
+    "observed_max8": 1
+   },
+   {
+    "name": "tree-test.xlsx",
+    "positions": 127276,
+    "sampled": 1500,
+    "one_byte_rate": 0.0037708333333333335,
+    "m_order0": 0.0038976780140497925,
+    "expected8_actual_order0": 2.1694226540518175e-13,
+    "observed_max8": 1
+   },
+   {
+    "name": "winhttp.dll",
+    "positions": 153066,
+    "sampled": 1500,
+    "one_byte_rate": 0.003416666666666667,
+    "m_order0": 0.0035229411544182737,
+    "expected8_actual_order0": 1.1621757879068705e-13,
+    "observed_max8": 1
+   },
+   {
+    "name": "dickens-1m",
+    "positions": 131072,
+    "sampled": 1500,
+    "one_byte_rate": 0.006083333333333333,
+    "m_order0": 0.006541402898728847,
+    "expected8_actual_order0": 1.4061352549878398e-11,
+    "observed_max8": 2
+   },
+   {
+    "name": "linux-tree-1m",
+    "positions": 131072,
+    "sampled": 1500,
+    "one_byte_rate": 0.009479166666666667,
+    "m_order0": 0.010256751492619514,
+    "expected8_actual_order0": 5.137343094012121e-10,
+    "observed_max8": 2
+   },
+   {
+    "name": "weights-256k",
+    "positions": 32768,
+    "sampled": 1500,
+    "one_byte_rate": 0.004020833333333334,
+    "m_order0": 0.004148214558760325,
+    "expected8_actual_order0": 9.193684676808117e-14,
+    "observed_max8": 2
+   },
+   {
+    "name": "zlib-1m",
+    "positions": 131072,
+    "sampled": 1500,
+    "one_byte_rate": 0.0036041666666666665,
+    "m_order0": 0.003916733279824256,
+    "expected8_actual_order0": 2.323014334657208e-13,
+    "observed_max8": 2
+   }
+  ],
+  "approx_uniform_probabilities": {
+   "L8_t1": 1.1064283170214573e-16,
+   "L8_t2": 9.881098760392004e-14,
+   "L16_t1": 1.1992981114264388e-35,
+   "L16_t2": 2.2942949029780038e-32,
+   "L32_t1": 7.047977157812576e-74,
+   "L32_t2": 2.786076424779062e-70,
+   "L64_t1": 1.2172757907391857e-150,
+   "L64_t2": 9.778385973684015e-147
+  },
+  "note": "The 256^-8 null is exact for a uniform independent candidate. Actual streams are not all uniform; the order-0 product is an approximation that ignores serial dependence. The empirical scan is the decisive evidence."
+ },
+ "candidate_index_costs": {
+  "math8": {
+   "K": 8,
+   "ideal_bits": 3.0,
+   "wire_bits": 8
+  },
+  "math16": {
+   "K": 16,
+   "ideal_bits": 4.0,
+   "wire_bits": 8
+  },
+  "math32": {
+   "K": 32,
+   "ideal_bits": 5.0,
+   "wire_bits": 8
+  },
+  "hist8": {
+   "K": 8,
+   "ideal_bits": 3.0,
+   "wire_bits": 8
+  },
+  "hist10": {
+   "K": 10,
+   "ideal_bits": 3.321928094887362,
+   "wire_bits": 8
+  },
+  "mixed16": {
+   "K": 16,
+   "ideal_bits": 4.0,
+   "wire_bits": 8
+  },
+  "mixed32": {
+   "K": 32,
+   "ideal_bits": 5.0,
+   "wire_bits": 8
+  },
+  "rand8": {
+   "K": 8,
+   "ideal_bits": 3.0,
+   "wire_bits": 8
+  },
+  "fit8": {
+   "K": 8,
+   "ideal_bits": 3.0,
+   "wire_bits": 8
+  },
+  "fit12": {
+   "K": 12,
+   "ideal_bits": 3.584962500721156,
+   "wire_bits": 8
+  },
+  "mathfit": {
+   "K": 16,
+   "ideal_bits": 4.0,
+   "wire_bits": 8
+  },
+  "fitmix": {
+   "K": 16,
+   "ideal_bits": 4.0,
+   "wire_bits": 8
+  },
+  "allmixed24": {
+   "K": 24,
+   "ideal_bits": 4.584962500721156,
+   "wire_bits": 8
+  }
+ },
+ "configuration_identity": {
+  "fields": {
+   "math8": {
+    "bytes": 3107,
+    "sha256": "797b52514288678d",
+    "tokens": 0
+   },
+   "math32": {
+    "bytes": 3107,
+    "sha256": "1c7cff3ddc894029",
+    "tokens": 0
+   },
+   "fit8": {
+    "bytes": 3107,
+    "sha256": "48effde701ce4ebc",
+    "tokens": 0
+   },
+   "mathfit": {
+    "bytes": 3107,
+    "sha256": "652e30f9af326301",
+    "tokens": 0
+   },
+   "hist8": {
+    "bytes": 3266,
+    "sha256": "c4584ac5899c9a6b",
+    "tokens": 47
+   },
+   "mixed16": {
+    "bytes": 3266,
+    "sha256": "299c2a09e9811c47",
+    "tokens": 47
+   }
+  },
+  "pairs": {
+   "math8_eq_math32_size": true,
+   "math8_eq_math32_bytes": false,
+   "fit8_eq_mathfit_size": true,
+   "fit8_eq_mathfit_bytes": false,
+   "hist8_eq_mixed16_size": true,
+   "hist8_eq_mixed16_bytes": false
+  }
+ },
+ "self_consistency": {
+  "per_byte_reseeded_synthetic": {
+   "file": "syn-reseed-sm64",
+   "positions": 2000,
+   "first_byte_matches": 2000,
+   "eight_byte_matches": 0
+  },
+  "fixed_seed_global_stream": {
+   "file": "fixed-seed hash stream",
+   "positions": 2000,
+   "first_byte_matches": 6,
+   "eight_byte_matches": 0
+  },
+  "note": "A per-byte re-seeded stream is a perfect one-byte predictor by construction, but its fixed continuation diverges from the next context. A global stream is not followed by a context re-seed even at the first byte in general."
+ },
+ "gate": [
+  {
+   "name": "audio-slice.flac",
+   "bytes": 437328,
+   "need": 4373,
+   "net_direct": 5,
+   "net_ctrl": 74,
+   "pass": false
+  },
+  {
+   "name": "banana.jpg",
+   "bytes": 2085213,
+   "need": 20852,
+   "net_direct": -90,
+   "net_ctrl": 51,
+   "pass": false
+  },
+  {
+   "name": "bert.pdf",
+   "bytes": 775166,
+   "need": 7751,
+   "net_direct": -128,
+   "net_ctrl": 157,
+   "pass": false
+  },
+  {
+   "name": "book1",
+   "bytes": 768771,
+   "need": 7687,
+   "net_direct": -71,
+   "net_ctrl": 4,
+   "pass": false
+  },
+  {
+   "name": "docx-shapes.docx",
+   "bytes": 122610,
+   "need": 1226,
+   "net_direct": -198,
+   "net_ctrl": 6,
+   "pass": false
+  },
+  {
+   "name": "kennedy.xls",
+   "bytes": 1029744,
+   "need": 10297,
+   "net_direct": -49,
+   "net_ctrl": 0,
+   "pass": false
+  },
+  {
+   "name": "notepad.exe",
+   "bytes": 360448,
+   "need": 3604,
+   "net_direct": 59,
+   "net_ctrl": 1312,
+   "pass": false
+  },
+  {
+   "name": "sample1.rar",
+   "bytes": 185269,
+   "need": 1852,
+   "net_direct": -254,
+   "net_ctrl": -56,
+   "pass": false
+  },
+  {
+   "name": "sample15.mp3",
+   "bytes": 307453,
+   "need": 3074,
+   "net_direct": -945,
+   "net_ctrl": -249,
+   "pass": false
+  },
+  {
+   "name": "sample5.mp4",
+   "bytes": 2848208,
+   "need": 28482,
+   "net_direct": -690,
+   "net_ctrl": -473,
+   "pass": false
+  },
+  {
+   "name": "transparency.png",
+   "bytes": 224566,
+   "need": 2245,
+   "net_direct": 5,
+   "net_ctrl": 63,
+   "pass": false
+  },
+  {
+   "name": "tree-test.xlsx",
+   "bytes": 1018212,
+   "need": 10182,
+   "net_direct": -69,
+   "net_ctrl": -2,
+   "pass": false
+  },
+  {
+   "name": "winhttp.dll",
+   "bytes": 1224528,
+   "need": 12245,
+   "net_direct": -796,
+   "net_ctrl": 1910,
+   "pass": false
+  }
+ ],
+ "address_means": {
+  "refs": 104640,
+  "covered": 4486952,
+  "lzp_hits": 0.0,
+  "schemes": {
+   "mean_bits_varint": 20.957951070336392,
+   "mean_bits_fixed32": 40.78432721712538,
+   "mean_bits_delta": 19.713073394495414,
+   "mean_bits_entropy": 13.367263807844328,
+   "mean_bits_lzp": 21.957951070336392
+  },
+  "lzp_hit_rate": 0.0,
+  "best_scheme": "mean_bits_entropy"
+ },
+ "package_sizes": {
+  "context": 4863,
+  "streams": 18945,
+  "codec": 21234,
+  "address": 3004,
+  "all_cgmc_py": 62995,
+  "constant_table": 16440,
+  "historical_perf_code_bytes": 54702
+ },
+ "versions": {
+  "numpy": "2.4.0"
+ }
+}

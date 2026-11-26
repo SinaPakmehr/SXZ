@@ -12,3 +12,8 @@ Ordered by the dependency and report sequence, not inferred commit dates.
 8. [Structural relationships](phases/08-relationships.md)
 9. [Mathematical Sequence Mosaic Compression](phases/09-msmc.md)
 10. [Adaptive Stochastic Mosaic Compression](phases/10-asmc.md)
+11. [Contextual Generative Mosaic Compression](phases/11-cgmc.md)
+12. [Adaptive Mathematical Representation Discovery](phases/12-amrd.md)
+13. [Scaling and Mathematical Cost Diagnostics](phases/13-scaling.md)
+14. [Number Theory and Algebraic Discovery](phases/14-number-theory.md)
+15. [Mathematical Image Representation](phases/15-image-math.md)

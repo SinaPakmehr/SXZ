@@ -1,0 +1,391 @@
+{
+ "phase": 14,
+ "episode": 2,
+ "files": [
+  {
+   "key": "book1",
+   "category": "TXT",
+   "file_bytes": 768771,
+   "dev_offset": 0,
+   "val_offset": 382337,
+   "dev_bytes": 4096,
+   "val_bytes": 4096,
+   "dev_best": {
+    "saving_vs_zstd9": 3598,
+    "symbol": 8,
+    "W": 256,
+    "family": "xor",
+    "record": 287,
+    "exact": false,
+    "verified": true
+   },
+   "val_best": {
+    "saving_vs_zstd9": 3548,
+    "symbol": 8,
+    "W": 256,
+    "family": "xor",
+    "record": 287,
+    "exact": false,
+    "verified": true,
+    "B": 4399,
+    "C": 3548,
+    "entropy": 6.4287444201912765,
+    "coeffs": null,
+    "components": [
+     "raw",
+     "raw"
+    ]
+   },
+   "A_zstd9": 2078,
+   "D_transform": "identity",
+   "D_total": 2084,
+   "promising": false
+  },
+  {
+   "key": "7zr.exe",
+   "category": "EXE",
+   "file_bytes": 602624,
+   "dev_offset": 0,
+   "val_offset": 299264,
+   "dev_bytes": 4096,
+   "val_bytes": 4096,
+   "dev_best": {
+    "saving_vs_zstd9": 3756,
+    "symbol": 8,
+    "W": 64,
+    "family": "xor",
+    "record": 142,
+    "exact": false,
+    "verified": true
+   },
+   "val_best": {
+    "saving_vs_zstd9": 4186,
+    "symbol": 8,
+    "W": 64,
+    "family": "xor",
+    "record": 142,
+    "exact": false,
+    "verified": true,
+    "B": 4254,
+    "C": 4186,
+    "entropy": 7.836542818994588,
+    "coeffs": null,
+    "components": [
+     "raw",
+     "raw"
+    ]
+   },
+   "A_zstd9": 2714,
+   "D_transform": "identity",
+   "D_total": 2720,
+   "promising": false
+  },
+  {
+   "key": "irs1040.pdf",
+   "category": "PDF",
+   "file_bytes": 220237,
+   "dev_offset": 0,
+   "val_offset": 108070,
+   "dev_bytes": 4096,
+   "val_bytes": 4096,
+   "dev_best": {
+    "saving_vs_zstd9": 4146,
+    "symbol": 8,
+    "W": 16,
+    "family": "poly",
+    "record": 24,
+    "exact": false,
+    "verified": true
+   },
+   "val_best": {
+    "saving_vs_zstd9": 4146,
+    "symbol": 8,
+    "W": 16,
+    "family": "poly",
+    "record": 24,
+    "exact": false,
+    "verified": true,
+    "B": 4136,
+    "C": 4146,
+    "entropy": 7.947916922576785,
+    "coeffs": {
+     "0,0": 29,
+     "0,1": 209,
+     "0,2": 122,
+     "0,3": 210,
+     "1,0": 115,
+     "1,1": 177,
+     "1,2": 177,
+     "2,0": 157,
+     "2,1": 49,
+     "3,0": 4
+    },
+    "components": null
+   },
+   "A_zstd9": 4106,
+   "D_transform": "identity",
+   "D_total": 4112,
+   "promising": false
+  },
+  {
+   "key": "hopper.bmp",
+   "category": "BMP",
+   "file_bytes": 49290,
+   "dev_offset": 0,
+   "val_offset": 22597,
+   "dev_bytes": 4096,
+   "val_bytes": 4096,
+   "dev_best": {
+    "saving_vs_zstd9": 3884,
+    "symbol": 8,
+    "W": 16,
+    "family": "add",
+    "record": 287,
+    "exact": false,
+    "verified": true
+   },
+   "val_best": {
+    "saving_vs_zstd9": 3892,
+    "symbol": 8,
+    "W": 16,
+    "family": "add",
+    "record": 287,
+    "exact": false,
+    "verified": true,
+    "B": 4399,
+    "C": 3892,
+    "entropy": 7.532530050136381,
+    "coeffs": null,
+    "components": [
+     "raw",
+     "raw"
+    ]
+   },
+   "A_zstd9": 3465,
+   "D_transform": "shuffle3_delta",
+   "D_total": 2913,
+   "promising": false
+  },
+  {
+   "key": "ecg-holdout.bin",
+   "category": "ECG",
+   "file_bytes": 262144,
+   "dev_offset": 0,
+   "val_offset": 129024,
+   "dev_bytes": 4096,
+   "val_bytes": 4096,
+   "dev_best": {
+    "saving_vs_zstd9": 3778,
+    "symbol": 8,
+    "W": 16,
+    "family": "add",
+    "record": 287,
+    "exact": false,
+    "verified": true
+   },
+   "val_best": {
+    "saving_vs_zstd9": 3678,
+    "symbol": 8,
+    "W": 16,
+    "family": "add",
+    "record": 287,
+    "exact": false,
+    "verified": true,
+    "B": 4399,
+    "C": 3678,
+    "entropy": 6.327134321572228,
+    "coeffs": null,
+    "components": [
+     "raw",
+     "raw"
+    ]
+   },
+   "A_zstd9": 2526,
+   "D_transform": "shuffle3_delta",
+   "D_total": 1525,
+   "promising": false
+  },
+  {
+   "key": "model-weights.bin",
+   "category": "weights",
+   "file_bytes": 134217728,
+   "dev_offset": 0,
+   "val_offset": 67106816,
+   "dev_bytes": 4096,
+   "val_bytes": 4096,
+   "dev_best": {
+    "saving_vs_zstd9": 2264,
+    "symbol": 8,
+    "W": 16,
+    "family": "poly",
+    "record": 24,
+    "exact": false,
+    "verified": true
+   },
+   "val_best": {
+    "saving_vs_zstd9": 4146,
+    "symbol": 8,
+    "W": 16,
+    "family": "poly",
+    "record": 24,
+    "exact": false,
+    "verified": true,
+    "B": 4136,
+    "C": 4146,
+    "entropy": 7.943698916258105,
+    "coeffs": {
+     "0,0": 139,
+     "0,1": 239,
+     "0,2": 64,
+     "0,3": 45,
+     "1,0": 13,
+     "1,1": 0,
+     "1,2": 181,
+     "2,0": 50,
+     "2,1": 80,
+     "3,0": 63
+    },
+    "components": null
+   },
+   "A_zstd9": 3824,
+   "D_transform": "identity",
+   "D_total": 3830,
+   "promising": false
+  }
+ ],
+ "correction": [
+  {
+   "span": 538,
+   "nw": 33,
+   "tail": 10,
+   "d": 2048,
+   "carry_pos": 9,
+   "carry": 1,
+   "ap_exact": true,
+   "ap_record": 16,
+   "rational_record": 20
+  },
+  {
+   "span": 522,
+   "nw": 32,
+   "tail": 10,
+   "d": 1024,
+   "carry_pos": null,
+   "carry": 0,
+   "ap_exact": true,
+   "ap_record": 16,
+   "rational_record": 20
+  },
+  {
+   "span": 490,
+   "nw": 30,
+   "tail": 10,
+   "d": 2048,
+   "carry_pos": 3,
+   "carry": 1,
+   "ap_exact": true,
+   "ap_record": 15,
+   "rational_record": 19
+  },
+  {
+   "span": 459,
+   "nw": 28,
+   "tail": 11,
+   "d": 2048,
+   "carry_pos": 13,
+   "carry": 1,
+   "ap_exact": true,
+   "ap_record": 14,
+   "rational_record": 18
+  },
+  {
+   "span": 426,
+   "nw": 26,
+   "tail": 10,
+   "d": 2048,
+   "carry_pos": 23,
+   "carry": 1,
+   "ap_exact": true,
+   "ap_record": 15,
+   "rational_record": 19
+  },
+  {
+   "span": 394,
+   "nw": 24,
+   "tail": 10,
+   "d": 2048,
+   "carry_pos": 15,
+   "carry": 1,
+   "ap_exact": true,
+   "ap_record": 15,
+   "rational_record": 19
+  },
+  {
+   "span": 346,
+   "nw": 21,
+   "tail": 10,
+   "d": 2048,
+   "carry_pos": 1,
+   "carry": 1,
+   "ap_exact": true,
+   "ap_record": 15,
+   "rational_record": 19
+  },
+  {
+   "span": 299,
+   "nw": 18,
+   "tail": 11,
+   "d": 2048,
+   "carry_pos": 11,
+   "carry": 1,
+   "ap_exact": true,
+   "ap_record": 15,
+   "rational_record": 19
+  },
+  {
+   "span": 186,
+   "nw": 11,
+   "tail": 10,
+   "d": 2048,
+   "carry_pos": 9,
+   "carry": 1,
+   "ap_exact": true,
+   "ap_record": 15,
+   "rational_record": 19
+  },
+  {
+   "span": 170,
+   "nw": 10,
+   "tail": 10,
+   "d": 2048,
+   "carry_pos": null,
+   "carry": 0,
+   "ap_exact": true,
+   "ap_record": 16,
+   "rational_record": 19
+  },
+  {
+   "span": 154,
+   "nw": 9,
+   "tail": 10,
+   "d": 2048,
+   "carry_pos": 8,
+   "carry": 1,
+   "ap_exact": true,
+   "ap_record": 15,
+   "rational_record": 19
+  },
+  {
+   "span": 138,
+   "nw": 8,
+   "tail": 10,
+   "d": 2048,
+   "carry_pos": 6,
+   "carry": 1,
+   "ap_exact": true,
+   "ap_record": 15,
+   "rational_record": 19
+  }
+ ],
+ "elapsed_s": 0.3348469000047771
+}

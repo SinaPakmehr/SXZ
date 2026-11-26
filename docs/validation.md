@@ -9,6 +9,16 @@ candidate. It is not a claim about untested platforms.
 - `scripts/check.py`: built the optional native scanner in a temporary
   directory; all **49** core tests and **13** SXZ4 tests passed; the planted
   offline demo restored 65,536 bytes exactly (65,593 direct, 84 modeled).
+- Phase 11 `lab/sxz-cgmc/scripts/test_codec.py`: v2 round trips, determinism,
+  270 mutations rejected, eight crafted malformed inputs rejected, `TESTS_OK`.
+- Phase 11 `audit_tests.py`: corrected 17-case security/resource suite and
+  strict-frame identity passed.
+- Phase 12 `lab/sxz-amrd/scripts/test_amrd.py`: **10/10** tests passed; the
+  legacy BM parity test imports `lab/zip-protocol` and is skipped only if that
+  package is unavailable.
+- Phase 13-15 source compiles. Their full runners were not rerun here because
+  the reviewed corpora/images are not redistributed; the archived results are
+  the measurements of record. No substitute dataset was used.
 - A fresh public-only copy was installed from `pyproject.toml`; the optional
   Rust scanner was compiled without the private workspace.
 - One pinned public RFC input was fetched and checked against its SHA-256;
@@ -36,5 +46,8 @@ native tools. Treat those counts as historical records, not as CI badges.
 - A complete reconstruction of any large historical panel.
 - Bit-exact equivalence of historical timings on another machine.
 - Resource behavior under adversarial archives or production concurrency.
+- A complete clean-clone rerun of Phase 13-15 panels; their inputs are absent.
+- Full clean-clone reproduction of the Phase 11 panel; only decoder/security
+  tests and compact evidence are published.
 
 Historical performance numbers are measurements, not portability guarantees.

@@ -1,0 +1,896 @@
+{
+ "episode": 3,
+ "phase": "12-amrd",
+ "region_bytes": 16384,
+ "screen_bytes": 4096,
+ "elapsed_s": 5.377547599986428,
+ "budget_s": 180.0,
+ "files": [
+  {
+   "key": "txt",
+   "category": "TXT",
+   "path": "data/06-sxz5-data/book1",
+   "original_bytes": 768771,
+   "sample_bytes": 65536,
+   "complete": false,
+   "sha256_sample": "bff4aa361cf7f225eb42322009f9e0f052680885a6ba5ba3dd519c83426d0d83",
+   "dev_bytes": 16384,
+   "val_bytes": 16384,
+   "retained": [
+    "bit0<-bit1^bit3",
+    "bit0<-bit1^bit4",
+    "bit0<-bit1^bit5"
+   ],
+   "best_ops": [
+    "bit0<-bit1^bit3"
+   ],
+   "best_cross_meta": 7,
+   "direct_zstd19": 7242,
+   "direct_lzma2": 7376,
+   "base_best": {
+    "base": "identity",
+    "total": 7249
+   },
+   "base_lzma2": 7383,
+   "new_best": {
+    "base": "identity",
+    "order": "base_cross",
+    "total": 7256
+   },
+   "new_lzma2": 7394,
+   "saving": -7,
+   "relative_saving": -0.0009656504345426955,
+   "success": false,
+   "verified": true,
+   "discovery": [
+    {
+     "base": "identity",
+     "order": "base",
+     "total": 7248,
+     "word_models": 0,
+     "nontrivial": [],
+     "lanes": [
+      {
+       "width": 2,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 2,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      }
+     ]
+    },
+    {
+     "base": "identity",
+     "order": "base_cross",
+     "total": 7256,
+     "word_models": 0,
+     "nontrivial": [],
+     "lanes": [
+      {
+       "width": 2,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 2,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      }
+     ]
+    }
+   ],
+   "encode_s": 0.0038197999965632334,
+   "decode_s": 0.00015050001093186438,
+   "encode_mb_s": 4.090528303591338,
+   "decode_mb_s": 103.82059046543112
+  },
+  {
+   "key": "json",
+   "category": "JSON/XML",
+   "path": "phases/11-cgmc/data/slices/linux-tree-1m.bin",
+   "original_bytes": 1048576,
+   "sample_bytes": 65536,
+   "complete": false,
+   "sha256_sample": "534612c57398a2f2168cd16c2fee1d0baae429ef876c4314a73906eba76429d3",
+   "dev_bytes": 16384,
+   "val_bytes": 16384,
+   "retained": [
+    "bit6<-bit4^bit5",
+    "bit0<-bit1^bit5",
+    "bit0<-bit3^bit6"
+   ],
+   "best_ops": [
+    "bit0<-bit1^bit5"
+   ],
+   "best_cross_meta": 7,
+   "direct_zstd19": 2713,
+   "direct_lzma2": 2832,
+   "base_best": {
+    "base": "identity",
+    "total": 2720
+   },
+   "base_lzma2": 2839,
+   "new_best": {
+    "base": "identity",
+    "order": "base_cross",
+    "total": 2727
+   },
+   "new_lzma2": 2846,
+   "saving": -7,
+   "relative_saving": -0.002573529411764706,
+   "success": false,
+   "verified": true,
+   "discovery": [
+    {
+     "base": "identity",
+     "order": "base",
+     "total": 2719,
+     "word_models": 0,
+     "nontrivial": [],
+     "lanes": [
+      {
+       "width": 2,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 2,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      }
+     ]
+    },
+    {
+     "base": "identity",
+     "order": "base_cross",
+     "total": 2727,
+     "word_models": 0,
+     "nontrivial": [],
+     "lanes": [
+      {
+       "width": 2,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 2,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      }
+     ]
+    }
+   ],
+   "encode_s": 0.005721599998651072,
+   "decode_s": 0.00015509998775087297,
+   "encode_mb_s": 2.7308794749167644,
+   "decode_mb_s": 100.74146508056094
+  },
+  {
+   "key": "exe",
+   "category": "EXE",
+   "path": "data/03-audit-assets/7zr.exe",
+   "original_bytes": 602624,
+   "sample_bytes": 65536,
+   "complete": false,
+   "sha256_sample": "e534a87e2b76e2e0b7e9a7433453ef6ca15db66620c9fece44f739731c6213d3",
+   "dev_bytes": 16384,
+   "val_bytes": 16384,
+   "retained": [
+    "bit0<-bit1^bit6",
+    "bit0<-bit1^bit7",
+    "bit0<-bit6"
+   ],
+   "best_ops": [
+    "bit0<-bit1^bit6"
+   ],
+   "best_cross_meta": 7,
+   "direct_zstd19": 10043,
+   "direct_lzma2": 9884,
+   "base_best": {
+    "base": "identity",
+    "total": 10050
+   },
+   "base_lzma2": 9891,
+   "new_best": {
+    "base": "identity",
+    "order": "base_cross",
+    "total": 10051
+   },
+   "new_lzma2": 9898,
+   "saving": -1,
+   "relative_saving": -9.950248756218905e-05,
+   "success": false,
+   "verified": true,
+   "discovery": [
+    {
+     "base": "identity",
+     "order": "base",
+     "total": 10049,
+     "word_models": 0,
+     "nontrivial": [],
+     "lanes": [
+      {
+       "width": 2,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 2,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      }
+     ]
+    },
+    {
+     "base": "identity",
+     "order": "base_cross",
+     "total": 10051,
+     "word_models": 0,
+     "nontrivial": [],
+     "lanes": [
+      {
+       "width": 2,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 2,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      }
+     ]
+    }
+   ],
+   "encode_s": 0.0019751999934669584,
+   "decode_s": 0.00010620000830385834,
+   "encode_mb_s": 7.9105913586878405,
+   "decode_mb_s": 147.12804875960006
+  },
+  {
+   "key": "pdf",
+   "category": "PDF",
+   "path": "data/06-sxz5-data/raw/irs1040.pdf",
+   "original_bytes": 220237,
+   "sample_bytes": 65536,
+   "complete": false,
+   "sha256_sample": "cd4bd1df0ede49fa967f68c0a9bb6bacdf2c12ff57a021fa38f272c991f092d4",
+   "dev_bytes": 16384,
+   "val_bytes": 16384,
+   "retained": [
+    "bit1<-bit2^bit3",
+    "bit2<-bit5^bit6",
+    "bit5<-bit0^bit7"
+   ],
+   "best_ops": [
+    "bit1<-bit2^bit3"
+   ],
+   "best_cross_meta": 7,
+   "direct_zstd19": 16043,
+   "direct_lzma2": 16280,
+   "base_best": {
+    "base": "identity",
+    "total": 16050
+   },
+   "base_lzma2": 16287,
+   "new_best": {
+    "base": "identity",
+    "order": "base_cross",
+    "total": 16057
+   },
+   "new_lzma2": 16294,
+   "saving": -7,
+   "relative_saving": -0.00043613707165109035,
+   "success": false,
+   "verified": true,
+   "discovery": [
+    {
+     "base": "identity",
+     "order": "base",
+     "total": 16049,
+     "word_models": 0,
+     "nontrivial": [],
+     "lanes": [
+      {
+       "width": 2,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 2,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      }
+     ]
+    },
+    {
+     "base": "identity",
+     "order": "base_cross",
+     "total": 16057,
+     "word_models": 0,
+     "nontrivial": [],
+     "lanes": [
+      {
+       "width": 2,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 2,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      }
+     ]
+    }
+   ],
+   "encode_s": 0.0015496999985771254,
+   "decode_s": 0.00012149999383836985,
+   "encode_mb_s": 10.082596640863567,
+   "decode_mb_s": 128.60082956700205
+  },
+  {
+   "key": "bmp",
+   "category": "BMP",
+   "path": "phases/09-msmc/hopper.bmp",
+   "original_bytes": 49290,
+   "sample_bytes": 49290,
+   "complete": true,
+   "sha256_sample": "f1a94f3add0a2e54365dc94b51da099bd0de8289b955fc8304a8627b7b0d6aea",
+   "dev_bytes": 16384,
+   "val_bytes": 16384,
+   "retained": [
+    "bit0<-bit2^bit6",
+    "bit2<-bit0",
+    "bit3<-bit0^bit7"
+   ],
+   "best_ops": [
+    "bit0<-bit2^bit6",
+    "bit3<-bit0^bit7"
+   ],
+   "best_cross_meta": 10,
+   "direct_zstd19": 13237,
+   "direct_lzma2": 11992,
+   "base_best": {
+    "base": "shuffle3_delta",
+    "total": 11328
+   },
+   "base_lzma2": 11066,
+   "new_best": {
+    "base": "shuffle3_delta",
+    "order": "base_cross",
+    "total": 11346
+   },
+   "new_lzma2": 11124,
+   "saving": -18,
+   "relative_saving": -0.0015889830508474577,
+   "success": false,
+   "verified": true,
+   "discovery": [
+    {
+     "base": "shuffle3_delta",
+     "order": "base",
+     "total": 11327,
+     "word_models": 0,
+     "nontrivial": [],
+     "lanes": [
+      {
+       "width": 2,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 2,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      }
+     ]
+    },
+    {
+     "base": "shuffle3_delta",
+     "order": "base_cross",
+     "total": 11346,
+     "word_models": 0,
+     "nontrivial": [],
+     "lanes": [
+      {
+       "width": 2,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 2,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      }
+     ]
+    }
+   ],
+   "encode_s": 0.0015284999972209334,
+   "decode_s": 0.0001478000049246475,
+   "encode_mb_s": 10.222440319534735,
+   "decode_mb_s": 105.71718186319448
+  },
+  {
+   "key": "ecg",
+   "category": "ECG",
+   "path": "data/05-sxz4-corpus/ecg-holdout.bin",
+   "original_bytes": 262144,
+   "sample_bytes": 65536,
+   "complete": false,
+   "sha256_sample": "3ca0e2e794c07d9a8b7d8bede4b45d34675c50a0bb2847e1003fe2811980da47",
+   "dev_bytes": 16384,
+   "val_bytes": 16384,
+   "retained": [
+    "bit2<-bit6^bit7",
+    "bit3<-bit1^bit5",
+    "bit5<-bit7"
+   ],
+   "best_ops": [
+    "bit2<-bit6^bit7"
+   ],
+   "best_cross_meta": 7,
+   "direct_zstd19": 9337,
+   "direct_lzma2": 7764,
+   "base_best": {
+    "base": "shuffle3_delta",
+    "total": 5525
+   },
+   "base_lzma2": 5446,
+   "new_best": {
+    "base": "shuffle3_delta",
+    "order": "base_cross",
+    "total": 5532
+   },
+   "new_lzma2": 5453,
+   "saving": -7,
+   "relative_saving": -0.0012669683257918551,
+   "success": false,
+   "verified": true,
+   "discovery": [
+    {
+     "base": "shuffle3_delta",
+     "order": "base",
+     "total": 5524,
+     "word_models": 15,
+     "nontrivial": [],
+     "lanes": [
+      {
+       "width": 2,
+       "factor": 2,
+       "by_family": {
+        "const": 15
+       },
+       "examples": []
+      },
+      {
+       "width": 2,
+       "factor": 3,
+       "by_family": {
+        "const": 4
+       },
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      }
+     ]
+    },
+    {
+     "base": "shuffle3_delta",
+     "order": "base_cross",
+     "total": 5532,
+     "word_models": 15,
+     "nontrivial": [],
+     "lanes": [
+      {
+       "width": 2,
+       "factor": 2,
+       "by_family": {
+        "const": 15
+       },
+       "examples": []
+      },
+      {
+       "width": 2,
+       "factor": 3,
+       "by_family": {
+        "const": 4
+       },
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      }
+     ]
+    }
+   ],
+   "encode_s": 0.0018455999961588532,
+   "decode_s": 0.00011729999096132815,
+   "encode_mb_s": 8.466081508733996,
+   "decode_mb_s": 133.20546635976555
+  },
+  {
+   "key": "png",
+   "category": "JPEG/PNG",
+   "path": "data/06-sxz5-data/raw/transparency.png",
+   "original_bytes": 224566,
+   "sample_bytes": 65536,
+   "complete": false,
+   "sha256_sample": "e34921a11921e6d6bde408ef607620f914c42f95a2472371823e5be269f7082e",
+   "dev_bytes": 16384,
+   "val_bytes": 16384,
+   "retained": [
+    "bit0<-bit2^bit4",
+    "bit0<-bit5^bit7",
+    "bit1<-bit2^bit5"
+   ],
+   "best_ops": [
+    "bit0<-bit5^bit7"
+   ],
+   "best_cross_meta": 7,
+   "direct_zstd19": 16394,
+   "direct_lzma2": 16444,
+   "base_best": {
+    "base": "identity",
+    "total": 16401
+   },
+   "base_lzma2": 16451,
+   "new_best": {
+    "base": "identity",
+    "order": "base_cross",
+    "total": 16408
+   },
+   "new_lzma2": 16458,
+   "saving": -7,
+   "relative_saving": -0.0004268032437046522,
+   "success": false,
+   "verified": true,
+   "discovery": [
+    {
+     "base": "identity",
+     "order": "base",
+     "total": 16400,
+     "word_models": 0,
+     "nontrivial": [],
+     "lanes": [
+      {
+       "width": 2,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 2,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      }
+     ]
+    },
+    {
+     "base": "delta",
+     "order": "base",
+     "total": 16400,
+     "word_models": 0,
+     "nontrivial": [],
+     "lanes": [
+      {
+       "width": 2,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 2,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      }
+     ]
+    }
+   ],
+   "encode_s": 0.002723800003877841,
+   "decode_s": 0.0002835000050254166,
+   "encode_mb_s": 5.736471098375387,
+   "decode_mb_s": 55.11463747099113
+  },
+  {
+   "key": "docx",
+   "category": "DOCX/ZIP",
+   "path": "data/06-sxz5-data/raw/docx-images.docx",
+   "original_bytes": 132875,
+   "sample_bytes": 65536,
+   "complete": false,
+   "sha256_sample": "39deeb6d9962373240de8ba8cbc79d7bc8b8d41b05b55017c089603778fde46d",
+   "dev_bytes": 16384,
+   "val_bytes": 16384,
+   "retained": [
+    "bit0<-bit1",
+    "bit0<-bit1^bit2",
+    "bit0<-bit1^bit3"
+   ],
+   "best_ops": [
+    "bit0<-bit1"
+   ],
+   "best_cross_meta": 7,
+   "direct_zstd19": 15424,
+   "direct_lzma2": 15536,
+   "base_best": {
+    "base": "identity",
+    "total": 15431
+   },
+   "base_lzma2": 15543,
+   "new_best": {
+    "base": "identity",
+    "order": "base_cross",
+    "total": 15438
+   },
+   "new_lzma2": 15550,
+   "saving": -7,
+   "relative_saving": -0.0004536322986196617,
+   "success": false,
+   "verified": true,
+   "discovery": [
+    {
+     "base": "identity",
+     "order": "base",
+     "total": 15430,
+     "word_models": 1,
+     "nontrivial": [],
+     "lanes": [
+      {
+       "width": 2,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 2,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      }
+     ]
+    },
+    {
+     "base": "identity",
+     "order": "base_cross",
+     "total": 15438,
+     "word_models": 1,
+     "nontrivial": [],
+     "lanes": [
+      {
+       "width": 2,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 2,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 2,
+       "by_family": {},
+       "examples": []
+      },
+      {
+       "width": 4,
+       "factor": 3,
+       "by_family": {},
+       "examples": []
+      }
+     ]
+    }
+   ],
+   "encode_s": 0.013713399996049702,
+   "decode_s": 0.0003812000068137422,
+   "encode_mb_s": 1.1393965030190147,
+   "decode_mb_s": 40.98898142893926
+  }
+ ],
+ "total_evaluated_representations": 136,
+ "total_verified_representations": 136,
+ "success_files": 0,
+ "encode_s": 0.03287759998056572,
+ "decode_s": 0.0014631000085501
+}

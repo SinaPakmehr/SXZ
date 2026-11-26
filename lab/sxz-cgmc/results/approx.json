@@ -1,0 +1,209 @@
+{
+ "files": [
+  {
+   "name": "alice29.txt",
+   "split": "dev",
+   "bytes": 152089,
+   "positions": 4751,
+   "zstd19": 49215,
+   "backend_bits_per_byte": 2.5887473781798813,
+   "classes": {}
+  },
+  {
+   "name": "transparency.bmp",
+   "split": "dev",
+   "bytes": 1440054,
+   "positions": 45000,
+   "zstd19": 279069,
+   "backend_bits_per_byte": 1.550325196138478,
+   "classes": {}
+  },
+  {
+   "name": "notepad.exe",
+   "split": "heldout",
+   "bytes": 360448,
+   "positions": 11263,
+   "zstd19": 189688,
+   "backend_bits_per_byte": 4.210049715909091,
+   "classes": {}
+  }
+ ],
+ "stride": 32,
+ "lengths": [
+  8,
+  16,
+  32,
+  64
+ ],
+ "classes": {
+  "math": {
+   "8": {
+    "evaluations": 1952448,
+    "exact": 0,
+    "hamming1": 0,
+    "hamming2": 0,
+    "d_le_2": 0,
+    "rate_d_le_2": 0.0,
+    "estimated_positive_tokens": 0,
+    "xor_residual_entropy_bits": 0.0
+   },
+   "16": {
+    "evaluations": 1952448,
+    "exact": 0,
+    "hamming1": 0,
+    "hamming2": 0,
+    "d_le_2": 0,
+    "rate_d_le_2": 0.0,
+    "estimated_positive_tokens": 0,
+    "xor_residual_entropy_bits": 0.0
+   },
+   "32": {
+    "evaluations": 1952448,
+    "exact": 0,
+    "hamming1": 0,
+    "hamming2": 0,
+    "d_le_2": 0,
+    "rate_d_le_2": 0.0,
+    "estimated_positive_tokens": 0,
+    "xor_residual_entropy_bits": 0.0
+   },
+   "64": {
+    "evaluations": 1952448,
+    "exact": 0,
+    "hamming1": 0,
+    "hamming2": 0,
+    "d_le_2": 0,
+    "rate_d_le_2": 0.0,
+    "estimated_positive_tokens": 0,
+    "xor_residual_entropy_bits": 0.0
+   }
+  },
+  "history": {
+   "8": {
+    "evaluations": 610140,
+    "exact": 165883,
+    "hamming1": 4384,
+    "hamming2": 4569,
+    "d_le_2": 174836,
+    "rate_d_le_2": 0.28655062772478446,
+    "estimated_positive_tokens": 11880,
+    "xor_residual_entropy_bits": 4.533245544462438
+   },
+   "16": {
+    "evaluations": 610140,
+    "exact": 154258,
+    "hamming1": 2179,
+    "hamming2": 2760,
+    "d_le_2": 159197,
+    "rate_d_le_2": 0.2609188055200446,
+    "estimated_positive_tokens": 155012,
+    "xor_residual_entropy_bits": 3.5907906116659194
+   },
+   "32": {
+    "evaluations": 610140,
+    "exact": 143389,
+    "hamming1": 2336,
+    "hamming2": 1548,
+    "d_le_2": 147273,
+    "rate_d_le_2": 0.24137574982790835,
+    "estimated_positive_tokens": 147273,
+    "xor_residual_entropy_bits": 2.697322252461841
+   },
+   "64": {
+    "evaluations": 610140,
+    "exact": 131029,
+    "hamming1": 1115,
+    "hamming2": 630,
+    "d_le_2": 132774,
+    "rate_d_le_2": 0.21761235126364442,
+    "estimated_positive_tokens": 132774,
+    "xor_residual_entropy_bits": 2.8886178325905107
+   }
+  },
+  "control": {
+   "8": {
+    "evaluations": 488112,
+    "exact": 0,
+    "hamming1": 0,
+    "hamming2": 0,
+    "d_le_2": 0,
+    "rate_d_le_2": 0.0,
+    "estimated_positive_tokens": 0,
+    "xor_residual_entropy_bits": 0.0
+   },
+   "16": {
+    "evaluations": 488112,
+    "exact": 0,
+    "hamming1": 0,
+    "hamming2": 0,
+    "d_le_2": 0,
+    "rate_d_le_2": 0.0,
+    "estimated_positive_tokens": 0,
+    "xor_residual_entropy_bits": 0.0
+   },
+   "32": {
+    "evaluations": 488112,
+    "exact": 0,
+    "hamming1": 0,
+    "hamming2": 0,
+    "d_le_2": 0,
+    "rate_d_le_2": 0.0,
+    "estimated_positive_tokens": 0,
+    "xor_residual_entropy_bits": 0.0
+   },
+   "64": {
+    "evaluations": 488112,
+    "exact": 0,
+    "hamming1": 0,
+    "hamming2": 0,
+    "d_le_2": 0,
+    "rate_d_le_2": 0.0,
+    "estimated_positive_tokens": 0,
+    "xor_residual_entropy_bits": 0.0
+   }
+  },
+  "fitted": {
+   "8": {
+    "evaluations": 732168,
+    "exact": 129445,
+    "hamming1": 691,
+    "hamming2": 4738,
+    "d_le_2": 134874,
+    "rate_d_le_2": 0.18421182023797816,
+    "estimated_positive_tokens": 16304,
+    "xor_residual_entropy_bits": 5.332049801061039
+   },
+   "16": {
+    "evaluations": 732168,
+    "exact": 125795,
+    "hamming1": 1366,
+    "hamming2": 956,
+    "d_le_2": 128117,
+    "rate_d_le_2": 0.1749830639962413,
+    "estimated_positive_tokens": 126203,
+    "xor_residual_entropy_bits": 2.3843190608410763
+   },
+   "32": {
+    "evaluations": 732168,
+    "exact": 121020,
+    "hamming1": 1704,
+    "hamming2": 426,
+    "d_le_2": 123150,
+    "rate_d_le_2": 0.1681991018454781,
+    "estimated_positive_tokens": 123150,
+    "xor_residual_entropy_bits": 1.0731417243386445
+   },
+   "64": {
+    "evaluations": 732168,
+    "exact": 114328,
+    "hamming1": 1696,
+    "hamming2": 100,
+    "d_le_2": 116124,
+    "rate_d_le_2": 0.1586029435867178,
+    "estimated_positive_tokens": 116124,
+    "xor_residual_entropy_bits": 0.6490929422531954
+   }
+  }
+ },
+ "note": "Hamming distances are evaluated per stream at the same positions; positive means the estimated token cost is below L*backend bits."
+}

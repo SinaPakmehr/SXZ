@@ -1,0 +1,43 @@
+{
+ "name": "syn-longrange",
+ "bytes": 16777216,
+ "sha256": "0a58c6a04e0284e6ecb1f5388c3474e706eeef2c6cad9beeecaa80ac7f300f2c",
+ "description": "16 MiB synthetic with two independent 1 MiB repeats at 10 and 13 MiB",
+ "zstd19": 16777614,
+ "zstd19_s": 7.734288899999228,
+ "zstd19_long": 14680601,
+ "zstd19_long_s": 6.510083599991049,
+ "zstd22": 14680601,
+ "zstd22_s": 4.705074999990757,
+ "brotli11_lgwin24": 14680226,
+ "brotli11_s": 61.68827240000246,
+ "lzma9e": 14682980,
+ "lzma9e_s": 11.421402499996475,
+ "scan_s": 4.447516899992479,
+ "lzp": {
+  "positions": 262143,
+  "hits8": 32768,
+  "bytes8": 4194176,
+  "max": 128,
+  "long_hits": 65534,
+  "long_bytes": 8388096
+ },
+ "encode_s": 23.785697999992408,
+ "cgmc": {
+  "gen": 14680529,
+  "ctrl": 16777729,
+  "strict": 16777742,
+  "gen_tokens": 16384,
+  "coverage": 0.125,
+  "gen_minus_zstd19": 2097085,
+  "gen_minus_zstd19_long": 72,
+  "gen_minus_strict": 2097213,
+  "verified": true,
+  "checksum": true
+ },
+ "settings": {
+  "stride": 64,
+  "maxlen": 128,
+  "level": 19
+ }
+}

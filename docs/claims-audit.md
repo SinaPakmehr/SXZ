@@ -15,6 +15,23 @@ single comparative benchmark.
 | shared seed 2,048 → 1,002 B | `lab/sxz-adaptive-stochastic-mosaic/results/control.json` | synthetic shared-seed B-affine |
 
 Attribution caveats are in `research/findings.md`, `research/errata.md` and the
-phase reports. Raw coverage is not archive-size savings. The external Lean
-community announcement linked from the README was fetched and is described as an
-announcement, not as an independent audit by this project.
+phase reports. Raw coverage is not archive-size savings. The unsupported
+external Riemann/Lean item was removed from the README during the Phase 11-15
+audit rather than retained without verification.
+
+## Phase 11-15 claim checks
+
+| Claim | Source | Check |
+|---|---|---|
+| CGMC 0/13 gate passes | `lab/sxz-cgmc/results/strict-control-summary.json` | 0 gate passes; strict frames identical 33/33 |
+| CGMC 17 malicious cases rejected | `lab/sxz-cgmc/results/audit-tests.json` | all rejected; v3 positive accepted |
+| AMRD zero nontrivial spans | `lab/sxz-amrd/results/panel-summary.json`, `analysis.json` | 0 nontrivial; 361,282 B word coverage all simple |
+| AMRD bit coverage 30.21% | corrected `8N=12,909,432` denominator | 3,900,113 / 12,909,432 |
+| Scaling no hybrid win | `lab/sxz-scaling/results/phase13.json` | C > A at every completed size; B/C estimates |
+| 7zr 12 rational records are AP+carry | `lab/sxz-2adic/results/episode2.json` | 12/12 AP; 14-16 B vs 18-20 B |
+| Phase 14 no Gr?bner basis | phase report and source | no Gr?bner implementation or claim |
+| Phase 15 gull 9 B win | `lab/sxz-image-math/results/phase15_ep3.json` | 86,641 - 86,632 = 9 B; 0.0104% |
+| Phase 15 negative complete images | `phase15_ep3.json` | no E result below all controls |
+
+These are bounded measurements, not universal codec claims. See
+[findings](../research/findings.md) and [errata](../research/errata.md).

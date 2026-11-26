@@ -1,0 +1,182 @@
+{
+ "totals": {
+  "original_bytes": 5468160,
+  "scanned_bytes": 1613679,
+  "windows": 677421,
+  "symbols_examined": 69356352,
+  "representation_bytes_examined": 51575168,
+  "elapsed_s": 239.65138650000154,
+  "word_models": 933,
+  "bit_models": 7795,
+  "word_union_all": 361282,
+  "word_union_nontrivial": 0,
+  "word_union_simple": 361282,
+  "bit_union_positions": 3900167,
+  "bit_union_positions_low_order": 3900113,
+  "bit_positions_total": 103275456,
+  "bit_models_low_order": 7794,
+  "bit_models_high_order": 0,
+  "bit_models_degenerate_tail": 1,
+  "word_models_degenerate_tail": 0,
+  "throughput_mb_s": 0.006421511845599572
+ },
+ "peak_memory_mb": 122.8828125,
+ "files": [
+  {
+   "name": "alice29.txt",
+   "category": "plain text",
+   "scanned_bytes": 152089,
+   "sha256_sample": "7467306ee0feed4971260f3c87421154a05be571d944e9cb021a5713700c38f0",
+   "models_count": 22,
+   "models_by_family": {
+    "const": 22
+   },
+   "coverage": {
+    "word_union_all": 0,
+    "word_union_nontrivial": 0,
+    "word_union_simple": 0,
+    "bit_union_positions": 154143,
+    "bit_union_positions_low_order": 154143,
+    "bit_positions_total": 9733696
+   }
+  },
+  {
+   "name": "bbc.rss.xml",
+   "category": "JSON/XML",
+   "scanned_bytes": 28260,
+   "sha256_sample": "caa27d88f455e0fd10c408f7aaaaa73b16e9c0d502fa8c9cc11bc70551192b83",
+   "models_count": 81,
+   "models_by_family": {
+    "const": 81
+   },
+   "coverage": {
+    "word_union_all": 0,
+    "word_union_nontrivial": 0,
+    "word_union_simple": 0,
+    "bit_union_positions": 36363,
+    "bit_union_positions_low_order": 36363,
+    "bit_positions_total": 1808640
+   }
+  },
+  {
+   "name": "7zr.exe",
+   "category": "executable",
+   "scanned_bytes": 262144,
+   "sha256_sample": "ddf6865aaa9d329cf2bdcb81cbbe3f928251e8ed34a13a9b36c356db7eec7941",
+   "models_count": 105,
+   "models_by_family": {
+    "const": 24,
+    "periodic": 40,
+    "bm": 41
+   },
+   "coverage": {
+    "word_union_all": 481,
+    "word_union_nontrivial": 0,
+    "word_union_simple": 481,
+    "bit_union_positions": 9827,
+    "bit_union_positions_low_order": 9827,
+    "bit_positions_total": 16777216
+   }
+  },
+  {
+   "name": "bert.pdf",
+   "category": "PDF",
+   "scanned_bytes": 262144,
+   "sha256_sample": "d526f441dd766c2300768cb86c12369f340963a5651e1b991e7a8bda70cb8855",
+   "models_count": 339,
+   "models_by_family": {
+    "periodic": 134,
+    "const": 135,
+    "bm": 70
+   },
+   "coverage": {
+    "word_union_all": 5669,
+    "word_union_nontrivial": 0,
+    "word_union_simple": 5669,
+    "bit_union_positions": 60936,
+    "bit_union_positions_low_order": 60936,
+    "bit_positions_total": 16777216
+   }
+  },
+  {
+   "name": "transparency.bmp",
+   "category": "BMP",
+   "scanned_bytes": 262144,
+   "sha256_sample": "5687f7fab1c0b1745a9570107ba231597e7f36ab0d0b553dd0a425f406f9a473",
+   "models_count": 1767,
+   "models_by_family": {
+    "const": 588,
+    "periodic": 776,
+    "bm": 403
+   },
+   "coverage": {
+    "word_union_all": 230892,
+    "word_union_nontrivial": 0,
+    "word_union_simple": 230892,
+    "bit_union_positions": 1922526,
+    "bit_union_positions_low_order": 1922526,
+    "bit_positions_total": 16777216
+   }
+  },
+  {
+   "name": "ecg-train.bin",
+   "category": "ECG",
+   "scanned_bytes": 262144,
+   "sha256_sample": "27d77d89096d9c59c161143ce89b31dd33c685bff785aef6b5d0f612255da864",
+   "models_count": 4231,
+   "models_by_family": {
+    "periodic": 2302,
+    "bm": 1558,
+    "const": 371
+   },
+   "coverage": {
+    "word_union_all": 0,
+    "word_union_nontrivial": 0,
+    "word_union_simple": 0,
+    "bit_union_positions": 661355,
+    "bit_union_positions_low_order": 661355,
+    "bit_positions_total": 16777216
+   }
+  },
+  {
+   "name": "banana.jpg",
+   "category": "JPEG/PNG",
+   "scanned_bytes": 262144,
+   "sha256_sample": "6ad497b5819b97dd1b5e40ec5f66e6334465f9d765b28f7568dbdbe809205353",
+   "models_count": 1801,
+   "models_by_family": {
+    "const": 62,
+    "periodic": 1078,
+    "bm": 661
+   },
+   "coverage": {
+    "word_union_all": 117569,
+    "word_union_nontrivial": 0,
+    "word_union_simple": 117569,
+    "bit_union_positions": 993106,
+    "bit_union_positions_low_order": 993052,
+    "bit_positions_total": 16777216
+   }
+  },
+  {
+   "name": "docx-shapes.docx",
+   "category": "ZIP/DOCX",
+   "scanned_bytes": 122610,
+   "sha256_sample": "8fcf0f0433be0968d9305c564ce69601931695ffe163d264fb69b7782feff517",
+   "models_count": 382,
+   "models_by_family": {
+    "const": 202,
+    "periodic": 110,
+    "bm": 70
+   },
+   "coverage": {
+    "word_union_all": 6671,
+    "word_union_nontrivial": 0,
+    "word_union_simple": 6671,
+    "bit_union_positions": 61911,
+    "bit_union_positions_low_order": 61911,
+    "bit_positions_total": 7847040
+   }
+  }
+ ]
+}

@@ -1,0 +1,580 @@
+{
+ "phase": 14,
+ "episode": 3,
+ "contexts": [
+  8,
+  16
+ ],
+ "window_bits": 1024,
+ "files": [
+  {
+   "key": "book1",
+   "category": "TXT",
+   "file_bytes": 768771,
+   "dev_offset": 0,
+   "val_offset": 382337,
+   "dev_configs": {
+    "L8_quad": {
+     "windows": 11,
+     "rank_sum": 407,
+     "nullity_sum": 0,
+     "inconsistent": 11,
+     "inconsistent_windows": 11,
+     "simple_windows": 1
+    },
+    "L8_lin": {
+     "windows": 11,
+     "rank_sum": 99,
+     "nullity_sum": 0,
+     "inconsistent": 11,
+     "inconsistent_windows": 11,
+     "simple_windows": 1
+    },
+    "L16_quad": {
+     "windows": 11,
+     "rank_sum": 1507,
+     "nullity_sum": 0,
+     "inconsistent": 11,
+     "inconsistent_windows": 11,
+     "simple_windows": 1
+    },
+    "L16_lin": {
+     "windows": 11,
+     "rank_sum": 187,
+     "nullity_sum": 0,
+     "inconsistent": 11,
+     "inconsistent_windows": 11,
+     "simple_windows": 1
+    }
+   },
+   "frozen": {
+    "L": 16,
+    "degree": 2
+   },
+   "val": {
+    "windows": 11,
+    "rank_sum": 1427,
+    "nullity_sum": 80,
+    "inconsistent": 11,
+    "inconsistent_windows": 11,
+    "simple_windows": 1
+   },
+   "val_models": [],
+   "implicit": {
+    "8": {
+     "stats": {
+      "windows": 9,
+      "rank_sum": 414,
+      "nullity_sum": 0
+     },
+     "found": []
+    },
+    "16": {
+     "stats": {
+      "windows": 9,
+      "rank_sum": 1379,
+      "nullity_sum": 7
+     },
+     "found": []
+    }
+   },
+   "implicit_val": {
+    "8": {
+     "stats": {
+      "windows": 9,
+      "rank_sum": 397,
+      "nullity_sum": 17,
+      "input_only": 6
+     },
+     "found": []
+    },
+    "16": {
+     "stats": {
+      "windows": 9,
+      "rank_sum": 1293,
+      "nullity_sum": 93,
+      "input_only": 1
+     },
+     "found": []
+    }
+   }
+  },
+  {
+   "key": "7zr.exe",
+   "category": "EXE",
+   "file_bytes": 602624,
+   "dev_offset": 0,
+   "val_offset": 299264,
+   "dev_configs": {
+    "L8_quad": {
+     "windows": 12,
+     "rank_sum": 444,
+     "nullity_sum": 0,
+     "inconsistent": 12,
+     "inconsistent_windows": 12
+    },
+    "L8_lin": {
+     "windows": 12,
+     "rank_sum": 108,
+     "nullity_sum": 0,
+     "inconsistent": 12,
+     "inconsistent_windows": 12
+    },
+    "L16_quad": {
+     "windows": 12,
+     "rank_sum": 1610,
+     "nullity_sum": 34,
+     "inconsistent": 12,
+     "inconsistent_windows": 12
+    },
+    "L16_lin": {
+     "windows": 12,
+     "rank_sum": 204,
+     "nullity_sum": 0,
+     "inconsistent": 12,
+     "inconsistent_windows": 12
+    }
+   },
+   "frozen": {
+    "L": 16,
+    "degree": 2
+   },
+   "val": {
+    "windows": 12,
+    "rank_sum": 1644,
+    "nullity_sum": 0,
+    "inconsistent": 12,
+    "inconsistent_windows": 12
+   },
+   "val_models": [],
+   "implicit": {
+    "8": {
+     "stats": {
+      "windows": 10,
+      "rank_sum": 460,
+      "nullity_sum": 0
+     },
+     "found": []
+    },
+    "16": {
+     "stats": {
+      "windows": 10,
+      "rank_sum": 1492,
+      "nullity_sum": 48,
+      "input_only": 3
+     },
+     "found": []
+    }
+   },
+   "implicit_val": {
+    "8": {
+     "stats": {
+      "windows": 10,
+      "rank_sum": 460,
+      "nullity_sum": 0
+     },
+     "found": []
+    },
+    "16": {
+     "stats": {
+      "windows": 10,
+      "rank_sum": 1540,
+      "nullity_sum": 0
+     },
+     "found": []
+    }
+   }
+  },
+  {
+   "key": "irs1040.pdf",
+   "category": "PDF",
+   "file_bytes": 220237,
+   "dev_offset": 0,
+   "val_offset": 108070,
+   "dev_configs": {
+    "L8_quad": {
+     "windows": 12,
+     "rank_sum": 444,
+     "nullity_sum": 0,
+     "inconsistent": 12,
+     "inconsistent_windows": 12
+    },
+    "L8_lin": {
+     "windows": 12,
+     "rank_sum": 108,
+     "nullity_sum": 0,
+     "inconsistent": 12,
+     "inconsistent_windows": 12
+    },
+    "L16_quad": {
+     "windows": 12,
+     "rank_sum": 1636,
+     "nullity_sum": 8,
+     "inconsistent": 12,
+     "inconsistent_windows": 12
+    },
+    "L16_lin": {
+     "windows": 12,
+     "rank_sum": 204,
+     "nullity_sum": 0,
+     "inconsistent": 12,
+     "inconsistent_windows": 12
+    }
+   },
+   "frozen": {
+    "L": 16,
+    "degree": 2
+   },
+   "val": {
+    "windows": 12,
+    "rank_sum": 1644,
+    "nullity_sum": 0,
+    "inconsistent": 12,
+    "inconsistent_windows": 12
+   },
+   "val_models": [],
+   "implicit": {
+    "8": {
+     "stats": {
+      "windows": 10,
+      "rank_sum": 460,
+      "nullity_sum": 0
+     },
+     "found": []
+    },
+    "16": {
+     "stats": {
+      "windows": 10,
+      "rank_sum": 1517,
+      "nullity_sum": 23
+     },
+     "found": []
+    }
+   },
+   "implicit_val": {
+    "8": {
+     "stats": {
+      "windows": 10,
+      "rank_sum": 460,
+      "nullity_sum": 0
+     },
+     "found": []
+    },
+    "16": {
+     "stats": {
+      "windows": 10,
+      "rank_sum": 1540,
+      "nullity_sum": 0
+     },
+     "found": []
+    }
+   }
+  },
+  {
+   "key": "hopper.bmp",
+   "category": "BMP",
+   "file_bytes": 49290,
+   "dev_offset": 0,
+   "val_offset": 22597,
+   "dev_configs": {
+    "L8_quad": {
+     "windows": 12,
+     "rank_sum": 444,
+     "nullity_sum": 0,
+     "inconsistent": 12,
+     "inconsistent_windows": 12
+    },
+    "L8_lin": {
+     "windows": 12,
+     "rank_sum": 108,
+     "nullity_sum": 0,
+     "inconsistent": 12,
+     "inconsistent_windows": 12
+    },
+    "L16_quad": {
+     "windows": 12,
+     "rank_sum": 1576,
+     "nullity_sum": 68,
+     "inconsistent": 12,
+     "inconsistent_windows": 12
+    },
+    "L16_lin": {
+     "windows": 12,
+     "rank_sum": 204,
+     "nullity_sum": 0,
+     "inconsistent": 12,
+     "inconsistent_windows": 12
+    }
+   },
+   "frozen": {
+    "L": 16,
+    "degree": 2
+   },
+   "val": {
+    "windows": 12,
+    "rank_sum": 1644,
+    "nullity_sum": 0,
+    "inconsistent": 12,
+    "inconsistent_windows": 12
+   },
+   "val_models": [],
+   "implicit": {
+    "8": {
+     "stats": {
+      "windows": 10,
+      "rank_sum": 460,
+      "nullity_sum": 0
+     },
+     "found": []
+    },
+    "16": {
+     "stats": {
+      "windows": 10,
+      "rank_sum": 1437,
+      "nullity_sum": 103
+     },
+     "found": []
+    }
+   },
+   "implicit_val": {
+    "8": {
+     "stats": {
+      "windows": 10,
+      "rank_sum": 460,
+      "nullity_sum": 0
+     },
+     "found": []
+    },
+    "16": {
+     "stats": {
+      "windows": 10,
+      "rank_sum": 1539,
+      "nullity_sum": 1
+     },
+     "found": []
+    }
+   }
+  },
+  {
+   "key": "ecg-holdout.bin",
+   "category": "ECG",
+   "file_bytes": 262144,
+   "dev_offset": 0,
+   "val_offset": 129024,
+   "dev_configs": {
+    "L8_quad": {
+     "windows": 12,
+     "rank_sum": 438,
+     "nullity_sum": 6,
+     "inconsistent": 12,
+     "inconsistent_windows": 12
+    },
+    "L8_lin": {
+     "windows": 12,
+     "rank_sum": 108,
+     "nullity_sum": 0,
+     "inconsistent": 12,
+     "inconsistent_windows": 12
+    },
+    "L16_quad": {
+     "windows": 12,
+     "rank_sum": 1539,
+     "nullity_sum": 105,
+     "inconsistent": 12,
+     "inconsistent_windows": 12
+    },
+    "L16_lin": {
+     "windows": 12,
+     "rank_sum": 204,
+     "nullity_sum": 0,
+     "inconsistent": 12,
+     "inconsistent_windows": 12
+    }
+   },
+   "frozen": {
+    "L": 16,
+    "degree": 2
+   },
+   "val": {
+    "windows": 12,
+    "rank_sum": 1259,
+    "nullity_sum": 385,
+    "inconsistent": 10,
+    "inconsistent_windows": 10,
+    "train_exact": 2,
+    "valid_exact": 0,
+    "valid_correct": 960,
+    "valid_total": 1024
+   },
+   "val_models": [],
+   "implicit": {
+    "8": {
+     "stats": {
+      "windows": 10,
+      "rank_sum": 450,
+      "nullity_sum": 10,
+      "input_only": 11
+     },
+     "found": []
+    },
+    "16": {
+     "stats": {
+      "windows": 10,
+      "rank_sum": 1413,
+      "nullity_sum": 127,
+      "input_only": 1
+     },
+     "found": []
+    }
+   },
+   "implicit_val": {
+    "8": {
+     "stats": {
+      "windows": 10,
+      "rank_sum": 344,
+      "nullity_sum": 116,
+      "input_only": 29
+     },
+     "found": []
+    },
+    "16": {
+     "stats": {
+      "windows": 10,
+      "rank_sum": 1104,
+      "nullity_sum": 436,
+      "input_only": 28
+     },
+     "found": []
+    }
+   }
+  },
+  {
+   "key": "model-weights.bin",
+   "category": "weights",
+   "file_bytes": 134217728,
+   "dev_offset": 0,
+   "val_offset": 67106816,
+   "dev_configs": {
+    "L8_quad": {
+     "windows": 12,
+     "rank_sum": 291,
+     "nullity_sum": 153,
+     "inconsistent": 11,
+     "inconsistent_windows": 11,
+     "train_exact": 1,
+     "valid_exact": 0,
+     "valid_correct": 339,
+     "valid_total": 512
+    },
+    "L8_lin": {
+     "windows": 12,
+     "rank_sum": 100,
+     "nullity_sum": 8,
+     "inconsistent": 11,
+     "inconsistent_windows": 11,
+     "train_exact": 1,
+     "valid_exact": 0,
+     "valid_correct": 339,
+     "valid_total": 512
+    },
+    "L16_quad": {
+     "windows": 12,
+     "rank_sum": 943,
+     "nullity_sum": 701,
+     "inconsistent": 11,
+     "inconsistent_windows": 11,
+     "train_exact": 1,
+     "valid_exact": 0,
+     "valid_correct": 339,
+     "valid_total": 512
+    },
+    "L16_lin": {
+     "windows": 12,
+     "rank_sum": 188,
+     "nullity_sum": 16,
+     "inconsistent": 11,
+     "inconsistent_windows": 11,
+     "train_exact": 1,
+     "valid_exact": 0,
+     "valid_correct": 339,
+     "valid_total": 512
+    }
+   },
+   "frozen": {
+    "L": 16,
+    "degree": 2
+   },
+   "val": {
+    "windows": 12,
+    "rank_sum": 1644,
+    "nullity_sum": 0,
+    "inconsistent": 12,
+    "inconsistent_windows": 12
+   },
+   "val_models": [],
+   "implicit": {
+    "8": {
+     "stats": {
+      "windows": 10,
+      "rank_sum": 263,
+      "nullity_sum": 197,
+      "input_only": 180
+     },
+     "found": []
+    },
+    "16": {
+     "stats": {
+      "windows": 10,
+      "rank_sum": 737,
+      "nullity_sum": 803,
+      "input_only": 126
+     },
+     "found": []
+    }
+   },
+   "implicit_val": {
+    "8": {
+     "stats": {
+      "windows": 10,
+      "rank_sum": 460,
+      "nullity_sum": 0
+     },
+     "found": []
+    },
+    "16": {
+     "stats": {
+      "windows": 10,
+      "rank_sum": 1540,
+      "nullity_sum": 0
+     },
+     "found": []
+    }
+   }
+  }
+ ],
+ "total_dev": {
+  "windows": 71,
+  "rank_sum": 8811,
+  "nullity_sum": 916,
+  "inconsistent": 70,
+  "inconsistent_windows": 70,
+  "simple_windows": 1,
+  "train_exact": 1,
+  "valid_exact": 0,
+  "valid_correct": 339,
+  "valid_total": 512
+ },
+ "total_val": {
+  "windows": 71,
+  "rank_sum": 9262,
+  "nullity_sum": 465,
+  "inconsistent": 69,
+  "inconsistent_windows": 69,
+  "simple_windows": 1,
+  "train_exact": 2,
+  "valid_exact": 0,
+  "valid_correct": 960,
+  "valid_total": 1024
+ },
+ "elapsed_s": 10.361075299995719
+}

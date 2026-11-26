@@ -1,0 +1,1569 @@
+{
+ "episode": 1,
+ "regions_per_file": 3,
+ "block_bytes": 4096,
+ "files": [
+  {
+   "name": "alice29.txt",
+   "scanned_bytes": 152089,
+   "regions": [
+    {
+     "entropy": 4.118025639849118,
+     "start": 28672,
+     "end": 32768
+    },
+    {
+     "entropy": 4.3641084193188835,
+     "start": 8192,
+     "end": 12288
+    },
+    {
+     "entropy": 4.434299171251541,
+     "start": 16384,
+     "end": 20480
+    }
+   ],
+   "by_rep_offset": {
+    "u8@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u16le@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u16le@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u16be@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u16be@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32le@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32le@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32le@2": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32le@3": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32be@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32be@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32be@2": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32be@3": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@2": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@3": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@4": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@5": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@6": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@7": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@2": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@3": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@4": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@5": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@6": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@7": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    }
+   },
+   "nontrivial_models": [],
+   "simple_model_count": 0
+  },
+  {
+   "name": "bbc.rss.xml",
+   "scanned_bytes": 28260,
+   "regions": [
+    {
+     "entropy": 5.143456876261078,
+     "start": 4096,
+     "end": 8192
+    },
+    {
+     "entropy": 5.157602860161251,
+     "start": 0,
+     "end": 4096
+    },
+    {
+     "entropy": 5.165637045533425,
+     "start": 16384,
+     "end": 20480
+    }
+   ],
+   "by_rep_offset": {
+    "u8@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u16le@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u16le@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u16be@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u16be@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32le@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32le@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32le@2": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32le@3": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32be@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32be@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32be@2": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32be@3": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@2": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@3": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@4": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@5": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@6": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@7": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@2": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@3": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@4": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@5": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@6": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@7": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    }
+   },
+   "nontrivial_models": [],
+   "simple_model_count": 0
+  },
+  {
+   "name": "7zr.exe",
+   "scanned_bytes": 262144,
+   "regions": [
+    {
+     "entropy": 6.012274357929117,
+     "start": 0,
+     "end": 4096
+    },
+    {
+     "entropy": 6.012461769033297,
+     "start": 196608,
+     "end": 200704
+    },
+    {
+     "entropy": 6.084554271075041,
+     "start": 114688,
+     "end": 118784
+    }
+   ],
+   "by_rep_offset": {
+    "u8@0": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "const": 1
+     }
+    },
+    "u16le@0": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "const": 1
+     }
+    },
+    "u16le@1": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "const": 1
+     }
+    },
+    "u16be@0": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "const": 1
+     }
+    },
+    "u16be@1": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "const": 1
+     }
+    },
+    "u32le@0": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "const": 1
+     }
+    },
+    "u32le@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32le@2": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32le@3": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32be@0": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "const": 1
+     }
+    },
+    "u32be@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32be@2": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32be@3": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@2": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@3": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@4": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@5": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@6": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@7": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@2": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@3": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@4": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@5": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@6": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@7": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    }
+   },
+   "nontrivial_models": [],
+   "simple_model_count": 7
+  },
+  {
+   "name": "bert.pdf",
+   "scanned_bytes": 262144,
+   "regions": [
+    {
+     "entropy": 5.826749624641369,
+     "start": 20480,
+     "end": 24576
+    },
+    {
+     "entropy": 5.907118178238385,
+     "start": 32768,
+     "end": 36864
+    },
+    {
+     "entropy": 6.436598208039163,
+     "start": 36864,
+     "end": 40960
+    }
+   ],
+   "by_rep_offset": {
+    "u8@0": {
+     "models": 9,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 9
+     }
+    },
+    "u16le@0": {
+     "models": 9,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 9
+     }
+    },
+    "u16le@1": {
+     "models": 9,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 9
+     }
+    },
+    "u16be@0": {
+     "models": 9,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 9
+     }
+    },
+    "u16be@1": {
+     "models": 9,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 9
+     }
+    },
+    "u32le@0": {
+     "models": 9,
+     "nontrivial": 0,
+     "families": {
+      "const": 9
+     }
+    },
+    "u32le@1": {
+     "models": 9,
+     "nontrivial": 0,
+     "families": {
+      "const": 9
+     }
+    },
+    "u32le@2": {
+     "models": 9,
+     "nontrivial": 0,
+     "families": {
+      "const": 9
+     }
+    },
+    "u32le@3": {
+     "models": 9,
+     "nontrivial": 0,
+     "families": {
+      "const": 9
+     }
+    },
+    "u32be@0": {
+     "models": 9,
+     "nontrivial": 0,
+     "families": {
+      "const": 9
+     }
+    },
+    "u32be@1": {
+     "models": 9,
+     "nontrivial": 0,
+     "families": {
+      "const": 9
+     }
+    },
+    "u32be@2": {
+     "models": 9,
+     "nontrivial": 0,
+     "families": {
+      "const": 9
+     }
+    },
+    "u32be@3": {
+     "models": 9,
+     "nontrivial": 0,
+     "families": {
+      "const": 9
+     }
+    },
+    "u64le@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@2": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@3": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@4": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@5": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@6": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@7": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@2": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@3": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@4": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@5": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@6": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@7": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    }
+   },
+   "nontrivial_models": [],
+   "simple_model_count": 117
+  },
+  {
+   "name": "transparency.bmp",
+   "scanned_bytes": 262144,
+   "regions": [
+    {
+     "entropy": 0.0,
+     "start": 4096,
+     "end": 8192
+    },
+    {
+     "entropy": 0.0,
+     "start": 8192,
+     "end": 12288
+    },
+    {
+     "entropy": 0.0,
+     "start": 12288,
+     "end": 16384
+    }
+   ],
+   "by_rep_offset": {
+    "u8@0": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u16le@0": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u16le@1": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u16be@0": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u16be@1": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u32le@0": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u32le@1": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u32le@2": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u32le@3": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u32be@0": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u32be@1": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u32be@2": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u32be@3": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u64le@0": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u64le@1": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u64le@2": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u64le@3": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u64le@4": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u64le@5": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u64le@6": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u64le@7": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u64be@0": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u64be@1": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u64be@2": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u64be@3": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u64be@4": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u64be@5": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u64be@6": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    },
+    "u64be@7": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "const": 3
+     }
+    }
+   },
+   "nontrivial_models": [],
+   "simple_model_count": 87
+  },
+  {
+   "name": "ecg-train.bin",
+   "scanned_bytes": 262144,
+   "regions": [
+    {
+     "entropy": 4.909205990066796,
+     "start": 8192,
+     "end": 12288
+    },
+    {
+     "entropy": 4.925876077603292,
+     "start": 4096,
+     "end": 8192
+    },
+    {
+     "entropy": 4.956046976449273,
+     "start": 167936,
+     "end": 172032
+    }
+   ],
+   "by_rep_offset": {
+    "u8@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u16le@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u16le@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u16be@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u16be@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32le@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32le@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32le@2": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32le@3": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32be@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32be@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32be@2": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u32be@3": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@2": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@3": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@4": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@5": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@6": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@7": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@2": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@3": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@4": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@5": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@6": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@7": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    }
+   },
+   "nontrivial_models": [],
+   "simple_model_count": 0
+  },
+  {
+   "name": "banana.jpg",
+   "scanned_bytes": 262144,
+   "regions": [
+    {
+     "entropy": 3.8648209283086272,
+     "start": 32768,
+     "end": 36864
+    },
+    {
+     "entropy": 3.8648209283086277,
+     "start": 24576,
+     "end": 28672
+    },
+    {
+     "entropy": 3.864823857398077,
+     "start": 40960,
+     "end": 45056
+    }
+   ],
+   "by_rep_offset": {
+    "u8@0": {
+     "models": 9,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 9
+     }
+    },
+    "u16le@0": {
+     "models": 9,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 9
+     }
+    },
+    "u16le@1": {
+     "models": 9,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 9
+     }
+    },
+    "u16be@0": {
+     "models": 9,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 9
+     }
+    },
+    "u16be@1": {
+     "models": 9,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 9
+     }
+    },
+    "u32le@0": {
+     "models": 8,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 8
+     }
+    },
+    "u32le@1": {
+     "models": 6,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 6
+     }
+    },
+    "u32le@2": {
+     "models": 6,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 6
+     }
+    },
+    "u32le@3": {
+     "models": 6,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 6
+     }
+    },
+    "u32be@0": {
+     "models": 8,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 8
+     }
+    },
+    "u32be@1": {
+     "models": 6,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 6
+     }
+    },
+    "u32be@2": {
+     "models": 6,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 6
+     }
+    },
+    "u32be@3": {
+     "models": 6,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 6
+     }
+    },
+    "u64le@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@2": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@3": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@4": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@5": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@6": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64le@7": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@0": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@1": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@2": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@3": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@4": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@5": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@6": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    },
+    "u64be@7": {
+     "models": 0,
+     "nontrivial": 0,
+     "families": {}
+    }
+   },
+   "nontrivial_models": [],
+   "simple_model_count": 97
+  },
+  {
+   "name": "docx-shapes.docx",
+   "scanned_bytes": 122610,
+   "regions": [
+    {
+     "entropy": 6.023445344359074,
+     "start": 16384,
+     "end": 20480
+    },
+    {
+     "entropy": 6.366307877934167,
+     "start": 57344,
+     "end": 61440
+    },
+    {
+     "entropy": 6.428680329714829,
+     "start": 65536,
+     "end": 69632
+    }
+   ],
+   "by_rep_offset": {
+    "u8@0": {
+     "models": 3,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 2,
+      "const": 1
+     }
+    },
+    "u16le@0": {
+     "models": 2,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 2
+     }
+    },
+    "u16le@1": {
+     "models": 2,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 2
+     }
+    },
+    "u16be@0": {
+     "models": 2,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 2
+     }
+    },
+    "u16be@1": {
+     "models": 2,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 2
+     }
+    },
+    "u32le@0": {
+     "models": 2,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 2
+     }
+    },
+    "u32le@1": {
+     "models": 2,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 2
+     }
+    },
+    "u32le@2": {
+     "models": 2,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 2
+     }
+    },
+    "u32le@3": {
+     "models": 2,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 2
+     }
+    },
+    "u32be@0": {
+     "models": 2,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 2
+     }
+    },
+    "u32be@1": {
+     "models": 2,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 2
+     }
+    },
+    "u32be@2": {
+     "models": 2,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 2
+     }
+    },
+    "u32be@3": {
+     "models": 2,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 2
+     }
+    },
+    "u64le@0": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 1
+     }
+    },
+    "u64le@1": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 1
+     }
+    },
+    "u64le@2": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 1
+     }
+    },
+    "u64le@3": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 1
+     }
+    },
+    "u64le@4": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 1
+     }
+    },
+    "u64le@5": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 1
+     }
+    },
+    "u64le@6": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 1
+     }
+    },
+    "u64le@7": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 1
+     }
+    },
+    "u64be@0": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 1
+     }
+    },
+    "u64be@1": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 1
+     }
+    },
+    "u64be@2": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 1
+     }
+    },
+    "u64be@3": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 1
+     }
+    },
+    "u64be@4": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 1
+     }
+    },
+    "u64be@5": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 1
+     }
+    },
+    "u64be@6": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 1
+     }
+    },
+    "u64be@7": {
+     "models": 1,
+     "nontrivial": 0,
+     "families": {
+      "periodic": 1
+     }
+    }
+   },
+   "nontrivial_models": [],
+   "simple_model_count": 43
+  }
+ ],
+ "positive_control": {
+  "description": "affine1 u16le sequence shifted by one byte",
+  "models": [
+   {
+    "family": "affine1",
+    "rep": "u16le",
+    "align": 1,
+    "start": 0,
+    "count": 512,
+    "params": [
+     16645,
+     12345,
+     7
+    ],
+    "exact": true
+   }
+  ]
+ },
+ "elapsed_s": 10.030127100006212
+}
