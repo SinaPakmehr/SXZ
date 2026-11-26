@@ -108,6 +108,11 @@ The project has evolved through multiple experimental phases. Each phase investi
 | 08 — Structural Relations | Mathematical relationships between non-contiguous data structures |
 | 09 — MSMC | Mathematical Sequence Mosaic Compression |
 | 10 — ASMC | Adaptive Stochastic Mosaic Compression |
+| 11 - CGMC | Context-conditioned generators, strict attribution and decoder audit |
+| 12 - AMRD | Direct algebraic inference, reversible representations and cross-plane screens |
+| 13 - Scaling | Nested real-data sizes and mathematical cost diagnostics |
+| 14 - Number Theory | 2-adic rationals, coordinate functions and quadratic Boolean relations |
+| 15 - Image Math | Pixel-coordinate functions, adaptive regions and compositional networks |
 
 ### Phases 11-15 at a glance
 
