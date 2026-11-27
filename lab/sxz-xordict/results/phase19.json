@@ -1,0 +1,1091 @@
+{
+ "phase": 19,
+ "episode": 1,
+ "protocol": {
+  "phase": 19,
+  "episode": 1,
+  "status": "frozen before experiments",
+  "codec": "bounded exact sparse XOR dictionary v1.0",
+  "block_lengths": [
+   8,
+   16,
+   32,
+   64
+  ],
+  "dictionary_capacities": [
+   16,
+   32,
+   64
+  ],
+  "max_composition_atoms": 3,
+  "learning_modes": [
+   "dev_transfer",
+   "local"
+  ],
+  "gate": {
+   "primary": {
+    "min_saving": 0.01,
+    "min_files": 2
+   },
+   "secondary": {
+    "min_nontrivial_multi_coverage": 0.1,
+    "min_files": 2,
+    "require_encoding_bottleneck": true
+   }
+  },
+  "baseline": "min(A,B,C,D,D_zstd,E,E_zstd,D_F,D_F_zstd) per region",
+  "controls": {
+   "A": "zstd-9 raw",
+   "B": "zstd-19 raw",
+   "C": "raw LZMA2 +1",
+   "D": "ordinary single-atom block dictionary",
+   "E": "fixed 8L-bit GF(2) basis representation",
+   "D_F": "F dictionary with composition disabled (matched ablation)",
+   "F": "learned dictionary with 1/2/3-atom sparse XOR compositions",
+   "G": "F + zstd-9"
+  },
+  "budget_s": 180
+ },
+ "unit_tests": "passed",
+ "selected": {
+  "book1": {
+   "4096": {
+    "block_length": 64,
+    "capacity": 16,
+    "max_atoms": 2,
+    "dev_F_bytes": 4171,
+    "dev_G_bytes": 2219
+   }
+  },
+  "bbc": {
+   "4096": {
+    "block_length": 64,
+    "capacity": 16,
+    "max_atoms": 2,
+    "dev_F_bytes": 4171,
+    "dev_G_bytes": 1564
+   }
+  },
+  "7zr": {
+   "4096": {
+    "block_length": 64,
+    "capacity": 16,
+    "max_atoms": 2,
+    "dev_F_bytes": 3983,
+    "dev_G_bytes": 2847
+   }
+  },
+  "irs1040": {
+   "4096": {
+    "block_length": 64,
+    "capacity": 16,
+    "max_atoms": 2,
+    "dev_F_bytes": 4171,
+    "dev_G_bytes": 3627
+   }
+  },
+  "hopper": {
+   "4096": {
+    "block_length": 64,
+    "capacity": 16,
+    "max_atoms": 2,
+    "dev_F_bytes": 4171,
+    "dev_G_bytes": 3271
+   }
+  },
+  "ecg": {
+   "4096": {
+    "block_length": 64,
+    "capacity": 16,
+    "max_atoms": 2,
+    "dev_F_bytes": 4171,
+    "dev_G_bytes": 2694
+   }
+  }
+ },
+ "dev_elapsed_s": 0.507,
+ "validation": {
+  "split": "val",
+  "elapsed_s": 0.234,
+  "files": [
+   {
+    "name": "book1",
+    "kind": "text",
+    "path": "datasets/corpus/book1",
+    "file_bytes": 768771,
+    "file_sha256": "9ffa47cd93bccd732f20e0c304203cfbc1b8a91bedac536e2d8f6051003d9951",
+    "available_sizes": [
+     4096
+    ],
+    "regions": {
+     "4096": {
+      "dev_transfer": {
+       "config": {
+        "block_length": 64,
+        "capacity": 16,
+        "max_atoms": 2
+       },
+       "atoms": 0,
+       "dictionary_rank": 0,
+       "dictionary_bytes": 0,
+       "reference_bytes": 0,
+       "literal_bytes": 4096,
+       "header_bytes": 11,
+       "F_bytes": 4171,
+       "G_bytes": 2221,
+       "D_bytes": 5195,
+       "D_zstd_bytes": 2769,
+       "D_F_bytes": 4171,
+       "D_F_zstd_bytes": 2221,
+       "E_bytes": 4105,
+       "E_zstd_bytes": 2129,
+       "controls": {
+        "A_zstd9": {
+         "size_bytes": 2116,
+         "encode_s": 0.0002,
+         "decode_s": 3e-05,
+         "decoded_ok": true
+        },
+        "B_zstd19": {
+         "size_bytes": 2095,
+         "encode_s": 0.00137,
+         "decode_s": 2e-05,
+         "decoded_ok": true
+        },
+        "C_lzma2": {
+         "size_bytes": 2182,
+         "encode_s": 0.01196,
+         "decode_s": 0.00057,
+         "decoded_ok": true
+        }
+       },
+       "baseline_name": "B_zstd19",
+       "baseline_bytes": 2095,
+       "F_vs_D_F": 1.0,
+       "G_vs_D_F_zstd": 1.0,
+       "G_vs_baseline": 1.060143,
+       "saving_vs_baseline": -0.060143,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "composition_coverage": 0.0,
+       "multi_composition_coverage": 0.0,
+       "nontrivial_multi_blocks": 0,
+       "nontrivial_multi_coverage": 0.0,
+       "representatives": [],
+       "encode_s": 0.0045,
+       "compress_s": 0.0003,
+       "decode_s": 0.0001,
+       "decoded_ok": true,
+       "decoded_sha256": "3e488a07b33278771d695225be56978b2727de14c4aa433d1f4a00b3527389a4"
+      },
+      "local": {
+       "config": {
+        "block_length": 64,
+        "capacity": 16,
+        "max_atoms": 2
+       },
+       "atoms": 0,
+       "dictionary_rank": 0,
+       "dictionary_bytes": 0,
+       "reference_bytes": 0,
+       "literal_bytes": 4096,
+       "header_bytes": 11,
+       "F_bytes": 4171,
+       "G_bytes": 2221,
+       "D_bytes": 4187,
+       "D_zstd_bytes": 2247,
+       "D_F_bytes": 4171,
+       "D_F_zstd_bytes": 2221,
+       "E_bytes": 4105,
+       "E_zstd_bytes": 2129,
+       "controls": {
+        "A_zstd9": {
+         "size_bytes": 2116,
+         "encode_s": 0.00025,
+         "decode_s": 4e-05,
+         "decoded_ok": true
+        },
+        "B_zstd19": {
+         "size_bytes": 2095,
+         "encode_s": 0.00154,
+         "decode_s": 3e-05,
+         "decoded_ok": true
+        },
+        "C_lzma2": {
+         "size_bytes": 2182,
+         "encode_s": 0.01159,
+         "decode_s": 0.00041,
+         "decoded_ok": true
+        }
+       },
+       "baseline_name": "B_zstd19",
+       "baseline_bytes": 2095,
+       "F_vs_D_F": 1.0,
+       "G_vs_D_F_zstd": 1.0,
+       "G_vs_baseline": 1.060143,
+       "saving_vs_baseline": -0.060143,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "composition_coverage": 0.0,
+       "multi_composition_coverage": 0.0,
+       "nontrivial_multi_blocks": 0,
+       "nontrivial_multi_coverage": 0.0,
+       "representatives": [],
+       "encode_s": 0.0046,
+       "compress_s": 0.00028,
+       "decode_s": 7e-05,
+       "decoded_ok": true,
+       "decoded_sha256": "3e488a07b33278771d695225be56978b2727de14c4aa433d1f4a00b3527389a4"
+      }
+     }
+    }
+   },
+   {
+    "name": "bbc",
+    "kind": "structured text",
+    "path": "datasets/corpus/bbc.rss.xml",
+    "file_bytes": 28260,
+    "file_sha256": "caa27d88f455e0fd10c408f7aaaaa73b16e9c0d502fa8c9cc11bc70551192b83",
+    "available_sizes": [
+     4096
+    ],
+    "regions": {
+     "4096": {
+      "dev_transfer": {
+       "config": {
+        "block_length": 64,
+        "capacity": 16,
+        "max_atoms": 2
+       },
+       "atoms": 0,
+       "dictionary_rank": 0,
+       "dictionary_bytes": 0,
+       "reference_bytes": 0,
+       "literal_bytes": 4096,
+       "header_bytes": 11,
+       "F_bytes": 4171,
+       "G_bytes": 1491,
+       "D_bytes": 5195,
+       "D_zstd_bytes": 1902,
+       "D_F_bytes": 4171,
+       "D_F_zstd_bytes": 1491,
+       "E_bytes": 4105,
+       "E_zstd_bytes": 1309,
+       "controls": {
+        "A_zstd9": {
+         "size_bytes": 1297,
+         "encode_s": 0.00011,
+         "decode_s": 2e-05,
+         "decoded_ok": true
+        },
+        "B_zstd19": {
+         "size_bytes": 1292,
+         "encode_s": 0.00346,
+         "decode_s": 0.00014,
+         "decoded_ok": true
+        },
+        "C_lzma2": {
+         "size_bytes": 1298,
+         "encode_s": 0.01111,
+         "decode_s": 0.0003,
+         "decoded_ok": true
+        }
+       },
+       "baseline_name": "B_zstd19",
+       "baseline_bytes": 1292,
+       "F_vs_D_F": 1.0,
+       "G_vs_D_F_zstd": 1.0,
+       "G_vs_baseline": 1.154025,
+       "saving_vs_baseline": -0.154025,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "composition_coverage": 0.0,
+       "multi_composition_coverage": 0.0,
+       "nontrivial_multi_blocks": 0,
+       "nontrivial_multi_coverage": 0.0,
+       "representatives": [],
+       "encode_s": 0.00292,
+       "compress_s": 0.00016,
+       "decode_s": 7e-05,
+       "decoded_ok": true,
+       "decoded_sha256": "7aded530ac0d3021a4a88726d9c74f83386561f7799ea840e2525dbf0516b32f"
+      },
+      "local": {
+       "config": {
+        "block_length": 64,
+        "capacity": 16,
+        "max_atoms": 2
+       },
+       "atoms": 1,
+       "dictionary_rank": 1,
+       "dictionary_bytes": 64,
+       "reference_bytes": 4,
+       "literal_bytes": 3968,
+       "header_bytes": 11,
+       "F_bytes": 4109,
+       "G_bytes": 1495,
+       "D_bytes": 4124,
+       "D_zstd_bytes": 1507,
+       "D_F_bytes": 4109,
+       "D_F_zstd_bytes": 1495,
+       "E_bytes": 4105,
+       "E_zstd_bytes": 1309,
+       "controls": {
+        "A_zstd9": {
+         "size_bytes": 1297,
+         "encode_s": 0.00011,
+         "decode_s": 2e-05,
+         "decoded_ok": true
+        },
+        "B_zstd19": {
+         "size_bytes": 1292,
+         "encode_s": 0.00352,
+         "decode_s": 3e-05,
+         "decoded_ok": true
+        },
+        "C_lzma2": {
+         "size_bytes": 1298,
+         "encode_s": 0.01119,
+         "decode_s": 0.00034,
+         "decoded_ok": true
+        }
+       },
+       "baseline_name": "B_zstd19",
+       "baseline_bytes": 1292,
+       "F_vs_D_F": 1.0,
+       "G_vs_D_F_zstd": 1.0,
+       "G_vs_baseline": 1.157121,
+       "saving_vs_baseline": -0.157121,
+       "tag_counts": {
+        "0": 62,
+        "1": 2,
+        "2": 0,
+        "3": 0
+       },
+       "composition_coverage": 0.03125,
+       "multi_composition_coverage": 0.0,
+       "nontrivial_multi_blocks": 0,
+       "nontrivial_multi_coverage": 0.0,
+       "representatives": [],
+       "encode_s": 0.0039,
+       "compress_s": 0.00017,
+       "decode_s": 9e-05,
+       "decoded_ok": true,
+       "decoded_sha256": "7aded530ac0d3021a4a88726d9c74f83386561f7799ea840e2525dbf0516b32f"
+      }
+     }
+    }
+   },
+   {
+    "name": "7zr",
+    "kind": "executable",
+    "path": "datasets/corpus/7zr.exe",
+    "file_bytes": 602624,
+    "file_sha256": "256feca8e274e5da655e2a284fabafd9f554365eb164862089dacd4e8276d282",
+    "available_sizes": [
+     4096
+    ],
+    "regions": {
+     "4096": {
+      "dev_transfer": {
+       "config": {
+        "block_length": 64,
+        "capacity": 16,
+        "max_atoms": 2
+       },
+       "atoms": 1,
+       "dictionary_rank": 0,
+       "dictionary_bytes": 64,
+       "reference_bytes": 88,
+       "literal_bytes": 1280,
+       "header_bytes": 11,
+       "F_bytes": 1463,
+       "G_bytes": 980,
+       "D_bytes": 2423,
+       "D_zstd_bytes": 1644,
+       "D_F_bytes": 1463,
+       "D_F_zstd_bytes": 979,
+       "E_bytes": 4105,
+       "E_zstd_bytes": 958,
+       "controls": {
+        "A_zstd9": {
+         "size_bytes": 948,
+         "encode_s": 4e-05,
+         "decode_s": 1e-05,
+         "decoded_ok": true
+        },
+        "B_zstd19": {
+         "size_bytes": 936,
+         "encode_s": 0.00023,
+         "decode_s": 1e-05,
+         "decoded_ok": true
+        },
+        "C_lzma2": {
+         "size_bytes": 983,
+         "encode_s": 0.01045,
+         "decode_s": 0.00025,
+         "decoded_ok": true
+        }
+       },
+       "baseline_name": "B_zstd19",
+       "baseline_bytes": 936,
+       "F_vs_D_F": 1.0,
+       "G_vs_D_F_zstd": 1.001021,
+       "G_vs_baseline": 1.047009,
+       "saving_vs_baseline": -0.047009,
+       "tag_counts": {
+        "0": 20,
+        "1": 44,
+        "2": 0,
+        "3": 0
+       },
+       "composition_coverage": 0.6875,
+       "multi_composition_coverage": 0.0,
+       "nontrivial_multi_blocks": 0,
+       "nontrivial_multi_coverage": 0.0,
+       "representatives": [],
+       "encode_s": 0.00375,
+       "compress_s": 5e-05,
+       "decode_s": 9e-05,
+       "decoded_ok": true,
+       "decoded_sha256": "3b3e5887681ee6b7a73db2735ef224947dc3ee805e3363838aa995163294dcf6"
+      },
+      "local": {
+       "config": {
+        "block_length": 64,
+        "capacity": 16,
+        "max_atoms": 2
+       },
+       "atoms": 1,
+       "dictionary_rank": 0,
+       "dictionary_bytes": 64,
+       "reference_bytes": 88,
+       "literal_bytes": 1280,
+       "header_bytes": 11,
+       "F_bytes": 1463,
+       "G_bytes": 980,
+       "D_bytes": 1478,
+       "D_zstd_bytes": 1006,
+       "D_F_bytes": 1463,
+       "D_F_zstd_bytes": 979,
+       "E_bytes": 4105,
+       "E_zstd_bytes": 958,
+       "controls": {
+        "A_zstd9": {
+         "size_bytes": 948,
+         "encode_s": 4e-05,
+         "decode_s": 1e-05,
+         "decoded_ok": true
+        },
+        "B_zstd19": {
+         "size_bytes": 936,
+         "encode_s": 0.00024,
+         "decode_s": 1e-05,
+         "decoded_ok": true
+        },
+        "C_lzma2": {
+         "size_bytes": 983,
+         "encode_s": 0.01066,
+         "decode_s": 0.00025,
+         "decoded_ok": true
+        }
+       },
+       "baseline_name": "B_zstd19",
+       "baseline_bytes": 936,
+       "F_vs_D_F": 1.0,
+       "G_vs_D_F_zstd": 1.001021,
+       "G_vs_baseline": 1.047009,
+       "saving_vs_baseline": -0.047009,
+       "tag_counts": {
+        "0": 20,
+        "1": 44,
+        "2": 0,
+        "3": 0
+       },
+       "composition_coverage": 0.6875,
+       "multi_composition_coverage": 0.0,
+       "nontrivial_multi_blocks": 0,
+       "nontrivial_multi_coverage": 0.0,
+       "representatives": [],
+       "encode_s": 0.00242,
+       "compress_s": 5e-05,
+       "decode_s": 0.0001,
+       "decoded_ok": true,
+       "decoded_sha256": "3b3e5887681ee6b7a73db2735ef224947dc3ee805e3363838aa995163294dcf6"
+      }
+     }
+    }
+   },
+   {
+    "name": "irs1040",
+    "kind": "pdf",
+    "path": "datasets/corpus/irs1040.pdf",
+    "file_bytes": 220237,
+    "file_sha256": "3d31c226df0d189ced80e039d01cf0f8820c1019681a0f0ca6264de277b7e982",
+    "available_sizes": [
+     4096
+    ],
+    "regions": {
+     "4096": {
+      "dev_transfer": {
+       "config": {
+        "block_length": 64,
+        "capacity": 16,
+        "max_atoms": 2
+       },
+       "atoms": 0,
+       "dictionary_rank": 0,
+       "dictionary_bytes": 0,
+       "reference_bytes": 0,
+       "literal_bytes": 4096,
+       "header_bytes": 11,
+       "F_bytes": 4171,
+       "G_bytes": 1685,
+       "D_bytes": 5195,
+       "D_zstd_bytes": 2431,
+       "D_F_bytes": 4171,
+       "D_F_zstd_bytes": 1685,
+       "E_bytes": 4105,
+       "E_zstd_bytes": 1629,
+       "controls": {
+        "A_zstd9": {
+         "size_bytes": 1619,
+         "encode_s": 9e-05,
+         "decode_s": 2e-05,
+         "decoded_ok": true
+        },
+        "B_zstd19": {
+         "size_bytes": 1607,
+         "encode_s": 0.00063,
+         "decode_s": 2e-05,
+         "decoded_ok": true
+        },
+        "C_lzma2": {
+         "size_bytes": 1534,
+         "encode_s": 0.01218,
+         "decode_s": 0.00034,
+         "decoded_ok": true
+        }
+       },
+       "baseline_name": "C_lzma2",
+       "baseline_bytes": 1534,
+       "F_vs_D_F": 1.0,
+       "G_vs_D_F_zstd": 1.0,
+       "G_vs_baseline": 1.098435,
+       "saving_vs_baseline": -0.098435,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "composition_coverage": 0.0,
+       "multi_composition_coverage": 0.0,
+       "nontrivial_multi_blocks": 0,
+       "nontrivial_multi_coverage": 0.0,
+       "representatives": [],
+       "encode_s": 0.00289,
+       "compress_s": 9e-05,
+       "decode_s": 5e-05,
+       "decoded_ok": true,
+       "decoded_sha256": "406d274be04e08ff6de4ab6f746d3df029b9493f436e314ca11a80fa6a91e708"
+      },
+      "local": {
+       "config": {
+        "block_length": 64,
+        "capacity": 16,
+        "max_atoms": 2
+       },
+       "atoms": 1,
+       "dictionary_rank": 1,
+       "dictionary_bytes": 64,
+       "reference_bytes": 46,
+       "literal_bytes": 2624,
+       "header_bytes": 11,
+       "F_bytes": 2786,
+       "G_bytes": 1690,
+       "D_bytes": 2801,
+       "D_zstd_bytes": 1702,
+       "D_F_bytes": 2786,
+       "D_F_zstd_bytes": 1689,
+       "E_bytes": 4105,
+       "E_zstd_bytes": 1629,
+       "controls": {
+        "A_zstd9": {
+         "size_bytes": 1619,
+         "encode_s": 9e-05,
+         "decode_s": 2e-05,
+         "decoded_ok": true
+        },
+        "B_zstd19": {
+         "size_bytes": 1607,
+         "encode_s": 0.00063,
+         "decode_s": 2e-05,
+         "decoded_ok": true
+        },
+        "C_lzma2": {
+         "size_bytes": 1534,
+         "encode_s": 0.01145,
+         "decode_s": 0.00035,
+         "decoded_ok": true
+        }
+       },
+       "baseline_name": "C_lzma2",
+       "baseline_bytes": 1534,
+       "F_vs_D_F": 1.0,
+       "G_vs_D_F_zstd": 1.000592,
+       "G_vs_baseline": 1.101695,
+       "saving_vs_baseline": -0.101695,
+       "tag_counts": {
+        "0": 41,
+        "1": 23,
+        "2": 0,
+        "3": 0
+       },
+       "composition_coverage": 0.359375,
+       "multi_composition_coverage": 0.0,
+       "nontrivial_multi_blocks": 0,
+       "nontrivial_multi_coverage": 0.0,
+       "representatives": [],
+       "encode_s": 0.00303,
+       "compress_s": 0.0001,
+       "decode_s": 9e-05,
+       "decoded_ok": true,
+       "decoded_sha256": "406d274be04e08ff6de4ab6f746d3df029b9493f436e314ca11a80fa6a91e708"
+      }
+     }
+    }
+   },
+   {
+    "name": "hopper",
+    "kind": "bmp",
+    "path": "datasets/corpus/hopper.bmp",
+    "file_bytes": 49290,
+    "file_sha256": "f1a94f3add0a2e54365dc94b51da099bd0de8289b955fc8304a8627b7b0d6aea",
+    "available_sizes": [
+     4096
+    ],
+    "regions": {
+     "4096": {
+      "dev_transfer": {
+       "config": {
+        "block_length": 64,
+        "capacity": 16,
+        "max_atoms": 2
+       },
+       "atoms": 0,
+       "dictionary_rank": 0,
+       "dictionary_bytes": 0,
+       "reference_bytes": 0,
+       "literal_bytes": 4096,
+       "header_bytes": 11,
+       "F_bytes": 4171,
+       "G_bytes": 3523,
+       "D_bytes": 5195,
+       "D_zstd_bytes": 4289,
+       "D_F_bytes": 4171,
+       "D_F_zstd_bytes": 3523,
+       "E_bytes": 4105,
+       "E_zstd_bytes": 3437,
+       "controls": {
+        "A_zstd9": {
+         "size_bytes": 3430,
+         "encode_s": 0.00016,
+         "decode_s": 2e-05,
+         "decoded_ok": true
+        },
+        "B_zstd19": {
+         "size_bytes": 3294,
+         "encode_s": 0.00083,
+         "decode_s": 3e-05,
+         "decoded_ok": true
+        },
+        "C_lzma2": {
+         "size_bytes": 2933,
+         "encode_s": 0.01183,
+         "decode_s": 0.0005,
+         "decoded_ok": true
+        }
+       },
+       "baseline_name": "C_lzma2",
+       "baseline_bytes": 2933,
+       "F_vs_D_F": 1.0,
+       "G_vs_D_F_zstd": 1.0,
+       "G_vs_baseline": 1.201159,
+       "saving_vs_baseline": -0.201159,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "composition_coverage": 0.0,
+       "multi_composition_coverage": 0.0,
+       "nontrivial_multi_blocks": 0,
+       "nontrivial_multi_coverage": 0.0,
+       "representatives": [],
+       "encode_s": 0.00289,
+       "compress_s": 0.00017,
+       "decode_s": 5e-05,
+       "decoded_ok": true,
+       "decoded_sha256": "1c198835a8e29f03e987fb9f75fe1438274c0738a667e161620ba2cceb5f6f07"
+      },
+      "local": {
+       "config": {
+        "block_length": 64,
+        "capacity": 16,
+        "max_atoms": 2
+       },
+       "atoms": 0,
+       "dictionary_rank": 0,
+       "dictionary_bytes": 0,
+       "reference_bytes": 0,
+       "literal_bytes": 4096,
+       "header_bytes": 11,
+       "F_bytes": 4171,
+       "G_bytes": 3523,
+       "D_bytes": 4187,
+       "D_zstd_bytes": 3541,
+       "D_F_bytes": 4171,
+       "D_F_zstd_bytes": 3523,
+       "E_bytes": 4105,
+       "E_zstd_bytes": 3437,
+       "controls": {
+        "A_zstd9": {
+         "size_bytes": 3430,
+         "encode_s": 0.00016,
+         "decode_s": 2e-05,
+         "decoded_ok": true
+        },
+        "B_zstd19": {
+         "size_bytes": 3294,
+         "encode_s": 0.00084,
+         "decode_s": 3e-05,
+         "decoded_ok": true
+        },
+        "C_lzma2": {
+         "size_bytes": 2933,
+         "encode_s": 0.01186,
+         "decode_s": 0.0005,
+         "decoded_ok": true
+        }
+       },
+       "baseline_name": "C_lzma2",
+       "baseline_bytes": 2933,
+       "F_vs_D_F": 1.0,
+       "G_vs_D_F_zstd": 1.0,
+       "G_vs_baseline": 1.201159,
+       "saving_vs_baseline": -0.201159,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "composition_coverage": 0.0,
+       "multi_composition_coverage": 0.0,
+       "nontrivial_multi_blocks": 0,
+       "nontrivial_multi_coverage": 0.0,
+       "representatives": [],
+       "encode_s": 0.00304,
+       "compress_s": 0.00016,
+       "decode_s": 6e-05,
+       "decoded_ok": true,
+       "decoded_sha256": "1c198835a8e29f03e987fb9f75fe1438274c0738a667e161620ba2cceb5f6f07"
+      }
+     }
+    }
+   },
+   {
+    "name": "ecg",
+    "kind": "ecg",
+    "path": "datasets/corpus/ecg-holdout.bin",
+    "file_bytes": 262144,
+    "file_sha256": "933cd8ca9cb6bc5ffa273a11e6b146c64b74ab6847239fa3cc472f03df9a9f57",
+    "available_sizes": [
+     4096
+    ],
+    "regions": {
+     "4096": {
+      "dev_transfer": {
+       "config": {
+        "block_length": 64,
+        "capacity": 16,
+        "max_atoms": 2
+       },
+       "atoms": 0,
+       "dictionary_rank": 0,
+       "dictionary_bytes": 0,
+       "reference_bytes": 0,
+       "literal_bytes": 4096,
+       "header_bytes": 11,
+       "F_bytes": 4171,
+       "G_bytes": 2664,
+       "D_bytes": 5195,
+       "D_zstd_bytes": 3303,
+       "D_F_bytes": 4171,
+       "D_F_zstd_bytes": 2664,
+       "E_bytes": 4105,
+       "E_zstd_bytes": 2581,
+       "controls": {
+        "A_zstd9": {
+         "size_bytes": 2569,
+         "encode_s": 0.00019,
+         "decode_s": 3e-05,
+         "decoded_ok": true
+        },
+        "B_zstd19": {
+         "size_bytes": 2503,
+         "encode_s": 0.00118,
+         "decode_s": 3e-05,
+         "decoded_ok": true
+        },
+        "C_lzma2": {
+         "size_bytes": 2076,
+         "encode_s": 0.01187,
+         "decode_s": 0.00041,
+         "decoded_ok": true
+        }
+       },
+       "baseline_name": "C_lzma2",
+       "baseline_bytes": 2076,
+       "F_vs_D_F": 1.0,
+       "G_vs_D_F_zstd": 1.0,
+       "G_vs_baseline": 1.283237,
+       "saving_vs_baseline": -0.283237,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "composition_coverage": 0.0,
+       "multi_composition_coverage": 0.0,
+       "nontrivial_multi_blocks": 0,
+       "nontrivial_multi_coverage": 0.0,
+       "representatives": [],
+       "encode_s": 0.00296,
+       "compress_s": 0.00018,
+       "decode_s": 6e-05,
+       "decoded_ok": true,
+       "decoded_sha256": "a390876e1f1b18c1a69e598e850ad21e81cbe6d5f0feb3ee0cb81d40b73a75e9"
+      },
+      "local": {
+       "config": {
+        "block_length": 64,
+        "capacity": 16,
+        "max_atoms": 2
+       },
+       "atoms": 0,
+       "dictionary_rank": 0,
+       "dictionary_bytes": 0,
+       "reference_bytes": 0,
+       "literal_bytes": 4096,
+       "header_bytes": 11,
+       "F_bytes": 4171,
+       "G_bytes": 2664,
+       "D_bytes": 4187,
+       "D_zstd_bytes": 2690,
+       "D_F_bytes": 4171,
+       "D_F_zstd_bytes": 2664,
+       "E_bytes": 4105,
+       "E_zstd_bytes": 2581,
+       "controls": {
+        "A_zstd9": {
+         "size_bytes": 2569,
+         "encode_s": 0.00037,
+         "decode_s": 5e-05,
+         "decoded_ok": true
+        },
+        "B_zstd19": {
+         "size_bytes": 2503,
+         "encode_s": 0.00133,
+         "decode_s": 4e-05,
+         "decoded_ok": true
+        },
+        "C_lzma2": {
+         "size_bytes": 2076,
+         "encode_s": 0.01137,
+         "decode_s": 0.00041,
+         "decoded_ok": true
+        }
+       },
+       "baseline_name": "C_lzma2",
+       "baseline_bytes": 2076,
+       "F_vs_D_F": 1.0,
+       "G_vs_D_F_zstd": 1.0,
+       "G_vs_baseline": 1.283237,
+       "saving_vs_baseline": -0.283237,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "composition_coverage": 0.0,
+       "multi_composition_coverage": 0.0,
+       "nontrivial_multi_blocks": 0,
+       "nontrivial_multi_coverage": 0.0,
+       "representatives": [],
+       "encode_s": 0.00299,
+       "compress_s": 0.00065,
+       "decode_s": 5e-05,
+       "decoded_ok": true,
+       "decoded_sha256": "a390876e1f1b18c1a69e598e850ad21e81cbe6d5f0feb3ee0cb81d40b73a75e9"
+      }
+     }
+    }
+   }
+  ]
+ },
+ "gate": {
+  "files": [
+   {
+    "name": "book1",
+    "mode": "dev_transfer",
+    "G": 2221,
+    "baseline": 2095,
+    "saving_vs_baseline": -0.060143,
+    "primary_pass": false,
+    "nontrivial_multi_coverage": 0.0,
+    "secondary_candidate": false
+   },
+   {
+    "name": "book1",
+    "mode": "local",
+    "G": 2221,
+    "baseline": 2095,
+    "saving_vs_baseline": -0.060143,
+    "primary_pass": false,
+    "nontrivial_multi_coverage": 0.0,
+    "secondary_candidate": false
+   },
+   {
+    "name": "bbc",
+    "mode": "dev_transfer",
+    "G": 1491,
+    "baseline": 1292,
+    "saving_vs_baseline": -0.154025,
+    "primary_pass": false,
+    "nontrivial_multi_coverage": 0.0,
+    "secondary_candidate": false
+   },
+   {
+    "name": "bbc",
+    "mode": "local",
+    "G": 1495,
+    "baseline": 1292,
+    "saving_vs_baseline": -0.157121,
+    "primary_pass": false,
+    "nontrivial_multi_coverage": 0.0,
+    "secondary_candidate": false
+   },
+   {
+    "name": "7zr",
+    "mode": "dev_transfer",
+    "G": 980,
+    "baseline": 936,
+    "saving_vs_baseline": -0.047009,
+    "primary_pass": false,
+    "nontrivial_multi_coverage": 0.0,
+    "secondary_candidate": false
+   },
+   {
+    "name": "7zr",
+    "mode": "local",
+    "G": 980,
+    "baseline": 936,
+    "saving_vs_baseline": -0.047009,
+    "primary_pass": false,
+    "nontrivial_multi_coverage": 0.0,
+    "secondary_candidate": false
+   },
+   {
+    "name": "irs1040",
+    "mode": "dev_transfer",
+    "G": 1685,
+    "baseline": 1534,
+    "saving_vs_baseline": -0.098435,
+    "primary_pass": false,
+    "nontrivial_multi_coverage": 0.0,
+    "secondary_candidate": false
+   },
+   {
+    "name": "irs1040",
+    "mode": "local",
+    "G": 1690,
+    "baseline": 1534,
+    "saving_vs_baseline": -0.101695,
+    "primary_pass": false,
+    "nontrivial_multi_coverage": 0.0,
+    "secondary_candidate": false
+   },
+   {
+    "name": "hopper",
+    "mode": "dev_transfer",
+    "G": 3523,
+    "baseline": 2933,
+    "saving_vs_baseline": -0.201159,
+    "primary_pass": false,
+    "nontrivial_multi_coverage": 0.0,
+    "secondary_candidate": false
+   },
+   {
+    "name": "hopper",
+    "mode": "local",
+    "G": 3523,
+    "baseline": 2933,
+    "saving_vs_baseline": -0.201159,
+    "primary_pass": false,
+    "nontrivial_multi_coverage": 0.0,
+    "secondary_candidate": false
+   },
+   {
+    "name": "ecg",
+    "mode": "dev_transfer",
+    "G": 2664,
+    "baseline": 2076,
+    "saving_vs_baseline": -0.283237,
+    "primary_pass": false,
+    "nontrivial_multi_coverage": 0.0,
+    "secondary_candidate": false
+   },
+   {
+    "name": "ecg",
+    "mode": "local",
+    "G": 2664,
+    "baseline": 2076,
+    "saving_vs_baseline": -0.283237,
+    "primary_pass": false,
+    "nontrivial_multi_coverage": 0.0,
+    "secondary_candidate": false
+   }
+  ],
+  "primary": {
+   "min_saving": 0.01,
+   "min_files": 2,
+   "qualifying": [],
+   "passed": false
+  },
+  "secondary": {
+   "min_nontrivial_multi_coverage": 0.1,
+   "min_files": 2,
+   "qualifying": [],
+   "passed": false
+  },
+  "passed": false
+ },
+ "elapsed_s": 0.235
+}

@@ -14,6 +14,11 @@ the final audit.
 | 8 relationships | record-level and complete-file paired results | `real.json`, `specialized.json`, `same-splits.json`, `tables.md` |
 | 9 MSMC | banks, representations, held-out ceilings, same-splits | `dev.json`, `radix.json`, `test.json`, `same-splits.json`, `summary.json` |
 | 10 ASMC | seeds, shared reference, controls, post-hoc ablation | `dev.json`, `heldout.json`, `without-zero.json`, `control.json`, `tables.md` |
+| 16 grammar | bounded RePair, templates, matched controls | `lab/sxz-math-grammar/results/phase16.json`, `phase16-dev.json` |
+| 17 EMAR | tensors, BDDs, recurrences; original and superseded runs | `lab/sxz-emar/results/phase17*.json`, `phase17b*.json`, `phase17c*.json` |
+| 18 spectral | original/corrected Haar, FWHT, audit | `lab/sxz-spectral/results/phase18*.json` |
+| 19 XOR dictionary | two modes, exhaustive relationship census | `lab/sxz-xordict/results/phase19*.json` |
+| 20 attribution | PE census, replication, systematic coefficient masks | `lab/sxz-attribution/results/phase20*.json` |
 
 [Figures](../figures/README.md) are derived from the JSON. Absolute sizes are
 preferred to ratios when panels differ. See [errata](../research/errata.md) and

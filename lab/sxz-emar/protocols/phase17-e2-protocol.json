@@ -1,0 +1,310 @@
+{
+ "phase": 17,
+ "episode": 2,
+ "status": "frozen before validation",
+ "frozen_at": "2026-11-27",
+ "codec": {
+  "name": "exact reduced ordered BDD representation v1.0",
+  "script": "scripts/run_phase17b.py",
+  "script_bytes": 42777,
+  "script_sha256": "bddfd2e8bd7f773703b2e6ac536970bd27e046b976c5d845f696ee41992e5225"
+ },
+ "representations": [
+  "separate",
+  "shared",
+  "mtbdd"
+ ],
+ "orders": [
+  "msb",
+  "lsb",
+  "odd-even",
+  "reversed-grouping"
+ ],
+ "sizes": [
+  4096,
+  16384,
+  65536
+ ],
+ "region_rule": "first and last disjoint equal regions; skip if file_bytes < 2*size; no padding",
+ "selection": "per file/size smallest G (diagram+zstd9) on dev; frozen before validation",
+ "selected": {
+  "book1": {
+   "4096": {
+    "repr": "mtbdd",
+    "repr_id": 2,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 2285,
+    "dev_terminal_count": 67,
+    "dev_exact_bytes": 8271,
+    "dev_compressed_bytes": 6588,
+    "dev_stats": {
+     "candidates": 4095,
+     "eliminated_equal_children": 34,
+     "merged_identical_nodes": 1776,
+     "created_nodes": 2285
+    }
+   },
+   "16384": {
+    "repr": "mtbdd",
+    "repr_id": 2,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 7401,
+    "dev_terminal_count": 72,
+    "dev_exact_bytes": 28264,
+    "dev_compressed_bytes": 24531,
+    "dev_stats": {
+     "candidates": 16383,
+     "eliminated_equal_children": 161,
+     "merged_identical_nodes": 8821,
+     "created_nodes": 7401
+    }
+   },
+   "65536": {
+    "repr": "mtbdd",
+    "repr_id": 2,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 24375,
+    "dev_terminal_count": 76,
+    "dev_exact_bytes": 95420,
+    "dev_compressed_bytes": 89014,
+    "dev_stats": {
+     "candidates": 65535,
+     "eliminated_equal_children": 625,
+     "merged_identical_nodes": 40535,
+     "created_nodes": 24375
+    }
+   }
+  },
+  "bbc": {
+   "4096": {
+    "repr": "mtbdd",
+    "repr_id": 2,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 2088,
+    "dev_terminal_count": 77,
+    "dev_exact_bytes": 7171,
+    "dev_compressed_bytes": 5221,
+    "dev_stats": {
+     "candidates": 4095,
+     "eliminated_equal_children": 424,
+     "merged_identical_nodes": 1583,
+     "created_nodes": 2088
+    }
+   }
+  },
+  "7zr": {
+   "4096": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 5107,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 15226,
+    "dev_compressed_bytes": 7839,
+    "dev_stats": {
+     "candidates": 32760,
+     "eliminated_equal_children": 14487,
+     "merged_identical_nodes": 13166,
+     "created_nodes": 5107
+    }
+   },
+   "16384": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 17711,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 65596,
+    "dev_compressed_bytes": 31646,
+    "dev_stats": {
+     "candidates": 131064,
+     "eliminated_equal_children": 48169,
+     "merged_identical_nodes": 65184,
+     "created_nodes": 17711
+    }
+   },
+   "65536": {
+    "repr": "mtbdd",
+    "repr_id": 2,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 36302,
+    "dev_terminal_count": 256,
+    "dev_exact_bytes": 136394,
+    "dev_compressed_bytes": 132264,
+    "dev_stats": {
+     "candidates": 65535,
+     "eliminated_equal_children": 2330,
+     "merged_identical_nodes": 26903,
+     "created_nodes": 36302
+    }
+   }
+  },
+  "irs1040": {
+   "4096": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 5581,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 17384,
+    "dev_compressed_bytes": 8774,
+    "dev_stats": {
+     "candidates": 32760,
+     "eliminated_equal_children": 12597,
+     "merged_identical_nodes": 14582,
+     "created_nodes": 5581
+    }
+   },
+   "16384": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 18053,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 67180,
+    "dev_compressed_bytes": 32110,
+    "dev_stats": {
+     "candidates": 131064,
+     "eliminated_equal_children": 44866,
+     "merged_identical_nodes": 68145,
+     "created_nodes": 18053
+    }
+   },
+   "65536": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 57271,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 223308,
+    "dev_compressed_bytes": 116129,
+    "dev_stats": {
+     "candidates": 524280,
+     "eliminated_equal_children": 189437,
+     "merged_identical_nodes": 277572,
+     "created_nodes": 57271
+    }
+   }
+  },
+  "hopper": {
+   "4096": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 4527,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 13066,
+    "dev_compressed_bytes": 7324,
+    "dev_stats": {
+     "candidates": 32760,
+     "eliminated_equal_children": 16266,
+     "merged_identical_nodes": 11967,
+     "created_nodes": 4527
+    }
+   },
+   "16384": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 13626,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 48101,
+    "dev_compressed_bytes": 25688,
+    "dev_stats": {
+     "candidates": 131064,
+     "eliminated_equal_children": 66692,
+     "merged_identical_nodes": 50746,
+     "created_nodes": 13626
+    }
+   }
+  },
+  "ecg": {
+   "4096": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 3636,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 9738,
+    "dev_compressed_bytes": 5853,
+    "dev_stats": {
+     "candidates": 32760,
+     "eliminated_equal_children": 9294,
+     "merged_identical_nodes": 19830,
+     "created_nodes": 3636
+    }
+   },
+   "16384": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 11524,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 39896,
+    "dev_compressed_bytes": 22962,
+    "dev_stats": {
+     "candidates": 131064,
+     "eliminated_equal_children": 38051,
+     "merged_identical_nodes": 81489,
+     "created_nodes": 11524
+    }
+   },
+   "65536": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 37543,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 142442,
+    "dev_compressed_bytes": 86960,
+    "dev_stats": {
+     "candidates": 524280,
+     "eliminated_equal_children": 150520,
+     "merged_identical_nodes": 336217,
+     "created_nodes": 37543
+    }
+   }
+  }
+ },
+ "dev_summary": {
+  "elapsed_s": 27.328,
+  "configurations": 15,
+  "selected_repr_counts": {
+   "mtbdd": 5,
+   "separate": 10
+  },
+  "selected_order_counts": {
+   "msb": 15
+  }
+ },
+ "controls": {
+  "A": "zstd-9 raw",
+  "B": "zstd-19 raw",
+  "C": "raw LZMA2 preset 6 +1",
+  "D": "matched bit-plane + coordinate transform + zstd-9",
+  "E": "selected graph without redundant-variable elimination (exact)",
+  "E_zstd9": "same graph + zstd-9",
+  "F": "exact selected diagram",
+  "G": "selected diagram + zstd-9"
+ },
+ "gate": {
+  "min_saving": 0.01,
+  "min_files": 2,
+  "baseline": "min(A,B,C,D,E,E_zstd9) per region, summed per file"
+ }
+}

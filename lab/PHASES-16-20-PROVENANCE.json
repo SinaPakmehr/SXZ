@@ -1,0 +1,465 @@
+{
+ "phase": "16-20",
+ "description": "Source-to-public mapping for preserved Phase 16-20 scripts, protocols and machine-readable evidence. Private paths are logical project labels.",
+ "entries": [
+  {
+   "private_source": "phases/16-grammar/scripts/run_phase16.py",
+   "public_path": "lab/sxz-math-grammar/scripts/run_phase16.py",
+   "private_bytes": 43523,
+   "public_bytes": 43504,
+   "private_sha256": "0b39a0cab43f5e356d9deac8f5e89e1cb08a9d783b10968cd7c589ccf75966f7",
+   "public_sha256": "4d6044e9f43524d258bd44c4b544d68786c681b2804dbaf09b3c9b2a6fe8b0a6",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/16-grammar/protocol.json",
+   "public_path": "lab/sxz-math-grammar/protocols/phase16-protocol.json",
+   "private_bytes": 2323,
+   "public_bytes": 2301,
+   "private_sha256": "d7aeffcebf8f402a685585745e1e7e919b1b031ca92fddea8e037843d2019592",
+   "public_sha256": "a850ccb6dee031d8ee95b0f16203f737e952232bd867ff72e685463fd8a46cbe",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/16-grammar/results/phase16-dev.json",
+   "public_path": "lab/sxz-math-grammar/results/phase16-dev.json",
+   "private_bytes": 28105,
+   "public_bytes": 26913,
+   "private_sha256": "c76011b5a4053c529bc2d44e6cb863510282d1c711fc29fb622ee976c4e4e3be",
+   "public_sha256": "d170a9633abd0f3482acd18927492244723d02f0182a8158359c38e3a56c1d1c",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/16-grammar/results/phase16.json",
+   "public_path": "lab/sxz-math-grammar/results/phase16.json",
+   "private_bytes": 54523,
+   "public_bytes": 52225,
+   "private_sha256": "2d1b4a6262d6a1666f33fd43bf2c6541ed5bc07fcb053063378a7c0925c0ab70",
+   "public_sha256": "370e898947a709d0ba8e942c898dc255faf0323e545a0fff93fb60947c46ea7a",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/17-emar/scripts/run_phase17.py",
+   "public_path": "lab/sxz-emar/scripts/run_phase17.py",
+   "private_bytes": 45650,
+   "public_bytes": 45626,
+   "private_sha256": "0f40eeebd3898d4f03de929a5033a4c6a7ab041dc890f6dc4d32612de210f19f",
+   "public_sha256": "296913097504acb07bf75a3fe362268ca2443b240ca96948587f59b764980551",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/17-emar/scripts/run_phase17b.py",
+   "public_path": "lab/sxz-emar/scripts/run_phase17b.py",
+   "private_bytes": 42777,
+   "public_bytes": 42753,
+   "private_sha256": "bddfd2e8bd7f773703b2e6ac536970bd27e046b976c5d845f696ee41992e5225",
+   "public_sha256": "53df8ac355a6c5ae0aa97dee15ae54e4ceae7d492b623590bd40ccc49172c57a",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/17-emar/scripts/run_phase17b_guard.py",
+   "public_path": "lab/sxz-emar/scripts/run_phase17b_guard.py",
+   "private_bytes": 2826,
+   "public_bytes": 2824,
+   "private_sha256": "151eba57f39cc241c0742a0a565d8f04a10a9c80d73399e2b33c0f1d12758ff4",
+   "public_sha256": "801e1eeb950f6ea12620224d43b5808ec16148ca992a2c1e5db0a73463894b63",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/17-emar/scripts/run_phase17c.py",
+   "public_path": "lab/sxz-emar/scripts/run_phase17c.py",
+   "private_bytes": 47146,
+   "public_bytes": 45869,
+   "private_sha256": "3305e4be9f31d7d3c8cc1ebed4cf23fbe81175aa4a1fda4102aaef821f5d6fe1",
+   "public_sha256": "da035b2d8af9aa42c33872df9408c09eb656714265e24a3329b640d779e208a8",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/17-emar/scripts/run_phase17c_guard.py",
+   "public_path": "lab/sxz-emar/scripts/run_phase17c_guard.py",
+   "private_bytes": 2548,
+   "public_bytes": 2546,
+   "private_sha256": "662bd29834b1af651c47a7262beaa6169defe147e3bde09d6afc6345bdbf80d9",
+   "public_sha256": "0acd4cebd03752dcede58828d61384ba7564f2c63da96194ded9c16a56e5e540",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/17-emar/protocol.json",
+   "public_path": "lab/sxz-emar/protocols/phase17-e1-protocol.json",
+   "private_bytes": 7860,
+   "public_bytes": 7341,
+   "private_sha256": "a45b37f82727894155c81f110bb075b43600437f39aeb81a9b1507e56d5ab0b9",
+   "public_sha256": "d3d7d6b4eb577349ab6220dde730d84646175bc90b99515611c5d403c95895a8",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/17-emar/protocol-final.json",
+   "public_path": "lab/sxz-emar/protocols/phase17-e1-protocol-final.json",
+   "private_bytes": 8052,
+   "public_bytes": 7532,
+   "private_sha256": "f4f1694829f0a0c0c47ea7364b7c452c7e2ac27af6c1719f730df2b2f2f56e83",
+   "public_sha256": "a9fc4d0b7f02aa27ab8b7dbcbdc9472876161680fd608cba2d4eeb2aec907442",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/17-emar/protocol-b.json",
+   "public_path": "lab/sxz-emar/protocols/phase17-e2-protocol.json",
+   "private_bytes": 7438,
+   "public_bytes": 7128,
+   "private_sha256": "b74ddfaea1ce454b9543072c29b66e0f2586dcf26da97b21657b2510b146492a",
+   "public_sha256": "86a9f661e748768f2789825c395b2dd8e4079e89da9406e007e4f790a65f7a79",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/17-emar/protocol-c.json",
+   "public_path": "lab/sxz-emar/protocols/phase17-e3-protocol.json",
+   "private_bytes": 11090,
+   "public_bytes": 10325,
+   "private_sha256": "da09defb5331fc42234120c102b90dd8a961176b2aa07fb3ff12a28b32d53c11",
+   "public_sha256": "14b0a68dc143daf2ad21af654858cec7c7737bef566fe53540b1d3306ed786af",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/17-emar/protocol-c-final.json",
+   "public_path": "lab/sxz-emar/protocols/phase17-e3-protocol-final.json",
+   "private_bytes": 11292,
+   "public_bytes": 10526,
+   "private_sha256": "4c7b5c64f9d5cc7d61e0e7d56d4ac4863fafcc59e0169e7a7446b46dbe0b66b3",
+   "public_sha256": "1c4875ae4d3ac8226676d76d317f198d70c37f8bcc9885caaa55fa361a053706",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/17-emar/results/phase17-dev.json",
+   "public_path": "lab/sxz-emar/results/phase17-dev.json",
+   "private_bytes": 192765,
+   "public_bytes": 181502,
+   "private_sha256": "9760d3863931960e001b4cc0d84ffb95aa761fe69ec7a612f96089821c8bde34",
+   "public_sha256": "ee792203ddb8a4143b43e92e6ce2c0d72b8a9e4eb5462841c25ada11559b7556",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/17-emar/results/phase17.json",
+   "public_path": "lab/sxz-emar/results/phase17.json",
+   "private_bytes": 43594,
+   "public_bytes": 41656,
+   "private_sha256": "84744e4b2f4d9b2d63108d6a73fec8b673b24fae7f104462cf765e114df230a4",
+   "public_sha256": "4488c9b7d9546452b2c59ab2dbdd1d0f9ec843a1bb061d0ced083e8fa17e669d",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/17-emar/results/phase17-val-initial.json",
+   "public_path": "lab/sxz-emar/results/phase17-val-initial.json",
+   "private_bytes": 43617,
+   "public_bytes": 41679,
+   "private_sha256": "71741616a64f7ccc754e8dc2649a47ebc5535c60a7cc6ca43b4264ad97620720",
+   "public_sha256": "1848c4aa2a59192416ab1c50eac319d4cd28f013155a13c6b9ce1943c2c61fb6",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/17-emar/results/phase17b-dev.json",
+   "public_path": "lab/sxz-emar/results/phase17b-dev.json",
+   "private_bytes": 118508,
+   "public_bytes": 113933,
+   "private_sha256": "8bcfa2a408a5e1d97f016a9a170d0395e0a15520d0efde88390efafb3a1e0e6b",
+   "public_sha256": "2bc7fcca4aa1016f13ee50238b31c5a22590e63a6e5ea0ab75b195b3100ea9d4",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/17-emar/results/phase17b.json",
+   "public_path": "lab/sxz-emar/results/phase17b.json",
+   "private_bytes": 65103,
+   "public_bytes": 61917,
+   "private_sha256": "30383f0f36889177b6d013df8b667365e2358147cb13afae57262626c62462bf",
+   "public_sha256": "6796a2bffa0f522b9ab09026fb8f7391e7ba0679e8c86946f014028d8302245a",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/17-emar/results/phase17b-runtime.json",
+   "public_path": "lab/sxz-emar/results/phase17b-runtime.json",
+   "private_bytes": 434,
+   "public_bytes": 408,
+   "private_sha256": "6a7fedc1ac2a5eee15c94178d30c596b90d286dc236000032d2c2b351fea2aec",
+   "public_sha256": "69335f85e1fdc75eb9fae590d9d40cdb1e93be1553346878e4dbb384ebe50c81",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/17-emar/results/phase17c-dev.json",
+   "public_path": "lab/sxz-emar/results/phase17c-dev.json",
+   "private_bytes": 282637,
+   "public_bytes": 265935,
+   "private_sha256": "cf60912656c929f11d8c5e7770e0c5cba50ecfeaa4a3c2c13caa80385eb2e8c9",
+   "public_sha256": "d92dc51969cf77e946a94e7a3cb2a4d4e2b774d1356925023df9c2e6f55af200",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/17-emar/results/phase17c.json",
+   "public_path": "lab/sxz-emar/results/phase17c.json",
+   "private_bytes": 32551,
+   "public_bytes": 30735,
+   "private_sha256": "c9430c106aa2cc9f172b43ce4df90e2b36cc5a0ea750b3f78dc15bba4abeacbc",
+   "public_sha256": "9eee27f7615420e0c15850668093cf47d575a97155271940cf0d2aaa3707fd6a",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/17-emar/results/phase17c-runtime.json",
+   "public_path": "lab/sxz-emar/results/phase17c-runtime.json",
+   "private_bytes": 433,
+   "public_bytes": 407,
+   "private_sha256": "68badf2405192fbce789019d1b8e4b5aaab72c8718434c4f9055eae7a59bb9b5",
+   "public_sha256": "469456f68ba1ca68fe4a626fee71a01d7d5004cbc96995b656c2f1647834c87f",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/18-spectral/scripts/run_phase18.py",
+   "public_path": "lab/sxz-spectral/scripts/run_phase18.py",
+   "private_bytes": 40950,
+   "public_bytes": 39853,
+   "private_sha256": "fddd9cfe365ce422e9f3ca24fc896b0aa9bd224e607d8f46313f9dec080fb0ad",
+   "public_sha256": "4f04bc3a900658e3ddebe0cd9eb2e1c7e39c7b550011deec30a40ebbec4c03ef",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/18-spectral/scripts/run_phase18_original.py",
+   "public_path": "lab/sxz-spectral/scripts/run_phase18_original.py",
+   "private_bytes": 40451,
+   "public_bytes": 39360,
+   "private_sha256": "83ce8bc4fdc7c25511ebfcb388827ee3393d212747fd7b45ed51c04032f6d131",
+   "public_sha256": "88f9683b9d4fcea5a5aef4b550f52b64e673793d8c7a9f4fa9891ddfdc02acde",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/18-spectral/scripts/run_phase18_guard.py",
+   "public_path": "lab/sxz-spectral/scripts/run_phase18_guard.py",
+   "private_bytes": 2550,
+   "public_bytes": 2548,
+   "private_sha256": "f1dfb67257697564be5b3828ff39e9582decb175b3a55d5a7d3438c7ff434543",
+   "public_sha256": "6b8dc688099f774122dc6fc8a75b7fd446c4d9c0341c19eb0affdecf713b48bd",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/18-spectral/scripts/audit_phase18_haar.py",
+   "public_path": "lab/sxz-spectral/scripts/audit_phase18_haar.py",
+   "private_bytes": 10494,
+   "public_bytes": 10228,
+   "private_sha256": "55e365df4ea573768b79a7ca087642aee9c623c793943fa012f841df432ffe27",
+   "public_sha256": "3c3ab9f1f3ea5ac5cf076ffe69dfc2845dc59ee78bbbb4e1ed346d1fcc36536a",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/18-spectral/protocol-18-original.json",
+   "public_path": "lab/sxz-spectral/protocols/phase18-original.json",
+   "private_bytes": 3429,
+   "public_bytes": 3281,
+   "private_sha256": "f8dea2d29e0b048510aaca4b1e4016a3aa8068a80acc9141990a740843a0d629",
+   "public_sha256": "9c6e76af59e52d271d4c872c80f529a0b855f034c53e491327d4285420909ed2",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/18-spectral/protocol-18-corrected.json",
+   "public_path": "lab/sxz-spectral/protocols/phase18-corrected.json",
+   "private_bytes": 3477,
+   "public_bytes": 3332,
+   "private_sha256": "f3e82ee2a8e2d4557b8dc1f78e94fc65f9186e602f5d7b73971dfca62a0cb484",
+   "public_sha256": "e8cc43dca0a6379ba74b777c4fa37216e649d53327a61177a8fcc30a043968e6",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/18-spectral/results/phase18-dev.json",
+   "public_path": "lab/sxz-spectral/results/phase18-dev.json",
+   "private_bytes": 152456,
+   "public_bytes": 146757,
+   "private_sha256": "31a501f58ec949e3300d607bc962995ed1d97fef65bda9e27122b40cba794ad4",
+   "public_sha256": "0968339957236b5ff88c8a2128ff14a60a01bf72e38784395ada229a02552262",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/18-spectral/results/phase18.json",
+   "public_path": "lab/sxz-spectral/results/phase18.json",
+   "private_bytes": 22613,
+   "public_bytes": 21619,
+   "private_sha256": "4def7d783d5f0d6daaefb5d48c50e36669aec49ca4ca0e9822cc9a7f7a670d34",
+   "public_sha256": "1eadcae612081196649c410220157f636861b182ed9dc6c49ca9bb4c7b1b15aa",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/18-spectral/results/phase18-dev-original.json",
+   "public_path": "lab/sxz-spectral/results/phase18-dev-original.json",
+   "private_bytes": 152843,
+   "public_bytes": 147144,
+   "private_sha256": "cee7ef494e95b39b0cb6bac312a66a8606a462325a3bfec52105e2dc2a8f76a4",
+   "public_sha256": "008cdbf8ae7076c4e90b1543f7f05f435d2a2a1ce8c8108f246b7fae5b22dbb4",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/18-spectral/results/phase18-original.json",
+   "public_path": "lab/sxz-spectral/results/phase18-original.json",
+   "private_bytes": 22928,
+   "public_bytes": 21906,
+   "private_sha256": "6c6dc11453e678705ae4198b335951becf299acc4b2ea512da55a19fc405cc78",
+   "public_sha256": "0184af836227dd7964b287b87fce71c5182c80eda685b56145c3adbd86714280",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/18-spectral/results/phase18-runtime.json",
+   "public_path": "lab/sxz-spectral/results/phase18-runtime.json",
+   "private_bytes": 557,
+   "public_bytes": 524,
+   "private_sha256": "9ccf312fc1a5823000d414f2bd1e651fb21a2c6c5be51eaf658e337474c212bf",
+   "public_sha256": "6b520f9206b6619df186f897860e544189440cd71b4e6d8836c91a86d425c98c",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/18-spectral/results/phase18-runtime-original.json",
+   "public_path": "lab/sxz-spectral/results/phase18-runtime-original.json",
+   "private_bytes": 297,
+   "public_bytes": 278,
+   "private_sha256": "3222f5e232ea05c942aca16767164c3915975355c4e47ccec22fa0e1c9840cd1",
+   "public_sha256": "7ff177c664a37d6a4ee5d59dffb2b42967eefe3b15927925ae2b492f074e4216",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/18-spectral/results/phase18-haar-audit.json",
+   "public_path": "lab/sxz-spectral/results/phase18-haar-audit.json",
+   "private_bytes": 7537,
+   "public_bytes": 7185,
+   "private_sha256": "e4daf10c541986b375e63b6621c2caf913c82f15d3fbcc64492849f76497df75",
+   "public_sha256": "e360221750b706004363e0a8212e858eb5347f8a64afcfca1d1fb660035a1c40",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/19-xordict/scripts/run_phase19.py",
+   "public_path": "lab/sxz-xordict/scripts/run_phase19.py",
+   "private_bytes": 32600,
+   "public_bytes": 31735,
+   "private_sha256": "c9c7c4ebe207927a0ebb14d66e4acd8e92cae53ba46e8c41bec69860db71ae2a",
+   "public_sha256": "752edfef1b725a089bc49eaa8135f493d4cacae0bb6ecd434a2462b8ccd65c95",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/19-xordict/scripts/run_phase19_guard.py",
+   "public_path": "lab/sxz-xordict/scripts/run_phase19_guard.py",
+   "private_bytes": 2766,
+   "public_bytes": 2682,
+   "private_sha256": "558e75d403eb1683a138308c78e526a8f976b975d233258b072aedbdf96f9494",
+   "public_sha256": "decc3852cc60bf5db5af3466b845d696f9d28b54f64d217d410de651bc803282",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/19-xordict/scripts/audit_phase19_xor.py",
+   "public_path": "lab/sxz-xordict/scripts/audit_phase19_xor.py",
+   "private_bytes": 12921,
+   "public_bytes": 12581,
+   "private_sha256": "3fa6b7515aebd2130fee8404460911935ece27d07c916cb60bc32cdcf3bef1ce",
+   "public_sha256": "336d557c111a5df65fa2f4affc7d5f0324a4e2b93c646e43de57790f043eba27",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/19-xordict/protocol-19.json",
+   "public_path": "lab/sxz-xordict/protocols/phase19.json",
+   "private_bytes": 1233,
+   "public_bytes": 1182,
+   "private_sha256": "7f672cf6b9e282bc47da192ef6d62f33c075a6a0a6859311e0591f5f3a47e260",
+   "public_sha256": "704046cf57edbdcf43a48b2a310742fc14cb89573034edf25dde05d24c31866a",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/19-xordict/protocol-19-frozen.json",
+   "public_path": "lab/sxz-xordict/protocols/phase19-frozen.json",
+   "private_bytes": 2248,
+   "public_bytes": 2137,
+   "private_sha256": "54316adc4fffa550cc8b2a14e340f71cd1152d405bb1d4958cb8d8b82fbd077d",
+   "public_sha256": "d899af91f1926f81cc3fa76e044fe7313cd71f92b957ec53a94986c3533bfac5",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/19-xordict/results/phase19-dev.json",
+   "public_path": "lab/sxz-xordict/results/phase19-dev.json",
+   "private_bytes": 43461,
+   "public_bytes": 41493,
+   "private_sha256": "1fe061cd370a314993a7a99ca410e6ab552e0130add3182f89519b9a88014855",
+   "public_sha256": "80303c59cd34472071e0e52a2a58bd928998a32ac00e2925feef02457334d8b3",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/19-xordict/results/phase19.json",
+   "public_path": "lab/sxz-xordict/results/phase19.json",
+   "private_bytes": 27911,
+   "public_bytes": 26798,
+   "private_sha256": "4b37aa898a21edcf006f1b1c97fe224648481f0a428edc1f2cd4f9809207a91f",
+   "public_sha256": "e77d055eac05611ece571399868aae35ac3c0c683c878c221d99c8659fdba390",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/19-xordict/results/phase19-runtime.json",
+   "public_path": "lab/sxz-xordict/results/phase19-runtime.json",
+   "private_bytes": 430,
+   "public_bytes": 404,
+   "private_sha256": "9fefdf055771d2fc05aff485be044778b0b093c8c273b328777ab8f16c55b66c",
+   "public_sha256": "0b1b43bca21b6663011797bd42f4cda404fce1f3f3a46232c2a9e1178063eb9d",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/19-xordict/results/phase19-xor-audit.json",
+   "public_path": "lab/sxz-xordict/results/phase19-xor-audit.json",
+   "private_bytes": 91390,
+   "public_bytes": 87962,
+   "private_sha256": "cdd1e21c4e72f3cde79a64da530f00dec413f000dad9bc2954e761e81a1ef111",
+   "public_sha256": "5b888e3bb9df925f48cbc542f6aa6c9eba976f2f3a8acaf2d078eb77a0fc96b3",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/20-attribution/scripts/run_phase20.py",
+   "public_path": "lab/sxz-attribution/scripts/run_phase20.py",
+   "private_bytes": 21173,
+   "public_bytes": 20705,
+   "private_sha256": "cda3582edbd3e7eb62235e5b6ff8fc9480bc533f2bba248c42cf0dcae485574b",
+   "public_sha256": "48faa97d6e0e53dd36eab5ad051be5492e96b56911e0a562388f4fea627f67ac",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/20-attribution/scripts/run_phase20_guard.py",
+   "public_path": "lab/sxz-attribution/scripts/run_phase20_guard.py",
+   "private_bytes": 2274,
+   "public_bytes": 2202,
+   "private_sha256": "18a22679f65baf5b157ecf70871b48d6076e4d3767b6d78feee638fea971e241",
+   "public_sha256": "323da77731a2d4702a6b72a4b5e0984b904820dea6894f06f13946b87ac756db",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/20-attribution/scripts/audit_phase20_systematic.py",
+   "public_path": "lab/sxz-attribution/scripts/audit_phase20_systematic.py",
+   "private_bytes": 21279,
+   "public_bytes": 20874,
+   "private_sha256": "89c0d1a81470405519fab3d6910886a82c0d942d6bf8ae5cd87a722a64123480",
+   "public_sha256": "f749233a28bfd5fce3b87fecd9f3832300d7a6a11acb491278c4ff5231c81162",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/20-attribution/results/phase20-attribution.json",
+   "public_path": "lab/sxz-attribution/results/phase20-attribution.json",
+   "private_bytes": 90875,
+   "public_bytes": 86926,
+   "private_sha256": "4bb20b38488b640845299a7e2c07914ef23f5136957cbf9083c23c71f6e72dd3",
+   "public_sha256": "689f3f83c47d724d140bd66a797ccda496b75209a4d5255cbc27be75bebaa108",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/20-attribution/results/phase20-runtime.json",
+   "public_path": "lab/sxz-attribution/results/phase20-runtime.json",
+   "private_bytes": 315,
+   "public_bytes": 296,
+   "private_sha256": "c5710e2ff05c7817dacad3a6cb41fa24c552506ab8b81880332d46cdc776b060",
+   "public_sha256": "a5b83f05e8f7c04f5b595e7682c225fba6b91a18259875e3797ec93f9b91e10f",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  },
+  {
+   "private_source": "phases/20-attribution/results/phase20-systematic-audit.json",
+   "public_path": "lab/sxz-attribution/results/phase20-systematic-audit.json",
+   "private_bytes": 20556,
+   "public_bytes": 19675,
+   "private_sha256": "dce691948ef62881e1ebe53071cf479c05179c1c39698d530ed7f805c3feff9b",
+   "public_sha256": "caaecff86a774416b1fde8bb0d21c30fc2e6ba857105ec3ab60016802194f270",
+   "transformation": "path/framing sanitized; scientific fields preserved"
+  }
+ ]
+}

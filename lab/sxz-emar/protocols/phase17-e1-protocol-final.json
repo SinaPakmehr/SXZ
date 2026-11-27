@@ -1,0 +1,520 @@
+{
+ "phase": 17,
+ "episode": 1,
+ "status": "frozen for final validation rerun; science settings unchanged from protocol.json",
+ "frozen_at": "2026-11-27",
+ "codec": {
+  "name": "exact finite-field matrix/Tensor-Train representation v1.0",
+  "script": "scripts/run_phase17.py",
+  "script_bytes": 45650,
+  "script_sha256": "0f40eeebd3898d4f03de929a5033a4c6a7ab041dc890f6dc4d32612de210f19f"
+ },
+ "field": {
+  "name": "GF(2^8)",
+  "polynomial": "0x11B",
+  "addition": "XOR"
+ },
+ "sizes": [
+  4096,
+  16384,
+  65536
+ ],
+ "shapes": {
+  "4096": [
+   [
+    "2d",
+    [
+     64,
+     64
+    ]
+   ],
+   [
+    "3d",
+    [
+     16,
+     16,
+     16
+    ]
+   ],
+   [
+    "4d",
+    [
+     8,
+     8,
+     8,
+     8
+    ]
+   ],
+   [
+    "4power",
+    [
+     4,
+     4,
+     4,
+     4,
+     4,
+     4
+    ]
+   ],
+   [
+    "binary",
+    [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ]
+   ]
+  ],
+  "16384": [
+   [
+    "2d",
+    [
+     128,
+     128
+    ]
+   ],
+   [
+    "3d",
+    [
+     16,
+     32,
+     32
+    ]
+   ],
+   [
+    "4d",
+    [
+     8,
+     16,
+     16,
+     8
+    ]
+   ],
+   [
+    "4power",
+    [
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4
+    ]
+   ],
+   [
+    "binary",
+    [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ]
+   ]
+  ],
+  "65536": [
+   [
+    "2d",
+    [
+     256,
+     256
+    ]
+   ],
+   [
+    "3d",
+    [
+     32,
+     32,
+     64
+    ]
+   ],
+   [
+    "4d",
+    [
+     16,
+     16,
+     16,
+     16
+    ]
+   ],
+   [
+    "4power",
+    [
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4
+    ]
+   ],
+   [
+    "binary",
+    [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ]
+   ]
+  ]
+ },
+ "orders": [
+  "linear",
+  "axis-reverse",
+  "bit-odd-even"
+ ],
+ "region_rule": "first and last disjoint equal regions; skip if file_bytes < 2*size; no padding",
+ "selection": "per file/size best compressed representation F on dev; frozen before validation",
+ "selected": {
+  "book1": {
+   "4096": {
+    "shape_name": "2d",
+    "shape": [
+     64,
+     64
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 8212,
+    "dev_F_bytes": 2172,
+    "dev_coefficient_count": 8192,
+    "dev_ranks": [
+     1,
+     64,
+     1
+    ],
+    "dev_full_rank": true
+   },
+   "16384": {
+    "shape_name": "2d",
+    "shape": [
+     128,
+     128
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 32793,
+    "dev_F_bytes": 7555,
+    "dev_coefficient_count": 32768,
+    "dev_ranks": [
+     1,
+     128,
+     1
+    ],
+    "dev_full_rank": true
+   },
+   "65536": {
+    "shape_name": "2d",
+    "shape": [
+     256,
+     256
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 131097,
+    "dev_F_bytes": 27513,
+    "dev_coefficient_count": 131072,
+    "dev_ranks": [
+     1,
+     256,
+     1
+    ],
+    "dev_full_rank": true
+   }
+  },
+  "bbc": {
+   "4096": {
+    "shape_name": "2d",
+    "shape": [
+     64,
+     64
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 8212,
+    "dev_F_bytes": 1414,
+    "dev_coefficient_count": 8192,
+    "dev_ranks": [
+     1,
+     64,
+     1
+    ],
+    "dev_full_rank": true
+   }
+  },
+  "7zr": {
+   "4096": {
+    "shape_name": "2d",
+    "shape": [
+     64,
+     64
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 7700,
+    "dev_F_bytes": 3060,
+    "dev_coefficient_count": 7680,
+    "dev_ranks": [
+     1,
+     60,
+     1
+    ],
+    "dev_full_rank": false
+   },
+   "16384": {
+    "shape_name": "2d",
+    "shape": [
+     128,
+     128
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 32280,
+    "dev_F_bytes": 10932,
+    "dev_coefficient_count": 32256,
+    "dev_ranks": [
+     1,
+     126,
+     1
+    ],
+    "dev_full_rank": false
+   },
+   "65536": {
+    "shape_name": "2d",
+    "shape": [
+     256,
+     256
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 130585,
+    "dev_F_bytes": 41897,
+    "dev_coefficient_count": 130560,
+    "dev_ranks": [
+     1,
+     255,
+     1
+    ],
+    "dev_full_rank": false
+   }
+  },
+  "irs1040": {
+   "4096": {
+    "shape_name": "2d",
+    "shape": [
+     64,
+     64
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 8212,
+    "dev_F_bytes": 3541,
+    "dev_coefficient_count": 8192,
+    "dev_ranks": [
+     1,
+     64,
+     1
+    ],
+    "dev_full_rank": true
+   },
+   "16384": {
+    "shape_name": "2d",
+    "shape": [
+     128,
+     128
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 32793,
+    "dev_F_bytes": 15457,
+    "dev_coefficient_count": 32768,
+    "dev_ranks": [
+     1,
+     128,
+     1
+    ],
+    "dev_full_rank": true
+   },
+   "65536": {
+    "shape_name": "2d",
+    "shape": [
+     256,
+     256
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 131097,
+    "dev_F_bytes": 49696,
+    "dev_coefficient_count": 131072,
+    "dev_ranks": [
+     1,
+     256,
+     1
+    ],
+    "dev_full_rank": true
+   }
+  },
+  "hopper": {
+   "4096": {
+    "shape_name": "2d",
+    "shape": [
+     64,
+     64
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 8212,
+    "dev_F_bytes": 3243,
+    "dev_coefficient_count": 8192,
+    "dev_ranks": [
+     1,
+     64,
+     1
+    ],
+    "dev_full_rank": true
+   },
+   "16384": {
+    "shape_name": "2d",
+    "shape": [
+     128,
+     128
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 32793,
+    "dev_F_bytes": 11352,
+    "dev_coefficient_count": 32768,
+    "dev_ranks": [
+     1,
+     128,
+     1
+    ],
+    "dev_full_rank": true
+   }
+  },
+  "ecg": {
+   "4096": {
+    "shape_name": "2d",
+    "shape": [
+     64,
+     64
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 8212,
+    "dev_F_bytes": 2635,
+    "dev_coefficient_count": 8192,
+    "dev_ranks": [
+     1,
+     64,
+     1
+    ],
+    "dev_full_rank": true
+   },
+   "16384": {
+    "shape_name": "2d",
+    "shape": [
+     128,
+     128
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 32793,
+    "dev_F_bytes": 10304,
+    "dev_coefficient_count": 32768,
+    "dev_ranks": [
+     1,
+     128,
+     1
+    ],
+    "dev_full_rank": true
+   },
+   "65536": {
+    "shape_name": "2d",
+    "shape": [
+     256,
+     256
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 131097,
+    "dev_F_bytes": 38137,
+    "dev_coefficient_count": 131072,
+    "dev_ranks": [
+     1,
+     256,
+     1
+    ],
+    "dev_full_rank": true
+   }
+  }
+ },
+ "dev_summary": {
+  "elapsed_s": 11.432,
+  "configurations": 225,
+  "min_coefficient_ratio": 1.05859375,
+  "min_coefficient_ratio_case": [
+   "7zr",
+   "4096"
+  ],
+  "all_exact_representations_larger_than_raw": true,
+  "all_best_f_full_rank": false
+ },
+ "controls": {
+  "A": "zstd-9 raw",
+  "B": "zstd-19 raw",
+  "C": "raw LZMA2 preset 6 +1 selector",
+  "D": "selected ordering + zstd-9, no decomposition",
+  "E": "exact serialized representation alone",
+  "F": "same representation + zstd-9",
+  "G": "best conventional transform + zstd-9"
+ },
+ "gate": {
+  "primary": {
+   "min_saving": 0.01,
+   "min_files": 2,
+   "baseline": "min(A,B,C,D,G) per region, summed per file"
+  },
+  "low_rank": {
+   "coefficient_ratio_max": 0.75,
+   "cut_rank_fraction_max": 0.5,
+   "min_files": 2,
+   "bottleneck": "min(sum E,sum F) > 0.99*sum baseline"
+  }
+ },
+ "revision": "decoder-only speedup: 2D TT reconstruction vectorized by rows; representation sizes, selected table and gate unchanged"
+}

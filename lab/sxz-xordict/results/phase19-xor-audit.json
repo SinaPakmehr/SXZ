@@ -1,0 +1,3428 @@
+{
+ "phase": 19,
+ "audit": "exhaustive structural XOR census",
+ "lengths": [
+  8,
+  16,
+  32,
+  64
+ ],
+ "regions": "first and last disjoint 4 KiB regions",
+ "files": [
+  {
+   "name": "book1",
+   "kind": "text",
+   "file_bytes": 768771,
+   "file_sha256": "9ffa47cd93bccd732f20e0c304203cfbc1b8a91bedac536e2d8f6051003d9951",
+   "sizes": {
+    "8": {
+     "dev": {
+      "block_count": 512,
+      "distinct_values": 510,
+      "pair_count": 129795,
+      "xor_groups": 129795,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 2,
+      "repeated_block_occurrences": 4,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        9182313499064681754
+       ],
+       [
+        1,
+        9178094442032811880
+       ],
+       [
+        1,
+        9174517617560867688
+       ],
+       [
+        1,
+        9174436073883517999
+       ],
+       [
+        1,
+        9174436073831399484
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 512,
+      "distinct_values": 511,
+      "pair_count": 130305,
+      "xor_groups": 130302,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 1,
+      "relationship_values": 4,
+      "relationship_coverage_bytes": 32,
+      "relationship_coverage_fraction": 0.0078125,
+      "nontrivial_values": 4,
+      "nontrivial_coverage_bytes": 32,
+      "nontrivial_coverage_fraction": 0.0078125,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 1,
+      "repeated_block_occurrences": 2,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        2,
+        5196592128302841887
+       ],
+       [
+        2,
+        5196592128302841857
+       ],
+       [
+        2,
+        30
+       ],
+       [
+        1,
+        9175592883847047749
+       ],
+       [
+        1,
+        9174962738996456516
+       ]
+      ]
+     }
+    },
+    "16": {
+     "dev": {
+      "block_count": 256,
+      "distinct_values": 256,
+      "pair_count": 32640,
+      "xor_groups": 32640,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        169076985710997131307918120133833988612
+       ],
+       [
+        1,
+        169072914360173752435884812037281302792
+       ],
+       [
+        1,
+        169057300238552544125017005903046574084
+       ],
+       [
+        1,
+        169056201651571504601011853206813477892
+       ],
+       [
+        1,
+        168988716664402039238231126964863124805
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 256,
+      "distinct_values": 256,
+      "pair_count": 32640,
+      "xor_groups": 32640,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        169259813652877062267196488135888865310
+       ],
+       [
+        1,
+        169248189532088839848991217491087268620
+       ],
+       [
+        1,
+        169228658127683616519545943816021606403
+       ],
+       [
+        1,
+        169170412683333447444675812781336497229
+       ],
+       [
+        1,
+        168933165445591158053990696594524995847
+       ]
+      ]
+     }
+    },
+    "32": {
+     "dev": {
+      "block_count": 128,
+      "distinct_values": 128,
+      "pair_count": 8128,
+      "xor_groups": 8128,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        57533916889595795488375694637116538598754058392800748353067958489936305670937
+       ],
+       [
+        1,
+        57527218270438394449139160021671355643105749781962209021164612656696562962974
+       ],
+       [
+        1,
+        57162823936215457986382832790443104146476691178768806286002248512003160426008
+       ],
+       [
+        1,
+        57064398130377574964001879035334927926685913773281750297917372449872806543382
+       ],
+       [
+        1,
+        57063937412798725480216831703292198483101740238147309968877811460604986414363
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 128,
+      "distinct_values": 128,
+      "pair_count": 8128,
+      "xor_groups": 8128,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        57596130014397982166988662127454571863261031458684682967446652264388828071174
+       ],
+       [
+        1,
+        57592174531062790957649712934040051755883851658690464596550409439261402354255
+       ],
+       [
+        1,
+        57585528338542491518785449581331258561811784212765365243666898601740554472462
+       ],
+       [
+        1,
+        57565708440876654183465024048607102650649597627458526602720176463831140408078
+       ],
+       [
+        1,
+        57484977389272253344758680424362124817031361943841731193607855861869253362965
+       ]
+      ]
+     }
+    },
+    "64": {
+     "dev": {
+      "block_count": 64,
+      "distinct_values": 64,
+      "pair_count": 2016,
+      "xor_groups": 2016,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        6661972438652409789270604020491384237805618878793666593908202535399515947671687358547811999493577083611488416802949172293447848407586378228981886723163461
+       ],
+       [
+        1,
+        6661196791545169212313608850812816313245241561007654452612918749284486338044044258880116527882214166043652978701967941163937737851779960893469705085405249
+       ],
+       [
+        1,
+        6607552389318489890891379548413237811282816395562534662915081463569382077026960311186934796589248218457283125962936565282445985860587519467626609343416404
+       ],
+       [
+        1,
+        6607552388623412868794839504323289227465782673709303790836081783593301310291570837863438884758738716425474050791928419272220122355901364574094147656483916
+       ],
+       [
+        1,
+        6607552388473794346480899377200646479096774941373579498872441028812392147317647111957277229112978455521941847238845871572000664187240118218830176324117077
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 64,
+      "distinct_values": 64,
+      "pair_count": 2016,
+      "xor_groups": 2016,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        6656305631663716532558938286050651125487693706521504467193972155356712869501113508379465674672712266431732563691580030441707831171109221036130469138940188
+       ],
+       [
+        1,
+        6655440123668552805987920177376566533072108997473707282322582464152248375724699595776590171273437740286900322218063985255816566326865739042572973706266653
+       ],
+       [
+        1,
+        6651951938520157154684345366955518990014853335599268675156283672455303274792943438870072703448173503814385533172172434171662286041877636236883643861913160
+       ],
+       [
+        1,
+        6613292022887269367975207521058981270471176995340623953566466539246647393071212117474335848553326718222555491000941347140377414930091419370922762879572808
+       ],
+       [
+        1,
+        6613289597420307548416635370836324206559236073638396530537428743967368379077912926100077703759429708153408386143786345120770159474786381982833058828601088
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "name": "bbc",
+   "kind": "structured text",
+   "file_bytes": 28260,
+   "file_sha256": "caa27d88f455e0fd10c408f7aaaaa73b16e9c0d502fa8c9cc11bc70551192b83",
+   "sizes": {
+    "8": {
+     "dev": {
+      "block_count": 512,
+      "distinct_values": 401,
+      "pair_count": 80200,
+      "xor_groups": 80191,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 3,
+      "relationship_values": 11,
+      "relationship_coverage_bytes": 152,
+      "relationship_coverage_fraction": 0.037109375,
+      "nontrivial_values": 6,
+      "nontrivial_coverage_bytes": 48,
+      "nontrivial_coverage_fraction": 0.01171875,
+      "zero_values": 0,
+      "constant_values": 1,
+      "short_period_values": 1,
+      "repeated_values": 68,
+      "repeated_block_occurrences": 179,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        2,
+        1877736437438681622
+       ],
+       [
+        2,
+        1877736437438681603
+       ],
+       [
+        2,
+        941368110384237327
+       ],
+       [
+        2,
+        792692914410185825
+       ],
+       [
+        2,
+        792633534417207296
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 512,
+      "distinct_values": 433,
+      "pair_count": 93528,
+      "xor_groups": 93519,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 3,
+      "relationship_values": 12,
+      "relationship_coverage_bytes": 120,
+      "relationship_coverage_fraction": 0.029296875,
+      "nontrivial_values": 9,
+      "nontrivial_coverage_bytes": 72,
+      "nontrivial_coverage_fraction": 0.017578125,
+      "zero_values": 0,
+      "constant_values": 1,
+      "short_period_values": 1,
+      "repeated_values": 49,
+      "repeated_block_occurrences": 128,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        2,
+        6572204630302543430
+       ],
+       [
+        2,
+        5131052749543984710
+       ],
+       [
+        2,
+        4192346002611831863
+       ],
+       [
+        2,
+        4192346002611831844
+       ],
+       [
+        2,
+        2022975024655125603
+       ]
+      ]
+     }
+    },
+    "16": {
+     "dev": {
+      "block_count": 256,
+      "distinct_values": 248,
+      "pair_count": 30628,
+      "xor_groups": 30628,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 8,
+      "repeated_block_occurrences": 16,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        335392542828109314127116545911004941325
+       ],
+       [
+        1,
+        330242495824522526289215314093318606085
+       ],
+       [
+        1,
+        328903351147540389010848609833220572993
+       ],
+       [
+        1,
+        327498932300122723441369337447473153558
+       ],
+       [
+        1,
+        319135461363990792179210460700594407942
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 256,
+      "distinct_values": 236,
+      "pair_count": 27730,
+      "xor_groups": 27730,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 19,
+      "repeated_block_occurrences": 39,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        169473086842308341216292262660092552274
+       ],
+       [
+        1,
+        169415967290260111110561500988368712547
+       ],
+       [
+        1,
+        169415967290260111110561500876867728227
+       ],
+       [
+        1,
+        169415966340745675346662594902495948908
+       ],
+       [
+        1,
+        169415966265243430459765650915847123234
+       ]
+      ]
+     }
+    },
+    "32": {
+     "dev": {
+      "block_count": 128,
+      "distinct_values": 128,
+      "pair_count": 8128,
+      "xor_groups": 8128,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        112375698137046662740937067292750123258524854325180526542315624696119448110858
+       ],
+       [
+        1,
+        111920010816713605486942557928916709484834257990294459039962448245630748657168
+       ],
+       [
+        1,
+        108596170161344495390184864401918249614976434331915074057460098349097072022339
+       ],
+       [
+        1,
+        107364824075770744013511352298574166448508979980114902165890489321367926480647
+       ],
+       [
+        1,
+        104626195730824118984932732664328177628304341015386961320659021731370093793547
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 128,
+      "distinct_values": 123,
+      "pair_count": 7503,
+      "xor_groups": 7503,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 5,
+      "repeated_block_occurrences": 10,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        57668703120098435445565741103086084579620215883061556164936975560739352360456
+       ],
+       [
+        1,
+        57643441539389034940259304471962124223722328677698595148483385824956019585325
+       ],
+       [
+        1,
+        57636960125573490890487673089980996093992171917618950530495083256408194044417
+       ],
+       [
+        1,
+        57636769066538347589815150451228973700821489335770731506264599708144313762135
+       ],
+       [
+        1,
+        57636769059693032526245851095079867910718694989106878287085241396448828022042
+       ]
+      ]
+     }
+    },
+    "64": {
+     "dev": {
+      "block_count": 64,
+      "distinct_values": 64,
+      "pair_count": 2016,
+      "xor_groups": 2016,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        6618233195155315838133652956921259526745150590412760121078893298235950891510163332606779916926171147651579563903538507355403534459828621828445571280535642
+       ],
+       [
+        1,
+        6615357332373915103099263045000875161274164767899377990901807725050283762879702913298231084308169277244526797196421142914125656653142120391065949047182933
+       ],
+       [
+        1,
+        6612467429625436031845945348240492424205263702531806390106733164380470214203758051271079023258879769878808730448710120234503212564410627397009997481200390
+       ],
+       [
+        1,
+        6612270035029470410157811137011838371131064757885283008925393606933944954150455960910267041832037853229054310049389398263880209982598114673223271881922061
+       ],
+       [
+        1,
+        6565261168911484332066754072151319926748837470375858019206908510336141358896375210465219736954355146392395370037185904847457836878832060537189162492969995
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 64,
+      "distinct_values": 63,
+      "pair_count": 1953,
+      "xor_groups": 1953,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 1,
+      "repeated_block_occurrences": 2,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        6677579617882732945346881059307981358606597279873829751997612282155557116163777876839410605929131773150512046788279505058860029503622992447943312881418834
+       ],
+       [
+        1,
+        6673904030228040926013204920131312605028346265449696232911468127139864379553248379753499828321321963078459480649532771005809642187276041219253551644558684
+       ],
+       [
+        1,
+        6673881869682367694824488976280686062592758400016617652721229135604498033241047155706745812218644017113941535618961649891298348713077563987234456358243102
+       ],
+       [
+        1,
+        6673881869682186151777491992375427866131401877192588143683027638403485813607662194812627664172560027668251258177225777298255839451389403786909840151615518
+       ],
+       [
+        1,
+        6673881869682186151777271912055580180700972285333061435943608655432919705768258012632548162370753352258292811080750532936545747445846951091905459994238737
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "name": "7zr",
+   "kind": "executable",
+   "file_bytes": 602624,
+   "file_sha256": "256feca8e274e5da655e2a284fabafd9f554365eb164862089dacd4e8276d282",
+   "sizes": {
+    "8": {
+     "dev": {
+      "block_count": 512,
+      "distinct_values": 455,
+      "pair_count": 103285,
+      "xor_groups": 103285,
+      "groups_with_target": 454,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 1,
+      "constant_values": 1,
+      "short_period_values": 1,
+      "repeated_values": 3,
+      "repeated_block_occurrences": 60,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        18446743287921772793
+       ],
+       [
+        1,
+        18446711996859352737
+       ],
+       [
+        1,
+        18446705915932682390
+       ],
+       [
+        1,
+        18446705915915802689
+       ],
+       [
+        1,
+        18446705905173297216
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 512,
+      "distinct_values": 155,
+      "pair_count": 11935,
+      "xor_groups": 11684,
+      "groups_with_target": 154,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 122,
+      "relationship_values": 63,
+      "relationship_coverage_bytes": 504,
+      "relationship_coverage_fraction": 0.123046875,
+      "nontrivial_values": 63,
+      "nontrivial_coverage_bytes": 504,
+      "nontrivial_coverage_fraction": 0.123046875,
+      "zero_values": 1,
+      "constant_values": 1,
+      "short_period_values": 1,
+      "repeated_values": 1,
+      "repeated_block_occurrences": 358,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": {
+       "nontrivial_values": 63,
+       "supported_values": 32,
+       "supported_occurrences": 32,
+       "supported_source_bytes": 256,
+       "dependency_rank": 26,
+       "compact_ref_bytes": 4,
+       "varint_ref_bytes": 7,
+       "compact_net_saving_bytes": 160,
+       "varint_net_saving_bytes": 64,
+       "note": "positions precede the target; each target counted once; no circular or overlapping target savings. This is an upper-bound diagnostic, not a new codec."
+      },
+      "top_xor_groups": [
+       [
+        8,
+        2305878194122661888
+       ],
+       [
+        7,
+        4611756388245323776
+       ],
+       [
+        5,
+        16717920376759378945
+       ],
+       [
+        5,
+        14412042182636717057
+       ],
+       [
+        5,
+        13835269164735971328
+       ]
+      ]
+     }
+    },
+    "16": {
+     "dev": {
+      "block_count": 256,
+      "distinct_values": 235,
+      "pair_count": 27495,
+      "xor_groups": 27495,
+      "groups_with_target": 234,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 1,
+      "constant_values": 1,
+      "short_period_values": 1,
+      "repeated_values": 1,
+      "repeated_block_occurrences": 22,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        340281775207492154033134983177892292783
+       ],
+       [
+        1,
+        340281663034194135142784123062061850082
+       ],
+       [
+        1,
+        340281662835718510447653540578838384390
+       ],
+       [
+        1,
+        340280191668423558900251600533304597780
+       ],
+       [
+        1,
+        340279867172716199491043199111937561577
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 256,
+      "distinct_values": 78,
+      "pair_count": 3003,
+      "xor_groups": 3003,
+      "groups_with_target": 77,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 1,
+      "constant_values": 1,
+      "short_period_values": 1,
+      "repeated_values": 1,
+      "repeated_block_occurrences": 179,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        335645893349967214825709205610691831812
+       ],
+       [
+        1,
+        335230347330863721198598681827493563444
+       ],
+       [
+        1,
+        335227670016837314252276218042308079619
+       ],
+       [
+        1,
+        335047721591971447873222819846703484943
+       ],
+       [
+        1,
+        335043502839632163534958123318086630410
+       ]
+      ]
+     }
+    },
+    "32": {
+     "dev": {
+      "block_count": 128,
+      "distinct_values": 120,
+      "pair_count": 7140,
+      "xor_groups": 7140,
+      "groups_with_target": 119,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 1,
+      "constant_values": 1,
+      "short_period_values": 1,
+      "repeated_values": 1,
+      "repeated_block_occurrences": 9,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        115787696314660398803577104260628016187470797238874576657312437323144048360974
+       ],
+       [
+        1,
+        115782950355906378191193925850083188385943344149667332520270846103249183726482
+       ],
+       [
+        1,
+        115781996874357575401170285196531296894449924745802251628679487644162387061001
+       ],
+       [
+        1,
+        115765376167904246090591919940970306373847408944098291758994312380278401103325
+       ],
+       [
+        1,
+        115761244934859012218832709166077746568100383857357906411930621851222749348931
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 128,
+      "distinct_values": 40,
+      "pair_count": 780,
+      "xor_groups": 780,
+      "groups_with_target": 39,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 1,
+      "constant_values": 1,
+      "short_period_values": 1,
+      "repeated_values": 1,
+      "repeated_block_occurrences": 89,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        114214379036419723172833118102292338812985061611436580778431672329448878031877
+       ],
+       [
+        1,
+        114072976053474612850202533793492984688424234497855178414611237258525154787380
+       ],
+       [
+        1,
+        114010831734783664796560633990466601240668719955814124409582119140913729861645
+       ],
+       [
+        1,
+        114006000431038555949538225306890125905520463770099294475062300062524394740751
+       ],
+       [
+        1,
+        114000230505376618481652755207727273680994283449298387774329725797271216314383
+       ]
+      ]
+     }
+    },
+    "64": {
+     "dev": {
+      "block_count": 64,
+      "distinct_values": 61,
+      "pair_count": 1830,
+      "xor_groups": 1830,
+      "groups_with_target": 60,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 1,
+      "constant_values": 1,
+      "short_period_values": 1,
+      "repeated_values": 1,
+      "repeated_block_occurrences": 4,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        13407299264250424469294330716043917116371742066184115135037482047043083805841119040078909424198239974806858321031990903529081382773665742459644994761785532
+       ],
+       [
+        1,
+        13401763429720509378917502283753135018656210293464361681754125651669239693735637141840622470362521261848493306298534293968877980098471886972418724768887545
+       ],
+       [
+        1,
+        13389142636371325697592941475158015601761650472824428421049539167617950114425352452002882288603407711040489980350773738287024429639793962953131335653329046
+       ],
+       [
+        1,
+        13377462865584052296428862418475096297066414135377638403760374584083364986782472019962830017770904198130225694949369722725732769704377804393854028553450881
+       ],
+       [
+        1,
+        13354938502156736436722831446167385451859816909886792401099525935859211898005711186139433666340781528623662116635987740989690864619817738481329343860705220
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 64,
+      "distinct_values": 21,
+      "pair_count": 210,
+      "xor_groups": 210,
+      "groups_with_target": 20,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 1,
+      "constant_values": 1,
+      "short_period_values": 1,
+      "repeated_values": 1,
+      "repeated_block_occurrences": 44,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        13001405806500368982021357052752437242977410240891925395969584955212381954159308432608443888957549886624711637859161891600661111810444505174863842768826383
+       ],
+       [
+        1,
+        12991428846806806240797262252272043586205276677476227737149680985314626107983281645154440639172044586798482422393018465109106145218254724455753551402250244
+       ],
+       [
+        1,
+        12990815078604786174541853706664097390016071786466150745612983268683603034691790971906965184005915269702952915968069394340830141782379046007708121085541384
+       ],
+       [
+        1,
+        12989379750081074078196512899086913223225811314320092335566496332014469090357909711751251372728438102120313996480637809996905745875660129541040930496055310
+       ],
+       [
+        1,
+        12807335925749943148643073558373774197945121556096735887299202847246085513221755249490298519626918163482456375528054995390668555137511816220996943385120778
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "name": "irs1040",
+   "kind": "pdf",
+   "file_bytes": 220237,
+   "file_sha256": "3d31c226df0d189ced80e039d01cf0f8820c1019681a0f0ca6264de277b7e982",
+   "sizes": {
+    "8": {
+     "dev": {
+      "block_count": 512,
+      "distinct_values": 509,
+      "pair_count": 129286,
+      "xor_groups": 129286,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 1,
+      "short_period_values": 1,
+      "repeated_values": 3,
+      "repeated_block_occurrences": 6,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        18446529677577806964
+       ],
+       [
+        1,
+        18446529677575376486
+       ],
+       [
+        1,
+        18446480362997413477
+       ],
+       [
+        1,
+        18446456552862927354
+       ],
+       [
+        1,
+        18446439386992522993
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 512,
+      "distinct_values": 309,
+      "pair_count": 47586,
+      "xor_groups": 47586,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 2,
+      "short_period_values": 2,
+      "repeated_values": 9,
+      "repeated_block_occurrences": 212,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        18435139004252413181
+       ],
+       [
+        1,
+        18433594910729836094
+       ],
+       [
+        1,
+        18430903441884113906
+       ],
+       [
+        1,
+        18403885180450595197
+       ],
+       [
+        1,
+        18397482783947373291
+       ]
+      ]
+     }
+    },
+    "16": {
+     "dev": {
+      "block_count": 256,
+      "distinct_values": 256,
+      "pair_count": 32640,
+      "xor_groups": 32640,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        340271774944376631572889225479152379311
+       ],
+       [
+        1,
+        340270897412318504506634245018095810935
+       ],
+       [
+        1,
+        340226947939339242121969001045331810516
+       ],
+       [
+        1,
+        340218215946153561700539928589557880246
+       ],
+       [
+        1,
+        340214548416658873956004436985164137923
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 256,
+      "distinct_values": 160,
+      "pair_count": 12720,
+      "xor_groups": 12720,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 1,
+      "short_period_values": 1,
+      "repeated_values": 2,
+      "repeated_block_occurrences": 98,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        339990158839688755488052749559685329191
+       ],
+       [
+        1,
+        338342285537104763093456574016076151055
+       ],
+       [
+        1,
+        337743848068526556769022169976336170993
+       ],
+       [
+        1,
+        337640582743291804767505009062961175051
+       ],
+       [
+        1,
+        337399753733897318929854780059404481070
+       ]
+      ]
+     }
+    },
+    "32": {
+     "dev": {
+      "block_count": 128,
+      "distinct_values": 128,
+      "pair_count": 8128,
+      "xor_groups": 8128,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        115788186365775575683303337907068231040949723314073105692611011848506531914600
+       ],
+       [
+        1,
+        115770259791776103610487944507582156908162462297412749965301253419711902556303
+       ],
+       [
+        1,
+        115763281136605709138842301660851675721970410653551729420201527814661684558009
+       ],
+       [
+        1,
+        115749266714853032377307913557562926468765873085117665216858350067433763540611
+       ],
+       [
+        1,
+        115725628914273792932336240735093394591099795141914413188724096895131618459224
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 128,
+      "distinct_values": 82,
+      "pair_count": 3321,
+      "xor_groups": 3321,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 1,
+      "short_period_values": 1,
+      "repeated_values": 1,
+      "repeated_block_occurrences": 47,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        113122142728596386187962750204517551471595737218625679246904230055470861951765
+       ],
+       [
+        1,
+        113012475147946994264946064928878057786100628980711621921411965506744966582959
+       ],
+       [
+        1,
+        112872887279427774033473669047539772919602163303396904180136858286840603297528
+       ],
+       [
+        1,
+        112556614801951678380671801467340864038393143613762227643526900216867829912234
+       ],
+       [
+        1,
+        112420560438212038961127760733476864530987532486465055902687944783766006339064
+       ]
+      ]
+     }
+    },
+    "64": {
+     "dev": {
+      "block_count": 64,
+      "distinct_values": 64,
+      "pair_count": 2016,
+      "xor_groups": 2016,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        13407356008292883876868549913349479495432862282807992759316388183724215582501659024024695410192205657807928902486736781143560170860872946877942866094365208
+       ],
+       [
+        1,
+        13397671268984207755481879183465859986328136482626697443430770434997067963170388830948972242707913337851430800024902083834716111669134307904531349618041909
+       ],
+       [
+        1,
+        13387028308578700049614746229333861009444644631582072064420472584921014572957982612150515775131687690357755181495296272249017676680911271901121018652543261
+       ],
+       [
+        1,
+        13381709526408937957979381984690241989895114192839079045485608174832688998144427432706516515474253786437535233587262216670807446573501090746125231498939652
+       ],
+       [
+        1,
+        13351653161864590550724953290762417151456079822808329494825591692927188171564887651177935415307802467613271772481939676650072162807822285138713908481203623
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 64,
+      "distinct_values": 42,
+      "pair_count": 861,
+      "xor_groups": 861,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 1,
+      "short_period_values": 1,
+      "repeated_values": 1,
+      "repeated_block_occurrences": 23,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        12403816291215152158760596324736478792015961108307564868623321326018209119948729593983315407553820822654343340074832258533203451901095113271858960337257171
+       ],
+       [
+        1,
+        11341564810251669265232870100895144103296773435452602671185967259484682419059421023946750998226158436521116616619423094290808263517388982124083568035520966
+       ],
+       [
+        1,
+        11155363465255326449605326030202412519661382438976108843084609993546061634755855583919865437223535229818543132236382461426913668479094574901350226294804538
+       ],
+       [
+        1,
+        11150265644139556455572938219681093318928913979436232478137125254875592869151272200537088241997487647042676756877535834830045001216560927898538138604738959
+       ],
+       [
+        1,
+        11149443266325169270590358896780882703692245160956472552147719414101554888167638871780824192367491405608801461278717657030644152491376605326293230378241818
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "name": "hopper",
+   "kind": "bmp",
+   "file_bytes": 49290,
+   "file_sha256": "f1a94f3add0a2e54365dc94b51da099bd0de8289b955fc8304a8627b7b0d6aea",
+   "sizes": {
+    "8": {
+     "dev": {
+      "block_count": 512,
+      "distinct_values": 504,
+      "pair_count": 126756,
+      "xor_groups": 126756,
+      "groups_with_target": 503,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 1,
+      "constant_values": 2,
+      "short_period_values": 2,
+      "repeated_values": 7,
+      "repeated_block_occurrences": 15,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        18446409955703597074
+       ],
+       [
+        1,
+        18445748044106521707
+       ],
+       [
+        1,
+        18444839730108373601
+       ],
+       [
+        1,
+        18444716237828953756
+       ],
+       [
+        1,
+        18444446935142545328
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 512,
+      "distinct_values": 503,
+      "pair_count": 126253,
+      "xor_groups": 126228,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 9,
+      "relationship_values": 19,
+      "relationship_coverage_bytes": 160,
+      "relationship_coverage_fraction": 0.0390625,
+      "nontrivial_values": 18,
+      "nontrivial_coverage_bytes": 144,
+      "nontrivial_coverage_fraction": 0.03515625,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 8,
+      "repeated_block_occurrences": 17,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        3,
+        217020518514230019
+       ],
+       [
+        3,
+        72340172838076673
+       ],
+       [
+        2,
+        17571686697470260187
+       ],
+       [
+        2,
+        17426723772993958105
+       ],
+       [
+        2,
+        17354948757756178904
+       ]
+      ]
+     }
+    },
+    "16": {
+     "dev": {
+      "block_count": 256,
+      "distinct_values": 255,
+      "pair_count": 32385,
+      "xor_groups": 32385,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 1,
+      "repeated_block_occurrences": 2,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        340244959951425589312486362350037376515
+       ],
+       [
+        1,
+        340239992193691050580351237144769700005
+       ],
+       [
+        1,
+        340223400071867052032196347774026144796
+       ],
+       [
+        1,
+        340209370446720076440546343882864540476
+       ],
+       [
+        1,
+        340123672290416305086764370763976160505
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 256,
+      "distinct_values": 255,
+      "pair_count": 32385,
+      "xor_groups": 32385,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 1,
+      "repeated_block_occurrences": 2,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        340275875280889669457992640707134662618
+       ],
+       [
+        1,
+        340275500489335111893540851813835678984
+       ],
+       [
+        1,
+        340245161263837851824881810046469302272
+       ],
+       [
+        1,
+        340234256173439988313179770668676119813
+       ],
+       [
+        1,
+        340213992773071947348576286484892966750
+       ]
+      ]
+     }
+    },
+    "32": {
+     "dev": {
+      "block_count": 128,
+      "distinct_values": 128,
+      "pair_count": 8128,
+      "xor_groups": 8128,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        115738088252824471566558370130633931613465658889915361378755115724389853630992
+       ],
+       [
+        1,
+        115210277592223311115207657953077533110699480300113475544310581858903993616140
+       ],
+       [
+        1,
+        115177828292741054776750729735991661126030286708663460221030768809674010185761
+       ],
+       [
+        1,
+        115058185733784212873074062978488260958685212438385682366330705425249373885486
+       ],
+       [
+        1,
+        114417889470256642068788024678699148875112155540655170963226425654028046178066
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 128,
+      "distinct_values": 128,
+      "pair_count": 8128,
+      "xor_groups": 8128,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        115752245995834599873302224404756113544816935575460611616933209852460804069667
+       ],
+       [
+        1,
+        115749483732395913097748533299845982461892455251977843134144533518296203878492
+       ],
+       [
+        1,
+        115742361665170575929629527905939761561384821088129254278004027296487582082026
+       ],
+       [
+        1,
+        115686402547725641934410289134528195322845971899579871397407631815528672064732
+       ],
+       [
+        1,
+        115685967653214034612831380813691454824091704877635967550441747758407944855184
+       ]
+      ]
+     }
+    },
+    "64": {
+     "dev": {
+      "block_count": 64,
+      "distinct_values": 64,
+      "pair_count": 2016,
+      "xor_groups": 2016,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        13401555043127428482770693857193939780015816942262289329727742955346628171864151725415565026387851513041015493828073934870287769397457560673339068799274247
+       ],
+       [
+        1,
+        12924973882916211165016214790456020921041379909488389862271222267128945327891687216864334746655852838318213142247384648233523797737921051386099189227949110
+       ],
+       [
+        1,
+        12874430611369695632305765628664667760319799148482559964846167998643307205663037426389734649288519530803640797110749820836587473275198801276389972728253186
+       ],
+       [
+        1,
+        12839716658376651298632077179095580265120125255452143395091294139324980336843949054394078447200841611175563593597972990118784978969219546399185539932964949
+       ],
+       [
+        1,
+        12824804646800352193257704467835883726245585702172377344371170331985106435420667807558739621494205133371218307534919902579482314749114233304747184466702858
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 64,
+      "distinct_values": 64,
+      "pair_count": 2016,
+      "xor_groups": 2016,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        13373097479734848923002041615318554373191842811765060161740529858919631292237411933515699047885447556265537906452546733817252485030551149608368609399958414
+       ],
+       [
+        1,
+        13371685523119836257257537814551797473325912676591088281408913866517891515036098940597900496372630288960878341864400064411979857192827601986069574408143106
+       ],
+       [
+        1,
+        13353538743942407569099713107143449930657092883633213858010319622667615761777956572370683452006269424969232598777104721948335857709273443194837509790919588
+       ],
+       [
+        1,
+        13301368278826966147563920064515143014180086916258689825044974493785039672206346611787938299955128343552874629078466223888339137364180669120491374587965947
+       ],
+       [
+        1,
+        13298507180721018665766192960396857040553305914287249261959091698077898192600827535694306978822605302350768297535605313870006466094087921538164639205583524
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "name": "ecg",
+   "kind": "ecg",
+   "file_bytes": 262144,
+   "file_sha256": "933cd8ca9cb6bc5ffa273a11e6b146c64b74ab6847239fa3cc472f03df9a9f57",
+   "sizes": {
+    "8": {
+     "dev": {
+      "block_count": 512,
+      "distinct_values": 512,
+      "pair_count": 130816,
+      "xor_groups": 130801,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 5,
+      "relationship_values": 20,
+      "relationship_coverage_bytes": 160,
+      "relationship_coverage_fraction": 0.0390625,
+      "nontrivial_values": 20,
+      "nontrivial_coverage_bytes": 160,
+      "nontrivial_coverage_fraction": 0.0390625,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        2,
+        8142521805757640960
+       ],
+       [
+        2,
+        8070462008401228288
+       ],
+       [
+        2,
+        1873501967587351808
+       ],
+       [
+        2,
+        1801444382139358720
+       ],
+       [
+        2,
+        216172790703719168
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 512,
+      "distinct_values": 512,
+      "pair_count": 130816,
+      "xor_groups": 130804,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 4,
+      "relationship_values": 15,
+      "relationship_coverage_bytes": 120,
+      "relationship_coverage_fraction": 0.029296875,
+      "nontrivial_values": 15,
+      "nontrivial_coverage_bytes": 120,
+      "nontrivial_coverage_fraction": 0.029296875,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        2,
+        9151333637026773248
+       ],
+       [
+        2,
+        8502830705324029440
+       ],
+       [
+        2,
+        7638219763913158400
+       ],
+       [
+        2,
+        7277922971860295680
+       ],
+       [
+        2,
+        1080872749612273408
+       ]
+      ]
+     }
+    },
+    "16": {
+     "dev": {
+      "block_count": 256,
+      "distinct_values": 256,
+      "pair_count": 32640,
+      "xor_groups": 32640,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        340279101056041435402026908442775345403
+       ],
+       [
+        1,
+        340279040209443683744237961368244343803
+       ],
+       [
+        1,
+        340278837384727467783649016087605760763
+       ],
+       [
+        1,
+        340273888468333785776070287270229124859
+       ],
+       [
+        1,
+        340268716462633850793556739359808643067
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 256,
+      "distinct_values": 256,
+      "pair_count": 32640,
+      "xor_groups": 32640,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        340279486657976584070411536699146114277
+       ],
+       [
+        1,
+        340279425889974740870950628880117667042
+       ],
+       [
+        1,
+        340279303878602150221567357878372408063
+       ],
+       [
+        1,
+        340277823264151794682523416581642261759
+       ],
+       [
+        1,
+        340277701886609141512293945789189593826
+       ]
+      ]
+     }
+    },
+    "32": {
+     "dev": {
+      "block_count": 128,
+      "distinct_values": 128,
+      "pair_count": 8128,
+      "xor_groups": 8128,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        115790977921078990707887048853107602250414041922246880161866627745564133225982
+       ],
+       [
+        1,
+        115790957216054688687521963228189213055271056661179201086280110244033264285183
+       ],
+       [
+        1,
+        115789204169396048704353363866494128666002162683925129862199513107777000502754
+       ],
+       [
+        1,
+        115785580754913764179019045673865589244893056954198535170467901922981813483002
+       ],
+       [
+        1,
+        115782095372904556693446075591724740755222452279019194338767137874453280294189
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 128,
+      "distinct_values": 128,
+      "pair_count": 8128,
+      "xor_groups": 8128,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        115746385842578249165376465347995049447512679578919917460807898694503628048255
+       ],
+       [
+        1,
+        115671729512572155223416269904230459123024534025257779577928716997379481503491
+       ],
+       [
+        1,
+        115569231683401879437386942080213016138660502751948425871769725261552188557177
+       ],
+       [
+        1,
+        115565249472684117688078012355387696813163259224126614066148241100254933415949
+       ],
+       [
+        1,
+        115565194177212306052603614505299355146323141621603224758878928796449787031419
+       ]
+      ]
+     }
+    },
+    "64": {
+     "dev": {
+      "block_count": 64,
+      "distinct_values": 64,
+      "pair_count": 2016,
+      "xor_groups": 2016,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        13395042738578216651900013372459624987815902917021478797044311637685570998382105198004415214241401576233554675738774320984078647873290829942985046286985839
+       ],
+       [
+        1,
+        13386538864769023861490519711726781901838186998434992078505355106057375734802431734998118934003869081265914488548075527685521307363865970155782246456841973
+       ],
+       [
+        1,
+        13380496368049483962832480755386331994520298621618806945047294461639660455735986335862196241636556386123370200930144241910884859094979184205799511478672866
+       ],
+       [
+        1,
+        13380178299375107375106411594805842706034253753355666676622575598981587149181615177195388519127232546439569646656623797957832736846923515181027212996478178
+       ],
+       [
+        1,
+        13379690008009735959240784381684858258712188663618107018415052357186282461342198351607633697048919719630618960469485867308529504759311670523719125565411298
+       ]
+      ]
+     },
+     "val": {
+      "block_count": 64,
+      "distinct_values": 64,
+      "pair_count": 2016,
+      "xor_groups": 2016,
+      "groups_with_target": 0,
+      "three_equations": 0,
+      "three_value_triples": 0,
+      "four_value_quadruples": 0,
+      "relationship_values": 0,
+      "relationship_coverage_bytes": 0,
+      "relationship_coverage_fraction": 0.0,
+      "nontrivial_values": 0,
+      "nontrivial_coverage_bytes": 0,
+      "nontrivial_coverage_fraction": 0.0,
+      "zero_values": 0,
+      "constant_values": 0,
+      "short_period_values": 0,
+      "repeated_values": 0,
+      "repeated_block_occurrences": 0,
+      "category_relationships": {
+       "zero": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "constant": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "short_period": {
+        "values": 0,
+        "coverage_bytes": 0
+       },
+       "repeated": {
+        "values": 0,
+        "coverage_bytes": 0
+       }
+      },
+      "dependency_analysis": null,
+      "top_xor_groups": [
+       [
+        1,
+        13382002788172540617711330709555077600531589456486049589769359040591674565103674668449044735342633263422313055537496346500606666598021843704833714106241015
+       ],
+       [
+        1,
+        13381315518051849505661887245512485749689973630167114658859045657834598890902676175742995516623616628692947799528634833154309882203156245006930637626735081
+       ],
+       [
+        1,
+        13381315515222627675127266829183046690116593721888899262668583542115334013447980116418760532920579304841540728342766942400280660991007609677381855103655166
+       ],
+       [
+        1,
+        13380100783256855594041991549550041212710508157303675459580006267904700961985331515413001049701265246000797542771058660583009445989808191834931707409247721
+       ],
+       [
+        1,
+        13379896193417228600529348202798268669223309159919073072403552150289232788887816170127545390478827069662002518439204098967615596149277376464970237446172158
+       ]
+      ]
+     }
+    }
+   }
+  }
+ ],
+ "aggregate": {
+  "8_dev": {
+   "block_count": 3072,
+   "distinct_values": 2891,
+   "pair_count": 700138,
+   "xor_groups": 700114,
+   "groups_with_target": 957,
+   "three_equations": 0,
+   "three_value_triples": 0,
+   "four_value_quadruples": 8,
+   "relationship_values": 31,
+   "relationship_coverage_bytes": 312,
+   "nontrivial_values": 26,
+   "nontrivial_coverage_bytes": 208,
+   "zero_values": 2,
+   "constant_values": 5,
+   "short_period_values": 5,
+   "repeated_values": 83,
+   "repeated_block_occurrences": 264,
+   "regions": 6,
+   "relationship_coverage_fraction": 0.0126953125,
+   "nontrivial_coverage_fraction": 0.008463541666666666,
+   "category_relationships": {
+    "zero": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "constant": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "short_period": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "repeated": {
+     "coverage_bytes": 0,
+     "values": 0
+    }
+   }
+  },
+  "8_val": {
+   "block_count": 3072,
+   "distinct_values": 2423,
+   "pair_count": 540423,
+   "xor_groups": 540123,
+   "groups_with_target": 154,
+   "three_equations": 0,
+   "three_value_triples": 0,
+   "four_value_quadruples": 139,
+   "relationship_values": 113,
+   "relationship_coverage_bytes": 936,
+   "nontrivial_values": 109,
+   "nontrivial_coverage_bytes": 872,
+   "zero_values": 1,
+   "constant_values": 4,
+   "short_period_values": 4,
+   "repeated_values": 68,
+   "repeated_block_occurrences": 717,
+   "regions": 6,
+   "relationship_coverage_fraction": 0.0380859375,
+   "nontrivial_coverage_fraction": 0.035481770833333336,
+   "category_relationships": {
+    "zero": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "constant": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "short_period": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "repeated": {
+     "coverage_bytes": 0,
+     "values": 0
+    }
+   }
+  },
+  "16_dev": {
+   "block_count": 1536,
+   "distinct_values": 1506,
+   "pair_count": 188428,
+   "xor_groups": 188428,
+   "groups_with_target": 234,
+   "three_equations": 0,
+   "three_value_triples": 0,
+   "four_value_quadruples": 0,
+   "relationship_values": 0,
+   "relationship_coverage_bytes": 0,
+   "nontrivial_values": 0,
+   "nontrivial_coverage_bytes": 0,
+   "zero_values": 1,
+   "constant_values": 1,
+   "short_period_values": 1,
+   "repeated_values": 10,
+   "repeated_block_occurrences": 40,
+   "regions": 6,
+   "relationship_coverage_fraction": 0.0,
+   "nontrivial_coverage_fraction": 0.0,
+   "category_relationships": {
+    "zero": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "constant": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "short_period": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "repeated": {
+     "coverage_bytes": 0,
+     "values": 0
+    }
+   }
+  },
+  "16_val": {
+   "block_count": 1536,
+   "distinct_values": 1241,
+   "pair_count": 141118,
+   "xor_groups": 141118,
+   "groups_with_target": 77,
+   "three_equations": 0,
+   "three_value_triples": 0,
+   "four_value_quadruples": 0,
+   "relationship_values": 0,
+   "relationship_coverage_bytes": 0,
+   "nontrivial_values": 0,
+   "nontrivial_coverage_bytes": 0,
+   "zero_values": 1,
+   "constant_values": 2,
+   "short_period_values": 2,
+   "repeated_values": 23,
+   "repeated_block_occurrences": 318,
+   "regions": 6,
+   "relationship_coverage_fraction": 0.0,
+   "nontrivial_coverage_fraction": 0.0,
+   "category_relationships": {
+    "zero": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "constant": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "short_period": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "repeated": {
+     "coverage_bytes": 0,
+     "values": 0
+    }
+   }
+  },
+  "32_dev": {
+   "block_count": 768,
+   "distinct_values": 760,
+   "pair_count": 47780,
+   "xor_groups": 47780,
+   "groups_with_target": 119,
+   "three_equations": 0,
+   "three_value_triples": 0,
+   "four_value_quadruples": 0,
+   "relationship_values": 0,
+   "relationship_coverage_bytes": 0,
+   "nontrivial_values": 0,
+   "nontrivial_coverage_bytes": 0,
+   "zero_values": 1,
+   "constant_values": 1,
+   "short_period_values": 1,
+   "repeated_values": 1,
+   "repeated_block_occurrences": 9,
+   "regions": 6,
+   "relationship_coverage_fraction": 0.0,
+   "nontrivial_coverage_fraction": 0.0,
+   "category_relationships": {
+    "zero": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "constant": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "short_period": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "repeated": {
+     "coverage_bytes": 0,
+     "values": 0
+    }
+   }
+  },
+  "32_val": {
+   "block_count": 768,
+   "distinct_values": 629,
+   "pair_count": 35988,
+   "xor_groups": 35988,
+   "groups_with_target": 39,
+   "three_equations": 0,
+   "three_value_triples": 0,
+   "four_value_quadruples": 0,
+   "relationship_values": 0,
+   "relationship_coverage_bytes": 0,
+   "nontrivial_values": 0,
+   "nontrivial_coverage_bytes": 0,
+   "zero_values": 1,
+   "constant_values": 2,
+   "short_period_values": 2,
+   "repeated_values": 7,
+   "repeated_block_occurrences": 146,
+   "regions": 6,
+   "relationship_coverage_fraction": 0.0,
+   "nontrivial_coverage_fraction": 0.0,
+   "category_relationships": {
+    "zero": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "constant": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "short_period": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "repeated": {
+     "coverage_bytes": 0,
+     "values": 0
+    }
+   }
+  },
+  "64_dev": {
+   "block_count": 384,
+   "distinct_values": 381,
+   "pair_count": 11910,
+   "xor_groups": 11910,
+   "groups_with_target": 60,
+   "three_equations": 0,
+   "three_value_triples": 0,
+   "four_value_quadruples": 0,
+   "relationship_values": 0,
+   "relationship_coverage_bytes": 0,
+   "nontrivial_values": 0,
+   "nontrivial_coverage_bytes": 0,
+   "zero_values": 1,
+   "constant_values": 1,
+   "short_period_values": 1,
+   "repeated_values": 1,
+   "repeated_block_occurrences": 4,
+   "regions": 6,
+   "relationship_coverage_fraction": 0.0,
+   "nontrivial_coverage_fraction": 0.0,
+   "category_relationships": {
+    "zero": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "constant": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "short_period": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "repeated": {
+     "coverage_bytes": 0,
+     "values": 0
+    }
+   }
+  },
+  "64_val": {
+   "block_count": 384,
+   "distinct_values": 318,
+   "pair_count": 9072,
+   "xor_groups": 9072,
+   "groups_with_target": 20,
+   "three_equations": 0,
+   "three_value_triples": 0,
+   "four_value_quadruples": 0,
+   "relationship_values": 0,
+   "relationship_coverage_bytes": 0,
+   "nontrivial_values": 0,
+   "nontrivial_coverage_bytes": 0,
+   "zero_values": 1,
+   "constant_values": 2,
+   "short_period_values": 2,
+   "repeated_values": 3,
+   "repeated_block_occurrences": 69,
+   "regions": 6,
+   "relationship_coverage_fraction": 0.0,
+   "nontrivial_coverage_fraction": 0.0,
+   "category_relationships": {
+    "zero": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "constant": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "short_period": {
+     "coverage_bytes": 0,
+     "values": 0
+    },
+    "repeated": {
+     "coverage_bytes": 0,
+     "values": 0
+    }
+   }
+  }
+ },
+ "elapsed_s": 4.438,
+ "reporting_corrections": {
+  "single_atom_blocks": {
+   "7zr": 44,
+   "bbc": 2,
+   "irs1040": 23
+  },
+  "reconstruction_count": "12 paired F/G checks equal 24 individual archives: six files x two modes x two variants (F exact and G compressed).",
+  "selected_vs_available": "Episode 1 selected zero multi-atom encodings. This census measures available exact relationships independently of selection."
+ }
+}

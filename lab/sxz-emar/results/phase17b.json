@@ -1,0 +1,3164 @@
+{
+ "phase": 17,
+ "episode": 2,
+ "protocol": {
+  "phase": 17,
+  "episode": 2,
+  "codec": "exact reduced ordered BDD representation v1.0",
+  "representations": [
+   "separate",
+   "shared",
+   "mtbdd"
+  ],
+  "orders": [
+   "msb",
+   "lsb",
+   "odd-even",
+   "reversed-grouping"
+  ],
+  "sizes": [
+   4096,
+   16384,
+   65536
+  ],
+  "region_rule": "first and last disjoint equal regions; skip when file_bytes < 2*size; no padding",
+  "selection": "per file/size smallest decision-diagram+zstd9 (G) on dev, frozen before validation",
+  "reductions": [
+   "merge identical (variable, low, high) nodes",
+   "eliminate nodes whose low and high children are identical"
+  ],
+  "serialization": "level-wise records; mode 0 absolute varints, mode 1 delta varints; roots, terminals, order, levels and counts charged",
+  "controls": {
+   "A": "zstd-9 raw",
+   "B": "zstd-19 raw",
+   "C": "raw LZMA2 preset 6 +1 byte",
+   "D": "matched bit-plane + coordinate transform + zstd-9",
+   "E": "selected representation without redundant-variable elimination (exact)",
+   "E_zstd9": "same no-redundant graph + zstd-9",
+   "F": "exact selected decision diagram",
+   "G": "selected decision diagram + zstd-9"
+  },
+  "gate": {
+   "min_saving": 0.01,
+   "min_files": 2,
+   "baseline": "min(A,B,C,D,E,E_zstd9) per region, summed per file"
+  }
+ },
+ "unit_tests": "passed",
+ "selected": {
+  "book1": {
+   "4096": {
+    "repr": "mtbdd",
+    "repr_id": 2,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 2285,
+    "dev_terminal_count": 67,
+    "dev_exact_bytes": 8271,
+    "dev_compressed_bytes": 6588,
+    "dev_stats": {
+     "candidates": 4095,
+     "eliminated_equal_children": 34,
+     "merged_identical_nodes": 1776,
+     "created_nodes": 2285
+    }
+   },
+   "16384": {
+    "repr": "mtbdd",
+    "repr_id": 2,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 7401,
+    "dev_terminal_count": 72,
+    "dev_exact_bytes": 28264,
+    "dev_compressed_bytes": 24531,
+    "dev_stats": {
+     "candidates": 16383,
+     "eliminated_equal_children": 161,
+     "merged_identical_nodes": 8821,
+     "created_nodes": 7401
+    }
+   },
+   "65536": {
+    "repr": "mtbdd",
+    "repr_id": 2,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 24375,
+    "dev_terminal_count": 76,
+    "dev_exact_bytes": 95420,
+    "dev_compressed_bytes": 89014,
+    "dev_stats": {
+     "candidates": 65535,
+     "eliminated_equal_children": 625,
+     "merged_identical_nodes": 40535,
+     "created_nodes": 24375
+    }
+   }
+  },
+  "bbc": {
+   "4096": {
+    "repr": "mtbdd",
+    "repr_id": 2,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 2088,
+    "dev_terminal_count": 77,
+    "dev_exact_bytes": 7171,
+    "dev_compressed_bytes": 5221,
+    "dev_stats": {
+     "candidates": 4095,
+     "eliminated_equal_children": 424,
+     "merged_identical_nodes": 1583,
+     "created_nodes": 2088
+    }
+   }
+  },
+  "7zr": {
+   "4096": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 5107,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 15226,
+    "dev_compressed_bytes": 7839,
+    "dev_stats": {
+     "candidates": 32760,
+     "eliminated_equal_children": 14487,
+     "merged_identical_nodes": 13166,
+     "created_nodes": 5107
+    }
+   },
+   "16384": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 17711,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 65596,
+    "dev_compressed_bytes": 31646,
+    "dev_stats": {
+     "candidates": 131064,
+     "eliminated_equal_children": 48169,
+     "merged_identical_nodes": 65184,
+     "created_nodes": 17711
+    }
+   },
+   "65536": {
+    "repr": "mtbdd",
+    "repr_id": 2,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 36302,
+    "dev_terminal_count": 256,
+    "dev_exact_bytes": 136394,
+    "dev_compressed_bytes": 132264,
+    "dev_stats": {
+     "candidates": 65535,
+     "eliminated_equal_children": 2330,
+     "merged_identical_nodes": 26903,
+     "created_nodes": 36302
+    }
+   }
+  },
+  "irs1040": {
+   "4096": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 5581,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 17384,
+    "dev_compressed_bytes": 8774,
+    "dev_stats": {
+     "candidates": 32760,
+     "eliminated_equal_children": 12597,
+     "merged_identical_nodes": 14582,
+     "created_nodes": 5581
+    }
+   },
+   "16384": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 18053,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 67180,
+    "dev_compressed_bytes": 32110,
+    "dev_stats": {
+     "candidates": 131064,
+     "eliminated_equal_children": 44866,
+     "merged_identical_nodes": 68145,
+     "created_nodes": 18053
+    }
+   },
+   "65536": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 57271,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 223308,
+    "dev_compressed_bytes": 116129,
+    "dev_stats": {
+     "candidates": 524280,
+     "eliminated_equal_children": 189437,
+     "merged_identical_nodes": 277572,
+     "created_nodes": 57271
+    }
+   }
+  },
+  "hopper": {
+   "4096": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 4527,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 13066,
+    "dev_compressed_bytes": 7324,
+    "dev_stats": {
+     "candidates": 32760,
+     "eliminated_equal_children": 16266,
+     "merged_identical_nodes": 11967,
+     "created_nodes": 4527
+    }
+   },
+   "16384": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 13626,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 48101,
+    "dev_compressed_bytes": 25688,
+    "dev_stats": {
+     "candidates": 131064,
+     "eliminated_equal_children": 66692,
+     "merged_identical_nodes": 50746,
+     "created_nodes": 13626
+    }
+   }
+  },
+  "ecg": {
+   "4096": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 3636,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 9738,
+    "dev_compressed_bytes": 5853,
+    "dev_stats": {
+     "candidates": 32760,
+     "eliminated_equal_children": 9294,
+     "merged_identical_nodes": 19830,
+     "created_nodes": 3636
+    }
+   },
+   "16384": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 11524,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 39896,
+    "dev_compressed_bytes": 22962,
+    "dev_stats": {
+     "candidates": 131064,
+     "eliminated_equal_children": 38051,
+     "merged_identical_nodes": 81489,
+     "created_nodes": 11524
+    }
+   },
+   "65536": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 37543,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 142442,
+    "dev_compressed_bytes": 86960,
+    "dev_stats": {
+     "candidates": 524280,
+     "eliminated_equal_children": 150520,
+     "merged_identical_nodes": 336217,
+     "created_nodes": 37543
+    }
+   }
+  }
+ },
+ "dev_elapsed_s": 27.328,
+ "validation": {
+  "split": "val",
+  "elapsed_s": 23.514,
+  "files": [
+   {
+    "name": "book1",
+    "kind": "text",
+    "path": "datasets/corpus/book1",
+    "file_bytes": 768771,
+    "file_sha256": "9ffa47cd93bccd732f20e0c304203cfbc1b8a91bedac536e2d8f6051003d9951",
+    "available_sizes": [
+     4096,
+     16384,
+     65536
+    ],
+    "skipped_sizes": [],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 764675,
+      "length": 4096,
+      "sha256": "3e488a07b33278771d695225be56978b2727de14c4aa433d1f4a00b3527389a4",
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "N": 4096,
+      "k": 12,
+      "terminal_count": 65,
+      "nonterminal_count": 2315,
+      "node_total": 2315,
+      "level_counts": [
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        511,
+        885,
+        408
+       ]
+      ],
+      "mode": 1,
+      "stats": {
+       "candidates": 4095,
+       "eliminated_equal_children": 34,
+       "merged_identical_nodes": 1746,
+       "created_nodes": 2315
+      },
+      "shared_across_planes": 0,
+      "root_reachable": [
+       2315
+      ],
+      "representative_root": {
+       "index": 0,
+       "reachable_nodes": 2315
+      },
+      "F_bytes": 8364,
+      "G_bytes": 6655,
+      "D_bytes": 3347,
+      "E_bytes": 8416,
+      "E_zstd9_bytes": 6679,
+      "E_stats": {
+       "candidates": 4095,
+       "eliminated_equal_children": 0,
+       "merged_identical_nodes": 1770,
+       "created_nodes": 2325
+      },
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 2116,
+        "encode_s": 0.00013,
+        "decode_s": 2e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 2095,
+        "encode_s": 0.0046,
+        "decode_s": 3e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 2182,
+        "encode_s": 0.01203,
+        "decode_s": 0.00024,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "B_zstd19",
+      "baseline_bytes": 2095,
+      "G_vs_baseline": 3.176611,
+      "saving_vs_baseline": -2.176611,
+      "F_vs_N": 2.041992,
+      "G_vs_N": 1.624756,
+      "node_vs_N": 0.565186,
+      "encode_s": 0.01718,
+      "compress_s": 0.00021,
+      "decode_s": 0.01247,
+      "decode_g_s": 0.01293,
+      "d_decode_s": 0.00403,
+      "e_encode_s": 0.01103,
+      "e_decode_s": 0.01521,
+      "decoded_ok": true,
+      "decoded_g_ok": true,
+      "decoded_e_ok": true,
+      "decoded_sha256": "3e488a07b33278771d695225be56978b2727de14c4aa433d1f4a00b3527389a4",
+      "decoded_g_sha256": "3e488a07b33278771d695225be56978b2727de14c4aa433d1f4a00b3527389a4",
+      "decoded_e_sha256": "3e488a07b33278771d695225be56978b2727de14c4aa433d1f4a00b3527389a4"
+     },
+     "16384": {
+      "split": "val",
+      "offset": 752387,
+      "length": 16384,
+      "sha256": "ddd6fafd9d9d8f5e9c2fc8f7bbdc673c3d16b2d6b98ec4deaa92f00ed63c20f3",
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "N": 16384,
+      "k": 14,
+      "terminal_count": 74,
+      "nonterminal_count": 7464,
+      "node_total": 7464,
+      "level_counts": [
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2023,
+        2767,
+        627
+       ]
+      ],
+      "mode": 1,
+      "stats": {
+       "candidates": 16383,
+       "eliminated_equal_children": 196,
+       "merged_identical_nodes": 8723,
+       "created_nodes": 7464
+      },
+      "shared_across_planes": 0,
+      "root_reachable": [
+       7464
+      ],
+      "representative_root": {
+       "index": 0,
+       "reachable_nodes": 7464
+      },
+      "F_bytes": 28464,
+      "G_bytes": 24912,
+      "D_bytes": 12958,
+      "E_bytes": 28641,
+      "E_zstd9_bytes": 25040,
+      "E_stats": {
+       "candidates": 16383,
+       "eliminated_equal_children": 0,
+       "merged_identical_nodes": 8900,
+       "created_nodes": 7483
+      },
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 7411,
+        "encode_s": 0.00094,
+        "decode_s": 6e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 7278,
+        "encode_s": 0.00479,
+        "decode_s": 6e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 7315,
+        "encode_s": 0.01126,
+        "decode_s": 0.00073,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "B_zstd19",
+      "baseline_bytes": 7278,
+      "G_vs_baseline": 3.422918,
+      "saving_vs_baseline": -2.422918,
+      "F_vs_N": 1.737305,
+      "G_vs_N": 1.520508,
+      "node_vs_N": 0.455566,
+      "encode_s": 0.05026,
+      "compress_s": 6e-05,
+      "decode_s": 0.06911,
+      "decode_g_s": 0.05418,
+      "d_decode_s": 0.02027,
+      "e_encode_s": 0.03036,
+      "e_decode_s": 0.04824,
+      "decoded_ok": true,
+      "decoded_g_ok": true,
+      "decoded_e_ok": true,
+      "decoded_sha256": "ddd6fafd9d9d8f5e9c2fc8f7bbdc673c3d16b2d6b98ec4deaa92f00ed63c20f3",
+      "decoded_g_sha256": "ddd6fafd9d9d8f5e9c2fc8f7bbdc673c3d16b2d6b98ec4deaa92f00ed63c20f3",
+      "decoded_e_sha256": "ddd6fafd9d9d8f5e9c2fc8f7bbdc673c3d16b2d6b98ec4deaa92f00ed63c20f3"
+     },
+     "65536": {
+      "split": "val",
+      "offset": 703235,
+      "length": 65536,
+      "sha256": "54acd6fe77fd99893ab641f63f7c2cc2c76dd8c6fbaab7cd93f7d145c9e9a355",
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "N": 65536,
+      "k": 16,
+      "terminal_count": 76,
+      "nonterminal_count": 24153,
+      "node_total": 24153,
+      "level_counts": [
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048,
+        4092,
+        7796,
+        7258,
+        912
+       ]
+      ],
+      "mode": 1,
+      "stats": {
+       "candidates": 65535,
+       "eliminated_equal_children": 703,
+       "merged_identical_nodes": 40679,
+       "created_nodes": 24153
+      },
+      "shared_across_planes": 0,
+      "root_reachable": [
+       24153
+      ],
+      "representative_root": {
+       "index": 0,
+       "reachable_nodes": 24153
+      },
+      "F_bytes": 94458,
+      "G_bytes": 89445,
+      "D_bytes": 52017,
+      "E_bytes": 94863,
+      "E_zstd9_bytes": 89834,
+      "E_stats": {
+       "candidates": 65535,
+       "eliminated_equal_children": 0,
+       "merged_identical_nodes": 41353,
+       "created_nodes": 24182
+      },
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 26941,
+        "encode_s": 0.00206,
+        "decode_s": 0.00013,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 26050,
+        "encode_s": 0.01707,
+        "decode_s": 9e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 25610,
+        "encode_s": 0.01729,
+        "decode_s": 0.00121,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 25610,
+      "G_vs_baseline": 3.492581,
+      "saving_vs_baseline": -2.492581,
+      "F_vs_N": 1.441315,
+      "G_vs_N": 1.364822,
+      "node_vs_N": 0.368546,
+      "encode_s": 0.2595,
+      "compress_s": 0.00015,
+      "decode_s": 0.21944,
+      "decode_g_s": 0.19371,
+      "d_decode_s": 0.08566,
+      "e_encode_s": 0.10039,
+      "e_decode_s": 0.19675,
+      "decoded_ok": true,
+      "decoded_g_ok": true,
+      "decoded_e_ok": true,
+      "decoded_sha256": "54acd6fe77fd99893ab641f63f7c2cc2c76dd8c6fbaab7cd93f7d145c9e9a355",
+      "decoded_g_sha256": "54acd6fe77fd99893ab641f63f7c2cc2c76dd8c6fbaab7cd93f7d145c9e9a355",
+      "decoded_e_sha256": "54acd6fe77fd99893ab641f63f7c2cc2c76dd8c6fbaab7cd93f7d145c9e9a355"
+     }
+    }
+   },
+   {
+    "name": "bbc",
+    "kind": "structured text",
+    "path": "datasets/corpus/bbc.rss.xml",
+    "file_bytes": 28260,
+    "file_sha256": "caa27d88f455e0fd10c408f7aaaaa73b16e9c0d502fa8c9cc11bc70551192b83",
+    "available_sizes": [
+     4096
+    ],
+    "skipped_sizes": [
+     {
+      "size": 16384,
+      "reason": "two disjoint regions unavailable",
+      "file_bytes": 28260,
+      "needed_bytes": 32768
+     },
+     {
+      "size": 65536,
+      "reason": "two disjoint regions unavailable",
+      "file_bytes": 28260,
+      "needed_bytes": 131072
+     }
+    ],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 24164,
+      "length": 4096,
+      "sha256": "7aded530ac0d3021a4a88726d9c74f83386561f7799ea840e2525dbf0516b32f",
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "N": 4096,
+      "k": 12,
+      "terminal_count": 77,
+      "nonterminal_count": 2208,
+      "node_total": 2208,
+      "level_counts": [
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        63,
+        123,
+        236,
+        432,
+        710,
+        581
+       ]
+      ],
+      "mode": 1,
+      "stats": {
+       "candidates": 4095,
+       "eliminated_equal_children": 342,
+       "merged_identical_nodes": 1545,
+       "created_nodes": 2208
+      },
+      "shared_across_planes": 0,
+      "root_reachable": [
+       2208
+      ],
+      "representative_root": {
+       "index": 0,
+       "reachable_nodes": 2208
+      },
+      "F_bytes": 7588,
+      "G_bytes": 5740,
+      "D_bytes": 3073,
+      "E_bytes": 7724,
+      "E_zstd9_bytes": 5790,
+      "E_stats": {
+       "candidates": 4095,
+       "eliminated_equal_children": 0,
+       "merged_identical_nodes": 1864,
+       "created_nodes": 2231
+      },
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 1297,
+        "encode_s": 9e-05,
+        "decode_s": 2e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 1292,
+        "encode_s": 0.00173,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 1298,
+        "encode_s": 0.00755,
+        "decode_s": 0.00019,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "B_zstd19",
+      "baseline_bytes": 1292,
+      "G_vs_baseline": 4.442724,
+      "saving_vs_baseline": -3.442724,
+      "F_vs_N": 1.852539,
+      "G_vs_N": 1.401367,
+      "node_vs_N": 0.539062,
+      "encode_s": 0.01489,
+      "compress_s": 0.00016,
+      "decode_s": 0.00815,
+      "decode_g_s": 0.0221,
+      "d_decode_s": 0.00409,
+      "e_encode_s": 0.00743,
+      "e_decode_s": 0.00915,
+      "decoded_ok": true,
+      "decoded_g_ok": true,
+      "decoded_e_ok": true,
+      "decoded_sha256": "7aded530ac0d3021a4a88726d9c74f83386561f7799ea840e2525dbf0516b32f",
+      "decoded_g_sha256": "7aded530ac0d3021a4a88726d9c74f83386561f7799ea840e2525dbf0516b32f",
+      "decoded_e_sha256": "7aded530ac0d3021a4a88726d9c74f83386561f7799ea840e2525dbf0516b32f"
+     }
+    }
+   },
+   {
+    "name": "7zr",
+    "kind": "executable",
+    "path": "datasets/corpus/7zr.exe",
+    "file_bytes": 602624,
+    "file_sha256": "256feca8e274e5da655e2a284fabafd9f554365eb164862089dacd4e8276d282",
+    "available_sizes": [
+     4096,
+     16384,
+     65536
+    ],
+    "skipped_sizes": [],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 598528,
+      "length": 4096,
+      "sha256": "3b3e5887681ee6b7a73db2735ef224947dc3ee805e3363838aa995163294dcf6",
+      "repr": "separate",
+      "repr_id": 0,
+      "order": "msb",
+      "order_id": 0,
+      "N": 4096,
+      "k": 12,
+      "terminal_count": 2,
+      "nonterminal_count": 1001,
+      "node_total": 1001,
+      "level_counts": [
+       [
+        1,
+        1,
+        2,
+        3,
+        5,
+        10,
+        20,
+        25,
+        14,
+        6,
+        2,
+        1
+       ],
+       [
+        1,
+        1,
+        2,
+        3,
+        5,
+        9,
+        16,
+        14,
+        11,
+        7,
+        2,
+        1
+       ],
+       [
+        1,
+        1,
+        2,
+        3,
+        5,
+        10,
+        20,
+        33,
+        45,
+        26,
+        7,
+        2
+       ],
+       [
+        1,
+        1,
+        2,
+        3,
+        5,
+        10,
+        19,
+        34,
+        44,
+        24,
+        4,
+        2
+       ],
+       [
+        1,
+        1,
+        2,
+        3,
+        5,
+        10,
+        20,
+        34,
+        48,
+        17,
+        5,
+        2
+       ],
+       [
+        1,
+        1,
+        2,
+        3,
+        5,
+        10,
+        19,
+        35,
+        52,
+        17,
+        5,
+        2
+       ],
+       [
+        1,
+        1,
+        2,
+        3,
+        5,
+        10,
+        19,
+        35,
+        36,
+        10,
+        3,
+        2
+       ],
+       [
+        1,
+        1,
+        2,
+        3,
+        5,
+        10,
+        20,
+        32,
+        20,
+        9,
+        3,
+        2
+       ]
+      ],
+      "mode": 1,
+      "stats": {
+       "candidates": 32760,
+       "eliminated_equal_children": 27923,
+       "merged_identical_nodes": 3836,
+       "created_nodes": 1001
+      },
+      "shared_across_planes": 0,
+      "root_reachable": [
+       90,
+       72,
+       155,
+       149,
+       148,
+       152,
+       127,
+       108
+      ],
+      "representative_root": {
+       "index": 2,
+       "reachable_nodes": 155
+      },
+      "F_bytes": 2144,
+      "G_bytes": 1327,
+      "D_bytes": 734,
+      "E_bytes": 2494,
+      "E_zstd9_bytes": 1433,
+      "E_stats": {
+       "candidates": 32760,
+       "eliminated_equal_children": 0,
+       "merged_identical_nodes": 31584,
+       "created_nodes": 1176
+      },
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 948,
+        "encode_s": 5e-05,
+        "decode_s": 2e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 936,
+        "encode_s": 0.00028,
+        "decode_s": 2e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 983,
+        "encode_s": 0.00648,
+        "decode_s": 0.00022,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "D",
+      "baseline_bytes": 734,
+      "G_vs_baseline": 1.807902,
+      "saving_vs_baseline": -0.807902,
+      "F_vs_N": 0.523438,
+      "G_vs_N": 0.323975,
+      "node_vs_N": 0.244385,
+      "encode_s": 0.02726,
+      "compress_s": 7e-05,
+      "decode_s": 0.03629,
+      "decode_g_s": 0.01992,
+      "d_decode_s": 0.00351,
+      "e_encode_s": 0.01411,
+      "e_decode_s": 0.07392,
+      "decoded_ok": true,
+      "decoded_g_ok": true,
+      "decoded_e_ok": true,
+      "decoded_sha256": "3b3e5887681ee6b7a73db2735ef224947dc3ee805e3363838aa995163294dcf6",
+      "decoded_g_sha256": "3b3e5887681ee6b7a73db2735ef224947dc3ee805e3363838aa995163294dcf6",
+      "decoded_e_sha256": "3b3e5887681ee6b7a73db2735ef224947dc3ee805e3363838aa995163294dcf6"
+     },
+     "16384": {
+      "split": "val",
+      "offset": 586240,
+      "length": 16384,
+      "sha256": "0497a4411556ee5bea860c578f7be19cba7f114eb61d040bc941da92f766e3f4",
+      "repr": "separate",
+      "repr_id": 0,
+      "order": "msb",
+      "order_id": 0,
+      "N": 16384,
+      "k": 14,
+      "terminal_count": 2,
+      "nonterminal_count": 7939,
+      "node_total": 7939,
+      "level_counts": [
+       [
+        1,
+        2,
+        4,
+        7,
+        14,
+        27,
+        53,
+        105,
+        172,
+        175,
+        251,
+        123,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        7,
+        14,
+        27,
+        53,
+        99,
+        131,
+        170,
+        232,
+        113,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        7,
+        14,
+        27,
+        53,
+        102,
+        186,
+        321,
+        357,
+        103,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        7,
+        14,
+        27,
+        53,
+        104,
+        190,
+        333,
+        341,
+        66,
+        10,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        7,
+        14,
+        27,
+        53,
+        104,
+        189,
+        335,
+        267,
+        35,
+        5,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        7,
+        14,
+        27,
+        53,
+        104,
+        187,
+        344,
+        259,
+        34,
+        5,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        7,
+        14,
+        27,
+        53,
+        104,
+        201,
+        317,
+        157,
+        18,
+        3,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        7,
+        14,
+        27,
+        53,
+        105,
+        203,
+        225,
+        117,
+        18,
+        3,
+        2
+       ]
+      ],
+      "mode": 1,
+      "stats": {
+       "candidates": 131064,
+       "eliminated_equal_children": 77133,
+       "merged_identical_nodes": 45992,
+       "created_nodes": 7939
+      },
+      "shared_across_planes": 0,
+      "root_reachable": [
+       948,
+       867,
+       1191,
+       1154,
+       1045,
+       1043,
+       910,
+       781
+      ],
+      "representative_root": {
+       "index": 2,
+       "reachable_nodes": 1191
+      },
+      "F_bytes": 26367,
+      "G_bytes": 14261,
+      "D_bytes": 6798,
+      "E_bytes": 27705,
+      "E_zstd9_bytes": 14450,
+      "E_stats": {
+       "candidates": 131064,
+       "eliminated_equal_children": 0,
+       "merged_identical_nodes": 122772,
+       "created_nodes": 8292
+      },
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 8215,
+        "encode_s": 0.00022,
+        "decode_s": 3e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 7864,
+        "encode_s": 0.00175,
+        "decode_s": 3e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 6945,
+        "encode_s": 0.00823,
+        "decode_s": 0.00041,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "D",
+      "baseline_bytes": 6798,
+      "G_vs_baseline": 2.097823,
+      "saving_vs_baseline": -1.097823,
+      "F_vs_N": 1.609314,
+      "G_vs_N": 0.870422,
+      "node_vs_N": 0.484558,
+      "encode_s": 0.10241,
+      "compress_s": 0.00058,
+      "decode_s": 0.21016,
+      "decode_g_s": 0.2527,
+      "d_decode_s": 0.01912,
+      "e_encode_s": 0.08547,
+      "e_decode_s": 0.3142,
+      "decoded_ok": true,
+      "decoded_g_ok": true,
+      "decoded_e_ok": true,
+      "decoded_sha256": "0497a4411556ee5bea860c578f7be19cba7f114eb61d040bc941da92f766e3f4",
+      "decoded_g_sha256": "0497a4411556ee5bea860c578f7be19cba7f114eb61d040bc941da92f766e3f4",
+      "decoded_e_sha256": "0497a4411556ee5bea860c578f7be19cba7f114eb61d040bc941da92f766e3f4"
+     },
+     "65536": {
+      "split": "val",
+      "offset": 537088,
+      "length": 65536,
+      "sha256": "e3761523797e002b41ea66b3a04a9ddceb9688f2ae48e800ea9e84090976b445",
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "N": 65536,
+      "k": 16,
+      "terminal_count": 256,
+      "nonterminal_count": 27076,
+      "node_total": 27076,
+      "level_counts": [
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        31,
+        62,
+        122,
+        242,
+        482,
+        960,
+        1896,
+        3457,
+        5550,
+        7848,
+        6395
+       ]
+      ],
+      "mode": 1,
+      "stats": {
+       "candidates": 65535,
+       "eliminated_equal_children": 20797,
+       "merged_identical_nodes": 17662,
+       "created_nodes": 27076
+      },
+      "shared_across_planes": 0,
+      "root_reachable": [
+       27076
+      ],
+      "representative_root": {
+       "index": 0,
+       "reachable_nodes": 27076
+      },
+      "F_bytes": 98108,
+      "G_bytes": 80954,
+      "D_bytes": 27117,
+      "E_bytes": 100573,
+      "E_zstd9_bytes": 85357,
+      "E_stats": {
+       "candidates": 65535,
+       "eliminated_equal_children": 0,
+       "merged_identical_nodes": 38401,
+       "created_nodes": 27134
+      },
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 25574,
+        "encode_s": 0.00095,
+        "decode_s": 0.0001,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 23755,
+        "encode_s": 0.01692,
+        "decode_s": 0.00013,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 19678,
+        "encode_s": 0.01931,
+        "decode_s": 0.00112,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 19678,
+      "G_vs_baseline": 4.113934,
+      "saving_vs_baseline": -3.113934,
+      "F_vs_N": 1.497009,
+      "G_vs_N": 1.23526,
+      "node_vs_N": 0.413147,
+      "encode_s": 0.19705,
+      "compress_s": 0.00145,
+      "decode_s": 0.13233,
+      "decode_g_s": 0.10914,
+      "d_decode_s": 0.05577,
+      "e_encode_s": 0.12909,
+      "e_decode_s": 0.17416,
+      "decoded_ok": true,
+      "decoded_g_ok": true,
+      "decoded_e_ok": true,
+      "decoded_sha256": "e3761523797e002b41ea66b3a04a9ddceb9688f2ae48e800ea9e84090976b445",
+      "decoded_g_sha256": "e3761523797e002b41ea66b3a04a9ddceb9688f2ae48e800ea9e84090976b445",
+      "decoded_e_sha256": "e3761523797e002b41ea66b3a04a9ddceb9688f2ae48e800ea9e84090976b445"
+     }
+    }
+   },
+   {
+    "name": "irs1040",
+    "kind": "pdf",
+    "path": "datasets/corpus/irs1040.pdf",
+    "file_bytes": 220237,
+    "file_sha256": "3d31c226df0d189ced80e039d01cf0f8820c1019681a0f0ca6264de277b7e982",
+    "available_sizes": [
+     4096,
+     16384,
+     65536
+    ],
+    "skipped_sizes": [],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 216141,
+      "length": 4096,
+      "sha256": "406d274be04e08ff6de4ab6f746d3df029b9493f436e314ca11a80fa6a91e708",
+      "repr": "separate",
+      "repr_id": 0,
+      "order": "msb",
+      "order_id": 0,
+      "N": 4096,
+      "k": 12,
+      "terminal_count": 2,
+      "nonterminal_count": 3088,
+      "node_total": 3088,
+      "level_counts": [
+       [
+        1,
+        2,
+        4,
+        6,
+        11,
+        21,
+        41,
+        81,
+        158,
+        167,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        6,
+        11,
+        21,
+        41,
+        81,
+        155,
+        158,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        6,
+        11,
+        21,
+        41,
+        80,
+        156,
+        154,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        6,
+        11,
+        21,
+        41,
+        76,
+        113,
+        89,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        6,
+        11,
+        21,
+        41,
+        80,
+        146,
+        138,
+        12,
+        2
+       ],
+       [
+        1,
+        1,
+        2,
+        3,
+        5,
+        9,
+        17,
+        33,
+        62,
+        60,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        6,
+        11,
+        21,
+        41,
+        80,
+        143,
+        125,
+        12,
+        2
+       ],
+       [
+        1,
+        1,
+        1,
+        2,
+        3,
+        5,
+        9,
+        12,
+        20,
+        33,
+        12,
+        2
+       ]
+      ],
+      "mode": 1,
+      "stats": {
+       "candidates": 32760,
+       "eliminated_equal_children": 22910,
+       "merged_identical_nodes": 6762,
+       "created_nodes": 3088
+      },
+      "shared_across_planes": 0,
+      "root_reachable": [
+       506,
+       494,
+       490,
+       378,
+       464,
+       207,
+       448,
+       101
+      ],
+      "representative_root": {
+       "index": 0,
+       "reachable_nodes": 506
+      },
+      "F_bytes": 7943,
+      "G_bytes": 4526,
+      "D_bytes": 2071,
+      "E_bytes": 8572,
+      "E_zstd9_bytes": 4797,
+      "E_stats": {
+       "candidates": 32760,
+       "eliminated_equal_children": 0,
+       "merged_identical_nodes": 29492,
+       "created_nodes": 3268
+      },
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 1619,
+        "encode_s": 9e-05,
+        "decode_s": 3e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 1607,
+        "encode_s": 0.00048,
+        "decode_s": 2e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 1534,
+        "encode_s": 0.00712,
+        "decode_s": 0.00023,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 1534,
+      "G_vs_baseline": 2.950456,
+      "saving_vs_baseline": -1.950456,
+      "F_vs_N": 1.939209,
+      "G_vs_N": 1.10498,
+      "node_vs_N": 0.753906,
+      "encode_s": 0.01723,
+      "compress_s": 0.00019,
+      "decode_s": 0.03266,
+      "decode_g_s": 0.03758,
+      "d_decode_s": 0.00432,
+      "e_encode_s": 0.02923,
+      "e_decode_s": 0.08525,
+      "decoded_ok": true,
+      "decoded_g_ok": true,
+      "decoded_e_ok": true,
+      "decoded_sha256": "406d274be04e08ff6de4ab6f746d3df029b9493f436e314ca11a80fa6a91e708",
+      "decoded_g_sha256": "406d274be04e08ff6de4ab6f746d3df029b9493f436e314ca11a80fa6a91e708",
+      "decoded_e_sha256": "406d274be04e08ff6de4ab6f746d3df029b9493f436e314ca11a80fa6a91e708"
+     },
+     "16384": {
+      "split": "val",
+      "offset": 203853,
+      "length": 16384,
+      "sha256": "b17cbd60d320a1f93b9e464ebeb917a19428e2b39ebf98bcc69ef52e6659a017",
+      "repr": "separate",
+      "repr_id": 0,
+      "order": "msb",
+      "order_id": 0,
+      "N": 16384,
+      "k": 14,
+      "terminal_count": 2,
+      "nonterminal_count": 11567,
+      "node_total": 11567,
+      "level_counts": [
+       [
+        1,
+        2,
+        4,
+        8,
+        15,
+        28,
+        55,
+        108,
+        215,
+        429,
+        821,
+        240,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        30,
+        59,
+        117,
+        227,
+        440,
+        822,
+        235,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        15,
+        28,
+        55,
+        108,
+        215,
+        427,
+        793,
+        237,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        30,
+        59,
+        117,
+        220,
+        365,
+        411,
+        179,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        15,
+        28,
+        55,
+        108,
+        215,
+        413,
+        673,
+        235,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        2,
+        3,
+        5,
+        9,
+        17,
+        33,
+        59,
+        103,
+        165,
+        120,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        15,
+        28,
+        55,
+        108,
+        215,
+        413,
+        660,
+        229,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        2,
+        3,
+        3,
+        5,
+        8,
+        13,
+        22,
+        35,
+        63,
+        92,
+        12,
+        2
+       ]
+      ],
+      "mode": 1,
+      "stats": {
+       "candidates": 131064,
+       "eliminated_equal_children": 80633,
+       "merged_identical_nodes": 38864,
+       "created_nodes": 11567
+      },
+      "shared_across_planes": 0,
+      "root_reachable": [
+       1940,
+       1975,
+       1907,
+       1426,
+       1771,
+       533,
+       1752,
+       263
+      ],
+      "representative_root": {
+       "index": 1,
+       "reachable_nodes": 1975
+      },
+      "F_bytes": 40647,
+      "G_bytes": 21019,
+      "D_bytes": 9796,
+      "E_bytes": 42250,
+      "E_zstd9_bytes": 22051,
+      "E_stats": {
+       "candidates": 131064,
+       "eliminated_equal_children": 0,
+       "merged_identical_nodes": 119221,
+       "created_nodes": 11843
+      },
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 7050,
+        "encode_s": 0.00053,
+        "decode_s": 6e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 6977,
+        "encode_s": 0.00373,
+        "decode_s": 4e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 6319,
+        "encode_s": 0.01145,
+        "decode_s": 0.00064,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 6319,
+      "G_vs_baseline": 3.326317,
+      "saving_vs_baseline": -2.326317,
+      "F_vs_N": 2.480896,
+      "G_vs_N": 1.282898,
+      "node_vs_N": 0.705994,
+      "encode_s": 0.12003,
+      "compress_s": 0.00075,
+      "decode_s": 0.23814,
+      "decode_g_s": 0.20087,
+      "d_decode_s": 0.01647,
+      "e_encode_s": 0.09549,
+      "e_decode_s": 0.2946,
+      "decoded_ok": true,
+      "decoded_g_ok": true,
+      "decoded_e_ok": true,
+      "decoded_sha256": "b17cbd60d320a1f93b9e464ebeb917a19428e2b39ebf98bcc69ef52e6659a017",
+      "decoded_g_sha256": "b17cbd60d320a1f93b9e464ebeb917a19428e2b39ebf98bcc69ef52e6659a017",
+      "decoded_e_sha256": "b17cbd60d320a1f93b9e464ebeb917a19428e2b39ebf98bcc69ef52e6659a017"
+     },
+     "65536": {
+      "split": "val",
+      "offset": 154701,
+      "length": 65536,
+      "sha256": "f756b65ed52321284347ad3792f7be3896fe0e175b162df80988887b38515771",
+      "repr": "separate",
+      "repr_id": 0,
+      "order": "msb",
+      "order_id": 0,
+      "N": 65536,
+      "k": 16,
+      "terminal_count": 2,
+      "nonterminal_count": 57880,
+      "node_total": 57880,
+      "level_counts": [
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        63,
+        123,
+        244,
+        486,
+        967,
+        1930,
+        3643,
+        240,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        126,
+        251,
+        501,
+        988,
+        1949,
+        3630,
+        240,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        63,
+        123,
+        244,
+        486,
+        967,
+        1925,
+        3609,
+        240,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        126,
+        251,
+        501,
+        975,
+        1860,
+        3226,
+        240,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        63,
+        123,
+        244,
+        486,
+        965,
+        1903,
+        3468,
+        240,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        14,
+        27,
+        53,
+        105,
+        209,
+        417,
+        815,
+        1584,
+        2841,
+        240,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        63,
+        123,
+        244,
+        486,
+        965,
+        1902,
+        3420,
+        240,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        14,
+        27,
+        50,
+        97,
+        190,
+        376,
+        720,
+        1398,
+        2663,
+        240,
+        12,
+        2
+       ]
+      ],
+      "mode": 1,
+      "stats": {
+       "candidates": 524280,
+       "eliminated_equal_children": 221254,
+       "merged_identical_nodes": 245146,
+       "created_nodes": 57880
+      },
+      "shared_across_planes": 0,
+      "root_reachable": [
+       7773,
+       7826,
+       7734,
+       7320,
+       7569,
+       6334,
+       7520,
+       5804
+      ],
+      "representative_root": {
+       "index": 1,
+       "reachable_nodes": 7826
+      },
+      "F_bytes": 225200,
+      "G_bytes": 119731,
+      "D_bytes": 56662,
+      "E_bytes": 228591,
+      "E_zstd9_bytes": 119526,
+      "E_stats": {
+       "candidates": 524280,
+       "eliminated_equal_children": 0,
+       "merged_identical_nodes": 465988,
+       "created_nodes": 58292
+      },
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 53244,
+        "encode_s": 0.00187,
+        "decode_s": 7e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 51121,
+        "encode_s": 0.07083,
+        "decode_s": 0.00014,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 49795,
+        "encode_s": 0.06594,
+        "decode_s": 0.01449,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 49795,
+      "G_vs_baseline": 2.404478,
+      "saving_vs_baseline": -1.404478,
+      "F_vs_N": 3.436279,
+      "G_vs_N": 1.82695,
+      "node_vs_N": 0.883179,
+      "encode_s": 0.40222,
+      "compress_s": 0.00169,
+      "decode_s": 0.8126,
+      "decode_g_s": 5.3993,
+      "d_decode_s": 0.48473,
+      "e_encode_s": 2.43199,
+      "e_decode_s": 11.15752,
+      "decoded_ok": true,
+      "decoded_g_ok": true,
+      "decoded_e_ok": true,
+      "decoded_sha256": "f756b65ed52321284347ad3792f7be3896fe0e175b162df80988887b38515771",
+      "decoded_g_sha256": "f756b65ed52321284347ad3792f7be3896fe0e175b162df80988887b38515771",
+      "decoded_e_sha256": "f756b65ed52321284347ad3792f7be3896fe0e175b162df80988887b38515771"
+     }
+    }
+   },
+   {
+    "name": "hopper",
+    "kind": "bmp",
+    "path": "datasets/corpus/hopper.bmp",
+    "file_bytes": 49290,
+    "file_sha256": "f1a94f3add0a2e54365dc94b51da099bd0de8289b955fc8304a8627b7b0d6aea",
+    "available_sizes": [
+     4096,
+     16384
+    ],
+    "skipped_sizes": [
+     {
+      "size": 65536,
+      "reason": "two disjoint regions unavailable",
+      "file_bytes": 49290,
+      "needed_bytes": 131072
+     }
+    ],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 45194,
+      "length": 4096,
+      "sha256": "1c198835a8e29f03e987fb9f75fe1438274c0738a667e161620ba2cceb5f6f07",
+      "repr": "separate",
+      "repr_id": 0,
+      "order": "msb",
+      "order_id": 0,
+      "N": 4096,
+      "k": 12,
+      "terminal_count": 2,
+      "nonterminal_count": 4485,
+      "node_total": 4485,
+      "level_counts": [
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        252,
+        205,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        253,
+        199,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        127,
+        243,
+        194,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        120,
+        211,
+        182,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        61,
+        109,
+        180,
+        154,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        31,
+        54,
+        89,
+        132,
+        116,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        31,
+        54,
+        85,
+        111,
+        82,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        15,
+        20,
+        32,
+        46,
+        46,
+        35,
+        12,
+        2
+       ]
+      ],
+      "mode": 1,
+      "stats": {
+       "candidates": 32760,
+       "eliminated_equal_children": 11731,
+       "merged_identical_nodes": 16544,
+       "created_nodes": 4485
+      },
+      "shared_across_planes": 0,
+      "root_reachable": [
+       726,
+       721,
+       705,
+       654,
+       581,
+       467,
+       408,
+       223
+      ],
+      "representative_root": {
+       "index": 0,
+       "reachable_nodes": 726
+      },
+      "F_bytes": 12813,
+      "G_bytes": 7300,
+      "D_bytes": 3160,
+      "E_bytes": 13428,
+      "E_zstd9_bytes": 7733,
+      "E_stats": {
+       "candidates": 32760,
+       "eliminated_equal_children": 0,
+       "merged_identical_nodes": 28139,
+       "created_nodes": 4621
+      },
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 3430,
+        "encode_s": 0.00015,
+        "decode_s": 2e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 3294,
+        "encode_s": 0.00072,
+        "decode_s": 2e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 2933,
+        "encode_s": 0.00653,
+        "decode_s": 0.00035,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 2933,
+      "G_vs_baseline": 2.488919,
+      "saving_vs_baseline": -1.488919,
+      "F_vs_N": 3.128174,
+      "G_vs_N": 1.782227,
+      "node_vs_N": 1.094971,
+      "encode_s": 0.04661,
+      "compress_s": 0.00035,
+      "decode_s": 0.07618,
+      "decode_g_s": 0.05551,
+      "d_decode_s": 0.0042,
+      "e_encode_s": 0.02844,
+      "e_decode_s": 0.06719,
+      "decoded_ok": true,
+      "decoded_g_ok": true,
+      "decoded_e_ok": true,
+      "decoded_sha256": "1c198835a8e29f03e987fb9f75fe1438274c0738a667e161620ba2cceb5f6f07",
+      "decoded_g_sha256": "1c198835a8e29f03e987fb9f75fe1438274c0738a667e161620ba2cceb5f6f07",
+      "decoded_e_sha256": "1c198835a8e29f03e987fb9f75fe1438274c0738a667e161620ba2cceb5f6f07"
+     },
+     "16384": {
+      "split": "val",
+      "offset": 32906,
+      "length": 16384,
+      "sha256": "8dcf5fec448242bb2c012c4f26a94e92a08c81e3651ccc703a2e5da5b6c90c36",
+      "repr": "separate",
+      "repr_id": 0,
+      "order": "msb",
+      "order_id": 0,
+      "N": 16384,
+      "k": 14,
+      "terminal_count": 2,
+      "nonterminal_count": 14472,
+      "node_total": 14472,
+      "level_counts": [
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        966,
+        238,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        990,
+        238,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        510,
+        945,
+        240,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        470,
+        841,
+        236,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        248,
+        441,
+        732,
+        237,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        118,
+        209,
+        358,
+        531,
+        223,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        112,
+        191,
+        311,
+        389,
+        175,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        59,
+        85,
+        142,
+        204,
+        189,
+        92,
+        12,
+        2
+       ]
+      ],
+      "mode": 1,
+      "stats": {
+       "candidates": 131064,
+       "eliminated_equal_children": 49470,
+       "merged_identical_nodes": 67122,
+       "created_nodes": 14472
+      },
+      "shared_across_planes": 0,
+      "root_reachable": [
+       2241,
+       2265,
+       2220,
+       2072,
+       1927,
+       1580,
+       1319,
+       848
+      ],
+      "representative_root": {
+       "index": 1,
+       "reachable_nodes": 2265
+      },
+      "F_bytes": 51950,
+      "G_bytes": 27659,
+      "D_bytes": 12637,
+      "E_bytes": 53519,
+      "E_zstd9_bytes": 28702,
+      "E_stats": {
+       "candidates": 131064,
+       "eliminated_equal_children": 0,
+       "merged_identical_nodes": 116387,
+       "created_nodes": 14677
+      },
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 13622,
+        "encode_s": 0.00043,
+        "decode_s": 3e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 13017,
+        "encode_s": 0.00181,
+        "decode_s": 4e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 11547,
+        "encode_s": 0.00799,
+        "decode_s": 0.00062,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 11547,
+      "G_vs_baseline": 2.395341,
+      "saving_vs_baseline": -1.395341,
+      "F_vs_N": 3.170776,
+      "G_vs_N": 1.688171,
+      "node_vs_N": 0.883301,
+      "encode_s": 0.13164,
+      "compress_s": 0.0012,
+      "decode_s": 0.31996,
+      "decode_g_s": 0.26895,
+      "d_decode_s": 0.01535,
+      "e_encode_s": 0.0892,
+      "e_decode_s": 0.23251,
+      "decoded_ok": true,
+      "decoded_g_ok": true,
+      "decoded_e_ok": true,
+      "decoded_sha256": "8dcf5fec448242bb2c012c4f26a94e92a08c81e3651ccc703a2e5da5b6c90c36",
+      "decoded_g_sha256": "8dcf5fec448242bb2c012c4f26a94e92a08c81e3651ccc703a2e5da5b6c90c36",
+      "decoded_e_sha256": "8dcf5fec448242bb2c012c4f26a94e92a08c81e3651ccc703a2e5da5b6c90c36"
+     }
+    }
+   },
+   {
+    "name": "ecg",
+    "kind": "ecg",
+    "path": "datasets/corpus/ecg-holdout.bin",
+    "file_bytes": 262144,
+    "file_sha256": "933cd8ca9cb6bc5ffa273a11e6b146c64b74ab6847239fa3cc472f03df9a9f57",
+    "available_sizes": [
+     4096,
+     16384,
+     65536
+    ],
+    "skipped_sizes": [],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 258048,
+      "length": 4096,
+      "sha256": "a390876e1f1b18c1a69e598e850ad21e81cbe6d5f0feb3ee0cb81d40b73a75e9",
+      "repr": "separate",
+      "repr_id": 0,
+      "order": "msb",
+      "order_id": 0,
+      "N": 4096,
+      "k": 12,
+      "terminal_count": 2,
+      "nonterminal_count": 3617,
+      "node_total": 3617,
+      "level_counts": [
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        249,
+        111,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        250,
+        113,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        246,
+        112,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        124,
+        199,
+        84,
+        10,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        58,
+        95,
+        137,
+        78,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        50,
+        68,
+        83,
+        59,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        31,
+        45,
+        59,
+        70,
+        49,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        9,
+        10,
+        10,
+        12,
+        17,
+        17,
+        10,
+        2
+       ]
+      ],
+      "mode": 1,
+      "stats": {
+       "candidates": 32760,
+       "eliminated_equal_children": 10231,
+       "merged_identical_nodes": 18912,
+       "created_nodes": 3617
+      },
+      "shared_across_planes": 0,
+      "root_reachable": [
+       629,
+       632,
+       627,
+       546,
+       445,
+       337,
+       299,
+       102
+      ],
+      "representative_root": {
+       "index": 1,
+       "reachable_nodes": 632
+      },
+      "F_bytes": 9657,
+      "G_bytes": 5787,
+      "D_bytes": 2637,
+      "E_bytes": 9926,
+      "E_zstd9_bytes": 6041,
+      "E_stats": {
+       "candidates": 32760,
+       "eliminated_equal_children": 0,
+       "merged_identical_nodes": 29043,
+       "created_nodes": 3717
+      },
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 2569,
+        "encode_s": 0.00016,
+        "decode_s": 3e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 2503,
+        "encode_s": 0.00082,
+        "decode_s": 3e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 2076,
+        "encode_s": 0.00661,
+        "decode_s": 0.00029,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 2076,
+      "G_vs_baseline": 2.787572,
+      "saving_vs_baseline": -1.787572,
+      "F_vs_N": 2.357666,
+      "G_vs_N": 1.412842,
+      "node_vs_N": 0.883057,
+      "encode_s": 0.02744,
+      "compress_s": 0.00032,
+      "decode_s": 0.04938,
+      "decode_g_s": 0.05443,
+      "d_decode_s": 0.0043,
+      "e_encode_s": 0.01916,
+      "e_decode_s": 0.07461,
+      "decoded_ok": true,
+      "decoded_g_ok": true,
+      "decoded_e_ok": true,
+      "decoded_sha256": "a390876e1f1b18c1a69e598e850ad21e81cbe6d5f0feb3ee0cb81d40b73a75e9",
+      "decoded_g_sha256": "a390876e1f1b18c1a69e598e850ad21e81cbe6d5f0feb3ee0cb81d40b73a75e9",
+      "decoded_e_sha256": "a390876e1f1b18c1a69e598e850ad21e81cbe6d5f0feb3ee0cb81d40b73a75e9"
+     },
+     "16384": {
+      "split": "val",
+      "offset": 245760,
+      "length": 16384,
+      "sha256": "6b9b33dcc5c76e807b398325a20332bd1687a49fb3deb5a4160ff613d6d0e907",
+      "repr": "separate",
+      "repr_id": 0,
+      "order": "msb",
+      "order_id": 0,
+      "N": 16384,
+      "k": 14,
+      "terminal_count": 2,
+      "nonterminal_count": 11575,
+      "node_total": 11575,
+      "level_counts": [
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        905,
+        146,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        933,
+        143,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        893,
+        149,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        496,
+        624,
+        101,
+        10,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        126,
+        229,
+        373,
+        366,
+        129,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        115,
+        178,
+        251,
+        240,
+        115,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        105,
+        145,
+        191,
+        173,
+        88,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        24,
+        27,
+        31,
+        39,
+        46,
+        59,
+        35,
+        10,
+        2
+       ]
+      ],
+      "mode": 1,
+      "stats": {
+       "candidates": 131064,
+       "eliminated_equal_children": 39065,
+       "merged_identical_nodes": 80424,
+       "created_nodes": 11575
+      },
+      "shared_across_planes": 0,
+      "root_reachable": [
+       2088,
+       2113,
+       2079,
+       1744,
+       1364,
+       1040,
+       843,
+       304
+      ],
+      "representative_root": {
+       "index": 1,
+       "reachable_nodes": 2113
+      },
+      "F_bytes": 40139,
+      "G_bytes": 22717,
+      "D_bytes": 10045,
+      "E_bytes": 40935,
+      "E_zstd9_bytes": 23549,
+      "E_stats": {
+       "candidates": 131064,
+       "eliminated_equal_children": 0,
+       "merged_identical_nodes": 119353,
+       "created_nodes": 11711
+      },
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 10139,
+        "encode_s": 0.00052,
+        "decode_s": 5e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 9794,
+        "encode_s": 0.00233,
+        "decode_s": 6e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 7777,
+        "encode_s": 0.00793,
+        "decode_s": 0.00049,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 7777,
+      "G_vs_baseline": 2.921049,
+      "saving_vs_baseline": -1.921049,
+      "F_vs_N": 2.44989,
+      "G_vs_N": 1.386536,
+      "node_vs_N": 0.706482,
+      "encode_s": 0.11457,
+      "compress_s": 0.00052,
+      "decode_s": 0.31085,
+      "decode_g_s": 0.27995,
+      "d_decode_s": 0.02084,
+      "e_encode_s": 0.0584,
+      "e_decode_s": 0.26089,
+      "decoded_ok": true,
+      "decoded_g_ok": true,
+      "decoded_e_ok": true,
+      "decoded_sha256": "6b9b33dcc5c76e807b398325a20332bd1687a49fb3deb5a4160ff613d6d0e907",
+      "decoded_g_sha256": "6b9b33dcc5c76e807b398325a20332bd1687a49fb3deb5a4160ff613d6d0e907",
+      "decoded_e_sha256": "6b9b33dcc5c76e807b398325a20332bd1687a49fb3deb5a4160ff613d6d0e907"
+     },
+     "65536": {
+      "split": "val",
+      "offset": 196608,
+      "length": 65536,
+      "sha256": "83221c344777ada09fbcf553fc575e81d1c67544d0b12d88d817d55ab0bdc6bf",
+      "repr": "separate",
+      "repr_id": 0,
+      "order": "msb",
+      "order_id": 0,
+      "N": 65536,
+      "k": 16,
+      "terminal_count": 2,
+      "nonterminal_count": 37447,
+      "node_total": 37447,
+      "level_counts": [
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048,
+        2822,
+        190,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2047,
+        2802,
+        194,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2046,
+        2619,
+        192,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1023,
+        1906,
+        1528,
+        103,
+        10,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        502,
+        899,
+        1306,
+        919,
+        187,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        254,
+        430,
+        637,
+        800,
+        607,
+        170,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        241,
+        360,
+        464,
+        521,
+        363,
+        132,
+        12,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        83,
+        88,
+        99,
+        114,
+        139,
+        142,
+        50,
+        10,
+        2
+       ]
+      ],
+      "mode": 1,
+      "stats": {
+       "candidates": 524280,
+       "eliminated_equal_children": 153117,
+       "merged_identical_nodes": 333716,
+       "created_nodes": 37447
+      },
+      "shared_across_planes": 0,
+      "root_reachable": [
+       7121,
+       7104,
+       6918,
+       5595,
+       4338,
+       3167,
+       2350,
+       854
+      ],
+      "representative_root": {
+       "index": 0,
+       "reachable_nodes": 7121
+      },
+      "F_bytes": 142170,
+      "G_bytes": 86686,
+      "D_bytes": 39194,
+      "E_bytes": 144135,
+      "E_zstd9_bytes": 88067,
+      "E_stats": {
+       "candidates": 524280,
+       "eliminated_equal_children": 0,
+       "merged_identical_nodes": 486632,
+       "created_nodes": 37648
+      },
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 38664,
+        "encode_s": 0.00467,
+        "decode_s": 0.00047,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 37221,
+        "encode_s": 0.03202,
+        "decode_s": 0.00051,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 29950,
+        "encode_s": 0.04913,
+        "decode_s": 0.00539,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 29950,
+      "G_vs_baseline": 2.894357,
+      "saving_vs_baseline": -1.894357,
+      "F_vs_N": 2.169342,
+      "G_vs_N": 1.322723,
+      "node_vs_N": 0.571396,
+      "encode_s": 0.29478,
+      "compress_s": 0.00111,
+      "decode_s": 0.84612,
+      "decode_g_s": 6.31713,
+      "d_decode_s": 0.50553,
+      "e_encode_s": 2.08515,
+      "e_decode_s": 10.98651,
+      "decoded_ok": true,
+      "decoded_g_ok": true,
+      "decoded_e_ok": true,
+      "decoded_sha256": "83221c344777ada09fbcf553fc575e81d1c67544d0b12d88d817d55ab0bdc6bf",
+      "decoded_g_sha256": "83221c344777ada09fbcf553fc575e81d1c67544d0b12d88d817d55ab0bdc6bf",
+      "decoded_e_sha256": "83221c344777ada09fbcf553fc575e81d1c67544d0b12d88d817d55ab0bdc6bf"
+     }
+    }
+   }
+  ]
+ },
+ "gate": {
+  "files": [
+   {
+    "name": "book1",
+    "sizes": [
+     4096,
+     16384,
+     65536
+    ],
+    "N": 86016,
+    "F": 131286,
+    "G": 121012,
+    "baseline": 34983,
+    "saving_vs_baseline": -2.459166,
+    "primary_pass": false,
+    "node_ratio": 0.394485,
+    "F_ratio": 1.526297
+   },
+   {
+    "name": "bbc",
+    "sizes": [
+     4096
+    ],
+    "N": 4096,
+    "F": 7588,
+    "G": 5740,
+    "baseline": 1292,
+    "saving_vs_baseline": -3.442724,
+    "primary_pass": false,
+    "node_ratio": 0.539062,
+    "F_ratio": 1.852539
+   },
+   {
+    "name": "7zr",
+    "sizes": [
+     4096,
+     16384,
+     65536
+    ],
+    "N": 86016,
+    "F": 126619,
+    "G": 96542,
+    "baseline": 27210,
+    "saving_vs_baseline": -2.548034,
+    "primary_pass": false,
+    "node_ratio": 0.418713,
+    "F_ratio": 1.47204
+   },
+   {
+    "name": "irs1040",
+    "sizes": [
+     4096,
+     16384,
+     65536
+    ],
+    "N": 86016,
+    "F": 273790,
+    "G": 145276,
+    "baseline": 57648,
+    "saving_vs_baseline": -1.520053,
+    "primary_pass": false,
+    "node_ratio": 0.843273,
+    "F_ratio": 3.183012
+   },
+   {
+    "name": "hopper",
+    "sizes": [
+     4096,
+     16384
+    ],
+    "N": 20480,
+    "F": 64763,
+    "G": 34959,
+    "baseline": 14480,
+    "saving_vs_baseline": -1.414296,
+    "primary_pass": false,
+    "node_ratio": 0.925635,
+    "F_ratio": 3.162256
+   },
+   {
+    "name": "ecg",
+    "sizes": [
+     4096,
+     16384,
+     65536
+    ],
+    "N": 86016,
+    "F": 191966,
+    "G": 115190,
+    "baseline": 39803,
+    "saving_vs_baseline": -1.894003,
+    "primary_pass": false,
+    "node_ratio": 0.611968,
+    "F_ratio": 2.231748
+   }
+  ],
+  "primary": {
+   "min_saving": 0.01,
+   "min_files": 2,
+   "qualifying_files": [],
+   "passed": false
+  },
+  "passed": false
+ },
+ "elapsed_s": 23.516
+}

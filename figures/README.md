@@ -10,3 +10,7 @@ Rebuild with `python -B scripts/evidence.py`. Labels state the scope and units.
 - [ASMC held-out table](asmc-holdout.csv)
 - [SXZ4 panel ratios](sxz4-panel.svg), [decomposition](sxz4-attribution.svg),
   and [public-real panel ratios](sxz5-panel.svg)
+
+No new Phase 16-20 figures are included. Their compact evidence is in the JSON
+tables linked from the phase reports; value-set and full-region measurements
+must remain separate.

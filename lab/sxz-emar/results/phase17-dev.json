@@ -1,0 +1,11241 @@
+{
+ "phase": 17,
+ "episode": 1,
+ "protocol": {
+  "phase": 17,
+  "episode": 1,
+  "codec": "exact finite-field matrix/Tensor-Train representation v1.0",
+  "field": {
+   "name": "GF(2^8)",
+   "polynomial": "0x11B",
+   "addition": "XOR",
+   "multiplication": "log/exp and 256x256 lookup tables"
+  },
+  "sizes": [
+   4096,
+   16384,
+   65536
+  ],
+  "shapes": {
+   "4096": [
+    {
+     "name": "2d",
+     "dims": [
+      64,
+      64
+     ]
+    },
+    {
+     "name": "3d",
+     "dims": [
+      16,
+      16,
+      16
+     ]
+    },
+    {
+     "name": "4d",
+     "dims": [
+      8,
+      8,
+      8,
+      8
+     ]
+    },
+    {
+     "name": "4power",
+     "dims": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+     ]
+    },
+    {
+     "name": "binary",
+     "dims": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ]
+    }
+   ],
+   "16384": [
+    {
+     "name": "2d",
+     "dims": [
+      128,
+      128
+     ]
+    },
+    {
+     "name": "3d",
+     "dims": [
+      16,
+      32,
+      32
+     ]
+    },
+    {
+     "name": "4d",
+     "dims": [
+      8,
+      16,
+      16,
+      8
+     ]
+    },
+    {
+     "name": "4power",
+     "dims": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+     ]
+    },
+    {
+     "name": "binary",
+     "dims": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ]
+    }
+   ],
+   "65536": [
+    {
+     "name": "2d",
+     "dims": [
+      256,
+      256
+     ]
+    },
+    {
+     "name": "3d",
+     "dims": [
+      32,
+      32,
+      64
+     ]
+    },
+    {
+     "name": "4d",
+     "dims": [
+      16,
+      16,
+      16,
+      16
+     ]
+    },
+    {
+     "name": "4power",
+     "dims": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+     ]
+    },
+    {
+     "name": "binary",
+     "dims": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ]
+    }
+   ]
+  },
+  "orders": [
+   "linear",
+   "axis-reverse",
+   "bit-odd-even"
+  ],
+  "region_rule": "first and last disjoint equal regions of each requested size; size is skipped when file_bytes < 2*size; no padding",
+  "selection": "per file/size best compressed representation (F) on dev, frozen before validation",
+  "controls": {
+   "A": "zstd level 9 on raw region",
+   "B": "zstd level 19 on raw region",
+   "C": "raw LZMA2 preset 6 plus one selector byte",
+   "D": "selected coordinate ordering + zstd level 9, no decomposition",
+   "E": "exact serialized matrix/TT representation alone",
+   "F": "same serialized representation + zstd level 9",
+   "G": "best of delta, stride-3 shuffle, global add, global xor + zstd level 9"
+  },
+  "gate": {
+   "primary": {
+    "min_saving": 0.01,
+    "min_files": 2,
+    "baseline": "min(A,B,C,D,G) per region, summed over available sizes per file"
+   },
+   "low_rank": {
+    "coefficient_ratio_max": 0.75,
+    "cut_rank_fraction_max": 0.5,
+    "min_files": 2,
+    "bottleneck": "min(sum E, sum F) > 0.99 * sum baseline on a low-rank file"
+   }
+  }
+ },
+ "unit_tests": "passed",
+ "split": "dev",
+ "elapsed_s": 11.432,
+ "files": [
+  {
+   "name": "book1",
+   "kind": "text",
+   "path": "datasets/corpus/book1",
+   "file_bytes": 768771,
+   "file_sha256": "9ffa47cd93bccd732f20e0c304203cfbc1b8a91bedac536e2d8f6051003d9951",
+   "available_sizes": [
+    4096,
+    16384,
+    65536
+   ],
+   "skipped_sizes": [],
+   "regions": {
+    "4096": {
+     "split": "dev",
+     "offset": 0,
+     "length": 4096,
+     "sha256": "72c0a469aa3a13c6267f4d2dc24c759117e13fb2a4376219b88e983dab2463e3",
+     "size": 4096,
+     "rows": [
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        64,
+        64
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 8212,
+       "F_bytes": 2172,
+       "coefficient_count": 8192,
+       "header_bytes": 20,
+       "ranks": [
+        1,
+        64,
+        1
+       ],
+       "max_ranks": [
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.00268
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        64,
+        64
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 8212,
+       "F_bytes": 2489,
+       "coefficient_count": 8192,
+       "header_bytes": 20,
+       "ranks": [
+        1,
+        64,
+        1
+       ],
+       "max_ranks": [
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.0059
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        64,
+        64
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 8212,
+       "F_bytes": 2498,
+       "coefficient_count": 8192,
+       "header_bytes": 20,
+       "ranks": [
+        1,
+        64,
+        1
+       ],
+       "max_ranks": [
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.00945
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        16,
+        16
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 4630,
+       "F_bytes": 4181,
+       "coefficient_count": 4608,
+       "header_bytes": 22,
+       "ranks": [
+        1,
+        16,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.00286
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        16,
+        16
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 4630,
+       "F_bytes": 4189,
+       "coefficient_count": 4608,
+       "header_bytes": 22,
+       "ranks": [
+        1,
+        16,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.00582
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        16,
+        16
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 4630,
+       "F_bytes": 4192,
+       "coefficient_count": 4608,
+       "header_bytes": 22,
+       "ranks": [
+        1,
+        16,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.01223
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        8,
+        8,
+        8
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 8344,
+       "F_bytes": 4186,
+       "coefficient_count": 8320,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        8,
+        64,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        64,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00468
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        8,
+        8,
+        8
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 8344,
+       "F_bytes": 4186,
+       "coefficient_count": 8320,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        8,
+        64,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        64,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01677
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        8,
+        8,
+        8
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 8344,
+       "F_bytes": 4185,
+       "coefficient_count": 8320,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        8,
+        64,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        64,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.03704
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 8764,
+       "F_bytes": 4234,
+       "coefficient_count": 8736,
+       "header_bytes": 28,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00336
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 8764,
+       "F_bytes": 4234,
+       "coefficient_count": 8736,
+       "header_bytes": 28,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01336
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 8764,
+       "F_bytes": 4234,
+       "coefficient_count": 8736,
+       "header_bytes": 28,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.0177
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 10960,
+       "F_bytes": 4354,
+       "coefficient_count": 10920,
+       "header_bytes": 40,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00915
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 10960,
+       "F_bytes": 4355,
+       "coefficient_count": 10920,
+       "header_bytes": 40,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.02069
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 10960,
+       "F_bytes": 4355,
+       "coefficient_count": 10920,
+       "header_bytes": 40,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01417
+      }
+     ],
+     "best_f": {
+      "shape_index": 0,
+      "shape_name": "2d",
+      "shape": [
+       64,
+       64
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 8212,
+      "F_bytes": 2172,
+      "coefficient_count": 8192,
+      "header_bytes": 20,
+      "ranks": [
+       1,
+       64,
+       1
+      ],
+      "max_ranks": [
+       64
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true
+      ],
+      "encode_s": 0.00268
+     },
+     "best_e": {
+      "shape_index": 1,
+      "shape_name": "3d",
+      "shape": [
+       16,
+       16,
+       16
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 4630,
+      "F_bytes": 4181,
+      "coefficient_count": 4608,
+      "header_bytes": 22,
+      "ranks": [
+       1,
+       16,
+       16,
+       1
+      ],
+      "max_ranks": [
+       16,
+       16
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true,
+       true
+      ],
+      "encode_s": 0.00286
+     },
+     "selected_exact": true
+    },
+    "16384": {
+     "split": "dev",
+     "offset": 0,
+     "length": 16384,
+     "sha256": "0fe45de0f80c41df3a2b0358d9c13f03535745982cbe0b667bc1b6025f2e488b",
+     "size": 16384,
+     "rows": [
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        128,
+        128
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 32793,
+       "F_bytes": 7555,
+       "coefficient_count": 32768,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        128,
+        1
+       ],
+       "max_ranks": [
+        128
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.01465
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        128,
+        128
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 32793,
+       "F_bytes": 9771,
+       "coefficient_count": 32768,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        128,
+        1
+       ],
+       "max_ranks": [
+        128
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.03856
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        128,
+        128
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 32793,
+       "F_bytes": 9774,
+       "coefficient_count": 32768,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        128,
+        1
+       ],
+       "max_ranks": [
+        128
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.05211
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        32,
+        32
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 17688,
+       "F_bytes": 16520,
+       "coefficient_count": 17664,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        16,
+        32,
+        1
+       ],
+       "max_ranks": [
+        16,
+        32
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.01157
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        32,
+        32
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 17688,
+       "F_bytes": 16527,
+       "coefficient_count": 17664,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        32,
+        16,
+        1
+       ],
+       "max_ranks": [
+        32,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.03384
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        32,
+        32
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 17688,
+       "F_bytes": 16520,
+       "coefficient_count": 17664,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        16,
+        32,
+        1
+       ],
+       "max_ranks": [
+        16,
+        32
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.04902
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        16,
+        16,
+        8
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 32923,
+       "F_bytes": 16504,
+       "coefficient_count": 32896,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        8,
+        128,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        128,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.02329
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        16,
+        16,
+        8
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 32923,
+       "F_bytes": 16504,
+       "coefficient_count": 32896,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        8,
+        128,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        128,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.04095
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        16,
+        16,
+        8
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 32923,
+       "F_bytes": 16504,
+       "coefficient_count": 32896,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        8,
+        128,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        128,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.04929
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 25152,
+       "F_bytes": 16690,
+       "coefficient_count": 25120,
+       "header_bytes": 32,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.02436
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 25152,
+       "F_bytes": 16693,
+       "coefficient_count": 25120,
+       "header_bytes": 32,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.05229
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 25152,
+       "F_bytes": 16691,
+       "coefficient_count": 25120,
+       "header_bytes": 32,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.05403
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 43735,
+       "F_bytes": 16849,
+       "coefficient_count": 43688,
+       "header_bytes": 47,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.02364
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 43735,
+       "F_bytes": 16855,
+       "coefficient_count": 43688,
+       "header_bytes": 47,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.07728
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 43735,
+       "F_bytes": 16850,
+       "coefficient_count": 43688,
+       "header_bytes": 47,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.06996
+      }
+     ],
+     "best_f": {
+      "shape_index": 0,
+      "shape_name": "2d",
+      "shape": [
+       128,
+       128
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 32793,
+      "F_bytes": 7555,
+      "coefficient_count": 32768,
+      "header_bytes": 25,
+      "ranks": [
+       1,
+       128,
+       1
+      ],
+      "max_ranks": [
+       128
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true
+      ],
+      "encode_s": 0.01465
+     },
+     "best_e": {
+      "shape_index": 1,
+      "shape_name": "3d",
+      "shape": [
+       16,
+       32,
+       32
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 17688,
+      "F_bytes": 16520,
+      "coefficient_count": 17664,
+      "header_bytes": 24,
+      "ranks": [
+       1,
+       16,
+       32,
+       1
+      ],
+      "max_ranks": [
+       16,
+       32
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true,
+       true
+      ],
+      "encode_s": 0.01157
+     },
+     "selected_exact": true
+    },
+    "65536": {
+     "split": "dev",
+     "offset": 0,
+     "length": 65536,
+     "sha256": "bff4aa361cf7f225eb42322009f9e0f052680885a6ba5ba3dd519c83426d0d83",
+     "size": 65536,
+     "rows": [
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        256,
+        256
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 131097,
+       "F_bytes": 27513,
+       "coefficient_count": 131072,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        256,
+        1
+       ],
+       "max_ranks": [
+        256
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.10188
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        256,
+        256
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 131097,
+       "F_bytes": 40015,
+       "coefficient_count": 131072,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        256,
+        1
+       ],
+       "max_ranks": [
+        256
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.14068
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        256,
+        256
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 131097,
+       "F_bytes": 39973,
+       "coefficient_count": 131072,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        256,
+        1
+       ],
+       "max_ranks": [
+        256
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.23117
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        32,
+        32,
+        64
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 70680,
+       "F_bytes": 65771,
+       "coefficient_count": 70656,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        32,
+        64,
+        1
+       ],
+       "max_ranks": [
+        32,
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.05205
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        32,
+        32,
+        64
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 70680,
+       "F_bytes": 65859,
+       "coefficient_count": 70656,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        64,
+        32,
+        1
+       ],
+       "max_ranks": [
+        64,
+        32
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.10758
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        32,
+        32,
+        64
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 70680,
+       "F_bytes": 65870,
+       "coefficient_count": 70656,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        32,
+        64,
+        1
+       ],
+       "max_ranks": [
+        32,
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.17278
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 131611,
+       "F_bytes": 65828,
+       "coefficient_count": 131584,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        16,
+        256,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        256,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.08383
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 131611,
+       "F_bytes": 65840,
+       "coefficient_count": 131584,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        16,
+        256,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        256,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.16272
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 131611,
+       "F_bytes": 65840,
+       "coefficient_count": 131584,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        16,
+        256,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        256,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.24027
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 139843,
+       "F_bytes": 66015,
+       "coefficient_count": 139808,
+       "header_bytes": 35,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        256,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        256,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.09187
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 139843,
+       "F_bytes": 66035,
+       "coefficient_count": 139808,
+       "header_bytes": 35,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        256,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        256,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.2092
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 139843,
+       "F_bytes": 66015,
+       "coefficient_count": 139808,
+       "header_bytes": 35,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        256,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        256,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.28554
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 174813,
+       "F_bytes": 66441,
+       "coefficient_count": 174760,
+       "header_bytes": 53,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.27904
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 174813,
+       "F_bytes": 66436,
+       "coefficient_count": 174760,
+       "header_bytes": 53,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.74896
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 174813,
+       "F_bytes": 66432,
+       "coefficient_count": 174760,
+       "header_bytes": 53,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.64141
+      }
+     ],
+     "best_f": {
+      "shape_index": 0,
+      "shape_name": "2d",
+      "shape": [
+       256,
+       256
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 131097,
+      "F_bytes": 27513,
+      "coefficient_count": 131072,
+      "header_bytes": 25,
+      "ranks": [
+       1,
+       256,
+       1
+      ],
+      "max_ranks": [
+       256
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true
+      ],
+      "encode_s": 0.10188
+     },
+     "best_e": {
+      "shape_index": 1,
+      "shape_name": "3d",
+      "shape": [
+       32,
+       32,
+       64
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 70680,
+      "F_bytes": 65771,
+      "coefficient_count": 70656,
+      "header_bytes": 24,
+      "ranks": [
+       1,
+       32,
+       64,
+       1
+      ],
+      "max_ranks": [
+       32,
+       64
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true,
+       true
+      ],
+      "encode_s": 0.05205
+     },
+     "selected_exact": true
+    }
+   }
+  },
+  {
+   "name": "bbc",
+   "kind": "structured text",
+   "path": "datasets/corpus/bbc.rss.xml",
+   "file_bytes": 28260,
+   "file_sha256": "caa27d88f455e0fd10c408f7aaaaa73b16e9c0d502fa8c9cc11bc70551192b83",
+   "available_sizes": [
+    4096
+   ],
+   "skipped_sizes": [
+    {
+     "size": 16384,
+     "reason": "two disjoint regions unavailable",
+     "file_bytes": 28260,
+     "needed_bytes": 32768
+    },
+    {
+     "size": 65536,
+     "reason": "two disjoint regions unavailable",
+     "file_bytes": 28260,
+     "needed_bytes": 131072
+    }
+   ],
+   "regions": {
+    "4096": {
+     "split": "dev",
+     "offset": 0,
+     "length": 4096,
+     "sha256": "89d2e8fe733741c7e8e7c1c0f4761cd2e057b5d1f73562377b52dc97ce6f4484",
+     "size": 4096,
+     "rows": [
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        64,
+        64
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 8212,
+       "F_bytes": 1414,
+       "coefficient_count": 8192,
+       "header_bytes": 20,
+       "ranks": [
+        1,
+        64,
+        1
+       ],
+       "max_ranks": [
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.00485
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        64,
+        64
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 8212,
+       "F_bytes": 2479,
+       "coefficient_count": 8192,
+       "header_bytes": 20,
+       "ranks": [
+        1,
+        64,
+        1
+       ],
+       "max_ranks": [
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.01037
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        64,
+        64
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 8212,
+       "F_bytes": 2816,
+       "coefficient_count": 8192,
+       "header_bytes": 20,
+       "ranks": [
+        1,
+        64,
+        1
+       ],
+       "max_ranks": [
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.01302
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        16,
+        16
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 4630,
+       "F_bytes": 4168,
+       "coefficient_count": 4608,
+       "header_bytes": 22,
+       "ranks": [
+        1,
+        16,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.00343
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        16,
+        16
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 4630,
+       "F_bytes": 4190,
+       "coefficient_count": 4608,
+       "header_bytes": 22,
+       "ranks": [
+        1,
+        16,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.00532
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        16,
+        16
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 4630,
+       "F_bytes": 4192,
+       "coefficient_count": 4608,
+       "header_bytes": 22,
+       "ranks": [
+        1,
+        16,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.00602
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        8,
+        8,
+        8
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 8344,
+       "F_bytes": 4186,
+       "coefficient_count": 8320,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        8,
+        64,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        64,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00433
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        8,
+        8,
+        8
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 8344,
+       "F_bytes": 4186,
+       "coefficient_count": 8320,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        8,
+        64,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        64,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01197
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        8,
+        8,
+        8
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 8344,
+       "F_bytes": 4186,
+       "coefficient_count": 8320,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        8,
+        64,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        64,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.02182
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 8764,
+       "F_bytes": 4234,
+       "coefficient_count": 8736,
+       "header_bytes": 28,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00828
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 8764,
+       "F_bytes": 4234,
+       "coefficient_count": 8736,
+       "header_bytes": 28,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01498
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 8764,
+       "F_bytes": 4234,
+       "coefficient_count": 8736,
+       "header_bytes": 28,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01103
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 10960,
+       "F_bytes": 4355,
+       "coefficient_count": 10920,
+       "header_bytes": 40,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00512
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 10960,
+       "F_bytes": 4355,
+       "coefficient_count": 10920,
+       "header_bytes": 40,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01728
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 10960,
+       "F_bytes": 4355,
+       "coefficient_count": 10920,
+       "header_bytes": 40,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01149
+      }
+     ],
+     "best_f": {
+      "shape_index": 0,
+      "shape_name": "2d",
+      "shape": [
+       64,
+       64
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 8212,
+      "F_bytes": 1414,
+      "coefficient_count": 8192,
+      "header_bytes": 20,
+      "ranks": [
+       1,
+       64,
+       1
+      ],
+      "max_ranks": [
+       64
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true
+      ],
+      "encode_s": 0.00485
+     },
+     "best_e": {
+      "shape_index": 1,
+      "shape_name": "3d",
+      "shape": [
+       16,
+       16,
+       16
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 4630,
+      "F_bytes": 4168,
+      "coefficient_count": 4608,
+      "header_bytes": 22,
+      "ranks": [
+       1,
+       16,
+       16,
+       1
+      ],
+      "max_ranks": [
+       16,
+       16
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true,
+       true
+      ],
+      "encode_s": 0.00343
+     },
+     "selected_exact": true
+    }
+   }
+  },
+  {
+   "name": "7zr",
+   "kind": "executable",
+   "path": "datasets/corpus/7zr.exe",
+   "file_bytes": 602624,
+   "file_sha256": "256feca8e274e5da655e2a284fabafd9f554365eb164862089dacd4e8276d282",
+   "available_sizes": [
+    4096,
+    16384,
+    65536
+   ],
+   "skipped_sizes": [],
+   "regions": {
+    "4096": {
+     "split": "dev",
+     "offset": 0,
+     "length": 4096,
+     "sha256": "d4aad31f8179a9ca249024d76236c5f7fa6391d8cfade11dbdeb54c4e65d3223",
+     "size": 4096,
+     "rows": [
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        64,
+        64
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 7700,
+       "F_bytes": 3060,
+       "coefficient_count": 7680,
+       "header_bytes": 20,
+       "ranks": [
+        1,
+        60,
+        1
+       ],
+       "max_ranks": [
+        64
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        false
+       ],
+       "encode_s": 0.0026
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        64,
+        64
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 7700,
+       "F_bytes": 3187,
+       "coefficient_count": 7680,
+       "header_bytes": 20,
+       "ranks": [
+        1,
+        60,
+        1
+       ],
+       "max_ranks": [
+        64
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        false
+       ],
+       "encode_s": 0.00508
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        64,
+        64
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 8212,
+       "F_bytes": 3294,
+       "coefficient_count": 8192,
+       "header_bytes": 20,
+       "ranks": [
+        1,
+        64,
+        1
+       ],
+       "max_ranks": [
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.00626
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        16,
+        16
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 4358,
+       "F_bytes": 3777,
+       "coefficient_count": 4336,
+       "header_bytes": 22,
+       "ranks": [
+        1,
+        15,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        16
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        false,
+        true
+       ],
+       "encode_s": 0.0017
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        16,
+        16
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 4358,
+       "F_bytes": 3909,
+       "coefficient_count": 4336,
+       "header_bytes": 22,
+       "ranks": [
+        1,
+        16,
+        15,
+        1
+       ],
+       "max_ranks": [
+        16,
+        16
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        true,
+        false
+       ],
+       "encode_s": 0.00523
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        16,
+        16
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 4630,
+       "F_bytes": 4093,
+       "coefficient_count": 4608,
+       "header_bytes": 22,
+       "ranks": [
+        1,
+        16,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.00842
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        8,
+        8,
+        8
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 7832,
+       "F_bytes": 3968,
+       "coefficient_count": 7808,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        8,
+        60,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        64,
+        8
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        true,
+        false,
+        true
+       ],
+       "encode_s": 0.00458
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        8,
+        8,
+        8
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 7832,
+       "F_bytes": 3936,
+       "coefficient_count": 7808,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        8,
+        60,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        64,
+        8
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        true,
+        false,
+        true
+       ],
+       "encode_s": 0.0093
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        8,
+        8,
+        8
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 8344,
+       "F_bytes": 4064,
+       "coefficient_count": 8320,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        8,
+        64,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        64,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00899
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 7996,
+       "F_bytes": 3983,
+       "coefficient_count": 7968,
+       "header_bytes": 28,
+       "ranks": [
+        1,
+        4,
+        15,
+        60,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        16,
+        4
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        true,
+        false,
+        false,
+        true,
+        true
+       ],
+       "encode_s": 0.0058
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 7996,
+       "F_bytes": 3954,
+       "coefficient_count": 7968,
+       "header_bytes": 28,
+       "ranks": [
+        1,
+        4,
+        16,
+        60,
+        15,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        16,
+        4
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        true,
+        true,
+        false,
+        false,
+        true
+       ],
+       "encode_s": 0.01469
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 8764,
+       "F_bytes": 4148,
+       "coefficient_count": 8736,
+       "header_bytes": 28,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.02077
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 10068,
+       "F_bytes": 4224,
+       "coefficient_count": 10028,
+       "header_bytes": 40,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        15,
+        30,
+        60,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00941
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 10068,
+       "F_bytes": 4076,
+       "coefficient_count": 10028,
+       "header_bytes": 40,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        60,
+        30,
+        15,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01342
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 10960,
+       "F_bytes": 4347,
+       "coefficient_count": 10920,
+       "header_bytes": 40,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01315
+      }
+     ],
+     "best_f": {
+      "shape_index": 0,
+      "shape_name": "2d",
+      "shape": [
+       64,
+       64
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 7700,
+      "F_bytes": 3060,
+      "coefficient_count": 7680,
+      "header_bytes": 20,
+      "ranks": [
+       1,
+       60,
+       1
+      ],
+      "max_ranks": [
+       64
+      ],
+      "full_rank": false,
+      "full_rank_cuts": [
+       false
+      ],
+      "encode_s": 0.0026
+     },
+     "best_e": {
+      "shape_index": 1,
+      "shape_name": "3d",
+      "shape": [
+       16,
+       16,
+       16
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 4358,
+      "F_bytes": 3777,
+      "coefficient_count": 4336,
+      "header_bytes": 22,
+      "ranks": [
+       1,
+       15,
+       16,
+       1
+      ],
+      "max_ranks": [
+       16,
+       16
+      ],
+      "full_rank": false,
+      "full_rank_cuts": [
+       false,
+       true
+      ],
+      "encode_s": 0.0017
+     },
+     "selected_exact": true
+    },
+    "16384": {
+     "split": "dev",
+     "offset": 0,
+     "length": 16384,
+     "sha256": "db986786dbf09eb597b7e3338cf54e955aff35f8fbffc6a65a61479c04a88a88",
+     "size": 16384,
+     "rows": [
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        128,
+        128
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 32280,
+       "F_bytes": 10932,
+       "coefficient_count": 32256,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        126,
+        1
+       ],
+       "max_ranks": [
+        128
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        false
+       ],
+       "encode_s": 0.01561
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        128,
+        128
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 32280,
+       "F_bytes": 13579,
+       "coefficient_count": 32256,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        126,
+        1
+       ],
+       "max_ranks": [
+        128
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        false
+       ],
+       "encode_s": 0.03879
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        128,
+        128
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 32793,
+       "F_bytes": 13653,
+       "coefficient_count": 32768,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        128,
+        1
+       ],
+       "max_ranks": [
+        128
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.03383
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        32,
+        32
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 17688,
+       "F_bytes": 16507,
+       "coefficient_count": 17664,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        16,
+        32,
+        1
+       ],
+       "max_ranks": [
+        16,
+        32
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.0074
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        32,
+        32
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 17688,
+       "F_bytes": 16521,
+       "coefficient_count": 17664,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        32,
+        16,
+        1
+       ],
+       "max_ranks": [
+        32,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.02731
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        32,
+        32
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 17688,
+       "F_bytes": 16520,
+       "coefficient_count": 17664,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        16,
+        32,
+        1
+       ],
+       "max_ranks": [
+        16,
+        32
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.03423
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        16,
+        16,
+        8
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 32410,
+       "F_bytes": 16728,
+       "coefficient_count": 32384,
+       "header_bytes": 26,
+       "ranks": [
+        1,
+        8,
+        126,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        128,
+        8
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        true,
+        false,
+        true
+       ],
+       "encode_s": 0.01535
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        16,
+        16,
+        8
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 32410,
+       "F_bytes": 16258,
+       "coefficient_count": 32384,
+       "header_bytes": 26,
+       "ranks": [
+        1,
+        8,
+        126,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        128,
+        8
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        true,
+        false,
+        true
+       ],
+       "encode_s": 0.02593
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        16,
+        16,
+        8
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 32923,
+       "F_bytes": 16504,
+       "coefficient_count": 32896,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        8,
+        128,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        128,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.04322
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 24832,
+       "F_bytes": 16498,
+       "coefficient_count": 24800,
+       "header_bytes": 32,
+       "ranks": [
+        1,
+        4,
+        16,
+        63,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        64,
+        16,
+        4
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        true,
+        true,
+        false,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.02368
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 24832,
+       "F_bytes": 16423,
+       "coefficient_count": 24800,
+       "header_bytes": 32,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        63,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        64,
+        16,
+        4
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        true
+       ],
+       "encode_s": 0.05496
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 25152,
+       "F_bytes": 16690,
+       "coefficient_count": 25120,
+       "header_bytes": 32,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.05789
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 42906,
+       "F_bytes": 16923,
+       "coefficient_count": 42860,
+       "header_bytes": 46,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        63,
+        126,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.02197
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 42906,
+       "F_bytes": 16590,
+       "coefficient_count": 42860,
+       "header_bytes": 46,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        126,
+        63,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.06371
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 43735,
+       "F_bytes": 16851,
+       "coefficient_count": 43688,
+       "header_bytes": 47,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.04018
+      }
+     ],
+     "best_f": {
+      "shape_index": 0,
+      "shape_name": "2d",
+      "shape": [
+       128,
+       128
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 32280,
+      "F_bytes": 10932,
+      "coefficient_count": 32256,
+      "header_bytes": 24,
+      "ranks": [
+       1,
+       126,
+       1
+      ],
+      "max_ranks": [
+       128
+      ],
+      "full_rank": false,
+      "full_rank_cuts": [
+       false
+      ],
+      "encode_s": 0.01561
+     },
+     "best_e": {
+      "shape_index": 1,
+      "shape_name": "3d",
+      "shape": [
+       16,
+       32,
+       32
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 17688,
+      "F_bytes": 16507,
+      "coefficient_count": 17664,
+      "header_bytes": 24,
+      "ranks": [
+       1,
+       16,
+       32,
+       1
+      ],
+      "max_ranks": [
+       16,
+       32
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true,
+       true
+      ],
+      "encode_s": 0.0074
+     },
+     "selected_exact": true
+    },
+    "65536": {
+     "split": "dev",
+     "offset": 0,
+     "length": 65536,
+     "sha256": "e534a87e2b76e2e0b7e9a7433453ef6ca15db66620c9fece44f739731c6213d3",
+     "size": 65536,
+     "rows": [
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        256,
+        256
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 130585,
+       "F_bytes": 41897,
+       "coefficient_count": 130560,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        255,
+        1
+       ],
+       "max_ranks": [
+        256
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        false
+       ],
+       "encode_s": 0.06982
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        256,
+        256
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 130585,
+       "F_bytes": 54531,
+       "coefficient_count": 130560,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        255,
+        1
+       ],
+       "max_ranks": [
+        256
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        false
+       ],
+       "encode_s": 0.1576
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        256,
+        256
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 131097,
+       "F_bytes": 54690,
+       "coefficient_count": 131072,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        256,
+        1
+       ],
+       "max_ranks": [
+        256
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.21237
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        32,
+        32,
+        64
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 70680,
+       "F_bytes": 65830,
+       "coefficient_count": 70656,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        32,
+        64,
+        1
+       ],
+       "max_ranks": [
+        32,
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.04863
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        32,
+        32,
+        64
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 70680,
+       "F_bytes": 65899,
+       "coefficient_count": 70656,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        64,
+        32,
+        1
+       ],
+       "max_ranks": [
+        64,
+        32
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.11965
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        32,
+        32,
+        64
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 70680,
+       "F_bytes": 65863,
+       "coefficient_count": 70656,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        32,
+        64,
+        1
+       ],
+       "max_ranks": [
+        32,
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.17506
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 131099,
+       "F_bytes": 66348,
+       "coefficient_count": 131072,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        16,
+        255,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        256,
+        16
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        true,
+        false,
+        true
+       ],
+       "encode_s": 0.09135
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 131099,
+       "F_bytes": 65570,
+       "coefficient_count": 131072,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        16,
+        255,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        256,
+        16
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        true,
+        false,
+        true
+       ],
+       "encode_s": 0.18334
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 131611,
+       "F_bytes": 65840,
+       "coefficient_count": 131584,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        16,
+        256,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        256,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.26091
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 139331,
+       "F_bytes": 66590,
+       "coefficient_count": 139296,
+       "header_bytes": 35,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        255,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        256,
+        64,
+        16,
+        4
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.11617
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 139331,
+       "F_bytes": 65779,
+       "coefficient_count": 139296,
+       "header_bytes": 35,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        255,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        256,
+        64,
+        16,
+        4
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.2386
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 139843,
+       "F_bytes": 66012,
+       "coefficient_count": 139808,
+       "header_bytes": 35,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        256,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        256,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.23224
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 174301,
+       "F_bytes": 66996,
+       "coefficient_count": 174248,
+       "header_bytes": 53,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        255,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.29507
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 174301,
+       "F_bytes": 66177,
+       "coefficient_count": 174248,
+       "header_bytes": 53,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        255,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": false,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.76701
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 174813,
+       "F_bytes": 66448,
+       "coefficient_count": 174760,
+       "header_bytes": 53,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.66445
+      }
+     ],
+     "best_f": {
+      "shape_index": 0,
+      "shape_name": "2d",
+      "shape": [
+       256,
+       256
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 130585,
+      "F_bytes": 41897,
+      "coefficient_count": 130560,
+      "header_bytes": 25,
+      "ranks": [
+       1,
+       255,
+       1
+      ],
+      "max_ranks": [
+       256
+      ],
+      "full_rank": false,
+      "full_rank_cuts": [
+       false
+      ],
+      "encode_s": 0.06982
+     },
+     "best_e": {
+      "shape_index": 1,
+      "shape_name": "3d",
+      "shape": [
+       32,
+       32,
+       64
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 70680,
+      "F_bytes": 65830,
+      "coefficient_count": 70656,
+      "header_bytes": 24,
+      "ranks": [
+       1,
+       32,
+       64,
+       1
+      ],
+      "max_ranks": [
+       32,
+       64
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true,
+       true
+      ],
+      "encode_s": 0.04863
+     },
+     "selected_exact": true
+    }
+   }
+  },
+  {
+   "name": "irs1040",
+   "kind": "pdf",
+   "path": "datasets/corpus/irs1040.pdf",
+   "file_bytes": 220237,
+   "file_sha256": "3d31c226df0d189ced80e039d01cf0f8820c1019681a0f0ca6264de277b7e982",
+   "available_sizes": [
+    4096,
+    16384,
+    65536
+   ],
+   "skipped_sizes": [],
+   "regions": {
+    "4096": {
+     "split": "dev",
+     "offset": 0,
+     "length": 4096,
+     "sha256": "d752640d868d7f0a380d1635203f8064738e0eb5f26afd5a180c172642c565b7",
+     "size": 4096,
+     "rows": [
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        64,
+        64
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 8212,
+       "F_bytes": 3541,
+       "coefficient_count": 8192,
+       "header_bytes": 20,
+       "ranks": [
+        1,
+        64,
+        1
+       ],
+       "max_ranks": [
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.00217
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        64,
+        64
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 8212,
+       "F_bytes": 3996,
+       "coefficient_count": 8192,
+       "header_bytes": 20,
+       "ranks": [
+        1,
+        64,
+        1
+       ],
+       "max_ranks": [
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.0056
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        64,
+        64
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 8212,
+       "F_bytes": 3998,
+       "coefficient_count": 8192,
+       "header_bytes": 20,
+       "ranks": [
+        1,
+        64,
+        1
+       ],
+       "max_ranks": [
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.00654
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        16,
+        16
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 4630,
+       "F_bytes": 4188,
+       "coefficient_count": 4608,
+       "header_bytes": 22,
+       "ranks": [
+        1,
+        16,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.00184
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        16,
+        16
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 4630,
+       "F_bytes": 4192,
+       "coefficient_count": 4608,
+       "header_bytes": 22,
+       "ranks": [
+        1,
+        16,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.00487
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        16,
+        16
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 4630,
+       "F_bytes": 4192,
+       "coefficient_count": 4608,
+       "header_bytes": 22,
+       "ranks": [
+        1,
+        16,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.00762
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        8,
+        8,
+        8
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 8344,
+       "F_bytes": 4184,
+       "coefficient_count": 8320,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        8,
+        64,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        64,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00476
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        8,
+        8,
+        8
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 8344,
+       "F_bytes": 4186,
+       "coefficient_count": 8320,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        8,
+        64,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        64,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00554
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        8,
+        8,
+        8
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 8344,
+       "F_bytes": 4186,
+       "coefficient_count": 8320,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        8,
+        64,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        64,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01112
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 8764,
+       "F_bytes": 4234,
+       "coefficient_count": 8736,
+       "header_bytes": 28,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00261
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 8764,
+       "F_bytes": 4234,
+       "coefficient_count": 8736,
+       "header_bytes": 28,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00703
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 8764,
+       "F_bytes": 4234,
+       "coefficient_count": 8736,
+       "header_bytes": 28,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00789
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 10960,
+       "F_bytes": 4355,
+       "coefficient_count": 10920,
+       "header_bytes": 40,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00318
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 10960,
+       "F_bytes": 4355,
+       "coefficient_count": 10920,
+       "header_bytes": 40,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01233
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 10960,
+       "F_bytes": 4355,
+       "coefficient_count": 10920,
+       "header_bytes": 40,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01663
+      }
+     ],
+     "best_f": {
+      "shape_index": 0,
+      "shape_name": "2d",
+      "shape": [
+       64,
+       64
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 8212,
+      "F_bytes": 3541,
+      "coefficient_count": 8192,
+      "header_bytes": 20,
+      "ranks": [
+       1,
+       64,
+       1
+      ],
+      "max_ranks": [
+       64
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true
+      ],
+      "encode_s": 0.00217
+     },
+     "best_e": {
+      "shape_index": 1,
+      "shape_name": "3d",
+      "shape": [
+       16,
+       16,
+       16
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 4630,
+      "F_bytes": 4188,
+      "coefficient_count": 4608,
+      "header_bytes": 22,
+      "ranks": [
+       1,
+       16,
+       16,
+       1
+      ],
+      "max_ranks": [
+       16,
+       16
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true,
+       true
+      ],
+      "encode_s": 0.00184
+     },
+     "selected_exact": true
+    },
+    "16384": {
+     "split": "dev",
+     "offset": 0,
+     "length": 16384,
+     "sha256": "2d6243fd193844eff1f6c35d9f290885572cf03fc71a86ffb61dcbec3ea8bbf4",
+     "size": 16384,
+     "rows": [
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        128,
+        128
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 32793,
+       "F_bytes": 15457,
+       "coefficient_count": 32768,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        128,
+        1
+       ],
+       "max_ranks": [
+        128
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.0221
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        128,
+        128
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 32793,
+       "F_bytes": 16488,
+       "coefficient_count": 32768,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        128,
+        1
+       ],
+       "max_ranks": [
+        128
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.03582
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        128,
+        128
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 32793,
+       "F_bytes": 16488,
+       "coefficient_count": 32768,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        128,
+        1
+       ],
+       "max_ranks": [
+        128
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.05552
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        32,
+        32
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 17688,
+       "F_bytes": 16520,
+       "coefficient_count": 17664,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        16,
+        32,
+        1
+       ],
+       "max_ranks": [
+        16,
+        32
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.01423
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        32,
+        32
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 17688,
+       "F_bytes": 16522,
+       "coefficient_count": 17664,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        32,
+        16,
+        1
+       ],
+       "max_ranks": [
+        32,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.03496
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        32,
+        32
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 17688,
+       "F_bytes": 16520,
+       "coefficient_count": 17664,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        16,
+        32,
+        1
+       ],
+       "max_ranks": [
+        16,
+        32
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.03198
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        16,
+        16,
+        8
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 32923,
+       "F_bytes": 16504,
+       "coefficient_count": 32896,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        8,
+        128,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        128,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01713
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        16,
+        16,
+        8
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 32923,
+       "F_bytes": 16504,
+       "coefficient_count": 32896,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        8,
+        128,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        128,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.02796
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        16,
+        16,
+        8
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 32923,
+       "F_bytes": 16504,
+       "coefficient_count": 32896,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        8,
+        128,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        128,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.05012
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 25152,
+       "F_bytes": 16691,
+       "coefficient_count": 25120,
+       "header_bytes": 32,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01182
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 25152,
+       "F_bytes": 16692,
+       "coefficient_count": 25120,
+       "header_bytes": 32,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.03315
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 25152,
+       "F_bytes": 16694,
+       "coefficient_count": 25120,
+       "header_bytes": 32,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.04848
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 43735,
+       "F_bytes": 16850,
+       "coefficient_count": 43688,
+       "header_bytes": 47,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01872
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 43735,
+       "F_bytes": 16850,
+       "coefficient_count": 43688,
+       "header_bytes": 47,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.04466
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 43735,
+       "F_bytes": 16848,
+       "coefficient_count": 43688,
+       "header_bytes": 47,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.05818
+      }
+     ],
+     "best_f": {
+      "shape_index": 0,
+      "shape_name": "2d",
+      "shape": [
+       128,
+       128
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 32793,
+      "F_bytes": 15457,
+      "coefficient_count": 32768,
+      "header_bytes": 25,
+      "ranks": [
+       1,
+       128,
+       1
+      ],
+      "max_ranks": [
+       128
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true
+      ],
+      "encode_s": 0.0221
+     },
+     "best_e": {
+      "shape_index": 1,
+      "shape_name": "3d",
+      "shape": [
+       16,
+       32,
+       32
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 17688,
+      "F_bytes": 16520,
+      "coefficient_count": 17664,
+      "header_bytes": 24,
+      "ranks": [
+       1,
+       16,
+       32,
+       1
+      ],
+      "max_ranks": [
+       16,
+       32
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true,
+       true
+      ],
+      "encode_s": 0.01423
+     },
+     "selected_exact": true
+    },
+    "65536": {
+     "split": "dev",
+     "offset": 0,
+     "length": 65536,
+     "sha256": "cd4bd1df0ede49fa967f68c0a9bb6bacdf2c12ff57a021fa38f272c991f092d4",
+     "size": 65536,
+     "rows": [
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        256,
+        256
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 131097,
+       "F_bytes": 49696,
+       "coefficient_count": 131072,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        256,
+        1
+       ],
+       "max_ranks": [
+        256
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.06877
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        256,
+        256
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 131097,
+       "F_bytes": 58177,
+       "coefficient_count": 131072,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        256,
+        1
+       ],
+       "max_ranks": [
+        256
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.15971
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        256,
+        256
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 131097,
+       "F_bytes": 64343,
+       "coefficient_count": 131072,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        256,
+        1
+       ],
+       "max_ranks": [
+        256
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.21794
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        32,
+        32,
+        64
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 70680,
+       "F_bytes": 65841,
+       "coefficient_count": 70656,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        32,
+        64,
+        1
+       ],
+       "max_ranks": [
+        32,
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.04459
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        32,
+        32,
+        64
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 70680,
+       "F_bytes": 65831,
+       "coefficient_count": 70656,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        64,
+        32,
+        1
+       ],
+       "max_ranks": [
+        64,
+        32
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.11125
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        32,
+        32,
+        64
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 70680,
+       "F_bytes": 65863,
+       "coefficient_count": 70656,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        32,
+        64,
+        1
+       ],
+       "max_ranks": [
+        32,
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.17896
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 131611,
+       "F_bytes": 65840,
+       "coefficient_count": 131584,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        16,
+        256,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        256,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.08985
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 131611,
+       "F_bytes": 65830,
+       "coefficient_count": 131584,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        16,
+        256,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        256,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.17067
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 131611,
+       "F_bytes": 65840,
+       "coefficient_count": 131584,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        16,
+        256,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        256,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.22022
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 139843,
+       "F_bytes": 66037,
+       "coefficient_count": 139808,
+       "header_bytes": 35,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        256,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        256,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.12426
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 139843,
+       "F_bytes": 66065,
+       "coefficient_count": 139808,
+       "header_bytes": 35,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        256,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        256,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.18491
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 139843,
+       "F_bytes": 66015,
+       "coefficient_count": 139808,
+       "header_bytes": 35,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        256,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        256,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.2087
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 174813,
+       "F_bytes": 66433,
+       "coefficient_count": 174760,
+       "header_bytes": 53,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.1087
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 174813,
+       "F_bytes": 66453,
+       "coefficient_count": 174760,
+       "header_bytes": 53,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.68648
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 174813,
+       "F_bytes": 66423,
+       "coefficient_count": 174760,
+       "header_bytes": 53,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.66957
+      }
+     ],
+     "best_f": {
+      "shape_index": 0,
+      "shape_name": "2d",
+      "shape": [
+       256,
+       256
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 131097,
+      "F_bytes": 49696,
+      "coefficient_count": 131072,
+      "header_bytes": 25,
+      "ranks": [
+       1,
+       256,
+       1
+      ],
+      "max_ranks": [
+       256
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true
+      ],
+      "encode_s": 0.06877
+     },
+     "best_e": {
+      "shape_index": 1,
+      "shape_name": "3d",
+      "shape": [
+       32,
+       32,
+       64
+      ],
+      "order_id": 1,
+      "order": "axis-reverse",
+      "E_bytes": 70680,
+      "F_bytes": 65831,
+      "coefficient_count": 70656,
+      "header_bytes": 24,
+      "ranks": [
+       1,
+       64,
+       32,
+       1
+      ],
+      "max_ranks": [
+       64,
+       32
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true,
+       true
+      ],
+      "encode_s": 0.11125
+     },
+     "selected_exact": true
+    }
+   }
+  },
+  {
+   "name": "hopper",
+   "kind": "bmp",
+   "path": "datasets/corpus/hopper.bmp",
+   "file_bytes": 49290,
+   "file_sha256": "f1a94f3add0a2e54365dc94b51da099bd0de8289b955fc8304a8627b7b0d6aea",
+   "available_sizes": [
+    4096,
+    16384
+   ],
+   "skipped_sizes": [
+    {
+     "size": 65536,
+     "reason": "two disjoint regions unavailable",
+     "file_bytes": 49290,
+     "needed_bytes": 131072
+    }
+   ],
+   "regions": {
+    "4096": {
+     "split": "dev",
+     "offset": 0,
+     "length": 4096,
+     "sha256": "bfa50d3f2b4d5df57ed4019b08599cc2cc1aff5c23e33b79297470b1d530e9ad",
+     "size": 4096,
+     "rows": [
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        64,
+        64
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 8212,
+       "F_bytes": 3243,
+       "coefficient_count": 8192,
+       "header_bytes": 20,
+       "ranks": [
+        1,
+        64,
+        1
+       ],
+       "max_ranks": [
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.00301
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        64,
+        64
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 8212,
+       "F_bytes": 3408,
+       "coefficient_count": 8192,
+       "header_bytes": 20,
+       "ranks": [
+        1,
+        64,
+        1
+       ],
+       "max_ranks": [
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.00539
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        64,
+        64
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 8212,
+       "F_bytes": 3411,
+       "coefficient_count": 8192,
+       "header_bytes": 20,
+       "ranks": [
+        1,
+        64,
+        1
+       ],
+       "max_ranks": [
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.00635
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        16,
+        16
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 4630,
+       "F_bytes": 4183,
+       "coefficient_count": 4608,
+       "header_bytes": 22,
+       "ranks": [
+        1,
+        16,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.00166
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        16,
+        16
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 4630,
+       "F_bytes": 4192,
+       "coefficient_count": 4608,
+       "header_bytes": 22,
+       "ranks": [
+        1,
+        16,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.00443
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        16,
+        16
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 4630,
+       "F_bytes": 4192,
+       "coefficient_count": 4608,
+       "header_bytes": 22,
+       "ranks": [
+        1,
+        16,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.00974
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        8,
+        8,
+        8
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 8344,
+       "F_bytes": 4186,
+       "coefficient_count": 8320,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        8,
+        64,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        64,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00411
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        8,
+        8,
+        8
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 8344,
+       "F_bytes": 4186,
+       "coefficient_count": 8320,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        8,
+        64,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        64,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.0105
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        8,
+        8,
+        8
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 8344,
+       "F_bytes": 4182,
+       "coefficient_count": 8320,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        8,
+        64,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        64,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01368
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 8764,
+       "F_bytes": 4234,
+       "coefficient_count": 8736,
+       "header_bytes": 28,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00449
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 8764,
+       "F_bytes": 4234,
+       "coefficient_count": 8736,
+       "header_bytes": 28,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00872
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 8764,
+       "F_bytes": 4228,
+       "coefficient_count": 8736,
+       "header_bytes": 28,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01203
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 10960,
+       "F_bytes": 4355,
+       "coefficient_count": 10920,
+       "header_bytes": 40,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00326
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 10960,
+       "F_bytes": 4355,
+       "coefficient_count": 10920,
+       "header_bytes": 40,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01284
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 10960,
+       "F_bytes": 4344,
+       "coefficient_count": 10920,
+       "header_bytes": 40,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01395
+      }
+     ],
+     "best_f": {
+      "shape_index": 0,
+      "shape_name": "2d",
+      "shape": [
+       64,
+       64
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 8212,
+      "F_bytes": 3243,
+      "coefficient_count": 8192,
+      "header_bytes": 20,
+      "ranks": [
+       1,
+       64,
+       1
+      ],
+      "max_ranks": [
+       64
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true
+      ],
+      "encode_s": 0.00301
+     },
+     "best_e": {
+      "shape_index": 1,
+      "shape_name": "3d",
+      "shape": [
+       16,
+       16,
+       16
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 4630,
+      "F_bytes": 4183,
+      "coefficient_count": 4608,
+      "header_bytes": 22,
+      "ranks": [
+       1,
+       16,
+       16,
+       1
+      ],
+      "max_ranks": [
+       16,
+       16
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true,
+       true
+      ],
+      "encode_s": 0.00166
+     },
+     "selected_exact": true
+    },
+    "16384": {
+     "split": "dev",
+     "offset": 0,
+     "length": 16384,
+     "sha256": "d782489d511784c1929dd062339f84b07e0b3ccf9699c6ce17032f36d0741d7f",
+     "size": 16384,
+     "rows": [
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        128,
+        128
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 32793,
+       "F_bytes": 11352,
+       "coefficient_count": 32768,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        128,
+        1
+       ],
+       "max_ranks": [
+        128
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.01615
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        128,
+        128
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 32793,
+       "F_bytes": 12967,
+       "coefficient_count": 32768,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        128,
+        1
+       ],
+       "max_ranks": [
+        128
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.03356
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        128,
+        128
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 32793,
+       "F_bytes": 12972,
+       "coefficient_count": 32768,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        128,
+        1
+       ],
+       "max_ranks": [
+        128
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.05258
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        32,
+        32
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 17688,
+       "F_bytes": 16500,
+       "coefficient_count": 17664,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        16,
+        32,
+        1
+       ],
+       "max_ranks": [
+        16,
+        32
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.01386
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        32,
+        32
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 17688,
+       "F_bytes": 16524,
+       "coefficient_count": 17664,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        32,
+        16,
+        1
+       ],
+       "max_ranks": [
+        32,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.03182
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        32,
+        32
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 17688,
+       "F_bytes": 16520,
+       "coefficient_count": 17664,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        16,
+        32,
+        1
+       ],
+       "max_ranks": [
+        16,
+        32
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.03662
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        16,
+        16,
+        8
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 32923,
+       "F_bytes": 16501,
+       "coefficient_count": 32896,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        8,
+        128,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        128,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01672
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        16,
+        16,
+        8
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 32923,
+       "F_bytes": 16498,
+       "coefficient_count": 32896,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        8,
+        128,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        128,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.04188
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        16,
+        16,
+        8
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 32923,
+       "F_bytes": 16504,
+       "coefficient_count": 32896,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        8,
+        128,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        128,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.0596
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 25152,
+       "F_bytes": 16692,
+       "coefficient_count": 25120,
+       "header_bytes": 32,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.0192
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 25152,
+       "F_bytes": 16692,
+       "coefficient_count": 25120,
+       "header_bytes": 32,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.04579
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 25152,
+       "F_bytes": 16692,
+       "coefficient_count": 25120,
+       "header_bytes": 32,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.05688
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 43735,
+       "F_bytes": 16851,
+       "coefficient_count": 43688,
+       "header_bytes": 47,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.02706
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 43735,
+       "F_bytes": 16850,
+       "coefficient_count": 43688,
+       "header_bytes": 47,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.04755
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 43735,
+       "F_bytes": 16851,
+       "coefficient_count": 43688,
+       "header_bytes": 47,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.07861
+      }
+     ],
+     "best_f": {
+      "shape_index": 0,
+      "shape_name": "2d",
+      "shape": [
+       128,
+       128
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 32793,
+      "F_bytes": 11352,
+      "coefficient_count": 32768,
+      "header_bytes": 25,
+      "ranks": [
+       1,
+       128,
+       1
+      ],
+      "max_ranks": [
+       128
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true
+      ],
+      "encode_s": 0.01615
+     },
+     "best_e": {
+      "shape_index": 1,
+      "shape_name": "3d",
+      "shape": [
+       16,
+       32,
+       32
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 17688,
+      "F_bytes": 16500,
+      "coefficient_count": 17664,
+      "header_bytes": 24,
+      "ranks": [
+       1,
+       16,
+       32,
+       1
+      ],
+      "max_ranks": [
+       16,
+       32
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true,
+       true
+      ],
+      "encode_s": 0.01386
+     },
+     "selected_exact": true
+    }
+   }
+  },
+  {
+   "name": "ecg",
+   "kind": "ecg",
+   "path": "datasets/corpus/ecg-holdout.bin",
+   "file_bytes": 262144,
+   "file_sha256": "933cd8ca9cb6bc5ffa273a11e6b146c64b74ab6847239fa3cc472f03df9a9f57",
+   "available_sizes": [
+    4096,
+    16384,
+    65536
+   ],
+   "skipped_sizes": [],
+   "regions": {
+    "4096": {
+     "split": "dev",
+     "offset": 0,
+     "length": 4096,
+     "sha256": "2e60b12ccca8cd03096429b9e82e30a38f346d77f7bde606acb8bfe0df55c07f",
+     "size": 4096,
+     "rows": [
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        64,
+        64
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 8212,
+       "F_bytes": 2635,
+       "coefficient_count": 8192,
+       "header_bytes": 20,
+       "ranks": [
+        1,
+        64,
+        1
+       ],
+       "max_ranks": [
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.00208
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        64,
+        64
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 8212,
+       "F_bytes": 2798,
+       "coefficient_count": 8192,
+       "header_bytes": 20,
+       "ranks": [
+        1,
+        64,
+        1
+       ],
+       "max_ranks": [
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.00504
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        64,
+        64
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 8212,
+       "F_bytes": 2902,
+       "coefficient_count": 8192,
+       "header_bytes": 20,
+       "ranks": [
+        1,
+        64,
+        1
+       ],
+       "max_ranks": [
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.00633
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        16,
+        16
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 4630,
+       "F_bytes": 4191,
+       "coefficient_count": 4608,
+       "header_bytes": 22,
+       "ranks": [
+        1,
+        16,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.00168
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        16,
+        16
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 4630,
+       "F_bytes": 4194,
+       "coefficient_count": 4608,
+       "header_bytes": 22,
+       "ranks": [
+        1,
+        16,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.00468
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        16,
+        16
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 4630,
+       "F_bytes": 4187,
+       "coefficient_count": 4608,
+       "header_bytes": 22,
+       "ranks": [
+        1,
+        16,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.00569
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        8,
+        8,
+        8
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 8344,
+       "F_bytes": 4186,
+       "coefficient_count": 8320,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        8,
+        64,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        64,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00364
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        8,
+        8,
+        8
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 8344,
+       "F_bytes": 4186,
+       "coefficient_count": 8320,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        8,
+        64,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        64,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01023
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        8,
+        8,
+        8
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 8344,
+       "F_bytes": 4186,
+       "coefficient_count": 8320,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        8,
+        64,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        64,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00805
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 8764,
+       "F_bytes": 4234,
+       "coefficient_count": 8736,
+       "header_bytes": 28,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00285
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 8764,
+       "F_bytes": 4234,
+       "coefficient_count": 8736,
+       "header_bytes": 28,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01041
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 8764,
+       "F_bytes": 4234,
+       "coefficient_count": 8736,
+       "header_bytes": 28,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00837
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 10960,
+       "F_bytes": 4355,
+       "coefficient_count": 10920,
+       "header_bytes": 40,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00407
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 10960,
+       "F_bytes": 4355,
+       "coefficient_count": 10920,
+       "header_bytes": 40,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01337
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 10960,
+       "F_bytes": 4355,
+       "coefficient_count": 10920,
+       "header_bytes": 40,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.00704
+      }
+     ],
+     "best_f": {
+      "shape_index": 0,
+      "shape_name": "2d",
+      "shape": [
+       64,
+       64
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 8212,
+      "F_bytes": 2635,
+      "coefficient_count": 8192,
+      "header_bytes": 20,
+      "ranks": [
+       1,
+       64,
+       1
+      ],
+      "max_ranks": [
+       64
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true
+      ],
+      "encode_s": 0.00208
+     },
+     "best_e": {
+      "shape_index": 1,
+      "shape_name": "3d",
+      "shape": [
+       16,
+       16,
+       16
+      ],
+      "order_id": 2,
+      "order": "bit-odd-even",
+      "E_bytes": 4630,
+      "F_bytes": 4187,
+      "coefficient_count": 4608,
+      "header_bytes": 22,
+      "ranks": [
+       1,
+       16,
+       16,
+       1
+      ],
+      "max_ranks": [
+       16,
+       16
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true,
+       true
+      ],
+      "encode_s": 0.00569
+     },
+     "selected_exact": true
+    },
+    "16384": {
+     "split": "dev",
+     "offset": 0,
+     "length": 16384,
+     "sha256": "b0de56e09b91dc7e94897320a72389073db12b1f9d59c0bbe7f93e87fcc9e8f6",
+     "size": 16384,
+     "rows": [
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        128,
+        128
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 32793,
+       "F_bytes": 10304,
+       "coefficient_count": 32768,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        128,
+        1
+       ],
+       "max_ranks": [
+        128
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.01401
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        128,
+        128
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 32793,
+       "F_bytes": 11191,
+       "coefficient_count": 32768,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        128,
+        1
+       ],
+       "max_ranks": [
+        128
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.0225
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        128,
+        128
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 32793,
+       "F_bytes": 11853,
+       "coefficient_count": 32768,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        128,
+        1
+       ],
+       "max_ranks": [
+        128
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.03773
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        32,
+        32
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 17688,
+       "F_bytes": 16522,
+       "coefficient_count": 17664,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        16,
+        32,
+        1
+       ],
+       "max_ranks": [
+        16,
+        32
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.0069
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        32,
+        32
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 17688,
+       "F_bytes": 16496,
+       "coefficient_count": 17664,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        32,
+        16,
+        1
+       ],
+       "max_ranks": [
+        32,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.02504
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        16,
+        32,
+        32
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 17688,
+       "F_bytes": 16516,
+       "coefficient_count": 17664,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        16,
+        32,
+        1
+       ],
+       "max_ranks": [
+        16,
+        32
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.03995
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        16,
+        16,
+        8
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 32923,
+       "F_bytes": 16504,
+       "coefficient_count": 32896,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        8,
+        128,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        128,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.0144
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        16,
+        16,
+        8
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 32923,
+       "F_bytes": 16504,
+       "coefficient_count": 32896,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        8,
+        128,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        128,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.02964
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        8,
+        16,
+        16,
+        8
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 32923,
+       "F_bytes": 16502,
+       "coefficient_count": 32896,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        8,
+        128,
+        8,
+        1
+       ],
+       "max_ranks": [
+        8,
+        128,
+        8
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.04412
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 25152,
+       "F_bytes": 16691,
+       "coefficient_count": 25120,
+       "header_bytes": 32,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.01688
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 25152,
+       "F_bytes": 16689,
+       "coefficient_count": 25120,
+       "header_bytes": 32,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.03194
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 25152,
+       "F_bytes": 16692,
+       "coefficient_count": 25120,
+       "header_bytes": 32,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.04471
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 43735,
+       "F_bytes": 16850,
+       "coefficient_count": 43688,
+       "header_bytes": 47,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.02269
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 43735,
+       "F_bytes": 16849,
+       "coefficient_count": 43688,
+       "header_bytes": 47,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.06826
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 43735,
+       "F_bytes": 16851,
+       "coefficient_count": 43688,
+       "header_bytes": 47,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.05714
+      }
+     ],
+     "best_f": {
+      "shape_index": 0,
+      "shape_name": "2d",
+      "shape": [
+       128,
+       128
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 32793,
+      "F_bytes": 10304,
+      "coefficient_count": 32768,
+      "header_bytes": 25,
+      "ranks": [
+       1,
+       128,
+       1
+      ],
+      "max_ranks": [
+       128
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true
+      ],
+      "encode_s": 0.01401
+     },
+     "best_e": {
+      "shape_index": 1,
+      "shape_name": "3d",
+      "shape": [
+       16,
+       32,
+       32
+      ],
+      "order_id": 1,
+      "order": "axis-reverse",
+      "E_bytes": 17688,
+      "F_bytes": 16496,
+      "coefficient_count": 17664,
+      "header_bytes": 24,
+      "ranks": [
+       1,
+       32,
+       16,
+       1
+      ],
+      "max_ranks": [
+       32,
+       16
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true,
+       true
+      ],
+      "encode_s": 0.02504
+     },
+     "selected_exact": true
+    },
+    "65536": {
+     "split": "dev",
+     "offset": 0,
+     "length": 65536,
+     "sha256": "3ca0e2e794c07d9a8b7d8bede4b45d34675c50a0bb2847e1003fe2811980da47",
+     "size": 65536,
+     "rows": [
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        256,
+        256
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 131097,
+       "F_bytes": 38137,
+       "coefficient_count": 131072,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        256,
+        1
+       ],
+       "max_ranks": [
+        256
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.0733
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        256,
+        256
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 131097,
+       "F_bytes": 43211,
+       "coefficient_count": 131072,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        256,
+        1
+       ],
+       "max_ranks": [
+        256
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.14267
+      },
+      {
+       "shape_index": 0,
+       "shape_name": "2d",
+       "shape": [
+        256,
+        256
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 131097,
+       "F_bytes": 46259,
+       "coefficient_count": 131072,
+       "header_bytes": 25,
+       "ranks": [
+        1,
+        256,
+        1
+       ],
+       "max_ranks": [
+        256
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true
+       ],
+       "encode_s": 0.20228
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        32,
+        32,
+        64
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 70680,
+       "F_bytes": 65824,
+       "coefficient_count": 70656,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        32,
+        64,
+        1
+       ],
+       "max_ranks": [
+        32,
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.04232
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        32,
+        32,
+        64
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 70680,
+       "F_bytes": 65657,
+       "coefficient_count": 70656,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        64,
+        32,
+        1
+       ],
+       "max_ranks": [
+        64,
+        32
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.10825
+      },
+      {
+       "shape_index": 1,
+       "shape_name": "3d",
+       "shape": [
+        32,
+        32,
+        64
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 70680,
+       "F_bytes": 65841,
+       "coefficient_count": 70656,
+       "header_bytes": 24,
+       "ranks": [
+        1,
+        32,
+        64,
+        1
+       ],
+       "max_ranks": [
+        32,
+        64
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true
+       ],
+       "encode_s": 0.16716
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 131611,
+       "F_bytes": 65837,
+       "coefficient_count": 131584,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        16,
+        256,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        256,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.09733
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 131611,
+       "F_bytes": 65837,
+       "coefficient_count": 131584,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        16,
+        256,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        256,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.16068
+      },
+      {
+       "shape_index": 2,
+       "shape_name": "4d",
+       "shape": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 131611,
+       "F_bytes": 65836,
+       "coefficient_count": 131584,
+       "header_bytes": 27,
+       "ranks": [
+        1,
+        16,
+        256,
+        16,
+        1
+       ],
+       "max_ranks": [
+        16,
+        256,
+        16
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.23502
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 139843,
+       "F_bytes": 66015,
+       "coefficient_count": 139808,
+       "header_bytes": 35,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        256,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        256,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.0882
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 139843,
+       "F_bytes": 66015,
+       "coefficient_count": 139808,
+       "header_bytes": 35,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        256,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        256,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.19135
+      },
+      {
+       "shape_index": 3,
+       "shape_name": "4power",
+       "shape": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 139843,
+       "F_bytes": 66019,
+       "coefficient_count": 139808,
+       "header_bytes": 35,
+       "ranks": [
+        1,
+        4,
+        16,
+        64,
+        256,
+        64,
+        16,
+        4,
+        1
+       ],
+       "max_ranks": [
+        4,
+        16,
+        64,
+        256,
+        64,
+        16,
+        4
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.20616
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 0,
+       "order": "linear",
+       "E_bytes": 174813,
+       "F_bytes": 66433,
+       "coefficient_count": 174760,
+       "header_bytes": 53,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.12305
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 1,
+       "order": "axis-reverse",
+       "E_bytes": 174813,
+       "F_bytes": 66438,
+       "coefficient_count": 174760,
+       "header_bytes": 53,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.5417
+      },
+      {
+       "shape_index": 4,
+       "shape_name": "binary",
+       "shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+       ],
+       "order_id": 2,
+       "order": "bit-odd-even",
+       "E_bytes": 174813,
+       "F_bytes": 66422,
+       "coefficient_count": 174760,
+       "header_bytes": 53,
+       "ranks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+       ],
+       "max_ranks": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+       ],
+       "full_rank": true,
+       "full_rank_cuts": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+       ],
+       "encode_s": 0.69
+      }
+     ],
+     "best_f": {
+      "shape_index": 0,
+      "shape_name": "2d",
+      "shape": [
+       256,
+       256
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "E_bytes": 131097,
+      "F_bytes": 38137,
+      "coefficient_count": 131072,
+      "header_bytes": 25,
+      "ranks": [
+       1,
+       256,
+       1
+      ],
+      "max_ranks": [
+       256
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true
+      ],
+      "encode_s": 0.0733
+     },
+     "best_e": {
+      "shape_index": 1,
+      "shape_name": "3d",
+      "shape": [
+       32,
+       32,
+       64
+      ],
+      "order_id": 1,
+      "order": "axis-reverse",
+      "E_bytes": 70680,
+      "F_bytes": 65657,
+      "coefficient_count": 70656,
+      "header_bytes": 24,
+      "ranks": [
+       1,
+       64,
+       32,
+       1
+      ],
+      "max_ranks": [
+       64,
+       32
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true,
+       true
+      ],
+      "encode_s": 0.10825
+     },
+     "selected_exact": true
+    }
+   }
+  }
+ ],
+ "selected": {
+  "book1": {
+   "4096": {
+    "shape_name": "2d",
+    "shape": [
+     64,
+     64
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 8212,
+    "dev_F_bytes": 2172,
+    "dev_coefficient_count": 8192,
+    "dev_ranks": [
+     1,
+     64,
+     1
+    ],
+    "dev_full_rank": true
+   },
+   "16384": {
+    "shape_name": "2d",
+    "shape": [
+     128,
+     128
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 32793,
+    "dev_F_bytes": 7555,
+    "dev_coefficient_count": 32768,
+    "dev_ranks": [
+     1,
+     128,
+     1
+    ],
+    "dev_full_rank": true
+   },
+   "65536": {
+    "shape_name": "2d",
+    "shape": [
+     256,
+     256
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 131097,
+    "dev_F_bytes": 27513,
+    "dev_coefficient_count": 131072,
+    "dev_ranks": [
+     1,
+     256,
+     1
+    ],
+    "dev_full_rank": true
+   }
+  },
+  "bbc": {
+   "4096": {
+    "shape_name": "2d",
+    "shape": [
+     64,
+     64
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 8212,
+    "dev_F_bytes": 1414,
+    "dev_coefficient_count": 8192,
+    "dev_ranks": [
+     1,
+     64,
+     1
+    ],
+    "dev_full_rank": true
+   }
+  },
+  "7zr": {
+   "4096": {
+    "shape_name": "2d",
+    "shape": [
+     64,
+     64
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 7700,
+    "dev_F_bytes": 3060,
+    "dev_coefficient_count": 7680,
+    "dev_ranks": [
+     1,
+     60,
+     1
+    ],
+    "dev_full_rank": false
+   },
+   "16384": {
+    "shape_name": "2d",
+    "shape": [
+     128,
+     128
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 32280,
+    "dev_F_bytes": 10932,
+    "dev_coefficient_count": 32256,
+    "dev_ranks": [
+     1,
+     126,
+     1
+    ],
+    "dev_full_rank": false
+   },
+   "65536": {
+    "shape_name": "2d",
+    "shape": [
+     256,
+     256
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 130585,
+    "dev_F_bytes": 41897,
+    "dev_coefficient_count": 130560,
+    "dev_ranks": [
+     1,
+     255,
+     1
+    ],
+    "dev_full_rank": false
+   }
+  },
+  "irs1040": {
+   "4096": {
+    "shape_name": "2d",
+    "shape": [
+     64,
+     64
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 8212,
+    "dev_F_bytes": 3541,
+    "dev_coefficient_count": 8192,
+    "dev_ranks": [
+     1,
+     64,
+     1
+    ],
+    "dev_full_rank": true
+   },
+   "16384": {
+    "shape_name": "2d",
+    "shape": [
+     128,
+     128
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 32793,
+    "dev_F_bytes": 15457,
+    "dev_coefficient_count": 32768,
+    "dev_ranks": [
+     1,
+     128,
+     1
+    ],
+    "dev_full_rank": true
+   },
+   "65536": {
+    "shape_name": "2d",
+    "shape": [
+     256,
+     256
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 131097,
+    "dev_F_bytes": 49696,
+    "dev_coefficient_count": 131072,
+    "dev_ranks": [
+     1,
+     256,
+     1
+    ],
+    "dev_full_rank": true
+   }
+  },
+  "hopper": {
+   "4096": {
+    "shape_name": "2d",
+    "shape": [
+     64,
+     64
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 8212,
+    "dev_F_bytes": 3243,
+    "dev_coefficient_count": 8192,
+    "dev_ranks": [
+     1,
+     64,
+     1
+    ],
+    "dev_full_rank": true
+   },
+   "16384": {
+    "shape_name": "2d",
+    "shape": [
+     128,
+     128
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 32793,
+    "dev_F_bytes": 11352,
+    "dev_coefficient_count": 32768,
+    "dev_ranks": [
+     1,
+     128,
+     1
+    ],
+    "dev_full_rank": true
+   }
+  },
+  "ecg": {
+   "4096": {
+    "shape_name": "2d",
+    "shape": [
+     64,
+     64
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 8212,
+    "dev_F_bytes": 2635,
+    "dev_coefficient_count": 8192,
+    "dev_ranks": [
+     1,
+     64,
+     1
+    ],
+    "dev_full_rank": true
+   },
+   "16384": {
+    "shape_name": "2d",
+    "shape": [
+     128,
+     128
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 32793,
+    "dev_F_bytes": 10304,
+    "dev_coefficient_count": 32768,
+    "dev_ranks": [
+     1,
+     128,
+     1
+    ],
+    "dev_full_rank": true
+   },
+   "65536": {
+    "shape_name": "2d",
+    "shape": [
+     256,
+     256
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 131097,
+    "dev_F_bytes": 38137,
+    "dev_coefficient_count": 131072,
+    "dev_ranks": [
+     1,
+     256,
+     1
+    ],
+    "dev_full_rank": true
+   }
+  }
+ }
+}

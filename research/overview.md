@@ -9,12 +9,17 @@ construction, search, representation, and actual description cost. See the
 
 The English phase reports are editorial translations and technical syntheses,
 not sentence-by-sentence facsimiles. Machine-readable result files retain their
-experimental numbers; the source-language reports remain in the private
+experimental numbers; the source-language historical reports remain in the private
 archive. This is an experimental framework, not a supported production codec.
 
 A full verbatim English edition of every long historical Persian report was not
-produced during this preparation. Phase reports 11-15 are original English
-technical syntheses. The fifteen [phase reports](timeline.md) preserve
-the questions, methods, corrected conclusions, negative findings and links to
-the raw tables. Treat the raw JSON plus the [errata](errata.md) as the
+produced during the original preparation. Phase reports 11–20 are English
+technical syntheses. The twenty [phase reports](timeline.md) preserve the
+questions, methods, corrected conclusions, negative findings and links to the
+raw tables. Treat the raw JSON plus the [errata](errata.md) as the
 authoritative numeric record; do not infer details that are not present.
+
+Phases 16–20 separate structural discovery from compression economics. The
+executable-data census establishes local algebraic dependencies, not a new
+compression advantage. The tested branches are closed; the next theoretical
+and experimental direction remains open.

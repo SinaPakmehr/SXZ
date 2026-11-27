@@ -1,0 +1,33 @@
+{
+ "total_s": 26.978,
+ "runs": [
+  {
+   "split": "dev",
+   "elapsed_s": 16.3,
+   "status": "ok",
+   "cumulative_s": 16.3,
+   "remaining_s": 163.7
+  },
+  {
+   "split": "val",
+   "elapsed_s": 1.037,
+   "status": "ok",
+   "cumulative_s": 17.337,
+   "remaining_s": 162.663
+  },
+  {
+   "split": "dev",
+   "elapsed_s": 8.574,
+   "status": "ok",
+   "cumulative_s": 25.911,
+   "remaining_s": 154.089
+  },
+  {
+   "split": "val",
+   "elapsed_s": 1.067,
+   "status": "ok",
+   "cumulative_s": 26.978,
+   "remaining_s": 153.022
+  }
+ ]
+}

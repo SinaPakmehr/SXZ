@@ -1,0 +1,148 @@
+{
+ "phase": 18,
+ "episode": 1,
+ "status": "frozen before validation",
+ "frozen_at": "2026-11-27",
+ "codec": {
+  "name": "exact integer spectral representation v1.0",
+  "script": "scripts/run_phase18.py",
+  "script_bytes": 40451,
+  "script_sha256": "83ce8bc4fdc7c25511ebfcb388827ee3393d212747fd7b45ed51c04032f6d131"
+ },
+ "transforms": [
+  "identity",
+  "fwht",
+  "haar"
+ ],
+ "representations": [
+  "bytes",
+  "bitplanes"
+ ],
+ "block_lengths": [
+  64,
+  256,
+  1024,
+  4096
+ ],
+ "encodings": [
+  "varint",
+  "fixed",
+  "sparse"
+ ],
+ "sizes": [
+  4096
+ ],
+ "region_rule": "first and last disjoint 4 KiB regions; no padding; 16/64 KiB not attempted because 4 KiB nonzero fraction remained above 0.93 and spectral G was already larger than matched baselines",
+ "selection": "per file smallest spectral G (archive+zstd-9) on dev; frozen before validation",
+ "selected": {
+  "book1": {
+   "4096": {
+    "transform": "haar",
+    "transform_id": 2,
+    "representation": "bytes",
+    "representation_id": 0,
+    "block_length": 64,
+    "encoding": "varint",
+    "encoding_id": 0,
+    "dev_F_bytes": 4795,
+    "dev_G_bytes": 4260,
+    "dev_nonzero_fraction": 0.984619
+   }
+  },
+  "bbc": {
+   "4096": {
+    "transform": "haar",
+    "transform_id": 2,
+    "representation": "bytes",
+    "representation_id": 0,
+    "block_length": 64,
+    "encoding": "varint",
+    "encoding_id": 0,
+    "dev_F_bytes": 4649,
+    "dev_G_bytes": 4144,
+    "dev_nonzero_fraction": 0.981201
+   }
+  },
+  "7zr": {
+   "4096": {
+    "transform": "haar",
+    "transform_id": 2,
+    "representation": "bytes",
+    "representation_id": 0,
+    "block_length": 64,
+    "encoding": "varint",
+    "encoding_id": 0,
+    "dev_F_bytes": 5629,
+    "dev_G_bytes": 4787,
+    "dev_nonzero_fraction": 0.930908
+   }
+  },
+  "irs1040": {
+   "4096": {
+    "transform": "haar",
+    "transform_id": 2,
+    "representation": "bytes",
+    "representation_id": 0,
+    "block_length": 64,
+    "encoding": "varint",
+    "encoding_id": 0,
+    "dev_F_bytes": 5402,
+    "dev_G_bytes": 4808,
+    "dev_nonzero_fraction": 0.98877
+   }
+  },
+  "hopper": {
+   "4096": {
+    "transform": "haar",
+    "transform_id": 2,
+    "representation": "bytes",
+    "representation_id": 0,
+    "block_length": 64,
+    "encoding": "varint",
+    "encoding_id": 0,
+    "dev_F_bytes": 4602,
+    "dev_G_bytes": 3899,
+    "dev_nonzero_fraction": 0.946777
+   }
+  },
+  "ecg": {
+   "4096": {
+    "transform": "haar",
+    "transform_id": 2,
+    "representation": "bytes",
+    "representation_id": 0,
+    "block_length": 4096,
+    "encoding": "varint",
+    "encoding_id": 0,
+    "dev_F_bytes": 5675,
+    "dev_G_bytes": 4839,
+    "dev_nonzero_fraction": 0.965088
+   }
+  }
+ },
+ "dev_summary": {
+  "elapsed_s": 16.057,
+  "regions": 6,
+  "selected_transforms": {
+   "fwht": 0,
+   "haar": 6
+  },
+  "min_nonzero_fraction": 0.930908,
+  "max_nonzero_fraction": 0.98877
+ },
+ "controls": {
+  "A": "zstd-9 raw",
+  "B": "zstd-19 raw",
+  "C": "raw LZMA2 +1",
+  "D": "matched identity block/bit-plane representation + zstd-9",
+  "E": "best delta/XOR/shuffle/global transform + zstd-9",
+  "F": "exact spectral archive alone",
+  "G": "spectral archive + zstd-9"
+ },
+ "gate": {
+  "min_saving": 0.01,
+  "min_files": 2,
+  "baseline": "min(A,B,C,D,E) per region",
+  "note": "no raw fallback"
+ }
+}

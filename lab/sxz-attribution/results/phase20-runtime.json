@@ -1,0 +1,19 @@
+{
+ "total_s": 23.37,
+ "runs": [
+  {
+   "split": "audit",
+   "elapsed_s": 20.499,
+   "status": "ok",
+   "cumulative_s": 20.499,
+   "remaining_s": 159.501
+  },
+  {
+   "split": "systematic_audit",
+   "elapsed_s": 2.871,
+   "status": "ok",
+   "cumulative_s": 23.37,
+   "remaining_s": 156.63
+  }
+ ]
+}

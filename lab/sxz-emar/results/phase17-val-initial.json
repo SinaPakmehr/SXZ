@@ -1,0 +1,1916 @@
+{
+ "phase": 17,
+ "episode": 1,
+ "protocol": {
+  "phase": 17,
+  "episode": 1,
+  "codec": "exact finite-field matrix/Tensor-Train representation v1.0",
+  "field": {
+   "name": "GF(2^8)",
+   "polynomial": "0x11B",
+   "addition": "XOR",
+   "multiplication": "log/exp and 256x256 lookup tables"
+  },
+  "sizes": [
+   4096,
+   16384,
+   65536
+  ],
+  "shapes": {
+   "4096": [
+    {
+     "name": "2d",
+     "dims": [
+      64,
+      64
+     ]
+    },
+    {
+     "name": "3d",
+     "dims": [
+      16,
+      16,
+      16
+     ]
+    },
+    {
+     "name": "4d",
+     "dims": [
+      8,
+      8,
+      8,
+      8
+     ]
+    },
+    {
+     "name": "4power",
+     "dims": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+     ]
+    },
+    {
+     "name": "binary",
+     "dims": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ]
+    }
+   ],
+   "16384": [
+    {
+     "name": "2d",
+     "dims": [
+      128,
+      128
+     ]
+    },
+    {
+     "name": "3d",
+     "dims": [
+      16,
+      32,
+      32
+     ]
+    },
+    {
+     "name": "4d",
+     "dims": [
+      8,
+      16,
+      16,
+      8
+     ]
+    },
+    {
+     "name": "4power",
+     "dims": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+     ]
+    },
+    {
+     "name": "binary",
+     "dims": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ]
+    }
+   ],
+   "65536": [
+    {
+     "name": "2d",
+     "dims": [
+      256,
+      256
+     ]
+    },
+    {
+     "name": "3d",
+     "dims": [
+      32,
+      32,
+      64
+     ]
+    },
+    {
+     "name": "4d",
+     "dims": [
+      16,
+      16,
+      16,
+      16
+     ]
+    },
+    {
+     "name": "4power",
+     "dims": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+     ]
+    },
+    {
+     "name": "binary",
+     "dims": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ]
+    }
+   ]
+  },
+  "orders": [
+   "linear",
+   "axis-reverse",
+   "bit-odd-even"
+  ],
+  "region_rule": "first and last disjoint equal regions of each requested size; size is skipped when file_bytes < 2*size; no padding",
+  "selection": "per file/size best compressed representation (F) on dev, frozen before validation",
+  "controls": {
+   "A": "zstd level 9 on raw region",
+   "B": "zstd level 19 on raw region",
+   "C": "raw LZMA2 preset 6 plus one selector byte",
+   "D": "selected coordinate ordering + zstd level 9, no decomposition",
+   "E": "exact serialized matrix/TT representation alone",
+   "F": "same serialized representation + zstd level 9",
+   "G": "best of delta, stride-3 shuffle, global add, global xor + zstd level 9"
+  },
+  "gate": {
+   "primary": {
+    "min_saving": 0.01,
+    "min_files": 2,
+    "baseline": "min(A,B,C,D,G) per region, summed over available sizes per file"
+   },
+   "low_rank": {
+    "coefficient_ratio_max": 0.75,
+    "cut_rank_fraction_max": 0.5,
+    "min_files": 2,
+    "bottleneck": "min(sum E, sum F) > 0.99 * sum baseline on a low-rank file"
+   }
+  }
+ },
+ "unit_tests": "passed",
+ "selected": {
+  "book1": {
+   "4096": {
+    "shape_name": "2d",
+    "shape": [
+     64,
+     64
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 8212,
+    "dev_F_bytes": 2172,
+    "dev_coefficient_count": 8192,
+    "dev_ranks": [
+     1,
+     64,
+     1
+    ],
+    "dev_full_rank": true
+   },
+   "16384": {
+    "shape_name": "2d",
+    "shape": [
+     128,
+     128
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 32793,
+    "dev_F_bytes": 7555,
+    "dev_coefficient_count": 32768,
+    "dev_ranks": [
+     1,
+     128,
+     1
+    ],
+    "dev_full_rank": true
+   },
+   "65536": {
+    "shape_name": "2d",
+    "shape": [
+     256,
+     256
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 131097,
+    "dev_F_bytes": 27513,
+    "dev_coefficient_count": 131072,
+    "dev_ranks": [
+     1,
+     256,
+     1
+    ],
+    "dev_full_rank": true
+   }
+  },
+  "bbc": {
+   "4096": {
+    "shape_name": "2d",
+    "shape": [
+     64,
+     64
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 8212,
+    "dev_F_bytes": 1414,
+    "dev_coefficient_count": 8192,
+    "dev_ranks": [
+     1,
+     64,
+     1
+    ],
+    "dev_full_rank": true
+   }
+  },
+  "7zr": {
+   "4096": {
+    "shape_name": "2d",
+    "shape": [
+     64,
+     64
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 7700,
+    "dev_F_bytes": 3060,
+    "dev_coefficient_count": 7680,
+    "dev_ranks": [
+     1,
+     60,
+     1
+    ],
+    "dev_full_rank": false
+   },
+   "16384": {
+    "shape_name": "2d",
+    "shape": [
+     128,
+     128
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 32280,
+    "dev_F_bytes": 10932,
+    "dev_coefficient_count": 32256,
+    "dev_ranks": [
+     1,
+     126,
+     1
+    ],
+    "dev_full_rank": false
+   },
+   "65536": {
+    "shape_name": "2d",
+    "shape": [
+     256,
+     256
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 130585,
+    "dev_F_bytes": 41897,
+    "dev_coefficient_count": 130560,
+    "dev_ranks": [
+     1,
+     255,
+     1
+    ],
+    "dev_full_rank": false
+   }
+  },
+  "irs1040": {
+   "4096": {
+    "shape_name": "2d",
+    "shape": [
+     64,
+     64
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 8212,
+    "dev_F_bytes": 3541,
+    "dev_coefficient_count": 8192,
+    "dev_ranks": [
+     1,
+     64,
+     1
+    ],
+    "dev_full_rank": true
+   },
+   "16384": {
+    "shape_name": "2d",
+    "shape": [
+     128,
+     128
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 32793,
+    "dev_F_bytes": 15457,
+    "dev_coefficient_count": 32768,
+    "dev_ranks": [
+     1,
+     128,
+     1
+    ],
+    "dev_full_rank": true
+   },
+   "65536": {
+    "shape_name": "2d",
+    "shape": [
+     256,
+     256
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 131097,
+    "dev_F_bytes": 49696,
+    "dev_coefficient_count": 131072,
+    "dev_ranks": [
+     1,
+     256,
+     1
+    ],
+    "dev_full_rank": true
+   }
+  },
+  "hopper": {
+   "4096": {
+    "shape_name": "2d",
+    "shape": [
+     64,
+     64
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 8212,
+    "dev_F_bytes": 3243,
+    "dev_coefficient_count": 8192,
+    "dev_ranks": [
+     1,
+     64,
+     1
+    ],
+    "dev_full_rank": true
+   },
+   "16384": {
+    "shape_name": "2d",
+    "shape": [
+     128,
+     128
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 32793,
+    "dev_F_bytes": 11352,
+    "dev_coefficient_count": 32768,
+    "dev_ranks": [
+     1,
+     128,
+     1
+    ],
+    "dev_full_rank": true
+   }
+  },
+  "ecg": {
+   "4096": {
+    "shape_name": "2d",
+    "shape": [
+     64,
+     64
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 8212,
+    "dev_F_bytes": 2635,
+    "dev_coefficient_count": 8192,
+    "dev_ranks": [
+     1,
+     64,
+     1
+    ],
+    "dev_full_rank": true
+   },
+   "16384": {
+    "shape_name": "2d",
+    "shape": [
+     128,
+     128
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 32793,
+    "dev_F_bytes": 10304,
+    "dev_coefficient_count": 32768,
+    "dev_ranks": [
+     1,
+     128,
+     1
+    ],
+    "dev_full_rank": true
+   },
+   "65536": {
+    "shape_name": "2d",
+    "shape": [
+     256,
+     256
+    ],
+    "order_id": 0,
+    "order": "linear",
+    "dev_E_bytes": 131097,
+    "dev_F_bytes": 38137,
+    "dev_coefficient_count": 131072,
+    "dev_ranks": [
+     1,
+     256,
+     1
+    ],
+    "dev_full_rank": true
+   }
+  }
+ },
+ "dev_elapsed_s": 11.432,
+ "validation": {
+  "split": "val",
+  "elapsed_s": 208.238,
+  "files": [
+   {
+    "name": "book1",
+    "kind": "text",
+    "path": "datasets/corpus/book1",
+    "file_bytes": 768771,
+    "file_sha256": "9ffa47cd93bccd732f20e0c304203cfbc1b8a91bedac536e2d8f6051003d9951",
+    "available_sizes": [
+     4096,
+     16384,
+     65536
+    ],
+    "skipped_sizes": [],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 764675,
+      "length": 4096,
+      "sha256": "3e488a07b33278771d695225be56978b2727de14c4aa433d1f4a00b3527389a4",
+      "shape_name": "2d",
+      "shape": [
+       64,
+       64
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "kind": 0,
+      "ranks": [
+       1,
+       64,
+       1
+      ],
+      "max_ranks": [
+       64
+      ],
+      "cuts": [
+       64
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true
+      ],
+      "low_rank_cut": false,
+      "coefficient_count": 8192,
+      "header_bytes": 20,
+      "E_bytes": 8212,
+      "F_bytes": 2163,
+      "D_bytes": 2129,
+      "G_bytes": 2125,
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 2116,
+        "encode_s": 9e-05,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 2095,
+        "encode_s": 0.00055,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 2182,
+        "encode_s": 0.00982,
+        "decode_s": 0.00022,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "B_zstd19",
+      "baseline_bytes": 2095,
+      "F_vs_baseline": 1.032458,
+      "E_vs_original": 2.004883,
+      "F_vs_original": 0.528076,
+      "coefficient_ratio": 2.0,
+      "saving_vs_baseline": -0.032458,
+      "encode_s": 0.00211,
+      "compress_s": 0.00019,
+      "decode_s": 0.02047,
+      "decode_f_s": 0.0355,
+      "d_encode_bytes": 2129,
+      "d_decode_s": 3e-05,
+      "g_family": "global-xor",
+      "g_param": 109,
+      "g_decode_s": 0.00017,
+      "peak_encode_kib": 33.9,
+      "peak_decode_kib": 16.5,
+      "decoded_ok": true,
+      "decoded_f_ok": true,
+      "decoded_sha256": "3e488a07b33278771d695225be56978b2727de14c4aa433d1f4a00b3527389a4",
+      "decoded_f_sha256": "3e488a07b33278771d695225be56978b2727de14c4aa433d1f4a00b3527389a4"
+     },
+     "16384": {
+      "split": "val",
+      "offset": 752387,
+      "length": 16384,
+      "sha256": "ddd6fafd9d9d8f5e9c2fc8f7bbdc673c3d16b2d6b98ec4deaa92f00ed63c20f3",
+      "shape_name": "2d",
+      "shape": [
+       128,
+       128
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "kind": 0,
+      "ranks": [
+       1,
+       128,
+       1
+      ],
+      "max_ranks": [
+       128
+      ],
+      "cuts": [
+       128
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true
+      ],
+      "low_rank_cut": false,
+      "coefficient_count": 32768,
+      "header_bytes": 25,
+      "E_bytes": 32793,
+      "F_bytes": 7481,
+      "D_bytes": 7427,
+      "G_bytes": 7424,
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 7411,
+        "encode_s": 0.00064,
+        "decode_s": 4e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 7278,
+        "encode_s": 0.00253,
+        "decode_s": 3e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 7315,
+        "encode_s": 0.01014,
+        "decode_s": 0.0004,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "B_zstd19",
+      "baseline_bytes": 7278,
+      "F_vs_baseline": 1.027892,
+      "E_vs_original": 2.001526,
+      "F_vs_original": 0.456604,
+      "coefficient_ratio": 2.0,
+      "saving_vs_baseline": -0.027892,
+      "encode_s": 0.01011,
+      "compress_s": 0.00052,
+      "decode_s": 0.19448,
+      "decode_f_s": 0.23426,
+      "d_encode_bytes": 7427,
+      "d_decode_s": 8e-05,
+      "g_family": "global-add",
+      "g_param": 254,
+      "g_decode_s": 0.00091,
+      "peak_encode_kib": 106.8,
+      "peak_decode_kib": 64.5,
+      "decoded_ok": true,
+      "decoded_f_ok": true,
+      "decoded_sha256": "ddd6fafd9d9d8f5e9c2fc8f7bbdc673c3d16b2d6b98ec4deaa92f00ed63c20f3",
+      "decoded_f_sha256": "ddd6fafd9d9d8f5e9c2fc8f7bbdc673c3d16b2d6b98ec4deaa92f00ed63c20f3"
+     },
+     "65536": {
+      "split": "val",
+      "offset": 703235,
+      "length": 65536,
+      "sha256": "54acd6fe77fd99893ab641f63f7c2cc2c76dd8c6fbaab7cd93f7d145c9e9a355",
+      "shape_name": "2d",
+      "shape": [
+       256,
+       256
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "kind": 0,
+      "ranks": [
+       1,
+       256,
+       1
+      ],
+      "max_ranks": [
+       256
+      ],
+      "cuts": [
+       256
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true
+      ],
+      "low_rank_cut": false,
+      "coefficient_count": 131072,
+      "header_bytes": 25,
+      "E_bytes": 131097,
+      "F_bytes": 27006,
+      "D_bytes": 26957,
+      "G_bytes": 26962,
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 26941,
+        "encode_s": 0.01509,
+        "decode_s": 0.00033,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 26050,
+        "encode_s": 0.17915,
+        "decode_s": 0.00033,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 25610,
+        "encode_s": 0.15837,
+        "decode_s": 0.01234,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 25610,
+      "F_vs_baseline": 1.05451,
+      "E_vs_original": 2.000381,
+      "F_vs_original": 0.412079,
+      "coefficient_ratio": 2.0,
+      "saving_vs_baseline": -0.05451,
+      "encode_s": 0.63307,
+      "compress_s": 0.03557,
+      "decode_s": 16.94831,
+      "decode_f_s": 16.66821,
+      "d_encode_bytes": 26957,
+      "d_decode_s": 0.00019,
+      "g_family": "global-add",
+      "g_param": 247,
+      "g_decode_s": 0.0224,
+      "peak_encode_kib": 384.8,
+      "peak_decode_kib": 256.5,
+      "decoded_ok": true,
+      "decoded_f_ok": true,
+      "decoded_sha256": "54acd6fe77fd99893ab641f63f7c2cc2c76dd8c6fbaab7cd93f7d145c9e9a355",
+      "decoded_f_sha256": "54acd6fe77fd99893ab641f63f7c2cc2c76dd8c6fbaab7cd93f7d145c9e9a355"
+     }
+    }
+   },
+   {
+    "name": "bbc",
+    "kind": "structured text",
+    "path": "datasets/corpus/bbc.rss.xml",
+    "file_bytes": 28260,
+    "file_sha256": "caa27d88f455e0fd10c408f7aaaaa73b16e9c0d502fa8c9cc11bc70551192b83",
+    "available_sizes": [
+     4096
+    ],
+    "skipped_sizes": [
+     {
+      "size": 16384,
+      "reason": "two disjoint regions unavailable",
+      "file_bytes": 28260,
+      "needed_bytes": 32768
+     },
+     {
+      "size": 65536,
+      "reason": "two disjoint regions unavailable",
+      "file_bytes": 28260,
+      "needed_bytes": 131072
+     }
+    ],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 24164,
+      "length": 4096,
+      "sha256": "7aded530ac0d3021a4a88726d9c74f83386561f7799ea840e2525dbf0516b32f",
+      "shape_name": "2d",
+      "shape": [
+       64,
+       64
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "kind": 0,
+      "ranks": [
+       1,
+       63,
+       1
+      ],
+      "max_ranks": [
+       64
+      ],
+      "cuts": [
+       63
+      ],
+      "full_rank": false,
+      "full_rank_cuts": [
+       false
+      ],
+      "low_rank_cut": false,
+      "coefficient_count": 8064,
+      "header_bytes": 20,
+      "E_bytes": 8084,
+      "F_bytes": 1684,
+      "D_bytes": 1310,
+      "G_bytes": 1304,
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 1297,
+        "encode_s": 8e-05,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 1292,
+        "encode_s": 0.00164,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 1298,
+        "encode_s": 0.00478,
+        "decode_s": 0.00013,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "B_zstd19",
+      "baseline_bytes": 1292,
+      "F_vs_baseline": 1.303406,
+      "E_vs_original": 1.973633,
+      "F_vs_original": 0.411133,
+      "coefficient_ratio": 1.96875,
+      "saving_vs_baseline": -0.303406,
+      "encode_s": 0.00493,
+      "compress_s": 0.00024,
+      "decode_s": 0.0225,
+      "decode_f_s": 0.03729,
+      "d_encode_bytes": 1310,
+      "d_decode_s": 3e-05,
+      "g_family": "global-xor",
+      "g_param": 104,
+      "g_decode_s": 0.00024,
+      "peak_encode_kib": 33.4,
+      "peak_decode_kib": 16.4,
+      "decoded_ok": true,
+      "decoded_f_ok": true,
+      "decoded_sha256": "7aded530ac0d3021a4a88726d9c74f83386561f7799ea840e2525dbf0516b32f",
+      "decoded_f_sha256": "7aded530ac0d3021a4a88726d9c74f83386561f7799ea840e2525dbf0516b32f"
+     }
+    }
+   },
+   {
+    "name": "7zr",
+    "kind": "executable",
+    "path": "datasets/corpus/7zr.exe",
+    "file_bytes": 602624,
+    "file_sha256": "256feca8e274e5da655e2a284fabafd9f554365eb164862089dacd4e8276d282",
+    "available_sizes": [
+     4096,
+     16384,
+     65536
+    ],
+    "skipped_sizes": [],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 598528,
+      "length": 4096,
+      "sha256": "3b3e5887681ee6b7a73db2735ef224947dc3ee805e3363838aa995163294dcf6",
+      "shape_name": "2d",
+      "shape": [
+       64,
+       64
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "kind": 0,
+      "ranks": [
+       1,
+       20,
+       1
+      ],
+      "max_ranks": [
+       64
+      ],
+      "cuts": [
+       20
+      ],
+      "full_rank": false,
+      "full_rank_cuts": [
+       false
+      ],
+      "low_rank_cut": true,
+      "coefficient_count": 2560,
+      "header_bytes": 20,
+      "E_bytes": 2580,
+      "F_bytes": 1354,
+      "D_bytes": 961,
+      "G_bytes": 956,
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 948,
+        "encode_s": 3e-05,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 936,
+        "encode_s": 0.00019,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 983,
+        "encode_s": 0.00538,
+        "decode_s": 0.00012,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "B_zstd19",
+      "baseline_bytes": 936,
+      "F_vs_baseline": 1.446581,
+      "E_vs_original": 0.629883,
+      "F_vs_original": 0.330566,
+      "coefficient_ratio": 0.625,
+      "saving_vs_baseline": -0.446581,
+      "encode_s": 0.00055,
+      "compress_s": 0.00011,
+      "decode_s": 0.00738,
+      "decode_f_s": 0.00702,
+      "d_encode_bytes": 961,
+      "d_decode_s": 4e-05,
+      "g_family": "global-xor",
+      "g_param": 207,
+      "g_decode_s": 0.00025,
+      "peak_encode_kib": 19.5,
+      "peak_decode_kib": 11.0,
+      "decoded_ok": true,
+      "decoded_f_ok": true,
+      "decoded_sha256": "3b3e5887681ee6b7a73db2735ef224947dc3ee805e3363838aa995163294dcf6",
+      "decoded_f_sha256": "3b3e5887681ee6b7a73db2735ef224947dc3ee805e3363838aa995163294dcf6"
+     },
+     "16384": {
+      "split": "val",
+      "offset": 586240,
+      "length": 16384,
+      "sha256": "0497a4411556ee5bea860c578f7be19cba7f114eb61d040bc941da92f766e3f4",
+      "shape_name": "2d",
+      "shape": [
+       128,
+       128
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "kind": 0,
+      "ranks": [
+       1,
+       106,
+       1
+      ],
+      "max_ranks": [
+       128
+      ],
+      "cuts": [
+       106
+      ],
+      "full_rank": false,
+      "full_rank_cuts": [
+       false
+      ],
+      "low_rank_cut": false,
+      "coefficient_count": 27136,
+      "header_bytes": 24,
+      "E_bytes": 27160,
+      "F_bytes": 10098,
+      "D_bytes": 8231,
+      "G_bytes": 7525,
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 8215,
+        "encode_s": 0.0002,
+        "decode_s": 2e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 7864,
+        "encode_s": 0.00172,
+        "decode_s": 3e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 6945,
+        "encode_s": 0.00794,
+        "decode_s": 0.0004,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 6945,
+      "F_vs_baseline": 1.453996,
+      "E_vs_original": 1.657715,
+      "F_vs_original": 0.616333,
+      "coefficient_ratio": 1.65625,
+      "saving_vs_baseline": -0.453996,
+      "encode_s": 0.01202,
+      "compress_s": 0.00051,
+      "decode_s": 0.20909,
+      "decode_f_s": 0.16949,
+      "d_encode_bytes": 8231,
+      "d_decode_s": 7e-05,
+      "g_family": "delta",
+      "g_param": 0,
+      "g_decode_s": 0.00102,
+      "peak_encode_kib": 93.1,
+      "peak_decode_kib": 59.0,
+      "decoded_ok": true,
+      "decoded_f_ok": true,
+      "decoded_sha256": "0497a4411556ee5bea860c578f7be19cba7f114eb61d040bc941da92f766e3f4",
+      "decoded_f_sha256": "0497a4411556ee5bea860c578f7be19cba7f114eb61d040bc941da92f766e3f4"
+     },
+     "65536": {
+      "split": "val",
+      "offset": 537088,
+      "length": 65536,
+      "sha256": "e3761523797e002b41ea66b3a04a9ddceb9688f2ae48e800ea9e84090976b445",
+      "shape_name": "2d",
+      "shape": [
+       256,
+       256
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "kind": 0,
+      "ranks": [
+       1,
+       242,
+       1
+      ],
+      "max_ranks": [
+       256
+      ],
+      "cuts": [
+       242
+      ],
+      "full_rank": false,
+      "full_rank_cuts": [
+       false
+      ],
+      "low_rank_cut": false,
+      "coefficient_count": 123904,
+      "header_bytes": 25,
+      "E_bytes": 123929,
+      "F_bytes": 29148,
+      "D_bytes": 25590,
+      "G_bytes": 25587,
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 25574,
+        "encode_s": 0.00586,
+        "decode_s": 0.00029,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 23755,
+        "encode_s": 0.16861,
+        "decode_s": 0.00033,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 19678,
+        "encode_s": 0.13451,
+        "decode_s": 0.02287,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 19678,
+      "F_vs_baseline": 1.481248,
+      "E_vs_original": 1.891006,
+      "F_vs_original": 0.444763,
+      "coefficient_ratio": 1.890625,
+      "saving_vs_baseline": -0.481248,
+      "encode_s": 0.18986,
+      "compress_s": 0.00394,
+      "decode_s": 8.91637,
+      "decode_f_s": 13.38661,
+      "d_encode_bytes": 25590,
+      "d_decode_s": 0.00035,
+      "g_family": "global-add",
+      "g_param": 88,
+      "g_decode_s": 0.04874,
+      "peak_encode_kib": 363.8,
+      "peak_decode_kib": 249.5,
+      "decoded_ok": true,
+      "decoded_f_ok": true,
+      "decoded_sha256": "e3761523797e002b41ea66b3a04a9ddceb9688f2ae48e800ea9e84090976b445",
+      "decoded_f_sha256": "e3761523797e002b41ea66b3a04a9ddceb9688f2ae48e800ea9e84090976b445"
+     }
+    }
+   },
+   {
+    "name": "irs1040",
+    "kind": "pdf",
+    "path": "datasets/corpus/irs1040.pdf",
+    "file_bytes": 220237,
+    "file_sha256": "3d31c226df0d189ced80e039d01cf0f8820c1019681a0f0ca6264de277b7e982",
+    "available_sizes": [
+     4096,
+     16384,
+     65536
+    ],
+    "skipped_sizes": [],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 216141,
+      "length": 4096,
+      "sha256": "406d274be04e08ff6de4ab6f746d3df029b9493f436e314ca11a80fa6a91e708",
+      "shape_name": "2d",
+      "shape": [
+       64,
+       64
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "kind": 0,
+      "ranks": [
+       1,
+       42,
+       1
+      ],
+      "max_ranks": [
+       64
+      ],
+      "cuts": [
+       42
+      ],
+      "full_rank": false,
+      "full_rank_cuts": [
+       false
+      ],
+      "low_rank_cut": false,
+      "coefficient_count": 5376,
+      "header_bytes": 20,
+      "E_bytes": 5396,
+      "F_bytes": 2311,
+      "D_bytes": 1632,
+      "G_bytes": 1630,
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 1619,
+        "encode_s": 4e-05,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 1607,
+        "encode_s": 0.00031,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 1534,
+        "encode_s": 0.00504,
+        "decode_s": 0.00014,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 1534,
+      "F_vs_baseline": 1.506519,
+      "E_vs_original": 1.317383,
+      "F_vs_original": 0.564209,
+      "coefficient_ratio": 1.3125,
+      "saving_vs_baseline": -0.506519,
+      "encode_s": 0.00152,
+      "compress_s": 0.00019,
+      "decode_s": 0.01326,
+      "decode_f_s": 0.01237,
+      "d_encode_bytes": 1632,
+      "d_decode_s": 3e-05,
+      "g_family": "global-add",
+      "g_param": 139,
+      "g_decode_s": 0.00018,
+      "peak_encode_kib": 25.8,
+      "peak_decode_kib": 13.8,
+      "decoded_ok": true,
+      "decoded_f_ok": true,
+      "decoded_sha256": "406d274be04e08ff6de4ab6f746d3df029b9493f436e314ca11a80fa6a91e708",
+      "decoded_f_sha256": "406d274be04e08ff6de4ab6f746d3df029b9493f436e314ca11a80fa6a91e708"
+     },
+     "16384": {
+      "split": "val",
+      "offset": 203853,
+      "length": 16384,
+      "sha256": "b17cbd60d320a1f93b9e464ebeb917a19428e2b39ebf98bcc69ef52e6659a017",
+      "shape_name": "2d",
+      "shape": [
+       128,
+       128
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "kind": 0,
+      "ranks": [
+       1,
+       118,
+       1
+      ],
+      "max_ranks": [
+       128
+      ],
+      "cuts": [
+       118
+      ],
+      "full_rank": false,
+      "full_rank_cuts": [
+       false
+      ],
+      "low_rank_cut": false,
+      "coefficient_count": 30208,
+      "header_bytes": 24,
+      "E_bytes": 30232,
+      "F_bytes": 8365,
+      "D_bytes": 7066,
+      "G_bytes": 7062,
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 7050,
+        "encode_s": 0.00029,
+        "decode_s": 3e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 6977,
+        "encode_s": 0.00279,
+        "decode_s": 3e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 6319,
+        "encode_s": 0.00928,
+        "decode_s": 0.00041,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 6319,
+      "F_vs_baseline": 1.323785,
+      "E_vs_original": 1.845215,
+      "F_vs_original": 0.510559,
+      "coefficient_ratio": 1.84375,
+      "saving_vs_baseline": -0.323785,
+      "encode_s": 0.01358,
+      "compress_s": 0.0006,
+      "decode_s": 0.22933,
+      "decode_f_s": 0.19914,
+      "d_encode_bytes": 7066,
+      "d_decode_s": 0.00232,
+      "g_family": "global-add",
+      "g_param": 89,
+      "g_decode_s": 0.00072,
+      "peak_encode_kib": 100.7,
+      "peak_decode_kib": 62.0,
+      "decoded_ok": true,
+      "decoded_f_ok": true,
+      "decoded_sha256": "b17cbd60d320a1f93b9e464ebeb917a19428e2b39ebf98bcc69ef52e6659a017",
+      "decoded_f_sha256": "b17cbd60d320a1f93b9e464ebeb917a19428e2b39ebf98bcc69ef52e6659a017"
+     },
+     "65536": {
+      "split": "val",
+      "offset": 154701,
+      "length": 65536,
+      "sha256": "f756b65ed52321284347ad3792f7be3896fe0e175b162df80988887b38515771",
+      "shape_name": "2d",
+      "shape": [
+       256,
+       256
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "kind": 0,
+      "ranks": [
+       1,
+       252,
+       1
+      ],
+      "max_ranks": [
+       256
+      ],
+      "cuts": [
+       252
+      ],
+      "full_rank": false,
+      "full_rank_cuts": [
+       false
+      ],
+      "low_rank_cut": false,
+      "coefficient_count": 129024,
+      "header_bytes": 25,
+      "E_bytes": 129049,
+      "F_bytes": 54241,
+      "D_bytes": 53260,
+      "G_bytes": 53257,
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 53244,
+        "encode_s": 0.00364,
+        "decode_s": 6e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 51121,
+        "encode_s": 0.08426,
+        "decode_s": 0.00015,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 49795,
+        "encode_s": 0.13923,
+        "decode_s": 0.02725,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 49795,
+      "F_vs_baseline": 1.089286,
+      "E_vs_original": 1.969131,
+      "F_vs_original": 0.827652,
+      "coefficient_ratio": 1.96875,
+      "saving_vs_baseline": -0.089286,
+      "encode_s": 0.21226,
+      "compress_s": 0.00356,
+      "decode_s": 16.30875,
+      "decode_f_s": 16.62286,
+      "d_encode_bytes": 53260,
+      "d_decode_s": 7e-05,
+      "g_family": "global-add",
+      "g_param": 0,
+      "g_decode_s": 0.01475,
+      "peak_encode_kib": 378.8,
+      "peak_decode_kib": 254.5,
+      "decoded_ok": true,
+      "decoded_f_ok": true,
+      "decoded_sha256": "f756b65ed52321284347ad3792f7be3896fe0e175b162df80988887b38515771",
+      "decoded_f_sha256": "f756b65ed52321284347ad3792f7be3896fe0e175b162df80988887b38515771"
+     }
+    }
+   },
+   {
+    "name": "hopper",
+    "kind": "bmp",
+    "path": "datasets/corpus/hopper.bmp",
+    "file_bytes": 49290,
+    "file_sha256": "f1a94f3add0a2e54365dc94b51da099bd0de8289b955fc8304a8627b7b0d6aea",
+    "available_sizes": [
+     4096,
+     16384
+    ],
+    "skipped_sizes": [
+     {
+      "size": 65536,
+      "reason": "two disjoint regions unavailable",
+      "file_bytes": 49290,
+      "needed_bytes": 131072
+     }
+    ],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 45194,
+      "length": 4096,
+      "sha256": "1c198835a8e29f03e987fb9f75fe1438274c0738a667e161620ba2cceb5f6f07",
+      "shape_name": "2d",
+      "shape": [
+       64,
+       64
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "kind": 0,
+      "ranks": [
+       1,
+       64,
+       1
+      ],
+      "max_ranks": [
+       64
+      ],
+      "cuts": [
+       64
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true
+      ],
+      "low_rank_cut": false,
+      "coefficient_count": 8192,
+      "header_bytes": 20,
+      "E_bytes": 8212,
+      "F_bytes": 3463,
+      "D_bytes": 3443,
+      "G_bytes": 3225,
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 3430,
+        "encode_s": 7e-05,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 3294,
+        "encode_s": 0.0004,
+        "decode_s": 2e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 2933,
+        "encode_s": 0.00702,
+        "decode_s": 0.00021,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 2933,
+      "F_vs_baseline": 1.180702,
+      "E_vs_original": 2.004883,
+      "F_vs_original": 0.845459,
+      "coefficient_ratio": 2.0,
+      "saving_vs_baseline": -0.180702,
+      "encode_s": 0.00314,
+      "compress_s": 0.00025,
+      "decode_s": 0.03388,
+      "decode_f_s": 0.03509,
+      "d_encode_bytes": 3443,
+      "d_decode_s": 4e-05,
+      "g_family": "delta",
+      "g_param": 0,
+      "g_decode_s": 0.00029,
+      "peak_encode_kib": 33.8,
+      "peak_decode_kib": 16.5,
+      "decoded_ok": true,
+      "decoded_f_ok": true,
+      "decoded_sha256": "1c198835a8e29f03e987fb9f75fe1438274c0738a667e161620ba2cceb5f6f07",
+      "decoded_f_sha256": "1c198835a8e29f03e987fb9f75fe1438274c0738a667e161620ba2cceb5f6f07"
+     },
+     "16384": {
+      "split": "val",
+      "offset": 32906,
+      "length": 16384,
+      "sha256": "8dcf5fec448242bb2c012c4f26a94e92a08c81e3651ccc703a2e5da5b6c90c36",
+      "shape_name": "2d",
+      "shape": [
+       128,
+       128
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "kind": 0,
+      "ranks": [
+       1,
+       128,
+       1
+      ],
+      "max_ranks": [
+       128
+      ],
+      "cuts": [
+       128
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true
+      ],
+      "low_rank_cut": false,
+      "coefficient_count": 32768,
+      "header_bytes": 25,
+      "E_bytes": 32793,
+      "F_bytes": 13662,
+      "D_bytes": 13638,
+      "G_bytes": 12590,
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 13622,
+        "encode_s": 0.00068,
+        "decode_s": 4e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 13017,
+        "encode_s": 0.00434,
+        "decode_s": 6e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 11547,
+        "encode_s": 0.00724,
+        "decode_s": 0.00061,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 11547,
+      "F_vs_baseline": 1.183164,
+      "E_vs_original": 2.001526,
+      "F_vs_original": 0.833862,
+      "coefficient_ratio": 2.0,
+      "saving_vs_baseline": -0.183164,
+      "encode_s": 0.01589,
+      "compress_s": 0.00056,
+      "decode_s": 0.1922,
+      "decode_f_s": 0.25898,
+      "d_encode_bytes": 13638,
+      "d_decode_s": 0.0001,
+      "g_family": "delta",
+      "g_param": 0,
+      "g_decode_s": 0.00178,
+      "peak_encode_kib": 106.8,
+      "peak_decode_kib": 64.5,
+      "decoded_ok": true,
+      "decoded_f_ok": true,
+      "decoded_sha256": "8dcf5fec448242bb2c012c4f26a94e92a08c81e3651ccc703a2e5da5b6c90c36",
+      "decoded_f_sha256": "8dcf5fec448242bb2c012c4f26a94e92a08c81e3651ccc703a2e5da5b6c90c36"
+     }
+    }
+   },
+   {
+    "name": "ecg",
+    "kind": "ecg",
+    "path": "datasets/corpus/ecg-holdout.bin",
+    "file_bytes": 262144,
+    "file_sha256": "933cd8ca9cb6bc5ffa273a11e6b146c64b74ab6847239fa3cc472f03df9a9f57",
+    "available_sizes": [
+     4096,
+     16384,
+     65536
+    ],
+    "skipped_sizes": [],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 258048,
+      "length": 4096,
+      "sha256": "a390876e1f1b18c1a69e598e850ad21e81cbe6d5f0feb3ee0cb81d40b73a75e9",
+      "shape_name": "2d",
+      "shape": [
+       64,
+       64
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "kind": 0,
+      "ranks": [
+       1,
+       64,
+       1
+      ],
+      "max_ranks": [
+       64
+      ],
+      "cuts": [
+       64
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true
+      ],
+      "low_rank_cut": false,
+      "coefficient_count": 8192,
+      "header_bytes": 20,
+      "E_bytes": 8212,
+      "F_bytes": 2613,
+      "D_bytes": 2582,
+      "G_bytes": 2241,
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 2569,
+        "encode_s": 8e-05,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 2503,
+        "encode_s": 0.00046,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 2076,
+        "encode_s": 0.00565,
+        "decode_s": 0.00018,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 2076,
+      "F_vs_baseline": 1.258671,
+      "E_vs_original": 2.004883,
+      "F_vs_original": 0.637939,
+      "coefficient_ratio": 2.0,
+      "saving_vs_baseline": -0.258671,
+      "encode_s": 0.00197,
+      "compress_s": 0.00017,
+      "decode_s": 0.01937,
+      "decode_f_s": 0.01794,
+      "d_encode_bytes": 2582,
+      "d_decode_s": 3e-05,
+      "g_family": "shuffle3",
+      "g_param": 0,
+      "g_decode_s": 0.0003,
+      "peak_encode_kib": 33.9,
+      "peak_decode_kib": 16.5,
+      "decoded_ok": true,
+      "decoded_f_ok": true,
+      "decoded_sha256": "a390876e1f1b18c1a69e598e850ad21e81cbe6d5f0feb3ee0cb81d40b73a75e9",
+      "decoded_f_sha256": "a390876e1f1b18c1a69e598e850ad21e81cbe6d5f0feb3ee0cb81d40b73a75e9"
+     },
+     "16384": {
+      "split": "val",
+      "offset": 245760,
+      "length": 16384,
+      "sha256": "6b9b33dcc5c76e807b398325a20332bd1687a49fb3deb5a4160ff613d6d0e907",
+      "shape_name": "2d",
+      "shape": [
+       128,
+       128
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "kind": 0,
+      "ranks": [
+       1,
+       128,
+       1
+      ],
+      "max_ranks": [
+       128
+      ],
+      "cuts": [
+       128
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true
+      ],
+      "low_rank_cut": false,
+      "coefficient_count": 32768,
+      "header_bytes": 25,
+      "E_bytes": 32793,
+      "F_bytes": 10192,
+      "D_bytes": 10155,
+      "G_bytes": 8620,
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 10139,
+        "encode_s": 0.00036,
+        "decode_s": 3e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 9794,
+        "encode_s": 0.0035,
+        "decode_s": 6e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 7777,
+        "encode_s": 0.00711,
+        "decode_s": 0.0005,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 7777,
+      "F_vs_baseline": 1.310531,
+      "E_vs_original": 2.001526,
+      "F_vs_original": 0.62207,
+      "coefficient_ratio": 2.0,
+      "saving_vs_baseline": -0.310531,
+      "encode_s": 0.01208,
+      "compress_s": 0.00044,
+      "decode_s": 0.18418,
+      "decode_f_s": 0.20113,
+      "d_encode_bytes": 10155,
+      "d_decode_s": 7e-05,
+      "g_family": "shuffle3",
+      "g_param": 0,
+      "g_decode_s": 0.00121,
+      "peak_encode_kib": 106.8,
+      "peak_decode_kib": 64.5,
+      "decoded_ok": true,
+      "decoded_f_ok": true,
+      "decoded_sha256": "6b9b33dcc5c76e807b398325a20332bd1687a49fb3deb5a4160ff613d6d0e907",
+      "decoded_f_sha256": "6b9b33dcc5c76e807b398325a20332bd1687a49fb3deb5a4160ff613d6d0e907"
+     },
+     "65536": {
+      "split": "val",
+      "offset": 196608,
+      "length": 65536,
+      "sha256": "83221c344777ada09fbcf553fc575e81d1c67544d0b12d88d817d55ab0bdc6bf",
+      "shape_name": "2d",
+      "shape": [
+       256,
+       256
+      ],
+      "order_id": 0,
+      "order": "linear",
+      "kind": 0,
+      "ranks": [
+       1,
+       256,
+       1
+      ],
+      "max_ranks": [
+       256
+      ],
+      "cuts": [
+       256
+      ],
+      "full_rank": true,
+      "full_rank_cuts": [
+       true
+      ],
+      "low_rank_cut": false,
+      "coefficient_count": 131072,
+      "header_bytes": 25,
+      "E_bytes": 131097,
+      "F_bytes": 38729,
+      "D_bytes": 38680,
+      "G_bytes": 31655,
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 38664,
+        "encode_s": 0.01611,
+        "decode_s": 0.00045,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 37221,
+        "encode_s": 0.11733,
+        "decode_s": 0.0036,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 29950,
+        "encode_s": 0.13678,
+        "decode_s": 0.01119,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 29950,
+      "F_vs_baseline": 1.293122,
+      "E_vs_original": 2.000381,
+      "F_vs_original": 0.590958,
+      "coefficient_ratio": 2.0,
+      "saving_vs_baseline": -0.293122,
+      "encode_s": 0.86131,
+      "compress_s": 0.02151,
+      "decode_s": 16.75007,
+      "decode_f_s": 16.881,
+      "d_encode_bytes": 38680,
+      "d_decode_s": 0.00024,
+      "g_family": "shuffle3",
+      "g_param": 0,
+      "g_decode_s": 0.0629,
+      "peak_encode_kib": 384.8,
+      "peak_decode_kib": 256.5,
+      "decoded_ok": true,
+      "decoded_f_ok": true,
+      "decoded_sha256": "83221c344777ada09fbcf553fc575e81d1c67544d0b12d88d817d55ab0bdc6bf",
+      "decoded_f_sha256": "83221c344777ada09fbcf553fc575e81d1c67544d0b12d88d817d55ab0bdc6bf"
+     }
+    }
+   }
+  ]
+ },
+ "gate": {
+  "files": [
+   {
+    "name": "book1",
+    "sizes": [
+     4096,
+     16384,
+     65536
+    ],
+    "N": 86016,
+    "E": 172102,
+    "F": 36650,
+    "baseline": 34983,
+    "saving_vs_baseline": -0.047652,
+    "coefficient_ratio": 2.0,
+    "low_rank_cut": false,
+    "primary_pass": false,
+    "low_rank_candidate": false,
+    "serialization_bottleneck": true
+   },
+   {
+    "name": "bbc",
+    "sizes": [
+     4096
+    ],
+    "N": 4096,
+    "E": 8084,
+    "F": 1684,
+    "baseline": 1292,
+    "saving_vs_baseline": -0.303406,
+    "coefficient_ratio": 1.96875,
+    "low_rank_cut": false,
+    "primary_pass": false,
+    "low_rank_candidate": false,
+    "serialization_bottleneck": true
+   },
+   {
+    "name": "7zr",
+    "sizes": [
+     4096,
+     16384,
+     65536
+    ],
+    "N": 86016,
+    "E": 153669,
+    "F": 40600,
+    "baseline": 27559,
+    "saving_vs_baseline": -0.473203,
+    "coefficient_ratio": 1.785714,
+    "low_rank_cut": true,
+    "primary_pass": false,
+    "low_rank_candidate": false,
+    "serialization_bottleneck": true
+   },
+   {
+    "name": "irs1040",
+    "sizes": [
+     4096,
+     16384,
+     65536
+    ],
+    "N": 86016,
+    "E": 164677,
+    "F": 64917,
+    "baseline": 57648,
+    "saving_vs_baseline": -0.126093,
+    "coefficient_ratio": 1.91369,
+    "low_rank_cut": false,
+    "primary_pass": false,
+    "low_rank_candidate": false,
+    "serialization_bottleneck": true
+   },
+   {
+    "name": "hopper",
+    "sizes": [
+     4096,
+     16384
+    ],
+    "N": 20480,
+    "E": 41005,
+    "F": 17125,
+    "baseline": 14480,
+    "saving_vs_baseline": -0.182666,
+    "coefficient_ratio": 2.0,
+    "low_rank_cut": false,
+    "primary_pass": false,
+    "low_rank_candidate": false,
+    "serialization_bottleneck": true
+   },
+   {
+    "name": "ecg",
+    "sizes": [
+     4096,
+     16384,
+     65536
+    ],
+    "N": 86016,
+    "E": 172102,
+    "F": 51534,
+    "baseline": 39803,
+    "saving_vs_baseline": -0.294727,
+    "coefficient_ratio": 2.0,
+    "low_rank_cut": false,
+    "primary_pass": false,
+    "low_rank_candidate": false,
+    "serialization_bottleneck": true
+   }
+  ],
+  "primary": {
+   "min_saving": 0.01,
+   "min_files": 2,
+   "qualifying_files": [],
+   "passed": false
+  },
+  "low_rank": {
+   "coefficient_ratio_max": 0.75,
+   "cut_rank_fraction_max": 0.5,
+   "min_files": 2,
+   "qualifying_files": [],
+   "bottleneck_files": [],
+   "passed": false
+  },
+  "passed": false
+ },
+ "elapsed_s": 208.239
+}

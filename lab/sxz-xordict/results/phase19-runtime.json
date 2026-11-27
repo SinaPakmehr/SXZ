@@ -1,0 +1,26 @@
+{
+ "total_s": 6.292,
+ "runs": [
+  {
+   "split": "dev",
+   "elapsed_s": 0.868,
+   "status": "ok",
+   "cumulative_s": 0.868,
+   "remaining_s": 179.132
+  },
+  {
+   "split": "val",
+   "elapsed_s": 0.586,
+   "status": "ok",
+   "cumulative_s": 1.454,
+   "remaining_s": 178.546
+  },
+  {
+   "split": "audit",
+   "elapsed_s": 4.838,
+   "status": "ok",
+   "cumulative_s": 6.292,
+   "remaining_s": 173.708
+  }
+ ]
+}

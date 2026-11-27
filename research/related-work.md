@@ -75,7 +75,7 @@ and legal status.
 - Phase 14 adapts 2-adic rational reconstruction and FCSR/2-adic-span theory
   (Klapper and Goresky 1995, 1999; Lin, Xiao and Chen 2026). The quadratic GF(2)
   normal-form and nullspace diagnostics are direct implementations of standard
-  linear algebra; no Gr?bner basis was computed. The Gr?bner-basis paper is
+  linear algebra; no Gröbner basis was computed. The Gröbner-basis paper is
   cited only as related work.
 - Phase 15's coordinate-function idea is conceptually inspired by Hamid Naderi
   Yeganeh's mathematical function networks. It does **not** reproduce his
@@ -85,3 +85,25 @@ and legal status.
 - PNG, Zstandard, Brotli and XZ/LZMA2 are external specifications/codecs used as
   matched controls. No claim is made that the strongest tested baseline is the
   best compressor in the world.
+
+## Phase 16-20 attribution
+
+- Phase 16's bounded RePair grammar and scalar templates are this project's
+  implementation. Re-Pair (Larsson and Moffat) and Zstandard/LZMA2 are
+  references and matched controls, not reproduced code.
+- Phase 17's exact finite-field RREF/TT and ROBDD serializers are bounded
+  adaptations of standard linear algebra and Bryant's BDD operations. The TT
+  references (Oseledets; Khoromskij) describe real-valued/approximate
+  decompositions; exact GF(2^8) behavior is not claimed to follow from them.
+  The serializer is not the Kieffer-Flajolet-Yang specialized encoding.
+- Phase 17's recurrence fit is inspired by Sakata and by BMS/Scalar-FGLM
+  literature but is not a full implementation of either; no Gröbner basis was
+  computed.
+- Phase 18 implements exact integer FWHT and Haar lifting only. It does not
+  implement the lossless Hadamard coefficient-bit quantization of Philips et
+  al. or Falkowski's specialized logic/spectral coding.
+- Phase 19's bounded exact XOR dictionary is not K-SVD or approximate binary
+  dictionary learning; the cited methods are conceptual references.
+- Phase 20 uses the published PE/COFF section and relocation layout to attribute
+  offsets. The structural census and systematic coefficient-mask audit are
+  this project's measurements, not a claim about all executables or formats.

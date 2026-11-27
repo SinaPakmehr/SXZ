@@ -14,3 +14,12 @@ photos, audio, executables, models or corpus archives without checking their
 rights. RFC documents have IETF Trust publication terms; PEP and Pillow inputs
 are subject to upstream material-specific terms. No historical input file is
 included, and the download command never runs retrieved content.
+
+Phases 16-20 reuse the existing `book1`, `bbc.rss.xml`, `7zr.exe`,
+`irs1040.pdf`, `hopper.bmp` and `ecg-holdout.bin` entries. Phase 20 additionally
+samples named Windows executables/DLLs from the local system; their names,
+build hashes, section offsets and measurements are retained, but the binaries
+are not redistributed and are not a fixed downloadable corpus. Obtain any such
+file from an installation you are entitled to use. See
+[`lab/sxz-attribution`](../lab/sxz-attribution/) and the phase reports for exact
+offsets and hashes.

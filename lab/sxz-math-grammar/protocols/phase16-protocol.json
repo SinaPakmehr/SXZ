@@ -1,0 +1,79 @@
+{
+ "phase": 16,
+ "episode": 1,
+ "status": "frozen before validation",
+ "frozen_at": "2026-11-27",
+ "codec": {
+  "name": "bounded deterministic grammar v1.0",
+  "script": "scripts/run_phase16.py",
+  "script_bytes": 43523,
+  "script_sha256": "0b39a0cab43f5e356d9deac8f5e89e1cb08a9d783b10968cd7c589ccf75966f7"
+ },
+ "inputs": [
+  "datasets/corpus/book1",
+  "datasets/corpus/bbc.rss.xml",
+  "datasets/corpus/7zr.exe",
+  "datasets/corpus/irs1040.pdf",
+  "datasets/corpus/hopper.bmp",
+  "datasets/corpus/ecg-holdout.bin"
+ ],
+ "regions": {
+  "rule": "two disjoint equal regions; cap 32768 bytes; files smaller than 64 KiB use half-file regions",
+  "book1": 32768,
+  "bbc": 14130,
+  "7zr": 32768,
+  "irs1040": 32768,
+  "hopper": 24645,
+  "ecg": 32768
+ },
+ "limits": {
+  "max_rules": 128,
+  "max_math_rules": 32,
+  "window_lengths": [8, 16, 32, 64, 128],
+  "window_stride": "length/2",
+  "min_nonoverlapping_occurrences": 2,
+  "hard_time_budget_s": 180
+ },
+ "math_templates": [
+  "add: S[i] = (T[i] + a) mod 256",
+  "xor: S[i] = T[i] XOR a",
+  "sub: S[i] = (a - T[i]) mod 256"
+ ],
+ "parameter_filter": "template must be non-constant and each selected rule must have at least two distinct invocation parameters",
+ "sub_note": "sub(T,a) equals add(neg(T),a); with literal templates this operator adds no expressive power",
+ "pair_policy": "cost-aware RePair, top-8 candidates, exact non-overlap check, math symbols are barriers",
+ "controls": {
+  "A": "zstd level 9",
+  "B": "zstd level 19",
+  "C": "raw LZMA2 preset 6 plus one selector byte",
+  "D": "ordinary grammar",
+  "E": "dev-frozen transform family plus ordinary grammar",
+  "F": "parameterized mathematical grammar plus ordinary grammar"
+ },
+ "e_families_frozen_from_dev": {
+  "book1": "global-add",
+  "bbc": "global-xor",
+  "7zr": "global-add",
+  "irs1040": "global-add",
+  "hopper": "delta",
+  "ecg": "shuffle3"
+ },
+ "gate": {
+  "aggregate_vs_D_max_ratio": 0.98,
+  "aggregate_vs_E_max_ratio": 0.99,
+  "min_validation_regions_improved_vs_D": 4,
+  "require_exact_reconstruction": true,
+  "requires_math_rules_and_invocations": true
+ },
+ "dev_aggregate": {
+  "regions": 6,
+  "D": 141492,
+  "E": 137672,
+  "F": 141399,
+  "F_vs_D_ratio": 0.999343,
+  "F_vs_E_ratio": 1.027072,
+  "regions_improved_vs_D": 1,
+  "math_rules": 32,
+  "math_invocations": 197
+ }
+}

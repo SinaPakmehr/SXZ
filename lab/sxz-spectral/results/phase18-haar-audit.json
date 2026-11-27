@@ -1,0 +1,352 @@
+{
+ "source": {
+  "file": "scripts/run_phase18_original.py",
+  "forward_lines": "97-112",
+  "inverse_lines": "115-130",
+  "forward_loop": "for start in range(0, n, step)",
+  "inverse_loop": "for start in range(0, n, step)"
+ },
+ "selected_configurations": {
+  "7zr": {
+   "transform": "haar",
+   "transform_id": 2,
+   "representation": "bytes",
+   "representation_id": 0,
+   "block_length": 64,
+   "encoding": "varint",
+   "encoding_id": 0,
+   "dev_F_bytes": 5629,
+   "dev_G_bytes": 4787,
+   "dev_nonzero_fraction": 0.930908
+  },
+  "ecg": {
+   "transform": "haar",
+   "transform_id": 2,
+   "representation": "bytes",
+   "representation_id": 0,
+   "block_length": 4096,
+   "encoding": "varint",
+   "encoding_id": 0,
+   "dev_F_bytes": 5675,
+   "dev_G_bytes": 4839,
+   "dev_nonzero_fraction": 0.965088
+  }
+ },
+ "levels": {
+  "7zr": {
+   "block_length": 64,
+   "current_per_block_first_block": [
+    {
+     "step": 64,
+     "half": 32,
+     "blocks": 1,
+     "max_abs_after_level": 236,
+     "min": -212,
+     "max": 236
+    },
+    {
+     "step": 32,
+     "half": 16,
+     "blocks": 2,
+     "max_abs_after_level": 220,
+     "min": -220,
+     "max": 186
+    },
+    {
+     "step": 16,
+     "half": 8,
+     "blocks": 4,
+     "max_abs_after_level": 252,
+     "min": -252,
+     "max": 240
+    },
+    {
+     "step": 8,
+     "half": 4,
+     "blocks": 8,
+     "max_abs_after_level": 288,
+     "min": -288,
+     "max": 140
+    },
+    {
+     "step": 4,
+     "half": 2,
+     "blocks": 16,
+     "max_abs_after_level": 264,
+     "min": -264,
+     "max": 124
+    },
+    {
+     "step": 2,
+     "half": 1,
+     "blocks": 32,
+     "max_abs_after_level": 265,
+     "min": -132,
+     "max": 265
+    }
+   ],
+   "current_max_abs_all_blocks": 534,
+   "reference_max_abs_all_blocks": 244,
+   "current_distinct_values": 303,
+   "reference_distinct_values": 205,
+   "blocks_current_differs_from_reference": 20,
+   "reported_max_abs_in_episode": 534
+  },
+  "ecg": {
+   "block_length": 4096,
+   "current_per_block_first_block": [
+    {
+     "step": 4096,
+     "half": 2048,
+     "blocks": 1,
+     "max_abs_after_level": 223,
+     "min": -201,
+     "max": 223
+    },
+    {
+     "step": 2048,
+     "half": 1024,
+     "blocks": 2,
+     "max_abs_after_level": 360,
+     "min": -346,
+     "max": 360
+    },
+    {
+     "step": 1024,
+     "half": 512,
+     "blocks": 4,
+     "max_abs_after_level": 643,
+     "min": -643,
+     "max": 535
+    },
+    {
+     "step": 512,
+     "half": 256,
+     "blocks": 8,
+     "max_abs_after_level": 1070,
+     "min": -1070,
+     "max": 585
+    },
+    {
+     "step": 256,
+     "half": 128,
+     "blocks": 16,
+     "max_abs_after_level": 1562,
+     "min": -1562,
+     "max": 1469
+    },
+    {
+     "step": 128,
+     "half": 64,
+     "blocks": 32,
+     "max_abs_after_level": 2660,
+     "min": -2660,
+     "max": 1655
+    },
+    {
+     "step": 64,
+     "half": 32,
+     "blocks": 64,
+     "max_abs_after_level": 4091,
+     "min": -4091,
+     "max": 4061
+    },
+    {
+     "step": 32,
+     "half": 16,
+     "blocks": 128,
+     "max_abs_after_level": 8023,
+     "min": -8023,
+     "max": 4353
+    },
+    {
+     "step": 16,
+     "half": 8,
+     "blocks": 256,
+     "max_abs_after_level": 11854,
+     "min": -11854,
+     "max": 11766
+    },
+    {
+     "step": 8,
+     "half": 4,
+     "blocks": 512,
+     "max_abs_after_level": 23569,
+     "min": -23569,
+     "max": 11951
+    },
+    {
+     "step": 4,
+     "half": 2,
+     "blocks": 1024,
+     "max_abs_after_level": 34623,
+     "min": -11782,
+     "max": 34623
+    },
+    {
+     "step": 2,
+     "half": 1,
+     "blocks": 2048,
+     "max_abs_after_level": 34397,
+     "min": -18300,
+     "max": 34397
+    }
+   ],
+   "current_max_abs_all_blocks": 34397,
+   "reference_max_abs_all_blocks": 203,
+   "current_distinct_values": 837,
+   "reference_distinct_values": 347,
+   "blocks_current_differs_from_reference": 1,
+   "reported_max_abs_in_episode": 34397
+  }
+ },
+ "invariants": {
+  "7zr": {
+   "reference_approx_range_ok": true,
+   "reference_detail_range_ok": true,
+   "reference_max_abs_le_255": true,
+   "reference_distinct_le_511": true,
+   "current_max_abs_le_255": false,
+   "current_distinct_le_511": true
+  },
+  "ecg": {
+   "reference_approx_range_ok": true,
+   "reference_detail_range_ok": true,
+   "reference_max_abs_le_255": true,
+   "reference_distinct_le_511": true,
+   "current_max_abs_le_255": false,
+   "current_distinct_le_511": false
+  }
+ },
+ "root_cause": "The original loop processed every block of length step at every level. After the first level, the second half contains detail coefficients, so the next level decomposed details as well as approximations. This is a full wavelet-packet transform, not the standard recursive Haar lifting that decomposes only the approximation segment.",
+ "reported_statistics_provenance": {
+  "book1": {
+   "selected_transform": "haar",
+   "selected_representation": "bytes",
+   "reported_max_abs": 1026,
+   "reported_distinct": 422,
+   "selected_is_haar_bytes": true,
+   "fwht_max_abs_values": [
+    63,
+    252,
+    996,
+    3930,
+    6157,
+    23883,
+    94028,
+    372518
+   ]
+  },
+  "bbc": {
+   "selected_transform": "haar",
+   "selected_representation": "bytes",
+   "reported_max_abs": 458,
+   "reported_distinct": 345,
+   "selected_is_haar_bytes": true,
+   "fwht_max_abs_values": [
+    64,
+    251,
+    968,
+    3814,
+    6069,
+    23031,
+    83457,
+    327629
+   ]
+  },
+  "7zr": {
+   "selected_transform": "haar",
+   "selected_representation": "bytes",
+   "reported_max_abs": 534,
+   "reported_distinct": 303,
+   "selected_is_haar_bytes": true,
+   "fwht_max_abs_values": [
+    61,
+    156,
+    510,
+    1681,
+    8982,
+    29484,
+    114100,
+    353566
+   ]
+  },
+  "irs1040": {
+   "selected_transform": "haar",
+   "selected_representation": "bytes",
+   "reported_max_abs": 1035,
+   "reported_distinct": 320,
+   "selected_is_haar_bytes": true,
+   "fwht_max_abs_values": [
+    57,
+    214,
+    672,
+    2479,
+    10173,
+    37428,
+    139472,
+    436360
+   ]
+  },
+  "hopper": {
+   "selected_transform": "haar",
+   "selected_representation": "bytes",
+   "reported_max_abs": 1577,
+   "reported_distinct": 509,
+   "selected_is_haar_bytes": true,
+   "fwht_max_abs_values": [
+    60,
+    171,
+    583,
+    2179,
+    11649,
+    26524,
+    88983,
+    208935
+   ]
+  },
+  "ecg": {
+   "selected_transform": "haar",
+   "selected_representation": "bytes",
+   "reported_max_abs": 34397,
+   "reported_distinct": 837,
+   "selected_is_haar_bytes": true,
+   "fwht_max_abs_values": [
+    64,
+    217,
+    734,
+    2738,
+    10572,
+    40785,
+    157854,
+    610300
+   ]
+  }
+ },
+ "corrected_implementation": {
+  "7zr": {
+   "max_abs": 244,
+   "distinct_values": 205,
+   "inverse_exact": true,
+   "equals_reference": true,
+   "max_abs_le_255": true,
+   "distinct_le_511": true
+  },
+  "ecg": {
+   "max_abs": 203,
+   "distinct_values": 347,
+   "inverse_exact": true,
+   "equals_reference": true,
+   "max_abs_le_255": true,
+   "distinct_le_511": true
+  }
+ },
+ "assertions": {
+  "original_inverse_exact": true,
+  "reference_inverse_exact": true,
+  "reference_range_invariants": true,
+  "corrected_equals_reference": true,
+  "corrected_range_invariants": true,
+  "reported_stats_are_selected_haar_bytes": true
+ }
+}

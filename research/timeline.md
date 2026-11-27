@@ -17,3 +17,10 @@ Ordered by the dependency and report sequence, not inferred commit dates.
 13. [Scaling and Mathematical Cost Diagnostics](phases/13-scaling.md)
 14. [Number Theory and Algebraic Discovery](phases/14-number-theory.md)
 15. [Mathematical Image Representation](phases/15-image-math.md)
+16. [Parameterized Mathematical Grammar](phases/16-math-grammar.md)
+17. [Exact Multidimensional Algebraic Representation](phases/17-emar.md)
+18. [Exact Spectral Representation](phases/18-spectral.md)
+19. [Adaptive Algebraic Dictionary Discovery](phases/19-xordict.md)
+20. [Mathematical Structure Attribution](phases/20-attribution.md)
+
+The tested branches of Phases 16–20 are closed. No Phase 21 experiment has been reported.

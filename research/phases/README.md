@@ -3,7 +3,7 @@
 The reports broadly follow an evidence-oriented structure: question,
 motivation, methods, data, baselines, results, positive/negative findings,
 implementation and theoretical limits, reproduction, and references. Phases
-11-15 are original English syntheses of multi-episode work.
+11–20 are English syntheses of the experimental work.
 
 1. [SXZ1 — original hypothesis](01-sxz1.md)
 2. [SXZ2 — streaming and folders](02-sxz2.md)
@@ -20,6 +20,11 @@ implementation and theoretical limits, reproduction, and references. Phases
 13. [Scaling and mathematical costs](13-scaling.md)
 14. [Number theory and algebraic discovery](14-number-theory.md)
 15. [Mathematical image representation](15-image-math.md)
+16. [Parameterized mathematical grammar](16-math-grammar.md)
+17. [Exact multidimensional algebraic representation](17-emar.md)
+18. [Exact spectral representation](18-spectral.md)
+19. [Adaptive algebraic dictionary discovery](19-xordict.md)
+20. [Mathematical structure attribution](20-attribution.md)
 
 See the [timeline](../timeline.md) for ordering and [errata](../errata.md) for
 claims superseded by later analysis. Reports are English scientific syntheses,

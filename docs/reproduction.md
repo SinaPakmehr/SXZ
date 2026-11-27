@@ -38,8 +38,13 @@ Dependencies and fixture coverage differ by phase.
 | 11 | In `lab/sxz-cgmc`: `python -B scripts/test_codec.py`; `python -B scripts/audit_tests.py` | Panel inputs are not redistributed |
 | 12 | In `lab/sxz-amrd`: `python -B -m unittest scripts.test_amrd -v`; `python -B scripts/run_controls.py` | Synthetic controls run locally; real panel inputs absent |
 | 13 | In `lab/sxz-scaling`: `python -B run_phase13.py` | Native scanner build; reviewed corpora absent; B/C are estimates |
-| 14 | In `lab/sxz-2adic`: `python -B scripts/run_phase14.py`; `python -B scripts/run_episode2.py`; `python -B scripts/run_episode3.py` | Reviewed files/offsets absent; no Gr?bner computation |
+| 14 | In `lab/sxz-2adic`: `python -B scripts/run_phase14.py`; `python -B scripts/run_episode2.py`; `python -B scripts/run_episode3.py` | Reviewed files/offsets absent; no Gröbner computation |
 | 15 | In `lab/sxz-image-math`: `python -B scripts/run_phase15.py`; `python -B scripts/run_phase15_ep2.py`; `python -B scripts/run_phase15_ep3.py` | Images not redistributed; pixel-level results only |
+| 16 | In `lab/sxz-math-grammar`: `python -B scripts/run_phase16.py --split dev`, then `--split val` | Six corpus files absent; bounded grammar only |
+| 17 | In `lab/sxz-emar`: `run_phase17.py` (E1), `run_phase17b.py` (E2), `run_phase17c.py` (E3); guards are `run_phase17b_guard.py` and `run_phase17c_guard.py` | Corpus files absent; initial E1 208.24 s run is preserved, not rerun |
+| 18 | In `lab/sxz-spectral`: `run_phase18.py` (corrected); `run_phase18_original.py` (historical); `audit_phase18_haar.py` | Corpus files absent; original and corrected evidence separate |
+| 19 | In `lab/sxz-xordict`: `run_phase19.py`; `audit_phase19_xor.py` | Corpus files absent; both learning modes are in the record |
+| 20 | In `lab/sxz-attribution`: `run_phase20.py`; `audit_phase20_systematic.py` | 7zr and Windows System32 executables not redistributed; path/hash assumptions documented |
 
 The Phase 13 scanner reuses the NEXT native source. The three earlier phase-local Rust components can be built with
 `rustc --edition=2024 --crate-type cdylib -O SOURCE -o OUTPUT`: use `native.rs`

@@ -1,0 +1,1946 @@
+{
+ "phase": 19,
+ "episode": 1,
+ "protocol": {
+  "phase": 19,
+  "episode": 1,
+  "status": "frozen before experiments",
+  "codec": "bounded exact sparse XOR dictionary v1.0",
+  "block_lengths": [
+   8,
+   16,
+   32,
+   64
+  ],
+  "dictionary_capacities": [
+   16,
+   32,
+   64
+  ],
+  "max_composition_atoms": 3,
+  "learning_modes": [
+   "dev_transfer",
+   "local"
+  ],
+  "gate": {
+   "primary": {
+    "min_saving": 0.01,
+    "min_files": 2
+   },
+   "secondary": {
+    "min_nontrivial_multi_coverage": 0.1,
+    "min_files": 2,
+    "require_encoding_bottleneck": true
+   }
+  },
+  "baseline": "min(A,B,C,D,D_zstd,E,E_zstd,D_F,D_F_zstd) per region",
+  "controls": {
+   "A": "zstd-9 raw",
+   "B": "zstd-19 raw",
+   "C": "raw LZMA2 +1",
+   "D": "ordinary single-atom block dictionary",
+   "E": "fixed 8L-bit GF(2) basis representation",
+   "D_F": "F dictionary with composition disabled (matched ablation)",
+   "F": "learned dictionary with 1/2/3-atom sparse XOR compositions",
+   "G": "F + zstd-9"
+  },
+  "budget_s": 180
+ },
+ "unit_tests": "passed",
+ "split": "dev",
+ "elapsed_s": 0.507,
+ "files": [
+  {
+   "name": "book1",
+   "kind": "text",
+   "path": "datasets/corpus/book1",
+   "file_bytes": 768771,
+   "file_sha256": "9ffa47cd93bccd732f20e0c304203cfbc1b8a91bedac536e2d8f6051003d9951",
+   "available_sizes": [
+    4096
+   ],
+   "skipped_sizes": [],
+   "regions": {
+    "4096": {
+     "split": "dev",
+     "offset": 0,
+     "length": 4096,
+     "sha256": "72c0a469aa3a13c6267f4d2dc24c759117e13fb2a4376219b88e983dab2463e3",
+     "rows": [
+      {
+       "block_length": 8,
+       "capacity": 16,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4620,
+       "G_bytes": 2553,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 512,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 8,
+       "capacity": 32,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4620,
+       "G_bytes": 2553,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 512,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 8,
+       "capacity": 64,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4620,
+       "G_bytes": 2553,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 512,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 16,
+       "capacity": 16,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4364,
+       "G_bytes": 2388,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 256,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 16,
+       "capacity": 32,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4364,
+       "G_bytes": 2388,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 256,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 16,
+       "capacity": 64,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4364,
+       "G_bytes": 2388,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 256,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 32,
+       "capacity": 16,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4236,
+       "G_bytes": 2287,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 128,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 32,
+       "capacity": 32,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4236,
+       "G_bytes": 2287,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 128,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 32,
+       "capacity": 64,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4236,
+       "G_bytes": 2287,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 128,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 64,
+       "capacity": 16,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4171,
+       "G_bytes": 2219,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 64,
+       "capacity": 32,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4171,
+       "G_bytes": 2219,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 64,
+       "capacity": 64,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4171,
+       "G_bytes": 2219,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 64,
+       "capacity": 16,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 3,
+       "F_bytes": 4171,
+       "G_bytes": 2219,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      }
+     ],
+     "best_two": {
+      "block_length": 64,
+      "capacity": 16,
+      "atoms": 0,
+      "rank": 0,
+      "max_atoms": 2,
+      "F_bytes": 4171,
+      "G_bytes": 2219,
+      "composition_coverage": 0.0,
+      "multi_coverage": 0.0,
+      "nontrivial_multi_coverage": 0.0,
+      "tag_counts": {
+       "0": 64,
+       "1": 0,
+       "2": 0,
+       "3": 0
+      },
+      "estimated_gain": 0
+     },
+     "selected": {
+      "block_length": 64,
+      "capacity": 16,
+      "atoms": 0,
+      "rank": 0,
+      "max_atoms": 2,
+      "F_bytes": 4171,
+      "G_bytes": 2219,
+      "composition_coverage": 0.0,
+      "multi_coverage": 0.0,
+      "nontrivial_multi_coverage": 0.0,
+      "tag_counts": {
+       "0": 64,
+       "1": 0,
+       "2": 0,
+       "3": 0
+      },
+      "estimated_gain": 0
+     }
+    }
+   }
+  },
+  {
+   "name": "bbc",
+   "kind": "structured text",
+   "path": "datasets/corpus/bbc.rss.xml",
+   "file_bytes": 28260,
+   "file_sha256": "caa27d88f455e0fd10c408f7aaaaa73b16e9c0d502fa8c9cc11bc70551192b83",
+   "available_sizes": [
+    4096
+   ],
+   "skipped_sizes": [],
+   "regions": {
+    "4096": {
+     "split": "dev",
+     "offset": 0,
+     "length": 4096,
+     "sha256": "89d2e8fe733741c7e8e7c1c0f4761cd2e057b5d1f73562377b52dc97ce6f4484",
+     "rows": [
+      {
+       "block_length": 8,
+       "capacity": 16,
+       "atoms": 4,
+       "rank": 4,
+       "max_atoms": 2,
+       "F_bytes": 4435,
+       "G_bytes": 2064,
+       "composition_coverage": 0.060546875,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 481,
+        "1": 31,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 55
+      },
+      {
+       "block_length": 8,
+       "capacity": 32,
+       "atoms": 4,
+       "rank": 4,
+       "max_atoms": 2,
+       "F_bytes": 4435,
+       "G_bytes": 2064,
+       "composition_coverage": 0.060546875,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 481,
+        "1": 31,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 55
+      },
+      {
+       "block_length": 8,
+       "capacity": 64,
+       "atoms": 4,
+       "rank": 4,
+       "max_atoms": 2,
+       "F_bytes": 4435,
+       "G_bytes": 2064,
+       "composition_coverage": 0.060546875,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 481,
+        "1": 31,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 55
+      },
+      {
+       "block_length": 16,
+       "capacity": 16,
+       "atoms": 1,
+       "rank": 1,
+       "max_atoms": 2,
+       "F_bytes": 4350,
+       "G_bytes": 1916,
+       "composition_coverage": 0.0078125,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 254,
+        "1": 2,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 13
+      },
+      {
+       "block_length": 16,
+       "capacity": 32,
+       "atoms": 1,
+       "rank": 1,
+       "max_atoms": 2,
+       "F_bytes": 4350,
+       "G_bytes": 1916,
+       "composition_coverage": 0.0078125,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 254,
+        "1": 2,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 13
+      },
+      {
+       "block_length": 16,
+       "capacity": 64,
+       "atoms": 1,
+       "rank": 1,
+       "max_atoms": 2,
+       "F_bytes": 4350,
+       "G_bytes": 1916,
+       "composition_coverage": 0.0078125,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 254,
+        "1": 2,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 13
+      },
+      {
+       "block_length": 32,
+       "capacity": 16,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4236,
+       "G_bytes": 1696,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 128,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 32,
+       "capacity": 32,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4236,
+       "G_bytes": 1696,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 128,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 32,
+       "capacity": 64,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4236,
+       "G_bytes": 1696,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 128,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 64,
+       "capacity": 16,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4171,
+       "G_bytes": 1564,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 64,
+       "capacity": 32,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4171,
+       "G_bytes": 1564,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 64,
+       "capacity": 64,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4171,
+       "G_bytes": 1564,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 64,
+       "capacity": 16,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 3,
+       "F_bytes": 4171,
+       "G_bytes": 1564,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      }
+     ],
+     "best_two": {
+      "block_length": 64,
+      "capacity": 16,
+      "atoms": 0,
+      "rank": 0,
+      "max_atoms": 2,
+      "F_bytes": 4171,
+      "G_bytes": 1564,
+      "composition_coverage": 0.0,
+      "multi_coverage": 0.0,
+      "nontrivial_multi_coverage": 0.0,
+      "tag_counts": {
+       "0": 64,
+       "1": 0,
+       "2": 0,
+       "3": 0
+      },
+      "estimated_gain": 0
+     },
+     "selected": {
+      "block_length": 64,
+      "capacity": 16,
+      "atoms": 0,
+      "rank": 0,
+      "max_atoms": 2,
+      "F_bytes": 4171,
+      "G_bytes": 1564,
+      "composition_coverage": 0.0,
+      "multi_coverage": 0.0,
+      "nontrivial_multi_coverage": 0.0,
+      "tag_counts": {
+       "0": 64,
+       "1": 0,
+       "2": 0,
+       "3": 0
+      },
+      "estimated_gain": 0
+     }
+    }
+   }
+  },
+  {
+   "name": "7zr",
+   "kind": "executable",
+   "path": "datasets/corpus/7zr.exe",
+   "file_bytes": 602624,
+   "file_sha256": "256feca8e274e5da655e2a284fabafd9f554365eb164862089dacd4e8276d282",
+   "available_sizes": [
+    4096
+   ],
+   "skipped_sizes": [],
+   "regions": {
+    "4096": {
+     "split": "dev",
+     "offset": 0,
+     "length": 4096,
+     "sha256": "d4aad31f8179a9ca249024d76236c5f7fa6391d8cfade11dbdeb54c4e65d3223",
+     "rows": [
+      {
+       "block_length": 8,
+       "capacity": 16,
+       "atoms": 2,
+       "rank": 1,
+       "max_atoms": 2,
+       "F_bytes": 4230,
+       "G_bytes": 3072,
+       "composition_coverage": 0.11328125,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 454,
+        "1": 58,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 66
+      },
+      {
+       "block_length": 8,
+       "capacity": 32,
+       "atoms": 2,
+       "rank": 1,
+       "max_atoms": 2,
+       "F_bytes": 4230,
+       "G_bytes": 3072,
+       "composition_coverage": 0.11328125,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 454,
+        "1": 58,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 66
+      },
+      {
+       "block_length": 8,
+       "capacity": 64,
+       "atoms": 2,
+       "rank": 1,
+       "max_atoms": 2,
+       "F_bytes": 4230,
+       "G_bytes": 3072,
+       "composition_coverage": 0.11328125,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 454,
+        "1": 58,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 66
+      },
+      {
+       "block_length": 16,
+       "capacity": 16,
+       "atoms": 1,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4050,
+       "G_bytes": 2963,
+       "composition_coverage": 0.0859375,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 234,
+        "1": 22,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 178
+      },
+      {
+       "block_length": 16,
+       "capacity": 32,
+       "atoms": 1,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4050,
+       "G_bytes": 2963,
+       "composition_coverage": 0.0859375,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 234,
+        "1": 22,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 178
+      },
+      {
+       "block_length": 16,
+       "capacity": 64,
+       "atoms": 1,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4050,
+       "G_bytes": 2963,
+       "composition_coverage": 0.0859375,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 234,
+        "1": 22,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 178
+      },
+      {
+       "block_length": 32,
+       "capacity": 16,
+       "atoms": 1,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 3989,
+       "G_bytes": 2880,
+       "composition_coverage": 0.0703125,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 119,
+        "1": 9,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 246
+      },
+      {
+       "block_length": 32,
+       "capacity": 32,
+       "atoms": 1,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 3989,
+       "G_bytes": 2880,
+       "composition_coverage": 0.0703125,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 119,
+        "1": 9,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 246
+      },
+      {
+       "block_length": 32,
+       "capacity": 64,
+       "atoms": 1,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 3989,
+       "G_bytes": 2880,
+       "composition_coverage": 0.0703125,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 119,
+        "1": 9,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 246
+      },
+      {
+       "block_length": 64,
+       "capacity": 16,
+       "atoms": 1,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 3983,
+       "G_bytes": 2847,
+       "composition_coverage": 0.0625,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 60,
+        "1": 4,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 187
+      },
+      {
+       "block_length": 64,
+       "capacity": 32,
+       "atoms": 1,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 3983,
+       "G_bytes": 2847,
+       "composition_coverage": 0.0625,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 60,
+        "1": 4,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 187
+      },
+      {
+       "block_length": 64,
+       "capacity": 64,
+       "atoms": 1,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 3983,
+       "G_bytes": 2847,
+       "composition_coverage": 0.0625,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 60,
+        "1": 4,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 187
+      },
+      {
+       "block_length": 64,
+       "capacity": 16,
+       "atoms": 1,
+       "rank": 0,
+       "max_atoms": 3,
+       "F_bytes": 3983,
+       "G_bytes": 2848,
+       "composition_coverage": 0.0625,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 60,
+        "1": 4,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 187
+      }
+     ],
+     "best_two": {
+      "block_length": 64,
+      "capacity": 16,
+      "atoms": 1,
+      "rank": 0,
+      "max_atoms": 2,
+      "F_bytes": 3983,
+      "G_bytes": 2847,
+      "composition_coverage": 0.0625,
+      "multi_coverage": 0.0,
+      "nontrivial_multi_coverage": 0.0,
+      "tag_counts": {
+       "0": 60,
+       "1": 4,
+       "2": 0,
+       "3": 0
+      },
+      "estimated_gain": 187
+     },
+     "selected": {
+      "block_length": 64,
+      "capacity": 16,
+      "atoms": 1,
+      "rank": 0,
+      "max_atoms": 2,
+      "F_bytes": 3983,
+      "G_bytes": 2847,
+      "composition_coverage": 0.0625,
+      "multi_coverage": 0.0,
+      "nontrivial_multi_coverage": 0.0,
+      "tag_counts": {
+       "0": 60,
+       "1": 4,
+       "2": 0,
+       "3": 0
+      },
+      "estimated_gain": 187
+     }
+    }
+   }
+  },
+  {
+   "name": "irs1040",
+   "kind": "pdf",
+   "path": "datasets/corpus/irs1040.pdf",
+   "file_bytes": 220237,
+   "file_sha256": "3d31c226df0d189ced80e039d01cf0f8820c1019681a0f0ca6264de277b7e982",
+   "available_sizes": [
+    4096
+   ],
+   "skipped_sizes": [],
+   "regions": {
+    "4096": {
+     "split": "dev",
+     "offset": 0,
+     "length": 4096,
+     "sha256": "d752640d868d7f0a380d1635203f8064738e0eb5f26afd5a180c172642c565b7",
+     "rows": [
+      {
+       "block_length": 8,
+       "capacity": 16,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4620,
+       "G_bytes": 3956,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 512,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 8,
+       "capacity": 32,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4620,
+       "G_bytes": 3956,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 512,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 8,
+       "capacity": 64,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4620,
+       "G_bytes": 3956,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 512,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 16,
+       "capacity": 16,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4364,
+       "G_bytes": 3789,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 256,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 16,
+       "capacity": 32,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4364,
+       "G_bytes": 3789,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 256,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 16,
+       "capacity": 64,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4364,
+       "G_bytes": 3789,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 256,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 32,
+       "capacity": 16,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4236,
+       "G_bytes": 3726,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 128,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 32,
+       "capacity": 32,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4236,
+       "G_bytes": 3726,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 128,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 32,
+       "capacity": 64,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4236,
+       "G_bytes": 3726,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 128,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 64,
+       "capacity": 16,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4171,
+       "G_bytes": 3627,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 64,
+       "capacity": 32,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4171,
+       "G_bytes": 3627,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 64,
+       "capacity": 64,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4171,
+       "G_bytes": 3627,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 64,
+       "capacity": 16,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 3,
+       "F_bytes": 4171,
+       "G_bytes": 3627,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      }
+     ],
+     "best_two": {
+      "block_length": 64,
+      "capacity": 16,
+      "atoms": 0,
+      "rank": 0,
+      "max_atoms": 2,
+      "F_bytes": 4171,
+      "G_bytes": 3627,
+      "composition_coverage": 0.0,
+      "multi_coverage": 0.0,
+      "nontrivial_multi_coverage": 0.0,
+      "tag_counts": {
+       "0": 64,
+       "1": 0,
+       "2": 0,
+       "3": 0
+      },
+      "estimated_gain": 0
+     },
+     "selected": {
+      "block_length": 64,
+      "capacity": 16,
+      "atoms": 0,
+      "rank": 0,
+      "max_atoms": 2,
+      "F_bytes": 4171,
+      "G_bytes": 3627,
+      "composition_coverage": 0.0,
+      "multi_coverage": 0.0,
+      "nontrivial_multi_coverage": 0.0,
+      "tag_counts": {
+       "0": 64,
+       "1": 0,
+       "2": 0,
+       "3": 0
+      },
+      "estimated_gain": 0
+     }
+    }
+   }
+  },
+  {
+   "name": "hopper",
+   "kind": "bmp",
+   "path": "datasets/corpus/hopper.bmp",
+   "file_bytes": 49290,
+   "file_sha256": "f1a94f3add0a2e54365dc94b51da099bd0de8289b955fc8304a8627b7b0d6aea",
+   "available_sizes": [
+    4096
+   ],
+   "skipped_sizes": [],
+   "regions": {
+    "4096": {
+     "split": "dev",
+     "offset": 0,
+     "length": 4096,
+     "sha256": "bfa50d3f2b4d5df57ed4019b08599cc2cc1aff5c23e33b79297470b1d530e9ad",
+     "rows": [
+      {
+       "block_length": 8,
+       "capacity": 16,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4620,
+       "G_bytes": 3523,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 512,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 8,
+       "capacity": 32,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4620,
+       "G_bytes": 3523,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 512,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 8,
+       "capacity": 64,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4620,
+       "G_bytes": 3523,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 512,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 16,
+       "capacity": 16,
+       "atoms": 1,
+       "rank": 1,
+       "max_atoms": 2,
+       "F_bytes": 4350,
+       "G_bytes": 3397,
+       "composition_coverage": 0.0078125,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 254,
+        "1": 2,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 13
+      },
+      {
+       "block_length": 16,
+       "capacity": 32,
+       "atoms": 1,
+       "rank": 1,
+       "max_atoms": 2,
+       "F_bytes": 4350,
+       "G_bytes": 3397,
+       "composition_coverage": 0.0078125,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 254,
+        "1": 2,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 13
+      },
+      {
+       "block_length": 16,
+       "capacity": 64,
+       "atoms": 1,
+       "rank": 1,
+       "max_atoms": 2,
+       "F_bytes": 4350,
+       "G_bytes": 3397,
+       "composition_coverage": 0.0078125,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 254,
+        "1": 2,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 13
+      },
+      {
+       "block_length": 32,
+       "capacity": 16,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4236,
+       "G_bytes": 3316,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 128,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 32,
+       "capacity": 32,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4236,
+       "G_bytes": 3316,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 128,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 32,
+       "capacity": 64,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4236,
+       "G_bytes": 3316,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 128,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 64,
+       "capacity": 16,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4171,
+       "G_bytes": 3271,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 64,
+       "capacity": 32,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4171,
+       "G_bytes": 3271,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 64,
+       "capacity": 64,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4171,
+       "G_bytes": 3271,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 64,
+       "capacity": 16,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 3,
+       "F_bytes": 4171,
+       "G_bytes": 3271,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      }
+     ],
+     "best_two": {
+      "block_length": 64,
+      "capacity": 16,
+      "atoms": 0,
+      "rank": 0,
+      "max_atoms": 2,
+      "F_bytes": 4171,
+      "G_bytes": 3271,
+      "composition_coverage": 0.0,
+      "multi_coverage": 0.0,
+      "nontrivial_multi_coverage": 0.0,
+      "tag_counts": {
+       "0": 64,
+       "1": 0,
+       "2": 0,
+       "3": 0
+      },
+      "estimated_gain": 0
+     },
+     "selected": {
+      "block_length": 64,
+      "capacity": 16,
+      "atoms": 0,
+      "rank": 0,
+      "max_atoms": 2,
+      "F_bytes": 4171,
+      "G_bytes": 3271,
+      "composition_coverage": 0.0,
+      "multi_coverage": 0.0,
+      "nontrivial_multi_coverage": 0.0,
+      "tag_counts": {
+       "0": 64,
+       "1": 0,
+       "2": 0,
+       "3": 0
+      },
+      "estimated_gain": 0
+     }
+    }
+   }
+  },
+  {
+   "name": "ecg",
+   "kind": "ecg",
+   "path": "datasets/corpus/ecg-holdout.bin",
+   "file_bytes": 262144,
+   "file_sha256": "933cd8ca9cb6bc5ffa273a11e6b146c64b74ab6847239fa3cc472f03df9a9f57",
+   "available_sizes": [
+    4096
+   ],
+   "skipped_sizes": [],
+   "regions": {
+    "4096": {
+     "split": "dev",
+     "offset": 0,
+     "length": 4096,
+     "sha256": "2e60b12ccca8cd03096429b9e82e30a38f346d77f7bde606acb8bfe0df55c07f",
+     "rows": [
+      {
+       "block_length": 8,
+       "capacity": 16,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4620,
+       "G_bytes": 3022,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 512,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 8,
+       "capacity": 32,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4620,
+       "G_bytes": 3022,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 512,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 8,
+       "capacity": 64,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4620,
+       "G_bytes": 3022,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 512,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 16,
+       "capacity": 16,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4364,
+       "G_bytes": 2877,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 256,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 16,
+       "capacity": 32,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4364,
+       "G_bytes": 2877,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 256,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 16,
+       "capacity": 64,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4364,
+       "G_bytes": 2877,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 256,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 32,
+       "capacity": 16,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4236,
+       "G_bytes": 2769,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 128,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 32,
+       "capacity": 32,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4236,
+       "G_bytes": 2769,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 128,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 32,
+       "capacity": 64,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4236,
+       "G_bytes": 2769,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 128,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 64,
+       "capacity": 16,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4171,
+       "G_bytes": 2694,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 64,
+       "capacity": 32,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4171,
+       "G_bytes": 2694,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 64,
+       "capacity": 64,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 2,
+       "F_bytes": 4171,
+       "G_bytes": 2694,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      },
+      {
+       "block_length": 64,
+       "capacity": 16,
+       "atoms": 0,
+       "rank": 0,
+       "max_atoms": 3,
+       "F_bytes": 4171,
+       "G_bytes": 2694,
+       "composition_coverage": 0.0,
+       "multi_coverage": 0.0,
+       "nontrivial_multi_coverage": 0.0,
+       "tag_counts": {
+        "0": 64,
+        "1": 0,
+        "2": 0,
+        "3": 0
+       },
+       "estimated_gain": 0
+      }
+     ],
+     "best_two": {
+      "block_length": 64,
+      "capacity": 16,
+      "atoms": 0,
+      "rank": 0,
+      "max_atoms": 2,
+      "F_bytes": 4171,
+      "G_bytes": 2694,
+      "composition_coverage": 0.0,
+      "multi_coverage": 0.0,
+      "nontrivial_multi_coverage": 0.0,
+      "tag_counts": {
+       "0": 64,
+       "1": 0,
+       "2": 0,
+       "3": 0
+      },
+      "estimated_gain": 0
+     },
+     "selected": {
+      "block_length": 64,
+      "capacity": 16,
+      "atoms": 0,
+      "rank": 0,
+      "max_atoms": 2,
+      "F_bytes": 4171,
+      "G_bytes": 2694,
+      "composition_coverage": 0.0,
+      "multi_coverage": 0.0,
+      "nontrivial_multi_coverage": 0.0,
+      "tag_counts": {
+       "0": 64,
+       "1": 0,
+       "2": 0,
+       "3": 0
+      },
+      "estimated_gain": 0
+     }
+    }
+   }
+  }
+ ],
+ "selected": {
+  "book1": {
+   "4096": {
+    "block_length": 64,
+    "capacity": 16,
+    "max_atoms": 2,
+    "dev_F_bytes": 4171,
+    "dev_G_bytes": 2219
+   }
+  },
+  "bbc": {
+   "4096": {
+    "block_length": 64,
+    "capacity": 16,
+    "max_atoms": 2,
+    "dev_F_bytes": 4171,
+    "dev_G_bytes": 1564
+   }
+  },
+  "7zr": {
+   "4096": {
+    "block_length": 64,
+    "capacity": 16,
+    "max_atoms": 2,
+    "dev_F_bytes": 3983,
+    "dev_G_bytes": 2847
+   }
+  },
+  "irs1040": {
+   "4096": {
+    "block_length": 64,
+    "capacity": 16,
+    "max_atoms": 2,
+    "dev_F_bytes": 4171,
+    "dev_G_bytes": 3627
+   }
+  },
+  "hopper": {
+   "4096": {
+    "block_length": 64,
+    "capacity": 16,
+    "max_atoms": 2,
+    "dev_F_bytes": 4171,
+    "dev_G_bytes": 3271
+   }
+  },
+  "ecg": {
+   "4096": {
+    "block_length": 64,
+    "capacity": 16,
+    "max_atoms": 2,
+    "dev_F_bytes": 4171,
+    "dev_G_bytes": 2694
+   }
+  }
+ }
+}

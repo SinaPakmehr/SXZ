@@ -17,6 +17,11 @@ what each prototype tested and what was superseded.
 | `sxz-scaling` | 13 | nested real-data scaling and mathematical cost diagnostics |
 | `sxz-2adic` | 14 | 2-adic rationals, coordinate functions and quadratic Boolean relations |
 | `sxz-image-math` | 15 | pixel-coordinate functions, adaptive regions and compositional networks |
+| `sxz-math-grammar` | 16 | bounded RePair grammar and parameterized templates |
+| `sxz-emar` | 17 | exact finite-field tensors, decision diagrams and bounded multidimensional recurrences |
+| `sxz-spectral` | 18 | exact integer transforms, Haar audit and corrected runs |
+| `sxz-xordict` | 19 | sparse XOR dictionaries and exhaustive aligned-block census |
+| `sxz-attribution` | 20 | executable structure attribution and systematic coefficient-mask audit |
 
 Do not run two experiments that write the same JSON concurrently. Record a new
 run separately rather than overwriting historical results. Some scripts expect

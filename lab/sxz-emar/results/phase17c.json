@@ -1,0 +1,1794 @@
+{
+ "phase": 17,
+ "episode": 3,
+ "protocol": {
+  "phase": 17,
+  "episode": 3,
+  "codec": "bounded multidimensional recurrence v1.0",
+  "field": "GF(2^8), polynomial 0x11B",
+  "shapes": [
+   {
+    "name": "2d",
+    "dims": [
+     64,
+     64
+    ]
+   },
+   {
+    "name": "3d",
+    "dims": [
+     16,
+     16,
+     16
+    ]
+   },
+   {
+    "name": "4d",
+    "dims": [
+     8,
+     8,
+     8,
+     8
+    ]
+   }
+  ],
+  "sizes": [
+   4096
+  ],
+  "neighborhoods": [
+   "axes",
+   "diagonal",
+   "diag2",
+   "axes2"
+  ],
+  "orders": [
+   "raster"
+  ],
+  "coeff_limit": 16,
+  "affine": "fitted with and without an affine constant",
+  "region_rule": "first and last disjoint 4 KiB regions; no padding",
+  "selection": "best nondegenerate multidimensional candidate by total serialized size on dev; fall back to best any candidate only for reporting",
+  "representations": [
+   "exact recurrence only (valid only at 100% coverage)",
+   "recurrence + raw XOR residuals",
+   "recurrence + zstd-9 residuals"
+  ],
+  "controls": {
+   "A": "zstd-9 raw",
+   "B": "zstd-19 raw",
+   "C": "raw LZMA2 preset 6 +1",
+   "D": "best delta/XOR/spatial predictor + zstd-9",
+   "E": "1D recurrence with the same boundary mask and flattened lags",
+   "F": "multidimensional recurrence representation",
+   "G": "multidimensional recurrence + compressed residuals"
+  },
+  "gate": {
+   "min_saving": 0.01,
+   "min_files": 2,
+   "baseline": "min(A,B,C,D,E_best) per region",
+   "nontrivial_required": true
+  }
+ },
+ "unit_tests": "passed",
+ "selected": {
+  "book1": {
+   "4096": {
+    "shape_name": "4d",
+    "shape": [
+     8,
+     8,
+     8,
+     8
+    ],
+    "neighborhood": "axes2",
+    "affine": false,
+    "rank": 8,
+    "nullity": 0,
+    "consistent": true,
+    "train_size": 8,
+    "eligible_count": 1296,
+    "boundary_count": 2800,
+    "train_rate": 1.0,
+    "test_rate": 0.005435,
+    "coverage": 0.011574,
+    "nonzero_coefficients": 8,
+    "coeffs": [
+     215,
+     31,
+     167,
+     166,
+     144,
+     42,
+     62,
+     197
+    ],
+    "constant": false,
+    "periodic": false,
+    "used_axes": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "nontrivial_multidim": true,
+    "md_variants": {
+     "exact": null,
+     "raw": 5446,
+     "zstd": 4670
+    },
+    "md_best": {
+     "mode": "zstd",
+     "bytes": 4670
+    },
+    "e_rank": 8,
+    "e_nullity": 0,
+    "e_coverage": 0.011574,
+    "e_best": {
+     "mode": "zstd",
+     "bytes": 4649
+    },
+    "e_variants": {
+     "exact": null,
+     "raw": 5425,
+     "zstd": 4649
+    },
+    "shifts": [
+     [
+      -1,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -1,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      -1
+     ],
+     [
+      -2,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -2,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -2,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      -2
+     ]
+    ],
+    "lags": [
+     1,
+     2,
+     8,
+     16,
+     64,
+     128,
+     512,
+     1024
+    ]
+   }
+  },
+  "bbc": {
+   "4096": {
+    "shape_name": "2d",
+    "shape": [
+     64,
+     64
+    ],
+    "neighborhood": "axes",
+    "affine": false,
+    "rank": 2,
+    "nullity": 0,
+    "consistent": true,
+    "train_size": 2,
+    "eligible_count": 3969,
+    "boundary_count": 127,
+    "train_rate": 1.0,
+    "test_rate": 0.004537,
+    "coverage": 0.005039,
+    "nonzero_coefficients": 2,
+    "coeffs": [
+     135,
+     146
+    ],
+    "constant": false,
+    "periodic": false,
+    "used_axes": [
+     0,
+     1
+    ],
+    "nontrivial_multidim": true,
+    "md_variants": {
+     "exact": null,
+     "raw": 8064,
+     "zstd": 4163
+    },
+    "md_best": {
+     "mode": "zstd",
+     "bytes": 4163
+    },
+    "e_rank": 2,
+    "e_nullity": 0,
+    "e_coverage": 0.005039,
+    "e_best": {
+     "mode": "zstd",
+     "bytes": 4161
+    },
+    "e_variants": {
+     "exact": null,
+     "raw": 8062,
+     "zstd": 4161
+    },
+    "shifts": [
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "lags": [
+     1,
+     64
+    ]
+   }
+  },
+  "7zr": {
+   "4096": {
+    "shape_name": "4d",
+    "shape": [
+     8,
+     8,
+     8,
+     8
+    ],
+    "neighborhood": "axes2",
+    "affine": false,
+    "rank": 8,
+    "nullity": 0,
+    "consistent": true,
+    "train_size": 8,
+    "eligible_count": 1296,
+    "boundary_count": 2800,
+    "train_rate": 1.0,
+    "test_rate": 0.005435,
+    "coverage": 0.011574,
+    "nonzero_coefficients": 8,
+    "coeffs": [
+     238,
+     173,
+     25,
+     80,
+     198,
+     84,
+     118,
+     205
+    ],
+    "constant": false,
+    "periodic": false,
+    "used_axes": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "nontrivial_multidim": true,
+    "md_variants": {
+     "exact": null,
+     "raw": 5446,
+     "zstd": 4685
+    },
+    "md_best": {
+     "mode": "zstd",
+     "bytes": 4685
+    },
+    "e_rank": 8,
+    "e_nullity": 0,
+    "e_coverage": 0.011574,
+    "e_best": {
+     "mode": "zstd",
+     "bytes": 4664
+    },
+    "e_variants": {
+     "exact": null,
+     "raw": 5425,
+     "zstd": 4664
+    },
+    "shifts": [
+     [
+      -1,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -1,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      -1
+     ],
+     [
+      -2,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -2,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -2,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      -2
+     ]
+    ],
+    "lags": [
+     1,
+     2,
+     8,
+     16,
+     64,
+     128,
+     512,
+     1024
+    ]
+   }
+  },
+  "irs1040": {
+   "4096": {
+    "shape_name": "4d",
+    "shape": [
+     8,
+     8,
+     8,
+     8
+    ],
+    "neighborhood": "axes2",
+    "affine": true,
+    "rank": 9,
+    "nullity": 0,
+    "consistent": true,
+    "train_size": 9,
+    "eligible_count": 1296,
+    "boundary_count": 2800,
+    "train_rate": 1.0,
+    "test_rate": 0.008547,
+    "coverage": 0.015432,
+    "nonzero_coefficients": 9,
+    "coeffs": [
+     84,
+     60,
+     210,
+     171,
+     178,
+     35,
+     74,
+     252,
+     215
+    ],
+    "constant": false,
+    "periodic": false,
+    "used_axes": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "nontrivial_multidim": true,
+    "md_variants": {
+     "exact": null,
+     "raw": 5437,
+     "zstd": 4667
+    },
+    "md_best": {
+     "mode": "zstd",
+     "bytes": 4667
+    },
+    "e_rank": 9,
+    "e_nullity": 0,
+    "e_coverage": 0.015432,
+    "e_best": {
+     "mode": "zstd",
+     "bytes": 4646
+    },
+    "e_variants": {
+     "exact": null,
+     "raw": 5416,
+     "zstd": 4646
+    },
+    "shifts": [
+     [
+      -1,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -1,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      -1
+     ],
+     [
+      -2,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -2,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -2,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      -2
+     ]
+    ],
+    "lags": [
+     1,
+     2,
+     8,
+     16,
+     64,
+     128,
+     512,
+     1024
+    ]
+   }
+  },
+  "hopper": {
+   "4096": {
+    "shape_name": "4d",
+    "shape": [
+     8,
+     8,
+     8,
+     8
+    ],
+    "neighborhood": "axes2",
+    "affine": true,
+    "rank": 9,
+    "nullity": 0,
+    "consistent": true,
+    "train_size": 9,
+    "eligible_count": 1296,
+    "boundary_count": 2800,
+    "train_rate": 1.0,
+    "test_rate": 0.002331,
+    "coverage": 0.009259,
+    "nonzero_coefficients": 9,
+    "coeffs": [
+     84,
+     92,
+     29,
+     218,
+     108,
+     225,
+     47,
+     154,
+     12
+    ],
+    "constant": false,
+    "periodic": false,
+    "used_axes": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "nontrivial_multidim": true,
+    "md_variants": {
+     "exact": null,
+     "raw": 5453,
+     "zstd": 4668
+    },
+    "md_best": {
+     "mode": "zstd",
+     "bytes": 4668
+    },
+    "e_rank": 9,
+    "e_nullity": 0,
+    "e_coverage": 0.009259,
+    "e_best": {
+     "mode": "zstd",
+     "bytes": 4647
+    },
+    "e_variants": {
+     "exact": null,
+     "raw": 5432,
+     "zstd": 4647
+    },
+    "shifts": [
+     [
+      -1,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -1,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      -1
+     ],
+     [
+      -2,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -2,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -2,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      -2
+     ]
+    ],
+    "lags": [
+     1,
+     2,
+     8,
+     16,
+     64,
+     128,
+     512,
+     1024
+    ]
+   }
+  },
+  "ecg": {
+   "4096": {
+    "shape_name": "4d",
+    "shape": [
+     8,
+     8,
+     8,
+     8
+    ],
+    "neighborhood": "axes2",
+    "affine": true,
+    "rank": 9,
+    "nullity": 0,
+    "consistent": true,
+    "train_size": 9,
+    "eligible_count": 1296,
+    "boundary_count": 2800,
+    "train_rate": 1.0,
+    "test_rate": 0.006216,
+    "coverage": 0.013117,
+    "nonzero_coefficients": 9,
+    "coeffs": [
+     195,
+     83,
+     4,
+     96,
+     194,
+     233,
+     195,
+     18,
+     15
+    ],
+    "constant": false,
+    "periodic": false,
+    "used_axes": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "nontrivial_multidim": true,
+    "md_variants": {
+     "exact": null,
+     "raw": 5443,
+     "zstd": 4672
+    },
+    "md_best": {
+     "mode": "zstd",
+     "bytes": 4672
+    },
+    "e_rank": 9,
+    "e_nullity": 0,
+    "e_coverage": 0.013117,
+    "e_best": {
+     "mode": "zstd",
+     "bytes": 4651
+    },
+    "e_variants": {
+     "exact": null,
+     "raw": 5422,
+     "zstd": 4651
+    },
+    "shifts": [
+     [
+      -1,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -1,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      -1
+     ],
+     [
+      -2,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -2,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -2,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      -2
+     ]
+    ],
+    "lags": [
+     1,
+     2,
+     8,
+     16,
+     64,
+     128,
+     512,
+     1024
+    ]
+   }
+  }
+ },
+ "dev_elapsed_s": 12.179,
+ "validation": {
+  "split": "val",
+  "elapsed_s": 0.383,
+  "files": [
+   {
+    "name": "book1",
+    "kind": "text",
+    "path": "datasets/corpus/book1",
+    "file_bytes": 768771,
+    "file_sha256": "9ffa47cd93bccd732f20e0c304203cfbc1b8a91bedac536e2d8f6051003d9951",
+    "available_sizes": [
+     4096
+    ],
+    "skipped_sizes": [],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 764675,
+      "length": 4096,
+      "sha256": "3e488a07b33278771d695225be56978b2727de14c4aa433d1f4a00b3527389a4",
+      "shape_name": "4d",
+      "shape": [
+       8,
+       8,
+       8,
+       8
+      ],
+      "neighborhood": "axes2",
+      "affine": false,
+      "shifts": [
+       [
+        -1,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        -1,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        -1,
+        0
+       ],
+       [
+        0,
+        0,
+        0,
+        -1
+       ],
+       [
+        -2,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        -2,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        -2,
+        0
+       ],
+       [
+        0,
+        0,
+        0,
+        -2
+       ]
+      ],
+      "rank": 8,
+      "nullity": 0,
+      "consistent": true,
+      "train_size": 8,
+      "eligible_count": 1296,
+      "boundary_count": 2800,
+      "train_rate": 1.0,
+      "test_rate": 0.003882,
+      "coverage": 0.010031,
+      "nonzero_coefficients": 8,
+      "coeffs": [
+       11,
+       49,
+       197,
+       98,
+       12,
+       233,
+       110,
+       128
+      ],
+      "constant": false,
+      "periodic": false,
+      "used_axes": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "nontrivial_multidim": true,
+      "md_variants": {
+       "exact": null,
+       "raw": 5450,
+       "zstd": 4673
+      },
+      "md_best_mode": "zstd",
+      "md_best_bytes": 4673,
+      "exact_bytes": null,
+      "raw_bytes": 5450,
+      "zstd_bytes": 4673,
+      "model_bytes": 76,
+      "boundary_bytes": 2800,
+      "residual_bytes": 1797,
+      "residual_count": 1283,
+      "E_rank": 8,
+      "E_nullity": 0,
+      "E_coverage": 0.010031,
+      "E_best_mode": "zstd",
+      "E_best_bytes": 4652,
+      "E_variants": {
+       "exact": null,
+       "raw": 5429,
+       "zstd": 4652
+      },
+      "D_bytes": 2737,
+      "D_predictor": 1,
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 2116,
+        "encode_s": 9e-05,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 2095,
+        "encode_s": 0.00048,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 2182,
+        "encode_s": 0.00546,
+        "decode_s": 0.00015,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "B_zstd19",
+      "baseline_bytes": 2095,
+      "md_vs_baseline": 2.230549,
+      "saving_vs_baseline": -1.230549,
+      "encode_s": 0.01631,
+      "decode_s": 0.0095,
+      "raw_decode_s": 0.01028,
+      "decoded_ok": true,
+      "decoded_sha256": "3e488a07b33278771d695225be56978b2727de14c4aa433d1f4a00b3527389a4",
+      "raw_decoded_ok": true,
+      "raw_decoded_sha256": "3e488a07b33278771d695225be56978b2727de14c4aa433d1f4a00b3527389a4",
+      "exact_decoded_ok": null,
+      "E_decoded_ok": true
+     }
+    }
+   },
+   {
+    "name": "bbc",
+    "kind": "structured text",
+    "path": "datasets/corpus/bbc.rss.xml",
+    "file_bytes": 28260,
+    "file_sha256": "caa27d88f455e0fd10c408f7aaaaa73b16e9c0d502fa8c9cc11bc70551192b83",
+    "available_sizes": [
+     4096
+    ],
+    "skipped_sizes": [],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 24164,
+      "length": 4096,
+      "sha256": "7aded530ac0d3021a4a88726d9c74f83386561f7799ea840e2525dbf0516b32f",
+      "shape_name": "2d",
+      "shape": [
+       64,
+       64
+      ],
+      "neighborhood": "axes",
+      "affine": false,
+      "shifts": [
+       [
+        -1,
+        0
+       ],
+       [
+        0,
+        -1
+       ]
+      ],
+      "rank": 2,
+      "nullity": 0,
+      "consistent": true,
+      "train_size": 2,
+      "eligible_count": 3969,
+      "boundary_count": 127,
+      "train_rate": 1.0,
+      "test_rate": 0.006806,
+      "coverage": 0.007307,
+      "nonzero_coefficients": 2,
+      "coeffs": [
+       86,
+       112
+      ],
+      "constant": false,
+      "periodic": false,
+      "used_axes": [
+       0,
+       1
+      ],
+      "nontrivial_multidim": true,
+      "md_variants": {
+       "exact": null,
+       "raw": 8046,
+       "zstd": 3984
+      },
+      "md_best_mode": "zstd",
+      "md_best_bytes": 3984,
+      "exact_bytes": null,
+      "raw_bytes": 8046,
+      "zstd_bytes": 3984,
+      "model_bytes": 37,
+      "boundary_bytes": 127,
+      "residual_bytes": 3820,
+      "residual_count": 3940,
+      "E_rank": 2,
+      "E_nullity": 0,
+      "E_coverage": 0.007307,
+      "E_best_mode": "zstd",
+      "E_best_bytes": 3982,
+      "E_variants": {
+       "exact": null,
+       "raw": 8044,
+       "zstd": 3982
+      },
+      "D_bytes": 1508,
+      "D_predictor": 1,
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 1297,
+        "encode_s": 5e-05,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 1292,
+        "encode_s": 0.00124,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 1298,
+        "encode_s": 0.00782,
+        "decode_s": 0.00014,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "B_zstd19",
+      "baseline_bytes": 1292,
+      "md_vs_baseline": 3.083591,
+      "saving_vs_baseline": -2.083591,
+      "encode_s": 0.02394,
+      "decode_s": 0.00714,
+      "raw_decode_s": 0.01389,
+      "decoded_ok": true,
+      "decoded_sha256": "7aded530ac0d3021a4a88726d9c74f83386561f7799ea840e2525dbf0516b32f",
+      "raw_decoded_ok": true,
+      "raw_decoded_sha256": "7aded530ac0d3021a4a88726d9c74f83386561f7799ea840e2525dbf0516b32f",
+      "exact_decoded_ok": null,
+      "E_decoded_ok": true
+     }
+    }
+   },
+   {
+    "name": "7zr",
+    "kind": "executable",
+    "path": "datasets/corpus/7zr.exe",
+    "file_bytes": 602624,
+    "file_sha256": "256feca8e274e5da655e2a284fabafd9f554365eb164862089dacd4e8276d282",
+    "available_sizes": [
+     4096
+    ],
+    "skipped_sizes": [],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 598528,
+      "length": 4096,
+      "sha256": "3b3e5887681ee6b7a73db2735ef224947dc3ee805e3363838aa995163294dcf6",
+      "shape_name": "4d",
+      "shape": [
+       8,
+       8,
+       8,
+       8
+      ],
+      "neighborhood": "axes2",
+      "affine": false,
+      "shifts": [
+       [
+        -1,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        -1,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        -1,
+        0
+       ],
+       [
+        0,
+        0,
+        0,
+        -1
+       ],
+       [
+        -2,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        -2,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        -2,
+        0
+       ],
+       [
+        0,
+        0,
+        0,
+        -2
+       ]
+      ],
+      "rank": 8,
+      "nullity": 0,
+      "consistent": true,
+      "train_size": 10,
+      "eligible_count": 1296,
+      "boundary_count": 2800,
+      "train_rate": 1.0,
+      "test_rate": 0.646967,
+      "coverage": 0.649691,
+      "nonzero_coefficients": 6,
+      "coeffs": [
+       0,
+       84,
+       51,
+       0,
+       204,
+       116,
+       118,
+       250
+      ],
+      "constant": false,
+      "periodic": false,
+      "used_axes": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "nontrivial_multidim": true,
+      "md_variants": {
+       "exact": null,
+       "raw": 3789,
+       "zstd": 3487
+      },
+      "md_best_mode": "zstd",
+      "md_best_bytes": 3487,
+      "exact_bytes": null,
+      "raw_bytes": 3789,
+      "zstd_bytes": 3487,
+      "model_bytes": 76,
+      "boundary_bytes": 2800,
+      "residual_bytes": 611,
+      "residual_count": 454,
+      "E_rank": 8,
+      "E_nullity": 0,
+      "E_coverage": 0.649691,
+      "E_best_mode": "zstd",
+      "E_best_bytes": 3466,
+      "E_variants": {
+       "exact": null,
+       "raw": 3768,
+       "zstd": 3466
+      },
+      "D_bytes": 1061,
+      "D_predictor": 0,
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 948,
+        "encode_s": 2e-05,
+        "decode_s": 0.0,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 936,
+        "encode_s": 9e-05,
+        "decode_s": 0.0,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 983,
+        "encode_s": 0.00749,
+        "decode_s": 0.00011,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "B_zstd19",
+      "baseline_bytes": 936,
+      "md_vs_baseline": 3.725427,
+      "saving_vs_baseline": -2.725427,
+      "encode_s": 0.01244,
+      "decode_s": 0.00676,
+      "raw_decode_s": 0.00821,
+      "decoded_ok": true,
+      "decoded_sha256": "3b3e5887681ee6b7a73db2735ef224947dc3ee805e3363838aa995163294dcf6",
+      "raw_decoded_ok": true,
+      "raw_decoded_sha256": "3b3e5887681ee6b7a73db2735ef224947dc3ee805e3363838aa995163294dcf6",
+      "exact_decoded_ok": null,
+      "E_decoded_ok": true
+     }
+    }
+   },
+   {
+    "name": "irs1040",
+    "kind": "pdf",
+    "path": "datasets/corpus/irs1040.pdf",
+    "file_bytes": 220237,
+    "file_sha256": "3d31c226df0d189ced80e039d01cf0f8820c1019681a0f0ca6264de277b7e982",
+    "available_sizes": [
+     4096
+    ],
+    "skipped_sizes": [],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 216141,
+      "length": 4096,
+      "sha256": "406d274be04e08ff6de4ab6f746d3df029b9493f436e314ca11a80fa6a91e708",
+      "shape_name": "4d",
+      "shape": [
+       8,
+       8,
+       8,
+       8
+      ],
+      "neighborhood": "axes2",
+      "affine": true,
+      "shifts": [
+       [
+        -1,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        -1,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        -1,
+        0
+       ],
+       [
+        0,
+        0,
+        0,
+        -1
+       ],
+       [
+        -2,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        -2,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        -2,
+        0
+       ],
+       [
+        0,
+        0,
+        0,
+        -2
+       ]
+      ],
+      "rank": 9,
+      "nullity": 0,
+      "consistent": true,
+      "train_size": 9,
+      "eligible_count": 1296,
+      "boundary_count": 2800,
+      "train_rate": 1.0,
+      "test_rate": 0.013986,
+      "coverage": 0.020833,
+      "nonzero_coefficients": 9,
+      "coeffs": [
+       127,
+       144,
+       82,
+       38,
+       219,
+       194,
+       17,
+       153,
+       138
+      ],
+      "constant": false,
+      "periodic": false,
+      "used_axes": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "nontrivial_multidim": true,
+      "md_variants": {
+       "exact": null,
+       "raw": 5423,
+       "zstd": 4368
+      },
+      "md_best_mode": "zstd",
+      "md_best_bytes": 4368,
+      "exact_bytes": null,
+      "raw_bytes": 5423,
+      "zstd_bytes": 4368,
+      "model_bytes": 77,
+      "boundary_bytes": 2800,
+      "residual_bytes": 1491,
+      "residual_count": 1269,
+      "E_rank": 9,
+      "E_nullity": 0,
+      "E_coverage": 0.020833,
+      "E_best_mode": "zstd",
+      "E_best_bytes": 4347,
+      "E_variants": {
+       "exact": null,
+       "raw": 5402,
+       "zstd": 4347
+      },
+      "D_bytes": 1799,
+      "D_predictor": 1,
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 1619,
+        "encode_s": 4e-05,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 1607,
+        "encode_s": 0.00025,
+        "decode_s": 2e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 1534,
+        "encode_s": 0.00546,
+        "decode_s": 0.00013,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 1534,
+      "md_vs_baseline": 2.847458,
+      "saving_vs_baseline": -1.847458,
+      "encode_s": 0.01608,
+      "decode_s": 0.00831,
+      "raw_decode_s": 0.01022,
+      "decoded_ok": true,
+      "decoded_sha256": "406d274be04e08ff6de4ab6f746d3df029b9493f436e314ca11a80fa6a91e708",
+      "raw_decoded_ok": true,
+      "raw_decoded_sha256": "406d274be04e08ff6de4ab6f746d3df029b9493f436e314ca11a80fa6a91e708",
+      "exact_decoded_ok": null,
+      "E_decoded_ok": true
+     }
+    }
+   },
+   {
+    "name": "hopper",
+    "kind": "bmp",
+    "path": "datasets/corpus/hopper.bmp",
+    "file_bytes": 49290,
+    "file_sha256": "f1a94f3add0a2e54365dc94b51da099bd0de8289b955fc8304a8627b7b0d6aea",
+    "available_sizes": [
+     4096
+    ],
+    "skipped_sizes": [],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 45194,
+      "length": 4096,
+      "sha256": "1c198835a8e29f03e987fb9f75fe1438274c0738a667e161620ba2cceb5f6f07",
+      "shape_name": "4d",
+      "shape": [
+       8,
+       8,
+       8,
+       8
+      ],
+      "neighborhood": "axes2",
+      "affine": true,
+      "shifts": [
+       [
+        -1,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        -1,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        -1,
+        0
+       ],
+       [
+        0,
+        0,
+        0,
+        -1
+       ],
+       [
+        -2,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        -2,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        -2,
+        0
+       ],
+       [
+        0,
+        0,
+        0,
+        -2
+       ]
+      ],
+      "rank": 9,
+      "nullity": 0,
+      "consistent": true,
+      "train_size": 9,
+      "eligible_count": 1296,
+      "boundary_count": 2800,
+      "train_rate": 1.0,
+      "test_rate": 0.003108,
+      "coverage": 0.010031,
+      "nonzero_coefficients": 9,
+      "coeffs": [
+       8,
+       210,
+       222,
+       1,
+       203,
+       80,
+       226,
+       167,
+       90
+      ],
+      "constant": false,
+      "periodic": false,
+      "used_axes": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "nontrivial_multidim": true,
+      "md_variants": {
+       "exact": null,
+       "raw": 5451,
+       "zstd": 4679
+      },
+      "md_best_mode": "zstd",
+      "md_best_bytes": 4679,
+      "exact_bytes": null,
+      "raw_bytes": 5451,
+      "zstd_bytes": 4679,
+      "model_bytes": 77,
+      "boundary_bytes": 2800,
+      "residual_bytes": 1802,
+      "residual_count": 1283,
+      "E_rank": 9,
+      "E_nullity": 0,
+      "E_coverage": 0.010031,
+      "E_best_mode": "zstd",
+      "E_best_bytes": 4658,
+      "E_variants": {
+       "exact": null,
+       "raw": 5430,
+       "zstd": 4658
+      },
+      "D_bytes": 3228,
+      "D_predictor": 0,
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 3430,
+        "encode_s": 7e-05,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 3294,
+        "encode_s": 0.00032,
+        "decode_s": 2e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 2933,
+        "encode_s": 0.00724,
+        "decode_s": 0.0002,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 2933,
+      "md_vs_baseline": 1.595295,
+      "saving_vs_baseline": -0.595295,
+      "encode_s": 0.02776,
+      "decode_s": 0.00939,
+      "raw_decode_s": 0.00824,
+      "decoded_ok": true,
+      "decoded_sha256": "1c198835a8e29f03e987fb9f75fe1438274c0738a667e161620ba2cceb5f6f07",
+      "raw_decoded_ok": true,
+      "raw_decoded_sha256": "1c198835a8e29f03e987fb9f75fe1438274c0738a667e161620ba2cceb5f6f07",
+      "exact_decoded_ok": null,
+      "E_decoded_ok": true
+     }
+    }
+   },
+   {
+    "name": "ecg",
+    "kind": "ecg",
+    "path": "datasets/corpus/ecg-holdout.bin",
+    "file_bytes": 262144,
+    "file_sha256": "933cd8ca9cb6bc5ffa273a11e6b146c64b74ab6847239fa3cc472f03df9a9f57",
+    "available_sizes": [
+     4096
+    ],
+    "skipped_sizes": [],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 258048,
+      "length": 4096,
+      "sha256": "a390876e1f1b18c1a69e598e850ad21e81cbe6d5f0feb3ee0cb81d40b73a75e9",
+      "shape_name": "4d",
+      "shape": [
+       8,
+       8,
+       8,
+       8
+      ],
+      "neighborhood": "axes2",
+      "affine": true,
+      "shifts": [
+       [
+        -1,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        -1,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        -1,
+        0
+       ],
+       [
+        0,
+        0,
+        0,
+        -1
+       ],
+       [
+        -2,
+        0,
+        0,
+        0
+       ],
+       [
+        0,
+        -2,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        -2,
+        0
+       ],
+       [
+        0,
+        0,
+        0,
+        -2
+       ]
+      ],
+      "rank": 9,
+      "nullity": 0,
+      "consistent": true,
+      "train_size": 9,
+      "eligible_count": 1296,
+      "boundary_count": 2800,
+      "train_rate": 1.0,
+      "test_rate": 0.003885,
+      "coverage": 0.010802,
+      "nonzero_coefficients": 9,
+      "coeffs": [
+       3,
+       159,
+       82,
+       105,
+       230,
+       49,
+       19,
+       228,
+       175
+      ],
+      "constant": false,
+      "periodic": false,
+      "used_axes": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "nontrivial_multidim": true,
+      "md_variants": {
+       "exact": null,
+       "raw": 5449,
+       "zstd": 4672
+      },
+      "md_best_mode": "zstd",
+      "md_best_bytes": 4672,
+      "exact_bytes": null,
+      "raw_bytes": 5449,
+      "zstd_bytes": 4672,
+      "model_bytes": 77,
+      "boundary_bytes": 2800,
+      "residual_bytes": 1795,
+      "residual_count": 1282,
+      "E_rank": 9,
+      "E_nullity": 0,
+      "E_coverage": 0.010802,
+      "E_best_mode": "zstd",
+      "E_best_bytes": 4651,
+      "E_variants": {
+       "exact": null,
+       "raw": 5428,
+       "zstd": 4651
+      },
+      "D_bytes": 3427,
+      "D_predictor": 0,
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 2569,
+        "encode_s": 8e-05,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 2503,
+        "encode_s": 0.00041,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 2076,
+        "encode_s": 0.00784,
+        "decode_s": 0.00017,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 2076,
+      "md_vs_baseline": 2.250482,
+      "saving_vs_baseline": -1.250482,
+      "encode_s": 0.01578,
+      "decode_s": 0.00817,
+      "raw_decode_s": 0.01078,
+      "decoded_ok": true,
+      "decoded_sha256": "a390876e1f1b18c1a69e598e850ad21e81cbe6d5f0feb3ee0cb81d40b73a75e9",
+      "raw_decoded_ok": true,
+      "raw_decoded_sha256": "a390876e1f1b18c1a69e598e850ad21e81cbe6d5f0feb3ee0cb81d40b73a75e9",
+      "exact_decoded_ok": null,
+      "E_decoded_ok": true
+     }
+    }
+   }
+  ]
+ },
+ "gate": {
+  "files": [
+   {
+    "name": "book1",
+    "sizes": [
+     4096
+    ],
+    "md_bytes": 4673,
+    "baseline": 2095,
+    "saving_vs_baseline": -1.230549,
+    "primary_pass": false,
+    "nontrivial": true
+   },
+   {
+    "name": "bbc",
+    "sizes": [
+     4096
+    ],
+    "md_bytes": 3984,
+    "baseline": 1292,
+    "saving_vs_baseline": -2.083591,
+    "primary_pass": false,
+    "nontrivial": true
+   },
+   {
+    "name": "7zr",
+    "sizes": [
+     4096
+    ],
+    "md_bytes": 3487,
+    "baseline": 936,
+    "saving_vs_baseline": -2.725427,
+    "primary_pass": false,
+    "nontrivial": true
+   },
+   {
+    "name": "irs1040",
+    "sizes": [
+     4096
+    ],
+    "md_bytes": 4368,
+    "baseline": 1534,
+    "saving_vs_baseline": -1.847458,
+    "primary_pass": false,
+    "nontrivial": true
+   },
+   {
+    "name": "hopper",
+    "sizes": [
+     4096
+    ],
+    "md_bytes": 4679,
+    "baseline": 2933,
+    "saving_vs_baseline": -0.595295,
+    "primary_pass": false,
+    "nontrivial": true
+   },
+   {
+    "name": "ecg",
+    "sizes": [
+     4096
+    ],
+    "md_bytes": 4672,
+    "baseline": 2076,
+    "saving_vs_baseline": -1.250482,
+    "primary_pass": false,
+    "nontrivial": true
+   }
+  ],
+  "primary": {
+   "min_saving": 0.01,
+   "min_files": 2,
+   "qualifying_files": [],
+   "passed": false
+  },
+  "passed": false
+ },
+ "elapsed_s": 0.385
+}

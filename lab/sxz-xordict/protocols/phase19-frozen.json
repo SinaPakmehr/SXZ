@@ -1,0 +1,111 @@
+{
+ "phase": 19,
+ "episode": 1,
+ "status": "selection frozen before validation",
+ "codec": {
+  "name": "bounded exact sparse XOR dictionary v1.0",
+  "script": "scripts/run_phase19.py",
+  "script_bytes": 32600,
+  "script_sha256": "c9c7c4ebe207927a0ebb14d66e4acd8e92cae53ba46e8c41bec69860db71ae2a"
+ },
+ "block_lengths": [
+  8,
+  16,
+  32,
+  64
+ ],
+ "dictionary_capacities": [
+  16,
+  32,
+  64
+ ],
+ "max_composition_atoms": 3,
+ "learning_modes": [
+  "dev_transfer",
+  "local"
+ ],
+ "gate": {
+  "primary": {
+   "min_saving": 0.01,
+   "min_files": 2
+  },
+  "secondary": {
+   "min_nontrivial_multi_coverage": 0.1,
+   "min_files": 2,
+   "require_encoding_bottleneck": true
+  }
+ },
+ "baseline": "min(A,B,C,D,D_zstd,E,E_zstd,D_F,D_F_zstd) per region",
+ "controls": {
+  "A": "zstd-9 raw",
+  "B": "zstd-19 raw",
+  "C": "raw LZMA2 +1",
+  "D": "ordinary single-atom dictionary",
+  "E": "fixed 8L-bit GF(2) basis",
+  "D_F": "F dictionary with composition disabled",
+  "F": "learned 1/2/3-atom XOR dictionary",
+  "G": "F+zstd-9"
+ },
+ "budget_s": 180,
+ "note": "Thresholds and search space fixed before development/validation; selected block length/capacity frozen after development.",
+ "selected": {
+  "book1": {
+   "4096": {
+    "block_length": 64,
+    "capacity": 16,
+    "max_atoms": 2,
+    "dev_F_bytes": 4171,
+    "dev_G_bytes": 2219
+   }
+  },
+  "bbc": {
+   "4096": {
+    "block_length": 64,
+    "capacity": 16,
+    "max_atoms": 2,
+    "dev_F_bytes": 4171,
+    "dev_G_bytes": 1564
+   }
+  },
+  "7zr": {
+   "4096": {
+    "block_length": 64,
+    "capacity": 16,
+    "max_atoms": 2,
+    "dev_F_bytes": 3983,
+    "dev_G_bytes": 2847
+   }
+  },
+  "irs1040": {
+   "4096": {
+    "block_length": 64,
+    "capacity": 16,
+    "max_atoms": 2,
+    "dev_F_bytes": 4171,
+    "dev_G_bytes": 3627
+   }
+  },
+  "hopper": {
+   "4096": {
+    "block_length": 64,
+    "capacity": 16,
+    "max_atoms": 2,
+    "dev_F_bytes": 4171,
+    "dev_G_bytes": 3271
+   }
+  },
+  "ecg": {
+   "4096": {
+    "block_length": 64,
+    "capacity": 16,
+    "max_atoms": 2,
+    "dev_F_bytes": 4171,
+    "dev_G_bytes": 2694
+   }
+  }
+ },
+ "dev_summary": {
+  "elapsed_s": 0.507,
+  "regions": 6
+ }
+}

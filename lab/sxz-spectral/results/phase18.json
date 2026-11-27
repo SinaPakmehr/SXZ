@@ -1,0 +1,972 @@
+{
+ "phase": 18,
+ "episode": 1,
+ "protocol": {
+  "phase": 18,
+  "episode": 1,
+  "codec": "exact integer spectral representation v1.0",
+  "transforms": [
+   "identity",
+   "fwht",
+   "haar"
+  ],
+  "representations": [
+   "bytes",
+   "bitplanes"
+  ],
+  "block_lengths": [
+   64,
+   256,
+   1024,
+   4096
+  ],
+  "encodings": [
+   "varint",
+   "fixed",
+   "sparse"
+  ],
+  "sizes": [
+   4096
+  ],
+  "region_rule": "first and last disjoint 4 KiB regions; no padding",
+  "selection": "per file, smallest spectral G (archive + zstd-9) on dev; frozen before validation",
+  "controls": {
+   "A": "zstd-9 raw",
+   "B": "zstd-19 raw",
+   "C": "raw LZMA2 preset 6 +1",
+   "D": "matched identity block/bit-plane representation + zstd-9",
+   "E": "best delta/XOR/shuffle/global transform + zstd-9",
+   "F": "exact spectral archive alone",
+   "G": "spectral archive + zstd-9"
+  },
+  "gate": {
+   "min_saving": 0.01,
+   "min_files": 2,
+   "baseline": "min(A,B,C,D,E) per region"
+  }
+ },
+ "unit_tests": "passed",
+ "selected": {
+  "book1": {
+   "4096": {
+    "transform": "haar",
+    "transform_id": 2,
+    "representation": "bytes",
+    "representation_id": 0,
+    "block_length": 4096,
+    "encoding": "fixed",
+    "encoding_id": 1,
+    "dev_F_bytes": 4114,
+    "dev_G_bytes": 3632,
+    "dev_nonzero_fraction": 0.952881
+   }
+  },
+  "bbc": {
+   "4096": {
+    "transform": "haar",
+    "transform_id": 2,
+    "representation": "bytes",
+    "representation_id": 0,
+    "block_length": 64,
+    "encoding": "varint",
+    "encoding_id": 0,
+    "dev_F_bytes": 4695,
+    "dev_G_bytes": 3537,
+    "dev_nonzero_fraction": 0.967041
+   }
+  },
+  "7zr": {
+   "4096": {
+    "transform": "haar",
+    "transform_id": 2,
+    "representation": "bitplanes",
+    "representation_id": 1,
+    "block_length": 1024,
+    "encoding": "fixed",
+    "encoding_id": 1,
+    "dev_F_bytes": 8271,
+    "dev_G_bytes": 4286,
+    "dev_nonzero_fraction": 0.268005
+   }
+  },
+  "irs1040": {
+   "4096": {
+    "transform": "haar",
+    "transform_id": 2,
+    "representation": "bytes",
+    "representation_id": 0,
+    "block_length": 256,
+    "encoding": "fixed",
+    "encoding_id": 1,
+    "dev_F_bytes": 4607,
+    "dev_G_bytes": 4617,
+    "dev_nonzero_fraction": 0.988281
+   }
+  },
+  "hopper": {
+   "4096": {
+    "transform": "haar",
+    "transform_id": 2,
+    "representation": "bytes",
+    "representation_id": 0,
+    "block_length": 64,
+    "encoding": "varint",
+    "encoding_id": 0,
+    "dev_F_bytes": 4761,
+    "dev_G_bytes": 3953,
+    "dev_nonzero_fraction": 0.951904
+   }
+  },
+  "ecg": {
+   "4096": {
+    "transform": "haar",
+    "transform_id": 2,
+    "representation": "bitplanes",
+    "representation_id": 1,
+    "block_length": 4096,
+    "encoding": "fixed",
+    "encoding_id": 1,
+    "dev_F_bytes": 8223,
+    "dev_G_bytes": 3825,
+    "dev_nonzero_fraction": 0.388794
+   }
+  }
+ },
+ "dev_elapsed_s": 8.316,
+ "validation": {
+  "split": "val",
+  "elapsed_s": 0.868,
+  "files": [
+   {
+    "name": "book1",
+    "kind": "text",
+    "path": "datasets/corpus/book1",
+    "file_bytes": 768771,
+    "file_sha256": "9ffa47cd93bccd732f20e0c304203cfbc1b8a91bedac536e2d8f6051003d9951",
+    "available_sizes": [
+     4096
+    ],
+    "skipped_sizes": [],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 764675,
+      "length": 4096,
+      "sha256": "3e488a07b33278771d695225be56978b2727de14c4aa433d1f4a00b3527389a4",
+      "transform": "haar",
+      "transform_id": 2,
+      "representation": "bytes",
+      "representation_id": 0,
+      "block_length": 4096,
+      "encoding": "fixed",
+      "encoding_id": 1,
+      "block_count": 1,
+      "F_bytes": 4114,
+      "G_bytes": 3650,
+      "D_bytes": 2536,
+      "D_F_bytes": 7246,
+      "D_encoding": "varint",
+      "E_bytes": 2125,
+      "E_predictor": "global-xor",
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 2116,
+        "encode_s": 9e-05,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 2095,
+        "encode_s": 0.00051,
+        "decode_s": 2e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 2182,
+        "encode_s": 0.00521,
+        "decode_s": 0.00016,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "B_zstd19",
+      "baseline_bytes": 2095,
+      "G_vs_baseline": 1.742243,
+      "saving_vs_baseline": -0.742243,
+      "F_vs_original": 1.004395,
+      "G_vs_original": 0.891113,
+      "nonzero": 3893,
+      "total_coefficients": 4096,
+      "nonzero_fraction": 0.950439,
+      "max_abs": 111,
+      "distinct_values": 206,
+      "coefficient_bytes": 4099,
+      "index_bytes": 0,
+      "header_bytes": 15,
+      "top_coefficients": [
+       [
+        0,
+        203
+       ],
+       [
+        3,
+        106
+       ],
+       [
+        -2,
+        105
+       ],
+       [
+        4,
+        97
+       ],
+       [
+        -4,
+        97
+       ]
+      ],
+      "representative": {
+       "block_index": 0,
+       "offset": 0,
+       "plane": null,
+       "block_length": 4096,
+       "nonzero": 3893,
+       "total": 4096,
+       "nonzero_fraction": 0.950439453125,
+       "max_abs": 111,
+       "distinct_nonzero": 205,
+       "top_nonzero": [
+        [
+         3,
+         106
+        ],
+        [
+         -2,
+         105
+        ],
+        [
+         4,
+         97
+        ]
+       ],
+       "constant": false,
+       "periodic": false,
+       "period": 0
+      },
+      "encode_s": 0.00172,
+      "compress_s": 4e-05,
+      "decode_s": 0.00241,
+      "decode_g_s": 0.00247,
+      "decoded_ok": true,
+      "decoded_g_ok": true,
+      "D_decoded_ok": true,
+      "E_decoded_ok": true,
+      "decoded_sha256": "3e488a07b33278771d695225be56978b2727de14c4aa433d1f4a00b3527389a4",
+      "decoded_g_sha256": "3e488a07b33278771d695225be56978b2727de14c4aa433d1f4a00b3527389a4"
+     }
+    }
+   },
+   {
+    "name": "bbc",
+    "kind": "structured text",
+    "path": "datasets/corpus/bbc.rss.xml",
+    "file_bytes": 28260,
+    "file_sha256": "caa27d88f455e0fd10c408f7aaaaa73b16e9c0d502fa8c9cc11bc70551192b83",
+    "available_sizes": [
+     4096
+    ],
+    "skipped_sizes": [],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 24164,
+      "length": 4096,
+      "sha256": "7aded530ac0d3021a4a88726d9c74f83386561f7799ea840e2525dbf0516b32f",
+      "transform": "haar",
+      "transform_id": 2,
+      "representation": "bytes",
+      "representation_id": 0,
+      "block_length": 64,
+      "encoding": "varint",
+      "encoding_id": 0,
+      "block_count": 64,
+      "F_bytes": 4620,
+      "G_bytes": 3410,
+      "D_bytes": 1615,
+      "D_F_bytes": 6760,
+      "D_encoding": "varint",
+      "E_bytes": 1304,
+      "E_predictor": "global-xor",
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 1297,
+        "encode_s": 5e-05,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 1292,
+        "encode_s": 0.00122,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 1298,
+        "encode_s": 0.00693,
+        "decode_s": 0.00013,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "B_zstd19",
+      "baseline_bytes": 1292,
+      "G_vs_baseline": 2.639319,
+      "saving_vs_baseline": -1.639319,
+      "F_vs_original": 1.12793,
+      "G_vs_original": 0.83252,
+      "nonzero": 3962,
+      "total_coefficients": 4096,
+      "nonzero_fraction": 0.967285,
+      "max_abs": 108,
+      "distinct_values": 191,
+      "coefficient_bytes": 4606,
+      "index_bytes": 0,
+      "header_bytes": 14,
+      "top_coefficients": [
+       [
+        0,
+        134
+       ],
+       [
+        2,
+        104
+       ],
+       [
+        3,
+        90
+       ],
+       [
+        -7,
+        83
+       ],
+       [
+        1,
+        80
+       ]
+      ],
+      "representative": {
+       "block_index": 39,
+       "offset": 2496,
+       "plane": null,
+       "block_length": 64,
+       "nonzero": 53,
+       "total": 64,
+       "nonzero_fraction": 0.828125,
+       "max_abs": 98,
+       "distinct_nonzero": 44,
+       "top_nonzero": [
+        [
+         15,
+         3
+        ],
+        [
+         5,
+         2
+        ],
+        [
+         18,
+         2
+        ]
+       ],
+       "constant": false,
+       "periodic": false,
+       "period": 0
+      },
+      "encode_s": 0.00393,
+      "compress_s": 6e-05,
+      "decode_s": 0.00151,
+      "decode_g_s": 0.00151,
+      "decoded_ok": true,
+      "decoded_g_ok": true,
+      "D_decoded_ok": true,
+      "E_decoded_ok": true,
+      "decoded_sha256": "7aded530ac0d3021a4a88726d9c74f83386561f7799ea840e2525dbf0516b32f",
+      "decoded_g_sha256": "7aded530ac0d3021a4a88726d9c74f83386561f7799ea840e2525dbf0516b32f"
+     }
+    }
+   },
+   {
+    "name": "7zr",
+    "kind": "executable",
+    "path": "datasets/corpus/7zr.exe",
+    "file_bytes": 602624,
+    "file_sha256": "256feca8e274e5da655e2a284fabafd9f554365eb164862089dacd4e8276d282",
+    "available_sizes": [
+     4096
+    ],
+    "skipped_sizes": [],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 598528,
+      "length": 4096,
+      "sha256": "3b3e5887681ee6b7a73db2735ef224947dc3ee805e3363838aa995163294dcf6",
+      "transform": "haar",
+      "transform_id": 2,
+      "representation": "bitplanes",
+      "representation_id": 1,
+      "block_length": 1024,
+      "encoding": "fixed",
+      "encoding_id": 1,
+      "block_count": 4,
+      "F_bytes": 3151,
+      "G_bytes": 1056,
+      "D_bytes": 756,
+      "D_F_bytes": 2127,
+      "D_encoding": "fixed",
+      "E_bytes": 956,
+      "E_predictor": "global-xor",
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 948,
+        "encode_s": 2e-05,
+        "decode_s": 0.0,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 936,
+        "encode_s": 0.0001,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 983,
+        "encode_s": 0.00476,
+        "decode_s": 0.0001,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "D",
+      "baseline_bytes": 756,
+      "G_vs_baseline": 1.396825,
+      "saving_vs_baseline": -0.396825,
+      "F_vs_original": 0.769287,
+      "G_vs_original": 0.257812,
+      "nonzero": 2473,
+      "total_coefficients": 32768,
+      "nonzero_fraction": 0.07547,
+      "max_abs": 1,
+      "distinct_values": 3,
+      "coefficient_bytes": 3136,
+      "index_bytes": 0,
+      "header_bytes": 15,
+      "top_coefficients": [
+       [
+        0,
+        30295
+       ],
+       [
+        -1,
+        1522
+       ],
+       [
+        1,
+        951
+       ]
+      ],
+      "representative": {
+       "block_index": 1,
+       "offset": 1024,
+       "plane": 1,
+       "block_length": 1024,
+       "nonzero": 19,
+       "total": 1024,
+       "nonzero_fraction": 0.0185546875,
+       "max_abs": 1,
+       "distinct_nonzero": 1,
+       "top_nonzero": [
+        [
+         -1,
+         19
+        ]
+       ],
+       "constant": false,
+       "periodic": false,
+       "period": 0
+      },
+      "encode_s": 0.00855,
+      "compress_s": 6e-05,
+      "decode_s": 0.02081,
+      "decode_g_s": 0.00708,
+      "decoded_ok": true,
+      "decoded_g_ok": true,
+      "D_decoded_ok": true,
+      "E_decoded_ok": true,
+      "decoded_sha256": "3b3e5887681ee6b7a73db2735ef224947dc3ee805e3363838aa995163294dcf6",
+      "decoded_g_sha256": "3b3e5887681ee6b7a73db2735ef224947dc3ee805e3363838aa995163294dcf6"
+     }
+    }
+   },
+   {
+    "name": "irs1040",
+    "kind": "pdf",
+    "path": "datasets/corpus/irs1040.pdf",
+    "file_bytes": 220237,
+    "file_sha256": "3d31c226df0d189ced80e039d01cf0f8820c1019681a0f0ca6264de277b7e982",
+    "available_sizes": [
+     4096
+    ],
+    "skipped_sizes": [],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 216141,
+      "length": 4096,
+      "sha256": "406d274be04e08ff6de4ab6f746d3df029b9493f436e314ca11a80fa6a91e708",
+      "transform": "haar",
+      "transform_id": 2,
+      "representation": "bytes",
+      "representation_id": 0,
+      "block_length": 256,
+      "encoding": "fixed",
+      "encoding_id": 1,
+      "block_count": 16,
+      "F_bytes": 3699,
+      "G_bytes": 2619,
+      "D_bytes": 1873,
+      "D_F_bytes": 2415,
+      "D_encoding": "fixed",
+      "E_bytes": 1630,
+      "E_predictor": "global-add",
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 1619,
+        "encode_s": 4e-05,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 1607,
+        "encode_s": 0.00025,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 1534,
+        "encode_s": 0.00597,
+        "decode_s": 0.00013,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 1534,
+      "G_vs_baseline": 1.707301,
+      "saving_vs_baseline": -0.707301,
+      "F_vs_original": 0.903076,
+      "G_vs_original": 0.639404,
+      "nonzero": 2502,
+      "total_coefficients": 4096,
+      "nonzero_fraction": 0.61084,
+      "max_abs": 246,
+      "distinct_values": 250,
+      "coefficient_bytes": 3684,
+      "index_bytes": 0,
+      "header_bytes": 15,
+      "top_coefficients": [
+       [
+        0,
+        1594
+       ],
+       [
+        1,
+        102
+       ],
+       [
+        -1,
+        93
+       ],
+       [
+        3,
+        92
+       ],
+       [
+        -2,
+        92
+       ]
+      ],
+      "representative": {
+       "block_index": 11,
+       "offset": 2816,
+       "plane": null,
+       "block_length": 256,
+       "nonzero": 67,
+       "total": 256,
+       "nonzero_fraction": 0.26171875,
+       "max_abs": 73,
+       "distinct_nonzero": 36,
+       "top_nonzero": [
+        [
+         -1,
+         5
+        ],
+        [
+         1,
+         4
+        ],
+        [
+         -2,
+         4
+        ]
+       ],
+       "constant": false,
+       "periodic": false,
+       "period": 0
+      },
+      "encode_s": 0.00181,
+      "compress_s": 3e-05,
+      "decode_s": 0.00108,
+      "decode_g_s": 0.00106,
+      "decoded_ok": true,
+      "decoded_g_ok": true,
+      "D_decoded_ok": true,
+      "E_decoded_ok": true,
+      "decoded_sha256": "406d274be04e08ff6de4ab6f746d3df029b9493f436e314ca11a80fa6a91e708",
+      "decoded_g_sha256": "406d274be04e08ff6de4ab6f746d3df029b9493f436e314ca11a80fa6a91e708"
+     }
+    }
+   },
+   {
+    "name": "hopper",
+    "kind": "bmp",
+    "path": "datasets/corpus/hopper.bmp",
+    "file_bytes": 49290,
+    "file_sha256": "f1a94f3add0a2e54365dc94b51da099bd0de8289b955fc8304a8627b7b0d6aea",
+    "available_sizes": [
+     4096
+    ],
+    "skipped_sizes": [],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 45194,
+      "length": 4096,
+      "sha256": "1c198835a8e29f03e987fb9f75fe1438274c0738a667e161620ba2cceb5f6f07",
+      "transform": "haar",
+      "transform_id": 2,
+      "representation": "bytes",
+      "representation_id": 0,
+      "block_length": 64,
+      "encoding": "varint",
+      "encoding_id": 0,
+      "block_count": 64,
+      "F_bytes": 5387,
+      "G_bytes": 4486,
+      "D_bytes": 3773,
+      "D_F_bytes": 4040,
+      "D_encoding": "fixed",
+      "E_bytes": 3225,
+      "E_predictor": "delta",
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 3430,
+        "encode_s": 7e-05,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 3294,
+        "encode_s": 0.00033,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 2933,
+        "encode_s": 0.00664,
+        "decode_s": 0.0002,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 2933,
+      "G_vs_baseline": 1.529492,
+      "saving_vs_baseline": -0.529492,
+      "F_vs_original": 1.315186,
+      "G_vs_original": 1.095215,
+      "nonzero": 4054,
+      "total_coefficients": 4096,
+      "nonzero_fraction": 0.989746,
+      "max_abs": 240,
+      "distinct_values": 390,
+      "coefficient_bytes": 5373,
+      "index_bytes": 0,
+      "header_bytes": 14,
+      "top_coefficients": [
+       [
+        9,
+        61
+       ],
+       [
+        38,
+        58
+       ],
+       [
+        3,
+        53
+       ],
+       [
+        40,
+        52
+       ],
+       [
+        37,
+        49
+       ]
+      ],
+      "representative": {
+       "block_index": 5,
+       "offset": 320,
+       "plane": null,
+       "block_length": 64,
+       "nonzero": 60,
+       "total": 64,
+       "nonzero_fraction": 0.9375,
+       "max_abs": 152,
+       "distinct_nonzero": 50,
+       "top_nonzero": [
+        [
+         4,
+         3
+        ],
+        [
+         5,
+         2
+        ],
+        [
+         37,
+         2
+        ]
+       ],
+       "constant": false,
+       "periodic": false,
+       "period": 0
+      },
+      "encode_s": 0.00287,
+      "compress_s": 8e-05,
+      "decode_s": 0.00155,
+      "decode_g_s": 0.00155,
+      "decoded_ok": true,
+      "decoded_g_ok": true,
+      "D_decoded_ok": true,
+      "E_decoded_ok": true,
+      "decoded_sha256": "1c198835a8e29f03e987fb9f75fe1438274c0738a667e161620ba2cceb5f6f07",
+      "decoded_g_sha256": "1c198835a8e29f03e987fb9f75fe1438274c0738a667e161620ba2cceb5f6f07"
+     }
+    }
+   },
+   {
+    "name": "ecg",
+    "kind": "ecg",
+    "path": "datasets/corpus/ecg-holdout.bin",
+    "file_bytes": 262144,
+    "file_sha256": "933cd8ca9cb6bc5ffa273a11e6b146c64b74ab6847239fa3cc472f03df9a9f57",
+    "available_sizes": [
+     4096
+    ],
+    "skipped_sizes": [],
+    "regions": {
+     "4096": {
+      "split": "val",
+      "offset": 258048,
+      "length": 4096,
+      "sha256": "a390876e1f1b18c1a69e598e850ad21e81cbe6d5f0feb3ee0cb81d40b73a75e9",
+      "transform": "haar",
+      "transform_id": 2,
+      "representation": "bitplanes",
+      "representation_id": 1,
+      "block_length": 4096,
+      "encoding": "fixed",
+      "encoding_id": 1,
+      "block_count": 1,
+      "F_bytes": 8223,
+      "G_bytes": 3759,
+      "D_bytes": 2654,
+      "D_F_bytes": 4127,
+      "D_encoding": "fixed",
+      "E_bytes": 2241,
+      "E_predictor": "shuffle3",
+      "controls": {
+       "A_zstd9": {
+        "size_bytes": 2569,
+        "encode_s": 8e-05,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "B_zstd19": {
+        "size_bytes": 2503,
+        "encode_s": 0.00041,
+        "decode_s": 1e-05,
+        "decoded_ok": true
+       },
+       "C_lzma2": {
+        "size_bytes": 2076,
+        "encode_s": 0.00563,
+        "decode_s": 0.00019,
+        "decoded_ok": true
+       }
+      },
+      "baseline_name": "C_lzma2",
+      "baseline_bytes": 2076,
+      "G_vs_baseline": 1.810694,
+      "saving_vs_baseline": -0.810694,
+      "F_vs_original": 2.007568,
+      "G_vs_original": 0.917725,
+      "nonzero": 12626,
+      "total_coefficients": 32768,
+      "nonzero_fraction": 0.385315,
+      "max_abs": 1,
+      "distinct_values": 3,
+      "coefficient_bytes": 8208,
+      "index_bytes": 0,
+      "header_bytes": 15,
+      "top_coefficients": [
+       [
+        0,
+        20142
+       ],
+       [
+        -1,
+        6474
+       ],
+       [
+        1,
+        6152
+       ]
+      ],
+      "representative": {
+       "block_index": 0,
+       "offset": 0,
+       "plane": 3,
+       "block_length": 4096,
+       "nonzero": 1088,
+       "total": 4096,
+       "nonzero_fraction": 0.265625,
+       "max_abs": 1,
+       "distinct_nonzero": 2,
+       "top_nonzero": [
+        [
+         -1,
+         553
+        ],
+        [
+         1,
+         535
+        ]
+       ],
+       "constant": false,
+       "periodic": false,
+       "period": 0
+      },
+      "encode_s": 0.01113,
+      "compress_s": 0.00014,
+      "decode_s": 0.01205,
+      "decode_g_s": 0.02193,
+      "decoded_ok": true,
+      "decoded_g_ok": true,
+      "D_decoded_ok": true,
+      "E_decoded_ok": true,
+      "decoded_sha256": "a390876e1f1b18c1a69e598e850ad21e81cbe6d5f0feb3ee0cb81d40b73a75e9",
+      "decoded_g_sha256": "a390876e1f1b18c1a69e598e850ad21e81cbe6d5f0feb3ee0cb81d40b73a75e9"
+     }
+    }
+   }
+  ]
+ },
+ "gate": {
+  "files": [
+   {
+    "name": "book1",
+    "sizes": [
+     4096
+    ],
+    "N": 4096,
+    "F": 4114,
+    "G": 3650,
+    "baseline": 2095,
+    "saving_vs_baseline": -0.742243,
+    "primary_pass": false,
+    "nonzero_fraction": 0.950439
+   },
+   {
+    "name": "bbc",
+    "sizes": [
+     4096
+    ],
+    "N": 4096,
+    "F": 4620,
+    "G": 3410,
+    "baseline": 1292,
+    "saving_vs_baseline": -1.639319,
+    "primary_pass": false,
+    "nonzero_fraction": 0.967285
+   },
+   {
+    "name": "7zr",
+    "sizes": [
+     4096
+    ],
+    "N": 4096,
+    "F": 3151,
+    "G": 1056,
+    "baseline": 756,
+    "saving_vs_baseline": -0.396825,
+    "primary_pass": false,
+    "nonzero_fraction": 0.07547
+   },
+   {
+    "name": "irs1040",
+    "sizes": [
+     4096
+    ],
+    "N": 4096,
+    "F": 3699,
+    "G": 2619,
+    "baseline": 1534,
+    "saving_vs_baseline": -0.707301,
+    "primary_pass": false,
+    "nonzero_fraction": 0.61084
+   },
+   {
+    "name": "hopper",
+    "sizes": [
+     4096
+    ],
+    "N": 4096,
+    "F": 5387,
+    "G": 4486,
+    "baseline": 2933,
+    "saving_vs_baseline": -0.529492,
+    "primary_pass": false,
+    "nonzero_fraction": 0.989746
+   },
+   {
+    "name": "ecg",
+    "sizes": [
+     4096
+    ],
+    "N": 4096,
+    "F": 8223,
+    "G": 3759,
+    "baseline": 2076,
+    "saving_vs_baseline": -0.810694,
+    "primary_pass": false,
+    "nonzero_fraction": 0.385315
+   }
+  ],
+  "primary": {
+   "min_saving": 0.01,
+   "min_files": 2,
+   "qualifying_files": [],
+   "passed": false
+  },
+  "passed": false
+ },
+ "elapsed_s": 0.87
+}

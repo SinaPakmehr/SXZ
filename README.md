@@ -86,6 +86,22 @@ The reports, experimental code, benchmark results, and scientific references fro
 
 ---
 
+## Finding a Pattern Is Only Half the Story
+
+After fifteen phases, I found myself asking a slightly different question. What if the way we represent the numbers is hiding the mathematical relationships between them? Instead of treating a file as a single long sequence, could we arrange it in two, three, or even sixteen dimensions and find a simpler description there?
+
+Over the next five phases, I tried parameterized mathematical grammars, exact tensor decompositions, Boolean decision diagrams, multidimensional recurrences, spectral transforms and learned algebraic dictionaries. Most of the results were negative. One of the experiments even had to be corrected and repeated after we noticed that the implemented Haar transform did not match the intended mathematics. I've kept the original results alongside the corrected ones; I think these details matter just as much as the final numbers.
+
+But something interesting happened when we stopped asking the dictionary algorithm to find useful combinations and started looking directly for algebraic relationships. We found exact XOR dependencies between eight-byte blocks in an executable. Rather than immediately building another compressor, we investigated where those relationships came from. They were concentrated in the executable's relocation table, and related structures appeared in five other executables and libraries.
+
+We could actually describe one set of 63 eight-byte vectors in 427 bytes instead of 504 by using a basis and packed coefficient masks. The catch? Once we included the information needed to reconstruct the entire 4 KiB region, our compressed description was 1,092 bytes, while a simple byte shuffle followed by Zstandard needed just 502 bytes.
+
+That made me think: perhaps discovering a mathematical relationship is only half the problem. The other half is finding a language in which describing that relationship, and everything needed to use it, is genuinely economical. And perhaps understanding how the data was generated is more useful than searching blindly for another formula.
+
+I've added the reports and evidence from these five phases, including the negative results and the corrections. For now, I want to spend more time thinking about the mathematical formulation of the problem before starting another experimental architecture. If any of these findings give you a different idea, I'd love to hear it.
+
+---
+
 ## What Is SXZ?
 
 SXZ is an experimental research framework investigating mathematical and algorithmic descriptions of digital information for lossless data compression.
@@ -124,6 +140,11 @@ The central research question is:
 | 13 — Scaling | File size and description cost | Up to 100 MiB; rare affine hits, none cheaper than zstd-9 on the same span. | [Report](research/phases/13-scaling.md) · [Code](lab/sxz-scaling/) |
 | 14 — Number theory | 2-adic rationals, coordinate functions, Boolean algebra | 12 real 2-adic spans, simplified to 16-bit progressions with carry; no archive gain. | [Report](research/phases/14-number-theory.md) · [Code](lab/sxz-2adic/) |
 | 15 — Image math | Pixel functions, adaptive regions and compositional networks | Adaptive partition gains; isolated 9-byte crop win, no complete-image network win. | [Report](research/phases/15-image-math.md) · [Code](lab/sxz-image-math/) |
+| 16 — Parameterized mathematical grammar | Parameterized templates and ordinary grammar | Parameterized templates saved 278 B against ordinary grammar across validation; no meaningful independent gain. | [Report](research/phases/16-math-grammar.md) · [Code](lab/sxz-math-grammar/) |
+| 17 — Multidimensional algebraic representation | Exact finite-field tensors, decision diagrams and recurrences | All three bounded approaches lost to matched controls. | [Report](research/phases/17-emar.md) · [Code](lab/sxz-emar/) |
+| 18 — Exact spectral representation | Walsh–Hadamard and integer Haar transforms | Haar implementation corrected and rerun; no validation file beat its baseline. | [Report](research/phases/18-spectral.md) · [Code](lab/sxz-spectral/) |
+| 19 — Adaptive algebraic dictionaries | Sparse XOR compositions and exhaustive relationship census | No selected multi-atom compositions; local exact four-value relations found at 8 B. | [Report](research/phases/19-xordict.md) · [Code](lab/sxz-xordict/) |
+| 20 — Mathematical structure attribution | Executable-format dependencies and systematic basis coding | Dependencies replicated in five additional executables; value-set gains did not survive full-region costs. | [Report](research/phases/20-attribution.md) · [Code](lab/sxz-attribution/) |
 
 ## Selected Experimental Findings
 
@@ -138,12 +159,17 @@ The central research question is:
 | Scaling ([Phase 13](research/phases/13-scaling.md)) | At 100 MiB, genuine affine coverage of the mixed archive was 13,692 B (0.013%); hybrid sizes were estimates and none improved on zstd-9. |
 | 2-adic reconstruction ([Phase 14](research/phases/14-number-theory.md)) | Twelve selected real spans: 524 B of packed spans described in 229 B; a simpler arithmetic description was later found. No archive-level gain. |
 | Image math ([Phase 15](research/phases/15-image-math.md)) | Adaptive logo: 3,529 B versus PNG's 4,157 B, also achieved by the non-geometric control. Network: isolated 9 B saving (0.0104%) on a gull crop; no complete-image win. Pixel-level only. |
+| Mathematical grammar ([Phase 16](research/phases/16-math-grammar.md)) | 138,565 → 138,287 B versus ordinary grammar (0.20% smaller); ordinary transform + grammar was 135,562 B and LZMA2 was 83,457 B. |
+| Multidimensional algebra ([Phase 17](research/phases/17-emar.md)) | Exact tensor and decision-diagram hybrids were 1.209× and 2.957× their respective best controls; bounded recurrences were 2.380× on smaller 4 KiB regions. No branch met its gate. |
+| Spectral representations ([Phase 18](research/phases/18-spectral.md)) | Corrected Haar lifting and rerun: aggregate hybrid/best-control ratio 1.776; 0/6 validation files saved at least 1%. Original nonstandard transform results are preserved separately. |
+| Algebraic dictionaries ([Phase 19](research/phases/19-xordict.md)) | Zero selected multi-atom encodings; exhaustive eight-byte census found 139 four-value relations, with 3.55% nontrivial validation coverage overall. |
+| Structure attribution ([Phase 20](research/phases/20-attribution.md)) | 63 vectors, GF(2) rank 26; actual systematic dictionary 427 B versus 504 B raw values. Full 4 KiB region: 1,092 B after zstd-9 versus 502 B for shuffle2 + zstd-9. Five additional executable regions replicated coverage, not savings. |
 
 These are results from different experiments, not a single comparative benchmark. Coverage is not compression savings; local savings are not whole-file savings. The linked reports document costs, settings, controls and limitations. See [selected figures](figures/README.md) and [consolidated findings](research/findings.md).
 
 ## Current Research Status
 
-After fifteen phases, mathematical descriptions have proved useful when a recoverable law is present, and ordinary reversible transforms have sometimes improved compression. I have not yet established a meaningful, repeatable, independent mathematical compression gain on general real-world files. Every generator, parameter, address, residual and reconstruction cost matters. SXZ remains an open experimental project, not a product claim or a proposed way around the fundamental limits of lossless compression.
+After twenty phases, mathematical descriptions have proved useful when a recoverable law is present, and ordinary reversible transforms have sometimes improved compression. We have also found exact algebraic dependencies in real executable data and attributed them to structured format fields. I have not yet established a meaningful, repeatable, independent mathematical compression gain on general real-world files. Every generator, parameter, address, occurrence map, residual and reconstruction cost matters. The tested Phase 16–20 branches are closed; the next research direction is open, with no Phase 21 experiment reported. SXZ remains an open experimental project, not a product claim or a proposed way around the fundamental limits of lossless compression.
 
 ## Getting Started
 

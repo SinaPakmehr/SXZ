@@ -1,0 +1,4553 @@
+{
+ "phase": 17,
+ "episode": 2,
+ "protocol": {
+  "phase": 17,
+  "episode": 2,
+  "codec": "exact reduced ordered BDD representation v1.0",
+  "representations": [
+   "separate",
+   "shared",
+   "mtbdd"
+  ],
+  "orders": [
+   "msb",
+   "lsb",
+   "odd-even",
+   "reversed-grouping"
+  ],
+  "sizes": [
+   4096,
+   16384,
+   65536
+  ],
+  "region_rule": "first and last disjoint equal regions; skip when file_bytes < 2*size; no padding",
+  "selection": "per file/size smallest decision-diagram+zstd9 (G) on dev, frozen before validation",
+  "reductions": [
+   "merge identical (variable, low, high) nodes",
+   "eliminate nodes whose low and high children are identical"
+  ],
+  "serialization": "level-wise records; mode 0 absolute varints, mode 1 delta varints; roots, terminals, order, levels and counts charged",
+  "controls": {
+   "A": "zstd-9 raw",
+   "B": "zstd-19 raw",
+   "C": "raw LZMA2 preset 6 +1 byte",
+   "D": "matched bit-plane + coordinate transform + zstd-9",
+   "E": "selected representation without redundant-variable elimination (exact)",
+   "E_zstd9": "same no-redundant graph + zstd-9",
+   "F": "exact selected decision diagram",
+   "G": "selected decision diagram + zstd-9"
+  },
+  "gate": {
+   "min_saving": 0.01,
+   "min_files": 2,
+   "baseline": "min(A,B,C,D,E,E_zstd9) per region, summed per file"
+  }
+ },
+ "unit_tests": "passed",
+ "split": "dev",
+ "elapsed_s": 27.328,
+ "files": [
+  {
+   "name": "book1",
+   "kind": "text",
+   "path": "datasets/corpus/book1",
+   "file_bytes": 768771,
+   "file_sha256": "9ffa47cd93bccd732f20e0c304203cfbc1b8a91bedac536e2d8f6051003d9951",
+   "available_sizes": [
+    4096,
+    16384,
+    65536
+   ],
+   "skipped_sizes": [],
+   "regions": {
+    "4096": {
+     "split": "dev",
+     "offset": 0,
+     "length": 4096,
+     "sha256": "72c0a469aa3a13c6267f4d2dc24c759117e13fb2a4376219b88e983dab2463e3",
+     "size": 4096,
+     "rows": [
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 4227,
+       "terminal_count": 2,
+       "exact_bytes": 12813,
+       "compressed_bytes": 6773,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 16065,
+        "merged_identical_nodes": 12468,
+        "created_nodes": 4227
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0239
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 4274,
+       "terminal_count": 2,
+       "exact_bytes": 12895,
+       "compressed_bytes": 6875,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 16479,
+        "merged_identical_nodes": 12007,
+        "created_nodes": 4274
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0226
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 4288,
+       "terminal_count": 2,
+       "exact_bytes": 12921,
+       "compressed_bytes": 6893,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 16687,
+        "merged_identical_nodes": 11785,
+        "created_nodes": 4288
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0228
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 4298,
+       "terminal_count": 2,
+       "exact_bytes": 12967,
+       "compressed_bytes": 6944,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 16582,
+        "merged_identical_nodes": 11880,
+        "created_nodes": 4298
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0229
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 3436,
+       "terminal_count": 2,
+       "exact_bytes": 13074,
+       "compressed_bytes": 10524,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 16065,
+        "merged_identical_nodes": 13259,
+        "created_nodes": 3436
+       },
+       "shared_across_planes": 277,
+       "encode_s": 0.0201
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 3421,
+       "terminal_count": 2,
+       "exact_bytes": 12990,
+       "compressed_bytes": 10433,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 16479,
+        "merged_identical_nodes": 12860,
+        "created_nodes": 3421
+       },
+       "shared_across_planes": 302,
+       "encode_s": 0.0195
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 3412,
+       "terminal_count": 2,
+       "exact_bytes": 12922,
+       "compressed_bytes": 10389,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 16687,
+        "merged_identical_nodes": 12661,
+        "created_nodes": 3412
+       },
+       "shared_across_planes": 307,
+       "encode_s": 0.0447
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 3426,
+       "terminal_count": 2,
+       "exact_bytes": 12990,
+       "compressed_bytes": 10507,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 16582,
+        "merged_identical_nodes": 12752,
+        "created_nodes": 3426
+       },
+       "shared_across_planes": 300,
+       "encode_s": 0.0688
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 2285,
+       "terminal_count": 67,
+       "exact_bytes": 8271,
+       "compressed_bytes": 6588,
+       "mode": 1,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 34,
+        "merged_identical_nodes": 1776,
+        "created_nodes": 2285
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0144
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 2621,
+       "terminal_count": 67,
+       "exact_bytes": 9154,
+       "compressed_bytes": 7480,
+       "mode": 1,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 133,
+        "merged_identical_nodes": 1341,
+        "created_nodes": 2621
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0167
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 2607,
+       "terminal_count": 67,
+       "exact_bytes": 9136,
+       "compressed_bytes": 7444,
+       "mode": 1,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 120,
+        "merged_identical_nodes": 1368,
+        "created_nodes": 2607
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0142
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 2619,
+       "terminal_count": 67,
+       "exact_bytes": 9143,
+       "compressed_bytes": 7469,
+       "mode": 1,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 136,
+        "merged_identical_nodes": 1340,
+        "created_nodes": 2619
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0114
+      }
+     ],
+     "best_g": {
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 2285,
+      "terminal_count": 67,
+      "exact_bytes": 8271,
+      "compressed_bytes": 6588,
+      "mode": 1,
+      "stats": {
+       "candidates": 4095,
+       "eliminated_equal_children": 34,
+       "merged_identical_nodes": 1776,
+       "created_nodes": 2285
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.0144
+     },
+     "best_f": {
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 2285,
+      "terminal_count": 67,
+      "exact_bytes": 8271,
+      "compressed_bytes": 6588,
+      "mode": 1,
+      "stats": {
+       "candidates": 4095,
+       "eliminated_equal_children": 34,
+       "merged_identical_nodes": 1776,
+       "created_nodes": 2285
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.0144
+     },
+     "selected_exact": true
+    },
+    "16384": {
+     "split": "dev",
+     "offset": 0,
+     "length": 16384,
+     "sha256": "0fe45de0f80c41df3a2b0358d9c13f03535745982cbe0b667bc1b6025f2e488b",
+     "size": 16384,
+     "rows": [
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 13626,
+       "terminal_count": 2,
+       "exact_bytes": 49545,
+       "compressed_bytes": 25768,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 64669,
+        "merged_identical_nodes": 52769,
+        "created_nodes": 13626
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.1249
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 13831,
+       "terminal_count": 2,
+       "exact_bytes": 50319,
+       "compressed_bytes": 26029,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 66884,
+        "merged_identical_nodes": 50349,
+        "created_nodes": 13831
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.1557
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 13879,
+       "terminal_count": 2,
+       "exact_bytes": 50436,
+       "compressed_bytes": 26215,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 67094,
+        "merged_identical_nodes": 50091,
+        "created_nodes": 13879
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.1229
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 13837,
+       "terminal_count": 2,
+       "exact_bytes": 50280,
+       "compressed_bytes": 26162,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 66950,
+        "merged_identical_nodes": 50277,
+        "created_nodes": 13837
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0909
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 12177,
+       "terminal_count": 2,
+       "exact_bytes": 47791,
+       "compressed_bytes": 43563,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 64669,
+        "merged_identical_nodes": 54218,
+        "created_nodes": 12177
+       },
+       "shared_across_planes": 612,
+       "encode_s": 0.0931
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 12256,
+       "terminal_count": 2,
+       "exact_bytes": 47983,
+       "compressed_bytes": 43728,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 66884,
+        "merged_identical_nodes": 51924,
+        "created_nodes": 12256
+       },
+       "shared_across_planes": 655,
+       "encode_s": 0.0931
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 12255,
+       "terminal_count": 2,
+       "exact_bytes": 47943,
+       "compressed_bytes": 43725,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 67094,
+        "merged_identical_nodes": 51715,
+        "created_nodes": 12255
+       },
+       "shared_across_planes": 692,
+       "encode_s": 0.0768
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 12245,
+       "terminal_count": 2,
+       "exact_bytes": 47882,
+       "compressed_bytes": 43523,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 66950,
+        "merged_identical_nodes": 51869,
+        "created_nodes": 12245
+       },
+       "shared_across_planes": 658,
+       "encode_s": 0.073
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 7401,
+       "terminal_count": 72,
+       "exact_bytes": 28264,
+       "compressed_bytes": 24531,
+       "mode": 1,
+       "stats": {
+        "candidates": 16383,
+        "eliminated_equal_children": 161,
+        "merged_identical_nodes": 8821,
+        "created_nodes": 7401
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0254
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 9055,
+       "terminal_count": 72,
+       "exact_bytes": 33720,
+       "compressed_bytes": 30595,
+       "mode": 1,
+       "stats": {
+        "candidates": 16383,
+        "eliminated_equal_children": 562,
+        "merged_identical_nodes": 6766,
+        "created_nodes": 9055
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0307
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 9038,
+       "terminal_count": 72,
+       "exact_bytes": 33672,
+       "compressed_bytes": 30557,
+       "mode": 1,
+       "stats": {
+        "candidates": 16383,
+        "eliminated_equal_children": 537,
+        "merged_identical_nodes": 6808,
+        "created_nodes": 9038
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0301
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 9045,
+       "terminal_count": 72,
+       "exact_bytes": 33679,
+       "compressed_bytes": 30558,
+       "mode": 1,
+       "stats": {
+        "candidates": 16383,
+        "eliminated_equal_children": 569,
+        "merged_identical_nodes": 6769,
+        "created_nodes": 9045
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0307
+      }
+     ],
+     "best_g": {
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 7401,
+      "terminal_count": 72,
+      "exact_bytes": 28264,
+      "compressed_bytes": 24531,
+      "mode": 1,
+      "stats": {
+       "candidates": 16383,
+       "eliminated_equal_children": 161,
+       "merged_identical_nodes": 8821,
+       "created_nodes": 7401
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.0254
+     },
+     "best_f": {
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 7401,
+      "terminal_count": 72,
+      "exact_bytes": 28264,
+      "compressed_bytes": 24531,
+      "mode": 1,
+      "stats": {
+       "candidates": 16383,
+       "eliminated_equal_children": 161,
+       "merged_identical_nodes": 8821,
+       "created_nodes": 7401
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.0254
+     },
+     "selected_exact": true
+    },
+    "65536": {
+     "split": "dev",
+     "offset": 0,
+     "length": 65536,
+     "sha256": "bff4aa361cf7f225eb42322009f9e0f052680885a6ba5ba3dd519c83426d0d83",
+     "size": 65536,
+     "rows": [
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 47721,
+       "terminal_count": 2,
+       "exact_bytes": 185202,
+       "compressed_bytes": 107653,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 257539,
+        "merged_identical_nodes": 219020,
+        "created_nodes": 47721
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.4318
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 48713,
+       "terminal_count": 2,
+       "exact_bytes": 188760,
+       "compressed_bytes": 109402,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 267186,
+        "merged_identical_nodes": 208381,
+        "created_nodes": 48713
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.4815
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 48700,
+       "terminal_count": 2,
+       "exact_bytes": 188689,
+       "compressed_bytes": 109719,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 267149,
+        "merged_identical_nodes": 208431,
+        "created_nodes": 48700
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.4031
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 48783,
+       "terminal_count": 2,
+       "exact_bytes": 189016,
+       "compressed_bytes": 109671,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 267405,
+        "merged_identical_nodes": 208092,
+        "created_nodes": 48783
+       },
+       "shared_across_planes": 0,
+       "encode_s": 1.3526
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 43161,
+       "terminal_count": 2,
+       "exact_bytes": 180442,
+       "compressed_bytes": 174271,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 257539,
+        "merged_identical_nodes": 223580,
+        "created_nodes": 43161
+       },
+       "shared_across_planes": 3125,
+       "encode_s": 2.0559
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 43838,
+       "terminal_count": 2,
+       "exact_bytes": 184594,
+       "compressed_bytes": 175581,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 267186,
+        "merged_identical_nodes": 213256,
+        "created_nodes": 43838
+       },
+       "shared_across_planes": 3272,
+       "encode_s": 2.3322
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 43841,
+       "terminal_count": 2,
+       "exact_bytes": 184751,
+       "compressed_bytes": 178123,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 267149,
+        "merged_identical_nodes": 213290,
+        "created_nodes": 43841
+       },
+       "shared_across_planes": 3229,
+       "encode_s": 3.1392
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 43837,
+       "terminal_count": 2,
+       "exact_bytes": 184635,
+       "compressed_bytes": 178053,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 267405,
+        "merged_identical_nodes": 213038,
+        "created_nodes": 43837
+       },
+       "shared_across_planes": 3308,
+       "encode_s": 0.9648
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 24375,
+       "terminal_count": 76,
+       "exact_bytes": 95420,
+       "compressed_bytes": 89014,
+       "mode": 1,
+       "stats": {
+        "candidates": 65535,
+        "eliminated_equal_children": 625,
+        "merged_identical_nodes": 40535,
+        "created_nodes": 24375
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.2364
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 32665,
+       "terminal_count": 76,
+       "exact_bytes": 125772,
+       "compressed_bytes": 125784,
+       "mode": 1,
+       "stats": {
+        "candidates": 65535,
+        "eliminated_equal_children": 2263,
+        "merged_identical_nodes": 30607,
+        "created_nodes": 32665
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.464
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 32772,
+       "terminal_count": 76,
+       "exact_bytes": 126220,
+       "compressed_bytes": 126232,
+       "mode": 1,
+       "stats": {
+        "candidates": 65535,
+        "eliminated_equal_children": 2158,
+        "merged_identical_nodes": 30605,
+        "created_nodes": 32772
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.8515
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 32668,
+       "terminal_count": 76,
+       "exact_bytes": 125789,
+       "compressed_bytes": 125801,
+       "mode": 1,
+       "stats": {
+        "candidates": 65535,
+        "eliminated_equal_children": 2270,
+        "merged_identical_nodes": 30597,
+        "created_nodes": 32668
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.9253
+      }
+     ],
+     "best_g": {
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 24375,
+      "terminal_count": 76,
+      "exact_bytes": 95420,
+      "compressed_bytes": 89014,
+      "mode": 1,
+      "stats": {
+       "candidates": 65535,
+       "eliminated_equal_children": 625,
+       "merged_identical_nodes": 40535,
+       "created_nodes": 24375
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.2364
+     },
+     "best_f": {
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 24375,
+      "terminal_count": 76,
+      "exact_bytes": 95420,
+      "compressed_bytes": 89014,
+      "mode": 1,
+      "stats": {
+       "candidates": 65535,
+       "eliminated_equal_children": 625,
+       "merged_identical_nodes": 40535,
+       "created_nodes": 24375
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.2364
+     },
+     "selected_exact": true
+    }
+   }
+  },
+  {
+   "name": "bbc",
+   "kind": "structured text",
+   "path": "datasets/corpus/bbc.rss.xml",
+   "file_bytes": 28260,
+   "file_sha256": "caa27d88f455e0fd10c408f7aaaaa73b16e9c0d502fa8c9cc11bc70551192b83",
+   "available_sizes": [
+    4096
+   ],
+   "skipped_sizes": [
+    {
+     "size": 16384,
+     "reason": "two disjoint regions unavailable",
+     "file_bytes": 28260,
+     "needed_bytes": 32768
+    },
+    {
+     "size": 65536,
+     "reason": "two disjoint regions unavailable",
+     "file_bytes": 28260,
+     "needed_bytes": 131072
+    }
+   ],
+   "regions": {
+    "4096": {
+     "split": "dev",
+     "offset": 0,
+     "length": 4096,
+     "sha256": "89d2e8fe733741c7e8e7c1c0f4761cd2e057b5d1f73562377b52dc97ce6f4484",
+     "size": 4096,
+     "rows": [
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 4287,
+       "terminal_count": 2,
+       "exact_bytes": 12711,
+       "compressed_bytes": 6735,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 17452,
+        "merged_identical_nodes": 11021,
+        "created_nodes": 4287
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0245
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 4588,
+       "terminal_count": 2,
+       "exact_bytes": 14051,
+       "compressed_bytes": 7401,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 15296,
+        "merged_identical_nodes": 12876,
+        "created_nodes": 4588
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0354
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 4563,
+       "terminal_count": 2,
+       "exact_bytes": 13981,
+       "compressed_bytes": 7352,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 15461,
+        "merged_identical_nodes": 12736,
+        "created_nodes": 4563
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0237
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 4596,
+       "terminal_count": 2,
+       "exact_bytes": 14065,
+       "compressed_bytes": 7364,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 15264,
+        "merged_identical_nodes": 12900,
+        "created_nodes": 4596
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0286
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 3385,
+       "terminal_count": 2,
+       "exact_bytes": 12695,
+       "compressed_bytes": 10162,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 17452,
+        "merged_identical_nodes": 11923,
+        "created_nodes": 3385
+       },
+       "shared_across_planes": 304,
+       "encode_s": 0.0195
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 3577,
+       "terminal_count": 2,
+       "exact_bytes": 13604,
+       "compressed_bytes": 11108,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 15296,
+        "merged_identical_nodes": 13887,
+        "created_nodes": 3577
+       },
+       "shared_across_planes": 276,
+       "encode_s": 0.0206
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 3574,
+       "terminal_count": 2,
+       "exact_bytes": 13589,
+       "compressed_bytes": 11107,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 15461,
+        "merged_identical_nodes": 13725,
+        "created_nodes": 3574
+       },
+       "shared_across_planes": 281,
+       "encode_s": 0.0233
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 3601,
+       "terminal_count": 2,
+       "exact_bytes": 13702,
+       "compressed_bytes": 11116,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 15264,
+        "merged_identical_nodes": 13895,
+        "created_nodes": 3601
+       },
+       "shared_across_planes": 271,
+       "encode_s": 0.0226
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 2088,
+       "terminal_count": 77,
+       "exact_bytes": 7171,
+       "compressed_bytes": 5221,
+       "mode": 1,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 424,
+        "merged_identical_nodes": 1583,
+        "created_nodes": 2088
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0074
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 3008,
+       "terminal_count": 77,
+       "exact_bytes": 10019,
+       "compressed_bytes": 8321,
+       "mode": 1,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 92,
+        "merged_identical_nodes": 995,
+        "created_nodes": 3008
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0102
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 3021,
+       "terminal_count": 77,
+       "exact_bytes": 10034,
+       "compressed_bytes": 8357,
+       "mode": 1,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 104,
+        "merged_identical_nodes": 970,
+        "created_nodes": 3021
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0098
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 3012,
+       "terminal_count": 77,
+       "exact_bytes": 10033,
+       "compressed_bytes": 8324,
+       "mode": 1,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 89,
+        "merged_identical_nodes": 994,
+        "created_nodes": 3012
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0145
+      }
+     ],
+     "best_g": {
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 2088,
+      "terminal_count": 77,
+      "exact_bytes": 7171,
+      "compressed_bytes": 5221,
+      "mode": 1,
+      "stats": {
+       "candidates": 4095,
+       "eliminated_equal_children": 424,
+       "merged_identical_nodes": 1583,
+       "created_nodes": 2088
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.0074
+     },
+     "best_f": {
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 2088,
+      "terminal_count": 77,
+      "exact_bytes": 7171,
+      "compressed_bytes": 5221,
+      "mode": 1,
+      "stats": {
+       "candidates": 4095,
+       "eliminated_equal_children": 424,
+       "merged_identical_nodes": 1583,
+       "created_nodes": 2088
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.0074
+     },
+     "selected_exact": true
+    }
+   }
+  },
+  {
+   "name": "7zr",
+   "kind": "executable",
+   "path": "datasets/corpus/7zr.exe",
+   "file_bytes": 602624,
+   "file_sha256": "256feca8e274e5da655e2a284fabafd9f554365eb164862089dacd4e8276d282",
+   "available_sizes": [
+    4096,
+    16384,
+    65536
+   ],
+   "skipped_sizes": [],
+   "regions": {
+    "4096": {
+     "split": "dev",
+     "offset": 0,
+     "length": 4096,
+     "sha256": "d4aad31f8179a9ca249024d76236c5f7fa6391d8cfade11dbdeb54c4e65d3223",
+     "size": 4096,
+     "rows": [
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 5107,
+       "terminal_count": 2,
+       "exact_bytes": 15226,
+       "compressed_bytes": 7839,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 14487,
+        "merged_identical_nodes": 13166,
+        "created_nodes": 5107
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.03
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 5099,
+       "terminal_count": 2,
+       "exact_bytes": 15237,
+       "compressed_bytes": 7952,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 12072,
+        "merged_identical_nodes": 15589,
+        "created_nodes": 5099
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0274
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 5282,
+       "terminal_count": 2,
+       "exact_bytes": 15974,
+       "compressed_bytes": 8377,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 12393,
+        "merged_identical_nodes": 15085,
+        "created_nodes": 5282
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0316
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 5312,
+       "terminal_count": 2,
+       "exact_bytes": 16111,
+       "compressed_bytes": 8465,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 12466,
+        "merged_identical_nodes": 14982,
+        "created_nodes": 5312
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0424
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 3757,
+       "terminal_count": 2,
+       "exact_bytes": 14269,
+       "compressed_bytes": 11607,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 14487,
+        "merged_identical_nodes": 14516,
+        "created_nodes": 3757
+       },
+       "shared_across_planes": 333,
+       "encode_s": 0.0468
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 4043,
+       "terminal_count": 2,
+       "exact_bytes": 15442,
+       "compressed_bytes": 12773,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 12072,
+        "merged_identical_nodes": 16645,
+        "created_nodes": 4043
+       },
+       "shared_across_planes": 363,
+       "encode_s": 0.0385
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 3934,
+       "terminal_count": 2,
+       "exact_bytes": 15032,
+       "compressed_bytes": 12190,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 12393,
+        "merged_identical_nodes": 16433,
+        "created_nodes": 3934
+       },
+       "shared_across_planes": 426,
+       "encode_s": 0.0435
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 3927,
+       "terminal_count": 2,
+       "exact_bytes": 15042,
+       "compressed_bytes": 12209,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 12466,
+        "merged_identical_nodes": 16367,
+        "created_nodes": 3927
+       },
+       "shared_across_planes": 413,
+       "encode_s": 0.0352
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 2818,
+       "terminal_count": 232,
+       "exact_bytes": 10084,
+       "compressed_bytes": 8854,
+       "mode": 0,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 587,
+        "merged_identical_nodes": 690,
+        "created_nodes": 2818
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0138
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 3288,
+       "terminal_count": 232,
+       "exact_bytes": 11730,
+       "compressed_bytes": 10491,
+       "mode": 0,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 93,
+        "merged_identical_nodes": 714,
+        "created_nodes": 3288
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0173
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 3283,
+       "terminal_count": 232,
+       "exact_bytes": 11706,
+       "compressed_bytes": 10491,
+       "mode": 0,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 117,
+        "merged_identical_nodes": 695,
+        "created_nodes": 3283
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0167
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 3277,
+       "terminal_count": 232,
+       "exact_bytes": 11693,
+       "compressed_bytes": 10475,
+       "mode": 0,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 96,
+        "merged_identical_nodes": 722,
+        "created_nodes": 3277
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0109
+      }
+     ],
+     "best_g": {
+      "repr": "separate",
+      "repr_id": 0,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 5107,
+      "terminal_count": 2,
+      "exact_bytes": 15226,
+      "compressed_bytes": 7839,
+      "mode": 1,
+      "stats": {
+       "candidates": 32760,
+       "eliminated_equal_children": 14487,
+       "merged_identical_nodes": 13166,
+       "created_nodes": 5107
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.03
+     },
+     "best_f": {
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 2818,
+      "terminal_count": 232,
+      "exact_bytes": 10084,
+      "compressed_bytes": 8854,
+      "mode": 0,
+      "stats": {
+       "candidates": 4095,
+       "eliminated_equal_children": 587,
+       "merged_identical_nodes": 690,
+       "created_nodes": 2818
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.0138
+     },
+     "selected_exact": true
+    },
+    "16384": {
+     "split": "dev",
+     "offset": 0,
+     "length": 16384,
+     "sha256": "db986786dbf09eb597b7e3338cf54e955aff35f8fbffc6a65a61479c04a88a88",
+     "size": 16384,
+     "rows": [
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 17711,
+       "terminal_count": 2,
+       "exact_bytes": 65596,
+       "compressed_bytes": 31646,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 48169,
+        "merged_identical_nodes": 65184,
+        "created_nodes": 17711
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.1487
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 18140,
+       "terminal_count": 2,
+       "exact_bytes": 67485,
+       "compressed_bytes": 32539,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 43504,
+        "merged_identical_nodes": 69420,
+        "created_nodes": 18140
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.1219
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 18140,
+       "terminal_count": 2,
+       "exact_bytes": 67478,
+       "compressed_bytes": 32533,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 43942,
+        "merged_identical_nodes": 68982,
+        "created_nodes": 18140
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.1448
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 18167,
+       "terminal_count": 2,
+       "exact_bytes": 67596,
+       "compressed_bytes": 32613,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 43823,
+        "merged_identical_nodes": 69074,
+        "created_nodes": 18167
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.1768
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 15305,
+       "terminal_count": 2,
+       "exact_bytes": 60349,
+       "compressed_bytes": 56463,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 48169,
+        "merged_identical_nodes": 67590,
+        "created_nodes": 15305
+       },
+       "shared_across_planes": 809,
+       "encode_s": 0.1131
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 15618,
+       "terminal_count": 2,
+       "exact_bytes": 61737,
+       "compressed_bytes": 57909,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 43504,
+        "merged_identical_nodes": 71942,
+        "created_nodes": 15618
+       },
+       "shared_across_planes": 982,
+       "encode_s": 0.0972
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 15688,
+       "terminal_count": 2,
+       "exact_bytes": 62006,
+       "compressed_bytes": 58200,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 43942,
+        "merged_identical_nodes": 71434,
+        "created_nodes": 15688
+       },
+       "shared_across_planes": 899,
+       "encode_s": 0.1151
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 15676,
+       "terminal_count": 2,
+       "exact_bytes": 61968,
+       "compressed_bytes": 58150,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 43823,
+        "merged_identical_nodes": 71565,
+        "created_nodes": 15676
+       },
+       "shared_across_planes": 926,
+       "encode_s": 0.1217
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 10368,
+       "terminal_count": 253,
+       "exact_bytes": 38101,
+       "compressed_bytes": 35775,
+       "mode": 0,
+       "stats": {
+        "candidates": 16383,
+        "eliminated_equal_children": 921,
+        "merged_identical_nodes": 5094,
+        "created_nodes": 10368
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0511
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 12814,
+       "terminal_count": 253,
+       "exact_bytes": 45867,
+       "compressed_bytes": 43709,
+       "mode": 0,
+       "stats": {
+        "candidates": 16383,
+        "eliminated_equal_children": 160,
+        "merged_identical_nodes": 3409,
+        "created_nodes": 12814
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.057
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 12803,
+       "terminal_count": 253,
+       "exact_bytes": 45787,
+       "compressed_bytes": 43640,
+       "mode": 0,
+       "stats": {
+        "candidates": 16383,
+        "eliminated_equal_children": 231,
+        "merged_identical_nodes": 3349,
+        "created_nodes": 12803
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0526
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 12820,
+       "terminal_count": 253,
+       "exact_bytes": 45884,
+       "compressed_bytes": 43743,
+       "mode": 0,
+       "stats": {
+        "candidates": 16383,
+        "eliminated_equal_children": 163,
+        "merged_identical_nodes": 3400,
+        "created_nodes": 12820
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0439
+      }
+     ],
+     "best_g": {
+      "repr": "separate",
+      "repr_id": 0,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 17711,
+      "terminal_count": 2,
+      "exact_bytes": 65596,
+      "compressed_bytes": 31646,
+      "mode": 1,
+      "stats": {
+       "candidates": 131064,
+       "eliminated_equal_children": 48169,
+       "merged_identical_nodes": 65184,
+       "created_nodes": 17711
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.1487
+     },
+     "best_f": {
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 10368,
+      "terminal_count": 253,
+      "exact_bytes": 38101,
+      "compressed_bytes": 35775,
+      "mode": 0,
+      "stats": {
+       "candidates": 16383,
+       "eliminated_equal_children": 921,
+       "merged_identical_nodes": 5094,
+       "created_nodes": 10368
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.0511
+     },
+     "selected_exact": true
+    },
+    "65536": {
+     "split": "dev",
+     "offset": 0,
+     "length": 65536,
+     "sha256": "e534a87e2b76e2e0b7e9a7433453ef6ca15db66620c9fece44f739731c6213d3",
+     "size": 65536,
+     "rows": [
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 64204,
+       "terminal_count": 2,
+       "exact_bytes": 250838,
+       "compressed_bytes": 135281,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 182779,
+        "merged_identical_nodes": 277297,
+        "created_nodes": 64204
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.5928
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 65766,
+       "terminal_count": 2,
+       "exact_bytes": 257639,
+       "compressed_bytes": 136733,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 173355,
+        "merged_identical_nodes": 285159,
+        "created_nodes": 65766
+       },
+       "shared_across_planes": 0,
+       "encode_s": 2.4381
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 65880,
+       "terminal_count": 2,
+       "exact_bytes": 258096,
+       "compressed_bytes": 136964,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 173115,
+        "merged_identical_nodes": 285285,
+        "created_nodes": 65880
+       },
+       "shared_across_planes": 0,
+       "encode_s": 3.6024
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 65815,
+       "terminal_count": 2,
+       "exact_bytes": 257808,
+       "compressed_bytes": 136800,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 173653,
+        "merged_identical_nodes": 284812,
+        "created_nodes": 65815
+       },
+       "shared_across_planes": 0,
+       "encode_s": 3.2493
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 56195,
+       "terminal_count": 2,
+       "exact_bytes": 264227,
+       "compressed_bytes": 229646,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 182779,
+        "merged_identical_nodes": 285306,
+        "created_nodes": 56195
+       },
+       "shared_across_planes": 5303,
+       "encode_s": 1.0115
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 57190,
+       "terminal_count": 2,
+       "exact_bytes": 271239,
+       "compressed_bytes": 233568,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 173355,
+        "merged_identical_nodes": 293735,
+        "created_nodes": 57190
+       },
+       "shared_across_planes": 5878,
+       "encode_s": 2.9485
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 57421,
+       "terminal_count": 2,
+       "exact_bytes": 272713,
+       "compressed_bytes": 234308,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 173115,
+        "merged_identical_nodes": 293744,
+        "created_nodes": 57421
+       },
+       "shared_across_planes": 5802,
+       "encode_s": 2.2148
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 57343,
+       "terminal_count": 2,
+       "exact_bytes": 272212,
+       "compressed_bytes": 234206,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 173653,
+        "merged_identical_nodes": 293284,
+        "created_nodes": 57343
+       },
+       "shared_across_planes": 5833,
+       "encode_s": 1.161
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 36302,
+       "terminal_count": 256,
+       "exact_bytes": 136394,
+       "compressed_bytes": 132264,
+       "mode": 1,
+       "stats": {
+        "candidates": 65535,
+        "eliminated_equal_children": 2330,
+        "merged_identical_nodes": 26903,
+        "created_nodes": 36302
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.3803
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 44721,
+       "terminal_count": 256,
+       "exact_bytes": 173629,
+       "compressed_bytes": 162096,
+       "mode": 1,
+       "stats": {
+        "candidates": 65535,
+        "eliminated_equal_children": 725,
+        "merged_identical_nodes": 20089,
+        "created_nodes": 44721
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.7395
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 44675,
+       "terminal_count": 256,
+       "exact_bytes": 173595,
+       "compressed_bytes": 162207,
+       "mode": 1,
+       "stats": {
+        "candidates": 65535,
+        "eliminated_equal_children": 736,
+        "merged_identical_nodes": 20124,
+        "created_nodes": 44675
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.601
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 44726,
+       "terminal_count": 256,
+       "exact_bytes": 173737,
+       "compressed_bytes": 160637,
+       "mode": 1,
+       "stats": {
+        "candidates": 65535,
+        "eliminated_equal_children": 719,
+        "merged_identical_nodes": 20090,
+        "created_nodes": 44726
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.697
+      }
+     ],
+     "best_g": {
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 36302,
+      "terminal_count": 256,
+      "exact_bytes": 136394,
+      "compressed_bytes": 132264,
+      "mode": 1,
+      "stats": {
+       "candidates": 65535,
+       "eliminated_equal_children": 2330,
+       "merged_identical_nodes": 26903,
+       "created_nodes": 36302
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.3803
+     },
+     "best_f": {
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 36302,
+      "terminal_count": 256,
+      "exact_bytes": 136394,
+      "compressed_bytes": 132264,
+      "mode": 1,
+      "stats": {
+       "candidates": 65535,
+       "eliminated_equal_children": 2330,
+       "merged_identical_nodes": 26903,
+       "created_nodes": 36302
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.3803
+     },
+     "selected_exact": true
+    }
+   }
+  },
+  {
+   "name": "irs1040",
+   "kind": "pdf",
+   "path": "datasets/corpus/irs1040.pdf",
+   "file_bytes": 220237,
+   "file_sha256": "3d31c226df0d189ced80e039d01cf0f8820c1019681a0f0ca6264de277b7e982",
+   "available_sizes": [
+    4096,
+    16384,
+    65536
+   ],
+   "skipped_sizes": [],
+   "regions": {
+    "4096": {
+     "split": "dev",
+     "offset": 0,
+     "length": 4096,
+     "sha256": "d752640d868d7f0a380d1635203f8064738e0eb5f26afd5a180c172642c565b7",
+     "size": 4096,
+     "rows": [
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 5581,
+       "terminal_count": 2,
+       "exact_bytes": 17384,
+       "compressed_bytes": 8774,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 12597,
+        "merged_identical_nodes": 14582,
+        "created_nodes": 5581
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0522
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 5616,
+       "terminal_count": 2,
+       "exact_bytes": 17662,
+       "compressed_bytes": 8892,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 10793,
+        "merged_identical_nodes": 16351,
+        "created_nodes": 5616
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0522
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 5666,
+       "terminal_count": 2,
+       "exact_bytes": 17864,
+       "compressed_bytes": 8968,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 10929,
+        "merged_identical_nodes": 16165,
+        "created_nodes": 5666
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0463
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 5685,
+       "terminal_count": 2,
+       "exact_bytes": 17944,
+       "compressed_bytes": 9071,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 10817,
+        "merged_identical_nodes": 16258,
+        "created_nodes": 5685
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0325
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 4100,
+       "terminal_count": 2,
+       "exact_bytes": 15701,
+       "compressed_bytes": 13055,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 12597,
+        "merged_identical_nodes": 16063,
+        "created_nodes": 4100
+       },
+       "shared_across_planes": 305,
+       "encode_s": 0.0249
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 4281,
+       "terminal_count": 2,
+       "exact_bytes": 16490,
+       "compressed_bytes": 13895,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 10793,
+        "merged_identical_nodes": 17686,
+        "created_nodes": 4281
+       },
+       "shared_across_planes": 279,
+       "encode_s": 0.0281
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 4273,
+       "terminal_count": 2,
+       "exact_bytes": 16470,
+       "compressed_bytes": 13900,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 10929,
+        "merged_identical_nodes": 17558,
+        "created_nodes": 4273
+       },
+       "shared_across_planes": 283,
+       "encode_s": 0.0394
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 4266,
+       "terminal_count": 2,
+       "exact_bytes": 16454,
+       "compressed_bytes": 13887,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 10817,
+        "merged_identical_nodes": 17677,
+        "created_nodes": 4266
+       },
+       "shared_across_planes": 279,
+       "encode_s": 0.0258
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 3529,
+       "terminal_count": 256,
+       "exact_bytes": 12495,
+       "compressed_bytes": 11337,
+       "mode": 0,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 52,
+        "merged_identical_nodes": 514,
+        "created_nodes": 3529
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0105
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 3950,
+       "terminal_count": 256,
+       "exact_bytes": 13523,
+       "compressed_bytes": 12568,
+       "mode": 0,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 12,
+        "merged_identical_nodes": 133,
+        "created_nodes": 3950
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0125
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 3958,
+       "terminal_count": 256,
+       "exact_bytes": 13520,
+       "compressed_bytes": 12578,
+       "mode": 0,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 9,
+        "merged_identical_nodes": 128,
+        "created_nodes": 3958
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0163
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 3950,
+       "terminal_count": 256,
+       "exact_bytes": 13523,
+       "compressed_bytes": 12566,
+       "mode": 0,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 12,
+        "merged_identical_nodes": 133,
+        "created_nodes": 3950
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0221
+      }
+     ],
+     "best_g": {
+      "repr": "separate",
+      "repr_id": 0,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 5581,
+      "terminal_count": 2,
+      "exact_bytes": 17384,
+      "compressed_bytes": 8774,
+      "mode": 1,
+      "stats": {
+       "candidates": 32760,
+       "eliminated_equal_children": 12597,
+       "merged_identical_nodes": 14582,
+       "created_nodes": 5581
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.0522
+     },
+     "best_f": {
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 3529,
+      "terminal_count": 256,
+      "exact_bytes": 12495,
+      "compressed_bytes": 11337,
+      "mode": 0,
+      "stats": {
+       "candidates": 4095,
+       "eliminated_equal_children": 52,
+       "merged_identical_nodes": 514,
+       "created_nodes": 3529
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.0105
+     },
+     "selected_exact": true
+    },
+    "16384": {
+     "split": "dev",
+     "offset": 0,
+     "length": 16384,
+     "sha256": "2d6243fd193844eff1f6c35d9f290885572cf03fc71a86ffb61dcbec3ea8bbf4",
+     "size": 16384,
+     "rows": [
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 18053,
+       "terminal_count": 2,
+       "exact_bytes": 67180,
+       "compressed_bytes": 32110,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 44866,
+        "merged_identical_nodes": 68145,
+        "created_nodes": 18053
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.1462
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 18282,
+       "terminal_count": 2,
+       "exact_bytes": 68294,
+       "compressed_bytes": 32571,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 42237,
+        "merged_identical_nodes": 70545,
+        "created_nodes": 18282
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.1482
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 18294,
+       "terminal_count": 2,
+       "exact_bytes": 68351,
+       "compressed_bytes": 32471,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 42334,
+        "merged_identical_nodes": 70436,
+        "created_nodes": 18294
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.1691
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 18279,
+       "terminal_count": 2,
+       "exact_bytes": 68254,
+       "compressed_bytes": 32446,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 42284,
+        "merged_identical_nodes": 70501,
+        "created_nodes": 18279
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.1784
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 15840,
+       "terminal_count": 2,
+       "exact_bytes": 62550,
+       "compressed_bytes": 58803,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 44866,
+        "merged_identical_nodes": 70358,
+        "created_nodes": 15840
+       },
+       "shared_across_planes": 672,
+       "encode_s": 0.1303
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 16063,
+       "terminal_count": 2,
+       "exact_bytes": 63570,
+       "compressed_bytes": 59822,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 42237,
+        "merged_identical_nodes": 72764,
+        "created_nodes": 16063
+       },
+       "shared_across_planes": 689,
+       "encode_s": 0.1282
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 16097,
+       "terminal_count": 2,
+       "exact_bytes": 63696,
+       "compressed_bytes": 59987,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 42334,
+        "merged_identical_nodes": 72633,
+        "created_nodes": 16097
+       },
+       "shared_across_planes": 666,
+       "encode_s": 0.0991
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 16081,
+       "terminal_count": 2,
+       "exact_bytes": 63647,
+       "compressed_bytes": 59885,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 42284,
+        "merged_identical_nodes": 72699,
+        "created_nodes": 16081
+       },
+       "shared_across_planes": 659,
+       "encode_s": 0.0949
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 15012,
+       "terminal_count": 256,
+       "exact_bytes": 52946,
+       "compressed_bytes": 49921,
+       "mode": 0,
+       "stats": {
+        "candidates": 16383,
+        "eliminated_equal_children": 85,
+        "merged_identical_nodes": 1286,
+        "created_nodes": 15012
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0674
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 15714,
+       "terminal_count": 256,
+       "exact_bytes": 54756,
+       "compressed_bytes": 51866,
+       "mode": 0,
+       "stats": {
+        "candidates": 16383,
+        "eliminated_equal_children": 30,
+        "merged_identical_nodes": 639,
+        "created_nodes": 15714
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0602
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 15748,
+       "terminal_count": 256,
+       "exact_bytes": 54879,
+       "compressed_bytes": 51961,
+       "mode": 0,
+       "stats": {
+        "candidates": 16383,
+        "eliminated_equal_children": 32,
+        "merged_identical_nodes": 603,
+        "created_nodes": 15748
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0445
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 15713,
+       "terminal_count": 256,
+       "exact_bytes": 54752,
+       "compressed_bytes": 51863,
+       "mode": 0,
+       "stats": {
+        "candidates": 16383,
+        "eliminated_equal_children": 31,
+        "merged_identical_nodes": 639,
+        "created_nodes": 15713
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0459
+      }
+     ],
+     "best_g": {
+      "repr": "separate",
+      "repr_id": 0,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 18053,
+      "terminal_count": 2,
+      "exact_bytes": 67180,
+      "compressed_bytes": 32110,
+      "mode": 1,
+      "stats": {
+       "candidates": 131064,
+       "eliminated_equal_children": 44866,
+       "merged_identical_nodes": 68145,
+       "created_nodes": 18053
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.1462
+     },
+     "best_f": {
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 15012,
+      "terminal_count": 256,
+      "exact_bytes": 52946,
+      "compressed_bytes": 49921,
+      "mode": 0,
+      "stats": {
+       "candidates": 16383,
+       "eliminated_equal_children": 85,
+       "merged_identical_nodes": 1286,
+       "created_nodes": 15012
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.0674
+     },
+     "selected_exact": true
+    },
+    "65536": {
+     "split": "dev",
+     "offset": 0,
+     "length": 65536,
+     "sha256": "cd4bd1df0ede49fa967f68c0a9bb6bacdf2c12ff57a021fa38f272c991f092d4",
+     "size": 65536,
+     "rows": [
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 57271,
+       "terminal_count": 2,
+       "exact_bytes": 223308,
+       "compressed_bytes": 116129,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 189437,
+        "merged_identical_nodes": 277572,
+        "created_nodes": 57271
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.5905
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 65308,
+       "terminal_count": 2,
+       "exact_bytes": 255907,
+       "compressed_bytes": 135780,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 169251,
+        "merged_identical_nodes": 289721,
+        "created_nodes": 65308
+       },
+       "shared_across_planes": 0,
+       "encode_s": 2.1228
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 65205,
+       "terminal_count": 2,
+       "exact_bytes": 255574,
+       "compressed_bytes": 135302,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 171462,
+        "merged_identical_nodes": 287613,
+        "created_nodes": 65205
+       },
+       "shared_across_planes": 0,
+       "encode_s": 3.5044
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 65227,
+       "terminal_count": 2,
+       "exact_bytes": 255614,
+       "compressed_bytes": 135541,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 171224,
+        "merged_identical_nodes": 287829,
+        "created_nodes": 65227
+       },
+       "shared_across_planes": 0,
+       "encode_s": 3.4846
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 51161,
+       "terminal_count": 2,
+       "exact_bytes": 233331,
+       "compressed_bytes": 211398,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 189437,
+        "merged_identical_nodes": 283682,
+        "created_nodes": 51161
+       },
+       "shared_across_planes": 4117,
+       "encode_s": 0.8969
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 57984,
+       "terminal_count": 2,
+       "exact_bytes": 276699,
+       "compressed_bytes": 237289,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 169251,
+        "merged_identical_nodes": 297045,
+        "created_nodes": 57984
+       },
+       "shared_across_planes": 5229,
+       "encode_s": 1.6165
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 57846,
+       "terminal_count": 2,
+       "exact_bytes": 275866,
+       "compressed_bytes": 236517,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 171462,
+        "merged_identical_nodes": 294972,
+        "created_nodes": 57846
+       },
+       "shared_across_planes": 5231,
+       "encode_s": 2.8638
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 57946,
+       "terminal_count": 2,
+       "exact_bytes": 276508,
+       "compressed_bytes": 236760,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 171224,
+        "merged_identical_nodes": 295110,
+        "created_nodes": 57946
+       },
+       "shared_across_planes": 5120,
+       "encode_s": 1.5536
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 47030,
+       "terminal_count": 256,
+       "exact_bytes": 181087,
+       "compressed_bytes": 160832,
+       "mode": 1,
+       "stats": {
+        "candidates": 65535,
+        "eliminated_equal_children": 487,
+        "merged_identical_nodes": 18018,
+        "created_nodes": 47030
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.4697
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 54107,
+       "terminal_count": 256,
+       "exact_bytes": 216708,
+       "compressed_bytes": 186332,
+       "mode": 1,
+       "stats": {
+        "candidates": 65535,
+        "eliminated_equal_children": 142,
+        "merged_identical_nodes": 11286,
+        "created_nodes": 54107
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.3552
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 54151,
+       "terminal_count": 256,
+       "exact_bytes": 216949,
+       "compressed_bytes": 178242,
+       "mode": 1,
+       "stats": {
+        "candidates": 65535,
+        "eliminated_equal_children": 157,
+        "merged_identical_nodes": 11227,
+        "created_nodes": 54151
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.7515
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 54102,
+       "terminal_count": 256,
+       "exact_bytes": 216745,
+       "compressed_bytes": 185725,
+       "mode": 1,
+       "stats": {
+        "candidates": 65535,
+        "eliminated_equal_children": 146,
+        "merged_identical_nodes": 11287,
+        "created_nodes": 54102
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.7022
+      }
+     ],
+     "best_g": {
+      "repr": "separate",
+      "repr_id": 0,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 57271,
+      "terminal_count": 2,
+      "exact_bytes": 223308,
+      "compressed_bytes": 116129,
+      "mode": 1,
+      "stats": {
+       "candidates": 524280,
+       "eliminated_equal_children": 189437,
+       "merged_identical_nodes": 277572,
+       "created_nodes": 57271
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.5905
+     },
+     "best_f": {
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 47030,
+      "terminal_count": 256,
+      "exact_bytes": 181087,
+      "compressed_bytes": 160832,
+      "mode": 1,
+      "stats": {
+       "candidates": 65535,
+       "eliminated_equal_children": 487,
+       "merged_identical_nodes": 18018,
+       "created_nodes": 47030
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.4697
+     },
+     "selected_exact": true
+    }
+   }
+  },
+  {
+   "name": "hopper",
+   "kind": "bmp",
+   "path": "datasets/corpus/hopper.bmp",
+   "file_bytes": 49290,
+   "file_sha256": "f1a94f3add0a2e54365dc94b51da099bd0de8289b955fc8304a8627b7b0d6aea",
+   "available_sizes": [
+    4096,
+    16384
+   ],
+   "skipped_sizes": [
+    {
+     "size": 65536,
+     "reason": "two disjoint regions unavailable",
+     "file_bytes": 49290,
+     "needed_bytes": 131072
+    }
+   ],
+   "regions": {
+    "4096": {
+     "split": "dev",
+     "offset": 0,
+     "length": 4096,
+     "sha256": "bfa50d3f2b4d5df57ed4019b08599cc2cc1aff5c23e33b79297470b1d530e9ad",
+     "size": 4096,
+     "rows": [
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 4527,
+       "terminal_count": 2,
+       "exact_bytes": 13066,
+       "compressed_bytes": 7324,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 16266,
+        "merged_identical_nodes": 11967,
+        "created_nodes": 4527
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.023
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 4732,
+       "terminal_count": 2,
+       "exact_bytes": 13982,
+       "compressed_bytes": 7715,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 12937,
+        "merged_identical_nodes": 15091,
+        "created_nodes": 4732
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0226
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 4922,
+       "terminal_count": 2,
+       "exact_bytes": 14577,
+       "compressed_bytes": 7985,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 13513,
+        "merged_identical_nodes": 14325,
+        "created_nodes": 4922
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0256
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 4818,
+       "terminal_count": 2,
+       "exact_bytes": 14256,
+       "compressed_bytes": 7796,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 13126,
+        "merged_identical_nodes": 14816,
+        "created_nodes": 4818
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0233
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 3395,
+       "terminal_count": 2,
+       "exact_bytes": 12709,
+       "compressed_bytes": 10138,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 16266,
+        "merged_identical_nodes": 13099,
+        "created_nodes": 3395
+       },
+       "shared_across_planes": 324,
+       "encode_s": 0.0223
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 3634,
+       "terminal_count": 2,
+       "exact_bytes": 13869,
+       "compressed_bytes": 11100,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 12937,
+        "merged_identical_nodes": 16189,
+        "created_nodes": 3634
+       },
+       "shared_across_planes": 333,
+       "encode_s": 0.0269
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 3778,
+       "terminal_count": 2,
+       "exact_bytes": 14418,
+       "compressed_bytes": 11673,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 13513,
+        "merged_identical_nodes": 15469,
+        "created_nodes": 3778
+       },
+       "shared_across_planes": 335,
+       "encode_s": 0.025
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 3739,
+       "terminal_count": 2,
+       "exact_bytes": 14252,
+       "compressed_bytes": 11560,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 13126,
+        "merged_identical_nodes": 15895,
+        "created_nodes": 3739
+       },
+       "shared_across_planes": 336,
+       "encode_s": 0.0241
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 3070,
+       "terminal_count": 235,
+       "exact_bytes": 10902,
+       "compressed_bytes": 9675,
+       "mode": 0,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 138,
+        "merged_identical_nodes": 887,
+        "created_nodes": 3070
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0104
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 3500,
+       "terminal_count": 235,
+       "exact_bytes": 11945,
+       "compressed_bytes": 10629,
+       "mode": 0,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 33,
+        "merged_identical_nodes": 562,
+        "created_nodes": 3500
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0143
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 3480,
+       "terminal_count": 235,
+       "exact_bytes": 11924,
+       "compressed_bytes": 10614,
+       "mode": 0,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 40,
+        "merged_identical_nodes": 575,
+        "created_nodes": 3480
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0172
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 3500,
+       "terminal_count": 235,
+       "exact_bytes": 11945,
+       "compressed_bytes": 10633,
+       "mode": 0,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 33,
+        "merged_identical_nodes": 562,
+        "created_nodes": 3500
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0173
+      }
+     ],
+     "best_g": {
+      "repr": "separate",
+      "repr_id": 0,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 4527,
+      "terminal_count": 2,
+      "exact_bytes": 13066,
+      "compressed_bytes": 7324,
+      "mode": 1,
+      "stats": {
+       "candidates": 32760,
+       "eliminated_equal_children": 16266,
+       "merged_identical_nodes": 11967,
+       "created_nodes": 4527
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.023
+     },
+     "best_f": {
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 3070,
+      "terminal_count": 235,
+      "exact_bytes": 10902,
+      "compressed_bytes": 9675,
+      "mode": 0,
+      "stats": {
+       "candidates": 4095,
+       "eliminated_equal_children": 138,
+       "merged_identical_nodes": 887,
+       "created_nodes": 3070
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.0104
+     },
+     "selected_exact": true
+    },
+    "16384": {
+     "split": "dev",
+     "offset": 0,
+     "length": 16384,
+     "sha256": "d782489d511784c1929dd062339f84b07e0b3ccf9699c6ce17032f36d0741d7f",
+     "size": 16384,
+     "rows": [
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 13626,
+       "terminal_count": 2,
+       "exact_bytes": 48101,
+       "compressed_bytes": 25688,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 66692,
+        "merged_identical_nodes": 50746,
+        "created_nodes": 13626
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.1124
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 15168,
+       "terminal_count": 2,
+       "exact_bytes": 55331,
+       "compressed_bytes": 28343,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 51531,
+        "merged_identical_nodes": 64365,
+        "created_nodes": 15168
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.1322
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 15353,
+       "terminal_count": 2,
+       "exact_bytes": 55905,
+       "compressed_bytes": 28828,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 51797,
+        "merged_identical_nodes": 63914,
+        "created_nodes": 15353
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.1488
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 15246,
+       "terminal_count": 2,
+       "exact_bytes": 55378,
+       "compressed_bytes": 28688,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 52160,
+        "merged_identical_nodes": 63658,
+        "created_nodes": 15246
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.1145
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 11457,
+       "terminal_count": 2,
+       "exact_bytes": 44280,
+       "compressed_bytes": 38498,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 66692,
+        "merged_identical_nodes": 52915,
+        "created_nodes": 11457
+       },
+       "shared_across_planes": 793,
+       "encode_s": 0.0806
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 13273,
+       "terminal_count": 2,
+       "exact_bytes": 52332,
+       "compressed_bytes": 48099,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 51531,
+        "merged_identical_nodes": 66260,
+        "created_nodes": 13273
+       },
+       "shared_across_planes": 776,
+       "encode_s": 0.0797
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 13485,
+       "terminal_count": 2,
+       "exact_bytes": 53035,
+       "compressed_bytes": 48918,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 51797,
+        "merged_identical_nodes": 65782,
+        "created_nodes": 13485
+       },
+       "shared_across_planes": 717,
+       "encode_s": 0.0845
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 13256,
+       "terminal_count": 2,
+       "exact_bytes": 52116,
+       "compressed_bytes": 48006,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 52160,
+        "merged_identical_nodes": 65648,
+        "created_nodes": 13256
+       },
+       "shared_across_planes": 805,
+       "encode_s": 0.0782
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 10138,
+       "terminal_count": 256,
+       "exact_bytes": 37195,
+       "compressed_bytes": 35014,
+       "mode": 0,
+       "stats": {
+        "candidates": 16383,
+        "eliminated_equal_children": 524,
+        "merged_identical_nodes": 5721,
+        "created_nodes": 10138
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0327
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 11905,
+       "terminal_count": 256,
+       "exact_bytes": 42391,
+       "compressed_bytes": 40646,
+       "mode": 0,
+       "stats": {
+        "candidates": 16383,
+        "eliminated_equal_children": 208,
+        "merged_identical_nodes": 4270,
+        "created_nodes": 11905
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0452
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 11968,
+       "terminal_count": 256,
+       "exact_bytes": 42561,
+       "compressed_bytes": 40840,
+       "mode": 0,
+       "stats": {
+        "candidates": 16383,
+        "eliminated_equal_children": 152,
+        "merged_identical_nodes": 4263,
+        "created_nodes": 11968
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0598
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 11901,
+       "terminal_count": 256,
+       "exact_bytes": 42374,
+       "compressed_bytes": 40630,
+       "mode": 0,
+       "stats": {
+        "candidates": 16383,
+        "eliminated_equal_children": 210,
+        "merged_identical_nodes": 4272,
+        "created_nodes": 11901
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0564
+      }
+     ],
+     "best_g": {
+      "repr": "separate",
+      "repr_id": 0,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 13626,
+      "terminal_count": 2,
+      "exact_bytes": 48101,
+      "compressed_bytes": 25688,
+      "mode": 1,
+      "stats": {
+       "candidates": 131064,
+       "eliminated_equal_children": 66692,
+       "merged_identical_nodes": 50746,
+       "created_nodes": 13626
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.1124
+     },
+     "best_f": {
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 10138,
+      "terminal_count": 256,
+      "exact_bytes": 37195,
+      "compressed_bytes": 35014,
+      "mode": 0,
+      "stats": {
+       "candidates": 16383,
+       "eliminated_equal_children": 524,
+       "merged_identical_nodes": 5721,
+       "created_nodes": 10138
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.0327
+     },
+     "selected_exact": true
+    }
+   }
+  },
+  {
+   "name": "ecg",
+   "kind": "ecg",
+   "path": "datasets/corpus/ecg-holdout.bin",
+   "file_bytes": 262144,
+   "file_sha256": "933cd8ca9cb6bc5ffa273a11e6b146c64b74ab6847239fa3cc472f03df9a9f57",
+   "available_sizes": [
+    4096,
+    16384,
+    65536
+   ],
+   "skipped_sizes": [],
+   "regions": {
+    "4096": {
+     "split": "dev",
+     "offset": 0,
+     "length": 4096,
+     "sha256": "2e60b12ccca8cd03096429b9e82e30a38f346d77f7bde606acb8bfe0df55c07f",
+     "size": 4096,
+     "rows": [
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 3636,
+       "terminal_count": 2,
+       "exact_bytes": 9738,
+       "compressed_bytes": 5853,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 9294,
+        "merged_identical_nodes": 19830,
+        "created_nodes": 3636
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.046
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 3969,
+       "terminal_count": 2,
+       "exact_bytes": 10882,
+       "compressed_bytes": 6353,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 9278,
+        "merged_identical_nodes": 19513,
+        "created_nodes": 3969
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0442
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 4141,
+       "terminal_count": 2,
+       "exact_bytes": 11538,
+       "compressed_bytes": 6540,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 9301,
+        "merged_identical_nodes": 19318,
+        "created_nodes": 4141
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0361
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 4141,
+       "terminal_count": 2,
+       "exact_bytes": 11537,
+       "compressed_bytes": 6563,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 9422,
+        "merged_identical_nodes": 19197,
+        "created_nodes": 4141
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0293
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 2886,
+       "terminal_count": 2,
+       "exact_bytes": 10789,
+       "compressed_bytes": 8417,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 9294,
+        "merged_identical_nodes": 20580,
+        "created_nodes": 2886
+       },
+       "shared_across_planes": 318,
+       "encode_s": 0.0258
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 3316,
+       "terminal_count": 2,
+       "exact_bytes": 12584,
+       "compressed_bytes": 9976,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 9278,
+        "merged_identical_nodes": 20166,
+        "created_nodes": 3316
+       },
+       "shared_across_planes": 272,
+       "encode_s": 0.0338
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 3481,
+       "terminal_count": 2,
+       "exact_bytes": 13276,
+       "compressed_bytes": 10561,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 9301,
+        "merged_identical_nodes": 19978,
+        "created_nodes": 3481
+       },
+       "shared_across_planes": 267,
+       "encode_s": 0.0347
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 3484,
+       "terminal_count": 2,
+       "exact_bytes": 13272,
+       "compressed_bytes": 10565,
+       "mode": 1,
+       "stats": {
+        "candidates": 32760,
+        "eliminated_equal_children": 9422,
+        "merged_identical_nodes": 19854,
+        "created_nodes": 3484
+       },
+       "shared_across_planes": 258,
+       "encode_s": 0.0261
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 2676,
+       "terminal_count": 152,
+       "exact_bytes": 9696,
+       "compressed_bytes": 8464,
+       "mode": 0,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 0,
+        "merged_identical_nodes": 1419,
+        "created_nodes": 2676
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0085
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 2771,
+       "terminal_count": 152,
+       "exact_bytes": 9991,
+       "compressed_bytes": 8831,
+       "mode": 0,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 5,
+        "merged_identical_nodes": 1319,
+        "created_nodes": 2771
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0085
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 2732,
+       "terminal_count": 152,
+       "exact_bytes": 9884,
+       "compressed_bytes": 8767,
+       "mode": 0,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 0,
+        "merged_identical_nodes": 1363,
+        "created_nodes": 2732
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0084
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 2772,
+       "terminal_count": 152,
+       "exact_bytes": 9995,
+       "compressed_bytes": 8872,
+       "mode": 0,
+       "stats": {
+        "candidates": 4095,
+        "eliminated_equal_children": 5,
+        "merged_identical_nodes": 1318,
+        "created_nodes": 2772
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0083
+      }
+     ],
+     "best_g": {
+      "repr": "separate",
+      "repr_id": 0,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 3636,
+      "terminal_count": 2,
+      "exact_bytes": 9738,
+      "compressed_bytes": 5853,
+      "mode": 1,
+      "stats": {
+       "candidates": 32760,
+       "eliminated_equal_children": 9294,
+       "merged_identical_nodes": 19830,
+       "created_nodes": 3636
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.046
+     },
+     "best_f": {
+      "repr": "mtbdd",
+      "repr_id": 2,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 2676,
+      "terminal_count": 152,
+      "exact_bytes": 9696,
+      "compressed_bytes": 8464,
+      "mode": 0,
+      "stats": {
+       "candidates": 4095,
+       "eliminated_equal_children": 0,
+       "merged_identical_nodes": 1419,
+       "created_nodes": 2676
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.0085
+     },
+     "selected_exact": true
+    },
+    "16384": {
+     "split": "dev",
+     "offset": 0,
+     "length": 16384,
+     "sha256": "b0de56e09b91dc7e94897320a72389073db12b1f9d59c0bbe7f93e87fcc9e8f6",
+     "size": 16384,
+     "rows": [
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 11524,
+       "terminal_count": 2,
+       "exact_bytes": 39896,
+       "compressed_bytes": 22962,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 38051,
+        "merged_identical_nodes": 81489,
+        "created_nodes": 11524
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.1293
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 13223,
+       "terminal_count": 2,
+       "exact_bytes": 47121,
+       "compressed_bytes": 25787,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 38269,
+        "merged_identical_nodes": 79572,
+        "created_nodes": 13223
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.1035
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 13594,
+       "terminal_count": 2,
+       "exact_bytes": 48598,
+       "compressed_bytes": 26372,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 38029,
+        "merged_identical_nodes": 79441,
+        "created_nodes": 13594
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.1096
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 13457,
+       "terminal_count": 2,
+       "exact_bytes": 48079,
+       "compressed_bytes": 26097,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 38407,
+        "merged_identical_nodes": 79200,
+        "created_nodes": 13457
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.1462
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 9676,
+       "terminal_count": 2,
+       "exact_bytes": 37754,
+       "compressed_bytes": 32522,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 38051,
+        "merged_identical_nodes": 83337,
+        "created_nodes": 9676
+       },
+       "shared_across_planes": 923,
+       "encode_s": 0.1206
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 11699,
+       "terminal_count": 2,
+       "exact_bytes": 46009,
+       "compressed_bytes": 40668,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 38269,
+        "merged_identical_nodes": 81096,
+        "created_nodes": 11699
+       },
+       "shared_across_planes": 852,
+       "encode_s": 0.1242
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 11941,
+       "terminal_count": 2,
+       "exact_bytes": 46965,
+       "compressed_bytes": 42434,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 38029,
+        "merged_identical_nodes": 81094,
+        "created_nodes": 11941
+       },
+       "shared_across_planes": 956,
+       "encode_s": 0.0836
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 11820,
+       "terminal_count": 2,
+       "exact_bytes": 46538,
+       "compressed_bytes": 41027,
+       "mode": 1,
+       "stats": {
+        "candidates": 131064,
+        "eliminated_equal_children": 38407,
+        "merged_identical_nodes": 80837,
+        "created_nodes": 11820
+       },
+       "shared_across_planes": 939,
+       "encode_s": 0.1114
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 9825,
+       "terminal_count": 236,
+       "exact_bytes": 38896,
+       "compressed_bytes": 35390,
+       "mode": 0,
+       "stats": {
+        "candidates": 16383,
+        "eliminated_equal_children": 1,
+        "merged_identical_nodes": 6557,
+        "created_nodes": 9825
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0474
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 10046,
+       "terminal_count": 236,
+       "exact_bytes": 39734,
+       "compressed_bytes": 35957,
+       "mode": 0,
+       "stats": {
+        "candidates": 16383,
+        "eliminated_equal_children": 24,
+        "merged_identical_nodes": 6313,
+        "created_nodes": 10046
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0473
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 10118,
+       "terminal_count": 236,
+       "exact_bytes": 40047,
+       "compressed_bytes": 36274,
+       "mode": 0,
+       "stats": {
+        "candidates": 16383,
+        "eliminated_equal_children": 11,
+        "merged_identical_nodes": 6254,
+        "created_nodes": 10118
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.0519
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 10019,
+       "terminal_count": 236,
+       "exact_bytes": 39626,
+       "compressed_bytes": 35805,
+       "mode": 0,
+       "stats": {
+        "candidates": 16383,
+        "eliminated_equal_children": 24,
+        "merged_identical_nodes": 6340,
+        "created_nodes": 10019
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.057
+      }
+     ],
+     "best_g": {
+      "repr": "separate",
+      "repr_id": 0,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 11524,
+      "terminal_count": 2,
+      "exact_bytes": 39896,
+      "compressed_bytes": 22962,
+      "mode": 1,
+      "stats": {
+       "candidates": 131064,
+       "eliminated_equal_children": 38051,
+       "merged_identical_nodes": 81489,
+       "created_nodes": 11524
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.1293
+     },
+     "best_f": {
+      "repr": "shared",
+      "repr_id": 1,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 9676,
+      "terminal_count": 2,
+      "exact_bytes": 37754,
+      "compressed_bytes": 32522,
+      "mode": 1,
+      "stats": {
+       "candidates": 131064,
+       "eliminated_equal_children": 38051,
+       "merged_identical_nodes": 83337,
+       "created_nodes": 9676
+      },
+      "shared_across_planes": 923,
+      "encode_s": 0.1206
+     },
+     "selected_exact": true
+    },
+    "65536": {
+     "split": "dev",
+     "offset": 0,
+     "length": 65536,
+     "sha256": "3ca0e2e794c07d9a8b7d8bede4b45d34675c50a0bb2847e1003fe2811980da47",
+     "size": 65536,
+     "rows": [
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 37543,
+       "terminal_count": 2,
+       "exact_bytes": 142442,
+       "compressed_bytes": 86960,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 150520,
+        "merged_identical_nodes": 336217,
+        "created_nodes": 37543
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.4212
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 45196,
+       "terminal_count": 2,
+       "exact_bytes": 174586,
+       "compressed_bytes": 102840,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 153197,
+        "merged_identical_nodes": 325887,
+        "created_nodes": 45196
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.4255
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 46085,
+       "terminal_count": 2,
+       "exact_bytes": 178269,
+       "compressed_bytes": 104185,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 151394,
+        "merged_identical_nodes": 326801,
+        "created_nodes": 46085
+       },
+       "shared_across_planes": 0,
+       "encode_s": 2.8428
+      },
+      {
+       "repr": "separate",
+       "repr_id": 0,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 45644,
+       "terminal_count": 2,
+       "exact_bytes": 176411,
+       "compressed_bytes": 103630,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 153077,
+        "merged_identical_nodes": 325559,
+        "created_nodes": 45644
+       },
+       "shared_across_planes": 0,
+       "encode_s": 2.9172
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 31561,
+       "terminal_count": 2,
+       "exact_bytes": 124854,
+       "compressed_bytes": 120852,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 150520,
+        "merged_identical_nodes": 342199,
+        "created_nodes": 31561
+       },
+       "shared_across_planes": 3714,
+       "encode_s": 2.7359
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 38557,
+       "terminal_count": 2,
+       "exact_bytes": 153304,
+       "compressed_bytes": 149347,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 153197,
+        "merged_identical_nodes": 332526,
+        "created_nodes": 38557
+       },
+       "shared_across_planes": 4320,
+       "encode_s": 0.8521
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 39225,
+       "terminal_count": 2,
+       "exact_bytes": 155998,
+       "compressed_bytes": 152089,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 151394,
+        "merged_identical_nodes": 333661,
+        "created_nodes": 39225
+       },
+       "shared_across_planes": 4521,
+       "encode_s": 1.1512
+      },
+      {
+       "repr": "shared",
+       "repr_id": 1,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 38857,
+       "terminal_count": 2,
+       "exact_bytes": 154520,
+       "compressed_bytes": 150611,
+       "mode": 1,
+       "stats": {
+        "candidates": 524280,
+        "eliminated_equal_children": 153077,
+        "merged_identical_nodes": 332346,
+        "created_nodes": 38857
+       },
+       "shared_across_planes": 4386,
+       "encode_s": 2.3626
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "msb",
+       "order_id": 0,
+       "node_total": 32472,
+       "terminal_count": 256,
+       "exact_bytes": 128651,
+       "compressed_bytes": 123722,
+       "mode": 1,
+       "stats": {
+        "candidates": 65535,
+        "eliminated_equal_children": 30,
+        "merged_identical_nodes": 33033,
+        "created_nodes": 32472
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.9162
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "lsb",
+       "order_id": 1,
+       "node_total": 34606,
+       "terminal_count": 256,
+       "exact_bytes": 137353,
+       "compressed_bytes": 132071,
+       "mode": 1,
+       "stats": {
+        "candidates": 65535,
+        "eliminated_equal_children": 106,
+        "merged_identical_nodes": 30823,
+        "created_nodes": 34606
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.8485
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "odd-even",
+       "order_id": 2,
+       "node_total": 34769,
+       "terminal_count": 256,
+       "exact_bytes": 137962,
+       "compressed_bytes": 132563,
+       "mode": 1,
+       "stats": {
+        "candidates": 65535,
+        "eliminated_equal_children": 104,
+        "merged_identical_nodes": 30662,
+        "created_nodes": 34769
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.5513
+      },
+      {
+       "repr": "mtbdd",
+       "repr_id": 2,
+       "order": "reversed-grouping",
+       "order_id": 3,
+       "node_total": 34747,
+       "terminal_count": 256,
+       "exact_bytes": 137917,
+       "compressed_bytes": 132549,
+       "mode": 1,
+       "stats": {
+        "candidates": 65535,
+        "eliminated_equal_children": 106,
+        "merged_identical_nodes": 30682,
+        "created_nodes": 34747
+       },
+       "shared_across_planes": 0,
+       "encode_s": 0.4114
+      }
+     ],
+     "best_g": {
+      "repr": "separate",
+      "repr_id": 0,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 37543,
+      "terminal_count": 2,
+      "exact_bytes": 142442,
+      "compressed_bytes": 86960,
+      "mode": 1,
+      "stats": {
+       "candidates": 524280,
+       "eliminated_equal_children": 150520,
+       "merged_identical_nodes": 336217,
+       "created_nodes": 37543
+      },
+      "shared_across_planes": 0,
+      "encode_s": 0.4212
+     },
+     "best_f": {
+      "repr": "shared",
+      "repr_id": 1,
+      "order": "msb",
+      "order_id": 0,
+      "node_total": 31561,
+      "terminal_count": 2,
+      "exact_bytes": 124854,
+      "compressed_bytes": 120852,
+      "mode": 1,
+      "stats": {
+       "candidates": 524280,
+       "eliminated_equal_children": 150520,
+       "merged_identical_nodes": 342199,
+       "created_nodes": 31561
+      },
+      "shared_across_planes": 3714,
+      "encode_s": 2.7359
+     },
+     "selected_exact": true
+    }
+   }
+  }
+ ],
+ "selected": {
+  "book1": {
+   "4096": {
+    "repr": "mtbdd",
+    "repr_id": 2,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 2285,
+    "dev_terminal_count": 67,
+    "dev_exact_bytes": 8271,
+    "dev_compressed_bytes": 6588,
+    "dev_stats": {
+     "candidates": 4095,
+     "eliminated_equal_children": 34,
+     "merged_identical_nodes": 1776,
+     "created_nodes": 2285
+    }
+   },
+   "16384": {
+    "repr": "mtbdd",
+    "repr_id": 2,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 7401,
+    "dev_terminal_count": 72,
+    "dev_exact_bytes": 28264,
+    "dev_compressed_bytes": 24531,
+    "dev_stats": {
+     "candidates": 16383,
+     "eliminated_equal_children": 161,
+     "merged_identical_nodes": 8821,
+     "created_nodes": 7401
+    }
+   },
+   "65536": {
+    "repr": "mtbdd",
+    "repr_id": 2,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 24375,
+    "dev_terminal_count": 76,
+    "dev_exact_bytes": 95420,
+    "dev_compressed_bytes": 89014,
+    "dev_stats": {
+     "candidates": 65535,
+     "eliminated_equal_children": 625,
+     "merged_identical_nodes": 40535,
+     "created_nodes": 24375
+    }
+   }
+  },
+  "bbc": {
+   "4096": {
+    "repr": "mtbdd",
+    "repr_id": 2,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 2088,
+    "dev_terminal_count": 77,
+    "dev_exact_bytes": 7171,
+    "dev_compressed_bytes": 5221,
+    "dev_stats": {
+     "candidates": 4095,
+     "eliminated_equal_children": 424,
+     "merged_identical_nodes": 1583,
+     "created_nodes": 2088
+    }
+   }
+  },
+  "7zr": {
+   "4096": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 5107,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 15226,
+    "dev_compressed_bytes": 7839,
+    "dev_stats": {
+     "candidates": 32760,
+     "eliminated_equal_children": 14487,
+     "merged_identical_nodes": 13166,
+     "created_nodes": 5107
+    }
+   },
+   "16384": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 17711,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 65596,
+    "dev_compressed_bytes": 31646,
+    "dev_stats": {
+     "candidates": 131064,
+     "eliminated_equal_children": 48169,
+     "merged_identical_nodes": 65184,
+     "created_nodes": 17711
+    }
+   },
+   "65536": {
+    "repr": "mtbdd",
+    "repr_id": 2,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 36302,
+    "dev_terminal_count": 256,
+    "dev_exact_bytes": 136394,
+    "dev_compressed_bytes": 132264,
+    "dev_stats": {
+     "candidates": 65535,
+     "eliminated_equal_children": 2330,
+     "merged_identical_nodes": 26903,
+     "created_nodes": 36302
+    }
+   }
+  },
+  "irs1040": {
+   "4096": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 5581,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 17384,
+    "dev_compressed_bytes": 8774,
+    "dev_stats": {
+     "candidates": 32760,
+     "eliminated_equal_children": 12597,
+     "merged_identical_nodes": 14582,
+     "created_nodes": 5581
+    }
+   },
+   "16384": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 18053,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 67180,
+    "dev_compressed_bytes": 32110,
+    "dev_stats": {
+     "candidates": 131064,
+     "eliminated_equal_children": 44866,
+     "merged_identical_nodes": 68145,
+     "created_nodes": 18053
+    }
+   },
+   "65536": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 57271,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 223308,
+    "dev_compressed_bytes": 116129,
+    "dev_stats": {
+     "candidates": 524280,
+     "eliminated_equal_children": 189437,
+     "merged_identical_nodes": 277572,
+     "created_nodes": 57271
+    }
+   }
+  },
+  "hopper": {
+   "4096": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 4527,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 13066,
+    "dev_compressed_bytes": 7324,
+    "dev_stats": {
+     "candidates": 32760,
+     "eliminated_equal_children": 16266,
+     "merged_identical_nodes": 11967,
+     "created_nodes": 4527
+    }
+   },
+   "16384": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 13626,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 48101,
+    "dev_compressed_bytes": 25688,
+    "dev_stats": {
+     "candidates": 131064,
+     "eliminated_equal_children": 66692,
+     "merged_identical_nodes": 50746,
+     "created_nodes": 13626
+    }
+   }
+  },
+  "ecg": {
+   "4096": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 3636,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 9738,
+    "dev_compressed_bytes": 5853,
+    "dev_stats": {
+     "candidates": 32760,
+     "eliminated_equal_children": 9294,
+     "merged_identical_nodes": 19830,
+     "created_nodes": 3636
+    }
+   },
+   "16384": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 11524,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 39896,
+    "dev_compressed_bytes": 22962,
+    "dev_stats": {
+     "candidates": 131064,
+     "eliminated_equal_children": 38051,
+     "merged_identical_nodes": 81489,
+     "created_nodes": 11524
+    }
+   },
+   "65536": {
+    "repr": "separate",
+    "repr_id": 0,
+    "order": "msb",
+    "order_id": 0,
+    "dev_node_total": 37543,
+    "dev_terminal_count": 2,
+    "dev_exact_bytes": 142442,
+    "dev_compressed_bytes": 86960,
+    "dev_stats": {
+     "candidates": 524280,
+     "eliminated_equal_children": 150520,
+     "merged_identical_nodes": 336217,
+     "created_nodes": 37543
+    }
+   }
+  }
+ }
+}

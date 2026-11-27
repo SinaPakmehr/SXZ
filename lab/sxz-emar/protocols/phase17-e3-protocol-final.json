@@ -1,0 +1,766 @@
+{
+ "phase": 17,
+ "episode": 3,
+ "status": "frozen for reported validation rerun; selection/gate unchanged from protocol-c.json",
+ "frozen_at": "2026-11-27",
+ "codec": {
+  "name": "bounded multidimensional recurrence v1.0",
+  "script": "scripts/run_phase17c.py",
+  "script_bytes": 47146,
+  "script_sha256": "3305e4be9f31d7d3c8cc1ebed4cf23fbe81175aa4a1fda4102aaef821f5d6fe1"
+ },
+ "field": "GF(2^8), polynomial 0x11B",
+ "shapes": [
+  [
+   "2d",
+   [
+    64,
+    64
+   ]
+  ],
+  [
+   "3d",
+   [
+    16,
+    16,
+    16
+   ]
+  ],
+  [
+   "4d",
+   [
+    8,
+    8,
+    8,
+    8
+   ]
+  ]
+ ],
+ "sizes": [
+  4096
+ ],
+ "neighborhoods": [
+  "axes",
+  "diagonal",
+  "diag2",
+  "axes2"
+ ],
+ "coeff_limit": 16,
+ "region_rule": "first and last disjoint 4 KiB regions; 16/64 KiB not attempted because 4 KiB showed no exact nontrivial law and residual models were already larger than controls",
+ "selection": "best nondegenerate multidimensional candidate by total serialized size on dev; frozen before validation",
+ "selected": {
+  "book1": {
+   "4096": {
+    "shape_name": "4d",
+    "shape": [
+     8,
+     8,
+     8,
+     8
+    ],
+    "neighborhood": "axes2",
+    "affine": false,
+    "rank": 8,
+    "nullity": 0,
+    "consistent": true,
+    "train_size": 8,
+    "eligible_count": 1296,
+    "boundary_count": 2800,
+    "train_rate": 1.0,
+    "test_rate": 0.005435,
+    "coverage": 0.011574,
+    "nonzero_coefficients": 8,
+    "coeffs": [
+     215,
+     31,
+     167,
+     166,
+     144,
+     42,
+     62,
+     197
+    ],
+    "constant": false,
+    "periodic": false,
+    "used_axes": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "nontrivial_multidim": true,
+    "md_variants": {
+     "exact": null,
+     "raw": 5446,
+     "zstd": 4670
+    },
+    "md_best": {
+     "mode": "zstd",
+     "bytes": 4670
+    },
+    "e_rank": 8,
+    "e_nullity": 0,
+    "e_coverage": 0.011574,
+    "e_best": {
+     "mode": "zstd",
+     "bytes": 4649
+    },
+    "e_variants": {
+     "exact": null,
+     "raw": 5425,
+     "zstd": 4649
+    },
+    "shifts": [
+     [
+      -1,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -1,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      -1
+     ],
+     [
+      -2,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -2,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -2,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      -2
+     ]
+    ],
+    "lags": [
+     1,
+     2,
+     8,
+     16,
+     64,
+     128,
+     512,
+     1024
+    ]
+   }
+  },
+  "bbc": {
+   "4096": {
+    "shape_name": "2d",
+    "shape": [
+     64,
+     64
+    ],
+    "neighborhood": "axes",
+    "affine": false,
+    "rank": 2,
+    "nullity": 0,
+    "consistent": true,
+    "train_size": 2,
+    "eligible_count": 3969,
+    "boundary_count": 127,
+    "train_rate": 1.0,
+    "test_rate": 0.004537,
+    "coverage": 0.005039,
+    "nonzero_coefficients": 2,
+    "coeffs": [
+     135,
+     146
+    ],
+    "constant": false,
+    "periodic": false,
+    "used_axes": [
+     0,
+     1
+    ],
+    "nontrivial_multidim": true,
+    "md_variants": {
+     "exact": null,
+     "raw": 8064,
+     "zstd": 4163
+    },
+    "md_best": {
+     "mode": "zstd",
+     "bytes": 4163
+    },
+    "e_rank": 2,
+    "e_nullity": 0,
+    "e_coverage": 0.005039,
+    "e_best": {
+     "mode": "zstd",
+     "bytes": 4161
+    },
+    "e_variants": {
+     "exact": null,
+     "raw": 8062,
+     "zstd": 4161
+    },
+    "shifts": [
+     [
+      -1,
+      0
+     ],
+     [
+      0,
+      -1
+     ]
+    ],
+    "lags": [
+     1,
+     64
+    ]
+   }
+  },
+  "7zr": {
+   "4096": {
+    "shape_name": "4d",
+    "shape": [
+     8,
+     8,
+     8,
+     8
+    ],
+    "neighborhood": "axes2",
+    "affine": false,
+    "rank": 8,
+    "nullity": 0,
+    "consistent": true,
+    "train_size": 8,
+    "eligible_count": 1296,
+    "boundary_count": 2800,
+    "train_rate": 1.0,
+    "test_rate": 0.005435,
+    "coverage": 0.011574,
+    "nonzero_coefficients": 8,
+    "coeffs": [
+     238,
+     173,
+     25,
+     80,
+     198,
+     84,
+     118,
+     205
+    ],
+    "constant": false,
+    "periodic": false,
+    "used_axes": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "nontrivial_multidim": true,
+    "md_variants": {
+     "exact": null,
+     "raw": 5446,
+     "zstd": 4685
+    },
+    "md_best": {
+     "mode": "zstd",
+     "bytes": 4685
+    },
+    "e_rank": 8,
+    "e_nullity": 0,
+    "e_coverage": 0.011574,
+    "e_best": {
+     "mode": "zstd",
+     "bytes": 4664
+    },
+    "e_variants": {
+     "exact": null,
+     "raw": 5425,
+     "zstd": 4664
+    },
+    "shifts": [
+     [
+      -1,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -1,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      -1
+     ],
+     [
+      -2,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -2,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -2,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      -2
+     ]
+    ],
+    "lags": [
+     1,
+     2,
+     8,
+     16,
+     64,
+     128,
+     512,
+     1024
+    ]
+   }
+  },
+  "irs1040": {
+   "4096": {
+    "shape_name": "4d",
+    "shape": [
+     8,
+     8,
+     8,
+     8
+    ],
+    "neighborhood": "axes2",
+    "affine": true,
+    "rank": 9,
+    "nullity": 0,
+    "consistent": true,
+    "train_size": 9,
+    "eligible_count": 1296,
+    "boundary_count": 2800,
+    "train_rate": 1.0,
+    "test_rate": 0.008547,
+    "coverage": 0.015432,
+    "nonzero_coefficients": 9,
+    "coeffs": [
+     84,
+     60,
+     210,
+     171,
+     178,
+     35,
+     74,
+     252,
+     215
+    ],
+    "constant": false,
+    "periodic": false,
+    "used_axes": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "nontrivial_multidim": true,
+    "md_variants": {
+     "exact": null,
+     "raw": 5437,
+     "zstd": 4667
+    },
+    "md_best": {
+     "mode": "zstd",
+     "bytes": 4667
+    },
+    "e_rank": 9,
+    "e_nullity": 0,
+    "e_coverage": 0.015432,
+    "e_best": {
+     "mode": "zstd",
+     "bytes": 4646
+    },
+    "e_variants": {
+     "exact": null,
+     "raw": 5416,
+     "zstd": 4646
+    },
+    "shifts": [
+     [
+      -1,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -1,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      -1
+     ],
+     [
+      -2,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -2,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -2,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      -2
+     ]
+    ],
+    "lags": [
+     1,
+     2,
+     8,
+     16,
+     64,
+     128,
+     512,
+     1024
+    ]
+   }
+  },
+  "hopper": {
+   "4096": {
+    "shape_name": "4d",
+    "shape": [
+     8,
+     8,
+     8,
+     8
+    ],
+    "neighborhood": "axes2",
+    "affine": true,
+    "rank": 9,
+    "nullity": 0,
+    "consistent": true,
+    "train_size": 9,
+    "eligible_count": 1296,
+    "boundary_count": 2800,
+    "train_rate": 1.0,
+    "test_rate": 0.002331,
+    "coverage": 0.009259,
+    "nonzero_coefficients": 9,
+    "coeffs": [
+     84,
+     92,
+     29,
+     218,
+     108,
+     225,
+     47,
+     154,
+     12
+    ],
+    "constant": false,
+    "periodic": false,
+    "used_axes": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "nontrivial_multidim": true,
+    "md_variants": {
+     "exact": null,
+     "raw": 5453,
+     "zstd": 4668
+    },
+    "md_best": {
+     "mode": "zstd",
+     "bytes": 4668
+    },
+    "e_rank": 9,
+    "e_nullity": 0,
+    "e_coverage": 0.009259,
+    "e_best": {
+     "mode": "zstd",
+     "bytes": 4647
+    },
+    "e_variants": {
+     "exact": null,
+     "raw": 5432,
+     "zstd": 4647
+    },
+    "shifts": [
+     [
+      -1,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -1,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      -1
+     ],
+     [
+      -2,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -2,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -2,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      -2
+     ]
+    ],
+    "lags": [
+     1,
+     2,
+     8,
+     16,
+     64,
+     128,
+     512,
+     1024
+    ]
+   }
+  },
+  "ecg": {
+   "4096": {
+    "shape_name": "4d",
+    "shape": [
+     8,
+     8,
+     8,
+     8
+    ],
+    "neighborhood": "axes2",
+    "affine": true,
+    "rank": 9,
+    "nullity": 0,
+    "consistent": true,
+    "train_size": 9,
+    "eligible_count": 1296,
+    "boundary_count": 2800,
+    "train_rate": 1.0,
+    "test_rate": 0.006216,
+    "coverage": 0.013117,
+    "nonzero_coefficients": 9,
+    "coeffs": [
+     195,
+     83,
+     4,
+     96,
+     194,
+     233,
+     195,
+     18,
+     15
+    ],
+    "constant": false,
+    "periodic": false,
+    "used_axes": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "nontrivial_multidim": true,
+    "md_variants": {
+     "exact": null,
+     "raw": 5443,
+     "zstd": 4672
+    },
+    "md_best": {
+     "mode": "zstd",
+     "bytes": 4672
+    },
+    "e_rank": 9,
+    "e_nullity": 0,
+    "e_coverage": 0.013117,
+    "e_best": {
+     "mode": "zstd",
+     "bytes": 4651
+    },
+    "e_variants": {
+     "exact": null,
+     "raw": 5422,
+     "zstd": 4651
+    },
+    "shifts": [
+     [
+      -1,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -1,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      -1
+     ],
+     [
+      -2,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -2,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -2,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      -2
+     ]
+    ],
+    "lags": [
+     1,
+     2,
+     8,
+     16,
+     64,
+     128,
+     512,
+     1024
+    ]
+   }
+  }
+ },
+ "dev_summary": {
+  "elapsed_s": 12.179,
+  "regions": 6,
+  "exact_nontrivial": 0,
+  "max_coverage": 0.015432,
+  "selected_nontrivial": 6
+ },
+ "representations": [
+  "exact recurrence only",
+  "recurrence + raw XOR residuals",
+  "recurrence + zstd-9 residuals"
+ ],
+ "controls": {
+  "A": "zstd-9 raw",
+  "B": "zstd-19 raw",
+  "C": "raw LZMA2 +1",
+  "D": "best delta/XOR/spatial predictor + zstd-9",
+  "E": "1D recurrence with identical boundary mask and flattened lags",
+  "F": "multidimensional recurrence representation",
+  "G": "multidimensional recurrence + compressed residuals"
+ },
+ "gate": {
+  "min_saving": 0.01,
+  "min_files": 2,
+  "baseline": "min(A,B,C,D,E_best) per region",
+  "nontrivial_required": true
+ },
+ "revision": "verification-only: added raw-residual decode check and encode timing; selected table, gate and representation sizes unchanged"
+}
